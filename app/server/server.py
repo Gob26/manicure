@@ -12,7 +12,6 @@ from config import settings
 from config.constants import APP_DIR
 from server.utils.exception_handler import validation_exception_handler
 
-from config.components.logging_config import logger
 
 def _init_router(_app: FastAPI) -> None:
     from api import router
