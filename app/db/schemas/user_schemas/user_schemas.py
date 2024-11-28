@@ -1,4 +1,11 @@
-from tortoise.contrib.pydantic import pydantic_model_creator
-from db.models.user.user import User    
+from pydantic import BaseModel, EmailStr
+from typing import Optional
 
-UserSchema = pydantic_model_creator(User)
+class UserSchema(BaseModel):
+    username: str
+    email: EmailStr
+    password: str
+    role: Optional[str] = "client"
+
+    class Config:
+        orm_mode = True

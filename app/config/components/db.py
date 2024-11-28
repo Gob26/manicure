@@ -26,18 +26,19 @@ class DatabaseConfig(BaseSettings):
     @computed_field(return_type=dict)
     def tortoise_config(self):
         return {
-            'connections': {
-                'default': self.postgres_connection_string
-            },
-            'apps': {
-                'server': {
-                    'models': [
-                        'aerich.models',
-                        'db.models',
-                    ],
-                }
-            },
-        }
+    'connections': {
+        'default': self.postgres_connection_string,
+    },
+    'apps': {
+        'server': {
+            'models': [
+                'aerich.models',
+                'db.models.user',  # Убедитесь, что здесь указан правильный путь к модели User
+                'db.models.location',
+            ],
+        },
+    },
+}
 
     @computed_field(return_type=dict)
     def apps_for_tests(self):

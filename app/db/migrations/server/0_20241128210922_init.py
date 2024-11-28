@@ -9,8 +9,10 @@ async def upgrade(db: BaseDBAsyncClient) -> str:
     "app" VARCHAR(100) NOT NULL,
     "content" JSONB NOT NULL
 );
-CREATE TABLE IF NOT EXISTS "city" (
+CREATE TABLE IF NOT EXISTS "cities" (
     "id" SERIAL NOT NULL PRIMARY KEY,
+    "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
     "name" VARCHAR(100) NOT NULL UNIQUE,
     "district" VARCHAR(50) NOT NULL,
     "subject" VARCHAR(100) NOT NULL,

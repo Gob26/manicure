@@ -13,7 +13,7 @@ class User(AbstractModel):
     email = fields.CharField(max_length=100, unique=True)
     password = fields.CharField(max_length=128)
     city = fields.ForeignKeyField("server.City", null=True, on_delete=fields.SET_NULL)  # Установка SET_NULL через константу
-    role = fields.CharField(UserRole, default=UserRole.client)
-
+    role = fields.CharEnumField(UserRole, default=UserRole.client)  # Используем CharEnumField
+   
     class Meta:
         table = "users"  # Явное указание имени таблицы
