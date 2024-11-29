@@ -416,3 +416,8 @@ DETAIL:  Key (name)=(Фокино) already exists.[0m
 2024-11-28 21:50:08 - my_app - [31mERROR[0m - [31mError message[0m
 2024-11-28 21:50:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2024-11-28 21:50:58 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: default_connection for the model <class 'db.models.user.user.User'> cannot be None[0m
+2024-11-29 17:03:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-11-29 17:03:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-11-29 17:05:52 - my_app - [31mERROR[0m - [31mError message[0m
+2024-11-29 17:05:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-11-29 17:10:09 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: default_connection for the model <class 'db.models.user.user.User'> cannot be None[0m

@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from api.v1.auth.user_router import user_router
-
+from app.api.v1.auth.user_register_router import user_router
+from app.api.v1.auth.user_login_router import login_router
 
 router = APIRouter()
 
@@ -11,5 +11,10 @@ router.include_router(
     tags=["auth"]
     )
 
+router.include_router(
+    login_router,
+    prefix="/api/v1/auth",
+    tags=["login"]
+    )
 
 __all__ = ["router"]
