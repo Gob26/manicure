@@ -5,7 +5,8 @@ class UserSchema(BaseModel):
     username: str
     email: EmailStr
     password: str
+    city_name: str
     role: Optional[str] = "client"
 
     class Config:
-        orm_mode = True
+        from_attributes = True

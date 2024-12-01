@@ -421,3 +421,20 @@ DETAIL:  Key (name)=(Фокино) already exists.[0m
 2024-11-29 17:05:52 - my_app - [31mERROR[0m - [31mError message[0m
 2024-11-29 17:05:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2024-11-29 17:10:09 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: default_connection for the model <class 'db.models.user.user.User'> cannot be None[0m
+2024-11-30 17:36:35 - my_app - [31mERROR[0m - [31mError message[0m
+2024-11-30 17:36:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-11-30 23:35:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-11-30 23:35:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-11-30 23:41:41 - my_app - [31mERROR[0m - [31mError message[0m
+2024-11-30 23:41:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-11-30 23:42:45 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: default_connection for the model <class 'db.models.user.user.User'> cannot be None[0m
+2024-12-01 00:03:11 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-01 00:03:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-01 01:03:56 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-01 01:03:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-01 16:34:31 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-01 16:34:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-01 16:40:37 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-01 16:40:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-01 16:44:47 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: No constructor defined[0m
+2024-12-01 16:50:36 - my_app - [31mERROR[0m - [31mОшибка при логине: login() takes 1 positional argument but 2 were given[0m

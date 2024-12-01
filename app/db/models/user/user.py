@@ -1,7 +1,9 @@
 from tortoise import fields
-from enum import Enum
+from pydantic import EmailStr, BaseModel, validator, Field
 
+from enum import Enum
 from db.models.abstract.abstract_model import AbstractModel
+
 
 class UserRole(str, Enum):
     client = "client"
@@ -9,11 +11,11 @@ class UserRole(str, Enum):
     salon = "salon"
 
 class User(AbstractModel):
-    username = fields.CharField(max_length=100, unique=True)
-    email = fields.CharField(max_length=100, unique=True)
-    password = fields.CharField(max_length=128)
-    city = fields.ForeignKeyField("server.City", null=True, on_delete=fields.SET_NULL)  # Установка SET_NULL через константу
-    role = fields.CharEnumField(UserRole, default=UserRole.client)  # Используем CharEnumField
-   
+    username: str = fields.CharField(max_length=255, unique=True)
+    email: EmailStr = fields.CharField(max_length=255, unique=True)
+    password: str = fields.CharField(max_length=255)
+    city_name: str = fields.CharField(max_length=255)
+    role = fields.CharEnumField(UserRole, default=UserRole.client) 
+
     class Meta:
         table = "users"  # Явное указание имени таблицы

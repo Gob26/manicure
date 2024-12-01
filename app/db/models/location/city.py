@@ -1,4 +1,4 @@
-from tortoise import fields, models
+from tortoise import fields
 
 from db.models.abstract.abstract_model import AbstractModel
 

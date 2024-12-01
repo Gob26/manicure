@@ -12,32 +12,30 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 def hash_password(password: str) -> str:
     return pwd_context.hash(password)
 
-async def register_user(username: str, email: str, password: str, city_id: str, role: str):
+
+async def register_user(username: str, email: str, password: str, city_name: str, role: str):
     try:
-        # Проверяем уникальность username
         if await UserRepository.get_user_by_username(username):
-            logger.error(f"Пользователь с именем {username} уже существует")
-            raise ValidationError(f"Пользователь с именем {username} уже существует")
+            raise ValidationError("username_exists", "Пользователь с таким именем уже существует")
         
-        # Проверяем уникальность email
         if await UserRepository.get_user_by_email(email):
-            logger.error(f"Пользователь с email {email} уже существует")
-            raise ValidationError(f"Пользователь с email {email} уже существует")
+            raise ValidationError("email_exists", "Пользователь с таким email уже существует")
         
-        # Хешируем пароль перед сохранением
+        city = await UserRepository.get_city_by_name(city_name)
+        if not city:
+            raise ValidationError("city_not_found", f"Город {city_name} не найден")
+        
         hashed_password = hash_password(password)
-        
-        # Создаем пользователя с хешированным паролем
-        user = await UserRepository.create_user(username, email, hashed_password, city_id, role)
-        
-        return user
-    
-    # Обрабатываем ошибки при создании пользователя
+        return await UserRepository.create_user(
+            username, 
+            email, 
+            hashed_password, 
+            city.id,  # Используем city.id вместо city_id
+            role
+        )
     except IntegrityError as e:
-        logger.error(f"Ошибка создания пользователя: {e}")
-        raise ValidationError(f"Ошибка создания пользователя: {e}")
-    
-    # Обрабатываем ошибки валидации данных
+        logger.error(f"Database integrity error: {str(e)}")
+        raise ValidationError("database_error", "Ошибка при создании пользователя")
     except ValidationError as e:
-        logger.error(f"Ошибка валидации данных: {e}")
+        logger.error(f"Validation error: {str(e)}")
         raise

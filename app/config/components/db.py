@@ -33,7 +33,7 @@ class DatabaseConfig(BaseSettings):
         'server': {
             'models': [
                 'aerich.models',
-                'db.models.user',  # Убедитесь, что здесь указан правильный путь к модели User
+                'db.models.user',
                 'db.models.location',
             ],
         },
