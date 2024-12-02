@@ -1,7 +1,5 @@
 from tortoise import fields
-
 from db.models.abstract.abstract_model import AbstractModel
-
 
 class City(AbstractModel):
     id = fields.IntField(pk=True)
@@ -11,6 +9,10 @@ class City(AbstractModel):
     population = fields.IntField()
     latitude = fields.FloatField()  # Если будет использоваться геокодирование, подумайте о пределах значений.
     longitude = fields.FloatField()
+    title = fields.CharField(max_length=255, null=True)  # Заголовок, теперь может быть null
+    description = fields.TextField(null=True)  # Описание, теперь может быть null
+    text = fields.TextField(null=True)  # Текст, теперь может быть null
+
 
     class Meta:
         table = "cities"

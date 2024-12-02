@@ -15,27 +15,35 @@ def hash_password(password: str) -> str:
 
 async def register_user(username: str, email: str, password: str, city_name: str, role: str):
     try:
+        logger.info(f"Пользователь {username} пытается зарегистрироваться с городом {city_name}")
+
         if await UserRepository.get_user_by_username(username):
+            logger.warning(f"Пользователь с таким именем уже существует: {username}")
             raise ValidationError("username_exists", "Пользователь с таким именем уже существует")
-        
+
         if await UserRepository.get_user_by_email(email):
+            logger.warning(f"Пользователь с таким email уже существует: {email}")
             raise ValidationError("email_exists", "Пользователь с таким email уже существует")
-        
+
         city = await UserRepository.get_city_by_name(city_name)
         if not city:
-            raise ValidationError("city_not_found", f"Город {city_name} не найден")
-        
+            logger.error(f"Город с названием {city_name} не найден")
+            raise ValidationError("city_not_found", f"Город с названием {city_name} не найден")
+
+        logger.info(f"Город {city_name} найден, ID: {city.id}")
+
         hashed_password = hash_password(password)
-        return await UserRepository.create_user(
-            username, 
-            email, 
-            hashed_password, 
-            city.id,  # Используем city.id вместо city_id
-            role
+        user = await UserRepository.create_user(
+            username=username,
+            email=email,
+            password=hashed_password,
+            city_name=city_name,  # передаем название города
+            role=role
         )
-    except IntegrityError as e:
-        logger.error(f"Database integrity error: {str(e)}")
-        raise ValidationError("database_error", "Ошибка при создании пользователя")
-    except ValidationError as e:
-        logger.error(f"Validation error: {str(e)}")
+
+        logger.info(f"Пользователь {username} успешно зарегистрирован.")
+        return user
+    except Exception as e:
+        logger.error(f"Ошибка при регистрации пользователя {username}: {str(e)}")
         raise
+
