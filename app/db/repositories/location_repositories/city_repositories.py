@@ -1,7 +1,18 @@
-from db.models import City
+from typing import Optional
+from tortoise.expressions import Q
+
+from config.components.logging_config import logger
+from db.models.location.city import City
 
 class CityRepository:
-    async def get_city_by_name(self, name: str):
-        return await City.filter(name=name).first()
+    @staticmethod
+    async def get_city_by_name(name: str) -> Optional[City]:
+        """
+        Получение города по названию.
+        """
+        logger.debug(f"Поиск города: {name!r}")
+        city = await City.get_or_none(Q(name__iexact=name))  # Поиск города по имени
+        logger.debug(f"Результат поиска: {city!r}")
+        return city  # Возвращаем найденный объект города
 
-    # Добавьте другие методы репозитория, если нужно
+

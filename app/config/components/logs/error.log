@@ -613,3 +613,91 @@ DETAIL:  Key (name)=(Фокино) already exists.[0m
 2024-12-02 14:05:25 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2024-12-02 14:24:41 - my_app - [31mERROR[0m - [31mError message[0m
 2024-12-02 14:24:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 14:38:20 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 14:38:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 14:39:01 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test2: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:39:01 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:44:22 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test2: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:44:22 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:46:22 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 14:46:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 14:46:23 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test2: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:46:23 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:47:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 14:47:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 14:47:58 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test2: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:47:58 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:48:20 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 14:48:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 14:48:20 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test2: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:48:20 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:48:45 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 14:48:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 14:48:45 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test2: type object 'UserRepository' has no attribute 'get_user_by_username'[0m
+2024-12-02 14:48:45 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_user_by_username'[0m
+2024-12-02 14:49:55 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 14:49:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 14:50:04 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 14:50:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 14:50:10 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test2: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:50:10 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:50:14 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test2: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:50:14 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:51:44 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 14:51:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 14:51:44 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test2: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:51:44 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:52:04 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 14:52:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 14:54:01 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 14:54:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 14:54:15 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 14:54:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 14:54:22 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test2: type object 'UserRepository' has no attribute 'get_user_by_username'[0m
+2024-12-02 14:54:22 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_user_by_username'[0m
+2024-12-02 14:54:24 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test2: type object 'UserRepository' has no attribute 'get_user_by_username'[0m
+2024-12-02 14:54:24 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_user_by_username'[0m
+2024-12-02 14:54:44 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 14:54:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 14:54:51 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test2а: type object 'UserRepository' has no attribute 'get_user_by_username'[0m
+2024-12-02 14:54:51 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_user_by_username'[0m
+2024-12-02 14:56:00 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 14:56:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 14:56:01 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test2а: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:56:01 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:56:02 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test2а: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:56:02 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:56:02 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test2а: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:56:02 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:56:02 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test2а: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:56:02 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 14:57:13 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 14:57:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 14:57:27 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 14:57:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 14:59:58 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 14:59:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 15:00:13 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 15:00:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 15:00:17 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test2а: No constructor defined[0m
+2024-12-02 15:00:17 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: No constructor defined[0m
+2024-12-02 15:00:45 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test3: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 15:00:45 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 15:02:00 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 15:02:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 15:02:10 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя teаst3: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 15:02:10 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 15:03:20 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 15:03:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 15:03:32 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 15:03:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 15:03:36 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя teаst3: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 15:03:36 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 15:04:45 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 15:04:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 15:05:21 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя testtt: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 15:05:21 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя: type object 'UserRepository' has no attribute 'get_city_by_name'[0m
+2024-12-02 15:07:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 15:07:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-02 15:08:56 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-02 15:08:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

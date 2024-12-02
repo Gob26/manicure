@@ -1,7 +1,7 @@
 from passlib.context import CryptContext
-from tortoise.exceptions import IntegrityError
 from pydantic import ValidationError
 
+from db.repositories.location_repositories.city_repositories import CityRepository
 from db.repositories.user_repositories.user_repositories import UserRepository
 from config.components.logging_config import logger
 
@@ -25,7 +25,7 @@ async def register_user(username: str, email: str, password: str, city_name: str
             logger.warning(f"Пользователь с таким email уже существует: {email}")
             raise ValidationError("email_exists", "Пользователь с таким email уже существует")
 
-        city = await UserRepository.get_city_by_name(city_name)
+        city = await CityRepository.get_city_by_name(city_name)
         if not city:
             logger.error(f"Город с названием {city_name} не найден")
             raise ValidationError("city_not_found", f"Город с названием {city_name} не найден")
