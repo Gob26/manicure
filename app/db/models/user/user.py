@@ -3,13 +3,13 @@ from pydantic import EmailStr, BaseModel, validator, Field
 from enum import Enum
 from db.models.abstract.abstract_model import AbstractModel
 
-
+# Перечисление ролей
 class UserRole(str, Enum):
     client = "client"
     master = "master"
     salon = "salon"
 
-
+# Модель пользователя
 class User(AbstractModel):
     username: str = fields.CharField(max_length=255, unique=True)
     email: EmailStr = fields.CharField(max_length=255, unique=True)

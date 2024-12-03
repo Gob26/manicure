@@ -1,6 +1,6 @@
 from tortoise import models, fields
 
-
+# Модель абстрактная
 class AbstractModel(models.Model):
     id = fields.IntField(pk=True)
     created_at = fields.DatetimeField(auto_now_add=True)

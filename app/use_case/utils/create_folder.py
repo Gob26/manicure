@@ -7,9 +7,10 @@ def create_city_folder(city_slag: str):
         os.makedirs(city_folder)
     return city_folder
 
-# Создание папки салона или мастера
-def create_salon_folder(city_slag: str, type: str, entity_slug: str):
-    type_folder = f"/{type}"
+# Создание папки салона или мастера ('moscow', 'masters', 'ivan')
+def create_salon_folder(city_slug: str, type: str, entity_slug: str):
+    city_folder = create_city_folder(city_slug)
+    type_folder = f"{city_folder/{type}"
     if not os.path.exists(type_folder):
         os.makedirs(type_folder)
 
