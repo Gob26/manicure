@@ -3,7 +3,7 @@ from db.repositories.location_repositories.city_repositories import CityReposito
 from db.models.user.user import User
 from config.components.logging_config import logger
 
-
+#ползователь 
 class UserRepository:
     @staticmethod
     async def get_user_by_username(username: str) -> Optional[User]:
