@@ -3,7 +3,7 @@ from tortoise import fields
 from db.models.abstract.abstract_model import AbstractModel
 
 # Модель мастера
-class Master(AbstractModel):
+class Salon(AbstractModel):
     user = fields.OneToOneField("server.User", related_name='master', on_delete=fields.CASCADE)
     title = fields.CharField(max_length=255, null=False)  # Заголовок, пока может быть null
     description = fields.TextField(null=True)  # Описание, пока может быть null
@@ -13,4 +13,4 @@ class Master(AbstractModel):
     slug = fields.CharField(max_length=255, unique=False, null=False)
 
     class Meta:
-        table = "salons"
+        table = "salon"

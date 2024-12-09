@@ -20,6 +20,7 @@ fastapi-babel = "^0.0.9"
 fastapi-pagination = "^0.12.31"
 colorama = "^0.4.6"
 python-slugify = "^8.0.4"
+pillow = "^11.0.0"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.5.4"
