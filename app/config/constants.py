@@ -8,3 +8,6 @@ APP_DIR = ROOT_DIR.joinpath('app')
 
 # Определение пути к .env файлу
 ENV_FILE_PATH = ROOT_DIR.joinpath('.env')  
+
+
+MEDIA_DIR = ROOT_DIR.joinpath('media')

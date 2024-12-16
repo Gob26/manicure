@@ -3,12 +3,13 @@ import os
 from pathlib import Path
 from colorama import Fore, Style, init
 
+from config.constants import APP_DIR
+
 # Инициализация colorama для Windows
 init()
 
 # Создаём базовую директорию для логов
-BASE_DIR = Path(__file__).parent
-LOGS_DIR = BASE_DIR / "logs"
+LOGS_DIR = APP_DIR / "logs"
 LOGS_DIR.mkdir(exist_ok=True)
 
 class ColoredFormatter(logging.Formatter):

@@ -1,24 +1,28 @@
 import os
+
 from io import BytesIO
 from PIL import Image
+
+from config.constants import MEDIA_DIR
 from config.components.logging_config import logger
-from pathlib import Path
 
 
-def create_save_path(base_path, city, role, image_type):
+
+def create_save_path(base_path, city, role, slug, image_type):
     """
-    Создает путь для сохранения изображения на основе города, роли и типа изображения.
+    Создает путь для сохранения изображения на основе города, роли, slug и типа изображения.
 
     Args:
         base_path: Базовый путь для сохранения
         city: Город, к которому относится изображение
         role: Роль (например, 'master', 'salon')
+        slug: Уникальный идентификатор пользователя или заведения
         image_type: Тип изображения ('portfolio', 'general')
 
     Returns:
         Path: Путь к папке, где будут сохранены изображения
     """
-    save_path = base_path.joinpath(city, role, image_type)
+    save_path = base_path.joinpath(city, role, slug, image_type)
     os.makedirs(save_path, exist_ok=True)
     logger.info(f"Папка создана или существует: {save_path}")
     return save_path
@@ -109,7 +113,7 @@ def save_image(image, file_path):
         raise
 
 
-def optimize_image_multisize(image_file, city, role, image_type, max_sizes, quality_start=95):
+def optimize_image_multisize(image_file, city, role, slug, image_type, max_sizes, quality_start=95):
     """
     Основная функция для обработки изображения: оптимизирует и сохраняет его в несколько размеров.
 
@@ -117,6 +121,7 @@ def optimize_image_multisize(image_file, city, role, image_type, max_sizes, qual
         image_file: Путь к файлу или объект FileStorage
         city: Город, к которому относится изображение
         role: Роль (например, 'master', 'salon')
+        slug: Уникальный идентификатор пользователя или заведения
         image_type: Тип изображения ('portfolio', 'general')
         max_sizes: Словарь с максимальными размерами для разных типов изображений
         quality_start: Начальное значение качества для WebP
@@ -153,7 +158,7 @@ def optimize_image_multisize(image_file, city, role, image_type, max_sizes, qual
             resized_image = resize_image(image, max_dimension)
 
             # Создаем путь для сохранения
-            save_path = create_save_path(MEDIA_DIR, city, role, image_type)
+            save_path = create_save_path(MEDIA_DIR, city, role, slug, image_type)
 
             # Сохраняем изображение
             new_filename = f"{original_filename}_{size_name}.webp"
@@ -170,3 +175,9 @@ def optimize_image_multisize(image_file, city, role, image_type, max_sizes, qual
 
     logger.info("Обработка изображения завершена успешно.")
     return saved_paths
+"""РЕКОМЕНДАЦИИ
+Кэширование: Если изображения часто запрашиваются, можно добавить кэширование или использование CDN (Content Delivery Network) для уменьшения нагрузки на сервер.
+Валидация изображений: Было бы полезно добавить валидацию для изображений, например, проверку на формат и размер файла до начала оптимизации, чтобы исключить невалидные файлы на ранней стадии.
+Ошибки при создании путей: Возможно, стоит добавить обработку ошибок при создании путей (например, если возникает проблема с доступом к директории или с правами на запись).
+Асинхронность: Если процесс загрузки изображений занимает много времени, можно рассмотреть асинхронную обработку, чтобы не блокировать основной поток приложения.
+"""
