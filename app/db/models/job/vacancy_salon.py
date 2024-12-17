@@ -1,19 +1,22 @@
+from enum import Enum
 from tortoise import fields
 
 from db.models.abstract.abstract_model import AbstractModel
+from db.models.job.job_application import JobApplication
 
-# Модель вакансии
+class VacancyStatusEnum(Enum):
+    open = "open"
+    closed = "closed"
+
 class Vacancy(AbstractModel):
     title = fields.CharField(max_length=255, null=False)
     position = fields.CharField(max_length=255, null=False)
     description = fields.TextField(null=True)
     salon = fields.ForeignKeyField('server.Salon', related_name='vacancies', on_delete=fields.CASCADE)
-    status = fields.CharEnumField(enum_type=["open", "closed"], default="open")
+    status = fields.CharEnumField(VacancyStatusEnum, default=VacancyStatusEnum.open)
 
+    # Связь с заявками
+    applications = fields.ReverseRelation["JobApplication"]
 
-    #Связь с заявками
-    applications = fields.ReverseRelation["server.JobApplication"]
-
-    
     class Meta:
         table = "vacancies"

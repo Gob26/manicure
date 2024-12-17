@@ -1,5 +1,5 @@
 from tortoise import fields
-from pydantic import EmailStr, BaseModel, validator, Field
+from pydantic import EmailStr
 from enum import Enum
 from db.models.abstract.abstract_model import AbstractModel
 

@@ -1,6 +1,6 @@
 from tortoise import fields
 
-from app.db.models.services_model.service_custom_model import CustomService
+from db.models.services_models.service_custom_model import CustomService
 from db.models.abstract.abstract_model import AbstractModel
 from db.models.job.vacancy_salon import Vacancy
 from db.models.salon_models.salon_master_relation import SalonMasterRelation
