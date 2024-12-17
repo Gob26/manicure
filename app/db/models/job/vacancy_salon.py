@@ -10,5 +10,10 @@ class Vacancy(AbstractModel):
     salon = fields.ForeignKeyField('server.Salon', related_name='vacancies', on_delete=fields.CASCADE)
     status = fields.CharEnumField(enum_type=["open", "closed"], default="open")
 
+
+    #Связь с заявками
+    applications = fields.ReverseRelation["server.JobApplication"]
+
+    
     class Meta:
         table = "vacancies"

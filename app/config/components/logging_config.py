@@ -9,7 +9,7 @@ from config.constants import APP_DIR
 init()
 
 # Создаём базовую директорию для логов
-LOGS_DIR = APP_DIR / "logs"
+LOGS_DIR = APP_DIR / "config"/"components"/"logs"
 LOGS_DIR.mkdir(exist_ok=True)
 
 class ColoredFormatter(logging.Formatter):
