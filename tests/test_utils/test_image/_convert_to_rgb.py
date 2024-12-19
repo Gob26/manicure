@@ -1,4 +1,3 @@
-import pytest
 from PIL import Image
 from app.use_case.utils.image import ImageOptimizer
 

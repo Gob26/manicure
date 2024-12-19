@@ -1,6 +1,5 @@
-import pytest
 from PIL import Image
-from your_module import ImageOptimizer  # замените на фактический импорт
+from app.use_case.utils.image import ImageOptimizer
 
 def test_resize_image():
     # Создаем тестовое изображение 400x500
