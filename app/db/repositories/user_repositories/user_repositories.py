@@ -20,6 +20,12 @@ class UserRepository:
         """Создание нового пользователя по имени, email и паролю и городу."""
         logger.debug(f"create_user: получено название города: {city_name!r}")
 
+        # Проверка допустимых ролей
+        allowed_roles = {"master", "salon", "customer"}
+        if role not in allowed_roles:
+            raise ValueError(f"Недопустимая роль: {role}. Допустимые роли: {', '.join(allowed_roles)}")
+
+
         # Используем CityRepository для поиска города
         city = await CityRepository.get_city_by_name(city_name)  # Вызываем метод get_city_by_name из CityRepository
         logger.debug(f"create_user: найденный город: {city!r}")

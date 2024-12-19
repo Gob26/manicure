@@ -1,7 +1,7 @@
 import asyncio
 from tortoise import Tortoise
-from config.components.db import DatabaseConfig
-from config.components.logging_config import logger
+from app.config.components.db import DatabaseConfig
+from app.config.components.logging_config import logger
 
 async def test_postgres_connection():
     """

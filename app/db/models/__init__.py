@@ -8,6 +8,7 @@ from db.models.user.user import User
 
 from db.models.services_models.service_custom_model import CustomService
 from db.models.services_models.service_standart_model import StandardService
+from db.models.services_models.category_model import Category
 
 from db.models.salon_models.salon_model import Salon
 from db.models.salon_models.salon_master_relation import SalonMasterRelation
@@ -37,6 +38,7 @@ __all__ = [
     'Resume',
     'Vacancy',
     'AbstractService',
-    'AbstractPhoto'
+    'AbstractPhoto',
+    'Category'
 
 ]

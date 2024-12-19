@@ -7,7 +7,6 @@ from config.constants import MEDIA_DIR
 from config.components.logging_config import logger
 
 
-
 def create_save_path(base_path, city, role, slug, image_type):
     """
     Создает путь для сохранения изображения на основе города, роли, slug и типа изображения.

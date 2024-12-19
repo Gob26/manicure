@@ -15,4 +15,11 @@ class CityRepository:
         logger.debug(f"Результат поиска: {city!r}")
         return city  # Возвращаем найденный объект города
 
+    @staticmethod
+    async def get_all_cities() -> list[City]:
+        """
+        Получение всех городов.
+        """
+        logger.debug("Получение всех городов")
+        return await City.all()
 

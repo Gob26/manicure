@@ -13,6 +13,7 @@ from config.components.db import DatabaseConfig
 
 from tortoise.exceptions import IntegrityError
 
+
 async def load_cities():
     """
     Загрузка городов из файла JSON в базу данных с проверкой на дублирование

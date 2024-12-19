@@ -1,6 +1,7 @@
 from slugify import slugify
 from tortoise.models import Model
 
+
 async def generate_unique_slug(model: Model, name: str, slug_field: str = "slug") -> str:
     """
     Генерирует уникальный slug для указанной модели, добавляя цифры, если слаг уже существует.

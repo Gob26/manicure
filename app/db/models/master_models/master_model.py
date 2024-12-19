@@ -1,4 +1,4 @@
-from tortoise import fields, models
+from tortoise import fields
 
 from db.models.services_models.service_custom_model import CustomService
 from db.models.abstract.abstract_model import AbstractModel
@@ -8,6 +8,14 @@ from db.models.job.resume_salon import Resume
 
 # Модель мастера
 class Master(AbstractModel):
+    # Связь с городом
+    city = fields.ForeignKeyField(
+        "server.City",
+        related_name="masters",
+        on_delete=fields.SET_NULL,
+        null=True,
+        help_text="Город, в котором находится мастер",
+    )    
     user = fields.OneToOneField('server.User', related_name='master', on_delete=fields.CASCADE)
     title = fields.CharField(max_length=255, null=False)  # Заголовок, пока может быть null
     description = fields.TextField(null=True)  # Описание, пока может быть null
