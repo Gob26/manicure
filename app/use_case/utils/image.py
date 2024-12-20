@@ -1,5 +1,4 @@
 import os
-from io import BytesIO
 from PIL import Image
 from config.constants import MEDIA_DIR
 from config.components.logging_config import logger

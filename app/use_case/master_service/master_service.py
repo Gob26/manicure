@@ -21,16 +21,11 @@ class MasterService:
         slug: Optional[str] = None,
     ) -> dict:
         """
-        Создание мастера с проверками, использованием уникального slug и транзакцией.
+        Создание мастера с проверками
         """
         logger.debug(f"create_master: старт создания мастера для пользователя {user_id} в городе {city_name!r}")
 
-        async with in_transaction():
-            # Проверка города
-            city = await CityRepository.get_city_by_name(city_name)
-            if not city:
-                raise ValueError(f"Город {city_name} не найден")
-
+        async with in_transaction():            
             # Проверка существования мастера для пользователя
             existing_master = await MasterRepository.get_master_by_user_id(user_id)
             if existing_master:
@@ -39,17 +34,13 @@ class MasterService:
             # Генерация уникального slug
             if not slug:
                 slug = await generate_unique_slug(Master, title)
-            else:
-                # Проверка уникальности переданного slug
-                if await MasterRepository.is_slug_used(slug):
-                    raise ValueError(f"Slug {slug} уже используется")
-
+            
             # Создание мастера
             master = await MasterRepository.create_master(
                 user_id=user_id,
                 title=title,
                 specialty=specialty,
-                city=city,
+                city=city_name,
                 description=description,
                 text=text,
                 experience_years=experience_years,

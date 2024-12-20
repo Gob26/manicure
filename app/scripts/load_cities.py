@@ -2,21 +2,43 @@ import sys
 import json
 from pathlib import Path
 from config.components.logging_config import logger
+from slugify import slugify
+from tortoise import Tortoise, run_async
+from db.models.location.city import City
+from config.components.db import DatabaseConfig
+from tortoise.exceptions import IntegrityError
+from tortoise.models import Model
 
 # Добавление пути к корню проекта
 project_root = Path(__file__).parent.parent.parent
 sys.path.append(str(project_root))
 
-from tortoise import Tortoise, run_async
-from db.models.location.city import City
-from config.components.db import DatabaseConfig
 
-from tortoise.exceptions import IntegrityError
+async def generate_unique_slug(model: Model, name: str, slug_field: str = "slug") -> str:
+    """
+    Генерирует уникальный slug для указанной модели, добавляя цифры, если слаг уже существует.
+
+    :param model: Модель Tortoise ORM, в которой проверяется уникальность slug.
+    :param name: Название для генерации slug.
+    :param slug_field: Поле, по которому проверяется уникальность slug (по умолчанию 'slug').
+    :return: Уникальный slug.
+    """
+    base_slug = slugify(name)
+    slug = base_slug
+
+    # Проверяем, существует ли уже такой слаг
+    if await model.filter(**{slug_field: slug}).exists():
+        # Если слаг существует, возвращаем его без изменений
+        logger.debug(f"Слаг {slug} для города {name} уже существует, пропускаем.")
+        return slug
+
+    # Если слаг не существует, возвращаем его как уникальный
+    return slug
 
 
 async def load_cities():
     """
-    Загрузка городов из файла JSON в базу данных с проверкой на дублирование
+    Загрузка городов из файла JSON в базу данных с проверкой на дублирование и генерацией уникальных slugs.
     """
     db_config = DatabaseConfig()
 
@@ -69,6 +91,9 @@ async def load_cities():
             logger.debug(f"Проверка города {idx + 1}/{len(cities_data)}: {city['name']}")
 
             try:
+                # Генерация уникального слага для города
+                slug = await generate_unique_slug(City, city["name"])
+
                 # Используем get_or_create для предотвращения дублирования
                 existing_city, created = await City.get_or_create(
                     name=city["name"],
@@ -77,12 +102,13 @@ async def load_cities():
                     defaults={
                         "population": city["population"],
                         "latitude": float(coords["lat"]),
-                        "longitude": float(coords["lon"])
+                        "longitude": float(coords["lon"]),
+                        "slug": slug  # Добавляем слаг
                     }
                 )
 
                 if created:
-                    logger.debug(f"Город {city['name']} был добавлен в базу данных.")
+                    logger.debug(f"Город {city['name']} был добавлен в базу данных с слагом {slug}.")
                 else:
                     logger.debug(f"Город {city['name']} уже существует, пропущен.")
 

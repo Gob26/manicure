@@ -1,11 +1,12 @@
 from tempfile import NamedTemporaryFile
 from PIL import Image
-from app.use_case.utils.image import ImageOptimizer
-from app.config.constants import MEDIA_DIR
 
 from unittest.mock import patch
 from tempfile import NamedTemporaryFile
 from PIL import Image
+
+from app.use_case.utils.image import ImageOptimizer
+from app.config.constants import MEDIA_DIR
 
 @patch('os.makedirs')
 @patch('PIL.Image.Image.save')
@@ -41,7 +42,7 @@ def test_image_optimizer(mock_open, mock_save, mock_makedirs):
         assert rgb_image.mode == 'RGB'
     
         # 3. Тестирование _resize_image
-        max_dimension = 300
+        max_dimension = 200
         resized_image = ImageOptimizer._resize_image(rgb_image, max_dimension)
         resized_width, resized_height = resized_image.size
         assert resized_width <= max_dimension

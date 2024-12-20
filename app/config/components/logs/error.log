@@ -1704,3 +1704,504 @@
 2024-12-19 12:09:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2024-12-19 12:10:30 - my_app - [31mERROR[0m - [31mError message[0m
 2024-12-19 12:10:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:21:49 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:21:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:21:49 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:21:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:21:56 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:21:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:22:32 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:22:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:22:32 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:22:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:22:34 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:22:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:22:48 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:22:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:22:48 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:22:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:23:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:23:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:23:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:23:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:23:17 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:23:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:23:26 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:23:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:23:26 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:23:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:23:27 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:23:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:23:34 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:23:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:23:34 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:23:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:23:39 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:23:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:23:39 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:23:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:23:41 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:23:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:23:41 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:23:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:24:30 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:24:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:24:30 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:24:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:24:34 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:24:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:24:34 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:24:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:25:03 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:25:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:25:03 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:25:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:25:03 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:25:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:25:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:25:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:25:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:25:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:25:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:25:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:25:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:25:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:25:46 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:25:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:25:46 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:25:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:25:50 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:25:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 12:25:50 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 12:25:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 14:53:21 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 14:53:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 14:53:21 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 14:53:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 14:53:28 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 14:53:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 14:53:28 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 14:53:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 14:54:40 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 14:54:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 14:54:41 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 14:54:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 14:54:45 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 14:54:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 14:54:45 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 14:54:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:03:34 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:03:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:03:34 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:03:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:05:22 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:05:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:05:22 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:05:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:05:31 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:05:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:05:31 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:05:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:05:50 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:05:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:05:50 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:05:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:05:54 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:05:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:05:54 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:05:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:06:04 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:06:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:06:04 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:06:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:06:18 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:06:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:06:18 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:06:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:06:21 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:06:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:06:21 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:06:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:06:29 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:06:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:06:29 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:06:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:06:55 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:06:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:06:55 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:06:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:07:08 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:07:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:07:08 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:07:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:07:32 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:07:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:07:33 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:07:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:08:00 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:08:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:08:00 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:08:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:12:17 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:12:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:12:18 - my_app - [31mERROR[0m - [31mОшибка при создании городов: 'list' object has no attribute 'exists'[0m
+2024-12-19 15:14:21 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:14:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:14:22 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Белогорск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Белогорск) already exists.[0m
+2024-12-19 15:14:22 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Берёзовский: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Берёзовский) already exists.[0m
+2024-12-19 15:14:22 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Благовещенск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Благовещенск) already exists.[0m
+2024-12-19 15:14:22 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Гурьевск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Гурьевск) already exists.[0m
+2024-12-19 15:14:23 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Железногорск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Железногорск) already exists.[0m
+2024-12-19 15:14:23 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Заречный: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Заречный) already exists.[0m
+2024-12-19 15:14:23 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Зеленогорск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Зеленогорск) already exists.[0m
+2024-12-19 15:14:23 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Киров: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Киров) already exists.[0m
+2024-12-19 15:14:24 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Кировск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Кировск) already exists.[0m
+2024-12-19 15:14:24 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Красноармейск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Красноармейск) already exists.[0m
+2024-12-19 15:14:24 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Краснознаменск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Краснознаменск) already exists.[0m
+2024-12-19 15:14:24 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Краснослободск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Краснослободск) already exists.[0m
+2024-12-19 15:14:25 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Мирный: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Мирный) already exists.[0m
+2024-12-19 15:14:25 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Михайловск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Михайловск) already exists.[0m
+2024-12-19 15:14:25 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Никольск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Никольск) already exists.[0m
+2024-12-19 15:14:25 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Озёрск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Озёрск) already exists.[0m
+2024-12-19 15:14:25 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Павловск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Павловск) already exists.[0m
+2024-12-19 15:14:26 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Приморск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Приморск) already exists.[0m
+2024-12-19 15:14:26 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Радужный: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Радужный) already exists.[0m
+2024-12-19 15:14:26 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Советск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Советск) already exists.[0m
+2024-12-19 15:14:26 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Советск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Советск) already exists.[0m
+2024-12-19 15:14:27 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Троицк: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Троицк) already exists.[0m
+2024-12-19 15:14:27 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Фокино: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Фокино) already exists.[0m
+2024-12-19 15:18:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 15:18:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 15:18:45 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Белогорск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Белогорск) already exists.[0m
+2024-12-19 15:18:45 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Берёзовский: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Берёзовский) already exists.[0m
+2024-12-19 15:18:45 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Благовещенск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Благовещенск) already exists.[0m
+2024-12-19 15:18:46 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Гурьевск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Гурьевск) already exists.[0m
+2024-12-19 15:18:47 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Железногорск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Железногорск) already exists.[0m
+2024-12-19 15:18:47 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Заречный: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Заречный) already exists.[0m
+2024-12-19 15:18:47 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Зеленогорск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Зеленогорск) already exists.[0m
+2024-12-19 15:18:48 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Киров: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Киров) already exists.[0m
+2024-12-19 15:18:48 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Кировск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Кировск) already exists.[0m
+2024-12-19 15:18:48 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Красноармейск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Красноармейск) already exists.[0m
+2024-12-19 15:18:48 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Краснознаменск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Краснознаменск) already exists.[0m
+2024-12-19 15:18:48 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Краснослободск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Краснослободск) already exists.[0m
+2024-12-19 15:18:49 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Мирный: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Мирный) already exists.[0m
+2024-12-19 15:18:50 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Михайловск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Михайловск) already exists.[0m
+2024-12-19 15:18:50 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Никольск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Никольск) already exists.[0m
+2024-12-19 15:18:50 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Озёрск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Озёрск) already exists.[0m
+2024-12-19 15:18:51 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Павловск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Павловск) already exists.[0m
+2024-12-19 15:18:51 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Приморск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Приморск) already exists.[0m
+2024-12-19 15:18:51 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Радужный: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Радужный) already exists.[0m
+2024-12-19 15:18:52 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Советск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Советск) already exists.[0m
+2024-12-19 15:18:52 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Советск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Советск) already exists.[0m
+2024-12-19 15:18:53 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Троицк: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Троицк) already exists.[0m
+2024-12-19 15:18:53 - my_app - [31mERROR[0m - [31mОшибка при добавлении города Фокино: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Фокино) already exists.[0m
+2024-12-19 18:26:51 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 18:26:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 18:26:51 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 18:26:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 18:31:53 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 18:31:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 18:31:53 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 18:31:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:01:06 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:01:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:01:06 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:01:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:01:09 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:01:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:01:09 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:01:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:01:18 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:01:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:01:18 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:01:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:02:28 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:02:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:02:28 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:02:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:02:39 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:02:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:02:39 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:02:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:02:50 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:02:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:02:50 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:02:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:02:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:02:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:02:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:02:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:05 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:05 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:07 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:08 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:18 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:18 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:30 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:31 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:34 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:34 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:36 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:36 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:41 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:41 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:46 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:03:46 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:03:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:04:05 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:04:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:04:05 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:04:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:04:13 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:04:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:04:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:04:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:09:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:09:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:09:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:09:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:10:00 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:10:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:10:01 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:10:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:10:05 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:10:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:10:05 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:10:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:10:10 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:10:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:10:10 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:10:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:10:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:10:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 19:10:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 19:10:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 20:57:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 20:57:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 20:57:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 20:57:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:19:55 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:19:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:19:55 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:19:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:20:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:20:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:20:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:20:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:21:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:21:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:21:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:21:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:28:36 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:28:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:28:36 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:28:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:37:21 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:37:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:37:21 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:37:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:44:21 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:44:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:44:21 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:44:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:46:11 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:46:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:46:11 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:46:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:46:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:46:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:46:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:46:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:46:18 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:46:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:46:18 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:46:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:47:16 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:47:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:47:16 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:47:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:53:38 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:53:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:53:38 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:53:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:54:11 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:54:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:54:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:54:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:54:19 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:54:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:54:19 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:54:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:55:28 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:55:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:55:28 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:55:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:55:31 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:55:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:55:31 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:55:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:55:35 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:55:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:55:35 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:55:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:56:10 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:56:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:56:11 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:56:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:56:59 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:56:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:56:59 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:56:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:57:27 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:57:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:57:27 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:57:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:57:44 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:57:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 21:57:45 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 21:57:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 22:01:02 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 22:01:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 22:01:02 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 22:01:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 22:02:40 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 22:02:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 22:02:40 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 22:02:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 22:06:16 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 22:06:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 22:06:16 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 22:06:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 22:07:22 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 22:07:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 22:07:22 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 22:07:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 22:08:36 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 22:08:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 22:08:36 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 22:08:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 22:17:53 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 22:17:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 22:17:53 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 22:17:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 22:18:27 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 22:18:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-19 22:18:27 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-19 22:18:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:30:20 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:30:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:30:20 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:30:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:30:28 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:30:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:30:28 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:30:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:34:40 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:34:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:34:40 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:34:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:34:47 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:34:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:34:47 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:34:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:46:50 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:46:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:46:50 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:46:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:52:13 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:52:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:52:13 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:52:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:53:09 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:53:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:53:09 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:53:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:55:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:55:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:55:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:55:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:57:07 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:57:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:57:07 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:57:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:58:29 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:58:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 06:58:29 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 06:58:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 07:04:52 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 07:04:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 07:04:53 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 07:04:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 07:06:05 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 07:06:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 07:06:05 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 07:06:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 07:06:10 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 07:06:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-20 07:06:10 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-20 07:06:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

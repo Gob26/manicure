@@ -2,7 +2,7 @@ from db.models.abstract.abstract_model import AbstractModel
 from db.models.abstract.abstract_service import AbstractService
 from db.models.abstract.abstract_photo import AbstractPhoto
 
-from db.models.location.city import City
+from db.models.location.city import City, CityDescription
 
 from db.models.user.user import User
 
@@ -39,6 +39,7 @@ __all__ = [
     'Vacancy',
     'AbstractService',
     'AbstractPhoto',
-    'Category'
+    'Category',
+    'CityDescription'
 
 ]

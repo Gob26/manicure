@@ -1,3 +1,4 @@
-from .city import City
+from .city import City, CityDescription
 
-__all__ = ["City"]
+__all__ = ["City", 
+           "CityDescription"]
