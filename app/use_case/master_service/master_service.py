@@ -4,7 +4,6 @@ from tortoise.transactions import in_transaction
 from db.repositories.master_repositories.master_repositories import MasterRepository
 from db.models.master_models.master_model import Master
 from use_case.utils.slug_generator import generate_unique_slug
-from db.repositories.location_repositories.city_repositories import CityRepository
 from config.components.logging_config import logger
 
 

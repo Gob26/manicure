@@ -1,14 +1,13 @@
-from fastapi import APIRouter, HTTPException, status
-from db.schemas.master_schemas.master_create_schema import MasterCreateSchema
-from db.schemas.master_schemas.master_response_schema import MasterResponseSchema
-from app.use_case.master.master_service import MasterService
+from fastapi import APIRouter, HTTPException, status, Body
+from db.schemas.master_schemas.master_schemas import MasterCreateSchema
+from use_case.master_service.master_service import MasterService
 from config.components.logging_config import logger
 
 master_router = APIRouter()
 
 @master_router.post(
     "/master",
-    response_model=MasterResponseSchema,
+    response_model=MasterCreateSchema,
     status_code=status.HTTP_201_CREATED,
     summary="Создание профиля мастера",
     description="""
@@ -21,7 +20,7 @@ master_router = APIRouter()
     responses={
         status.HTTP_201_CREATED: {
             "description": "Профиль мастера успешно создан",
-            "model": MasterResponseSchema
+            "model": MasterCreateSchema,  # Исправлено
         },
         status.HTTP_400_BAD_REQUEST: {
             "description": "Неверные входные данные"
@@ -32,7 +31,7 @@ master_router = APIRouter()
     },
 )
 async def create_master_route(
-    master_data: MasterCreateSchema
+    master_data: MasterCreateSchema = Body(...),  # Явно указано тело запроса
 ):
     """
     Основной метод для создания мастера.
@@ -53,8 +52,8 @@ async def create_master_route(
         )
         return result
     except ValueError as e:
-        logger.error(f"Ошибка при создании мастера: {e}")
+        logger.warning(f"Ошибка при создании мастера: {e}")
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
     except Exception as e:
-        logger.error(f"Ошибка при создании мастера: {e}")
+        logger.exception("Системная ошибка при создании мастера")  # Улучшено логирование
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Ошибка при создании мастера")

@@ -8,3 +8,11 @@ CityCreateSchema = pydantic_model_creator(
     exclude=("id", "created_at", "updated_at"),  # Исключаем поля, которые не нужно создавать
     name="CityCreateSchema"  # Задаем имя для Pydantic-схемы
 )
+
+# Схема для отображения города
+CityOutSchema = pydantic_model_creator(
+    City,
+    name="CityOutSchema"  # Имя схемы
+)
+
+
