@@ -2690,3 +2690,16 @@ AttributeError: 'MasterCreateSchema' object has no attribute 'city_name'
 2024-12-23 10:18:57 - my_app - [31mERROR[0m - [31mСерверная ошибка при логине пользователя mail1: 'Settings' object has no attribute 'JWT_ACCESS_TOKEN_EXPIRE_MINUTES'[0m
 2024-12-23 10:20:09 - my_app - [31mERROR[0m - [31mError message[0m
 2024-12-23 10:20:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 12:09:51 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 12:09:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 12:15:36 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 12:15:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 12:15:47 - my_app - [31mERROR[0m - [31mСерверная ошибка при логине пользователя mail1: type object 'UserRepository' has no attribute 'verify_password'[0m
+2024-12-23 12:16:41 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 12:16:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 12:56:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 12:56:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:00:31 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:00:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:02:24 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:02:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

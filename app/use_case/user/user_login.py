@@ -1,5 +1,6 @@
 from fastapi import HTTPException
-from db.repositories.user_repositories.user_login import verify_password, get_user_by_username
+from db.repositories.user_repositories.user_repositories import UserRepository
+from db.repositories.user_repositories.user_login import UserAuthService
 from config.components.logging_config import logger
 from jose import jwt
 from datetime import datetime, timedelta
@@ -13,22 +14,22 @@ settings = Settings()
 async def login(username: str, password: str):
     logger.info(f"Попытка логина для пользователя {username}")
 
-    # Получаем пользователя по имени
-    user = await get_user_by_username(username)
+    # Используем репозиторий для получения пользователя
+    user = await UserRepository.get_user_by_username(username)
     if not user:
         logger.error(f"Пользователь с именем {username} не найден")
         raise HTTPException(status_code=404, detail="Пользователь не найден")
 
     logger.info(f"Пользователь {username} найден, проверка пароля.")
 
-    # Проверяем пароль
-    if not verify_password(password, user.password):
+    # Проверяем пароль с использованием репозитория (если функция проверки пароля в репозитории)
+    if not UserAuthService.verify_password(password, user.password):  # Предполагаем, что такая функция есть в репозитории
         logger.error(f"Неверный пароль для пользователя {username}")
         raise HTTPException(status_code=401, detail="Неверный пароль")
 
     logger.info(f"Пользователь {username} успешно авторизован")
 
-    # Сначала получаем город и city_id
+    # Получаем город пользователя через репозиторий
     city_name = None
     city_id = None
     if user.city:
