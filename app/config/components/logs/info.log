@@ -11453,3 +11453,199 @@ AttributeError: 'MasterCreateSchema' object has no attribute 'city_name'
 2024-12-23 13:50:18 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 67[0m
 2024-12-23 13:50:18 - my_app - [32mINFO[0m - [32mМастер создан с данными: {'user_id': '67', 'city_id': 1901, 'title': 'stri1ng', 'specialty': 'str1ing', 'description': 'str1ing', 'text': 'string1', 'experience_years': 10, 'slug': 'string1'}[0m
 2024-12-23 13:50:18 - my_app - [32mINFO[0m - [32mcreate_master: мастер с ID 1 успешно создан[0m
+2024-12-23 14:09:24 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 14:09:24 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 14:09:24 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 14:09:24 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 14:09:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 14:09:45 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: email1[0m
+2024-12-23 14:09:45 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя email1[0m
+2024-12-23 14:09:45 - my_app - [32mINFO[0m - [32mПользователь email1 найден, проверка пароля.[0m
+2024-12-23 14:09:45 - my_app - [32mINFO[0m - [32mПользователь email1 успешно авторизован[0m
+2024-12-23 14:09:45 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 63, 'username': 'email1', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2024-12-23 14:09:45 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MyIsInVzZXJuYW1lIjoiZW1haWwxIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNDk1Mzk4NSwiY2l0eSI6IiJ9.HnsJeZNgcjtVR2in4EeSQsx-3BV9yklYRnkQMYGS3T4[0m
+2024-12-23 14:09:45 - my_app - [32mINFO[0m - [32mПользователь email1 успешно авторизован[0m
+2024-12-23 14:10:50 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 14:10:50 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MyIsInVzZXJuYW1lIjoiZW1haWwxIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNDk1Mzk4NSwiY2l0eSI6IiJ9.HnsJeZNgcjtVR2in4EeSQsx-3BV9yklYRnkQMYGS3T4[0m
+2024-12-23 14:10:50 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '63', 'username': 'email1', 'role': 'master', 'city_id': 1901, 'exp': 1734953985, 'city': ''}[0m
+2024-12-23 14:10:50 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '63', 'username': 'email1', 'role': 'master', 'city_id': 1901, 'exp': 1734953985, 'city': ''}[0m
+2024-12-23 14:10:50 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'email1', 'user_id': '63', 'role': 'master', 'city_id': 1901}[0m
+2024-12-23 14:10:50 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'email1', 'user_id': '63', 'role': 'master', 'city_id': 1901}[0m
+2024-12-23 14:10:50 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 63[0m
+2024-12-23 14:10:50 - my_app - [32mINFO[0m - [32mМастер создан с данными: {'user_id': '63', 'city_id': 1901, 'title': 'Тест', 'specialty': 'Маникюр', 'description': 'Супер маникюр', 'text': 'Обожаю маникюр', 'experience_years': 3, 'slug': 'test'}[0m
+2024-12-23 14:10:50 - my_app - [32mINFO[0m - [32mcreate_master: мастер с ID 2 успешно создан[0m
+2024-12-23 14:12:23 - my_app - [32mINFO[0m - [32mРегистрация пользователя: test, город: Ставрополь, роль: master[0m
+2024-12-23 14:12:23 - my_app - [32mINFO[0m - [32mПользователь test пытается зарегистрироваться с городом Ставрополь[0m
+2024-12-23 14:12:23 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Ставрополь'[0m
+2024-12-23 14:12:23 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 2104>[0m
+2024-12-23 14:12:23 - my_app - [32mINFO[0m - [32mГород Ставрополь найден, ID: 2104[0m
+2024-12-23 14:12:24 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=test, city_name=Ставрополь, role=master[0m
+2024-12-23 14:12:24 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Ставрополь'[0m
+2024-12-23 14:12:24 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 2104>[0m
+2024-12-23 14:12:24 - my_app - [32mINFO[0m - [32mПользователь test создан в городе Ставрополь с ролью master.[0m
+2024-12-23 14:12:24 - my_app - [32mINFO[0m - [32mПользователь test успешно зарегистрирован.[0m
+2024-12-23 14:12:24 - my_app - [32mINFO[0m - [32mПользователь test успешно зарегистрирован[0m
+2024-12-23 14:13:00 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: test[0m
+2024-12-23 14:13:00 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя test[0m
+2024-12-23 14:13:00 - my_app - [32mINFO[0m - [32mПользователь test найден, проверка пароля.[0m
+2024-12-23 14:13:00 - my_app - [32mINFO[0m - [32mПользователь test успешно авторизован[0m
+2024-12-23 14:13:00 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 69, 'username': 'test', 'role': <UserRole.master: 'master'>, 'city_id': 2104}[0m
+2024-12-23 14:13:00 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OSIsInVzZXJuYW1lIjoidGVzdCIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoyMTA0LCJleHAiOjE3MzQ5NTQxODAsImNpdHkiOiIifQ.HbMe3m_bmwd_jSWimGFfPNQUwXOl69dPchW-WGOnF7E[0m
+2024-12-23 14:13:00 - my_app - [32mINFO[0m - [32mПользователь test успешно авторизован[0m
+2024-12-23 14:13:11 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 14:13:11 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OSIsInVzZXJuYW1lIjoidGVzdCIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoyMTA0LCJleHAiOjE3MzQ5NTQxODAsImNpdHkiOiIifQ.HbMe3m_bmwd_jSWimGFfPNQUwXOl69dPchW-WGOnF7E[0m
+2024-12-23 14:13:11 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '69', 'username': 'test', 'role': 'master', 'city_id': 2104, 'exp': 1734954180, 'city': ''}[0m
+2024-12-23 14:13:11 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '69', 'username': 'test', 'role': 'master', 'city_id': 2104, 'exp': 1734954180, 'city': ''}[0m
+2024-12-23 14:13:11 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'test', 'user_id': '69', 'role': 'master', 'city_id': 2104}[0m
+2024-12-23 14:13:11 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'test', 'user_id': '69', 'role': 'master', 'city_id': 2104}[0m
+2024-12-23 14:13:11 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 69[0m
+2024-12-23 14:13:11 - my_app - [32mINFO[0m - [32mМастер создан с данными: {'user_id': '69', 'city_id': 2104, 'title': 'string', 'specialty': 'string', 'description': 'string', 'text': 'string', 'experience_years': 0, 'slug': 'string'}[0m
+2024-12-23 14:13:11 - my_app - [32mINFO[0m - [32mcreate_master: мастер с ID 3 успешно создан[0m
+2024-12-23 14:13:20 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 14:13:20 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OSIsInVzZXJuYW1lIjoidGVzdCIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoyMTA0LCJleHAiOjE3MzQ5NTQxODAsImNpdHkiOiIifQ.HbMe3m_bmwd_jSWimGFfPNQUwXOl69dPchW-WGOnF7E[0m
+2024-12-23 14:13:20 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '69', 'username': 'test', 'role': 'master', 'city_id': 2104, 'exp': 1734954180, 'city': ''}[0m
+2024-12-23 14:13:20 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '69', 'username': 'test', 'role': 'master', 'city_id': 2104, 'exp': 1734954180, 'city': ''}[0m
+2024-12-23 14:13:20 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'test', 'user_id': '69', 'role': 'master', 'city_id': 2104}[0m
+2024-12-23 14:13:20 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'test', 'user_id': '69', 'role': 'master', 'city_id': 2104}[0m
+2024-12-23 14:13:20 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 69[0m
+2024-12-23 14:13:20 - my_app - [33mWARNING[0m - [33mОшибка бизнес-логики: Мастер уже создан для пользователя с ID 69[0m
+2024-12-23 14:14:37 - my_app - [32mINFO[0m - [32mРегистрация пользователя: test1, город: test1, роль: master[0m
+2024-12-23 14:14:37 - my_app - [32mINFO[0m - [32mПользователь test1 пытается зарегистрироваться с городом test1[0m
+2024-12-23 14:14:37 - my_app - [34mDEBUG[0m - [34mПоиск города: 'test1'[0m
+2024-12-23 14:14:37 - my_app - [34mDEBUG[0m - [34mРезультат поиска: None[0m
+2024-12-23 14:14:37 - my_app - [31mERROR[0m - [31mГород с названием test1 не найден[0m
+2024-12-23 14:14:37 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test1: argument 'line_errors': Can't extract `str` to `Vec`[0m
+2024-12-23 14:14:37 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя test1: argument 'line_errors': Can't extract `str` to `Vec`[0m
+2024-12-23 14:14:55 - my_app - [32mINFO[0m - [32mРегистрация пользователя: test1, город: Москва, роль: master[0m
+2024-12-23 14:14:55 - my_app - [32mINFO[0m - [32mПользователь test1 пытается зарегистрироваться с городом Москва[0m
+2024-12-23 14:14:55 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Москва'[0m
+2024-12-23 14:14:55 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1795>[0m
+2024-12-23 14:14:55 - my_app - [32mINFO[0m - [32mГород Москва найден, ID: 1795[0m
+2024-12-23 14:14:56 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=test1, city_name=Москва, role=master[0m
+2024-12-23 14:14:56 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Москва'[0m
+2024-12-23 14:14:56 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1795>[0m
+2024-12-23 14:14:56 - my_app - [32mINFO[0m - [32mПользователь test1 создан в городе Москва с ролью master.[0m
+2024-12-23 14:14:56 - my_app - [32mINFO[0m - [32mПользователь test1 успешно зарегистрирован.[0m
+2024-12-23 14:14:56 - my_app - [32mINFO[0m - [32mПользователь test1 успешно зарегистрирован[0m
+2024-12-23 14:15:06 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: test1[0m
+2024-12-23 14:15:06 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя test1[0m
+2024-12-23 14:15:06 - my_app - [32mINFO[0m - [32mПользователь test1 найден, проверка пароля.[0m
+2024-12-23 14:15:06 - my_app - [32mINFO[0m - [32mПользователь test1 успешно авторизован[0m
+2024-12-23 14:15:06 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 70, 'username': 'test1', 'role': <UserRole.master: 'master'>, 'city_id': 1795}[0m
+2024-12-23 14:15:06 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3MCIsInVzZXJuYW1lIjoidGVzdDEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM0OTU0MzA2LCJjaXR5IjoiIn0.A-GIQqO7EGBI5l_iyD_7LCylSjx-xQ79vjAcZRV8fZU[0m
+2024-12-23 14:15:06 - my_app - [32mINFO[0m - [32mПользователь test1 успешно авторизован[0m
+2024-12-23 14:15:41 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 14:15:41 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3MCIsInVzZXJuYW1lIjoidGVzdDEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM0OTU0MzA2LCJjaXR5IjoiIn0.A-GIQqO7EGBI5l_iyD_7LCylSjx-xQ79vjAcZRV8fZU[0m
+2024-12-23 14:15:41 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '70', 'username': 'test1', 'role': 'master', 'city_id': 1795, 'exp': 1734954306, 'city': ''}[0m
+2024-12-23 14:15:41 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '70', 'username': 'test1', 'role': 'master', 'city_id': 1795, 'exp': 1734954306, 'city': ''}[0m
+2024-12-23 14:15:41 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'test1', 'user_id': '70', 'role': 'master', 'city_id': 1795}[0m
+2024-12-23 14:15:41 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'test1', 'user_id': '70', 'role': 'master', 'city_id': 1795}[0m
+2024-12-23 14:15:41 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 70[0m
+2024-12-23 14:15:41 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 'list' object has no attribute 'exists'[0m
+2024-12-23 14:16:07 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 14:16:07 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3MCIsInVzZXJuYW1lIjoidGVzdDEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM0OTU0MzA2LCJjaXR5IjoiIn0.A-GIQqO7EGBI5l_iyD_7LCylSjx-xQ79vjAcZRV8fZU[0m
+2024-12-23 14:16:07 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '70', 'username': 'test1', 'role': 'master', 'city_id': 1795, 'exp': 1734954306, 'city': ''}[0m
+2024-12-23 14:16:07 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '70', 'username': 'test1', 'role': 'master', 'city_id': 1795, 'exp': 1734954306, 'city': ''}[0m
+2024-12-23 14:16:07 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'test1', 'user_id': '70', 'role': 'master', 'city_id': 1795}[0m
+2024-12-23 14:16:07 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'test1', 'user_id': '70', 'role': 'master', 'city_id': 1795}[0m
+2024-12-23 14:16:07 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 70[0m
+2024-12-23 14:16:07 - my_app - [32mINFO[0m - [32mМастер создан с данными: {'user_id': '70', 'city_id': 1795, 'title': 'string', 'specialty': 'string', 'description': 'string', 'text': 'string', 'experience_years': 0, 'slug': 'string'}[0m
+2024-12-23 14:16:07 - my_app - [32mINFO[0m - [32mcreate_master: мастер с ID 4 успешно создан[0m
+2024-12-23 18:18:05 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 18:18:05 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 18:18:05 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 18:18:05 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 18:18:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 18:20:35 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: changes1234567[0m
+2024-12-23 18:20:35 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя changes1234567[0m
+2024-12-23 18:20:35 - my_app - [32mINFO[0m - [32mПользователь changes1234567 найден, проверка пароля.[0m
+2024-12-23 18:20:35 - my_app - [32mINFO[0m - [32mПользователь changes1234567 успешно авторизован[0m
+2024-12-23 18:20:35 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 61, 'username': 'changes1234567', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2024-12-23 18:20:35 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MSIsInVzZXJuYW1lIjoiY2hhbmdlczEyMzQ1NjciLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM0OTY5MDM1LCJjaXR5IjoiIn0.Z2WZnl0rF2Qj2NnWja7AxyBVcKuJZ_ezUFRjR32npFo[0m
+2024-12-23 18:20:35 - my_app - [32mINFO[0m - [32mПользователь changes1234567 успешно авторизован[0m
+2024-12-23 18:21:10 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 18:21:10 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MSIsInVzZXJuYW1lIjoiY2hhbmdlczEyMzQ1NjciLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM0OTY5MDM1LCJjaXR5IjoiIn0.Z2WZnl0rF2Qj2NnWja7AxyBVcKuJZ_ezUFRjR32npFo[0m
+2024-12-23 18:21:10 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '61', 'username': 'changes1234567', 'role': 'master', 'city_id': 1901, 'exp': 1734969035, 'city': ''}[0m
+2024-12-23 18:21:10 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '61', 'username': 'changes1234567', 'role': 'master', 'city_id': 1901, 'exp': 1734969035, 'city': ''}[0m
+2024-12-23 18:21:10 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'changes1234567', 'user_id': '61', 'role': 'master', 'city_id': 1901}[0m
+2024-12-23 18:21:10 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'changes1234567', 'user_id': '61', 'role': 'master', 'city_id': 1901}[0m
+2024-12-23 18:21:10 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 61[0m
+2024-12-23 18:21:10 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 'list' object has no attribute 'exists'[0m
+2024-12-23 18:31:09 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 18:31:09 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 18:31:09 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 18:31:09 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 18:31:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 18:31:19 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: changes123456@changes.ru[0m
+2024-12-23 18:31:19 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя changes123456@changes.ru[0m
+2024-12-23 18:31:19 - my_app - [31mERROR[0m - [31mПользователь с именем changes123456@changes.ru не найден[0m
+2024-12-23 18:31:19 - my_app - [31mERROR[0m - [31mОшибка при логине пользователя changes123456@changes.ru: Пользователь не найден[0m
+2024-12-23 18:31:33 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: changes123456[0m
+2024-12-23 18:31:33 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя changes123456[0m
+2024-12-23 18:31:33 - my_app - [32mINFO[0m - [32mПользователь changes123456 найден, проверка пароля.[0m
+2024-12-23 18:31:33 - my_app - [32mINFO[0m - [32mПользователь changes123456 успешно авторизован[0m
+2024-12-23 18:31:33 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 60, 'username': 'changes123456', 'role': <UserRole.salon: 'salon'>, 'city_id': 1901}[0m
+2024-12-23 18:31:33 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MCIsInVzZXJuYW1lIjoiY2hhbmdlczEyMzQ1NiIsInJvbGUiOiJzYWxvbiIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNDk2OTY5MywiY2l0eSI6IiJ9.m3t6MRsBI2xQ5b_2WOCia7g8fxVfl2tWgcK1Fpp6ZDY[0m
+2024-12-23 18:31:33 - my_app - [32mINFO[0m - [32mПользователь changes123456 успешно авторизован[0m
+2024-12-23 18:32:31 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 18:32:31 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MCIsInVzZXJuYW1lIjoiY2hhbmdlczEyMzQ1NiIsInJvbGUiOiJzYWxvbiIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNDk2OTY5MywiY2l0eSI6IiJ9.m3t6MRsBI2xQ5b_2WOCia7g8fxVfl2tWgcK1Fpp6ZDY[0m
+2024-12-23 18:32:31 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '60', 'username': 'changes123456', 'role': 'salon', 'city_id': 1901, 'exp': 1734969693, 'city': ''}[0m
+2024-12-23 18:32:31 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '60', 'username': 'changes123456', 'role': 'salon', 'city_id': 1901, 'exp': 1734969693, 'city': ''}[0m
+2024-12-23 18:32:31 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'changes123456', 'user_id': '60', 'role': 'salon', 'city_id': 1901}[0m
+2024-12-23 18:32:31 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'changes123456', 'user_id': '60', 'role': 'salon', 'city_id': 1901}[0m
+2024-12-23 18:33:25 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: changes1234[0m
+2024-12-23 18:33:25 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя changes1234[0m
+2024-12-23 18:33:25 - my_app - [32mINFO[0m - [32mПользователь changes1234 найден, проверка пароля.[0m
+2024-12-23 18:33:25 - my_app - [32mINFO[0m - [32mПользователь changes1234 успешно авторизован[0m
+2024-12-23 18:33:25 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 58, 'username': 'changes1234', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2024-12-23 18:33:25 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OCIsInVzZXJuYW1lIjoiY2hhbmdlczEyMzQiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM0OTY5ODA1LCJjaXR5IjoiIn0.w8st20PwYfN4kgz92yevmOSVwfGLehXc15tOzfRpoEc[0m
+2024-12-23 18:33:25 - my_app - [32mINFO[0m - [32mПользователь changes1234 успешно авторизован[0m
+2024-12-23 18:33:29 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 18:33:29 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1OCIsInVzZXJuYW1lIjoiY2hhbmdlczEyMzQiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM0OTY5ODA1LCJjaXR5IjoiIn0.w8st20PwYfN4kgz92yevmOSVwfGLehXc15tOzfRpoEc[0m
+2024-12-23 18:33:29 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '58', 'username': 'changes1234', 'role': 'master', 'city_id': 1901, 'exp': 1734969805, 'city': ''}[0m
+2024-12-23 18:33:29 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '58', 'username': 'changes1234', 'role': 'master', 'city_id': 1901, 'exp': 1734969805, 'city': ''}[0m
+2024-12-23 18:33:29 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'changes1234', 'user_id': '58', 'role': 'master', 'city_id': 1901}[0m
+2024-12-23 18:33:29 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'changes1234', 'user_id': '58', 'role': 'master', 'city_id': 1901}[0m
+2024-12-23 18:33:29 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 58[0m
+2024-12-23 18:33:29 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'changes123456'[0m
+2024-12-23 18:33:29 - my_app - [32mINFO[0m - [32mМастер создан с данными: {'user_id': '58', 'city_id': 1901, 'title': 'changes123456', 'specialty': 'changes123456', 'description': 'changes123456', 'text': 'changes123456', 'experience_years': 10, 'slug': 'changes123456'}[0m
+2024-12-23 18:33:29 - my_app - [32mINFO[0m - [32mcreate_master: мастер с ID 5 успешно создан[0m
+2024-12-23 18:34:23 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: changes123[0m
+2024-12-23 18:34:23 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя changes123[0m
+2024-12-23 18:34:23 - my_app - [32mINFO[0m - [32mПользователь changes123 найден, проверка пароля.[0m
+2024-12-23 18:34:23 - my_app - [32mINFO[0m - [32mПользователь changes123 успешно авторизован[0m
+2024-12-23 18:34:23 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 57, 'username': 'changes123', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2024-12-23 18:34:23 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1NyIsInVzZXJuYW1lIjoiY2hhbmdlczEyMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3MzQ5Njk4NjMsImNpdHkiOiIifQ.C8sJS3Yq2v9BjEeRt8WqXEmJAyGLK4796LncofSgdkU[0m
+2024-12-23 18:34:23 - my_app - [32mINFO[0m - [32mПользователь changes123 успешно авторизован[0m
+2024-12-23 18:35:12 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 18:35:12 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1NyIsInVzZXJuYW1lIjoiY2hhbmdlczEyMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3MzQ5Njk4NjMsImNpdHkiOiIifQ.C8sJS3Yq2v9BjEeRt8WqXEmJAyGLK4796LncofSgdkU[0m
+2024-12-23 18:35:12 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '57', 'username': 'changes123', 'role': 'master', 'city_id': 1901, 'exp': 1734969863, 'city': ''}[0m
+2024-12-23 18:35:12 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '57', 'username': 'changes123', 'role': 'master', 'city_id': 1901, 'exp': 1734969863, 'city': ''}[0m
+2024-12-23 18:35:12 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'changes123', 'user_id': '57', 'role': 'master', 'city_id': 1901}[0m
+2024-12-23 18:35:12 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'changes123', 'user_id': '57', 'role': 'master', 'city_id': 1901}[0m
+2024-12-23 18:35:12 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 57[0m
+2024-12-23 18:35:12 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'kakashkina-antonina'[0m
+2024-12-23 18:35:12 - my_app - [32mINFO[0m - [32mМастер создан с данными: {'user_id': '57', 'city_id': 1901, 'title': 'Какашкина антонина', 'specialty': 'changes123авава', 'description': 'вавава', 'text': 'changes123changes123changes123changes123changes123', 'experience_years': 5, 'slug': 'kakashkina-antonina'}[0m
+2024-12-23 18:35:12 - my_app - [32mINFO[0m - [32mcreate_master: мастер с ID 6 успешно создан[0m
+2024-12-23 18:39:14 - my_app - [32mINFO[0m - [32mРегистрация пользователя: test26, город: Ставрополь, роль: client[0m
+2024-12-23 18:39:14 - my_app - [32mINFO[0m - [32mПользователь test26 пытается зарегистрироваться с городом Ставрополь[0m
+2024-12-23 18:39:14 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Ставрополь'[0m
+2024-12-23 18:39:14 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 2104>[0m
+2024-12-23 18:39:14 - my_app - [32mINFO[0m - [32mГород Ставрополь найден, ID: 2104[0m
+2024-12-23 18:39:14 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=test26, city_name=Ставрополь, role=client[0m
+2024-12-23 18:39:14 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Ставрополь'[0m
+2024-12-23 18:39:14 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 2104>[0m
+2024-12-23 18:39:14 - my_app - [32mINFO[0m - [32mПользователь test26 создан в городе Ставрополь с ролью client.[0m
+2024-12-23 18:39:14 - my_app - [32mINFO[0m - [32mПользователь test26 успешно зарегистрирован.[0m
+2024-12-23 18:39:14 - my_app - [32mINFO[0m - [32mПользователь test26 успешно зарегистрирован[0m
+2024-12-23 18:40:03 - my_app - [32mINFO[0m - [32mРегистрация пользователя: test01, город: Адыгейск, роль: admin[0m
+2024-12-23 18:40:03 - my_app - [32mINFO[0m - [32mПользователь test01 пытается зарегистрироваться с городом Адыгейск[0m
+2024-12-23 18:40:03 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Адыгейск'[0m
+2024-12-23 18:40:03 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1187>[0m
+2024-12-23 18:40:03 - my_app - [32mINFO[0m - [32mГород Адыгейск найден, ID: 1187[0m
+2024-12-23 18:40:03 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=test01, city_name=Адыгейск, role=admin[0m
+2024-12-23 18:40:03 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Адыгейск'[0m
+2024-12-23 18:40:03 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1187>[0m
+2024-12-23 18:40:03 - my_app - [32mINFO[0m - [32mПользователь test01 создан в городе Адыгейск с ролью admin.[0m
+2024-12-23 18:40:03 - my_app - [32mINFO[0m - [32mПользователь test01 успешно зарегистрирован.[0m
+2024-12-23 18:40:03 - my_app - [32mINFO[0m - [32mПользователь test01 успешно зарегистрирован[0m

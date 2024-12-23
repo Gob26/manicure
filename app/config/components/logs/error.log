@@ -2761,3 +2761,16 @@ AttributeError: 'MasterCreateSchema' object has no attribute 'city_name'
 2024-12-23 13:48:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2024-12-23 13:48:29 - my_app - [31mERROR[0m - [31mError message[0m
 2024-12-23 13:48:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 14:09:24 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 14:09:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 14:14:37 - my_app - [31mERROR[0m - [31mГород с названием test1 не найден[0m
+2024-12-23 14:14:37 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test1: argument 'line_errors': Can't extract `str` to `Vec`[0m
+2024-12-23 14:14:37 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя test1: argument 'line_errors': Can't extract `str` to `Vec`[0m
+2024-12-23 14:15:41 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 'list' object has no attribute 'exists'[0m
+2024-12-23 18:18:05 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 18:18:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 18:21:10 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 'list' object has no attribute 'exists'[0m
+2024-12-23 18:31:09 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 18:31:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 18:31:19 - my_app - [31mERROR[0m - [31mПользователь с именем changes123456@changes.ru не найден[0m
+2024-12-23 18:31:19 - my_app - [31mERROR[0m - [31mОшибка при логине пользователя changes123456@changes.ru: Пользователь не найден[0m

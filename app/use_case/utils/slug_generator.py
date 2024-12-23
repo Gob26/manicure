@@ -1,6 +1,8 @@
 from slugify import slugify
 from tortoise.models import Model
 
+from config.components.logging_config import logger
+
 
 async def generate_unique_slug(model: Model, name: str, slug_field: str = "slug") -> str:
     """
@@ -15,8 +17,10 @@ async def generate_unique_slug(model: Model, name: str, slug_field: str = "slug"
     slug = base_slug
     count = 1
     
-    while await (await model.filter(**{slug_field: slug})).exists():
+    while await model.filter(**{slug_field: slug}).exists():
+        logger.debug(f"Slug '{slug}' already exists. Trying '{base_slug}-{count}'")
         slug = f"{base_slug}-{count}"
         count += 1
-    
+
+    logger.debug(f"Generated unique slug: '{slug}'")
     return slug

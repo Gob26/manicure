@@ -52,7 +52,7 @@ def decode_access_token(token: str) -> dict:
         payload = jwt.decode(token, settings.JWT_SECRET_KEY, algorithms=[settings.JWT_ALGORITHM])
         logger.info(f"Токен успешно декодирован: {payload}")
 
-        # Ensure 'sub' is a string
+        # Принудительно в строку иначе ошибка
         if "sub" in payload:
             payload["sub"] = str(payload["sub"])
 
