@@ -11300,3 +11300,156 @@ AttributeError: 'MasterCreateSchema' object has no attribute 'city_name'
 2024-12-23 13:22:40 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
 2024-12-23 13:22:40 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjY3LCJ1c2VybmFtZSI6Im1haWwxIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNDk1MTA3OSwiY2l0eSI6IiJ9.taNIfgR9w4KaH9kiArDcFFg4bkLOxqjEz6TB_f7ruag[0m
 2024-12-23 13:22:40 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Subject must be a string.[0m
+2024-12-23 13:26:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:26:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:26:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:26:17 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:26:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:26:17 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 13:26:17 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjY3LCJ1c2VybmFtZSI6Im1haWwxIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNDk1MTA3OSwiY2l0eSI6IiJ9.taNIfgR9w4KaH9kiArDcFFg4bkLOxqjEz6TB_f7ruag[0m
+2024-12-23 13:26:17 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Subject must be a string.[0m
+2024-12-23 13:26:24 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 13:26:24 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjY3LCJ1c2VybmFtZSI6Im1haWwxIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNDk1MTA3OSwiY2l0eSI6IiJ9.taNIfgR9w4KaH9kiArDcFFg4bkLOxqjEz6TB_f7ruag[0m
+2024-12-23 13:26:24 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Subject must be a string.[0m
+2024-12-23 13:29:30 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:29:30 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:29:30 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:29:30 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:29:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:29:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:29:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:29:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:29:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:29:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:29:44 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 13:30:34 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:30:34 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:30:34 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:30:34 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:30:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:32:33 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 13:32:33 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjY3LCJ1c2VybmFtZSI6Im1haWwxIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNDk1MTA3OSwiY2l0eSI6IiJ9.taNIfgR9w4KaH9kiArDcFFg4bkLOxqjEz6TB_f7ruag[0m
+2024-12-23 13:32:33 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Subject must be a string.[0m
+2024-12-23 13:33:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:33:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:33:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:33:17 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:33:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:36:00 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:36:00 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:36:00 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:36:00 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:36:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:36:08 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: mail1[0m
+2024-12-23 13:36:08 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя mail1[0m
+2024-12-23 13:36:08 - my_app - [32mINFO[0m - [32mПользователь mail1 найден, проверка пароля.[0m
+2024-12-23 13:36:08 - my_app - [32mINFO[0m - [32mПользователь mail1 успешно авторизован[0m
+2024-12-23 13:36:08 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 67, 'username': 'mail1', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2024-12-23 13:36:08 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjY3LCJ1c2VybmFtZSI6Im1haWwxIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNDk1MTk2OCwiY2l0eSI6IiJ9.1TmdcdxCPDOFUkCPrHSO67oRXfbVh1AYe8JcAmEy294[0m
+2024-12-23 13:36:08 - my_app - [32mINFO[0m - [32mПользователь mail1 успешно авторизован[0m
+2024-12-23 13:36:29 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 13:36:29 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjY3LCJ1c2VybmFtZSI6Im1haWwxIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNDk1MTk2OCwiY2l0eSI6IiJ9.1TmdcdxCPDOFUkCPrHSO67oRXfbVh1AYe8JcAmEy294[0m
+2024-12-23 13:36:29 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Subject must be a string.[0m
+2024-12-23 13:39:31 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:39:31 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:39:31 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:39:31 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:39:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:39:36 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена[0m
+2024-12-23 13:39:36 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена[0m
+2024-12-23 13:39:36 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Subject must be a string.[0m
+2024-12-23 13:39:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:39:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:39:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:39:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:39:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:41:07 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:41:07 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:41:07 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:41:07 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:41:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:41:47 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:41:47 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:41:47 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:41:47 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:41:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:41:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:41:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:41:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:41:59 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:41:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:42:00 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 13:42:00 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjY3LCJ1c2VybmFtZSI6Im1haWwxIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNDk1MTk2OCwiY2l0eSI6IiJ9.1TmdcdxCPDOFUkCPrHSO67oRXfbVh1AYe8JcAmEy294[0m
+2024-12-23 13:42:00 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Subject must be a string.[0m
+2024-12-23 13:43:40 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:43:40 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:43:40 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:43:40 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:43:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:43:40 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 13:43:40 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjY3LCJ1c2VybmFtZSI6Im1haWwxIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNDk1MTk2OCwiY2l0eSI6IiJ9.1TmdcdxCPDOFUkCPrHSO67oRXfbVh1AYe8JcAmEy294[0m
+2024-12-23 13:43:40 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Subject must be a string.[0m
+2024-12-23 13:44:00 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: mail1[0m
+2024-12-23 13:44:00 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя mail1[0m
+2024-12-23 13:44:00 - my_app - [32mINFO[0m - [32mПользователь mail1 найден, проверка пароля.[0m
+2024-12-23 13:44:00 - my_app - [32mINFO[0m - [32mПользователь mail1 успешно авторизован[0m
+2024-12-23 13:44:00 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 67, 'username': 'mail1', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2024-12-23 13:44:00 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjY3LCJ1c2VybmFtZSI6Im1haWwxIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNDk1MjQ0MCwiY2l0eSI6IiJ9.yI8p6lxpJKdoIoi8FJRtG3OHN01kRW1DC5M-3GfdvXQ[0m
+2024-12-23 13:44:00 - my_app - [32mINFO[0m - [32mПользователь mail1 успешно авторизован[0m
+2024-12-23 13:44:06 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 13:44:06 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjY3LCJ1c2VybmFtZSI6Im1haWwxIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNDk1MjQ0MCwiY2l0eSI6IiJ9.yI8p6lxpJKdoIoi8FJRtG3OHN01kRW1DC5M-3GfdvXQ[0m
+2024-12-23 13:44:06 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Subject must be a string.[0m
+2024-12-23 13:44:26 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 13:44:26 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjY3LCJ1c2VybmFtZSI6Im1haWwxIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNDk1MjQ0MCwiY2l0eSI6IiJ9.yI8p6lxpJKdoIoi8FJRtG3OHN01kRW1DC5M-3GfdvXQ[0m
+2024-12-23 13:44:26 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Subject must be a string.[0m
+2024-12-23 13:46:48 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:46:48 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:46:48 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:46:48 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:46:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:47:01 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:47:01 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:47:01 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:47:01 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:47:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:47:18 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:47:18 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:47:18 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:47:18 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:47:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:47:38 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:47:38 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:47:38 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:47:38 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:47:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:47:58 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:47:58 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:47:58 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:47:58 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:47:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:48:13 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:48:13 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:48:13 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:48:13 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:48:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:48:29 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 13:48:29 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 13:48:29 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 13:48:29 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:48:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:50:01 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: mail1[0m
+2024-12-23 13:50:01 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя mail1[0m
+2024-12-23 13:50:01 - my_app - [32mINFO[0m - [32mПользователь mail1 найден, проверка пароля.[0m
+2024-12-23 13:50:01 - my_app - [32mINFO[0m - [32mПользователь mail1 успешно авторизован[0m
+2024-12-23 13:50:01 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 67, 'username': 'mail1', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2024-12-23 13:50:01 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NyIsInVzZXJuYW1lIjoibWFpbDEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM0OTUyODAxLCJjaXR5IjoiIn0.R1-6JlEFi9jhCSuGTJFMdqsCcQIBI7qV6cxpZV0pSN4[0m
+2024-12-23 13:50:01 - my_app - [32mINFO[0m - [32mПользователь mail1 успешно авторизован[0m
+2024-12-23 13:50:18 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-23 13:50:18 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NyIsInVzZXJuYW1lIjoibWFpbDEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM0OTUyODAxLCJjaXR5IjoiIn0.R1-6JlEFi9jhCSuGTJFMdqsCcQIBI7qV6cxpZV0pSN4[0m
+2024-12-23 13:50:18 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '67', 'username': 'mail1', 'role': 'master', 'city_id': 1901, 'exp': 1734952801, 'city': ''}[0m
+2024-12-23 13:50:18 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '67', 'username': 'mail1', 'role': 'master', 'city_id': 1901, 'exp': 1734952801, 'city': ''}[0m
+2024-12-23 13:50:18 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'mail1', 'user_id': '67', 'role': 'master', 'city_id': 1901}[0m
+2024-12-23 13:50:18 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'mail1', 'user_id': '67', 'role': 'master', 'city_id': 1901}[0m
+2024-12-23 13:50:18 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 67[0m
+2024-12-23 13:50:18 - my_app - [32mINFO[0m - [32mМастер создан с данными: {'user_id': '67', 'city_id': 1901, 'title': 'stri1ng', 'specialty': 'str1ing', 'description': 'str1ing', 'text': 'string1', 'experience_years': 10, 'slug': 'string1'}[0m
+2024-12-23 13:50:18 - my_app - [32mINFO[0m - [32mcreate_master: мастер с ID 1 успешно создан[0m

@@ -27,6 +27,11 @@ def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None
         "city": data.get("city", ""),  # Добавление города
         "role": data.get("role", ""),  # Роль пользователя
     })
+
+    # Ensure 'sub' is a string
+    if "sub" in to_encode:
+        to_encode["sub"] = str(to_encode["sub"])
+
     try:
         encoded_jwt = jwt.encode(to_encode, settings.JWT_SECRET_KEY, algorithm=settings.JWT_ALGORITHM)
         logger.info(f"JWT токен успешно создан: {encoded_jwt}")
@@ -34,6 +39,7 @@ def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None
     except Exception as e:
         logger.error(f"Ошибка при создании JWT токена: {e}")
         raise
+
 
 def decode_access_token(token: str) -> dict:
     """
@@ -45,6 +51,11 @@ def decode_access_token(token: str) -> dict:
     try:
         payload = jwt.decode(token, settings.JWT_SECRET_KEY, algorithms=[settings.JWT_ALGORITHM])
         logger.info(f"Токен успешно декодирован: {payload}")
+
+        # Ensure 'sub' is a string
+        if "sub" in payload:
+            payload["sub"] = str(payload["sub"])
+
         # Проверка на истечение срока действия
         if datetime.utcnow() > datetime.utcfromtimestamp(payload["exp"]):
             logger.warning("Токен истек.")
@@ -57,6 +68,7 @@ def decode_access_token(token: str) -> dict:
             detail="Недействительный токен",
             headers={"WWW-Authenticate": "Bearer"},
         )
+
 
 async def get_current_user(token: str = Depends(oauth2_scheme)) -> dict:
     logger.info(f"Получение текущего пользователя из токена.")
