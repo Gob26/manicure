@@ -2703,3 +2703,14 @@ AttributeError: 'MasterCreateSchema' object has no attribute 'city_name'
 2024-12-23 13:00:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2024-12-23 13:02:24 - my_app - [31mERROR[0m - [31mError message[0m
 2024-12-23 13:02:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:08:16 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:08:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:12:01 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:12:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:13:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:13:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:13:45 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:13:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:21:03 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 13:21:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 13:22:40 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Subject must be a string.[0m

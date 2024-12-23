@@ -12,6 +12,16 @@ class MasterCreateSchema(BaseModel):
     specialty: str = Field(..., max_length=255, title="Специализация", example="Маникюр и педикюр")
     slug: str = Field(..., max_length=255, title="Slug (уникальный идентификатор)", example="opytnyj-master")
 
+class MasterCreateInputSchema(BaseModel):
+    """
+    Схема для входящих данных на создание мастера.
+    """
+    title: str = Field(..., description="Название мастера")
+    specialty: str = Field(..., description="Специализация мастера")
+    description: Optional[str] = Field(None, description="Описание мастера")
+    text: Optional[str] = Field(None, description="Дополнительный текст")
+    experience_years: Optional[int] = Field(0, description="Опыт работы в годах")
+    slug: Optional[str] = Field(None, description="Уникальный идентификатор мастера")
 
 # Схема для обновления мастера
 class MasterUpdateSchema(BaseModel):
