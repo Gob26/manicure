@@ -4,11 +4,13 @@ from enum import Enum
 
 from db.models.abstract.abstract_model import AbstractModel
 
+
 # Перечисление ролей
 class UserRole(str, Enum):
     client = "client"
     master = "master"
     salon = "salon"
+    amin = "admin"
 
 # Модель пользователя
 class User(AbstractModel):

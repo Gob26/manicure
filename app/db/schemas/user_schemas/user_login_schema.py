@@ -1,9 +1,9 @@
-from tortoise.contrib.pydantic import pydantic_model_creator
-from db.models.user.user import User  # Импортируй свою модель User
+from pydantic import BaseModel, Field
 
-# Создаем Pydantic-схему на основе модели User
-UserLoginSchema = pydantic_model_creator(
-    User,
-    include=("username", "password"),  # Указываем поля, которые хотим использовать
-    name="UserLoginSchema"  # Задаем имя для Pydantic-схемы
-)
+# Схема для входа пользователя
+class UserLoginSchema(BaseModel):
+    username: str = Field(..., max_length=255, title="Имя пользователя", example="john_doe")
+    password: str = Field(..., min_length=8, title="Пароль", example="securepassword123")
+
+    class Config:
+        orm_mode = True  # Поддержка объектов Tortoise ORM
