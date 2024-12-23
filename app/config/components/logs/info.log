@@ -11068,3 +11068,136 @@ DETAIL:  Key (name)=(Фокино) already exists.[0m
 2024-12-20 10:30:12 - my_app - [33mWARNING[0m - [33mWarning message[0m
 2024-12-20 10:30:12 - my_app - [31mERROR[0m - [31mError message[0m
 2024-12-20 10:30:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 09:13:33 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 09:13:33 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 09:13:33 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 09:13:33 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 09:13:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 09:14:54 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: mail1[0m
+2024-12-23 09:14:54 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя mail1[0m
+2024-12-23 09:14:54 - my_app - [32mINFO[0m - [32mПользователь mail1 найден, проверка пароля.[0m
+2024-12-23 09:14:54 - my_app - [31mERROR[0m - [31mНеверный пароль для пользователя mail1[0m
+2024-12-23 09:14:54 - my_app - [31mERROR[0m - [31mОшибка при логине пользователя mail1: Неверный пароль[0m
+2024-12-23 09:15:45 - my_app - [32mINFO[0m - [32mРегистрация пользователя: mail111, город: Омск, роль: master[0m
+2024-12-23 09:15:45 - my_app - [32mINFO[0m - [32mПользователь mail111 пытается зарегистрироваться с городом Омск[0m
+2024-12-23 09:15:45 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2024-12-23 09:15:45 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2024-12-23 09:15:45 - my_app - [32mINFO[0m - [32mГород Омск найден, ID: 1901[0m
+2024-12-23 09:15:46 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=mail111, city_name=Омск, role=master[0m
+2024-12-23 09:15:46 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2024-12-23 09:15:46 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2024-12-23 09:15:46 - my_app - [32mINFO[0m - [32mПользователь mail111 создан в городе Омск с ролью master.[0m
+2024-12-23 09:15:46 - my_app - [32mINFO[0m - [32mПользователь mail111 успешно зарегистрирован.[0m
+2024-12-23 09:15:46 - my_app - [32mINFO[0m - [32mПользователь mail111 успешно зарегистрирован[0m
+2024-12-23 09:16:14 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: mail111[0m
+2024-12-23 09:16:14 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя mail111[0m
+2024-12-23 09:16:14 - my_app - [32mINFO[0m - [32mПользователь mail111 найден, проверка пароля.[0m
+2024-12-23 09:16:14 - my_app - [32mINFO[0m - [32mПользователь mail111 успешно авторизован[0m
+2024-12-23 09:55:04 - my_app - [32mINFO[0m - [32mПользователь с ID 1 пытается создать мастера Опытный мастер маникюра[0m
+2024-12-23 09:55:04 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/masters/masters_router.py", line 47, in create_master_route
+    city_name=master_data.city_name,
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/pydantic/main.py", line 892, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'MasterCreateSchema' object has no attribute 'city_name'
+2024-12-23 09:55:34 - my_app - [32mINFO[0m - [32mПользователь с ID 2 пытается создать мастера Опытный мастер маникюра[0m
+2024-12-23 09:55:34 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/masters/masters_router.py", line 47, in create_master_route
+    city_name=master_data.city_name,
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/pydantic/main.py", line 892, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'MasterCreateSchema' object has no attribute 'city_name'
+2024-12-23 10:00:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 10:00:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 10:00:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 10:00:56 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:00:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:00:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 10:00:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 10:00:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 10:00:56 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:00:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:01:55 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 10:01:55 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 10:01:55 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 10:01:55 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:01:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:01:55 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 10:01:55 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 10:01:55 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 10:01:55 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:01:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:02:36 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 10:02:36 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 10:02:36 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 10:02:36 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:02:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:02:36 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 10:02:36 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 10:02:36 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 10:02:36 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:02:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:03:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 10:03:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 10:03:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 10:03:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:03:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:03:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 10:03:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 10:03:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 10:03:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:03:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:04:14 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 10:04:14 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 10:04:14 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 10:04:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:04:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:04:14 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 10:04:14 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 10:04:14 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 10:04:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:04:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:14:09 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 10:14:09 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 10:14:09 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 10:14:09 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:14:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:15:21 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 10:15:21 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 10:15:21 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 10:15:21 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:15:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:16:21 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 10:16:21 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 10:16:21 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 10:16:21 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:16:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:18:00 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 10:18:00 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 10:18:00 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 10:18:00 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:18:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:18:38 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 10:18:38 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 10:18:38 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 10:18:38 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:18:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:18:57 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: mail1[0m
+2024-12-23 10:18:57 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя mail1[0m
+2024-12-23 10:18:57 - my_app - [32mINFO[0m - [32mПользователь mail1 найден, проверка пароля.[0m
+2024-12-23 10:18:57 - my_app - [32mINFO[0m - [32mПользователь mail1 успешно авторизован[0m
+2024-12-23 10:18:57 - my_app - [31mERROR[0m - [31mСерверная ошибка при логине пользователя mail1: 'Settings' object has no attribute 'JWT_ACCESS_TOKEN_EXPIRE_MINUTES'[0m
+2024-12-23 10:20:09 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-23 10:20:09 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-23 10:20:09 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-23 10:20:09 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:20:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:20:17 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: mail1[0m
+2024-12-23 10:20:17 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя mail1[0m
+2024-12-23 10:20:17 - my_app - [32mINFO[0m - [32mПользователь mail1 найден, проверка пароля.[0m
+2024-12-23 10:20:17 - my_app - [32mINFO[0m - [32mПользователь mail1 успешно авторизован[0m
+2024-12-23 10:20:17 - my_app - [32mINFO[0m - [32mПользователь mail1 успешно авторизован[0m

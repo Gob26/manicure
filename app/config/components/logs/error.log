@@ -2637,3 +2637,56 @@ DETAIL:  Key (name)=(Фокино) already exists.[0m
 2024-12-20 10:30:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2024-12-20 10:30:12 - my_app - [31mERROR[0m - [31mError message[0m
 2024-12-20 10:30:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 09:13:33 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 09:13:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 09:14:54 - my_app - [31mERROR[0m - [31mНеверный пароль для пользователя mail1[0m
+2024-12-23 09:14:54 - my_app - [31mERROR[0m - [31mОшибка при логине пользователя mail1: Неверный пароль[0m
+2024-12-23 09:55:04 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/masters/masters_router.py", line 47, in create_master_route
+    city_name=master_data.city_name,
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/pydantic/main.py", line 892, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'MasterCreateSchema' object has no attribute 'city_name'
+2024-12-23 09:55:34 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/masters/masters_router.py", line 47, in create_master_route
+    city_name=master_data.city_name,
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/pydantic/main.py", line 892, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'MasterCreateSchema' object has no attribute 'city_name'
+2024-12-23 10:00:56 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:00:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:00:56 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:00:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:01:55 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:01:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:01:55 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:01:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:02:36 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:02:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:02:36 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:02:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:03:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:03:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:03:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:03:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:04:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:04:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:04:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:04:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:14:09 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:14:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:15:21 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:15:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:16:21 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:16:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:18:00 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:18:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:18:38 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:18:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-23 10:18:57 - my_app - [31mERROR[0m - [31mСерверная ошибка при логине пользователя mail1: 'Settings' object has no attribute 'JWT_ACCESS_TOKEN_EXPIRE_MINUTES'[0m
+2024-12-23 10:20:09 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-23 10:20:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
