@@ -6,14 +6,19 @@ from tortoise.functions import Count
 from db.models.salon_models.salon_model import Salon
 from db.repositories.base_repositories.base_repositories import BaseRepository
 from db.schemas.salon_schemas.salon_schemas import SalonCreateSchema, SalonUpdateSchema
+from config.components.logging_config import logger
+
 
 class SalonRepository(BaseRepository):
     model = Salon
 
     @classmethod
-    async def create_salon(cls, schema: SalonCreateSchema) -> Salon:
-        """Создание нового салона"""
-        return await cls.create(**schema.dict())
+    async def create_salon(cls, **kwargs: Any) -> Salon:
+        """Создание нового салона!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"""
+        salon = await cls.create(**kwargs)
+        logger.info(f"Салон создан с данными: {kwargs}")
+
+        return salon
 
     @classmethod
     async def update_salon(cls, salon_id: int, schema: SalonUpdateSchema) -> Optional[Salon]:

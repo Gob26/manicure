@@ -3020,3 +3020,7 @@ AttributeError: 'MasterCreateSchema' object has no attribute 'city_name'
 2024-12-24 11:44:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2024-12-24 11:59:09 - my_app - [31mERROR[0m - [31mError message[0m
 2024-12-24 11:59:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 13:19:07 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 13:19:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 13:19:07 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 13:19:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
