@@ -19,6 +19,11 @@ class SalonRepository(BaseRepository):
         logger.info(f"Салон создан с данными: {kwargs}")
 
         return salon
+    
+    @classmethod
+    async def get_salon_by_user_id(cls, user_id: int) -> Optional[Salon]:
+        """Получение салона по ID пользователя!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"""
+        return await cls.get_or_none(user_id=user_id)
 
     @classmethod
     async def update_salon(cls, salon_id: int, schema: SalonUpdateSchema) -> Optional[Salon]:

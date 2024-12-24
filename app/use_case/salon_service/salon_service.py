@@ -9,20 +9,35 @@ from config.components.logging_config import logger
 class SalonService:
     @staticmethod
     async def create_salon(
-        user_id: int,
+        current_user: dict,  # Добавляем city и user_id через токен
         title: str,
-        description: Optional[str] = None,
         name: str,
         address: str,
-        text: Optional[str] = None,
         slug: Optional[str] = None,
-        ):
-        try:
+        description: Optional[str] = None,
+        text: Optional[str] = None,      
+    ) -> dict:
+        """
+        Создание салона с использованием текущего пользователя.
+        """
+        logger.debug(f"create_salon: старт создания салона для пользователя ID {user_id}")
+
+        # Проверка на наличие салона
+        existing_salon = await SalonRepository.get_salon_by_id(user_id)
+        if existing_salon:
+            raise ValueError(f"Салон уже создан для пользователя с ID {user_id}")
+
+        if not slug:
             slug = await generate_unique_slug(Salon, name)
-            salon = await SalonRepository.create_salon(name, city, description)
-            salon.slug = slug
-            await salon.save()
-            return salon
-        except Exception as e:
-            logger.error(f"Error creating salon: {e}")
-            raise
+
+        # Создаем салон
+        salon = await SalonRepository.create_salon(
+            user_id=current_user["user_id"],
+            city=city,
+            title=title,
+            name=name,
+            address=address,
+            slug=slug,
+            description=description,
+            text=text
+        )
