@@ -4,6 +4,7 @@ from use_case.master_service.master_service import MasterService
 from db.schemas.master_schemas.master_schemas import MasterCreateInputSchema, MasterCreateSchema
 from config.components.logging_config import logger
 
+
 master_router = APIRouter()
 
 @master_router.post(

@@ -6,8 +6,16 @@ from db.models.salon_models.salon_master_relation import SalonMasterRelation
 from db.models.salon_models.salon_master_invitation import SalonMasterInvitation
 
 class Salon(AbstractModel):
+    # Связь с городом
+    city = fields.ForeignKeyField(
+        "server.City",
+        related_name="salons",
+        on_delete=fields.SET_NULL,
+        null=True,
+        help_text="Город, в котором находится салон",
+    )
     # Связь с пользователем
-    user = fields.OneToOneField("server.User", related_name='salon', on_delete=fields.CASCADE)
+    user = fields.OneToOneField('server.User', related_name='salon', on_delete=fields.CASCADE)
     
     # Основная информация
     name = fields.CharField(max_length=255)
@@ -15,7 +23,6 @@ class Salon(AbstractModel):
     slug = fields.CharField(max_length=255, unique=False, null=False)
     
     # Информация о местоположении
-    city = fields.CharField(max_length=255, null=False)  # Город
     address = fields.CharField(max_length=255)  # Адрес
     
     # Поля с контентом

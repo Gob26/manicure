@@ -16,6 +16,19 @@ class SalonCreateSchema(BaseModel):
     description: Optional[str] = Field(None, title="Описание", example="Мы предоставляем высококачественные услуги красоты.")
     text: Optional[str] = Field(None, title="Дополнительная информация", example="Подробности о салоне.")
 
+# Схема для создания салона без city и user_id
+class SalonCreateInputSchema(BaseModel):
+    name: str = Field(..., max_length=255, title="Название", example="Салон Антуриум")
+    title: str = Field(..., max_length=255, title="Заголовок", example="Лучший салон красоты")
+    slug: str = Field(..., max_length=255, title="Slug (уникальный идентификатор)", example="salon-anturium")
+    
+    # Поля местоположения
+    address: str = Field(..., max_length=255, title="Адрес", example="ул. Большая Филёвская, 21к1")
+    
+    # Опциональные поля с контентом
+    description: Optional[str] = Field(None, title="Описание", example="Мы предоставляем высококачественные услуги красоты.")
+    text: Optional[str] = Field(None, title="Дополнительная информация", example="Подробности о салоне.")
+
 # Схема для обновления салона
 class SalonUpdateSchema(BaseModel):
     # Основная информация
