@@ -20,6 +20,7 @@ class SalonService:
         """
         Создание салона с использованием текущего пользователя.
         """
+        user_id = current_user["user_id"]
         logger.debug(f"create_salon: старт создания салона для пользователя ID {user_id}")
 
         # Проверка на наличие салона
@@ -32,8 +33,8 @@ class SalonService:
 
         # Создаем салон
         salon = await SalonRepository.create_salon(
-            user_id=current_user["user_id"],
-            city=city,
+            user_id=current_user["user_id"],# Пользователь из токена
+            city=current_user["city_id"],  # Город из токена
             title=title,
             name=name,
             address=address,
@@ -41,3 +42,15 @@ class SalonService:
             description=description,
             text=text
         )
+
+        logger.info(f"create_salon: салон c ID {salon.id} создан для пользователя ID {user_id}")
+        return {
+            "user_id": salon.user_id,
+            "name": salon.name,
+            "title": salon.title,
+            "slug": salon.slug,
+            "city": salon.city,
+            "address": salon.address,
+            "description": salon.description,
+            "text": salon.text
+        }
