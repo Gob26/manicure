@@ -1,113 +1,99 @@
-from typing import Optional, List, Union
-from tortoise.exceptions import DoesNotExist
-from tortoise.transactions import in_transaction
-
+from typing import Optional, List, Union, Any
 from db.models.services_models.service_custom_model import CustomService
 from db.models.master_models.master_model import Master
 from db.models.location.city import City
+from db.repositories.base_repositories.base_repositories import BaseRepository
 from config.components.logging_config import logger
 
 
-class MasterRepository:
-    @staticmethod
-    async def get_master_by_id(master_id: int) -> Optional[Master]:
-        """Получение мастера по ID."""
-        try:
-            return await Master.get(id=master_id).prefetch_related("user", "services", "city", "applications", "relations")
-        except DoesNotExist:
-            logger.info(f"Мастер с ID {master_id} не найден.")
-            return None
+class MasterRepository(BaseRepository):
+    model = Master
 
-    @staticmethod
-    async def get_all_masters(limit: int = 10, offset: int = 0) -> List[Master]:
-        """Получение всех мастеров с пагинацией."""
-        return await Master.all().offset(offset).limit(limit).prefetch_related("city", "user", "relations", "services")
-
-    @staticmethod
-    async def create_master(**kwargs) -> Master:
-        """Создание мастера."""
-        master = await Master.create(**kwargs)
+    @classmethod
+    async def create_master(cls, **kwargs: Any) -> Master:
+        """Создание мастера с использованием базового метода."""
+        master = await cls.create(**kwargs)
         logger.info(f"Мастер создан с данными: {kwargs}")
         return master
 
-    @staticmethod
-    async def is_slug_used(slug: str) -> bool:
+    @classmethod
+    async def get_master_by_id(cls, master_id: int) -> Optional[Master]:
+        """Получение мастера по ID в одной таблице."""
+        return await cls.get_by_id(master_id)
+
+    @classmethod
+    async def get_master_by_id_all(cls, master_id: int) -> Optional[Master]:
+        """Получение мастера по ID загружая связанные объекты."""
+        return await cls.get_by_id_with_related(
+            master_id,
+            "user", "services", "city", "applications", "relations"
+        )
+
+#    @classmethod
+ #   async def get_all_masters(cls, limit: int = 10, offset: int = 0) -> List[Master]:
+  #      """Получение всех мастеров с пагинацией."""
+   #     return await cls.get_all(
+    #        limit=limit,
+     #       offset=offset,
+      #      "city", "user", "relations", "services"
+       # )
+
+    @classmethod
+    async def is_slug_used(cls, slug: str) -> bool:
         """Проверка, используется ли slug."""
-        slug_exists = await Master.filter(slug=slug).exists()
-        logger.debug(f"Slug '{slug}' используется: {slug_exists}")
-        return slug_exists
+        return await cls.exists(slug=slug)
 
-    @staticmethod
-    async def get_master_by_user_id(user_id: int) -> Optional[Master]:
+    @classmethod
+    async def get_master_by_user_id(cls, user_id: int) -> Optional[Master]:
         """Получение мастера по ID пользователя."""
-        return await Master.filter(user_id=user_id).first()
+        return await cls.get_or_none(user_id=user_id)
 
-    @staticmethod
-    async def get_masters_by_city(city: City, limit: int = 10, offset: int = 0) -> List[Master]:
+    @classmethod
+    async def get_masters_by_city(cls, city: City, limit: int = 10, offset: int = 0) -> List[Master]:
         """Получить мастеров по городу."""
-        return await Master.filter(city=city).offset(offset).limit(limit).prefetch_related("services", "user")
+        return await cls.filter(
+            limit=limit,
+            offset=offset,
+            city=city
+        )
 
-    @staticmethod
-    async def update_master(master_id: int, **kwargs) -> Union[Master, None]:
-        """Обновление данных мастера."""
-        async with in_transaction() as conn:
-            updated = await Master.filter(id=master_id).using_db(conn).update(**kwargs)
-            if updated:
-                logger.info(f"Мастер с ID {master_id} обновлен с данными: {kwargs}")
-                return await Master.get(id=master_id)
-            else:
-                logger.warning(f"Не удалось обновить мастера с ID {master_id}.")
-                return None
-
-    @staticmethod
-    async def delete_master(master_id: int) -> int:
-        """Удаление мастера."""
-        deleted_count = await Master.filter(id=master_id).delete()
-        logger.info(f"Удалено мастеров с ID {master_id}: {deleted_count}")
-        return deleted_count
-
-    @staticmethod
-    async def get_masters_with_specialty(specialty: str, limit: int = 10, offset: int = 0) -> List[Master]:
+    @classmethod
+    async def get_masters_with_specialty(cls, specialty: str, limit: int = 10, offset: int = 0) -> List[Master]:
         """Получение мастеров по специализации."""
-        return await Master.filter(specialty__icontains=specialty).offset(offset).limit(limit)
+        return await cls.filter(
+            limit=limit,
+            offset=offset,
+            specialty__icontains=specialty
+        )
 
-    @staticmethod
-    async def add_service_to_master(master_id: int, service_id: int) -> bool:
+    @classmethod
+    async def add_service_to_master(cls, master_id: int, service_id: int) -> bool:
         """Добавление услуги мастеру."""
         try:
-            master = await Master.get(id=master_id)
+            master = await cls.get_by_id(master_id)
             service = await CustomService.get(id=service_id)
-            await master.services.add(service)
-            logger.info(f"Услуга {service_id} добавлена мастеру {master_id}.")
-            return True
-        except DoesNotExist:
-            logger.error(f"Мастер {master_id} или услуга {service_id} не найдены.")
+            if master and service:
+                await master.services.add(service)
+                logger.info(f"Услуга {service_id} добавлена мастеру {master_id}.")
+                return True
+            return False
+        except Exception as e:
+            logger.error(f"Ошибка при добавлении услуги {service_id} мастеру {master_id}: {e}")
             return False
 
-    @staticmethod
-    async def get_master_applications(master_id: int) -> List:
+    @classmethod
+    async def get_master_applications(cls, master_id: int) -> List:
         """Получение всех заявок мастера."""
-        try:
-            master = await Master.get(id=master_id).prefetch_related("applications")
-            return await master.applications.all()
-        except DoesNotExist:
-            logger.warning(f"Мастер с ID {master_id} не найден.")
-            return []
+        master = await cls.get_by_id_with_related(master_id, "applications")
+        return await master.applications.all() if master else []
 
-    @staticmethod
-    async def get_related_salon_masters(master_id: int) -> List:
+    @classmethod
+    async def get_related_salon_masters(cls, master_id: int) -> List:
         """Получение связей мастера с салонами."""
-        try:
-            master = await Master.get(id=master_id).prefetch_related("relations")
-            return await master.relations.all()
-        except DoesNotExist:
-            logger.warning(f"Мастер с ID {master_id} не найден.")
-            return []
+        master = await cls.get_by_id_with_related(master_id, "relations")
+        return await master.relations.all() if master else []
 
-    @staticmethod
-    async def bulk_create_masters(masters_data: List[dict]) -> List[Master]:
+    @classmethod
+    async def bulk_create_masters(cls, masters_data: List[dict]) -> List[Master]:
         """Массовое создание мастеров."""
-        async with in_transaction() as conn:
-            masters = await Master.bulk_create([Master(**data) for data in masters_data], batch_size=100)
-            logger.info(f"Создано {len(masters)} мастеров.")
-            return masters
+        return await cls.bulk_create(masters_data)

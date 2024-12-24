@@ -1,42 +1,56 @@
 from pydantic import BaseModel, Field
 from typing import Optional, List
 
-
 # Схема для создания салона
 class SalonCreateSchema(BaseModel):
     user_id: int = Field(..., title="ID пользователя", example=1)
-    title: str = Field(..., max_length=255, title="Заголовок", example="Лучший салон красоты")
-    description: Optional[str] = Field(None, title="Описание", example="Мы предоставляем высококачественные услуги красоты.")
     name: str = Field(..., max_length=255, title="Название", example="Салон Антуриум")
-    address: str = Field(..., max_length=255, title="Адрес", example="ул. Большая Филёвская, 21к1")
-    text: Optional[str] = Field(None, title="Дополнительная информация", example="Подробности о салоне.")
+    title: str = Field(..., max_length=255, title="Заголовок", example="Лучший салон красоты")
     slug: str = Field(..., max_length=255, title="Slug (уникальный идентификатор)", example="salon-anturium")
-
+    
+    # Поля местоположения
+    city: str = Field(..., max_length=255, title="Город", example="Москва")
+    address: str = Field(..., max_length=255, title="Адрес", example="ул. Большая Филёвская, 21к1")
+    
+    # Опциональные поля с контентом
+    description: Optional[str] = Field(None, title="Описание", example="Мы предоставляем высококачественные услуги красоты.")
+    text: Optional[str] = Field(None, title="Дополнительная информация", example="Подробности о салоне.")
 
 # Схема для обновления салона
 class SalonUpdateSchema(BaseModel):
-    title: Optional[str] = Field(None, max_length=255, title="Заголовок", example="Обновленный салон красоты")
-    description: Optional[str] = Field(None, title="Описание", example="Измененное описание салона.")
+    # Основная информация
     name: Optional[str] = Field(None, max_length=255, title="Название", example="Новый Антуриум")
-    address: Optional[str] = Field(None, max_length=255, title="Адрес", example="ул. Новый Адрес, 10")
-    text: Optional[str] = Field(None, title="Дополнительная информация", example="Обновленная информация о салоне.")
+    title: Optional[str] = Field(None, max_length=255, title="Заголовок", example="Обновленный салон красоты")
     slug: Optional[str] = Field(None, max_length=255, title="Slug", example="new-salon-anturium")
-
+    
+    # Поля местоположения
+    city: Optional[str] = Field(None, max_length=255, title="Город", example="Санкт-Петербург")
+    address: Optional[str] = Field(None, max_length=255, title="Адрес", example="ул. Новый Адрес, 10")
+    
+    # Поля с контентом
+    description: Optional[str] = Field(None, title="Описание", example="Измененное описание салона.")
+    text: Optional[str] = Field(None, title="Дополнительная информация", example="Обновленная информация о салоне.")
 
 # Схема для отображения салона
 class SalonOutSchema(BaseModel):
     id: int
     user_id: int
-    title: str
-    description: Optional[str]
+    
+    # Основная информация
     name: str
-    address: str
-    text: Optional[str]
+    title: str
     slug: str
+    
+    # Информация о местоположении
+    city: str
+    address: str
+    
+    # Контент
+    description: Optional[str]
+    text: Optional[str]
 
     class Config:
         orm_mode = True  # Поддержка работы с объектами Tortoise ORM
-
 
 # Полная информация о салоне (включая связанные данные)
 class SalonFullSchema(BaseModel):
