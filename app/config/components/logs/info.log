@@ -13073,3 +13073,1827 @@ AttributeError: 'MasterCreateSchema' object has no attribute 'city_name'
 2024-12-24 17:33:38 - my_app - [34mDEBUG[0m - [34mcreate_salon: старт создания салона для пользователя ID 81[0m
 2024-12-24 17:33:38 - my_app - [32mINFO[0m - [32mSalon с ID 81 не найден.[0m
 2024-12-24 17:33:38 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании салона: 'int' object has no attribute '_saved_in_db'[0m
+2024-12-24 17:49:46 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 17:49:46 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 17:49:46 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 17:49:46 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 17:49:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 17:50:02 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 17:50:02 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 17:50:02 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 17:50:02 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 17:50:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 17:50:08 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 17:50:08 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 17:50:08 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 17:50:08 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 17:50:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 17:50:18 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 17:50:18 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 17:50:18 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 17:50:18 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 17:50:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 17:50:46 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: salon[0m
+2024-12-24 17:50:46 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя salon[0m
+2024-12-24 17:50:46 - my_app - [32mINFO[0m - [32mПользователь salon найден, проверка пароля.[0m
+2024-12-24 17:50:46 - my_app - [32mINFO[0m - [32mПользователь salon успешно авторизован[0m
+2024-12-24 17:50:46 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 81, 'username': 'salon', 'role': <UserRole.salon: 'salon'>, 'city_id': 2104}[0m
+2024-12-24 17:50:46 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MSIsInVzZXJuYW1lIjoic2Fsb24iLCJyb2xlIjoic2Fsb24iLCJjaXR5X2lkIjoyMTA0LCJleHAiOjE3MzUwNTM2NDYsImNpdHkiOiIifQ.GzF2UyqHjmdA9jLMaeqvpSzrn2v8Gwbp2Z_3is2Hq3M[0m
+2024-12-24 17:50:46 - my_app - [32mINFO[0m - [32mПользователь salon успешно авторизован[0m
+2024-12-24 17:50:51 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-24 17:50:51 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MSIsInVzZXJuYW1lIjoic2Fsb24iLCJyb2xlIjoic2Fsb24iLCJjaXR5X2lkIjoyMTA0LCJleHAiOjE3MzUwNTM2NDYsImNpdHkiOiIifQ.GzF2UyqHjmdA9jLMaeqvpSzrn2v8Gwbp2Z_3is2Hq3M[0m
+2024-12-24 17:50:51 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '81', 'username': 'salon', 'role': 'salon', 'city_id': 2104, 'exp': 1735053646, 'city': ''}[0m
+2024-12-24 17:50:51 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '81', 'username': 'salon', 'role': 'salon', 'city_id': 2104, 'exp': 1735053646, 'city': ''}[0m
+2024-12-24 17:50:51 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon', 'user_id': '81', 'role': 'salon', 'city_id': 2104}[0m
+2024-12-24 17:50:51 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon', 'user_id': '81', 'role': 'salon', 'city_id': 2104}[0m
+2024-12-24 17:50:51 - my_app - [34mDEBUG[0m - [34mcreate_salon: старт создания салона для пользователя ID 81[0m
+2024-12-24 17:50:51 - my_app - [32mINFO[0m - [32mSalon с ID 81 не найден.[0m
+2024-12-24 17:50:51 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании салона: 'int' object has no attribute '_saved_in_db'[0m
+2024-12-24 17:51:10 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 17:51:10 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 17:51:10 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 17:51:10 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 17:51:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 17:52:37 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-24 17:52:37 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MSIsInVzZXJuYW1lIjoic2Fsb24iLCJyb2xlIjoic2Fsb24iLCJjaXR5X2lkIjoyMTA0LCJleHAiOjE3MzUwNTM2NDYsImNpdHkiOiIifQ.GzF2UyqHjmdA9jLMaeqvpSzrn2v8Gwbp2Z_3is2Hq3M[0m
+2024-12-24 17:52:37 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '81', 'username': 'salon', 'role': 'salon', 'city_id': 2104, 'exp': 1735053646, 'city': ''}[0m
+2024-12-24 17:52:37 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '81', 'username': 'salon', 'role': 'salon', 'city_id': 2104, 'exp': 1735053646, 'city': ''}[0m
+2024-12-24 17:52:37 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon', 'user_id': '81', 'role': 'salon', 'city_id': 2104}[0m
+2024-12-24 17:52:37 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon', 'user_id': '81', 'role': 'salon', 'city_id': 2104}[0m
+2024-12-24 17:52:37 - my_app - [34mDEBUG[0m - [34mcreate_salon: старт создания салона для пользователя ID 81[0m
+2024-12-24 17:52:37 - my_app - [32mINFO[0m - [32mSalon с ID 81 не найден.[0m
+2024-12-24 17:52:37 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании салона: 'int' object has no attribute '_saved_in_db'[0m
+2024-12-24 18:13:39 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 18:13:39 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 18:13:39 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 18:13:39 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 18:13:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 18:14:45 - my_app - [32mINFO[0m - [32mРегистрация пользователя: salon1, город: Москва, роль: salon[0m
+2024-12-24 18:14:45 - my_app - [32mINFO[0m - [32mПользователь salon1 пытается зарегистрироваться с городом Москва[0m
+2024-12-24 18:14:45 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Москва'[0m
+2024-12-24 18:14:45 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1795>[0m
+2024-12-24 18:14:45 - my_app - [32mINFO[0m - [32mГород Москва найден, ID: 1795[0m
+2024-12-24 18:14:45 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=salon1, city_name=Москва, role=salon[0m
+2024-12-24 18:14:45 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Москва'[0m
+2024-12-24 18:14:45 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1795>[0m
+2024-12-24 18:14:45 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'username': 'salon1'} существует: False[0m
+2024-12-24 18:14:45 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'email': 'salon1@salon1.ru'} существует: False[0m
+2024-12-24 18:14:45 - my_app - [32mINFO[0m - [32mUser создан с данными: {'username': 'salon1', 'email': 'salon1@salon1.ru', 'password': '$2b$12$B1C59Ism5Y19b2QU757bGOFr0uQBHb5NDlF6dmKBbyDDD2FLFpmlu', 'city': <City: 1795>, 'role': 'salon'}[0m
+2024-12-24 18:14:45 - my_app - [32mINFO[0m - [32mПользователь salon1 успешно зарегистрирован.[0m
+2024-12-24 18:14:45 - my_app - [32mINFO[0m - [32mПользователь salon1 успешно зарегистрирован[0m
+2024-12-24 18:14:58 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: salon1[0m
+2024-12-24 18:14:58 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя salon1[0m
+2024-12-24 18:14:58 - my_app - [32mINFO[0m - [32mПользователь salon1 найден, проверка пароля.[0m
+2024-12-24 18:14:58 - my_app - [32mINFO[0m - [32mПользователь salon1 успешно авторизован[0m
+2024-12-24 18:14:58 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 82, 'username': 'salon1', 'role': <UserRole.salon: 'salon'>, 'city_id': 1795}[0m
+2024-12-24 18:14:58 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MiIsInVzZXJuYW1lIjoic2Fsb24xIiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM1MDU1MDk4LCJjaXR5IjoiIn0.NlEb0jZW19-E5ZCtXorilIzf2Qh5MXw041aklQCWKfQ[0m
+2024-12-24 18:14:58 - my_app - [32mINFO[0m - [32mПользователь salon1 успешно авторизован[0m
+2024-12-24 18:15:33 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-24 18:15:33 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MiIsInVzZXJuYW1lIjoic2Fsb24xIiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM1MDU1MDk4LCJjaXR5IjoiIn0.NlEb0jZW19-E5ZCtXorilIzf2Qh5MXw041aklQCWKfQ[0m
+2024-12-24 18:15:33 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1735055098, 'city': ''}[0m
+2024-12-24 18:15:33 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1735055098, 'city': ''}[0m
+2024-12-24 18:15:33 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:15:33 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:15:33 - my_app - [34mDEBUG[0m - [34mcreate_salon: старт создания салона для пользователя ID 82[0m
+2024-12-24 18:15:33 - my_app - [32mINFO[0m - [32mSalon с ID 82 не найден.[0m
+2024-12-24 18:15:33 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'salon-anturium'[0m
+2024-12-24 18:15:33 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании салона: 'int' object has no attribute '_saved_in_db'[0m
+2024-12-24 18:20:12 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 18:20:12 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 18:20:12 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 18:20:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 18:20:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 18:20:24 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-24 18:20:24 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MiIsInVzZXJuYW1lIjoic2Fsb24xIiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM1MDU1MDk4LCJjaXR5IjoiIn0.NlEb0jZW19-E5ZCtXorilIzf2Qh5MXw041aklQCWKfQ[0m
+2024-12-24 18:20:24 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1735055098, 'city': ''}[0m
+2024-12-24 18:20:24 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1735055098, 'city': ''}[0m
+2024-12-24 18:20:24 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:20:24 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:20:24 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 82[0m
+2024-12-24 18:20:24 - my_app - [32mINFO[0m - [32mSalon с ID 82 не найден.[0m
+2024-12-24 18:20:24 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'salon-anturium'[0m
+2024-12-24 18:20:24 - my_app - [32mINFO[0m - [32mSalon создан с данными: {'user_id': '82', 'city_id': 1795, 'title': 'Лучший салон красоты', 'name': 'Салон Антуриум', 'address': 'ул. Большая Филёвская, 21к1', 'slug': 'salon-anturium', 'description': 'Мы предоставляем высококачественные услуги красоты.', 'text': 'Подробности о салоне.'}[0m
+2024-12-24 18:20:24 - my_app - [32mINFO[0m - [32mСалон создан с данными: {'user_id': '82', 'city_id': 1795, 'title': 'Лучший салон красоты', 'name': 'Салон Антуриум', 'address': 'ул. Большая Филёвская, 21к1', 'slug': 'salon-anturium', 'description': 'Мы предоставляем высококачественные услуги красоты.', 'text': 'Подробности о салоне.'}[0m
+2024-12-24 18:20:24 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании салона: name 'user_id' is not defined[0m
+2024-12-24 18:22:00 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 18:22:00 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 18:22:00 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 18:22:00 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 18:22:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 18:22:02 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-24 18:22:02 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MiIsInVzZXJuYW1lIjoic2Fsb24xIiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM1MDU1MDk4LCJjaXR5IjoiIn0.NlEb0jZW19-E5ZCtXorilIzf2Qh5MXw041aklQCWKfQ[0m
+2024-12-24 18:22:02 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1735055098, 'city': ''}[0m
+2024-12-24 18:22:02 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1735055098, 'city': ''}[0m
+2024-12-24 18:22:02 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:22:02 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:22:02 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 82[0m
+2024-12-24 18:22:02 - my_app - [32mINFO[0m - [32mSalon с ID 82 не найден.[0m
+2024-12-24 18:22:02 - my_app - [34mDEBUG[0m - [34mSlug 'salon-anturium' already exists. Trying 'salon-anturium-1'[0m
+2024-12-24 18:22:02 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'salon-anturium-1'[0m
+2024-12-24 18:22:02 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании салона: duplicate key value violates unique constraint "salon_user_id_key"
+DETAIL:  Key (user_id)=(82) already exists.[0m
+2024-12-24 18:23:06 - my_app - [32mINFO[0m - [32mРегистрация пользователя: salon3, город: Омск, роль: salon[0m
+2024-12-24 18:23:06 - my_app - [32mINFO[0m - [32mПользователь salon3 пытается зарегистрироваться с городом Омск[0m
+2024-12-24 18:23:06 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2024-12-24 18:23:06 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2024-12-24 18:23:06 - my_app - [32mINFO[0m - [32mГород Омск найден, ID: 1901[0m
+2024-12-24 18:23:07 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=salon3, city_name=Омск, role=salon[0m
+2024-12-24 18:23:07 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2024-12-24 18:23:07 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2024-12-24 18:23:07 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'username': 'salon3'} существует: False[0m
+2024-12-24 18:23:07 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'email': 'salon3@salon3.ru'} существует: False[0m
+2024-12-24 18:23:07 - my_app - [32mINFO[0m - [32mUser создан с данными: {'username': 'salon3', 'email': 'salon3@salon3.ru', 'password': '$2b$12$6GBTCULvy3oNfjDYigWm1um4sozYuI2Qh6jaGyXMsy0bsoazipGfW', 'city': <City: 1901>, 'role': 'salon'}[0m
+2024-12-24 18:23:07 - my_app - [32mINFO[0m - [32mПользователь salon3 успешно зарегистрирован.[0m
+2024-12-24 18:23:07 - my_app - [32mINFO[0m - [32mПользователь salon3 успешно зарегистрирован[0m
+2024-12-24 18:23:14 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: salon3[0m
+2024-12-24 18:23:14 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя salon3[0m
+2024-12-24 18:23:14 - my_app - [32mINFO[0m - [32mПользователь salon3 найден, проверка пароля.[0m
+2024-12-24 18:23:14 - my_app - [32mINFO[0m - [32mПользователь salon3 успешно авторизован[0m
+2024-12-24 18:23:14 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 83, 'username': 'salon3', 'role': <UserRole.salon: 'salon'>, 'city_id': 1901}[0m
+2024-12-24 18:23:14 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MyIsInVzZXJuYW1lIjoic2Fsb24zIiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM1MDU1NTk0LCJjaXR5IjoiIn0.MZaajRUBLPn6dINVyd8p0OfFPYf1MNe0bSBTIL38Kkk[0m
+2024-12-24 18:23:14 - my_app - [32mINFO[0m - [32mПользователь salon3 успешно авторизован[0m
+2024-12-24 18:24:18 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-24 18:24:18 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MyIsInVzZXJuYW1lIjoic2Fsb24zIiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM1MDU1NTk0LCJjaXR5IjoiIn0.MZaajRUBLPn6dINVyd8p0OfFPYf1MNe0bSBTIL38Kkk[0m
+2024-12-24 18:24:18 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '83', 'username': 'salon3', 'role': 'salon', 'city_id': 1901, 'exp': 1735055594, 'city': ''}[0m
+2024-12-24 18:24:18 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '83', 'username': 'salon3', 'role': 'salon', 'city_id': 1901, 'exp': 1735055594, 'city': ''}[0m
+2024-12-24 18:24:18 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon3', 'user_id': '83', 'role': 'salon', 'city_id': 1901}[0m
+2024-12-24 18:24:18 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon3', 'user_id': '83', 'role': 'salon', 'city_id': 1901}[0m
+2024-12-24 18:24:18 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 83[0m
+2024-12-24 18:24:18 - my_app - [32mINFO[0m - [32mSalon с ID 83 не найден.[0m
+2024-12-24 18:24:18 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'salon-noga'[0m
+2024-12-24 18:24:18 - my_app - [32mINFO[0m - [32mSalon создан с данными: {'user_id': '83', 'city_id': 1901, 'title': 'Лучший салон красоты в Омске', 'name': 'Салон Нога', 'address': 'ул. Большая Ноговая, 21к1', 'slug': 'salon-noga', 'description': 'Мы предоставляем высококачественные услуги маникюра.', 'text': 'Подробности на сайте.'}[0m
+2024-12-24 18:24:18 - my_app - [32mINFO[0m - [32mСалон создан с данными: {'user_id': '83', 'city_id': 1901, 'title': 'Лучший салон красоты в Омске', 'name': 'Салон Нога', 'address': 'ул. Большая Ноговая, 21к1', 'slug': 'salon-noga', 'description': 'Мы предоставляем высококачественные услуги маникюра.', 'text': 'Подробности на сайте.'}[0m
+2024-12-24 18:24:18 - my_app - [32mINFO[0m - [32mcreate_salon: салон c ID 3 успешно создан[0m
+2024-12-24 18:34:15 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 18:34:15 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 18:34:15 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 18:34:15 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 18:34:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 18:35:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 18:35:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 18:35:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 18:35:52 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 18:35:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 18:36:14 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 18:36:14 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 18:36:14 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 18:36:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 18:36:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 18:36:32 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 18:36:32 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 18:36:32 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 18:36:32 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 18:36:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 18:38:49 - my_app - [32mINFO[0m - [32mРегистрация пользователя: salon5, город: Москва, роль: salon[0m
+2024-12-24 18:38:49 - my_app - [32mINFO[0m - [32mПользователь salon5 пытается зарегистрироваться с городом Москва[0m
+2024-12-24 18:38:49 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Москва'[0m
+2024-12-24 18:38:49 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1795>[0m
+2024-12-24 18:38:49 - my_app - [32mINFO[0m - [32mГород Москва найден, ID: 1795[0m
+2024-12-24 18:38:49 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=salon5, city_name=Москва, role=salon[0m
+2024-12-24 18:38:49 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Москва'[0m
+2024-12-24 18:38:49 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1795>[0m
+2024-12-24 18:38:49 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'username': 'salon5'} существует: False[0m
+2024-12-24 18:38:49 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'email': 'salon5@salon5.r'} существует: False[0m
+2024-12-24 18:38:49 - my_app - [32mINFO[0m - [32mUser создан с данными: {'username': 'salon5', 'email': 'salon5@salon5.r', 'password': '$2b$12$Qh5qExNfACyTB8yuclN6ZuxNffjckwvGl4dWloVsOD53USiNIeFrq', 'city': <City: 1795>, 'role': 'salon'}[0m
+2024-12-24 18:38:49 - my_app - [32mINFO[0m - [32mПользователь salon5 успешно зарегистрирован.[0m
+2024-12-24 18:38:49 - my_app - [32mINFO[0m - [32mПользователь salon5 успешно зарегистрирован[0m
+2024-12-24 18:39:01 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: salon5[0m
+2024-12-24 18:39:01 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя salon5[0m
+2024-12-24 18:39:01 - my_app - [32mINFO[0m - [32mПользователь salon5 найден, проверка пароля.[0m
+2024-12-24 18:39:01 - my_app - [32mINFO[0m - [32mПользователь salon5 успешно авторизован[0m
+2024-12-24 18:39:01 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 84, 'username': 'salon5', 'role': <UserRole.salon: 'salon'>, 'city_id': 1795}[0m
+2024-12-24 18:39:01 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NCIsInVzZXJuYW1lIjoic2Fsb241Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM1MDU2NTQxLCJjaXR5IjoiIn0.lZtiMpaHSfsB3XQd__ZFbA5JjTO-I6y5CcTLRpEBdhM[0m
+2024-12-24 18:39:01 - my_app - [32mINFO[0m - [32mПользователь salon5 успешно авторизован[0m
+2024-12-24 18:39:37 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-24 18:39:37 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NCIsInVzZXJuYW1lIjoic2Fsb241Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM1MDU2NTQxLCJjaXR5IjoiIn0.lZtiMpaHSfsB3XQd__ZFbA5JjTO-I6y5CcTLRpEBdhM[0m
+2024-12-24 18:39:37 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '84', 'username': 'salon5', 'role': 'salon', 'city_id': 1795, 'exp': 1735056541, 'city': ''}[0m
+2024-12-24 18:39:37 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '84', 'username': 'salon5', 'role': 'salon', 'city_id': 1795, 'exp': 1735056541, 'city': ''}[0m
+2024-12-24 18:39:37 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon5', 'user_id': '84', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:39:37 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon5', 'user_id': '84', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:39:37 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании салона: SalonService.create_salon() got an unexpected keyword argument 'city'[0m
+2024-12-24 18:40:37 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-24 18:40:37 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NCIsInVzZXJuYW1lIjoic2Fsb241Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM1MDU2NTQxLCJjaXR5IjoiIn0.lZtiMpaHSfsB3XQd__ZFbA5JjTO-I6y5CcTLRpEBdhM[0m
+2024-12-24 18:40:37 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '84', 'username': 'salon5', 'role': 'salon', 'city_id': 1795, 'exp': 1735056541, 'city': ''}[0m
+2024-12-24 18:40:37 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '84', 'username': 'salon5', 'role': 'salon', 'city_id': 1795, 'exp': 1735056541, 'city': ''}[0m
+2024-12-24 18:40:37 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon5', 'user_id': '84', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:40:37 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon5', 'user_id': '84', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:40:37 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании салона: SalonService.create_salon() got an unexpected keyword argument 'city'[0m
+2024-12-24 18:41:36 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 18:41:36 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 18:41:36 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 18:41:36 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 18:41:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 18:41:46 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-24 18:41:46 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NCIsInVzZXJuYW1lIjoic2Fsb241Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM1MDU2NTQxLCJjaXR5IjoiIn0.lZtiMpaHSfsB3XQd__ZFbA5JjTO-I6y5CcTLRpEBdhM[0m
+2024-12-24 18:41:46 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '84', 'username': 'salon5', 'role': 'salon', 'city_id': 1795, 'exp': 1735056541, 'city': ''}[0m
+2024-12-24 18:41:46 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '84', 'username': 'salon5', 'role': 'salon', 'city_id': 1795, 'exp': 1735056541, 'city': ''}[0m
+2024-12-24 18:41:46 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon5', 'user_id': '84', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:41:46 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon5', 'user_id': '84', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:41:46 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 84[0m
+2024-12-24 18:41:46 - my_app - [32mINFO[0m - [32mSalon с ID 84 не найден.[0m
+2024-12-24 18:41:46 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'salon-salon5'[0m
+2024-12-24 18:41:46 - my_app - [32mINFO[0m - [32mSalon создан с данными: {'user_id': '84', 'city_id': 1795, 'title': 'Лучший салон salon5', 'name': 'Салон salon5', 'address': 'ул. Большая Филёвская, 1', 'slug': 'salon-salon5', 'description': 'Мы предоставляем высококачественные услуги salon5.', 'text': 'Подробности о salon5.'}[0m
+2024-12-24 18:41:46 - my_app - [32mINFO[0m - [32mСалон создан с данными: {'user_id': '84', 'city_id': 1795, 'title': 'Лучший салон salon5', 'name': 'Салон salon5', 'address': 'ул. Большая Филёвская, 1', 'slug': 'salon-salon5', 'description': 'Мы предоставляем высококачественные услуги salon5.', 'text': 'Подробности о salon5.'}[0m
+2024-12-24 18:41:46 - my_app - [32mINFO[0m - [32mcreate_salon: салон c ID 4 успешно создан[0m
+2024-12-24 18:47:18 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 18:47:18 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 18:47:18 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 18:47:18 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 18:47:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 18:47:34 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 18:47:34 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 18:47:34 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 18:47:34 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 18:47:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 18:47:55 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 18:47:55 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 18:47:55 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 18:47:55 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 18:47:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 18:48:03 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-24 18:48:03 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NCIsInVzZXJuYW1lIjoic2Fsb241Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM1MDU2NTQxLCJjaXR5IjoiIn0.lZtiMpaHSfsB3XQd__ZFbA5JjTO-I6y5CcTLRpEBdhM[0m
+2024-12-24 18:48:03 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '84', 'username': 'salon5', 'role': 'salon', 'city_id': 1795, 'exp': 1735056541, 'city': ''}[0m
+2024-12-24 18:48:03 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '84', 'username': 'salon5', 'role': 'salon', 'city_id': 1795, 'exp': 1735056541, 'city': ''}[0m
+2024-12-24 18:48:03 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon5', 'user_id': '84', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:48:03 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon5', 'user_id': '84', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:48:03 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 84[0m
+2024-12-24 18:48:03 - my_app - [32mINFO[0m - [32mSalon с ID 84 не найден.[0m
+2024-12-24 18:48:03 - my_app - [34mDEBUG[0m - [34mSlug 'salon-salon5' already exists. Trying 'salon-salon5-1'[0m
+2024-12-24 18:48:03 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'salon-salon5-1'[0m
+2024-12-24 18:48:03 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании салона: duplicate key value violates unique constraint "salon_user_id_key"
+DETAIL:  Key (user_id)=(84) already exists.[0m
+2024-12-24 18:48:52 - my_app - [32mINFO[0m - [32mРегистрация пользователя: salon6, город: Москва, роль: salon[0m
+2024-12-24 18:48:52 - my_app - [32mINFO[0m - [32mПользователь salon6 пытается зарегистрироваться с городом Москва[0m
+2024-12-24 18:48:52 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Москва'[0m
+2024-12-24 18:48:53 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1795>[0m
+2024-12-24 18:48:53 - my_app - [32mINFO[0m - [32mГород Москва найден, ID: 1795[0m
+2024-12-24 18:48:53 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=salon6, city_name=Москва, role=salon[0m
+2024-12-24 18:48:53 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Москва'[0m
+2024-12-24 18:48:53 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1795>[0m
+2024-12-24 18:48:53 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'username': 'salon6'} существует: False[0m
+2024-12-24 18:48:53 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'email': 'salon6@salon6.ru'} существует: False[0m
+2024-12-24 18:48:53 - my_app - [32mINFO[0m - [32mUser создан с данными: {'username': 'salon6', 'email': 'salon6@salon6.ru', 'password': '$2b$12$WfkJtqbt/S7joy.r2xpa8ewxAceGgIG9fv3Wr2.qGtlkfDEQR6Nki', 'city': <City: 1795>, 'role': 'salon'}[0m
+2024-12-24 18:48:53 - my_app - [32mINFO[0m - [32mПользователь salon6 успешно зарегистрирован.[0m
+2024-12-24 18:48:53 - my_app - [32mINFO[0m - [32mПользователь salon6 успешно зарегистрирован[0m
+2024-12-24 18:49:08 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: salon6[0m
+2024-12-24 18:49:08 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя salon6[0m
+2024-12-24 18:49:08 - my_app - [32mINFO[0m - [32mПользователь salon6 найден, проверка пароля.[0m
+2024-12-24 18:49:08 - my_app - [32mINFO[0m - [32mПользователь salon6 успешно авторизован[0m
+2024-12-24 18:49:08 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 85, 'username': 'salon6', 'role': <UserRole.salon: 'salon'>, 'city_id': 1795}[0m
+2024-12-24 18:49:08 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NSIsInVzZXJuYW1lIjoic2Fsb242Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM1MDU3MTQ4LCJjaXR5IjoiIn0.zQW6_eN1wkaqeYoBn0Bnsd4izK-83riQLPrm6cIY148[0m
+2024-12-24 18:49:08 - my_app - [32mINFO[0m - [32mПользователь salon6 успешно авторизован[0m
+2024-12-24 18:49:40 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-24 18:49:40 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NSIsInVzZXJuYW1lIjoic2Fsb242Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM1MDU3MTQ4LCJjaXR5IjoiIn0.zQW6_eN1wkaqeYoBn0Bnsd4izK-83riQLPrm6cIY148[0m
+2024-12-24 18:49:40 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '85', 'username': 'salon6', 'role': 'salon', 'city_id': 1795, 'exp': 1735057148, 'city': ''}[0m
+2024-12-24 18:49:40 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '85', 'username': 'salon6', 'role': 'salon', 'city_id': 1795, 'exp': 1735057148, 'city': ''}[0m
+2024-12-24 18:49:40 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon6', 'user_id': '85', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:49:40 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon6', 'user_id': '85', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:49:40 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 85[0m
+2024-12-24 18:49:40 - my_app - [32mINFO[0m - [32mSalon с ID 85 не найден.[0m
+2024-12-24 18:49:40 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'salon-salon6'[0m
+2024-12-24 18:49:41 - my_app - [32mINFO[0m - [32mSalon создан с данными: {'user_id': '85', 'city_id': 1795, 'title': 'Лучший салон salon6', 'name': 'Салон salon6', 'address': 'ул. Большая Филёвская, 2', 'slug': 'salon-salon6', 'description': 'Мы предоставляем высококачественные услуги salon6.', 'text': 'Подробности о salon6.'}[0m
+2024-12-24 18:49:41 - my_app - [32mINFO[0m - [32mСалон создан с данными: {'user_id': '85', 'city_id': 1795, 'title': 'Лучший салон salon6', 'name': 'Салон salon6', 'address': 'ул. Большая Филёвская, 2', 'slug': 'salon-salon6', 'description': 'Мы предоставляем высококачественные услуги salon6.', 'text': 'Подробности о salon6.'}[0m
+2024-12-24 18:49:41 - my_app - [32mINFO[0m - [32mcreate_salon: салон c ID 6 успешно создан[0m
+2024-12-24 18:55:22 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 18:55:22 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 18:55:22 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 18:55:22 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 18:55:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 18:55:43 - my_app - [32mINFO[0m - [32mРегистрация пользователя: salon7, город: Москва, роль: salon[0m
+2024-12-24 18:55:43 - my_app - [32mINFO[0m - [32mПользователь salon7 пытается зарегистрироваться с городом Москва[0m
+2024-12-24 18:55:43 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Москва'[0m
+2024-12-24 18:55:43 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1795>[0m
+2024-12-24 18:55:43 - my_app - [32mINFO[0m - [32mГород Москва найден, ID: 1795[0m
+2024-12-24 18:55:43 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=salon7, city_name=Москва, role=salon[0m
+2024-12-24 18:55:43 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Москва'[0m
+2024-12-24 18:55:43 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1795>[0m
+2024-12-24 18:55:43 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'username': 'salon7'} существует: False[0m
+2024-12-24 18:55:43 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'email': 'salon7@salon7.ru'} существует: False[0m
+2024-12-24 18:55:43 - my_app - [32mINFO[0m - [32mUser создан с данными: {'username': 'salon7', 'email': 'salon7@salon7.ru', 'password': '$2b$12$JGX/OAtXyf96ChDIOyR5i.eG52JhCGgYTKdllXbwL9vvmokfgJmMi', 'city': <City: 1795>, 'role': 'salon'}[0m
+2024-12-24 18:55:43 - my_app - [32mINFO[0m - [32mПользователь salon7 успешно зарегистрирован.[0m
+2024-12-24 18:55:43 - my_app - [32mINFO[0m - [32mПользователь salon7 успешно зарегистрирован[0m
+2024-12-24 18:56:09 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-24 18:56:09 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NSIsInVzZXJuYW1lIjoic2Fsb242Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM1MDU3MTQ4LCJjaXR5IjoiIn0.zQW6_eN1wkaqeYoBn0Bnsd4izK-83riQLPrm6cIY148[0m
+2024-12-24 18:56:09 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '85', 'username': 'salon6', 'role': 'salon', 'city_id': 1795, 'exp': 1735057148, 'city': ''}[0m
+2024-12-24 18:56:09 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '85', 'username': 'salon6', 'role': 'salon', 'city_id': 1795, 'exp': 1735057148, 'city': ''}[0m
+2024-12-24 18:56:09 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon6', 'user_id': '85', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:56:09 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon6', 'user_id': '85', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:56:09 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 85[0m
+2024-12-24 18:56:09 - my_app - [32mINFO[0m - [32mSalon с ID 85 не найден.[0m
+2024-12-24 18:56:09 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании салона: duplicate key value violates unique constraint "salon_user_id_key"
+DETAIL:  Key (user_id)=(85) already exists.[0m
+2024-12-24 18:56:31 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: salon7[0m
+2024-12-24 18:56:31 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя salon7[0m
+2024-12-24 18:56:31 - my_app - [32mINFO[0m - [32mПользователь salon7 найден, проверка пароля.[0m
+2024-12-24 18:56:31 - my_app - [32mINFO[0m - [32mПользователь salon7 успешно авторизован[0m
+2024-12-24 18:56:31 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 86, 'username': 'salon7', 'role': <UserRole.salon: 'salon'>, 'city_id': 1795}[0m
+2024-12-24 18:56:31 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NiIsInVzZXJuYW1lIjoic2Fsb243Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM1MDU3NTkxLCJjaXR5IjoiIn0.RTUWdSN16jqF89mcgN_tdBALt8uOsmj5naUNfKwkHYM[0m
+2024-12-24 18:56:31 - my_app - [32mINFO[0m - [32mПользователь salon7 успешно авторизован[0m
+2024-12-24 18:56:37 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-24 18:56:37 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NiIsInVzZXJuYW1lIjoic2Fsb243Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM1MDU3NTkxLCJjaXR5IjoiIn0.RTUWdSN16jqF89mcgN_tdBALt8uOsmj5naUNfKwkHYM[0m
+2024-12-24 18:56:37 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '86', 'username': 'salon7', 'role': 'salon', 'city_id': 1795, 'exp': 1735057591, 'city': ''}[0m
+2024-12-24 18:56:37 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '86', 'username': 'salon7', 'role': 'salon', 'city_id': 1795, 'exp': 1735057591, 'city': ''}[0m
+2024-12-24 18:56:37 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon7', 'user_id': '86', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:56:37 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon7', 'user_id': '86', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 18:56:37 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 86[0m
+2024-12-24 18:56:37 - my_app - [32mINFO[0m - [32mSalon с ID 86 не найден.[0m
+2024-12-24 18:56:37 - my_app - [32mINFO[0m - [32mSalon создан с данными: {'user_id': '86', 'city_id': 1795, 'title': 'Лучший салон salon7', 'name': 'Салон salon7', 'address': 'ул. Большая Филёвская, 2', 'slug': 'salon-anturium', 'description': 'Мы предоставляем высококачественные услуги salon7.', 'text': 'Подробности о salon7.'}[0m
+2024-12-24 18:56:37 - my_app - [32mINFO[0m - [32mСалон создан с данными: {'user_id': '86', 'city_id': 1795, 'title': 'Лучший салон salon7', 'name': 'Салон salon7', 'address': 'ул. Большая Филёвская, 2', 'slug': 'salon-anturium', 'description': 'Мы предоставляем высококачественные услуги salon7.', 'text': 'Подробности о salon7.'}[0m
+2024-12-24 18:56:37 - my_app - [32mINFO[0m - [32mcreate_salon: салон c ID 8 успешно создан[0m
+2024-12-24 18:59:06 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-24 18:59:06 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-24 18:59:06 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-24 18:59:06 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-24 18:59:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-24 18:59:41 - my_app - [32mINFO[0m - [32mРегистрация пользователя: salon8, город: Москва, роль: salon[0m
+2024-12-24 18:59:41 - my_app - [32mINFO[0m - [32mПользователь salon8 пытается зарегистрироваться с городом Москва[0m
+2024-12-24 18:59:41 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Москва'[0m
+2024-12-24 18:59:41 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1795>[0m
+2024-12-24 18:59:41 - my_app - [32mINFO[0m - [32mГород Москва найден, ID: 1795[0m
+2024-12-24 18:59:42 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=salon8, city_name=Москва, role=salon[0m
+2024-12-24 18:59:42 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Москва'[0m
+2024-12-24 18:59:42 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1795>[0m
+2024-12-24 18:59:42 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'username': 'salon8'} существует: False[0m
+2024-12-24 18:59:42 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'email': 'salon8@salon8.ru'} существует: False[0m
+2024-12-24 18:59:42 - my_app - [32mINFO[0m - [32mUser создан с данными: {'username': 'salon8', 'email': 'salon8@salon8.ru', 'password': '$2b$12$tG3e5PA8plctnsjga9xjCOIj.MFU12hTx5y5gNkyJfPCHKY8q489y', 'city': <City: 1795>, 'role': 'salon'}[0m
+2024-12-24 18:59:42 - my_app - [32mINFO[0m - [32mПользователь salon8 успешно зарегистрирован.[0m
+2024-12-24 18:59:42 - my_app - [32mINFO[0m - [32mПользователь salon8 успешно зарегистрирован[0m
+2024-12-24 18:59:49 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: salon8[0m
+2024-12-24 18:59:49 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя salon8[0m
+2024-12-24 18:59:49 - my_app - [32mINFO[0m - [32mПользователь salon8 найден, проверка пароля.[0m
+2024-12-24 18:59:49 - my_app - [32mINFO[0m - [32mПользователь salon8 успешно авторизован[0m
+2024-12-24 18:59:49 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 87, 'username': 'salon8', 'role': <UserRole.salon: 'salon'>, 'city_id': 1795}[0m
+2024-12-24 18:59:49 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NyIsInVzZXJuYW1lIjoic2Fsb244Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM1MDU3Nzg5LCJjaXR5IjoiIn0.K-UpdnH55wJpbKR3YRLI2VXfwjtCSqmGK2V4mZpz6Qg[0m
+2024-12-24 18:59:49 - my_app - [32mINFO[0m - [32mПользователь salon8 успешно авторизован[0m
+2024-12-24 19:00:25 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2024-12-24 19:00:25 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4NyIsInVzZXJuYW1lIjoic2Fsb244Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM1MDU3Nzg5LCJjaXR5IjoiIn0.K-UpdnH55wJpbKR3YRLI2VXfwjtCSqmGK2V4mZpz6Qg[0m
+2024-12-24 19:00:25 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '87', 'username': 'salon8', 'role': 'salon', 'city_id': 1795, 'exp': 1735057789, 'city': ''}[0m
+2024-12-24 19:00:25 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '87', 'username': 'salon8', 'role': 'salon', 'city_id': 1795, 'exp': 1735057789, 'city': ''}[0m
+2024-12-24 19:00:25 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon8', 'user_id': '87', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 19:00:25 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon8', 'user_id': '87', 'role': 'salon', 'city_id': 1795}[0m
+2024-12-24 19:00:25 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 87[0m
+2024-12-24 19:00:25 - my_app - [32mINFO[0m - [32mSalon с ID 87 не найден.[0m
+2024-12-24 19:00:25 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'salon-salon8'[0m
+2024-12-24 19:00:25 - my_app - [32mINFO[0m - [32mSalon создан с данными: {'user_id': '87', 'city_id': 1795, 'title': 'Лучший салон salon8', 'name': 'Салон salon8', 'address': 'ул. Большая Филёвская, 3', 'slug': 'salon-salon8', 'description': 'Мы предоставляем высококачественные услуги salon8.', 'text': 'Подробности о salon8.'}[0m
+2024-12-24 19:00:25 - my_app - [32mINFO[0m - [32mСалон создан с данными: {'user_id': '87', 'city_id': 1795, 'title': 'Лучший салон salon8', 'name': 'Салон salon8', 'address': 'ул. Большая Филёвская, 3', 'slug': 'salon-salon8', 'description': 'Мы предоставляем высококачественные услуги salon8.', 'text': 'Подробности о salon8.'}[0m
+2024-12-24 19:00:25 - my_app - [32mINFO[0m - [32mcreate_salon: салон c ID 9 успешно создан[0m
+2024-12-25 09:03:37 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 09:03:37 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 09:03:37 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 09:03:37 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 09:03:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 09:03:37 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 09:03:37 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 09:03:37 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 09:03:37 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 09:03:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 09:19:02 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 09:19:02 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 09:19:02 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 09:19:02 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 09:19:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 09:19:02 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 09:19:02 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 09:19:02 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 09:19:02 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 09:19:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 11:49:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 11:49:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 11:49:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 11:49:17 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 11:49:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 11:49:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 11:49:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 11:49:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 11:49:17 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 11:49:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 11:50:12 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 11:50:12 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 11:50:12 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 11:50:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 11:50:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 11:50:12 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 11:50:12 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 11:50:12 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 11:50:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 11:50:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 11:51:31 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 11:51:31 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 11:51:31 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 11:51:31 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 11:51:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 11:51:31 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 11:51:31 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 11:51:31 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 11:51:31 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 11:51:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 12:07:50 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 12:07:50 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 12:07:50 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 12:07:50 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 12:07:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 12:07:50 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 12:07:50 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 12:07:50 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 12:07:50 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 12:07:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 12:08:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 12:08:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 12:08:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 12:08:17 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 12:08:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 12:08:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 12:08:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 12:08:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 12:08:17 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 12:08:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 12:08:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 12:08:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 12:08:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 12:08:52 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 12:08:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 12:08:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 12:08:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 12:08:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 12:08:52 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 12:08:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:37:10 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:37:10 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:37:10 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:37:10 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:37:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:37:10 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:37:10 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:37:10 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:37:10 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:37:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:39:12 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:39:12 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:39:12 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:39:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:39:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:39:12 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:39:12 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:39:12 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:39:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:39:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:39:19 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:39:19 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:39:19 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:39:19 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:39:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:39:19 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:39:19 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:39:19 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:39:19 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:39:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:39:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:39:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:39:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:39:23 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:39:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:39:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:39:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:39:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:39:23 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:39:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:39:35 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:39:35 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:39:35 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:39:35 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:39:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:39:35 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:39:35 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:39:35 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:39:35 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:39:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:40:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:40:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:40:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:40:56 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:40:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:40:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:40:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:40:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:40:56 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:40:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:41:24 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:41:24 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:41:24 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:41:24 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:41:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:41:24 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:41:24 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:41:24 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:41:24 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:41:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:42:28 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:42:28 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:42:28 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:42:28 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:42:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:42:28 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:42:28 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:42:28 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:42:28 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:42:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:42:47 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:42:47 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:42:47 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:42:47 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:42:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:42:47 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:42:47 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:42:47 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:42:47 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:42:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:42:53 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:42:53 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:42:53 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:42:53 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:42:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:42:53 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:42:53 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:42:53 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:42:53 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:42:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:43:12 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:43:12 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:43:12 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:43:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:43:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:43:12 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:43:12 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:43:12 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:43:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:43:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:43:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:43:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:43:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:43:23 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:43:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:43:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:43:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:43:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:43:23 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:43:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:43:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:43:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:43:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:43:27 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:43:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:43:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:43:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:43:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:43:27 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:43:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:43:33 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:43:33 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:43:33 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:43:33 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:43:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:43:33 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:43:33 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:43:33 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:43:33 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:43:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:43:38 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:43:38 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:43:38 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:43:38 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:43:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:43:38 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:43:38 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:43:38 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:43:38 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:43:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:43:45 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:43:45 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:43:45 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:43:45 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:43:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:43:45 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:43:45 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:43:45 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:43:45 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:43:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:45:33 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:45:33 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:45:33 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:45:33 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:45:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:45:33 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:45:33 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:45:33 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:45:33 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:45:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:45:49 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:45:49 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:45:49 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:45:49 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:45:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:45:49 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:45:49 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:45:49 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:45:49 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:45:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:47:15 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:47:15 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:47:15 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:47:15 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:47:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:47:15 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:47:15 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:47:15 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:47:15 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:47:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:47:18 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:47:18 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:47:18 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:47:18 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:47:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:47:19 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:47:19 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:47:19 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:47:19 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:47:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:55:48 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:55:48 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:55:48 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:55:48 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:55:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:55:48 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:55:48 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:55:48 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:55:48 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:55:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:55:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:55:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:55:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:55:52 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:55:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 17:55:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 17:55:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 17:55:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 17:55:52 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 17:55:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 19:11:08 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 19:11:08 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 19:11:08 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 19:11:08 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 19:11:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 19:11:08 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 19:11:08 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 19:11:08 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 19:11:08 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 19:11:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 19:11:13 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 19:11:13 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 19:11:13 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 19:11:13 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 19:11:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 19:11:13 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 19:11:13 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 19:11:13 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 19:11:13 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 19:11:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 19:11:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 19:11:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 19:11:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 19:11:17 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 19:11:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 19:11:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 19:11:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 19:11:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 19:11:17 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 19:11:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 20:48:49 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 20:48:49 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 20:48:49 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 20:48:49 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 20:48:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 20:48:49 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 20:48:49 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 20:48:49 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 20:48:49 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 20:48:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 20:49:28 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 20:49:28 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 20:49:28 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 20:49:28 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 20:49:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 20:49:28 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 20:49:28 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 20:49:28 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 20:49:28 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 20:49:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:05:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:05:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:05:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:05:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:05:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:05:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:05:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:05:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:05:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:05:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:06:03 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:06:03 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:06:03 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:06:03 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:06:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:06:03 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:06:03 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:06:03 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:06:03 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:06:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:06:09 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:06:09 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:06:09 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:06:09 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:06:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:06:09 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:06:09 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:06:09 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:06:09 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:06:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:08:51 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:08:51 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:08:51 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:08:51 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:08:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:08:51 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:08:51 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:08:51 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:08:51 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:08:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:08:54 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:08:54 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:08:54 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:08:54 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:08:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:08:54 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:08:54 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:08:54 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:08:54 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:08:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:08:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:08:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:08:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:08:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:08:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:08:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:08:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:08:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:08:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:08:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:09:02 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:09:02 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:09:02 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:09:02 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:09:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:09:02 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:09:02 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:09:02 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:09:02 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:09:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:26:44 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:26:44 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:26:44 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:26:44 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:26:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:26:44 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:26:44 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:26:44 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:26:44 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:26:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:26:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:26:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:26:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:26:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:26:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:26:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:26:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:26:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:26:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:26:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:27:01 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:27:01 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:27:01 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:27:01 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:27:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:27:01 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:27:01 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:27:01 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:27:01 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:27:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:27:06 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:27:06 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:27:06 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:27:06 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:27:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:27:06 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:27:06 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:27:06 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:27:06 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:27:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:31:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:31:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:31:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:31:56 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:31:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:31:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:31:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:31:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:31:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:31:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:32:33 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:32:33 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:32:33 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:32:33 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:32:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:32:33 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:32:33 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:32:33 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:32:33 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:32:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:59:21 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:59:21 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:59:21 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:59:21 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:59:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:59:21 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:59:21 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:59:21 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:59:21 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:59:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:59:44 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:59:44 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:59:44 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:59:44 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:59:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:59:44 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:59:44 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:59:44 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:59:44 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:59:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:59:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:59:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:59:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:59:52 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:59:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:59:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:59:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:59:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:59:52 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:59:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:59:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:59:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:59:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:59:56 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:59:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 21:59:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 21:59:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 21:59:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 21:59:56 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 21:59:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:00:00 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:00:00 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:00:00 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:00:00 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:00:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:00:00 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:00:00 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:00:00 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:00:00 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:00:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:00:07 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:00:07 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:00:07 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:00:07 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:00:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:00:07 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:00:07 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:00:07 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:00:07 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:00:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:01:58 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:01:58 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:01:58 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:01:58 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:01:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:01:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:01:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:01:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:01:59 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:01:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:02:11 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:02:11 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:02:11 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:02:11 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:02:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:02:11 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:02:11 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:02:11 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:02:11 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:02:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:02:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:02:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:02:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:02:17 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:02:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:02:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:02:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:02:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:02:17 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:02:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:02:22 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:02:22 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:02:22 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:02:22 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:02:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:02:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:02:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:02:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:02:23 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:02:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:02:38 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:02:38 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:02:38 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:02:38 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:02:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:02:38 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:02:38 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:02:38 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:02:38 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:02:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:04:26 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:04:26 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:04:26 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:04:26 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:04:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:04:26 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:04:26 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:04:26 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:04:26 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:04:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:09:29 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:09:29 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:09:29 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:09:29 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:09:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:09:29 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:09:29 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:09:29 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:09:29 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:09:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:23:31 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:23:31 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:23:31 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:23:31 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:23:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:23:32 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:23:32 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:23:32 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:23:32 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:23:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:23:38 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:23:38 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:23:38 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:23:38 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:23:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:23:39 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:23:39 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:23:39 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:23:39 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:23:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:25:10 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:25:10 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:25:10 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:25:10 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:25:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:25:10 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:25:10 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:25:10 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:25:10 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:25:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:25:34 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:25:34 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:25:34 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:25:34 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:25:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:25:34 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:25:34 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:25:34 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:25:34 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:25:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:25:37 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:25:37 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:25:37 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:25:37 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:25:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:25:37 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:25:37 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:25:37 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:25:37 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:25:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:25:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:25:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:25:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:25:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:25:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:25:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:25:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:25:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:25:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:25:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:25:51 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:25:51 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:25:51 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:25:51 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:25:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:25:51 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:25:51 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:25:51 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:25:51 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:25:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:31:50 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:31:50 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:31:50 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:31:50 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:31:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:31:50 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:31:50 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:31:50 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:31:50 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:31:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:31:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:31:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:31:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:31:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:31:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-25 22:31:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-25 22:31:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-25 22:31:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-25 22:31:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-25 22:31:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:18:31 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:18:31 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:18:31 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:18:31 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:18:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:18:31 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:18:31 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:18:31 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:18:31 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:18:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:18:37 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:18:37 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:18:37 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:18:37 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:18:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:18:37 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:18:37 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:18:37 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:18:37 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:18:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:19:28 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:19:28 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:19:28 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:19:28 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:19:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:19:29 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:19:29 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:19:29 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:19:29 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:19:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:19:31 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:19:31 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:19:31 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:19:31 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:19:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:19:31 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:19:31 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:19:31 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:19:31 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:19:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:19:50 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:19:50 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:19:50 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:19:50 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:19:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:19:50 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:19:50 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:19:50 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:19:50 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:19:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:20:05 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:20:05 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:20:05 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:20:05 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:20:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:20:05 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:20:05 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:20:05 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:20:05 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:20:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:29:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:29:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:29:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:29:59 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:29:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:29:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:29:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:29:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:29:59 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:29:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:03 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:03 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:03 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:03 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:04 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:20 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:20 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:20 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:20 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:20 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:20 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:20 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:20 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:24 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:24 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:24 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:24 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:25 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:25 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:25 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:25 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:25 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:33 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:33 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:33 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:33 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:33 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:33 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:33 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:33 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:36 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:36 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:36 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:36 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:36 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:36 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:36 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:36 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:41 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:41 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:48 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:48 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:48 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:48 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:49 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:49 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:49 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:49 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:53 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:53 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:53 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:53 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:53 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:53 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:53 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:53 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:56 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:30:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:30:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:30:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:30:56 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:30:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:31:34 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:31:34 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:31:34 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:31:34 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:31:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 07:31:34 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 07:31:34 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 07:31:34 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 07:31:34 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 07:31:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:44:16 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:44:16 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:44:16 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:44:16 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:44:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:44:16 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:44:16 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:44:16 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:44:16 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:44:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:44:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:44:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:44:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:44:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:44:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:44:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:44:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:44:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:44:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:44:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:44:51 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:44:51 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:44:51 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:44:51 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:44:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:44:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:44:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:44:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:44:52 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:44:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:44:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:44:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:44:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:44:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:44:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:44:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:44:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:44:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:44:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:44:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:45:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:45:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:45:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:45:04 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:45:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:45:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:45:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:45:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:45:04 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:45:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:45:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:45:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:45:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:45:27 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:45:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:45:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:45:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:45:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:45:27 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:45:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:46:29 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:46:29 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:46:29 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:46:29 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:46:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:46:29 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:46:29 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:46:29 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:46:29 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:46:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:51:19 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:51:19 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:51:19 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:51:19 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:51:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:51:20 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:51:20 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:51:20 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:51:20 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:51:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:51:38 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:51:38 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:51:38 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:51:38 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:51:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:51:38 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:51:38 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:51:38 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:51:38 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:51:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:51:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:51:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:51:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:51:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:51:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:51:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:51:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:51:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:51:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:51:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:52:12 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:52:12 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:52:12 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:52:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:52:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:52:12 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:52:12 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:52:12 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:52:12 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:52:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:52:30 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:52:30 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:52:30 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:52:30 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:52:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:52:30 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:52:30 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:52:30 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:52:30 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:52:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:52:35 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:52:35 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:52:35 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:52:35 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:52:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:52:35 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:52:35 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:52:35 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:52:35 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:52:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:52:54 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:52:54 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:52:54 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:52:54 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:52:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:52:54 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:52:54 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:52:54 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:52:54 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:52:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:53:05 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:53:05 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:53:05 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:53:05 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:53:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:53:05 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:53:05 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:53:05 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:53:05 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:53:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:53:14 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:53:14 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:53:14 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:53:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:53:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:53:14 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:53:14 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:53:14 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:53:14 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:53:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:53:20 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:53:20 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:53:20 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:53:20 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:53:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:53:20 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:53:20 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:53:20 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:53:20 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:53:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:53:55 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:53:55 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:53:55 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:53:55 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:53:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:53:55 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:53:55 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:53:55 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:53:55 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:53:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:54:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:54:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:54:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:54:04 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:54:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:54:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:54:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:54:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:54:04 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:54:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:54:10 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:54:10 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:54:10 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:54:10 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:54:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:54:10 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:54:10 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:54:10 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:54:10 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:54:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:54:19 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:54:19 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:54:19 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:54:19 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:54:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 08:54:19 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 08:54:19 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 08:54:19 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 08:54:19 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 08:54:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:01:44 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:01:44 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:01:44 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:01:44 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:01:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:01:44 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:01:44 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:01:44 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:01:44 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:01:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:01:47 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:01:47 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:01:47 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:01:47 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:01:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:01:47 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:01:47 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:01:47 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:01:47 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:01:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:01:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:01:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:01:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:01:52 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:01:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:01:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:01:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:01:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:01:52 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:01:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:02:10 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:02:10 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:02:10 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:02:10 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:02:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:02:10 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:02:10 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:02:10 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:02:10 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:02:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:02:13 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:02:13 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:02:13 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:02:13 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:02:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:02:13 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:02:13 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:02:13 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:02:13 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:02:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:04:34 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:04:34 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:04:34 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:04:34 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:04:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:04:35 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:04:35 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:04:35 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:04:35 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:04:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:04:45 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:04:45 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:04:45 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:04:45 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:04:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:04:45 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:04:45 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:04:45 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:04:45 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:04:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:05:01 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:05:01 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:05:01 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:05:01 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:05:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:05:01 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:05:01 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:05:01 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:05:01 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:05:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:05:07 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:05:07 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:05:07 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:05:07 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:05:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:05:07 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:05:07 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:05:07 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:05:07 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:05:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:05:50 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:05:50 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:05:50 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:05:50 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:05:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:05:50 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:05:50 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:05:50 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:05:50 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:05:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:06:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:06:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:06:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:06:04 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:06:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:06:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:06:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:06:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:06:04 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:06:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:06:07 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:06:07 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:06:07 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:06:07 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:06:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:06:07 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:06:07 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:06:07 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:06:07 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:06:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:06:16 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:06:16 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:06:16 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:06:16 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:06:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:06:16 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:06:16 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:06:16 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:06:16 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:06:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:06:28 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:06:28 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:06:28 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:06:28 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:06:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:06:28 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:06:28 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:06:28 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:06:28 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:06:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:42:05 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:42:05 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:42:05 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:42:05 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:42:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:42:05 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:42:05 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:42:05 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:42:05 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:42:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:54:32 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:54:32 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:54:32 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:54:32 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:54:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:54:32 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:54:32 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:54:32 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:54:32 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:54:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:54:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:54:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:54:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:54:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:54:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:54:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:54:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:54:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:54:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:54:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:55:08 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:55:08 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:55:08 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:55:08 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:55:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:55:08 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:55:08 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:55:08 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:55:08 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:55:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:55:13 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:55:13 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:55:13 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:55:13 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:55:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:55:13 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:55:13 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:55:13 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:55:13 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:55:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:55:21 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:55:21 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:55:21 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:55:21 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:55:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:55:21 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:55:21 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:55:21 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:55:21 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:55:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:55:51 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:55:51 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:55:51 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:55:51 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:55:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:55:51 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:55:51 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:55:51 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:55:51 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:55:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:55:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:55:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:55:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:55:56 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:55:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:55:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:55:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:55:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:55:57 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:55:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:56:00 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:56:00 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:56:00 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:56:00 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:56:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:56:00 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:56:00 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:56:00 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:56:00 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:56:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:56:13 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:56:13 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:56:13 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:56:13 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:56:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 09:56:13 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 09:56:13 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 09:56:13 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 09:56:13 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 09:56:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:10:38 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:10:38 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:10:38 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:10:38 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:10:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:10:38 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:10:38 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:10:38 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:10:38 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:10:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:10:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:10:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:10:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:10:59 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:10:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:10:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:10:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:10:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:10:59 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:10:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:11:15 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:11:15 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:11:15 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:11:15 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:11:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:11:15 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:11:15 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:11:15 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:11:15 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:11:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:11:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:11:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:11:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:11:23 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:11:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:11:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:11:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:11:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:11:23 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:11:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:11:37 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:11:37 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:11:37 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:11:37 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:11:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:11:37 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:11:37 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:11:37 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:11:37 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:11:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:11:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:11:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:11:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:11:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:11:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:11:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:11:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:11:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:11:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:11:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:12:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:12:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:12:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:12:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:12:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:12:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:12:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:12:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:12:43 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:12:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:12:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:12:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:12:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:12:59 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:12:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:12:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:12:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:12:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:12:59 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:12:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:13:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:13:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:13:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:13:23 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:13:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:13:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:13:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:13:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:13:23 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:13:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:13:44 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:13:44 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:13:44 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:13:44 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:13:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:13:44 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:13:44 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:13:44 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:13:44 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:13:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:13:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:13:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:13:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:13:52 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:13:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:13:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:13:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:13:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:13:52 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:13:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:19:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:19:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:19:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:19:04 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:19:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:19:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:19:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:19:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:19:04 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:19:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:20:02 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:20:02 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:20:02 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:20:02 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:20:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 10:20:03 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 10:20:03 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 10:20:03 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 10:20:03 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 10:20:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 11:01:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 11:01:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 11:01:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 11:01:27 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 11:01:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 12:53:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2024-12-26 12:53:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2024-12-26 12:53:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2024-12-26 12:53:23 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 12:53:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

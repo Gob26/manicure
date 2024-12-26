@@ -14,7 +14,8 @@ from db.models.salon_models.salon_model import Salon
 from db.models.salon_models.salon_master_relation import SalonMasterRelation
 from db.models.salon_models.salon_master_invitation import SalonMasterInvitation
 
-from db.models.photo_models.service_photo_model import ServicePhoto
+from db.models.photo_models.photo_model import Photo
+
 
 from db.models.master_models.master_model import Master
 
@@ -32,7 +33,7 @@ __all__ = [
     'Salon',
     'SalonMasterRelation',
     'SalonMasterInvitation',
-    'ServicePhoto',
+    'Photo',
     'Master',
     'JobApplication',
     'Resume',

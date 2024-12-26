@@ -5,19 +5,19 @@ from db.models.abstract.abstract_model import AbstractModel
 # Модель связи услуги с мастером или салоном
 class ServiceRelation(AbstractModel):
     user = fields.ForeignKeyField(
-        'models.User',
+        'server.User',
         related_name='service_relations',
         on_delete=fields.CASCADE,
         help_text="Пользователь, предлагающий услугу (мастер или салон)."
     )
     service = fields.ForeignKeyField(
-        'models.StandardService',
+        'server.StandardService',
         related_name='service_relations',
         null=True,
         help_text="Стандартная услуга."
     )
     custom_service = fields.ForeignKeyField(
-        'models.CustomService',
+        'server.CustomService',
         related_name='relations',
         null=True,
         help_text="Индивидуальная услуга, если есть."

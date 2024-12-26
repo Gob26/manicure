@@ -9,8 +9,8 @@ class SalonCreateSchema(BaseModel):
     slug: str = Field(..., max_length=255, title="Slug (уникальный идентификатор)", example="salon-anturium")
     
     # Поля местоположения
-    city: str = Field(..., max_length=255, title="Город", example="Москва")
-    address: str = Field(..., max_length=255, title="Адрес", example="ул. Большая Филёвская, 21к1")
+    city_id: Optional[int] = Field(None, title="ID города", example=1, description="Город, в котором находится мастер")
+    address:  str = Field(..., max_length=255, title="Адрес", example="ул. Большая Филёвская, 21к1")
     
     # Опциональные поля с контентом
     description: Optional[str] = Field(None, title="Описание", example="Мы предоставляем высококачественные услуги красоты.")
@@ -37,7 +37,7 @@ class SalonUpdateSchema(BaseModel):
     slug: Optional[str] = Field(None, max_length=255, title="Slug", example="new-salon-anturium")
     
     # Поля местоположения
-    city: Optional[str] = Field(None, max_length=255, title="Город", example="Санкт-Петербург")
+    city_id: Optional[int] = Field(None, title="ID города", example=1, description="Город, в котором находится мастер")
     address: Optional[str] = Field(None, max_length=255, title="Адрес", example="ул. Новый Адрес, 10")
     
     # Поля с контентом
@@ -55,7 +55,7 @@ class SalonOutSchema(BaseModel):
     slug: str
     
     # Информация о местоположении
-    city: str
+    city: int
     address: str
     
     # Контент

@@ -1,26 +1,19 @@
 from tortoise import fields
+from db.models.abstract.abstract_model import AbstractModel
 
-from db.models.abstract.abstract_service import AbstractService
-from db.models.photo_models.service_photo_model import ServicePhoto
-
-# Модель индивидуальных услуг
-class CustomService(AbstractService):
-    user = fields.ForeignKeyField(
-        "server.User",
-        related_name="custom_services",
-        on_delete=fields.CASCADE,
-        help_text="Пользователь, добавивший услугу (мастер или салон)"
-    )
-    photo = fields.ReverseRelation["ServicePhoto"]
-    is_active = fields.BooleanField(default=True, help_text="Активна ли услуга?")  # Новое поле
-
-    standard_service = fields.ForeignKeyField(
-        "server.StandardService",
-        related_name="custom_services",
-        null=True,
-        on_delete=fields.SET_NULL,
-        help_text="Связь с базовой услугой, если используется стандартная"
-    )
+class CustomService(AbstractModel):
+    name = fields.CharField(max_length=255, help_text="Название услуги")
+    description = fields.TextField(null=True, help_text="Описание услуги")
+    price = fields.DecimalField(max_digits=10, decimal_places=2, help_text="Цена услуги")
+    duration = fields.IntField(help_text="Длительность в минутах")
+    owner_type = fields.CharField(max_length=50, choices=[("master", "Мастер"), ("salon", "Салон")], help_text="Тип владельца")
+    owner_id = fields.IntField(help_text="ID мастера или салона")
 
     class Meta:
         table = "custom_services"
+        ordering = ["name"]
+
+    # Ленивая загрузка Photo только при необходимости
+    def get_photos(self):
+        from app.db.models.photo_models.photo_model import Photo
+        return Photo.filter(service_id=self.id)

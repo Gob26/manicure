@@ -20,13 +20,13 @@ class SalonService:
         """
         Создание салона с использованием текущего пользователя.
         """
-        user_id = current_user["user_id"]
-        logger.debug(f"create_salon: старт создания салона для пользователя ID {user_id}")
+        logger.debug(f"create_master: старт создания мастера для пользователя ID {current_user['user_id']}")
+
 
         # Проверка на наличие салона
-        existing_salon = await SalonRepository.get_salon_by_id(user_id)
+        existing_salon = await SalonRepository.get_salon_by_id(current_user["user_id"])
         if existing_salon:
-            raise ValueError(f"Салон уже создан для пользователя с ID {user_id}")
+            raise ValueError(f"Салон уже создан для пользователя с ID {current_user['user_id']}")
 
         if not slug:
             slug = await generate_unique_slug(Salon, name)
@@ -34,7 +34,7 @@ class SalonService:
         # Создаем салон
         salon = await SalonRepository.create_salon(
             user_id=current_user["user_id"],# Пользователь из токена
-            city=current_user["city_id"],  # Город из токена
+            city_id=current_user["city_id"],  # Город из токена
             title=title,
             name=name,
             address=address,
@@ -43,13 +43,13 @@ class SalonService:
             text=text
         )
 
-        logger.info(f"create_salon: салон c ID {salon.id} создан для пользователя ID {user_id}")
+        logger.info(f"create_salon: салон c ID {salon.id} успешно создан")
         return {
-            "user_id": salon.user_id,
+            "user_id": current_user["user_id"],
             "name": salon.name,
             "title": salon.title,
             "slug": salon.slug,
-            "city": salon.city,
+            "city": current_user["city_id"],
             "address": salon.address,
             "description": salon.description,
             "text": salon.text

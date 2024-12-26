@@ -1,5 +1,5 @@
-from .service_photo_model import ServicePhoto
+from .photo_model import Photo
 
 __all__ = [
-    'ServicePhoto'
+    'Photo'
 ]

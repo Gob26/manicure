@@ -3,12 +3,12 @@ from db.models.abstract.abstract_model import AbstractModel
 
 # Абстрактная модель услуг
 class AbstractService(AbstractModel):
-    name = fields.CharField(max_length=255, help_text="Название услуги")
+    name = fields.CharField(max_length=255, null=False, help_text="Название услуги.")  # Название услуги
+    title = fields.CharField(max_length=255, null=True, help_text="Тайтл для SEO.")  # Тайтл для SEO
+    description = fields.TextField(null=True, help_text="Описание для поисковиков.")  # SEO описание
+    content = fields.TextField(null=True, help_text="Текстовое содержание, добавляемое администратором.") 
     slug = fields.CharField(max_length=255, null=True, help_text="Уникальный идентификатор для SEO-оптимизации")
-    description = fields.TextField(null=True, help_text="Описание услуги")
-    duration = fields.IntField(null=True, help_text="Длительность услуги в минутах")
-    price = fields.DecimalField(max_digits=10, decimal_places=2, null=True, help_text="Цена услуги")
-    is_active = fields.BooleanField(default=True, help_text="Активна ли услуга")
+
 
     class Meta:
         abstract = True
