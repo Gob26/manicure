@@ -3852,3 +3852,5 @@ DETAIL:  Key (user_id)=(85) already exists.[0m
 2024-12-26 12:53:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2024-12-26 13:12:59 - my_app - [31mERROR[0m - [31mError message[0m
 2024-12-26 13:12:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2024-12-26 13:16:55 - my_app - [31mERROR[0m - [31mError message[0m
+2024-12-26 13:16:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
