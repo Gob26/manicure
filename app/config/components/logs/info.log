@@ -14907,3 +14907,74 @@ DETAIL:  Key (user_id)=(85) already exists.[0m
 2024-12-26 13:16:55 - my_app - [33mWARNING[0m - [33mWarning message[0m
 2024-12-26 13:16:55 - my_app - [31mERROR[0m - [31mError message[0m
 2024-12-26 13:16:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-05 20:02:54 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-05 20:02:54 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-05 20:02:54 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-05 20:02:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-05 20:02:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-05 20:04:06 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-05 20:04:06 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-05 20:04:06 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-05 20:04:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-05 20:04:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-05 20:04:57 - my_app - [32mINFO[0m - [32mРегистрация пользователя: gov1, город: Омск, роль: master[0m
+2025-01-05 20:04:57 - my_app - [32mINFO[0m - [32mПользователь gov1 пытается зарегистрироваться с городом Омск[0m
+2025-01-05 20:04:57 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-05 20:04:57 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-05 20:04:57 - my_app - [32mINFO[0m - [32mГород Омск найден, ID: 1901[0m
+2025-01-05 20:04:57 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=gov1, city_name=Омск, role=master[0m
+2025-01-05 20:04:57 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-05 20:04:57 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-05 20:04:57 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'username': 'gov1'} существует: False[0m
+2025-01-05 20:04:57 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'email': 'gov1@gov1.ru'} существует: False[0m
+2025-01-05 20:04:57 - my_app - [32mINFO[0m - [32mUser создан с данными: {'username': 'gov1', 'email': 'gov1@gov1.ru', 'password': '$2b$12$OImNgmmWvcd7ILrt2RoyOOhmx1ZquLfAjxpPIFIiBJ66Sden3vKFi', 'city': <City: 1901>, 'role': 'master'}[0m
+2025-01-05 20:04:57 - my_app - [32mINFO[0m - [32mПользователь gov1 успешно зарегистрирован.[0m
+2025-01-05 20:04:57 - my_app - [32mINFO[0m - [32mПользователь gov1 успешно зарегистрирован[0m
+2025-01-05 20:05:11 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: gov1[0m
+2025-01-05 20:05:11 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя gov1[0m
+2025-01-05 20:05:11 - my_app - [32mINFO[0m - [32mПользователь gov1 найден, проверка пароля.[0m
+2025-01-05 20:05:11 - my_app - [32mINFO[0m - [32mПользователь gov1 успешно авторизован[0m
+2025-01-05 20:05:11 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 108, 'username': 'gov1', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-05 20:05:11 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMDgiLCJ1c2VybmFtZSI6ImdvdjEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MDk4NTExLCJjaXR5IjoiIn0.OW9_O6WKsRuNdz7PMEwZqXJOLNnKgdMjGnV-U4NuWcw[0m
+2025-01-05 20:05:11 - my_app - [32mINFO[0m - [32mПользователь gov1 успешно авторизован[0m
+2025-01-05 20:05:38 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-05 20:05:38 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMDgiLCJ1c2VybmFtZSI6ImdvdjEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MDk4NTExLCJjaXR5IjoiIn0.OW9_O6WKsRuNdz7PMEwZqXJOLNnKgdMjGnV-U4NuWcw[0m
+2025-01-05 20:05:38 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '108', 'username': 'gov1', 'role': 'master', 'city_id': 1901, 'exp': 1736098511, 'city': ''}[0m
+2025-01-05 20:05:38 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '108', 'username': 'gov1', 'role': 'master', 'city_id': 1901, 'exp': 1736098511, 'city': ''}[0m
+2025-01-05 20:05:38 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'gov1', 'user_id': '108', 'role': 'master', 'city_id': 1901}[0m
+2025-01-05 20:05:38 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'gov1', 'user_id': '108', 'role': 'master', 'city_id': 1901}[0m
+2025-01-05 20:05:38 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 108[0m
+2025-01-05 20:05:38 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'gov1'[0m
+2025-01-05 20:05:38 - my_app - [32mINFO[0m - [32mMaster создан с данными: {'user_id': '108', 'city_id': 1901, 'title': 'gov1', 'specialty': 'gov1', 'description': 'gov1', 'text': 'gov1', 'experience_years': 10, 'slug': 'gov1'}[0m
+2025-01-05 20:05:38 - my_app - [32mINFO[0m - [32mМастер создан с данными: {'user_id': '108', 'city_id': 1901, 'title': 'gov1', 'specialty': 'gov1', 'description': 'gov1', 'text': 'gov1', 'experience_years': 10, 'slug': 'gov1'}[0m
+2025-01-05 20:05:38 - my_app - [32mINFO[0m - [32mcreate_master: мастер с ID 27 успешно создан[0m
+2025-01-05 20:43:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-05 20:43:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-05 20:43:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-05 20:43:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-05 20:43:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-05 20:43:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-05 20:43:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-05 20:43:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-05 20:43:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-05 20:43:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-05 20:43:30 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-05 20:43:30 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-05 20:43:30 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-05 20:43:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-05 20:43:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-05 20:43:30 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-05 20:43:30 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-05 20:43:30 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-05 20:43:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-05 20:43:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-05 20:43:39 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-05 20:43:39 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-05 20:43:39 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-05 20:43:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-05 20:43:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-05 20:43:39 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-05 20:43:39 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-05 20:43:39 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-05 20:43:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-05 20:43:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

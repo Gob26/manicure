@@ -20,13 +20,13 @@ router.include_router(
 
 router.include_router(
     master_router,
-    prefix="/api/v1/auth",
+    prefix="/api/v1/masters",
     tags=["master"]
     )
 
 router.include_router(
     salon_router,
-    prefix="/api/v1/auth",
+    prefix="/api/v1/salons",
     tags=["salon"]
     )
 
