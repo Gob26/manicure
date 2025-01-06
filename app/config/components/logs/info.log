@@ -16119,3 +16119,28 @@ DETAIL:  Key (user_id)=(85) already exists.[0m
 2025-01-06 09:47:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-01-06 09:47:20 - my_app - [34mDEBUG[0m - [34mНачало получения списка городов с активными услугами[0m
 2025-01-06 09:47:20 - my_app - [34mDEBUG[0m - [34mУспешно получено 5 городов с услугами[0m
+2025-01-06 09:53:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 09:53:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 09:53:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 09:53:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 09:53:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 09:54:24 - my_app - [34mDEBUG[0m - [34mПоиск города с slug: 'omsk'[0m
+2025-01-06 09:54:24 - my_app - [34mDEBUG[0m - [34mРезультат поиска города: <City: 1901>[0m
+2025-01-06 09:54:24 - my_app - [34mDEBUG[0m - [34mРезультат проверки салонов или мастеров для города Омск: True[0m
+2025-01-06 09:54:50 - my_app - [34mDEBUG[0m - [34mНачало получения списка городов с активными услугами[0m
+2025-01-06 09:54:50 - my_app - [34mDEBUG[0m - [34mУспешно получено 5 городов с услугами[0m
+2025-01-06 10:21:58 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 10:21:58 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 10:21:58 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 10:21:58 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 10:21:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 10:24:09 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 10:24:09 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 10:24:09 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 10:24:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 10:24:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 10:28:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 10:28:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 10:28:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 10:28:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 10:28:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

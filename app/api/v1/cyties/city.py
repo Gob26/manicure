@@ -1,13 +1,9 @@
 from typing import List
-
 from fastapi import APIRouter, HTTPException, Request, status
-from fastapi_pagination import response
-from jinja2.lexer import describe_token
 from tortoise.exceptions import DoesNotExist
 
 from use_case.city_service.city_service import CityService
-from db.repositories.location_repositories.city_repositories import CityRepository
-from db.schemas.location_schema.city_schemas import CityOutSchema, FullCitySchema, CityLinkSchema
+from db.schemas.location_schema.city_schemas import FullCitySchema, CityLinkSchema
 from config.components.logging_config import logger
 
 

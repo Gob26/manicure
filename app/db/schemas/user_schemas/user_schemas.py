@@ -17,7 +17,7 @@ class UserSchema(BaseModel):
     role: UserRole = Field(..., title="Роль пользователя", example=UserRole.client.value)
 
     class Config:
-        orm_mode = True  # Поддержка объектов Tortoise ORM
+        from_attributes = True  # Поддержка объектов Tortoise ORM
 
 # Схема для создания нового пользователя
 class UserCreateSchema(BaseModel):

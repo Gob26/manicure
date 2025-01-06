@@ -47,7 +47,7 @@ class MasterOutSchema(BaseModel):
     slug: str
 
     class Config:
-        orm_mode = True  # Поддержка работы с объектами Tortoise ORM
+        from_attributes = True  # Поддержка работы с объектами Tortoise ORM
 
 
 # Полная информация о мастере (связи)

@@ -6,4 +6,4 @@ class UserLoginSchema(BaseModel):
     password: str = Field(..., min_length=8, title="Пароль", example="securepassword123")
 
     class Config:
-        orm_mode = True  # Поддержка объектов Tortoise ORM
+        from_attributes = True  # Поддержка объектов Tortoise ORM

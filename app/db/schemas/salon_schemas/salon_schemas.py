@@ -63,7 +63,7 @@ class SalonOutSchema(BaseModel):
     text: Optional[str]
 
     class Config:
-        orm_mode = True  # Поддержка работы с объектами Tortoise ORM
+        from_attributes = True  # Поддержка работы с объектами Tortoise ORM
 
 # Полная информация о салоне (включая связанные данные)
 class SalonFullSchema(BaseModel):
@@ -74,4 +74,4 @@ class SalonFullSchema(BaseModel):
     invitations: Optional[List[dict]] = Field(None, title="Приглашения", description="Список приглашений мастеров")
 
     class Config:
-        orm_mode = True
+        from_attributes = True
