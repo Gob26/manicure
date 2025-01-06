@@ -18,7 +18,7 @@ class CityService:
             # Если города нет, создаем его
             city = await CityRepository.create_city(city_name, city_slug)
         
-        # Проверяем, есть ли уже в городе салоны или мастера
+        # Проверяем, есть ли в городе салоны или мастера
         if not await CityRepository.city_has_saloons_or_masters(city):
             raise HTTPException(status_code=400, detail=f"City {city_name} has no salons or masters.")
         

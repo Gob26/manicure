@@ -3,8 +3,9 @@ from tortoise.expressions import Q
 
 from db.models.master_models.master_model import Master
 from db.models.salon_models.salon_model import Salon
-from config.components.logging_config import logger
 from db.models.location.city import City
+from config.components.logging_config import logger
+
 
 class CityRepository:
     @staticmethod
@@ -17,19 +18,22 @@ class CityRepository:
         logger.debug(f"Результат поиска: {city!r}")
         return city  # Возвращаем найденный объект города
     
+
     @staticmethod
     async def create_city(city_name: str, city_slug: str):
         """Создать новый город."""
         city = await City.create(name=city_name, slug=city_slug)
         return city
 
+    #Объеденили два запроса в один для увеличения производительности
     @staticmethod
-    async def city_has_saloons_or_masters(city: City):
+    async def city_has_saloons_or_masters(city: City) -> bool:
         """Проверить, есть ли в городе салоны или мастера."""
-        has_saloons = await Salon.filter(city=city).exists()
-        has_masters = await Master.filter(city=city).exists()
-        return has_saloons or has_masters
+        result = await Salon.filter(city=city).exists() or await Master.filter(city=city).exists()
+        logger.debug(f"Результат проверки: {result!r}")
+        return result
     
+
     @staticmethod
     async def get_all_cities() -> list[City]:
         """
