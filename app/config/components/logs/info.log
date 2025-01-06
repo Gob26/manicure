@@ -16021,3 +16021,101 @@ DETAIL:  Key (user_id)=(85) already exists.[0m
 2025-01-06 07:58:35 - my_app - [34mDEBUG[0m - [34mПоиск города с slug: 'stavropol'[0m
 2025-01-06 07:58:35 - my_app - [34mDEBUG[0m - [34mРезультат поиска города: <City: 2104>[0m
 2025-01-06 07:58:35 - my_app - [34mDEBUG[0m - [34mРезультат проверки салонов или мастеров для города Ставрополь: True[0m
+2025-01-06 08:56:10 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 08:56:10 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 08:56:10 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 08:56:10 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 08:56:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 08:56:38 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 08:56:38 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 08:56:38 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 08:56:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 08:56:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 08:59:13 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 08:59:13 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 08:59:13 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 08:59:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 08:59:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 08:59:31 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 08:59:31 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 08:59:31 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 08:59:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 08:59:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 09:04:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 09:04:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 09:04:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 09:04:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 09:04:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 09:05:28 - my_app - [34mDEBUG[0m - [34mПоиск города с slug: 'active'[0m
+2025-01-06 09:05:28 - my_app - [34mDEBUG[0m - [34mРезультат поиска города: None[0m
+2025-01-06 09:05:28 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города active: HTTPException() takes no keyword arguments[0m
+2025-01-06 09:06:29 - my_app - [34mDEBUG[0m - [34mПоиск города с slug: 'active'[0m
+2025-01-06 09:06:29 - my_app - [34mDEBUG[0m - [34mРезультат поиска города: None[0m
+2025-01-06 09:06:29 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города active: HTTPException() takes no keyword arguments[0m
+2025-01-06 09:09:28 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 09:09:28 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 09:09:28 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 09:09:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 09:09:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 09:10:39 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 09:10:39 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 09:10:39 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 09:10:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 09:10:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 09:11:09 - my_app - [34mDEBUG[0m - [34mПолучение списка городов с активными услугами[0m
+2025-01-06 09:11:09 - my_app - [34mDEBUG[0m - [34mНайдено 5 городов с услугами[0m
+2025-01-06 09:29:14 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 09:29:14 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 09:29:14 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 09:29:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 09:29:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 09:32:13 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 09:32:13 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 09:32:13 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 09:32:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 09:32:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 09:32:40 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 09:32:40 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 09:32:40 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 09:32:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 09:32:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 09:32:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 09:32:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 09:32:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 09:32:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 09:32:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 09:35:18 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 09:35:18 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 09:35:18 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 09:35:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 09:35:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 09:36:24 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 09:36:24 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 09:36:24 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 09:36:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 09:36:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 09:36:34 - my_app - [34mDEBUG[0m - [34mНачало получения списка городов с активными услугами[0m
+2025-01-06 09:36:34 - my_app - [34mDEBUG[0m - [34mУспешно получено 5 городов с услугами[0m
+2025-01-06 09:36:34 - my_app - [34mDEBUG[0m - [34mПолучено 5 активных городов[0m
+2025-01-06 09:43:19 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 09:43:19 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 09:43:19 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 09:43:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 09:43:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 09:44:24 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 09:44:24 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 09:44:24 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 09:44:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 09:44:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 09:46:11 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 09:46:11 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 09:46:11 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 09:46:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 09:46:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 09:47:02 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 09:47:02 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 09:47:02 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 09:47:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 09:47:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 09:47:20 - my_app - [34mDEBUG[0m - [34mНачало получения списка городов с активными услугами[0m
+2025-01-06 09:47:20 - my_app - [34mDEBUG[0m - [34mУспешно получено 5 городов с услугами[0m

@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, List
 from tortoise.expressions import Q
 
 from db.models.master_models.master_model import Master
@@ -8,6 +8,27 @@ from config.components.logging_config import logger
 
 
 class CityRepository:
+    @staticmethod
+    async def get_cities_with_services() -> List[City]:
+        """
+        Получить список городов, в которых есть салоны или мастера.
+        Оптимизированный запрос с использованием Tortoise ORM.
+        """
+        logger.debug("Начало получения списка городов с активными услугами")
+        try:
+            # Получаем города с предварительной загрузкой мастеров и салонов
+            cities = await City.filter(
+                Q(masters__isnull=False) | Q(salons__isnull=False)
+            ).distinct().order_by('name')
+
+            logger.debug(f"Успешно получено {len(cities)} городов с услугами")
+            return cities
+
+        except Exception as e:
+            logger.error(f"Ошибка при получении списка городов: {str(e)}")
+            raise
+
+
     @staticmethod
     async def get_city_by_slug(slug: str) -> Optional[City]:
         """

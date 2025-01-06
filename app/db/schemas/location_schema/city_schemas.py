@@ -41,9 +41,21 @@ class CityDescriptionOutSchema(BaseModel):
     text: Optional[str]
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 # Полная информация о городе с описанием
 class FullCitySchema(BaseModel):
     city: CityOutSchema
     description: Optional[CityDescriptionOutSchema]
+
+class CityLinkSchema(BaseModel):
+    """Схема для отображения города со ссылкой"""
+    id: int
+    name: str = Field(..., description="Название города")
+    slug: str = Field(..., description="Слаг для URL")
+    url: str = Field(..., description="Ссылка на страницу города")
+    count_masters: int = Field(default=0, description="Количество мастеров")
+    count_salons: int = Field(default=0, description="Количество салонов")
+
+    class Config:
+        from_attributes = True

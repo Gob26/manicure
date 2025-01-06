@@ -1,4 +1,5 @@
 from http.client import HTTPException
+from typing import List
 
 from app.scripts.load_cities import generate_unique_slug
 from db.models.location.city import City
@@ -64,6 +65,32 @@ class CityService:
             },
             "description": description_data
         }
+
+        return result
+
+
+    @staticmethod
+    async def get_active_cities() -> List[dict]:
+        """
+        Получить список активных городов с ссылками и дополнительной информацией.
+        """
+        cities = await CityRepository.get_cities_with_services()
+
+        result = []
+        for city in cities:
+            # Получаем количество мастеров и салонов для города
+            masters_count = await city.masters.all().count()
+            salons_count = await city.salons.all().count()
+
+            city_data = {
+                "id": city.id,
+                "name": city.name,
+                "slug": city.slug,
+                "url": f"/cities/{city.slug}",  # формируем URL для города
+                "count_masters": masters_count,
+                "count_salons": salons_count
+            }
+            result.append(city_data)
 
         return result
 
