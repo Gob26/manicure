@@ -23,7 +23,7 @@ class CityOutSchema(BaseModel):
     slug: str
 
     class Config:
-        orm_mode = True  # Позволяет использовать объекты из Tortoise ORM
+        from_attributes = True
 
 # Схема для создания описания города
 class CityDescriptionCreateSchema(BaseModel):

@@ -15908,3 +15908,116 @@ DETAIL:  Key (user_id)=(85) already exists.[0m
 2025-01-06 07:09:10 - my_app - [33mWARNING[0m - [33mWarning message[0m
 2025-01-06 07:09:10 - my_app - [31mERROR[0m - [31mError message[0m
 2025-01-06 07:09:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:13:40 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:13:40 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:13:40 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:13:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:13:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:14:32 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера: type object 'CityRepository' has no attribute 'get_city_by_slug'[0m
+2025-01-06 07:17:18 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:17:18 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:17:18 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:17:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:17:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:17:39 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера: invalid literal for int() with base 10: 'omsk'[0m
+2025-01-06 07:21:06 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:21:06 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:21:06 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:21:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:21:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:21:13 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:21:13 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:21:13 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:21:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:21:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:21:26 - my_app - [34mDEBUG[0m - [34mПоиск города с slug: 'omsk'[0m
+2025-01-06 07:21:26 - my_app - [34mDEBUG[0m - [34mРезультат поиска города: <City: 1901>[0m
+2025-01-06 07:21:26 - my_app - [34mDEBUG[0m - [34mРезультат проверки салонов или мастеров для города Омск: True[0m
+2025-01-06 07:25:51 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:25:51 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:25:51 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:25:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:25:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:25:56 - my_app - [34mDEBUG[0m - [34mПоиск города с slug: 'omsk'[0m
+2025-01-06 07:25:56 - my_app - [34mDEBUG[0m - [34mРезультат поиска города: <City: 1901>[0m
+2025-01-06 07:25:56 - my_app - [34mDEBUG[0m - [34mРезультат проверки салонов или мастеров для города Омск: True[0m
+2025-01-06 07:26:44 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:26:44 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:26:44 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:26:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:26:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:33:35 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:33:35 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:33:35 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:33:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:33:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:34:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:34:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:34:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:34:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:34:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:35:14 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:35:14 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:35:14 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:35:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:35:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:36:26 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:36:26 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:36:26 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:36:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:36:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:36:29 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:36:29 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:36:29 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:36:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:36:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:36:49 - my_app - [34mDEBUG[0m - [34mПоиск города с slug: 'omsk'[0m
+2025-01-06 07:36:49 - my_app - [34mDEBUG[0m - [34mРезультат поиска города: <City: 1901>[0m
+2025-01-06 07:36:49 - my_app - [34mDEBUG[0m - [34mРезультат проверки салонов или мастеров для города Омск: True[0m
+2025-01-06 07:39:58 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:39:58 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:39:58 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:39:58 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:39:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:40:04 - my_app - [34mDEBUG[0m - [34mПоиск города с slug: 'omsk'[0m
+2025-01-06 07:40:04 - my_app - [34mDEBUG[0m - [34mРезультат поиска города: <City: 1901>[0m
+2025-01-06 07:40:04 - my_app - [34mDEBUG[0m - [34mРезультат проверки салонов или мастеров для города Омск: True[0m
+2025-01-06 07:42:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:42:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:42:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:42:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:42:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:42:47 - my_app - [34mDEBUG[0m - [34mПоиск города с slug: 'omsk'[0m
+2025-01-06 07:42:47 - my_app - [34mDEBUG[0m - [34mРезультат поиска города: <City: 1901>[0m
+2025-01-06 07:42:47 - my_app - [34mDEBUG[0m - [34mРезультат проверки салонов или мастеров для города Омск: True[0m
+2025-01-06 07:48:00 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:48:00 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:48:00 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:48:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:48:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:48:14 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:48:14 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:48:14 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:48:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:48:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:56:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:56:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:56:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:56:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:56:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:56:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:56:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:56:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:56:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:56:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:57:24 - my_app - [34mDEBUG[0m - [34mПоиск города с slug: 'omsk'[0m
+2025-01-06 07:57:24 - my_app - [34mDEBUG[0m - [34mРезультат поиска города: <City: 1901>[0m
+2025-01-06 07:57:24 - my_app - [34mDEBUG[0m - [34mРезультат проверки салонов или мастеров для города Омск: True[0m
+2025-01-06 07:58:10 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 07:58:10 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 07:58:10 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 07:58:10 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 07:58:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 07:58:35 - my_app - [34mDEBUG[0m - [34mПоиск города с slug: 'stavropol'[0m
+2025-01-06 07:58:35 - my_app - [34mDEBUG[0m - [34mРезультат поиска города: <City: 2104>[0m
+2025-01-06 07:58:35 - my_app - [34mDEBUG[0m - [34mРезультат проверки салонов или мастеров для города Ставрополь: True[0m

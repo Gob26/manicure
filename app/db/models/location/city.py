@@ -10,6 +10,12 @@ class City(AbstractModel):
     longitude = fields.FloatField(index=True)
     slug = fields.CharField(max_length=255, unique=True, index=True)
 
+    # Отношение к описанию города
+    description = fields.ReverseRelation["CityDescription"]
+
+    def __str__(self):
+        return self.name
+
     class Meta:
         table = "cities"  
         indexes = [

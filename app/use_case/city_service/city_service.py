@@ -24,18 +24,48 @@ class CityService:
         
         return city
 
+# Получаем город по слагу и если в нем есть мастера или салоны , то отображаем
     @staticmethod
-    async def get_city_by_slug(slug: str):
+    async def get_city_by_slug(slug: str) -> dict:
         """Получить город по slug, если в нем есть салоны или мастера."""
         city = await CityRepository.get_city_by_slug(slug)
-        
+
         if not city:
-            raise HTTPException(status_code=404, detail="City not found")
-        
+            raise HTTPException(status_code=404, detail="Город не найден")
+
         if not await CityRepository.city_has_saloons_or_masters(city):
-            raise HTTPException(status_code=404, detail="No salons or masters in this city")
-        
-        return city
+            raise HTTPException(status_code=404, detail="В городе нет салонов или мастеров")
+
+        # Получаем описание города
+        city_description = await city.description.all()
+        description_data = None
+
+        if city_description:
+            description = city_description[0]  # берем первое описание, если есть
+            description_data = {
+                "id": description.id,
+                "city_id": city.id,
+                "title": description.title,
+                "description": description.description,
+                "text": description.text
+            }
+
+        # Формируем ответ в соответствии с FullCitySchema
+        result = {
+            "city": {
+                "id": city.id,
+                "name": city.name,
+                "district": city.district,
+                "subject": city.subject,
+                "population": city.population,
+                "latitude": city.latitude,
+                "longitude": city.longitude,
+                "slug": city.slug
+            },
+            "description": description_data
+        }
+
+        return result
 
     @staticmethod
     async def get_salons_in_city(city: City):

@@ -9,30 +9,32 @@ from config.components.logging_config import logger
 
 class CityRepository:
     @staticmethod
-    async def get_city_by_name(name: str) -> Optional[City]:
+    async def get_city_by_slug(slug: str) -> Optional[City]:
         """
-        Получение города по названию.
+        Получение города по slug.
         """
-        logger.debug(f"Поиск города: {name!r}")
-        city = await City.get_or_none(Q(name__iexact=name))  # Поиск города по имени
-        logger.debug(f"Результат поиска: {city!r}")
+        logger.debug(f"Поиск города с slug: {slug!r}")
+        city = await City.get_or_none(Q(slug=slug))  # Поиск города по slug
+        logger.debug(f"Результат поиска города: {city!r}")
         return city  # Возвращаем найденный объект города
-    
 
     @staticmethod
-    async def create_city(city_name: str, city_slug: str):
-        """Создать новый город."""
+    async def create_city(city_name: str, city_slug: str) -> City:
+        """
+        Создать новый город.
+        """
         city = await City.create(name=city_name, slug=city_slug)
+        logger.debug(f"Создан новый город: {city!r}")
         return city
 
-    #Объеденили два запроса в один для увеличения производительности
     @staticmethod
     async def city_has_saloons_or_masters(city: City) -> bool:
-        """Проверить, есть ли в городе салоны или мастера."""
+        """
+        Проверить, есть ли в городе салоны или мастера.
+        """
         result = await Salon.filter(city=city).exists() or await Master.filter(city=city).exists()
-        logger.debug(f"Результат проверки: {result!r}")
+        logger.debug(f"Результат проверки салонов или мастеров для города {city.name}: {result}")
         return result
-    
 
     @staticmethod
     async def get_all_cities() -> list[City]:
@@ -41,4 +43,3 @@ class CityRepository:
         """
         logger.debug("Получение всех городов")
         return await City.all()
-
