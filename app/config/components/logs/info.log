@@ -16144,3 +16144,235 @@ DETAIL:  Key (user_id)=(85) already exists.[0m
 2025-01-06 10:28:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
 2025-01-06 10:28:43 - my_app - [31mERROR[0m - [31mError message[0m
 2025-01-06 10:28:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 11:40:40 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 11:40:40 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 11:40:40 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 11:40:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 11:40:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 11:41:07 - my_app - [34mDEBUG[0m - [34mНачало поиска города по slug: 'omsk'[0m
+2025-01-06 11:41:07 - my_app - [31mERROR[0m - [31mОшибка при выполнении запроса: 'str' object has no attribute 'executor_class'[0m
+2025-01-06 11:41:07 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города omsk: 'str' object has no attribute 'executor_class'[0m
+2025-01-06 11:41:31 - my_app - [34mDEBUG[0m - [34mНачало получения списка городов с активными услугами[0m
+2025-01-06 11:41:31 - my_app - [34mDEBUG[0m - [34mУспешно получено 0 городов с услугами[0m
+2025-01-06 11:41:48 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 11:41:48 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 11:41:48 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 11:41:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 11:41:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 11:41:51 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 11:41:51 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 11:41:51 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 11:41:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 11:41:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 11:41:54 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 11:41:54 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 11:41:54 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 11:41:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 11:41:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 11:42:15 - my_app - [34mDEBUG[0m - [34mНачало получения списка городов с активными услугами[0m
+2025-01-06 11:42:15 - my_app - [34mDEBUG[0m - [34mУспешно получено 5 городов с услугами[0m
+2025-01-06 11:42:32 - my_app - [34mDEBUG[0m - [34mПоиск города с slug: 'omsk'[0m
+2025-01-06 11:42:32 - my_app - [34mDEBUG[0m - [34mРезультат поиска города: <City: 1901>[0m
+2025-01-06 11:42:32 - my_app - [34mDEBUG[0m - [34mРезультат проверки салонов или мастеров для города Омск: True[0m
+2025-01-06 13:40:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 13:40:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 13:40:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 13:40:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 13:40:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 16:49:05 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 16:49:05 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 16:49:05 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 16:49:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 16:49:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 16:52:38 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 16:52:38 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 16:52:38 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 16:52:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 16:52:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 16:57:32 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 16:57:32 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 16:57:32 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 16:57:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 16:57:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 17:00:37 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 17:00:37 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 17:00:37 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 17:00:37 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 17:00:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 17:01:37 - my_app - [32mINFO[0m - [32mРегистрация пользователя: good, город: Омск, роль: master[0m
+2025-01-06 17:01:37 - my_app - [32mINFO[0m - [32mПользователь good пытается зарегистрироваться с городом Омск[0m
+2025-01-06 17:01:37 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя good: type object 'CityRepository' has no attribute 'get_city_by_name'[0m
+2025-01-06 17:01:37 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя good: type object 'CityRepository' has no attribute 'get_city_by_name'[0m
+2025-01-06 17:07:34 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 17:07:34 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 17:07:34 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 17:07:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 17:07:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 17:08:30 - my_app - [32mINFO[0m - [32mРегистрация пользователя: govr, город: Омск, роль: master[0m
+2025-01-06 17:08:30 - my_app - [32mINFO[0m - [32mПользователь govr пытается зарегистрироваться с городом Омск[0m
+2025-01-06 17:08:30 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-06 17:08:30 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-06 17:08:30 - my_app - [32mINFO[0m - [32mГород Омск найден, ID: 1901[0m
+2025-01-06 17:08:31 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=govr, city_name=Омск, role=master[0m
+2025-01-06 17:08:31 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-06 17:08:31 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-06 17:08:31 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'username': 'govr'} существует: False[0m
+2025-01-06 17:08:31 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'email': 'govr@govr.ru'} существует: False[0m
+2025-01-06 17:08:31 - my_app - [32mINFO[0m - [32mUser создан с данными: {'username': 'govr', 'email': 'govr@govr.ru', 'password': '$2b$12$ZcJDaL1MZhN9JJ0T3FM1fees0WZep/GanILvQsH8TXNZ8h1RrwBzK', 'city': <City: 1901>, 'role': 'master'}[0m
+2025-01-06 17:08:31 - my_app - [32mINFO[0m - [32mПользователь govr успешно зарегистрирован.[0m
+2025-01-06 17:08:31 - my_app - [32mINFO[0m - [32mПользователь govr успешно зарегистрирован[0m
+2025-01-06 17:08:44 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: govr[0m
+2025-01-06 17:08:44 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя govr[0m
+2025-01-06 17:08:44 - my_app - [32mINFO[0m - [32mПользователь govr найден, проверка пароля.[0m
+2025-01-06 17:08:44 - my_app - [32mINFO[0m - [32mПользователь govr успешно авторизован[0m
+2025-01-06 17:08:44 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 109, 'username': 'govr', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-06 17:08:44 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMDkiLCJ1c2VybmFtZSI6ImdvdnIiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MTc0MzI0LCJjaXR5IjoiIn0.5nsjugTqKkESpEbzoYCpr8qZ-DCL11-mFQlOy_vb3VQ[0m
+2025-01-06 17:08:44 - my_app - [32mINFO[0m - [32mПользователь govr успешно авторизован[0m
+2025-01-06 17:11:19 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 17:11:19 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 17:11:19 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 17:11:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 17:11:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 17:18:18 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 17:18:18 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 17:18:18 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 17:18:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 17:18:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 17:19:05 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 17:19:05 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 17:19:05 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 17:19:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 17:19:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 17:19:48 - my_app - [32mINFO[0m - [32mРегистрация пользователя: mtv23, город: Омск, роль: master[0m
+2025-01-06 17:19:48 - my_app - [32mINFO[0m - [32mПользователь mtv23 пытается зарегистрироваться с городом Омск[0m
+2025-01-06 17:19:48 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-06 17:19:48 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-06 17:19:48 - my_app - [32mINFO[0m - [32mГород Омск найден, ID: 1901[0m
+2025-01-06 17:19:48 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=mtv23, city_name=Омск, role=master[0m
+2025-01-06 17:19:48 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-06 17:19:48 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-06 17:19:48 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'username': 'mtv23'} существует: False[0m
+2025-01-06 17:19:48 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'email': 'mtv23@mtv23.ru'} существует: False[0m
+2025-01-06 17:19:49 - my_app - [32mINFO[0m - [32mUser создан с данными: {'username': 'mtv23', 'email': 'mtv23@mtv23.ru', 'password': '$2b$12$JrBDtqDKylvTZrzzN.rzlucbOx4C1IxOLotdDT0lEF4Fy8fNqTO.S', 'city': <City: 1901>, 'role': 'master'}[0m
+2025-01-06 17:19:49 - my_app - [32mINFO[0m - [32mПользователь mtv23 успешно зарегистрирован.[0m
+2025-01-06 17:19:49 - my_app - [32mINFO[0m - [32mПользователь mtv23 успешно зарегистрирован[0m
+2025-01-06 17:19:58 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: mtv23[0m
+2025-01-06 17:19:58 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя mtv23[0m
+2025-01-06 17:19:58 - my_app - [32mINFO[0m - [32mПользователь mtv23 найден, проверка пароля.[0m
+2025-01-06 17:19:58 - my_app - [32mINFO[0m - [32mПользователь mtv23 успешно авторизован[0m
+2025-01-06 17:19:58 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 110, 'username': 'mtv23', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-06 17:19:58 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTAiLCJ1c2VybmFtZSI6Im10djIzIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNjE3NDk5OCwiY2l0eSI6IiJ9.mQwP1BA2pF4QTCuBXFXpxMiYSkRj-aA0JY3BRlEOz4w[0m
+2025-01-06 17:19:58 - my_app - [32mINFO[0m - [32mПользователь mtv23 успешно авторизован[0m
+2025-01-06 17:23:50 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 17:23:50 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 17:23:50 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 17:23:50 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 17:23:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 17:24:06 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 17:24:06 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 17:24:06 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 17:24:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 17:24:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 17:24:41 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: mtv23[0m
+2025-01-06 17:24:41 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя mtv23[0m
+2025-01-06 17:24:41 - my_app - [32mINFO[0m - [32mПользователь mtv23 найден, проверка пароля.[0m
+2025-01-06 17:24:41 - my_app - [32mINFO[0m - [32mПользователь mtv23 успешно авторизован[0m
+2025-01-06 17:24:41 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 110, 'username': 'mtv23', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-06 17:24:41 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTAiLCJ1c2VybmFtZSI6Im10djIzIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNjE3NTI4MSwiY2l0eSI6IiJ9.J3CpwafZwMfjumBdmO2sV1UC8hy01lJJbwkRwXJ1LZE[0m
+2025-01-06 17:24:41 - my_app - [32mINFO[0m - [32mПользователь mtv23 успешно авторизован[0m
+2025-01-06 17:27:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 17:27:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 17:27:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 17:27:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 17:27:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 17:27:37 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: mtv23[0m
+2025-01-06 17:27:37 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя mtv23[0m
+2025-01-06 17:27:37 - my_app - [32mINFO[0m - [32mПользователь mtv23 найден, проверка пароля.[0m
+2025-01-06 17:27:37 - my_app - [32mINFO[0m - [32mПользователь mtv23 успешно авторизован[0m
+2025-01-06 17:27:37 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 110, 'username': 'mtv23', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-06 17:27:37 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTAiLCJ1c2VybmFtZSI6Im10djIzIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNjE3NTQ1NywiY2l0eSI6IiJ9.YcwayO_XTqfpuT9lddJFuJwVgl28HNlXlyw8Ckz86_w[0m
+2025-01-06 17:27:37 - my_app - [32mINFO[0m - [32mПользователь mtv23 успешно авторизован[0m
+2025-01-06 17:28:36 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 17:28:36 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 17:28:36 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 17:28:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 17:28:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 17:30:21 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 17:30:21 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 17:30:21 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 17:30:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 17:30:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 17:30:55 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 17:30:55 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 17:30:55 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 17:30:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 17:30:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 17:32:22 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 17:32:22 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 17:32:22 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 17:32:22 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 17:32:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 17:33:31 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: mtv23[0m
+2025-01-06 17:33:31 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя mtv23[0m
+2025-01-06 17:33:31 - my_app - [32mINFO[0m - [32mПользователь mtv23 найден, проверка пароля.[0m
+2025-01-06 17:33:31 - my_app - [32mINFO[0m - [32mПользователь mtv23 успешно авторизован[0m
+2025-01-06 17:33:31 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 110, 'username': 'mtv23', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-06 17:33:31 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTAiLCJ1c2VybmFtZSI6Im10djIzIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNjE3NTgxMSwiY2l0eSI6IiJ9.Ed8J9gTtm92wB8hSHoyx_UgEO5ZBdkTokbN2bnT_-yg[0m
+2025-01-06 17:33:31 - my_app - [32mINFO[0m - [32mПользователь mtv23 успешно авторизован[0m
+2025-01-06 17:34:02 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-06 17:34:02 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTAiLCJ1c2VybmFtZSI6Im10djIzIiwicm9sZSI6Im1hc3RlciIsImNpdHlfaWQiOjE5MDEsImV4cCI6MTczNjE3NTgxMSwiY2l0eSI6IiJ9.Ed8J9gTtm92wB8hSHoyx_UgEO5ZBdkTokbN2bnT_-yg[0m
+2025-01-06 17:34:02 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '110', 'username': 'mtv23', 'role': 'master', 'city_id': 1901, 'exp': 1736175811, 'city': ''}[0m
+2025-01-06 17:34:02 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '110', 'username': 'mtv23', 'role': 'master', 'city_id': 1901, 'exp': 1736175811, 'city': ''}[0m
+2025-01-06 17:34:02 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'mtv23', 'user_id': '110', 'role': 'master', 'city_id': 1901}[0m
+2025-01-06 17:34:02 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'mtv23', 'user_id': '110', 'role': 'master', 'city_id': 1901}[0m
+2025-01-06 17:34:02 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 110[0m
+2025-01-06 17:34:02 - my_app - [32mINFO[0m - [32mMaster создан с данными: {'user_id': '110', 'city_id': 1901, 'city_slug': <coroutine object CityRepository.get_city_by_id at 0x7f5890f3b4c0>, 'title': 'mtv23', 'specialty': 'mtv23', 'description': 'mtv23', 'text': 'mtv23', 'experience_years': 10, 'slug': 'mtv23'}[0m
+2025-01-06 17:34:02 - my_app - [32mINFO[0m - [32mМастер создан с данными: {'user_id': '110', 'city_id': 1901, 'city_slug': <coroutine object CityRepository.get_city_by_id at 0x7f5890f3b4c0>, 'title': 'mtv23', 'specialty': 'mtv23', 'description': 'mtv23', 'text': 'mtv23', 'experience_years': 10, 'slug': 'mtv23'}[0m
+2025-01-06 17:34:02 - my_app - [32mINFO[0m - [32mcreate_master: мастер с ID 28 успешно создан[0m
+2025-01-06 17:36:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 17:36:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 17:36:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 17:36:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 17:36:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 17:39:44 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 17:39:44 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 17:39:44 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 17:39:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 17:39:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 17:40:14 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-06 17:40:14 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-06 17:40:14 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-06 17:40:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-06 17:40:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-06 17:41:05 - my_app - [32mINFO[0m - [32mРегистрация пользователя: Started, город: Омск, роль: master[0m
+2025-01-06 17:41:05 - my_app - [32mINFO[0m - [32mПользователь Started пытается зарегистрироваться с городом Омск[0m
+2025-01-06 17:41:05 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-06 17:41:05 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-06 17:41:05 - my_app - [32mINFO[0m - [32mГород Омск найден, ID: 1901[0m
+2025-01-06 17:41:06 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=Started, city_name=Омск, role=master[0m
+2025-01-06 17:41:06 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-06 17:41:06 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-06 17:41:06 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'username': 'Started'} существует: False[0m
+2025-01-06 17:41:06 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'email': 'Started@Started.ru'} существует: False[0m
+2025-01-06 17:41:06 - my_app - [32mINFO[0m - [32mUser создан с данными: {'username': 'Started', 'email': 'Started@Started.ru', 'password': '$2b$12$YSniSwZEt.7hD67.OYZRGuUcsM94A9Cxtfu6Bmsvx/MfYa1lMoBn.', 'city': <City: 1901>, 'role': 'master'}[0m
+2025-01-06 17:41:06 - my_app - [32mINFO[0m - [32mПользователь Started успешно зарегистрирован.[0m
+2025-01-06 17:41:06 - my_app - [32mINFO[0m - [32mПользователь Started успешно зарегистрирован[0m
+2025-01-06 17:41:23 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: Started[0m
+2025-01-06 17:41:23 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя Started[0m
+2025-01-06 17:41:23 - my_app - [32mINFO[0m - [32mПользователь Started найден, проверка пароля.[0m
+2025-01-06 17:41:23 - my_app - [32mINFO[0m - [32mПользователь Started успешно авторизован[0m
+2025-01-06 17:41:23 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 111, 'username': 'Started', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-06 17:41:23 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTEiLCJ1c2VybmFtZSI6IlN0YXJ0ZWQiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MTc2MjgzLCJjaXR5IjoiIn0.tcPWTGAuwTmxlTT4-abGwXWVseeA1Pe96MXGyYgZv8M[0m
+2025-01-06 17:41:23 - my_app - [32mINFO[0m - [32mПользователь Started успешно авторизован[0m
+2025-01-06 17:41:49 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-06 17:41:49 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTEiLCJ1c2VybmFtZSI6IlN0YXJ0ZWQiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MTc2MjgzLCJjaXR5IjoiIn0.tcPWTGAuwTmxlTT4-abGwXWVseeA1Pe96MXGyYgZv8M[0m
+2025-01-06 17:41:49 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '111', 'username': 'Started', 'role': 'master', 'city_id': 1901, 'exp': 1736176283, 'city': ''}[0m
+2025-01-06 17:41:49 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '111', 'username': 'Started', 'role': 'master', 'city_id': 1901, 'exp': 1736176283, 'city': ''}[0m
+2025-01-06 17:41:49 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'Started', 'user_id': '111', 'role': 'master', 'city_id': 1901}[0m
+2025-01-06 17:41:49 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'Started', 'user_id': '111', 'role': 'master', 'city_id': 1901}[0m
+2025-01-06 17:41:49 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 111[0m
+2025-01-06 17:41:49 - my_app - [34mDEBUG[0m - [34mПоиск slug города с ID: 1901[0m
+2025-01-06 17:41:49 - my_app - [34mDEBUG[0m - [34mГород найден: <City: 1901>[0m
+2025-01-06 17:41:49 - my_app - [32mINFO[0m - [32mMaster создан с данными: {'user_id': '111', 'city_id': 1901, 'city_slug': 'omsk', 'title': 'Started', 'specialty': 'Started', 'description': 'Started', 'text': 'Started', 'experience_years': 10, 'slug': 'Started'}[0m
+2025-01-06 17:41:49 - my_app - [32mINFO[0m - [32mМастер создан с данными: {'user_id': '111', 'city_id': 1901, 'city_slug': 'omsk', 'title': 'Started', 'specialty': 'Started', 'description': 'Started', 'text': 'Started', 'experience_years': 10, 'slug': 'Started'}[0m
+2025-01-06 17:41:49 - my_app - [32mINFO[0m - [32mcreate_master: мастер с ID 29 успешно создан[0m

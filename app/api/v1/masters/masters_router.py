@@ -8,10 +8,10 @@ from config.components.logging_config import logger
 master_router = APIRouter()
 
 @master_router.post(
-    "/master",
+    "/cities/{city_slug}/masters",
     response_model=MasterCreateSchema,
     status_code=status.HTTP_201_CREATED,
-    summary="Создание профиля мастера",
+    summary="Создание профиля мастера с учетом города",
     description="Создает новый профиль мастера.",
 )
 async def create_master_route(
@@ -19,6 +19,7 @@ async def create_master_route(
     current_user: dict = Depends(get_current_user)  # Получаем текущего пользователя
 ):
     logger.info(f"Текущий пользователь: {current_user}")
+
 
     # Проверка прав доступа
     if current_user["role"] not in ["master", "admin"]:

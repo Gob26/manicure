@@ -40,6 +40,31 @@ class CityRepository:
         return city  # Возвращаем найденный объект города
 
     @staticmethod
+    async def get_city_by_id(city_id) -> str:
+        """
+        Получает slug города по его ID
+        """
+        logger.debug(f"Поиск slug города с ID: {city_id}")
+        city = await City.get_or_none(Q(id=city_id))
+        if city:
+            logger.debug(f"Город найден: {city!r}")
+            return city.slug  # Возвращаем slug города
+        else:
+            logger.warning(f"Город с ID {city_id} не найден.")
+            return None  # Возвращаем None, если город не найден
+
+    @staticmethod
+    async def get_city_by_name(name: str) -> Optional[City]:
+        """
+        Получение города по названию.
+        """
+        logger.debug(f"Поиск города: {name!r}")
+        city = await City.get_or_none(Q(name__iexact=name))  # Поиск города по имени
+        logger.debug(f"Результат поиска: {city!r}")
+        return city  # Возвращаем найденный объект города
+
+
+    @staticmethod
     async def create_city(city_name: str, city_slug: str) -> City:
         """
         Создать новый город.
