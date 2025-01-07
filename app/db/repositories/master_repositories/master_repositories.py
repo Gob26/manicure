@@ -17,6 +17,11 @@ class MasterRepository(BaseRepository):
         return master
 
     @classmethod
+    async def get_master_by_slug(cls, slug: str) -> Optional[Master]:
+        """Получение мастера по слагу."""
+        return await cls.get_or_none(slug=slug)
+
+    @classmethod
     async def get_master_by_id(cls, master_id: int) -> Optional[Master]:
         """Получение мастера по ID в одной таблице."""
         return await cls.get_by_id(master_id)
@@ -28,6 +33,13 @@ class MasterRepository(BaseRepository):
             master_id,
             "user", "services", "city", "applications", "relations"
         )
+    @classmethod
+    async def get_master_by_city_and_slug(cls, city_slug: str, master_slug: str) -> Optional[Master]:
+        """
+        Получение мастера по slug города и slug мастера без загрузки связанных объектов.
+        """
+        query = cls.model.filter(city__slug=city_slug, slug=master_slug)
+        return await query.first()
 
 #    @classmethod
  #   async def get_all_masters(cls, limit: int = 10, offset: int = 0) -> List[Master]:

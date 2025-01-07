@@ -22,7 +22,6 @@ class SalonService:
         """
         logger.debug(f"create_master: старт создания мастера для пользователя ID {current_user['user_id']}")
 
-
         # Проверка на наличие салона
         existing_salon = await SalonRepository.get_salon_by_id(current_user["user_id"])
         if existing_salon:

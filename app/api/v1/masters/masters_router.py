@@ -3,15 +3,15 @@ from use_case.utils.jwt_handler import get_current_user
 from use_case.master_service.master_service import MasterService
 from db.schemas.master_schemas.master_schemas import MasterCreateInputSchema, MasterCreateSchema
 from config.components.logging_config import logger
-
+from use_case.utils.permissions import check_user_permission
 
 master_router = APIRouter()
 
 @master_router.post(
-    "/cities/{city_slug}/masters",
+    "/",
     response_model=MasterCreateSchema,
     status_code=status.HTTP_201_CREATED,
-    summary="Создание профиля мастера с учетом города",
+    summary="Создание профиля мастера ",
     description="Создает новый профиль мастера.",
 )
 async def create_master_route(
@@ -20,13 +20,8 @@ async def create_master_route(
 ):
     logger.info(f"Текущий пользователь: {current_user}")
 
-
     # Проверка прав доступа
-    if current_user["role"] not in ["master", "admin"]:
-        raise HTTPException(
-            status_code=status.HTTP_403_FORBIDDEN,
-            detail="У вас нет прав для создания мастера"
-        )
+    check_user_permission(current_user, ["master", "admin"])
 
     # Создание мастера через сервис
     try:
@@ -34,6 +29,7 @@ async def create_master_route(
             current_user=current_user,  # Передаем текущего пользователя
             **master_data.dict()  # Передаем данные мастера
         )
+
         return master  # Возвращаем данные созданного мастера
     except ValueError as ve:
         logger.warning(f"Ошибка бизнес-логики: {ve}")

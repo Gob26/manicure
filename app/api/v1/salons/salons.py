@@ -3,11 +3,11 @@ from use_case.utils.jwt_handler import get_current_user
 from use_case.salon_service.salon_service import SalonService
 from db.schemas.salon_schemas.salon_schemas import SalonCreateSchema, SalonCreateInputSchema
 from config.components.logging_config import logger
-
+from use_case.utils.permissions import check_user_permission
 
 salon_router = APIRouter()
 
-@salon_router.post("/salon",
+@salon_router.post("/",
     response_model=SalonCreateSchema,
     status_code=status.HTTP_201_CREATED,
     summary="Создание салона",
@@ -20,11 +20,7 @@ async def create_salon_route(
     logger.info(f"Текущий пользователь: {current_user}")
 
     # Проверка прав доступа
-    if current_user["role"] not in ["salon", "admin"]:
-        raise HTTPException(
-            status_code=status.HTTP_403_FORBIDDEN,
-            detail="У вас нет прав для создания салона"
-        )
+    check_user_permission(current_user,["salon", "admin"])
 
     # Создание салона через сервис
     try:
