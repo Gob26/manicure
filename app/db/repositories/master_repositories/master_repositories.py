@@ -123,3 +123,23 @@ class MasterRepository(BaseRepository):
     async def bulk_create_masters(cls, masters_data: List[dict]) -> List[Master]:
         """Массовое создание мастеров."""
         return await cls.bulk_create(masters_data)
+    
+    @classmethod
+    async def update_master(cls, master_id: int, **kwargs: Any) -> Optional[Master]:
+        """Обновление мастера."""
+        master = await cls.get_by_id(master_id)
+        if master:
+            await master.update_from_dict(kwargs).save()
+            logger.info(f"Мастер обновлен с данными: {kwargs}")
+            return master
+        return None
+    
+    @classmethod
+    async def delete_master(cls, master_id: int) -> Optional[Master]:
+        """Удаление мастера."""
+        master = await cls.get_by_id(master_id)
+        if master:
+            await master.delete()
+            logger.info(f"Мастер с ID {master_id} удален.")
+            return master
+        return None

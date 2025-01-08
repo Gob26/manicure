@@ -36,3 +36,61 @@ async def create_master_route(
     except Exception as e:
         logger.error(f"Системная ошибка при создании мастера: {e}")
         raise HTTPException(status_code=500, detail="Системная ошибка при создании мастера")
+
+#Обновление профиля мастера
+@master_router.put(
+    "/{master_id}",
+    response_model=MasterCreateSchema,
+    summary="Обновление профиля мастера",
+    description="Обновляет существующий профиль мастера с новыми данными.",
+)
+async def update_master_route(
+    master_id: int,
+    master_data: MasterCreateInputSchema,
+    current_user: dict = Depends(get_current_user),
+):
+    logger.info(f"Текущий пользователь: {current_user}")
+
+    # Проверка прав доступа
+    check_user_permission(current_user, ["master", "admin"])
+
+    # Обновление мастера через сервис
+    try:
+        master = await MasterService.update_master(
+            master_id=master_id,
+            current_user=current_user,
+            **master_data.dict()
+        )
+        return master
+    except ValueError as ve:
+        logger.warning(f"Ошибка бизнес-логики: {ve}")
+        raise HTTPException(status_code=400, detail=str(ve))
+    except Exception as e:
+        logger.error(f"Системная ошибка при обновлении мастера: {e}")
+        raise HTTPException(status_code=500, detail="Системная ошибка при обновлении мастера")
+    
+# Удаление профиля мастера
+@master_router.delete(
+    "/{master_id}",
+    status_code=status.HTTP_204_NO_CONTENT,
+    summary="Удаление профиля мастера",
+    description="Удаляет профиль мастера по его ID.",
+)
+async def delete_master_route(
+    master_id: int,
+    current_user: dict = Depends(get_current_user),
+):
+    logger.info(f"Текущий пользователь: {current_user}")
+
+    # Проверка прав доступа
+    check_user_permission(current_user, ["master", "admin"])
+
+    # Удаление мастера через сервис
+    try:
+        await MasterService.delete_master(master_id=master_id, current_user=current_user)
+    except ValueError as ve:
+        logger.warning(f"Ошибка бизнес-логики: {ve}")
+        raise HTTPException(status_code=400, detail=str(ve))
+    except Exception as e:
+        logger.error(f"Системная ошибка при удалении мастера: {e}")
+        raise HTTPException(status_code=500, detail="Системная ошибка при удалении мастера")

@@ -35,3 +35,4 @@ async def create_salon_route(
     except Exception as e:
         logger.error(f"Системная ошибка при создании салона: {e}")
         raise HTTPException(status_code=500, detail="Системная ошибка при создании салона")
+        logger.error(f"Ошибка при создании салона: {e}")    
