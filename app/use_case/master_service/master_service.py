@@ -15,6 +15,17 @@ class MasterService:
         text: Optional[str] = None,
         experience_years: Optional[int] = 0,
         slug: Optional[str] = None,
+        name: Optional[str] = None,
+        address: Optional[str] = None,
+        phone: Optional[str] = None,
+        telegram: Optional[str] = None,
+        whatsapp: Optional[str] = None,
+        website: Optional[str] = None,
+        vk: Optional[str] = None,
+        instagram: Optional[str] = None,
+        accepts_at_home: Optional[bool] = False,
+        accepts_in_salon: Optional[bool] = False,
+        accepts_offsite: Optional[bool] = False,
     ) -> dict:
         """
         Создание мастера с использованием текущего пользователя.
@@ -24,6 +35,7 @@ class MasterService:
         # Проверка на наличие мастера
         existing_master = await MasterRepository.get_master_by_user_id(current_user["user_id"])
         if existing_master:
+            logger.error(f"Мастер уже существует для пользователя ID {current_user['user_id']}")
             raise ValueError(f"Мастер уже создан для пользователя с ID {current_user['user_id']}")
 
         # Генерация уникального слага
@@ -40,6 +52,17 @@ class MasterService:
             text=text,
             experience_years=experience_years,
             slug=slug,
+            name=name,
+            address=address,
+            phone=phone,
+            telegram=telegram,
+            whatsapp=whatsapp,
+            website=website,
+            vk=vk,
+            instagram=instagram,
+            accepts_at_home=accepts_at_home,
+            accepts_in_salon=accepts_in_salon,
+            accepts_offsite=accepts_offsite,
         )
 
         logger.info(f"create_master: мастер с ID {master.id} успешно создан")
@@ -52,4 +75,15 @@ class MasterService:
             "text": master.text,
             "experience_years": master.experience_years,
             "slug": master.slug,
+            "name": master.name,
+            "address": master.address,
+            "phone": master.phone,
+            "telegram": master.telegram,
+            "whatsapp": master.whatsapp,
+            "website": master.website,
+            "vk": master.vk,
+            "instagram": master.instagram,
+            "accepts_at_home": master.accepts_at_home,
+            "accepts_in_salon": master.accepts_in_salon,
+            "accepts_offsite": master.accepts_offsite,
         }

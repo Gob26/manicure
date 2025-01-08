@@ -1,4 +1,7 @@
 from typing import Optional, List, Union, Any
+
+from fastapi import HTTPException
+
 from db.models.services_models.service_custom_model import CustomService
 from db.models.master_models.master_model import Master
 from db.models.location.city import City
@@ -60,14 +63,25 @@ class MasterRepository(BaseRepository):
         """Получение мастера по ID пользователя."""
         return await cls.get_or_none(user_id=user_id)
 
+
     @classmethod
-    async def get_masters_by_city(cls, city: City, limit: int = 10, offset: int = 0) -> List[Master]:
-        """Получить мастеров по городу."""
-        return await cls.filter(
-            limit=limit,
-            offset=offset,
-            city=city
-        )
+    async def get_masters_in_city(cls, city_slug: str, limit: int = 10, offset: int = 0) -> List[Master]:
+        """
+        Получение мастеров для конкретного города.
+        """
+        try:
+            # Один запрос для получения города и всех мастеров в нем
+            city = await City.get(slug=city_slug)  # Получаем город по slug
+
+            # Получаем мастеров, связанных с этим городом
+            masters = await Master.filter(
+                city=city
+            ).offset(offset).limit(limit).prefetch_related('city')  # Загружаем город для каждого мастера
+
+            return masters
+        except City.DoesNotExist:
+            raise HTTPException(status_code=404, detail="Город не найден.")
+
 
     @classmethod
     async def get_masters_with_specialty(cls, specialty: str, limit: int = 10, offset: int = 0) -> List[Master]:

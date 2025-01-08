@@ -11,12 +11,12 @@ master_router = APIRouter()
     "/",
     response_model=MasterCreateSchema,
     status_code=status.HTTP_201_CREATED,
-    summary="Создание профиля мастера ",
-    description="Создает новый профиль мастера.",
+    summary="Создание профиля мастера",
+    description="Создает новый профиль мастера с контактной информацией, соцсетями и вариантами приема.",
 )
 async def create_master_route(
-    master_data: MasterCreateInputSchema,  # Данные для создания мастера (без user_id и city_id)
-    current_user: dict = Depends(get_current_user)  # Получаем текущего пользователя
+    master_data: MasterCreateInputSchema,  # Данные для создания мастера
+    current_user: dict = Depends(get_current_user),  # Получаем текущего пользователя
 ):
     logger.info(f"Текущий пользователь: {current_user}")
 
@@ -29,7 +29,6 @@ async def create_master_route(
             current_user=current_user,  # Передаем текущего пользователя
             **master_data.dict()  # Передаем данные мастера
         )
-
         return master  # Возвращаем данные созданного мастера
     except ValueError as ve:
         logger.warning(f"Ошибка бизнес-логики: {ve}")

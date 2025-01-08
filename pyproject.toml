@@ -11,7 +11,7 @@ fastapi = {extras = ["standard"], version = "^0.115.4"}
 uvicorn = {extras = ["standard"], version = "^0.32"}
 django-split-settings = "^1.1.0"
 tortoise-orm = {extras = ["asyncpg"], version = "^0.21"}
-aerich = "0.7.1"
+aerich = "^0.8.1"
 httpx = "^0.27"
 pydantic-settings = "^2.4.0"
 sentry-sdk = "^2.16.0"

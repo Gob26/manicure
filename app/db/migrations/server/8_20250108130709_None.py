@@ -44,18 +44,51 @@ CREATE TABLE IF NOT EXISTS "city_descriptions" (
     "text" TEXT,
     "city_id" INT NOT NULL UNIQUE REFERENCES "cities" ("id") ON DELETE CASCADE
 );
+CREATE TABLE IF NOT EXISTS "custom_services" (
+    "id" SERIAL NOT NULL PRIMARY KEY,
+    "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    "name" VARCHAR(255) NOT NULL,
+    "description" TEXT,
+    "price" DECIMAL(10,2) NOT NULL,
+    "duration" INT NOT NULL,
+    "owner_type" VARCHAR(50) NOT NULL,
+    "owner_id" INT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS "photos" (
+    "id" SERIAL NOT NULL PRIMARY KEY,
+    "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    "file_name" VARCHAR(255) NOT NULL,
+    "file_path" VARCHAR(1000) NOT NULL,
+    "mime_type" VARCHAR(100) NOT NULL,
+    "size" INT NOT NULL,
+    "width" INT,
+    "height" INT,
+    "is_main" BOOL NOT NULL  DEFAULT False,
+    "sort_order" INT NOT NULL  DEFAULT 0,
+    "master_id" INT,
+    "salon_id" INT,
+    "service_id" INT,
+    "entity_type" VARCHAR(14) NOT NULL,
+    "caption" VARCHAR(1000),
+    "is_active" BOOL NOT NULL  DEFAULT True
+);
+COMMENT ON COLUMN "photos"."entity_type" IS 'MASTER_AVATAR: master_avatar\nMASTER_WORK: master_work\nMASTER_POST: master_post\nSALON_INTERIOR: salon_interior\nSALON_POST: salon_post\nSALON_LOGO: salon_logo\nSERVICE_PHOTO: service_photo';
+COMMENT ON TABLE "photos" IS 'Унифицированная модель фотографий, наследующая абстрактную модель';
 CREATE TABLE IF NOT EXISTS "standard_services" (
     "id" SERIAL NOT NULL PRIMARY KEY,
     "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
     "name" VARCHAR(255) NOT NULL,
-    "slug" VARCHAR(255),
+    "title" VARCHAR(255),
     "description" TEXT,
-    "duration" INT,
-    "price" DECIMAL(10,2),
-    "is_active" BOOL NOT NULL  DEFAULT True,
-    "category_id" INT REFERENCES "categories" ("id") ON DELETE SET NULL
+    "content" TEXT,
+    "slug" VARCHAR(255),
+    "category_id" INT REFERENCES "categories" ("id") ON DELETE SET NULL,
+    "default_photo_id" INT REFERENCES "photos" ("id") ON DELETE SET NULL
 );
+COMMENT ON TABLE "standard_services" IS 'Модель для стандартных услуг';
 CREATE TABLE IF NOT EXISTS "users" (
     "id" SERIAL NOT NULL PRIMARY KEY,
     "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
@@ -67,19 +100,6 @@ CREATE TABLE IF NOT EXISTS "users" (
     "city_id" INT NOT NULL REFERENCES "cities" ("id") ON DELETE CASCADE
 );
 COMMENT ON COLUMN "users"."role" IS 'client: client\nmaster: master\nsalon: salon\namin: admin';
-CREATE TABLE IF NOT EXISTS "custom_services" (
-    "id" SERIAL NOT NULL PRIMARY KEY,
-    "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
-    "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
-    "name" VARCHAR(255) NOT NULL,
-    "slug" VARCHAR(255),
-    "description" TEXT,
-    "duration" INT,
-    "price" DECIMAL(10,2),
-    "is_active" BOOL NOT NULL  DEFAULT True,
-    "standard_service_id" INT REFERENCES "standard_services" ("id") ON DELETE SET NULL,
-    "user_id" INT NOT NULL REFERENCES "users" ("id") ON DELETE CASCADE
-);
 CREATE TABLE IF NOT EXISTS "master" (
     "id" SERIAL NOT NULL PRIMARY KEY,
     "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
@@ -90,6 +110,18 @@ CREATE TABLE IF NOT EXISTS "master" (
     "experience_years" INT NOT NULL,
     "specialty" VARCHAR(255) NOT NULL,
     "slug" VARCHAR(255) NOT NULL,
+    "name" VARCHAR(257) NOT NULL,
+    "address" VARCHAR(255),
+    "phone" VARCHAR(20),
+    "telegram" VARCHAR(255),
+    "whatsapp" VARCHAR(255),
+    "website" VARCHAR(255),
+    "vk" VARCHAR(255),
+    "instagram" VARCHAR(255),
+    "accepts_at_home" BOOL NOT NULL  DEFAULT False,
+    "accepts_in_salon" BOOL NOT NULL  DEFAULT False,
+    "accepts_offsite" BOOL NOT NULL  DEFAULT False,
+    "avatar_id" INT REFERENCES "photos" ("id") ON DELETE SET NULL,
     "city_id" INT REFERENCES "cities" ("id") ON DELETE SET NULL,
     "user_id" INT NOT NULL UNIQUE REFERENCES "users" ("id") ON DELETE CASCADE
 );
@@ -130,15 +162,6 @@ CREATE TABLE IF NOT EXISTS "salonmasterrelation" (
 );
 COMMENT ON COLUMN "salonmasterrelation"."status" IS 'active: active\npending: pending\ninactive: inactive';
 COMMENT ON COLUMN "salonmasterrelation"."role" IS 'employee: employee\nfreelancer: freelancer';
-CREATE TABLE IF NOT EXISTS "service_photos" (
-    "id" SERIAL NOT NULL PRIMARY KEY,
-    "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
-    "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
-    "image_url" VARCHAR(255) NOT NULL,
-    "alt" VARCHAR(255),
-    "description" TEXT,
-    "service_id" INT NOT NULL REFERENCES "custom_services" ("id") ON DELETE CASCADE
-);
 CREATE TABLE IF NOT EXISTS "vacancies" (
     "id" SERIAL NOT NULL PRIMARY KEY,
     "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,

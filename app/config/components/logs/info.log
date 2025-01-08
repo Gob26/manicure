@@ -18348,3 +18348,535 @@ DETAIL:  Key (user_id)=(85) already exists.[0m
 2025-01-07 22:52:24 - my_app - [32mINFO[0m - [32mМастер master444 найден в городе omsk.[0m
 2025-01-07 22:55:11 - my_app - [32mINFO[0m - [32mЗапрос на получение мастера: Город - omsk, Мастер - master444[0m
 2025-01-07 22:55:11 - my_app - [32mINFO[0m - [32mМастер master444 найден в городе omsk.[0m
+2025-01-08 10:36:35 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 10:36:35 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 10:36:35 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 10:36:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 10:36:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 10:36:35 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 10:36:35 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 10:36:35 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 10:36:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 10:36:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 10:36:48 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 10:36:48 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 10:36:48 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 10:36:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 10:36:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 10:36:48 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 10:36:48 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 10:36:48 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 10:36:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 10:36:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 11:15:53 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 11:15:53 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 11:15:53 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 11:15:53 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 11:15:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 11:15:53 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 11:15:53 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 11:15:53 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 11:15:53 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 11:15:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:05:31 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:05:31 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:05:31 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:05:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:05:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:05:31 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:05:31 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:05:31 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:05:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:05:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:07:47 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:07:47 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:07:47 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:07:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:07:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:07:47 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:07:47 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:07:47 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:07:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:07:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:09:05 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:09:05 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:09:05 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:09:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:09:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:09:05 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:09:05 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:09:05 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:09:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:09:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:10:30 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:10:30 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:10:30 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:10:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:10:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:17:55 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:17:55 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:17:55 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:17:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:17:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:18:36 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:18:36 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:18:36 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:18:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:18:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:20:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:20:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:20:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:20:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:20:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:21:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:21:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:21:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:21:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:21:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:21:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:21:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:21:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:21:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:21:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:23:21 - my_app - [32mINFO[0m - [32mРегистрация пользователя: masterfull, город: Омск, роль: master[0m
+2025-01-08 12:23:21 - my_app - [32mINFO[0m - [32mПользователь masterfull пытается зарегистрироваться с городом Омск[0m
+2025-01-08 12:23:21 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-08 12:23:21 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-08 12:23:21 - my_app - [32mINFO[0m - [32mГород Омск найден, ID: 1901[0m
+2025-01-08 12:23:21 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=masterfull, city_name=Омск, role=master[0m
+2025-01-08 12:23:21 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-08 12:23:21 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-08 12:23:21 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'username': 'masterfull'} существует: False[0m
+2025-01-08 12:23:21 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'email': 'masterfull@masterfull.ru'} существует: False[0m
+2025-01-08 12:23:21 - my_app - [32mINFO[0m - [32mUser создан с данными: {'username': 'masterfull', 'email': 'masterfull@masterfull.ru', 'password': '$2b$12$RYcEG2Xcstl3WVvdnp63Eevc38RGGckzpuDhpNf.15pYF1uL0Blo6', 'city': <City: 1901>, 'role': 'master'}[0m
+2025-01-08 12:23:21 - my_app - [32mINFO[0m - [32mПользователь masterfull успешно зарегистрирован.[0m
+2025-01-08 12:23:21 - my_app - [32mINFO[0m - [32mПользователь masterfull успешно зарегистрирован[0m
+2025-01-08 12:23:29 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: masterfull[0m
+2025-01-08 12:23:29 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя masterfull[0m
+2025-01-08 12:23:29 - my_app - [32mINFO[0m - [32mПользователь masterfull найден, проверка пароля.[0m
+2025-01-08 12:23:29 - my_app - [32mINFO[0m - [32mПользователь masterfull успешно авторизован[0m
+2025-01-08 12:23:29 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 142, 'username': 'masterfull', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-08 12:23:29 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDIiLCJ1c2VybmFtZSI6Im1hc3RlcmZ1bGwiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MzMwMDA5LCJjaXR5IjoiIn0.HZS-JYfB5y__14BC6krUZAHF2-KKUEsKUQ176yNAtFA[0m
+2025-01-08 12:23:29 - my_app - [32mINFO[0m - [32mПользователь masterfull успешно авторизован[0m
+2025-01-08 12:24:35 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-08 12:24:35 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDIiLCJ1c2VybmFtZSI6Im1hc3RlcmZ1bGwiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MzMwMDA5LCJjaXR5IjoiIn0.HZS-JYfB5y__14BC6krUZAHF2-KKUEsKUQ176yNAtFA[0m
+2025-01-08 12:24:35 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:24:35 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:24:35 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:24:35 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:24:35 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 142[0m
+2025-01-08 12:24:35 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: column "name" does not exist[0m
+2025-01-08 12:24:56 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-08 12:24:56 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDIiLCJ1c2VybmFtZSI6Im1hc3RlcmZ1bGwiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MzMwMDA5LCJjaXR5IjoiIn0.HZS-JYfB5y__14BC6krUZAHF2-KKUEsKUQ176yNAtFA[0m
+2025-01-08 12:24:56 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:24:56 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:24:56 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:24:56 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:24:56 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 142[0m
+2025-01-08 12:24:56 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: column "name" does not exist[0m
+2025-01-08 12:25:24 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-08 12:25:24 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDIiLCJ1c2VybmFtZSI6Im1hc3RlcmZ1bGwiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MzMwMDA5LCJjaXR5IjoiIn0.HZS-JYfB5y__14BC6krUZAHF2-KKUEsKUQ176yNAtFA[0m
+2025-01-08 12:25:24 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:25:24 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:25:24 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:25:24 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:25:24 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 142[0m
+2025-01-08 12:25:24 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: column "name" does not exist[0m
+2025-01-08 12:28:18 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:28:18 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:28:18 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:28:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:28:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:28:21 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:28:21 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:28:21 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:28:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:28:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:28:27 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-08 12:28:27 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDIiLCJ1c2VybmFtZSI6Im1hc3RlcmZ1bGwiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MzMwMDA5LCJjaXR5IjoiIn0.HZS-JYfB5y__14BC6krUZAHF2-KKUEsKUQ176yNAtFA[0m
+2025-01-08 12:28:27 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:28:27 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:28:27 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:28:27 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:28:27 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 142[0m
+2025-01-08 12:28:27 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: column "website" does not exist[0m
+2025-01-08 12:29:01 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:29:01 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:29:01 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:29:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:29:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:29:24 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:29:24 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:29:24 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:29:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:29:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:29:25 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-08 12:29:25 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDIiLCJ1c2VybmFtZSI6Im1hc3RlcmZ1bGwiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MzMwMDA5LCJjaXR5IjoiIn0.HZS-JYfB5y__14BC6krUZAHF2-KKUEsKUQ176yNAtFA[0m
+2025-01-08 12:29:26 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:29:26 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:29:26 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:29:26 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:29:26 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 142[0m
+2025-01-08 12:29:26 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: column "address" does not exist[0m
+2025-01-08 12:30:13 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:30:13 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:30:13 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:30:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:30:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:32:01 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:32:01 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:32:01 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:32:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:32:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:32:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:32:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:32:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:32:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:32:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:32:10 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-08 12:32:10 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDIiLCJ1c2VybmFtZSI6Im1hc3RlcmZ1bGwiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MzMwMDA5LCJjaXR5IjoiIn0.HZS-JYfB5y__14BC6krUZAHF2-KKUEsKUQ176yNAtFA[0m
+2025-01-08 12:32:10 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:32:10 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:32:10 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:32:10 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:32:10 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 142[0m
+2025-01-08 12:32:10 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: column "vk" does not exist[0m
+2025-01-08 12:32:34 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:32:34 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:32:34 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:32:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:32:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:32:37 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:32:37 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:32:37 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:32:37 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:32:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:32:38 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-08 12:32:38 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDIiLCJ1c2VybmFtZSI6Im1hc3RlcmZ1bGwiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MzMwMDA5LCJjaXR5IjoiIn0.HZS-JYfB5y__14BC6krUZAHF2-KKUEsKUQ176yNAtFA[0m
+2025-01-08 12:32:38 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:32:38 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:32:38 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:32:38 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:32:38 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 142[0m
+2025-01-08 12:32:38 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: column "address" does not exist[0m
+2025-01-08 12:33:00 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:33:00 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:33:00 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:33:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:33:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:33:03 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:33:03 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:33:03 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:33:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:33:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:33:04 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-08 12:33:04 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDIiLCJ1c2VybmFtZSI6Im1hc3RlcmZ1bGwiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MzMwMDA5LCJjaXR5IjoiIn0.HZS-JYfB5y__14BC6krUZAHF2-KKUEsKUQ176yNAtFA[0m
+2025-01-08 12:33:04 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:33:04 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:33:04 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:33:04 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:33:04 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 142[0m
+2025-01-08 12:33:04 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: column "website" does not exist[0m
+2025-01-08 12:34:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:34:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:34:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:34:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:34:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:34:50 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:34:50 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:34:50 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:34:50 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:34:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:34:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:34:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:34:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:34:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:34:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:35:03 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-08 12:35:03 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDIiLCJ1c2VybmFtZSI6Im1hc3RlcmZ1bGwiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MzMwMDA5LCJjaXR5IjoiIn0.HZS-JYfB5y__14BC6krUZAHF2-KKUEsKUQ176yNAtFA[0m
+2025-01-08 12:35:03 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:35:03 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330009, 'city': ''}[0m
+2025-01-08 12:35:03 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:35:03 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:35:03 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 142[0m
+2025-01-08 12:35:03 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: column "address" does not exist[0m
+2025-01-08 12:35:48 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: masterfull[0m
+2025-01-08 12:35:48 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя masterfull[0m
+2025-01-08 12:35:48 - my_app - [32mINFO[0m - [32mПользователь masterfull найден, проверка пароля.[0m
+2025-01-08 12:35:48 - my_app - [32mINFO[0m - [32mПользователь masterfull успешно авторизован[0m
+2025-01-08 12:35:48 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 142, 'username': 'masterfull', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-08 12:35:48 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDIiLCJ1c2VybmFtZSI6Im1hc3RlcmZ1bGwiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MzMwNzQ4LCJjaXR5IjoiIn0.YiDvYlEH-ZWiwTR8SDaiBkzpwKr1BHSKVUFt0w7Qfxg[0m
+2025-01-08 12:35:48 - my_app - [32mINFO[0m - [32mПользователь masterfull успешно авторизован[0m
+2025-01-08 12:35:58 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-08 12:35:58 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDIiLCJ1c2VybmFtZSI6Im1hc3RlcmZ1bGwiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MzMwNzQ4LCJjaXR5IjoiIn0.YiDvYlEH-ZWiwTR8SDaiBkzpwKr1BHSKVUFt0w7Qfxg[0m
+2025-01-08 12:35:58 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330748, 'city': ''}[0m
+2025-01-08 12:35:58 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330748, 'city': ''}[0m
+2025-01-08 12:35:58 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:35:58 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 12:35:58 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 142[0m
+2025-01-08 12:35:58 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: column "address" does not exist[0m
+2025-01-08 12:37:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:37:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:37:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:37:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:37:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:37:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:37:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:37:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:37:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:37:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 12:37:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 12:37:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 12:37:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 12:37:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 12:37:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 13:00:00 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 13:00:00 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 13:00:00 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 13:00:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 13:00:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 13:01:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 13:01:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 13:01:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 13:01:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 13:01:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 13:02:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 13:02:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 13:02:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 13:02:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 13:02:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 13:02:12 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 13:02:12 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 13:02:12 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 13:02:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 13:02:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 13:02:14 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-08 13:02:14 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDIiLCJ1c2VybmFtZSI6Im1hc3RlcmZ1bGwiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MzMwNzQ4LCJjaXR5IjoiIn0.YiDvYlEH-ZWiwTR8SDaiBkzpwKr1BHSKVUFt0w7Qfxg[0m
+2025-01-08 13:02:14 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330748, 'city': ''}[0m
+2025-01-08 13:02:14 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736330748, 'city': ''}[0m
+2025-01-08 13:02:14 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 13:02:14 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 13:02:14 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 142[0m
+2025-01-08 13:02:14 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: column "accepts_offsite" does not exist[0m
+2025-01-08 13:03:14 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 13:03:14 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 13:03:14 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 13:03:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 13:03:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 13:03:19 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 13:03:19 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 13:03:19 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 13:03:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 13:03:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 13:06:50 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 13:06:50 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 13:06:50 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 13:06:50 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 13:06:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 13:07:06 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 13:07:06 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 13:07:06 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 13:07:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 13:07:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 13:07:11 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 13:07:11 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 13:07:11 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 13:07:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 13:07:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 13:15:26 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 13:15:26 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 13:15:26 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 13:15:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 13:15:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 13:15:28 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-08 13:15:28 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDIiLCJ1c2VybmFtZSI6Im1hc3RlcmZ1bGwiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MzMwNzQ4LCJjaXR5IjoiIn0.YiDvYlEH-ZWiwTR8SDaiBkzpwKr1BHSKVUFt0w7Qfxg[0m
+2025-01-08 13:15:28 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-01-08 13:15:42 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: masterfull[0m
+2025-01-08 13:15:42 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя masterfull[0m
+2025-01-08 13:15:42 - my_app - [32mINFO[0m - [32mПользователь masterfull найден, проверка пароля.[0m
+2025-01-08 13:15:42 - my_app - [32mINFO[0m - [32mПользователь masterfull успешно авторизован[0m
+2025-01-08 13:15:42 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 142, 'username': 'masterfull', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-08 13:15:42 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDIiLCJ1c2VybmFtZSI6Im1hc3RlcmZ1bGwiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MzMzMTQyLCJjaXR5IjoiIn0.5n1XwTsUMGjwANeEoeMJodKu7Il2mQ-Nb0CO9aCPGkA[0m
+2025-01-08 13:15:42 - my_app - [32mINFO[0m - [32mПользователь masterfull успешно авторизован[0m
+2025-01-08 13:15:52 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-08 13:15:52 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDIiLCJ1c2VybmFtZSI6Im1hc3RlcmZ1bGwiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2MzMzMTQyLCJjaXR5IjoiIn0.5n1XwTsUMGjwANeEoeMJodKu7Il2mQ-Nb0CO9aCPGkA[0m
+2025-01-08 13:15:52 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736333142, 'city': ''}[0m
+2025-01-08 13:15:52 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '142', 'username': 'masterfull', 'role': 'master', 'city_id': 1901, 'exp': 1736333142, 'city': ''}[0m
+2025-01-08 13:15:52 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 13:15:52 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'masterfull', 'user_id': '142', 'role': 'master', 'city_id': 1901}[0m
+2025-01-08 13:15:52 - my_app - [34mDEBUG[0m - [34mcreate_master: старт создания мастера для пользователя ID 142[0m
+2025-01-08 13:15:52 - my_app - [32mINFO[0m - [32mMaster создан с данными: {'user_id': '142', 'city_id': 1901, 'title': 'string', 'specialty': 'string', 'description': 'string', 'text': 'string', 'experience_years': 0, 'slug': 'string', 'name': 'Алина', 'address': 'string', 'phone': 'string', 'telegram': HttpUrl('https://example.com/'), 'whatsapp': HttpUrl('https://example.com/'), 'website': HttpUrl('https://example.com/'), 'vk': HttpUrl('https://example.com/'), 'instagram': HttpUrl('https://example.com/'), 'accepts_at_home': False, 'accepts_in_salon': False, 'accepts_offsite': False}[0m
+2025-01-08 13:15:52 - my_app - [32mINFO[0m - [32mМастер создан с данными: {'user_id': '142', 'city_id': 1901, 'title': 'string', 'specialty': 'string', 'description': 'string', 'text': 'string', 'experience_years': 0, 'slug': 'string', 'name': 'Алина', 'address': 'string', 'phone': 'string', 'telegram': HttpUrl('https://example.com/'), 'whatsapp': HttpUrl('https://example.com/'), 'website': HttpUrl('https://example.com/'), 'vk': HttpUrl('https://example.com/'), 'instagram': HttpUrl('https://example.com/'), 'accepts_at_home': False, 'accepts_in_salon': False, 'accepts_offsite': False}[0m
+2025-01-08 13:15:52 - my_app - [32mINFO[0m - [32mcreate_master: мастер с ID 56 успешно создан[0m
+2025-01-08 13:16:20 - my_app - [32mINFO[0m - [32mЗапрос на получение мастера: Город - omsk, Мастер - masterfull[0m
+2025-01-08 13:16:20 - my_app - [31mERROR[0m - [31mПроизошла ошибка при получении мастера: 404: Мастер не найден[0m
+2025-01-08 13:17:08 - my_app - [32mINFO[0m - [32mЗапрос на получение мастера: Город - omsk, Мастер - master333[0m
+2025-01-08 13:17:08 - my_app - [32mINFO[0m - [32mМастер master333 найден в городе omsk.[0m
+2025-01-08 13:17:13 - my_app - [32mINFO[0m - [32mЗапрос на получение мастера: Город - omsk, Мастер - masterfull[0m
+2025-01-08 13:17:13 - my_app - [31mERROR[0m - [31mПроизошла ошибка при получении мастера: 404: Мастер не найден[0m
+2025-01-08 13:19:00 - my_app - [32mINFO[0m - [32mЗапрос на получение мастера: Город - omsk, Мастер - string[0m
+2025-01-08 13:19:00 - my_app - [32mINFO[0m - [32mМастер string найден в городе omsk.[0m
+2025-01-08 14:14:49 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:14:49 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:14:49 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:14:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:14:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:20:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:20:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:20:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:20:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:20:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:44:36 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:44:36 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:44:36 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:44:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:44:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:44:37 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:44:37 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:44:37 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:44:37 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:44:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:44:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:44:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:44:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:44:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:44:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:44:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:44:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:44:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:44:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:44:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:44:47 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:44:47 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:44:47 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:44:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:44:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:44:47 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:44:47 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:44:47 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:44:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:44:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:44:50 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:44:50 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:44:50 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:44:50 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:44:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:44:50 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:44:50 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:44:50 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:44:50 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:44:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:44:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:44:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:44:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:44:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:44:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:44:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:44:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:44:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:44:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:44:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:45:03 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:45:03 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:45:03 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:45:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:45:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:45:03 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:45:03 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:45:03 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:45:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:45:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:51:11 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:51:11 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:51:11 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:51:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:51:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:51:11 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:51:11 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:51:11 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:51:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:51:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:51:14 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:51:14 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:51:14 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:51:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:51:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:51:14 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:51:14 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:51:14 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:51:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:51:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:51:19 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:51:19 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:51:19 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:51:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:51:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:51:19 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:51:19 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:51:19 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:51:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:51:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:51:33 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:51:33 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:51:33 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:51:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:51:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:51:33 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:51:33 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:51:33 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:51:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:51:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:51:44 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:51:44 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:51:44 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:51:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:51:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 14:51:44 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 14:51:44 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 14:51:44 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 14:51:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 14:51:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 15:32:14 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 15:32:14 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 15:32:14 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 15:32:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 15:32:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 15:33:32 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 15:33:32 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 15:33:32 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 15:33:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 15:33:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 15:34:06 - my_app - [32mINFO[0m - [32mЗапрос на получение мастеров для города с slug: omsk[0m
+2025-01-08 15:34:06 - my_app - [32mINFO[0m - [32mНайдено 10 мастеров для города 'omsk'.[0m
+2025-01-08 15:34:48 - my_app - [34mDEBUG[0m - [34mНачало получения списка городов с активными услугами[0m
+2025-01-08 15:34:48 - my_app - [34mDEBUG[0m - [34mУспешно получено 9 городов с услугами[0m
+2025-01-08 16:38:39 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 16:38:39 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 16:38:39 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 16:38:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 16:38:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 16:39:11 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 16:39:11 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 16:39:11 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 16:39:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 16:39:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 16:40:12 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 16:40:12 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 16:40:12 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 16:40:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 16:40:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 16:40:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 16:40:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 16:40:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 16:40:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 16:40:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 16:40:47 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 16:40:47 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 16:40:47 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 16:40:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 16:40:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-08 16:42:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-08 16:42:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-08 16:42:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-08 16:42:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-08 16:42:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
