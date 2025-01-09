@@ -2,10 +2,10 @@ from fastapi import APIRouter
 
 from app.api.v1.auth.user_register_router import user_router
 from app.api.v1.auth.user_login_router import login_router
-from app.api.v1.masters.master_list_router import master_list_router
+from app.api.v1.masters.masters_list_router import master_list_router
 from app.api.v1.masters.masters_router import master_router
 from app.api.v1.masters.masters_read_router import master_read_router
-from app.api.v1.salons.salons import salon_router
+from app.api.v1.salons.salons_router import salon_router
 from app.api.v1.cyties.city import city_router 
 
 

@@ -22,8 +22,14 @@ class Salon(AbstractModel):
     title = fields.CharField(max_length=255, null=False)  # Заголовок
     slug = fields.CharField(max_length=255, unique=False, null=False)
     
-    # Информация о местоположении
+    # Контактная информация
     address = fields.CharField(max_length=255)  # Адрес
+    phone = fields.CharField(max_length=20, null=True, help_text="Телефон мастера")  # Телефон
+    telegram = fields.CharField(max_length=255, null=True, help_text="Ссылка на Telegram")  # Telegram
+    whatsapp = fields.CharField(max_length=255, null=True, help_text="Ссылка на WhatsApp")  # WhatsApp
+    website = fields.CharField(max_length=255, null=True, help_text="Веб-сайт мастера")  # Веб-сайт
+    vk = fields.CharField(max_length=255, null=True, help_text="Ссылка на VK")  # ВКонтакте
+    instagram = fields.CharField(max_length=255, null=True, help_text="Ссылка на Instagram")  # Instagram    
     
     # Поля с контентом
     description = fields.TextField(null=True)  # Описание
