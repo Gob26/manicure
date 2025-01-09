@@ -20377,3 +20377,233 @@ DETAIL:  Key (user_id)=(85) already exists.[0m
 2025-01-09 17:21:25 - my_app - [33mWARNING[0m - [33mWarning message[0m
 2025-01-09 17:21:25 - my_app - [31mERROR[0m - [31mError message[0m
 2025-01-09 17:21:25 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:50:46 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:50:46 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:50:46 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:50:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:50:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:50:46 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:50:46 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:50:46 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:50:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:50:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:50:51 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:50:51 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:50:51 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:50:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:50:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:50:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:50:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:50:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:50:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:50:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:50:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:50:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:50:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:50:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:50:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:50:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:50:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:50:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:50:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:50:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:51:05 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:51:05 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:51:05 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:51:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:51:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:51:05 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:51:05 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:51:05 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:51:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:51:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:51:07 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:51:07 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:51:07 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:51:07 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:51:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:51:08 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:51:08 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:51:08 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:51:08 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:51:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:55:32 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:55:32 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:55:32 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:55:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:55:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:55:32 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:55:32 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:55:32 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:55:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:55:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:55:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:55:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:55:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:55:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:55:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:55:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:55:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:55:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:55:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:55:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:55:44 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:55:44 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:55:44 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:55:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:55:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:55:44 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:55:44 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:55:44 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:55:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:55:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:56:19 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:56:19 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:56:19 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:56:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:56:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:56:19 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:56:19 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:56:19 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:56:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:56:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:56:24 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:56:24 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:56:24 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:56:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:56:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:56:24 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:56:24 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:56:24 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:56:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:56:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:56:30 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:56:30 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:56:30 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:56:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:56:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:56:30 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:56:30 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:56:30 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:56:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:56:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:56:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:56:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:56:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:56:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:56:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:56:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:56:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:56:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:56:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:56:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:57:11 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:57:11 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:57:11 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:57:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:57:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:57:11 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:57:11 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:57:11 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:57:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:57:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:57:19 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:57:19 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:57:19 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:57:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:57:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:57:19 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:57:19 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:57:19 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:57:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:57:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:57:26 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:57:26 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:57:26 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:57:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:57:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:57:26 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:57:26 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:57:26 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:57:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:57:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:57:32 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:57:32 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:57:32 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:57:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:57:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:57:32 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:57:32 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:57:32 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:57:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:57:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:57:35 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:57:35 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:57:35 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:57:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:57:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:57:35 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:57:35 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:57:35 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:57:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:57:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:57:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:57:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:57:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:57:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:57:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:57:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:57:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:57:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:57:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:57:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 17:58:25 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 17:58:25 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 17:58:25 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 17:58:25 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 17:58:25 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:07:06 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:07:06 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:07:06 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:07:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:07:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:12:34 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:12:34 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:12:34 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:12:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:12:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:14:13 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:14:13 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:14:13 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:14:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:14:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:15:04 - my_app - [32mINFO[0m - [32mРегистрация пользователя: salon777, город: Омск, роль: salon[0m
+2025-01-09 18:15:04 - my_app - [32mINFO[0m - [32mПользователь salon777 пытается зарегистрироваться с городом Омск[0m
+2025-01-09 18:15:04 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-09 18:15:04 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-09 18:15:04 - my_app - [32mINFO[0m - [32mГород Омск найден, ID: 1901[0m
+2025-01-09 18:15:05 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=salon777, city_name=Омск, role=salon[0m
+2025-01-09 18:15:05 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-09 18:15:05 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-09 18:15:05 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'username': 'salon777'} существует: False[0m
+2025-01-09 18:15:05 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'email': 'salon777@salon777.ru'} существует: False[0m
+2025-01-09 18:15:05 - my_app - [32mINFO[0m - [32mUser создан с данными: {'username': 'salon777', 'email': 'salon777@salon777.ru', 'password': '$2b$12$6zn5nWNtz5w0RNHh9eeXze.BjjiMlpoXYPrBbCgqjjRh4XIQ8jQfS', 'city': <City: 1901>, 'role': 'salon'}[0m
+2025-01-09 18:15:05 - my_app - [32mINFO[0m - [32mПользователь salon777 успешно зарегистрирован.[0m
+2025-01-09 18:15:05 - my_app - [32mINFO[0m - [32mПользователь salon777 успешно зарегистрирован[0m
+2025-01-09 18:15:12 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: salon777[0m
+2025-01-09 18:15:12 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя salon777[0m
+2025-01-09 18:15:12 - my_app - [32mINFO[0m - [32mПользователь salon777 найден, проверка пароля.[0m
+2025-01-09 18:15:12 - my_app - [32mINFO[0m - [32mПользователь salon777 успешно авторизован[0m
+2025-01-09 18:15:12 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 143, 'username': 'salon777', 'role': <UserRole.salon: 'salon'>, 'city_id': 1901}[0m
+2025-01-09 18:15:12 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDMiLCJ1c2VybmFtZSI6InNhbG9uNzc3Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2NDM3NTEyLCJjaXR5IjoiIn0.pi5bA9MqkfMUiN1B38yaQWSbJkf4oB7uPnk4IeF7ZCE[0m
+2025-01-09 18:15:12 - my_app - [32mINFO[0m - [32mПользователь salon777 успешно авторизован[0m
+2025-01-09 18:15:48 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-09 18:15:48 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDMiLCJ1c2VybmFtZSI6InNhbG9uNzc3Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2NDM3NTEyLCJjaXR5IjoiIn0.pi5bA9MqkfMUiN1B38yaQWSbJkf4oB7uPnk4IeF7ZCE[0m
+2025-01-09 18:15:48 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '143', 'username': 'salon777', 'role': 'salon', 'city_id': 1901, 'exp': 1736437512, 'city': ''}[0m
+2025-01-09 18:15:48 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '143', 'username': 'salon777', 'role': 'salon', 'city_id': 1901, 'exp': 1736437512, 'city': ''}[0m
+2025-01-09 18:15:48 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon777', 'user_id': '143', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-09 18:15:48 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon777', 'user_id': '143', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-09 18:15:48 - my_app - [34mDEBUG[0m - [34mНачало создания салона для пользователя ID 143[0m
+2025-01-09 18:15:48 - my_app - [32mINFO[0m - [32mSalon создан с данными: {'user_id': '143', 'city_id': 1901, 'title': 'Лучший салон красоты salon777', 'name': 'Салон salon777', 'address': 'ул. Большая Филёвская, 321к1', 'slug': 'salon777', 'description': 'Мы предоставляем высококачественные услуги красоты.', 'text': 'Подробности о салоне.', 'phone': '+79123453789', 'telegram': 'https://t.me/example', 'whatsapp': 'https://wa.me/123456789', 'website': 'https://example.com', 'vk': 'https://vk.com/example', 'instagram': 'https://instagram.com/example'}[0m
+2025-01-09 18:15:48 - my_app - [32mINFO[0m - [32mСалон создан с данными: {'user_id': '143', 'city_id': 1901, 'title': 'Лучший салон красоты salon777', 'name': 'Салон salon777', 'address': 'ул. Большая Филёвская, 321к1', 'slug': 'salon777', 'description': 'Мы предоставляем высококачественные услуги красоты.', 'text': 'Подробности о салоне.', 'phone': '+79123453789', 'telegram': 'https://t.me/example', 'whatsapp': 'https://wa.me/123456789', 'website': 'https://example.com', 'vk': 'https://vk.com/example', 'instagram': 'https://instagram.com/example'}[0m
+2025-01-09 18:15:48 - my_app - [32mINFO[0m - [32mСалон 13 успешно создан.[0m

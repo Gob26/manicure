@@ -19,9 +19,11 @@ class Salon(AbstractModel):
     
     # Основная информация
     name = fields.CharField(max_length=255)
-    title = fields.CharField(max_length=255, null=False)  # Заголовок
+    title = fields.CharField(max_length=255, null=False) 
     slug = fields.CharField(max_length=255, unique=False, null=False)
-    
+    description = fields.TextField(null=True)  
+    text = fields.TextField(null=True) 
+
     # Контактная информация
     address = fields.CharField(max_length=255)  # Адрес
     phone = fields.CharField(max_length=20, null=True, help_text="Телефон мастера")  # Телефон
@@ -31,9 +33,7 @@ class Salon(AbstractModel):
     vk = fields.CharField(max_length=255, null=True, help_text="Ссылка на VK")  # ВКонтакте
     instagram = fields.CharField(max_length=255, null=True, help_text="Ссылка на Instagram")  # Instagram    
     
-    # Поля с контентом
-    description = fields.TextField(null=True)  # Описание
-    text = fields.TextField(null=True)  # Текст
+
     
     # Связанные сущности
     services = fields.ReverseRelation["CustomService"]  # Связь с услугами

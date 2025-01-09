@@ -9,47 +9,50 @@ from config.components.logging_config import logger
 class SalonService:
     @staticmethod
     async def create_salon(
-        current_user: dict,  # Добавляем city и user_id через токен
+        current_user: dict,  # Данные текущего пользователя
         title: str,
         name: str,
         address: str,
         slug: Optional[str] = None,
         description: Optional[str] = None,
-        text: Optional[str] = None,      
+        text: Optional[str] = None,
+        phone: Optional[str] = None,
+        telegram: Optional[str] = None,
+        whatsapp: Optional[str] = None,
+        website: Optional[str] = None,
+        vk: Optional[str] = None,
+        instagram: Optional[str] = None,
     ) -> dict:
         """
         Создание салона с использованием текущего пользователя.
         """
-        logger.debug(f"create_master: старт создания мастера для пользователя ID {current_user['user_id']}")
+        logger.debug(f"Начало создания салона для пользователя ID {current_user['user_id']}")
 
-        # Проверка на наличие салона
-        existing_salon = await SalonRepository.get_salon_by_id(current_user["user_id"])
+        # Проверка на существующий салон
+        existing_salon = await SalonRepository.get_salon_by_user_id(current_user["user_id"])
         if existing_salon:
-            raise ValueError(f"Салон уже создан для пользователя с ID {current_user['user_id']}")
+            raise ValueError(f"Салон уже существует для пользователя с ID {current_user['user_id']}")
 
+        # Генерация уникального slug, если он не указан
         if not slug:
             slug = await generate_unique_slug(Salon, name)
 
-        # Создаем салон
+        # Сохранение салона через репозиторий
         salon = await SalonRepository.create_salon(
-            user_id=current_user["user_id"],# Пользователь из токена
-            city_id=current_user["city_id"],  # Город из токена
+            user_id=current_user["user_id"],
+            city_id=current_user.get("city_id"),  # Получаем city_id из токена, если есть
             title=title,
             name=name,
             address=address,
             slug=slug,
             description=description,
-            text=text
+            text=text,
+            phone=phone,
+            telegram=telegram,
+            whatsapp=whatsapp,
+            website=website,
+            vk=vk,
+            instagram=instagram,
         )
-
-        logger.info(f"create_salon: салон c ID {salon.id} успешно создан")
-        return {
-            "user_id": current_user["user_id"],
-            "name": salon.name,
-            "title": salon.title,
-            "slug": salon.slug,
-            "city": current_user["city_id"],
-            "address": salon.address,
-            "description": salon.description,
-            "text": salon.text
-        }
+        logger.info(f"Салон {salon.id} успешно создан.")
+        return salon
