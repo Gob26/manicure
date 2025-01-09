@@ -56,3 +56,53 @@ class SalonService:
         )
         logger.info(f"Салон {salon.id} успешно создан.")
         return salon
+
+    @staticmethod
+    async def update_salon(
+        current_user: dict,  # Данные текущего пользователя
+        salon_id: int,
+        **salon_data
+    ) -> dict:
+        """
+        Обновление салона с использованием текущего пользователя.
+        """
+        logger.debug(f"Начало обновления салона ID {salon_id} для пользователя ID {current_user['user_id']}")
+
+        # Проверка на существование салона
+        salon = await SalonRepository.get_salon_by_id(salon_id)
+        if not salon:
+            raise ValueError(f"Салон с ID {salon_id} не найден")
+
+        # Обновление данных салона
+        try:
+            updated_salon = await SalonRepository.update_salon(salon_id, **salon_data)
+            logger.info(f"Салон {salon_id} успешно обновлен.")
+            return updated_salon
+        except Exception as e:
+            logger.error(f"Ошибка при обновлении салона ID {salon_id}: {e}")
+            raise RuntimeError("Произошла ошибка при обновлении салона.")
+
+    
+    @staticmethod
+    async def delete_salon(
+        current_user: dict,  # Данные текущего пользователя
+        salon_id: int
+    ) -> dict:
+        """
+        Удаление салона текущим пользователем.
+        """
+        logger.debug(f"Начало удаления салона ID {salon_id} для пользователя ID {current_user['user_id']}")
+
+        # Проверка на существование салона
+        salon = await SalonRepository.get_salon_by_id(salon_id)
+        if not salon:
+            logger.warning(f"Салон с ID {salon_id} не найден.")
+            raise ValueError(f"Салон с ID {salon_id} не найден")
+
+        try:
+            deleted_salon = await SalonRepository.delete_salon(salon_id)
+            logger.info(f"Салон {salon_id} успешно удален.")
+            return {"message": f"Салон с ID {salon_id} успешно удален", "salon": deleted_salon}
+        except Exception as e:
+            logger.error(f"Ошибка при удалении салона ID {salon_id}: {e}")
+            raise RuntimeError("Произошла ошибка при удалении салона.")

@@ -20607,3 +20607,567 @@ DETAIL:  Key (user_id)=(85) already exists.[0m
 2025-01-09 18:15:48 - my_app - [32mINFO[0m - [32mSalon создан с данными: {'user_id': '143', 'city_id': 1901, 'title': 'Лучший салон красоты salon777', 'name': 'Салон salon777', 'address': 'ул. Большая Филёвская, 321к1', 'slug': 'salon777', 'description': 'Мы предоставляем высококачественные услуги красоты.', 'text': 'Подробности о салоне.', 'phone': '+79123453789', 'telegram': 'https://t.me/example', 'whatsapp': 'https://wa.me/123456789', 'website': 'https://example.com', 'vk': 'https://vk.com/example', 'instagram': 'https://instagram.com/example'}[0m
 2025-01-09 18:15:48 - my_app - [32mINFO[0m - [32mСалон создан с данными: {'user_id': '143', 'city_id': 1901, 'title': 'Лучший салон красоты salon777', 'name': 'Салон salon777', 'address': 'ул. Большая Филёвская, 321к1', 'slug': 'salon777', 'description': 'Мы предоставляем высококачественные услуги красоты.', 'text': 'Подробности о салоне.', 'phone': '+79123453789', 'telegram': 'https://t.me/example', 'whatsapp': 'https://wa.me/123456789', 'website': 'https://example.com', 'vk': 'https://vk.com/example', 'instagram': 'https://instagram.com/example'}[0m
 2025-01-09 18:15:48 - my_app - [32mINFO[0m - [32mСалон 13 успешно создан.[0m
+2025-01-09 18:26:13 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:26:13 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:26:13 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:26:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:26:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:26:13 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:26:13 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:26:13 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:26:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:26:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:26:19 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:26:19 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:26:19 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:26:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:26:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:26:19 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:26:19 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:26:19 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:26:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:26:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:26:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:26:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:26:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:26:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:26:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:26:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:26:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:26:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:26:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:26:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:26:29 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:26:29 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:26:29 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:26:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:26:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:26:29 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:26:29 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:26:29 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:26:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:26:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:26:40 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:26:40 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:26:40 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:26:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:26:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:26:40 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:26:40 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:26:40 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:26:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:26:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:26:48 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:26:48 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:26:48 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:26:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:26:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:26:48 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:26:48 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:26:48 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:26:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:26:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:26:51 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:26:51 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:26:51 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:26:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:26:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:26:51 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:26:51 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:26:51 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:26:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:26:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:26:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:26:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:26:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:26:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:26:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:26:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:26:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:26:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:26:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:26:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:27:06 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:27:06 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:27:06 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:27:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:27:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:27:06 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:27:06 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:27:06 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:27:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:27:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:27:11 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:27:11 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:27:11 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:27:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:27:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:27:11 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:27:11 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:27:11 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:27:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:27:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:27:20 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:27:20 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:27:20 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:27:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:27:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:27:20 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:27:20 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:27:20 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:27:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:27:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:34:12 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:34:12 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:34:12 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:34:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:34:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:34:12 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:34:12 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:34:12 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:34:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:34:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:34:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:34:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:34:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:34:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:34:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:34:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:34:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:34:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:34:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:34:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:34:25 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:34:25 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:34:25 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:34:25 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:34:25 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:34:25 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:34:25 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:34:25 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:34:25 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:34:25 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:35:33 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:35:33 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:35:33 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:35:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:35:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:36:08 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: salon777[0m
+2025-01-09 18:36:08 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя salon777[0m
+2025-01-09 18:36:08 - my_app - [32mINFO[0m - [32mПользователь salon777 найден, проверка пароля.[0m
+2025-01-09 18:36:08 - my_app - [32mINFO[0m - [32mПользователь salon777 успешно авторизован[0m
+2025-01-09 18:36:08 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 143, 'username': 'salon777', 'role': <UserRole.salon: 'salon'>, 'city_id': 1901}[0m
+2025-01-09 18:36:08 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDMiLCJ1c2VybmFtZSI6InNhbG9uNzc3Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2NDM4NzY4LCJjaXR5IjoiIn0.VstNmdDJS3SHwH95XqqcQrK-EGxk9-Rjnj2ot10wGFM[0m
+2025-01-09 18:36:08 - my_app - [32mINFO[0m - [32mПользователь salon777 успешно авторизован[0m
+2025-01-09 18:38:33 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:38:33 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:38:33 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:38:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:38:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:38:33 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:38:33 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:38:33 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:38:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:38:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:39:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:39:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:39:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:39:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:39:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:39:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:39:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:39:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:39:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:39:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:39:08 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:39:08 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:39:08 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:39:08 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:39:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:39:08 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:39:08 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:39:08 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:39:08 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:39:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:39:14 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:39:14 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:39:14 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:39:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:39:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:39:14 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:39:14 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:39:14 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:39:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:39:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:40:45 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:40:45 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:40:45 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:40:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:40:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:40:45 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:40:45 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:40:45 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:40:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:40:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:40:48 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:40:48 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:40:48 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:40:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:40:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:40:48 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:40:48 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:40:48 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:40:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:40:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:40:51 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:40:51 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:40:51 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:40:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:40:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:40:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:40:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:40:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:40:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:40:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:40:54 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:40:54 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:40:54 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:40:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:40:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:40:54 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:40:54 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:40:54 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:40:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:40:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:40:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:40:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:40:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:40:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:40:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:40:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:40:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:40:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:40:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:40:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:41:03 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:41:03 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:41:03 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:41:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:41:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:41:03 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:41:03 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:41:03 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:41:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:41:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:41:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:41:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:41:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:41:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:41:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:41:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:41:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:41:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:41:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:41:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:41:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:41:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:41:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:41:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:41:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:41:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:41:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:41:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:41:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:41:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:42:42 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:42:42 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:42:42 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:42:42 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:42:42 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:42:42 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:42:42 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:42:42 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:42:42 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:42:42 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:42:46 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:42:46 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:42:46 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:42:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:42:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:42:46 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:42:46 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:42:46 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:42:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:42:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:42:55 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:42:55 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:42:55 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:42:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:42:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:42:55 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:42:55 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:42:55 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:42:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:42:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:42:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:42:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:42:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:42:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:42:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:42:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:42:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:42:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:42:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:42:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:43:11 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:43:11 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:43:11 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:43:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:43:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:43:11 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:43:11 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:43:11 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:43:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:43:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:43:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:43:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:43:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:43:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:43:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:43:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:43:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:43:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:43:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:43:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:43:36 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:43:36 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:43:36 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:43:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:43:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:43:36 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:43:36 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:43:36 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:43:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:43:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:43:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:43:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:43:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:43:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:43:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:43:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:43:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:43:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:43:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:43:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:43:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:43:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:43:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:43:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:43:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:43:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:43:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:43:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:43:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:43:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:43:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:43:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:43:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:43:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:43:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:43:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:43:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:43:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:43:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:43:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:43:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:43:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:43:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:43:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:43:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:43:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:43:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:43:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:43:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:43:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:52:09 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 18:52:09 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 18:52:09 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 18:52:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 18:52:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 18:52:40 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: salon1[0m
+2025-01-09 18:52:40 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя salon1[0m
+2025-01-09 18:52:40 - my_app - [32mINFO[0m - [32mПользователь salon1 найден, проверка пароля.[0m
+2025-01-09 18:52:40 - my_app - [32mINFO[0m - [32mПользователь salon1 успешно авторизован[0m
+2025-01-09 18:52:40 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 82, 'username': 'salon1', 'role': <UserRole.salon: 'salon'>, 'city_id': 1795}[0m
+2025-01-09 18:52:40 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MiIsInVzZXJuYW1lIjoic2Fsb24xIiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM2NDM5NzYwLCJjaXR5IjoiIn0.9QwIL1qjqn5C2lGU5yNZzQPlM9S2SZMJEshCgTnEKV8[0m
+2025-01-09 18:52:40 - my_app - [32mINFO[0m - [32mПользователь salon1 успешно авторизован[0m
+2025-01-09 18:52:49 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-09 18:52:49 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MiIsInVzZXJuYW1lIjoic2Fsb24xIiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM2NDM5NzYwLCJjaXR5IjoiIn0.9QwIL1qjqn5C2lGU5yNZzQPlM9S2SZMJEshCgTnEKV8[0m
+2025-01-09 18:52:49 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1736439760, 'city': ''}[0m
+2025-01-09 18:52:49 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1736439760, 'city': ''}[0m
+2025-01-09 18:52:49 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2025-01-09 18:52:49 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2025-01-09 18:52:56 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-09 18:52:56 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MiIsInVzZXJuYW1lIjoic2Fsb24xIiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM2NDM5NzYwLCJjaXR5IjoiIn0.9QwIL1qjqn5C2lGU5yNZzQPlM9S2SZMJEshCgTnEKV8[0m
+2025-01-09 18:52:56 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1736439760, 'city': ''}[0m
+2025-01-09 18:52:56 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1736439760, 'city': ''}[0m
+2025-01-09 18:52:56 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2025-01-09 18:52:56 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2025-01-09 18:52:58 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-09 18:52:58 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MiIsInVzZXJuYW1lIjoic2Fsb24xIiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM2NDM5NzYwLCJjaXR5IjoiIn0.9QwIL1qjqn5C2lGU5yNZzQPlM9S2SZMJEshCgTnEKV8[0m
+2025-01-09 18:52:58 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1736439760, 'city': ''}[0m
+2025-01-09 18:52:58 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1736439760, 'city': ''}[0m
+2025-01-09 18:52:58 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2025-01-09 18:52:58 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2025-01-09 18:53:00 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-09 18:53:00 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MiIsInVzZXJuYW1lIjoic2Fsb24xIiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM2NDM5NzYwLCJjaXR5IjoiIn0.9QwIL1qjqn5C2lGU5yNZzQPlM9S2SZMJEshCgTnEKV8[0m
+2025-01-09 18:53:00 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1736439760, 'city': ''}[0m
+2025-01-09 18:53:00 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1736439760, 'city': ''}[0m
+2025-01-09 18:53:00 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2025-01-09 18:53:00 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2025-01-09 18:53:02 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-09 18:53:02 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MiIsInVzZXJuYW1lIjoic2Fsb24xIiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM2NDM5NzYwLCJjaXR5IjoiIn0.9QwIL1qjqn5C2lGU5yNZzQPlM9S2SZMJEshCgTnEKV8[0m
+2025-01-09 18:53:02 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1736439760, 'city': ''}[0m
+2025-01-09 18:53:02 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1736439760, 'city': ''}[0m
+2025-01-09 18:53:02 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2025-01-09 18:53:02 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2025-01-09 18:53:05 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-09 18:53:05 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MiIsInVzZXJuYW1lIjoic2Fsb24xIiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM2NDM5NzYwLCJjaXR5IjoiIn0.9QwIL1qjqn5C2lGU5yNZzQPlM9S2SZMJEshCgTnEKV8[0m
+2025-01-09 18:53:05 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1736439760, 'city': ''}[0m
+2025-01-09 18:53:05 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1736439760, 'city': ''}[0m
+2025-01-09 18:53:05 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2025-01-09 18:53:05 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2025-01-09 18:53:08 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-09 18:53:08 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MiIsInVzZXJuYW1lIjoic2Fsb24xIiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM2NDM5NzYwLCJjaXR5IjoiIn0.9QwIL1qjqn5C2lGU5yNZzQPlM9S2SZMJEshCgTnEKV8[0m
+2025-01-09 18:53:08 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1736439760, 'city': ''}[0m
+2025-01-09 18:53:08 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '82', 'username': 'salon1', 'role': 'salon', 'city_id': 1795, 'exp': 1736439760, 'city': ''}[0m
+2025-01-09 18:53:08 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2025-01-09 18:53:08 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon1', 'user_id': '82', 'role': 'salon', 'city_id': 1795}[0m
+2025-01-09 18:54:26 - my_app - [32mINFO[0m - [32mРегистрация пользователя: admin, город: Ставрополь, роль: admin[0m
+2025-01-09 18:54:26 - my_app - [32mINFO[0m - [32mПользователь admin пытается зарегистрироваться с городом Ставрополь[0m
+2025-01-09 18:54:26 - my_app - [33mWARNING[0m - [33mПользователь с таким именем уже существует: admin[0m
+2025-01-09 18:54:26 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя admin: argument 'line_errors': Can't extract `str` to `Vec`[0m
+2025-01-09 18:54:26 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя admin: argument 'line_errors': Can't extract `str` to `Vec`[0m
+2025-01-09 18:54:53 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: salon777[0m
+2025-01-09 18:54:53 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя salon777[0m
+2025-01-09 18:54:53 - my_app - [32mINFO[0m - [32mПользователь salon777 найден, проверка пароля.[0m
+2025-01-09 18:54:53 - my_app - [32mINFO[0m - [32mПользователь salon777 успешно авторизован[0m
+2025-01-09 18:54:53 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 143, 'username': 'salon777', 'role': <UserRole.salon: 'salon'>, 'city_id': 1901}[0m
+2025-01-09 18:54:53 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDMiLCJ1c2VybmFtZSI6InNhbG9uNzc3Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2NDM5ODkzLCJjaXR5IjoiIn0.KRRI6R-cN3suEnzodR58N2XrGsA_gE8l4-ulFWsmq1c[0m
+2025-01-09 18:54:53 - my_app - [32mINFO[0m - [32mПользователь salon777 успешно авторизован[0m
+2025-01-09 18:55:31 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-09 18:55:31 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDMiLCJ1c2VybmFtZSI6InNhbG9uNzc3Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2NDM5ODkzLCJjaXR5IjoiIn0.KRRI6R-cN3suEnzodR58N2XrGsA_gE8l4-ulFWsmq1c[0m
+2025-01-09 18:55:31 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '143', 'username': 'salon777', 'role': 'salon', 'city_id': 1901, 'exp': 1736439893, 'city': ''}[0m
+2025-01-09 18:55:31 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '143', 'username': 'salon777', 'role': 'salon', 'city_id': 1901, 'exp': 1736439893, 'city': ''}[0m
+2025-01-09 18:55:31 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon777', 'user_id': '143', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-09 18:55:31 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon777', 'user_id': '143', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-09 18:55:31 - my_app - [34mDEBUG[0m - [34mНачало обновления салона ID 13 для пользователя ID 143[0m
+2025-01-09 18:55:31 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении салона: SalonRepository.update_salon() got an unexpected keyword argument 'name'[0m
+2025-01-09 18:56:03 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-09 18:56:03 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDMiLCJ1c2VybmFtZSI6InNhbG9uNzc3Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2NDM5ODkzLCJjaXR5IjoiIn0.KRRI6R-cN3suEnzodR58N2XrGsA_gE8l4-ulFWsmq1c[0m
+2025-01-09 18:56:03 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '143', 'username': 'salon777', 'role': 'salon', 'city_id': 1901, 'exp': 1736439893, 'city': ''}[0m
+2025-01-09 18:56:03 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '143', 'username': 'salon777', 'role': 'salon', 'city_id': 1901, 'exp': 1736439893, 'city': ''}[0m
+2025-01-09 18:56:03 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon777', 'user_id': '143', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-09 18:56:03 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon777', 'user_id': '143', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-09 18:56:03 - my_app - [34mDEBUG[0m - [34mНачало обновления салона ID 13 для пользователя ID 143[0m
+2025-01-09 18:56:03 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении салона: SalonRepository.update_salon() got an unexpected keyword argument 'name'[0m
+2025-01-09 18:57:35 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-09 18:57:35 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDMiLCJ1c2VybmFtZSI6InNhbG9uNzc3Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2NDM5ODkzLCJjaXR5IjoiIn0.KRRI6R-cN3suEnzodR58N2XrGsA_gE8l4-ulFWsmq1c[0m
+2025-01-09 18:57:35 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '143', 'username': 'salon777', 'role': 'salon', 'city_id': 1901, 'exp': 1736439893, 'city': ''}[0m
+2025-01-09 18:57:35 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '143', 'username': 'salon777', 'role': 'salon', 'city_id': 1901, 'exp': 1736439893, 'city': ''}[0m
+2025-01-09 18:57:35 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon777', 'user_id': '143', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-09 18:57:35 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon777', 'user_id': '143', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-09 18:57:35 - my_app - [34mDEBUG[0m - [34mНачало обновления салона ID 13 для пользователя ID 143[0m
+2025-01-09 18:57:35 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении салона: SalonRepository.update_salon() got an unexpected keyword argument 'name'[0m
+2025-01-09 18:57:50 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-09 18:57:50 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDMiLCJ1c2VybmFtZSI6InNhbG9uNzc3Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2NDM5ODkzLCJjaXR5IjoiIn0.KRRI6R-cN3suEnzodR58N2XrGsA_gE8l4-ulFWsmq1c[0m
+2025-01-09 18:57:50 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '143', 'username': 'salon777', 'role': 'salon', 'city_id': 1901, 'exp': 1736439893, 'city': ''}[0m
+2025-01-09 18:57:50 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '143', 'username': 'salon777', 'role': 'salon', 'city_id': 1901, 'exp': 1736439893, 'city': ''}[0m
+2025-01-09 18:57:50 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon777', 'user_id': '143', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-09 18:57:50 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon777', 'user_id': '143', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-09 18:57:50 - my_app - [34mDEBUG[0m - [34mНачало удаления салона ID 13 для пользователя ID 143[0m
+2025-01-09 18:57:50 - my_app - [32mINFO[0m - [32mУдалено Salon с ID 13: 1[0m
+2025-01-09 18:57:50 - my_app - [32mINFO[0m - [32mСалон 13 успешно удален.[0m
+2025-01-09 18:58:53 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-09 18:58:53 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDMiLCJ1c2VybmFtZSI6InNhbG9uNzc3Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2NDM5ODkzLCJjaXR5IjoiIn0.KRRI6R-cN3suEnzodR58N2XrGsA_gE8l4-ulFWsmq1c[0m
+2025-01-09 18:58:53 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '143', 'username': 'salon777', 'role': 'salon', 'city_id': 1901, 'exp': 1736439893, 'city': ''}[0m
+2025-01-09 18:58:53 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '143', 'username': 'salon777', 'role': 'salon', 'city_id': 1901, 'exp': 1736439893, 'city': ''}[0m
+2025-01-09 18:58:53 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon777', 'user_id': '143', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-09 18:58:53 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon777', 'user_id': '143', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-09 18:58:53 - my_app - [34mDEBUG[0m - [34mНачало создания салона для пользователя ID 143[0m
+2025-01-09 18:58:53 - my_app - [32mINFO[0m - [32mSalon создан с данными: {'user_id': '143', 'city_id': 1901, 'title': 'Лучший салон ', 'name': 'Салон Ант', 'address': 'ул. Большая, 21к1', 'slug': 'salon-turium', 'description': 'Мы предоставлуслуги красоты.', 'text': 'Подробности о салоне.', 'phone': '+7912345', 'telegram': 'https://t.me/exam', 'whatsapp': 'https://wa.me/123456', 'website': 'https://exale.com', 'vk': 'https://vk.com/exple', 'instagram': 'https://instm.com/example'}[0m
+2025-01-09 18:58:53 - my_app - [32mINFO[0m - [32mСалон создан с данными: {'user_id': '143', 'city_id': 1901, 'title': 'Лучший салон ', 'name': 'Салон Ант', 'address': 'ул. Большая, 21к1', 'slug': 'salon-turium', 'description': 'Мы предоставлуслуги красоты.', 'text': 'Подробности о салоне.', 'phone': '+7912345', 'telegram': 'https://t.me/exam', 'whatsapp': 'https://wa.me/123456', 'website': 'https://exale.com', 'vk': 'https://vk.com/exple', 'instagram': 'https://instm.com/example'}[0m
+2025-01-09 18:58:53 - my_app - [32mINFO[0m - [32mСалон 14 успешно создан.[0m
+2025-01-09 18:59:18 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-09 18:59:18 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDMiLCJ1c2VybmFtZSI6InNhbG9uNzc3Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2NDM5ODkzLCJjaXR5IjoiIn0.KRRI6R-cN3suEnzodR58N2XrGsA_gE8l4-ulFWsmq1c[0m
+2025-01-09 18:59:18 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '143', 'username': 'salon777', 'role': 'salon', 'city_id': 1901, 'exp': 1736439893, 'city': ''}[0m
+2025-01-09 18:59:18 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '143', 'username': 'salon777', 'role': 'salon', 'city_id': 1901, 'exp': 1736439893, 'city': ''}[0m
+2025-01-09 18:59:18 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon777', 'user_id': '143', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-09 18:59:18 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon777', 'user_id': '143', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-09 18:59:18 - my_app - [34mDEBUG[0m - [34mНачало обновления салона ID 13 для пользователя ID 143[0m
+2025-01-09 18:59:18 - my_app - [32mINFO[0m - [32mSalon с ID 13 не найден.[0m
+2025-01-09 18:59:18 - my_app - [33mWARNING[0m - [33mОшибка бизнес-логики: Салон с ID 13 не найден[0m
+2025-01-09 18:59:53 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-09 18:59:53 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDMiLCJ1c2VybmFtZSI6InNhbG9uNzc3Iiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM2NDM5ODkzLCJjaXR5IjoiIn0.KRRI6R-cN3suEnzodR58N2XrGsA_gE8l4-ulFWsmq1c[0m
+2025-01-09 18:59:53 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '143', 'username': 'salon777', 'role': 'salon', 'city_id': 1901, 'exp': 1736439893, 'city': ''}[0m
+2025-01-09 18:59:53 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '143', 'username': 'salon777', 'role': 'salon', 'city_id': 1901, 'exp': 1736439893, 'city': ''}[0m
+2025-01-09 18:59:53 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon777', 'user_id': '143', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-09 18:59:53 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'salon777', 'user_id': '143', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-09 18:59:53 - my_app - [34mDEBUG[0m - [34mНачало обновления салона ID 143 для пользователя ID 143[0m
+2025-01-09 18:59:53 - my_app - [32mINFO[0m - [32mSalon с ID 143 не найден.[0m
+2025-01-09 18:59:53 - my_app - [33mWARNING[0m - [33mОшибка бизнес-логики: Салон с ID 143 не найден[0m
+2025-01-09 19:34:35 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 19:34:35 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 19:34:35 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 19:34:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 19:34:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 20:46:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 20:46:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 20:46:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 20:46:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 20:46:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 20:46:42 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 20:46:42 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 20:46:42 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 20:46:42 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 20:46:42 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 20:46:46 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 20:46:46 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 20:46:46 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 20:46:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 20:46:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 20:46:46 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 20:46:46 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 20:46:46 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 20:46:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 20:46:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 20:57:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 20:57:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 20:57:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 20:57:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 20:57:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 20:57:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 20:57:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 20:57:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 20:57:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 20:57:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 20:59:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 20:59:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 20:59:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 20:59:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 20:59:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 20:59:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 20:59:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 20:59:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 20:59:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 20:59:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 21:03:47 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 21:03:47 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 21:03:47 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 21:03:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 21:03:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-09 21:03:48 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-09 21:03:48 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-09 21:03:48 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-09 21:03:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-09 21:03:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

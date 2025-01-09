@@ -5,7 +5,7 @@ from tortoise.functions import Count
 
 from db.models.salon_models.salon_model import Salon
 from db.repositories.base_repositories.base_repositories import BaseRepository
-from db.schemas.salon_schemas.salon_schemas import SalonCreateSchema, SalonUpdateSchema
+from db.schemas.salon_schemas.salon_schemas import SalonUpdateSchema
 from config.components.logging_config import logger
 
 
