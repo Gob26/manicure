@@ -30,12 +30,17 @@ class BaseRepository:
             return None
 
     @classmethod
-    async def get_all(cls, limit: int = 10, offset: int = 0, *related_fields) -> List[ModelType]:
+    async def get_all_with_pagination(cls, limit: int = 10, offset: int = 0, *related_fields) -> List[ModelType]:
         """Получение всех объектов с пагинацией и связанными полями"""
         query = cls.model.all()
         if related_fields:
             query = query.prefetch_related(*related_fields)
         return await query.offset(offset).limit(limit)
+    
+    @classmethod
+    async def get_all(cls) -> List[ModelType]:
+        """Получение всех объектов без пагинации и связанных полей"""
+        return await cls.model.all()    
 
     @classmethod
     async def create(cls, **kwargs: Any) -> ModelType:

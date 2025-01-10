@@ -1,12 +1,12 @@
 from typing import Optional
-
+from typing import Any
 from fastapi import HTTPException, status
 
 from db.models import Master
 from db.repositories.master_repositories.master_repositories import MasterRepository
 from use_case.utils.slug_generator import generate_unique_slug
 from config.components.logging_config import logger
-from typing import Any
+
 
 class MasterService:
     @staticmethod
