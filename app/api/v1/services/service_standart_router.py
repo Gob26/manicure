@@ -48,8 +48,6 @@ async def get_service_standart(
         current_user: dict = Depends(get_current_user)
         ):
     logger.info(f"Текущий пользователь: {current_user}")
-
-    check_user_permission(current_user, ["admin", "master"]) 
     
     try:
         service = await StandardServiceService.get_standart_service(

@@ -23,7 +23,7 @@ async def login(username: str, password: str):
     logger.info(f"Пользователь {username} найден, проверка пароля.")
 
     # Проверяем пароль с использованием репозитория (если функция проверки пароля в репозитории)
-    if not UserAuthService.verify_password(password, user.password):  # Предполагаем, что такая функция есть в репозитории
+    if not await UserAuthService.verify_password(password, user.password):  # Предполагаем, что такая функция есть в репозитории
         logger.error(f"Неверный пароль для пользователя {username}")
         raise HTTPException(status_code=401, detail="Неверный пароль")
 

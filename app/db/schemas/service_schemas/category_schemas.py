@@ -6,9 +6,11 @@ class CategoryBase(BaseModel):
     name: str
     slug: str
     description: Optional[str] = None
-
+    title: Optional[str] = None
+    content: Optional[str] = None
+    
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class CategoryCreate(CategoryBase):
     pass
@@ -21,4 +23,4 @@ class CategoryOut(CategoryBase):
     services: List[int]  # Список идентификаторов услуг в категории
 
     class Config:
-        orm_mode = True
+        from_attributes = True

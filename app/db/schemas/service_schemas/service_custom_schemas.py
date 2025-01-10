@@ -16,7 +16,7 @@ class CustomServiceBase(BaseModel):
     additional_description: Optional[str] = None
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class CustomServiceCreate(CustomServiceBase):
     pass
@@ -31,7 +31,7 @@ class CustomServiceOut(CustomServiceBase):
     standard_service_name: str  # Название базовой услуги
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 from pydantic import BaseModel
@@ -43,7 +43,7 @@ class CustomServiceAttributeBase(BaseModel):
     is_active: bool
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class CustomServiceAttributeCreate(CustomServiceAttributeBase):
     pass
@@ -57,4 +57,4 @@ class CustomServiceAttributeOut(CustomServiceAttributeBase):
     attribute_value_name: str  # Название атрибута
 
     class Config:
-        orm_mode = True
+        from_attributes = True

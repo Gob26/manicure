@@ -12,7 +12,7 @@ class StandardServiceBase(BaseModel):
     default_photo_id: Optional[int] = None
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class StandardServiceCreate(StandardServiceBase):
     pass
@@ -26,7 +26,7 @@ class StandardServiceOut(StandardServiceBase):
     default_photo_url: Optional[str]  # URL фото услуги
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class ServiceAttributeTypeBase(BaseModel):
@@ -34,7 +34,7 @@ class ServiceAttributeTypeBase(BaseModel):
     slug: str
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class ServiceAttributeTypeCreate(ServiceAttributeTypeBase):
     pass
@@ -46,7 +46,7 @@ class ServiceAttributeTypeOut(ServiceAttributeTypeBase):
     id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class ServiceAttributeValueBase(BaseModel):
@@ -55,7 +55,7 @@ class ServiceAttributeValueBase(BaseModel):
     attribute_type_id: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class ServiceAttributeValueCreate(ServiceAttributeValueBase):
     pass
@@ -68,7 +68,7 @@ class ServiceAttributeValueOut(ServiceAttributeValueBase):
     attribute_type_name: str  # Название типа атрибута
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 class TemplateAttributeBase(BaseModel):
@@ -77,7 +77,7 @@ class TemplateAttributeBase(BaseModel):
     is_required: bool
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class TemplateAttributeCreate(TemplateAttributeBase):
     pass
@@ -91,4 +91,4 @@ class TemplateAttributeOut(TemplateAttributeBase):
     attribute_type_name: str  # Название типа атрибута
 
     class Config:
-        orm_mode = True
+        from_attributes = True

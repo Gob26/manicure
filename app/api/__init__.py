@@ -7,7 +7,7 @@ from app.api.v1.masters.masters_router import master_router
 from app.api.v1.masters.masters_read_router import master_read_router
 from app.api.v1.salons.salons_router import salon_router
 from app.api.v1.cyties.city import city_router 
-
+from app.api.v1.services.service_categories_router import service_categories_router
 
 router = APIRouter()
 
@@ -47,6 +47,14 @@ router.include_router(
     prefix="/api/v1/salon",
     tags=["Салон - создание, обновление и удаление"]
     )
+
+#Категории
+router.include_router(
+    service_categories_router,
+    prefix="/api/v1/category",
+    tags=["Категории"]
+    )
+
 #Города
 router.include_router(
     city_router,
