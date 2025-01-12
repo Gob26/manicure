@@ -11,7 +11,9 @@ city_router = APIRouter()
 
 @city_router.get("/{city_slug}",
                  response_model=FullCitySchema,
-                 status_code=status.HTTP_200_OK
+                 status_code=status.HTTP_200_OK,
+                 summary="Получение города по slug",
+                 description="Получить город по его слагу"
                  )
 async def get_city(city_slug: str, request: Request):
     try:
@@ -31,6 +33,7 @@ async def get_city(city_slug: str, request: Request):
     "/",
     response_model=List[CityLinkSchema],
     status_code=status.HTTP_200_OK,
+    summary="Список городов в которых есть салон или мастер",
     description="Получить список городов с активными салонами или мастерами"
 )
 async def get_active_cities():

@@ -6896,3 +6896,89 @@ DETAIL:  Key (user_id)=(85) already exists.[0m
 2025-01-12 14:57:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-01-12 14:59:11 - my_app - [31mERROR[0m - [31mError message[0m
 2025-01-12 14:59:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 15:02:07 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 15:02:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 15:03:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 15:03:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 15:04:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 15:04:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 16:49:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 16:49:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 16:49:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 16:49:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 16:49:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 16:49:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 16:49:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 16:49:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 16:49:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 16:49:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 16:49:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 16:49:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 16:50:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 16:50:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 17:14:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 17:14:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 17:15:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 17:15:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 17:17:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 17:17:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 17:17:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 17:17:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 17:17:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 17:17:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 17:18:58 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 17:18:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 17:22:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 17:22:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 17:23:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 17:23:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 17:31:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 17:31:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 17:32:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 17:32:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 17:38:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 17:38:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 18:18:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 18:18:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 18:29:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 18:29:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 18:32:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 18:32:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 18:38:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 18:38:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 18:45:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 18:45:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 19:02:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 19:02:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 19:55:58 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 19:55:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 20:06:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 20:06:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 20:07:09 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: StandardServiceService.create_standart_service() got an unexpected keyword argument 'name'[0m
+2025-01-12 20:12:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 20:12:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 20:12:34 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-01-12 20:12:58 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 20:12:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 20:13:29 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: StandardServiceService.create_standart_service() got an unexpected keyword argument 'name'[0m
+2025-01-12 20:15:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 20:15:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 20:15:50 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: StandardService.create_standart_service() got an unexpected keyword argument 'name'[0m
+2025-01-12 20:18:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 20:18:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 20:18:29 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: db.repositories.services_repositories.service_standart_repositories.ServiceStandartRepository.create_service_standart() got multiple values for keyword argument 'slug'[0m
+2025-01-12 20:21:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 20:21:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 20:21:43 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: db.repositories.services_repositories.service_standart_repositories.ServiceStandartRepository.create_service_standart() got multiple values for keyword argument 'slug'[0m
+2025-01-12 20:23:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 20:23:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 20:23:19 - my_app - [31mERROR[0m - [31mОшибка при создании услуги: insert or update on table "standard_services" violates foreign key constraint "standard_services_default_photo_id_fkey"
+DETAIL:  Key (default_photo_id)=(0) is not present in table "photos".[0m
+2025-01-12 20:23:19 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса в репозитории: insert or update on table "standard_services" violates foreign key constraint "standard_services_default_photo_id_fkey"
+DETAIL:  Key (default_photo_id)=(0) is not present in table "photos".[0m
+2025-01-12 20:23:19 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: insert or update on table "standard_services" violates foreign key constraint "standard_services_default_photo_id_fkey"
+DETAIL:  Key (default_photo_id)=(0) is not present in table "photos".[0m
+2025-01-12 20:24:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 20:24:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 20:25:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 20:25:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

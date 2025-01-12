@@ -1,5 +1,6 @@
 from fastapi import APIRouter
 
+from api.v1.services.service_standart_router import service_standart_router
 from app.api.v1.auth.user_register_router import user_router
 from app.api.v1.auth.user_login_router import login_router
 from app.api.v1.masters.masters_list_router import master_list_router
@@ -48,7 +49,14 @@ router.include_router(
     tags=["Салон - создание, обновление и удаление"]
     )
 
-#Категории
+#Услуги
+
+router.include_router(
+    service_standart_router,
+    prefix="/api/v1/category",
+    tags=["Категории"]
+    )
+
 router.include_router(
     service_categories_router,
     prefix="/api/v1/category",
