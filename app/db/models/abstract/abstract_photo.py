@@ -3,14 +3,6 @@ from tortoise import fields
 from db.models.abstract.abstract_model import AbstractModel
 from typing import Optional
 
-class EntityType(str, Enum):
-    MASTER_AVATAR = "master_avatar"
-    MASTER_WORK = "master_work"
-    MASTER_POST = "master_post"
-    SALON_INTERIOR = "salon_interior"
-    SALON_POST = "salon_post"
-    SALON_LOGO = "salon_logo"
-    SERVICE_PHOTO = "service_photo"
 
 class AbstractPhoto(AbstractModel):
     """

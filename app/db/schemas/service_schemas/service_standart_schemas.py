@@ -1,5 +1,20 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import Optional
+from db.schemas.service_schemas.category_schemas import CategoryBase
+
+
+class StandardServicePhotoSchema(BaseModel):
+    file_name: str = Field(..., max_length=255)
+    file_path: str = Field(..., max_length=1000)
+    mime_type: str = Field(..., max_length=100)
+    size: int = Field(..., ge=0, description="Размер файла должен быть неотрицательным.")
+    width: Optional[int] = None
+    height: Optional[int] = None
+    is_main: bool = False
+    sort_order: int = 0
+
+    class Config:
+        from_attributes = True
 
 
 class StandardServiceBase(BaseModel):
@@ -14,81 +29,18 @@ class StandardServiceBase(BaseModel):
     class Config:
         from_attributes = True
 
+
 class StandardServiceCreate(StandardServiceBase):
     pass
+
 
 class StandardServiceUpdate(StandardServiceBase):
     pass
 
+
 class StandardServiceOut(StandardServiceBase):
     id: int
-    category: Optional[str]  # Название категории услуги
-    default_photo_url: Optional[str]  # URL фото услуги
-
-    class Config:
-        from_attributes = True
-
-
-class ServiceAttributeTypeBase(BaseModel):
-    name: str
-    slug: str
-
-    class Config:
-        from_attributes = True
-
-class ServiceAttributeTypeCreate(ServiceAttributeTypeBase):
-    pass
-
-class ServiceAttributeTypeUpdate(ServiceAttributeTypeBase):
-    pass
-
-class ServiceAttributeTypeOut(ServiceAttributeTypeBase):
-    id: int
-
-    class Config:
-        from_attributes = True
-
-
-class ServiceAttributeValueBase(BaseModel):
-    name: str
-    slug: str
-    attribute_type_id: int
-
-    class Config:
-        from_attributes = True
-
-class ServiceAttributeValueCreate(ServiceAttributeValueBase):
-    pass
-
-class ServiceAttributeValueUpdate(ServiceAttributeValueBase):
-    pass
-
-class ServiceAttributeValueOut(ServiceAttributeValueBase):
-    id: int
-    attribute_type_name: str  # Название типа атрибута
-
-    class Config:
-        from_attributes = True
-
-
-class TemplateAttributeBase(BaseModel):
-    service_template_id: int
-    attribute_type_id: int
-    is_required: bool
-
-    class Config:
-        from_attributes = True
-
-class TemplateAttributeCreate(TemplateAttributeBase):
-    pass
-
-class TemplateAttributeUpdate(TemplateAttributeBase):
-    pass
-
-class TemplateAttributeOut(TemplateAttributeBase):
-    id: int
-    service_template_name: str  # Название шаблона услуги
-    attribute_type_name: str  # Название типа атрибута
+    category: Optional[CategoryBase]  # Более сложная структура для категории
 
     class Config:
         from_attributes = True

@@ -6982,3 +6982,1949 @@ DETAIL:  Key (default_photo_id)=(0) is not present in table "photos".[0m
 2025-01-12 20:24:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-01-12 20:25:41 - my_app - [31mERROR[0m - [31mError message[0m
 2025-01-12 20:25:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 20:29:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 20:29:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 20:29:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 20:29:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-12 20:30:49 - my_app - [31mERROR[0m - [31mОшибка при создании услуги: invalid input for query argument $9: 4989847983705934 (value out of int32 range)[0m
+2025-01-12 20:30:49 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса в репозитории: invalid input for query argument $9: 4989847983705934 (value out of int32 range)[0m
+2025-01-12 20:30:49 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: invalid input for query argument $9: 4989847983705934 (value out of int32 range)[0m
+2025-01-12 20:33:06 - my_app - [31mERROR[0m - [31mОшибка при получении категории по ID 2: 'NoneType' object has no attribute 'fetch_related'[0m
+2025-01-12 20:33:30 - my_app - [31mERROR[0m - [31mОшибка при получении категории по ID 4: 'NoneType' object has no attribute 'fetch_related'[0m
+2025-01-12 20:35:03 - my_app - [31mERROR[0m - [31mОшибка при создании услуги: insert or update on table "standard_services" violates foreign key constraint "standard_services_default_photo_id_fkey"
+DETAIL:  Key (default_photo_id)=(34463635) is not present in table "photos".[0m
+2025-01-12 20:35:03 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса в репозитории: insert or update on table "standard_services" violates foreign key constraint "standard_services_default_photo_id_fkey"
+DETAIL:  Key (default_photo_id)=(34463635) is not present in table "photos".[0m
+2025-01-12 20:35:03 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: insert or update on table "standard_services" violates foreign key constraint "standard_services_default_photo_id_fkey"
+DETAIL:  Key (default_photo_id)=(34463635) is not present in table "photos".[0m
+2025-01-12 20:36:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-12 20:36:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 08:42:42 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 08:42:42 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 08:42:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 08:42:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:21:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:21:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:21:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:21:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:22:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:22:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:22:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:22:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:22:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:22:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:22:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:22:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:24:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:24:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:24:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:24:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:24:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:24:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:24:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:24:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:24:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:24:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:24:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:24:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:24:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:24:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:24:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:24:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:24:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:24:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:24:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:24:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:24:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:24:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:24:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:24:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:26:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:26:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:26:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:26:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:27:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:27:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:27:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:27:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:28:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:28:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:28:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:28:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:28:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:28:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:28:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:28:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:48:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:48:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:48:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:48:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:49:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:49:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:49:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:49:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:49:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:49:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:49:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:49:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:51:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:51:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:51:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:51:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:51:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:51:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:51:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:51:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:52:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:52:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:52:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:52:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:52:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:52:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:52:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:52:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:52:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:52:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:52:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:52:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:53:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:53:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 09:53:37 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 09:53:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 10:03:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 10:03:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 10:03:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 10:03:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 10:59:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 10:59:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 10:59:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 10:59:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:00:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:00:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:00:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:00:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:30:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:30:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:30:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:30:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:30:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:30:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:30:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:30:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:30:42 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:30:42 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:30:42 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:30:42 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:31:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:31:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:31:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:31:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:31:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:31:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:31:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:31:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:31:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:31:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:31:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:31:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:31:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:31:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:31:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:31:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:31:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:31:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:31:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:31:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:31:53 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:31:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:31:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:31:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:31:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:31:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:31:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:31:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:32:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:32:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:32:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:32:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:32:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:32:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:32:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:32:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:33:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:33:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:33:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:33:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:33:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:33:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:33:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:33:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:33:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:33:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:33:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:33:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:33:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:33:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:33:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:33:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:33:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:33:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:33:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:33:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:35:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:35:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:35:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:35:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:36:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:36:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:36:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:36:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:36:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:36:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:36:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:36:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:43:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:43:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:43:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:43:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:43:08 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:43:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:43:08 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:43:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:43:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:43:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:43:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:43:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:43:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:43:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 11:43:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 11:43:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 15:07:37 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 15:07:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 15:07:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 15:07:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 15:08:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 15:08:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 15:23:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 15:23:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 16:20:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 16:20:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 16:21:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 16:21:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 16:22:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 16:22:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 16:23:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 16:23:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 16:23:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 16:23:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 16:24:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 16:24:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 17:18:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 17:18:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 17:26:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 17:26:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 17:29:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 17:29:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 17:32:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 17:32:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 17:32:22 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 17:32:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 17:32:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 17:32:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 17:32:43 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: expected str, bytes or os.PathLike object, not BytesIO[0m
+2025-01-13 21:00:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 21:00:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 21:01:25 - my_app - [31mERROR[0m - [31mОшибка при разборе JSON данных в service_data.[0m
+2025-01-13 21:01:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 21:01:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-13 21:02:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-13 21:02:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 09:06:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 09:06:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 09:07:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 09:07:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 09:09:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 09:09:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 09:10:17 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: expected str, bytes or os.PathLike object, not BytesIO[0m
+2025-01-14 09:12:10 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 09:12:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 09:13:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 09:13:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 09:13:35 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: expected str, bytes or os.PathLike object, not BytesIO[0m
+2025-01-14 09:19:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 09:19:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 09:19:41 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: expected str, bytes or os.PathLike object, not BytesIO[0m
+2025-01-14 09:21:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 09:21:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 09:21:24 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: expected str, bytes or os.PathLike object, not BytesIO[0m
+2025-01-14 09:21:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 09:21:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 09:27:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 09:27:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 09:28:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 09:28:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 09:28:47 - my_app - [31mERROR[0m - [31mОшибка при оптимизации изображения: name 'BytesIO' is not defined[0m
+2025-01-14 09:28:47 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: name 'BytesIO' is not defined[0m
+2025-01-14 09:29:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 09:29:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 09:29:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 09:29:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 09:29:58 - my_app - [31mERROR[0m - [31mОшибка при создании услуги: insert or update on table "standard_services" violates foreign key constraint "fk_standard_standard_c9ef127d"
+DETAIL:  Key (default_photo_id)=(0) is not present in table "standardservicephoto".[0m
+2025-01-14 09:29:58 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: insert or update on table "standard_services" violates foreign key constraint "fk_standard_standard_c9ef127d"
+DETAIL:  Key (default_photo_id)=(0) is not present in table "standardservicephoto".[0m
+2025-01-14 09:29:58 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: 500: Не удалось создать стандартный сервис[0m
+2025-01-14 10:36:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 10:36:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 10:37:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 10:37:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 10:38:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 10:38:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 10:47:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 10:47:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 10:49:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 10:49:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 10:49:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 10:49:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 11:04:53 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 11:04:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 11:05:55 - my_app - [31mERROR[0m - [31mОшибка при создании услуги: insert or update on table "standard_services" violates foreign key constraint "fk_standard_standard_c9ef127d"
+DETAIL:  Key (default_photo_id)=(0) is not present in table "standardservicephoto".[0m
+2025-01-14 11:05:55 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: 500: Не удалось создать стандартную услугу[0m
+2025-01-14 11:05:55 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: 500: Не удалось создать стандартный сервис[0m
+2025-01-14 11:54:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 11:54:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 11:55:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 11:55:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 11:55:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 11:55:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 11:55:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 11:55:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 12:01:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 12:01:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 12:01:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 12:01:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 12:01:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 12:01:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 12:01:56 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: file_name: Value must not be None[0m
+2025-01-14 12:07:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 12:07:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 12:07:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 12:07:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 12:24:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 12:24:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 12:24:58 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 12:24:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 12:25:04 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: use_case.service_service.standart_service.StandardServiceService.create_standart_service() got multiple values for keyword argument 'default_photo_id'[0m
+2025-01-14 12:25:22 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 12:25:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 12:26:08 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: use_case.service_service.standart_service.StandardServiceService.create_standart_service() got multiple values for keyword argument 'default_photo_id'[0m
+2025-01-14 12:27:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 12:27:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 12:27:36 - my_app - [31mERROR[0m - [31mОшибка при создании услуги: insert or update on table "standard_services" violates foreign key constraint "fk_standard_standard_c9ef127d"
+DETAIL:  Key (default_photo_id)=(3) is not present in table "standardservicephoto".[0m
+2025-01-14 12:27:36 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: 500: Не удалось создать стандартную услугу[0m
+2025-01-14 12:27:36 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: 500: Не удалось создать стандартный сервис[0m
+2025-01-14 12:29:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 12:29:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 12:29:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 12:29:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 12:30:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 12:30:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 12:30:26 - my_app - [31mERROR[0m - [31mОшибка при создании услуги: insert or update on table "standard_services" violates foreign key constraint "fk_standard_standard_c9ef127d"
+DETAIL:  Key (default_photo_id)=(4) is not present in table "standardservicephoto".[0m
+2025-01-14 12:30:26 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса в репозитории: 500: Не удалось создать стандартную услугу[0m
+2025-01-14 12:30:26 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: 500: Не удалось создать стандартную услугу[0m
+2025-01-14 12:32:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 12:32:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 13:31:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 13:31:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 13:37:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 13:37:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 13:38:37 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 13:38:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 13:41:22 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 13:41:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 13:42:24 - my_app - [31mERROR[0m - [31mОшибка целостности данных при создании услуги: insert or update on table "standard_services" violates foreign key constraint "fk_standard_standard_c9ef127d"
+DETAIL:  Key (default_photo_id)=(5) is not present in table "standardservicephoto".[0m
+2025-01-14 13:42:24 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса в репозитории: 400: Ошибка целостности данных: возможно, дублирование данных или неправильный формат.[0m
+2025-01-14 13:42:24 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: 500: Ошибка при создании сервиса.[0m
+2025-01-14 13:45:10 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 13:45:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 13:45:15 - my_app - [31mERROR[0m - [31mОшибка целостности данных при создании услуги: insert or update on table "standard_services" violates foreign key constraint "fk_standard_standard_c9ef127d"
+DETAIL:  Key (default_photo_id)=(6) is not present in table "standardservicephoto".[0m
+2025-01-14 13:45:15 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса в репозитории: 400: Ошибка целостности данных: возможно, дублирование данных или неправильный формат.[0m
+2025-01-14 13:45:15 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: 500: Ошибка при создании сервиса.[0m
+2025-01-14 13:45:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 13:45:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 13:46:49 - my_app - [31mERROR[0m - [31mОшибка целостности данных при создании услуги: insert or update on table "standard_services" violates foreign key constraint "fk_standard_standard_c9ef127d"
+DETAIL:  Key (default_photo_id)=(7) is not present in table "standardservicephoto".[0m
+2025-01-14 13:46:49 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса в репозитории: 400: Ошибка целостности данных: возможно, дублирование данных или неправильный формат.[0m
+2025-01-14 13:46:49 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: 500: Ошибка при создании сервиса.[0m
+2025-01-14 13:47:53 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 13:47:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 13:47:58 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 13:47:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 13:48:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 13:48:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 13:48:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 13:48:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 13:48:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 13:48:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 13:49:03 - my_app - [31mERROR[0m - [31mОшибка целостности данных при создании услуги: insert or update on table "standard_services" violates foreign key constraint "fk_standard_standard_c9ef127d"
+DETAIL:  Key (default_photo_id)=(8) is not present in table "standardservicephoto".[0m
+2025-01-14 13:49:03 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса в репозитории: 400: Ошибка целостности данных: возможно, дублирование данных или неправильный формат.[0m
+2025-01-14 13:49:03 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: 500: Ошибка при создании сервиса.[0m
+2025-01-14 13:50:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 13:50:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 13:52:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 13:52:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 13:52:27 - my_app - [31mERROR[0m - [31mОшибка целостности данных при создании услуги: insert or update on table "standard_services" violates foreign key constraint "fk_standard_standard_c9ef127d"
+DETAIL:  Key (default_photo_id)=(9) is not present in table "standardservicephoto".[0m
+2025-01-14 13:52:27 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса в репозитории: 400: Ошибка целостности данных: возможно, дублирование данных или неправильный формат.[0m
+2025-01-14 13:52:27 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: 500: Ошибка при создании сервиса.[0m
+2025-01-14 15:00:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:00:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:03:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:03:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:04:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:04:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:04:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:04:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:05:16 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:05:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:06:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:06:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:06:26 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-01-14 15:07:23 - my_app - [31mERROR[0m - [31mОшибка целостности данных: insert or update on table "standard_services" violates foreign key constraint "fk_standard_standard_c9ef127d"
+DETAIL:  Key (default_photo_id)=(10) is not present in table "standardservicephoto".[0m
+2025-01-14 15:07:23 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса в репозитории: 400: Ошибка целостности данных. Проверьте входные данные.[0m
+2025-01-14 15:07:23 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: 500: Ошибка при создании сервиса.[0m
+2025-01-14 15:11:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:11:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:12:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:12:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:13:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:13:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:16:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:16:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:16:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:16:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:16:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:16:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:17:05 - my_app - [31mERROR[0m - [31mОшибка при создании фото: name 'file_name' is not defined[0m
+2025-01-14 15:17:05 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: 500: Ошибка при сохранении фото[0m
+2025-01-14 15:18:37 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:18:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:19:30 - my_app - [31mERROR[0m - [31mОшибка целостности данных: insert or update on table "standard_services" violates foreign key constraint "fk_standard_standard_c9ef127d"
+DETAIL:  Key (default_photo_id)=(11) is not present in table "standardservicephoto".[0m
+2025-01-14 15:19:30 - my_app - [31mERROR[0m - [31mОшибка при создании стандартного сервиса: 400: Ошибка целостности данных. Проверьте входные данные.[0m
+2025-01-14 15:20:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:20:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:21:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:21:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:21:16 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:21:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:21:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:21:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:22:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:22:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:23:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:23:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:24:49 - my_app - [31mERROR[0m - [31mОшибка целостности данных: insert or update on table "standard_services" violates foreign key constraint "fk_standard_standard_c9ef127d"
+DETAIL:  Key (default_photo_id)=(12) is not present in table "standardservicephoto".[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.ForeignKeyViolationError: insert or update on table "standard_services" violates foreign key constraint "fk_standard_standard_c9ef127d"
+DETAIL:  Key (default_photo_id)=(12) is not present in table "standardservicephoto".
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/services_repositories/service_standart_repositories.py", line 29, in create_service_standart
+    service = await cls.create(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/base_repositories/base_repositories.py", line 48, in create
+    instance = await cls.model.create(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: insert or update on table "standard_services" violates foreign key constraint "fk_standard_standard_c9ef127d"
+DETAIL:  Key (default_photo_id)=(12) is not present in table "standardservicephoto".
+2025-01-14 15:29:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:29:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:29:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:29:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:31:58 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 15:31:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 15:32:12 - my_app - [31mERROR[0m - [31mОшибка при создании фото: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (1, 2025-01-14 12:32:12.348642+00, 2025-01-14 12:32:12.348666+00, photo_3_2024-12-19_20-09-49.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 167118, 1280, 853, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (1, 2025-01-14 12:32:12.348642+00, 2025-01-14 12:32:12.348666+00, photo_3_2024-12-19_20-09-49.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 167118, 1280, 853, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 82, in create_service_standart_route
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (1, 2025-01-14 12:32:12.348642+00, 2025-01-14 12:32:12.348666+00, photo_3_2024-12-19_20-09-49.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 167118, 1280, 853, t, 0, null).
+2025-01-14 17:50:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 17:50:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 17:51:53 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 17:51:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 17:52:16 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 17:52:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 18:02:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 18:02:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 18:04:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 18:04:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 18:04:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 18:04:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 18:05:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 18:05:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 18:05:22 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (2, 2025-01-14 15:05:22.278906+00, 2025-01-14 15:05:22.278931+00, photo_3_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/te..., image/jpeg, 161706, 853, 1280, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (2, 2025-01-14 15:05:22.278906+00, 2025-01-14 15:05:22.278931+00, photo_3_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/te..., image/jpeg, 161706, 853, 1280, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 80, in create_service_standart_route
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (2, 2025-01-14 15:05:22.278906+00, 2025-01-14 15:05:22.278931+00, photo_3_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/te..., image/jpeg, 161706, 853, 1280, t, 0, null).
+2025-01-14 18:27:42 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 18:27:42 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 19:21:56 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-01-14 19:30:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 19:30:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 19:33:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 19:33:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 19:35:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 19:35:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 19:36:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 19:36:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 19:37:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 19:37:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-14 19:38:24 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (3, 2025-01-14 16:38:24.228528+00, 2025-01-14 16:38:24.228553+00, photo_1_2024-12-19_20-09-49.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 143023, 1280, 853, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (3, 2025-01-14 16:38:24.228528+00, 2025-01-14 16:38:24.228553+00, photo_1_2024-12-19_20-09-49.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 143023, 1280, 853, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 80, in create_service_standart_route
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (3, 2025-01-14 16:38:24.228528+00, 2025-01-14 16:38:24.228553+00, photo_1_2024-12-19_20-09-49.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 143023, 1280, 853, t, 0, null).
+2025-01-14 19:40:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-14 19:40:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:04:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:04:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:04:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:04:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:05:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:05:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:05:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:05:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:05:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:05:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:05:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:05:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:05:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:05:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:05:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:05:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:05:42 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:05:42 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:05:42 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:05:42 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:09:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:09:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:09:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:09:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:10:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:10:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:10:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:10:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:10:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:10:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:10:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:10:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:11:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:11:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:11:16 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:11:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:11:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:11:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:11:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:11:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:11:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:11:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:11:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:11:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:13:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:13:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:13:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:13:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:14:50 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:14:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:14:50 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:14:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:15:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:15:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:17:03 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: type object 'ImageOptimizer' has no attribute 'optimize_and_save_async'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 74, in create_service_standart_route
+    saved_paths = await ImageOptimizer.optimize_and_save_async(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'ImageOptimizer' has no attribute 'optimize_and_save_async'. Did you mean: 'optimize_and_save'?
+2025-01-15 10:19:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:19:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:23:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:23:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:24:37 - my_app - [31mERROR[0m - [31mОшибка оптимизации изображения: name 'asyncio' is not defined[0m
+2025-01-15 10:24:37 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: name 'asyncio' is not defined[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 74, in create_service_standart_route
+    saved_paths = await ImageOptimizer.optimize_and_save_async(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 33, in optimize_and_save_async
+    await ImageOptimizer._save_image_async(resized_image, file_path, quality)
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 67, in _save_image_async
+    loop = asyncio.get_event_loop()
+           ^^^^^^^
+NameError: name 'asyncio' is not defined. Did you forget to import 'asyncio'
+2025-01-15 10:25:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:25:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:25:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:25:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:25:52 - my_app - [31mERROR[0m - [31mОшибка оптимизации изображения: run_in_executor() got an unexpected keyword argument 'quality'[0m
+2025-01-15 10:25:52 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: run_in_executor() got an unexpected keyword argument 'quality'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 74, in create_service_standart_route
+    saved_paths = await ImageOptimizer.optimize_and_save_async(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 34, in optimize_and_save_async
+    await ImageOptimizer._save_image_async(resized_image, file_path, quality)
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 69, in _save_image_async
+    await loop.run_in_executor(None, image.save, path, "WebP", quality=quality)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 2733, in uvloop.loop.Loop.run_in_executor
+TypeError: run_in_executor() got an unexpected keyword argument 'quality'
+2025-01-15 10:26:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:26:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:26:36 - my_app - [31mERROR[0m - [31mОшибка оптимизации изображения: Image.save() takes from 2 to 3 positional arguments but 4 were given[0m
+2025-01-15 10:26:36 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: Image.save() takes from 2 to 3 positional arguments but 4 were given[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 74, in create_service_standart_route
+    saved_paths = await ImageOptimizer.optimize_and_save_async(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 34, in optimize_and_save_async
+    await ImageOptimizer._save_image_async(resized_image, file_path, quality)
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 69, in _save_image_async
+    await loop.run_in_executor(None, image.save, path, "WebP", quality)
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Image.save() takes from 2 to 3 positional arguments but 4 were given
+2025-01-15 10:27:12 - my_app - [31mERROR[0m - [31mОшибка оптимизации изображения: Image.save() takes from 2 to 3 positional arguments but 4 were given[0m
+2025-01-15 10:27:12 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: Image.save() takes from 2 to 3 positional arguments but 4 were given[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 74, in create_service_standart_route
+    saved_paths = await ImageOptimizer.optimize_and_save_async(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 34, in optimize_and_save_async
+    await ImageOptimizer._save_image_async(resized_image, file_path, quality)
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 69, in _save_image_async
+    await loop.run_in_executor(None, image.save, path, "WebP", quality)
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Image.save() takes from 2 to 3 positional arguments but 4 were given
+2025-01-15 10:28:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:28:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:28:53 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:28:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:28:54 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (4, 2025-01-15 07:28:54.658967+00, 2025-01-15 07:28:54.658989+00, photo_2_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 155743, 1280, 853, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (4, 2025-01-15 07:28:54.658967+00, 2025-01-15 07:28:54.658989+00, photo_2_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 155743, 1280, 853, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 87, in create_service_standart_route
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (4, 2025-01-15 07:28:54.658967+00, 2025-01-15 07:28:54.658989+00, photo_2_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 155743, 1280, 853, t, 0, null).
+2025-01-15 10:30:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:30:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:31:04 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (5, 2025-01-15 07:31:04.312324+00, 2025-01-15 07:31:04.312364+00, photo_2_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 155743, 1280, 853, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (5, 2025-01-15 07:31:04.312324+00, 2025-01-15 07:31:04.312364+00, photo_2_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 155743, 1280, 853, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 87, in create_service_standart_route
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (5, 2025-01-15 07:31:04.312324+00, 2025-01-15 07:31:04.312364+00, photo_2_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 155743, 1280, 853, t, 0, null).
+2025-01-15 10:33:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:33:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:34:12 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (6, 2025-01-15 07:34:12.53114+00, 2025-01-15 07:34:12.531165+00, photo_3_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 161706, 853, 1280, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (6, 2025-01-15 07:34:12.53114+00, 2025-01-15 07:34:12.531165+00, photo_3_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 161706, 853, 1280, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 87, in create_service_standart_route
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (6, 2025-01-15 07:34:12.53114+00, 2025-01-15 07:34:12.531165+00, photo_3_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 161706, 853, 1280, t, 0, null).
+2025-01-15 10:35:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:35:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:35:02 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (7, 2025-01-15 07:35:02.395833+00, 2025-01-15 07:35:02.395857+00, photo_3_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 161706, 853, 1280, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (7, 2025-01-15 07:35:02.395833+00, 2025-01-15 07:35:02.395857+00, photo_3_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 161706, 853, 1280, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 87, in create_service_standart_route
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (7, 2025-01-15 07:35:02.395833+00, 2025-01-15 07:35:02.395857+00, photo_3_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 161706, 853, 1280, t, 0, null).
+2025-01-15 10:36:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:36:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:37:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:37:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:38:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:38:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:38:37 - my_app - [31mERROR[0m - [31mОшибка при создании фото для сервиса: You can't set backward one to one relations through init, change related model instead[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 25, in create_photo_for_service
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1149, in create
+    instance = cls(**kwargs)
+               ^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 669, in __init__
+    for key in meta.fields.difference(self._set_kwargs(kwargs)):
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 711, in _set_kwargs
+    raise ConfigurationError(
+tortoise.exceptions.ConfigurationError: You can't set backward one to one relations through init, change related model instead
+2025-01-15 10:38:37 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: You can't set backward one to one relations through init, change related model instead[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 127, in create_service_standart_route
+    photo = await create_photo_for_service(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/transactions.py", line 57, in wrapped
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 25, in create_photo_for_service
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1149, in create
+    instance = cls(**kwargs)
+               ^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 669, in __init__
+    for key in meta.fields.difference(self._set_kwargs(kwargs)):
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 711, in _set_kwargs
+    raise ConfigurationError(
+tortoise.exceptions.ConfigurationError: You can't set backward one to one relations through init, change related model instead
+2025-01-15 10:39:39 - my_app - [31mERROR[0m - [31mОшибка при создании фото для сервиса: You can't set backward one to one relations through init, change related model instead[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 25, in create_photo_for_service
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1149, in create
+    instance = cls(**kwargs)
+               ^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 669, in __init__
+    for key in meta.fields.difference(self._set_kwargs(kwargs)):
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 711, in _set_kwargs
+    raise ConfigurationError(
+tortoise.exceptions.ConfigurationError: You can't set backward one to one relations through init, change related model instead
+2025-01-15 10:39:39 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: You can't set backward one to one relations through init, change related model instead[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 127, in create_service_standart_route
+    photo = await create_photo_for_service(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/transactions.py", line 57, in wrapped
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 25, in create_photo_for_service
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1149, in create
+    instance = cls(**kwargs)
+               ^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 669, in __init__
+    for key in meta.fields.difference(self._set_kwargs(kwargs)):
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 711, in _set_kwargs
+    raise ConfigurationError(
+tortoise.exceptions.ConfigurationError: You can't set backward one to one relations through init, change related model instead
+2025-01-15 10:55:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:55:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 10:55:44 - my_app - [31mERROR[0m - [31mОшибка при создании фото для сервиса: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (8, 2025-01-15 07:55:44.484717+00, 2025-01-15 07:55:44.484737+00, photo_2_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 155743, 1280, 853, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (8, 2025-01-15 07:55:44.484717+00, 2025-01-15 07:55:44.484737+00, photo_2_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 155743, 1280, 853, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 26, in create_photo_for_service
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (8, 2025-01-15 07:55:44.484717+00, 2025-01-15 07:55:44.484737+00, photo_2_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 155743, 1280, 853, t, 0, null).
+2025-01-15 10:55:44 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (8, 2025-01-15 07:55:44.484717+00, 2025-01-15 07:55:44.484737+00, photo_2_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 155743, 1280, 853, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (8, 2025-01-15 07:55:44.484717+00, 2025-01-15 07:55:44.484737+00, photo_2_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 155743, 1280, 853, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 127, in create_service_standart_route
+    photo = await create_photo_for_service(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/transactions.py", line 57, in wrapped
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 26, in create_photo_for_service
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (8, 2025-01-15 07:55:44.484717+00, 2025-01-15 07:55:44.484737+00, photo_2_2024-12-19_20-09-44.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 155743, 1280, 853, t, 0, null).
+2025-01-15 10:59:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 10:59:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 11:00:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 11:00:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 11:03:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 11:03:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 11:03:49 - my_app - [31mERROR[0m - [31mОшибка при создании фото для сервиса: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (9, 2025-01-15 08:03:49.473182+00, 2025-01-15 08:03:49.473209+00, photo_3_2024-12-19_20-09-49.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 167118, 1280, 853, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (9, 2025-01-15 08:03:49.473182+00, 2025-01-15 08:03:49.473209+00, photo_3_2024-12-19_20-09-49.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 167118, 1280, 853, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 26, in create_photo_for_service
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (9, 2025-01-15 08:03:49.473182+00, 2025-01-15 08:03:49.473209+00, photo_3_2024-12-19_20-09-49.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 167118, 1280, 853, t, 0, null).
+2025-01-15 11:03:49 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (9, 2025-01-15 08:03:49.473182+00, 2025-01-15 08:03:49.473209+00, photo_3_2024-12-19_20-09-49.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 167118, 1280, 853, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (9, 2025-01-15 08:03:49.473182+00, 2025-01-15 08:03:49.473209+00, photo_3_2024-12-19_20-09-49.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 167118, 1280, 853, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 128, in create_service_standart_route
+    photo = await create_photo_for_service(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/transactions.py", line 57, in wrapped
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 26, in create_photo_for_service
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (9, 2025-01-15 08:03:49.473182+00, 2025-01-15 08:03:49.473209+00, photo_3_2024-12-19_20-09-49.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 167118, 1280, 853, t, 0, null).
+2025-01-15 12:00:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 12:00:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 12:00:22 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-01-15 12:01:08 - my_app - [31mERROR[0m - [31mОшибка при создании фото для сервиса: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (10, 2025-01-15 09:01:08.692228+00, 2025-01-15 09:01:08.692254+00, photo_2_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/sf..., image/jpeg, 161665, 1280, 853, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (10, 2025-01-15 09:01:08.692228+00, 2025-01-15 09:01:08.692254+00, photo_2_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/sf..., image/jpeg, 161665, 1280, 853, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 26, in create_photo_for_service
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (10, 2025-01-15 09:01:08.692228+00, 2025-01-15 09:01:08.692254+00, photo_2_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/sf..., image/jpeg, 161665, 1280, 853, t, 0, null).
+2025-01-15 12:01:08 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (10, 2025-01-15 09:01:08.692228+00, 2025-01-15 09:01:08.692254+00, photo_2_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/sf..., image/jpeg, 161665, 1280, 853, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (10, 2025-01-15 09:01:08.692228+00, 2025-01-15 09:01:08.692254+00, photo_2_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/sf..., image/jpeg, 161665, 1280, 853, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 128, in create_service_standart_route
+    photo = await create_photo_for_service(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/transactions.py", line 57, in wrapped
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 26, in create_photo_for_service
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (10, 2025-01-15 09:01:08.692228+00, 2025-01-15 09:01:08.692254+00, photo_2_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/sf..., image/jpeg, 161665, 1280, 853, t, 0, null).
+2025-01-15 12:36:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 12:36:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 12:36:46 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-01-15 12:37:21 - my_app - [31mERROR[0m - [31mОшибка при создании фото для сервиса: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (11, 2025-01-15 09:37:21.697454+00, 2025-01-15 09:37:21.697478+00, photo_3_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 205053, 853, 1280, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (11, 2025-01-15 09:37:21.697454+00, 2025-01-15 09:37:21.697478+00, photo_3_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 205053, 853, 1280, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 26, in create_photo_for_service
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (11, 2025-01-15 09:37:21.697454+00, 2025-01-15 09:37:21.697478+00, photo_3_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 205053, 853, 1280, t, 0, null).
+2025-01-15 12:37:21 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (11, 2025-01-15 09:37:21.697454+00, 2025-01-15 09:37:21.697478+00, photo_3_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 205053, 853, 1280, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (11, 2025-01-15 09:37:21.697454+00, 2025-01-15 09:37:21.697478+00, photo_3_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 205053, 853, 1280, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 128, in create_service_standart_route
+    photo = await create_photo_for_service(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/transactions.py", line 57, in wrapped
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 26, in create_photo_for_service
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (11, 2025-01-15 09:37:21.697454+00, 2025-01-15 09:37:21.697478+00, photo_3_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 205053, 853, 1280, t, 0, null).
+2025-01-15 12:38:50 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 12:38:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 12:38:54 - my_app - [31mERROR[0m - [31mОшибка при создании фото для сервиса: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (12, 2025-01-15 09:38:54.650864+00, 2025-01-15 09:38:54.650885+00, photo_3_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 205053, 853, 1280, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (12, 2025-01-15 09:38:54.650864+00, 2025-01-15 09:38:54.650885+00, photo_3_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 205053, 853, 1280, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 26, in create_photo_for_service
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (12, 2025-01-15 09:38:54.650864+00, 2025-01-15 09:38:54.650885+00, photo_3_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 205053, 853, 1280, t, 0, null).
+2025-01-15 12:38:54 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (12, 2025-01-15 09:38:54.650864+00, 2025-01-15 09:38:54.650885+00, photo_3_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 205053, 853, 1280, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (12, 2025-01-15 09:38:54.650864+00, 2025-01-15 09:38:54.650885+00, photo_3_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 205053, 853, 1280, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 127, in create_service_standart_route
+    photo = await create_photo_for_service(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/transactions.py", line 57, in wrapped
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 26, in create_photo_for_service
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (12, 2025-01-15 09:38:54.650864+00, 2025-01-15 09:38:54.650885+00, photo_3_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 205053, 853, 1280, t, 0, null).
+2025-01-15 12:39:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 12:39:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 12:39:15 - my_app - [31mERROR[0m - [31mОшибка при создании фото для сервиса: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (13, 2025-01-15 09:39:15.83064+00, 2025-01-15 09:39:15.830669+00, photo_1_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 150520, 1280, 853, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (13, 2025-01-15 09:39:15.83064+00, 2025-01-15 09:39:15.830669+00, photo_1_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 150520, 1280, 853, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 26, in create_photo_for_service
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (13, 2025-01-15 09:39:15.83064+00, 2025-01-15 09:39:15.830669+00, photo_1_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 150520, 1280, 853, t, 0, null).
+2025-01-15 12:39:15 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (13, 2025-01-15 09:39:15.83064+00, 2025-01-15 09:39:15.830669+00, photo_1_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 150520, 1280, 853, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (13, 2025-01-15 09:39:15.83064+00, 2025-01-15 09:39:15.830669+00, photo_1_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 150520, 1280, 853, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 127, in create_service_standart_route
+    photo = await create_photo_for_service(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/transactions.py", line 57, in wrapped
+    return await func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 26, in create_photo_for_service
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (13, 2025-01-15 09:39:15.83064+00, 2025-01-15 09:39:15.830669+00, photo_1_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 150520, 1280, 853, t, 0, null).
+2025-01-15 12:41:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 12:41:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 12:41:21 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (14, 2025-01-15 09:41:21.929921+00, 2025-01-15 09:41:21.929941+00, photo_1_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 150520, 1280, 853, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (14, 2025-01-15 09:41:21.929921+00, 2025-01-15 09:41:21.929941+00, photo_1_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 150520, 1280, 853, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 87, in create_service_standart_route
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (14, 2025-01-15 09:41:21.929921+00, 2025-01-15 09:41:21.929941+00, photo_1_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 150520, 1280, 853, t, 0, null).
+2025-01-15 12:43:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 12:43:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 12:45:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 12:45:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 12:45:14 - my_app - [31mERROR[0m - [31mОшибка при обработке изображения: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (15, 2025-01-15 09:45:14.708605+00, 2025-01-15 09:45:14.70863+00, photo_1_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 150520, 1280, 853, t, 0, null).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (15, 2025-01-15 09:45:14.708605+00, 2025-01-15 09:45:14.70863+00, photo_1_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 150520, 1280, 853, t, 0, null).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 87, in create_service_standart_route
+    photo = await StandardServicePhoto.create(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (15, 2025-01-15 09:45:14.708605+00, 2025-01-15 09:45:14.70863+00, photo_1_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/st..., image/jpeg, 150520, 1280, 853, t, 0, null).
+2025-01-15 13:34:37 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 13:34:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 13:36:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 13:36:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 13:39:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 13:39:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 13:40:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 13:40:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 13:40:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 13:40:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 13:44:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 13:44:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 13:45:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 13:45:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 13:48:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 13:48:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 13:52:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 13:52:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 13:53:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 13:53:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 13:53:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 13:53:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:12:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:12:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:12:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:12:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:18:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:18:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:18:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:18:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:19:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:19:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:19:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:19:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:19:07 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:19:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:19:07 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:19:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:19:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:19:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:19:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:19:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:19:16 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:19:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:19:16 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:19:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:19:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:19:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:19:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:19:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:20:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:20:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:20:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:20:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:20:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:20:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:20:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:20:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:21:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:21:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:21:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:21:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:21:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:21:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:21:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:21:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:22:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:22:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:22:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:22:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:22:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:22:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:22:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:22:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:22:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:22:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:22:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:22:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:22:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:22:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:22:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:22:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:30:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:30:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:30:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:30:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:30:58 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:30:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:30:58 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:30:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:34:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:34:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:34:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:34:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:34:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:34:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:34:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:34:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:34:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:34:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 14:34:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 14:34:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:16:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:16:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:16:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:16:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:17:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:17:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:17:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:17:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:18:22 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:18:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:18:22 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:18:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:21:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:21:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:21:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:21:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:21:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:21:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:21:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:21:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:27:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:27:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:27:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:27:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:27:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:27:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:27:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:27:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:28:10 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:28:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:28:10 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:28:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:28:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:28:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:28:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:28:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:29:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:29:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:29:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:29:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:31:08 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:31:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:31:08 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:31:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:31:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:31:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:31:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:31:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:31:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:31:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:31:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:31:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:31:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:31:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:31:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:31:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:32:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:32:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:32:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:32:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:33:27 - my_app - [31mERROR[0m - [31mError while adding photo to service : null value in column "service_id" of relation "standardservicephoto" violates not-null constraint
+DETAIL:  Failing row contains (16, 2025-01-15 12:33:27.538649+00, 2025-01-15 12:33:27.538675+00, photo_2_2024-12-19_20-09-32.jpg, /home/gob/PycharmProjects/manicure/media/default_city/service/ex..., image/jpeg, 161665, 1280, 853, f, 0, null).[0m
+2025-01-15 15:33:27 - my_app - [31mERROR[0m - [31mОшибка при добавлении фото: 500: Error while adding photo[0m
+2025-01-15 15:38:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:38:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:39:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:39:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:40:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:40:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:42:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:42:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:44:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:44:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 15:45:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 15:45:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 16:01:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 16:01:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 16:16:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 16:16:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 16:18:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 16:18:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 16:21:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 16:21:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 16:28:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 16:28:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 16:30:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 16:30:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 16:31:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 16:31:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 16:32:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 16:32:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 17:11:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 17:11:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 17:13:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 17:13:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 17:13:47 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-01-15 17:21:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 17:21:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 17:21:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 17:21:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

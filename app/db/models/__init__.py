@@ -7,15 +7,14 @@ from db.models.location.city import City, CityDescription
 from db.models.user.user import User
 
 from db.models.services_models.service_custom_model import CustomService, CustomServiceAttribute
-from db.models.services_models.service_standart_model import StandardService,TemplateAttribute, ServiceAttributeValue, ServiceAttributeType  
+from db.models.services_models.service_standart_model import StandardService,TemplateAttribute, ServiceAttributeValue, ServiceAttributeType
 from db.models.services_models.category_model import Category
 
 from db.models.salon_models.salon_model import Salon
 from db.models.salon_models.salon_master_relation import SalonMasterRelation
 from db.models.salon_models.salon_master_invitation import SalonMasterInvitation
 
-from db.models.photo_models.photo_model import Photo
-from db.models.photo_models.photo_service_model import ServicePhoto
+from db.models.photo_models.photo_standart_service_model import StandardServicePhoto
 
 from db.models.master_models.master_model import Master
 
@@ -39,8 +38,7 @@ __all__ = [
     'Salon',
     'SalonMasterRelation',
     'SalonMasterInvitation',
-    'Photo',
-    'ServicePhoto',
+    'StandardServicePhoto',
     'Master',
     'JobApplication',
     'Resume',

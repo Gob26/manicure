@@ -1,117 +1,96 @@
-from typing import List, Optional, Dict
+from typing import Optional, Dict
+
+from fastapi import HTTPException
 from tortoise.exceptions import DoesNotExist
 
-from db.models import StandardService
+from db.models import StandardService, StandardServicePhoto, Category
+from db.repositories.services_repositories.category_service_repositories import ServiceCategoryRepository
 from db.repositories.services_repositories.service_standart_repositories import ServiceStandartRepository
-from config.components.logging_config import logger
 from use_case.utils.slug_generator import generate_unique_slug
+from config.components.logging_config import logger
 
 
 class StandardServiceService:
     @staticmethod
     async def create_standart_service(
-            current_user: dict,
-            **service_data: dict
+            name: str,
+            title: str,
+            content: str,
+            slug: str,
+            category_id: int,
+            default_photo_id: Optional[int] = None,
     ) -> StandardService:
-        """
-        Создает новый стандартный сервис.
-        """
-        # Создаем копию данных, чтобы не модифицировать оригинальные
-        create_data = service_data.copy()
-
-        # Если slug не предоставлен, генерируем его
-        if not create_data.get("slug"):
-            create_data["slug"] = await generate_unique_slug(StandardService, create_data["name"])
-
-        # Добавляем created_by
-        create_data["created_by"] = current_user["user_id"]
-
         try:
+            # Проверяем существование категории
+            category = await StandardServiceService.get_category_by_id(category_id)
+            if not category:
+                raise HTTPException(
+                    status_code=404,
+                    detail=f"Category with ID {category_id} not found"
+                )
+
+            create_data = {
+                "name": name,
+                "title": title,
+                "content": content,
+                "slug": slug,
+                "category_id": category_id,
+            }
+
+            if default_photo_id:
+                create_data["default_photo_id"] = default_photo_id
+
+            # Создание услуги
             service = await ServiceStandartRepository.create_service_standart(**create_data)
-            logger.info(f"Создан новый стандартный сервис: {service.name}")
-            return service
-        except Exception as e:
-            logger.error(f"Ошибка при создании стандартного сервиса в репозитории: {e}")
-            raise
 
-    @staticmethod
-    async def get_standart_service(service_id: int, current_user: dict) -> StandardService:
-        """
-        Получает стандартный сервис по ID.
-        """
-        try:
-            service = await StandardService.get(id=service_id).prefetch_related(
-                'category',
-                'default_photo'
-            )
-            return service
-        except DoesNotExist:
-            raise ValueError(f"Сервис с ID {service_id} не найден")
-
-    @staticmethod
-    async def list_standart_services(
-            current_user: dict,
-            skip: int = 0,
-            limit: int = 100
-    ) -> List[StandardService]:
-        """
-        Получает список всех стандартных сервисов с пагинацией.
-        """
-        services = await StandardService.all().offset(skip).limit(limit).prefetch_related(
-            'category',
-            'default_photo'
-        )
-        return services
-
-    @staticmethod
-    async def update_standart_service(
-            service_id: int,
-            current_user: dict,
-            **update_data
-    ) -> StandardService:
-        """
-        Обновляет существующий стандартный сервис.
-        """
-        try:
-            service = await StandardService.get(id=service_id)
-
-            # Проверяем уникальность slug если он обновляется
-            if 'slug' in update_data and update_data['slug'] != service.slug:
-                exists = await StandardService.filter(slug=update_data['slug']).exists()
-                if exists:
-                    raise ValueError(f"Сервис со slug '{update_data['slug']}' уже существует")
-
-            # Добавляем информацию об обновившем пользователе
-            update_data['updated_by'] = current_user["user_id"]
-
-            # Обновляем поля
-            await service.update_from_dict(update_data).save()
-
-            # Перезагружаем данные с связанными объектами
-            await service.refresh_from_db()
+            # Загружаем связанные данные
             await service.fetch_related('category', 'default_photo')
 
-            logger.info(f"Обновлен стандартный сервис: {service.name}")
             return service
 
-        except DoesNotExist:
-            raise ValueError(f"Сервис с ID {service_id} не найден")
+        except HTTPException as he:
+            raise he
+        except Exception as e:
+            logger.error(f"Ошибка при создании стандартного сервиса: {str(e)}", exc_info=True)
+            raise HTTPException(status_code=500, detail="Ошибка при создании сервиса.")
 
     @staticmethod
-    async def delete_standart_service(service_id: int, current_user: dict) -> None:
+    async def link_photo_to_service(service_id: int, photo_id: int) -> None:
         """
-        Удаляет стандартный сервис.
+        Привязывает фото к услуге, обновляя default_photo_id.
         """
         try:
-            service = await StandardService.get(id=service_id)
-            await service.delete()
-            logger.info(f"Удален стандартный сервис с ID: {service_id}")
-        except DoesNotExist:
-            raise ValueError(f"Сервис с ID {service_id} не найден")
+            service = await StandardService.get_or_none(id=service_id)
+            if not service:
+                raise HTTPException(
+                    status_code=404,
+                    detail=f"Сервис с ID {service_id} не найден."
+                )
+
+            photo = await StandardServicePhoto.get_or_none(id=photo_id)
+            if not photo:
+                raise HTTPException(
+                    status_code=404,
+                    detail=f"Фото с ID {photo_id} не найдено."
+                )
+
+            service.default_photo_id = photo.id
+            await service.save()
+
+            logger.info(f"Фото с ID: {photo_id} успешно привязано к сервису ID: {service_id}")
+        except HTTPException as he:
+            raise he
+        except Exception as e:
+            logger.error(f"Ошибка при привязке фото к сервису: {str(e)}", exc_info=True)
+            raise HTTPException(status_code=500, detail="Ошибка при привязке фото к сервису.")
 
     @staticmethod
-    async def check_service_exists(service_id: int) -> bool:
+    async def get_category_by_id(category_id: int) -> Optional[Category]:
         """
-        Проверяет существование сервиса по ID.
+        Возвращает категорию по её ID или None, если не найдена.
         """
-        return await StandardService.filter(id=service_id).exists()
+        try:
+            category = await ServiceCategoryRepository.get_category_id(category_id=category_id)
+            return category
+        except DoesNotExist:
+            return None

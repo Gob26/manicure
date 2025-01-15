@@ -13,9 +13,11 @@ CREATE TABLE IF NOT EXISTS "categories" (
     "id" SERIAL NOT NULL PRIMARY KEY,
     "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
-    "name" VARCHAR(255) NOT NULL UNIQUE,
-    "slug" VARCHAR(255) NOT NULL UNIQUE,
-    "description" TEXT
+    "name" VARCHAR(255) NOT NULL,
+    "title" VARCHAR(255),
+    "description" TEXT,
+    "content" TEXT,
+    "slug" VARCHAR(255)
 );
 CREATE TABLE IF NOT EXISTS "cities" (
     "id" SERIAL NOT NULL PRIMARY KEY,
@@ -44,27 +46,6 @@ CREATE TABLE IF NOT EXISTS "city_descriptions" (
     "text" TEXT,
     "city_id" INT NOT NULL UNIQUE REFERENCES "cities" ("id") ON DELETE CASCADE
 );
-CREATE TABLE IF NOT EXISTS "photos" (
-    "id" SERIAL NOT NULL PRIMARY KEY,
-    "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
-    "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
-    "file_name" VARCHAR(255) NOT NULL,
-    "file_path" VARCHAR(1000) NOT NULL,
-    "mime_type" VARCHAR(100) NOT NULL,
-    "size" INT NOT NULL,
-    "width" INT,
-    "height" INT,
-    "is_main" BOOL NOT NULL  DEFAULT False,
-    "sort_order" INT NOT NULL  DEFAULT 0,
-    "master_id" INT,
-    "salon_id" INT,
-    "service_id" INT,
-    "entity_type" VARCHAR(14) NOT NULL,
-    "caption" VARCHAR(1000),
-    "is_active" BOOL NOT NULL  DEFAULT True
-);
-COMMENT ON COLUMN "photos"."entity_type" IS 'MASTER_AVATAR: master_avatar\nMASTER_WORK: master_work\nMASTER_POST: master_post\nSALON_INTERIOR: salon_interior\nSALON_POST: salon_post\nSALON_LOGO: salon_logo\nSERVICE_PHOTO: service_photo';
-COMMENT ON TABLE "photos" IS 'Унифицированная модель фотографий, наследующая абстрактную модель';
 CREATE TABLE IF NOT EXISTS "service_attribute_types" (
     "id" SERIAL NOT NULL PRIMARY KEY,
     "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
@@ -82,6 +63,20 @@ CREATE TABLE IF NOT EXISTS "service_attribute_values" (
     "attribute_type_id" INT NOT NULL REFERENCES "service_attribute_types" ("id") ON DELETE CASCADE
 );
 COMMENT ON TABLE "service_attribute_values" IS 'Возможные значения атрибутов (аппаратный, классический, гель-лак и т.д.)';
+CREATE TABLE IF NOT EXISTS "standardservicephoto" (
+    "id" SERIAL NOT NULL PRIMARY KEY,
+    "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    "file_name" VARCHAR(255) NOT NULL,
+    "file_path" VARCHAR(1000) NOT NULL,
+    "mime_type" VARCHAR(100) NOT NULL,
+    "size" INT NOT NULL,
+    "width" INT,
+    "height" INT,
+    "is_main" BOOL NOT NULL  DEFAULT False,
+    "sort_order" INT NOT NULL  DEFAULT 0
+);
+COMMENT ON TABLE "standardservicephoto" IS 'Фотографии стандартных услуг';
 CREATE TABLE IF NOT EXISTS "standard_services" (
     "id" SERIAL NOT NULL PRIMARY KEY,
     "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
@@ -92,7 +87,7 @@ CREATE TABLE IF NOT EXISTS "standard_services" (
     "content" TEXT,
     "slug" VARCHAR(255),
     "category_id" INT REFERENCES "categories" ("id") ON DELETE SET NULL,
-    "default_photo_id" INT REFERENCES "photos" ("id") ON DELETE SET NULL
+    "default_photo_id" INT  UNIQUE REFERENCES "standardservicephoto" ("id") ON DELETE SET NULL
 );
 COMMENT ON TABLE "standard_services" IS 'Модель для стандартных услуг';
 CREATE TABLE IF NOT EXISTS "template_attributes" (
@@ -137,7 +132,6 @@ CREATE TABLE IF NOT EXISTS "master" (
     "accepts_at_home" BOOL NOT NULL  DEFAULT False,
     "accepts_in_salon" BOOL NOT NULL  DEFAULT False,
     "accepts_offsite" BOOL NOT NULL  DEFAULT False,
-    "avatar_id" INT REFERENCES "photos" ("id") ON DELETE SET NULL,
     "city_id" INT REFERENCES "cities" ("id") ON DELETE SET NULL,
     "user_id" INT NOT NULL UNIQUE REFERENCES "users" ("id") ON DELETE CASCADE
 );
@@ -157,9 +151,15 @@ CREATE TABLE IF NOT EXISTS "salon" (
     "name" VARCHAR(255) NOT NULL,
     "title" VARCHAR(255) NOT NULL,
     "slug" VARCHAR(255) NOT NULL,
-    "address" VARCHAR(255) NOT NULL,
     "description" TEXT,
     "text" TEXT,
+    "address" VARCHAR(255) NOT NULL,
+    "phone" VARCHAR(20),
+    "telegram" VARCHAR(255),
+    "whatsapp" VARCHAR(255),
+    "website" VARCHAR(255),
+    "vk" VARCHAR(255),
+    "instagram" VARCHAR(255),
     "city_id" INT REFERENCES "cities" ("id") ON DELETE SET NULL,
     "user_id" INT NOT NULL UNIQUE REFERENCES "users" ("id") ON DELETE CASCADE
 );
@@ -208,16 +208,6 @@ CREATE TABLE IF NOT EXISTS "salonmasterrelation" (
 );
 COMMENT ON COLUMN "salonmasterrelation"."status" IS 'active: active\npending: pending\ninactive: inactive';
 COMMENT ON COLUMN "salonmasterrelation"."role" IS 'employee: employee\nfreelancer: freelancer';
-CREATE TABLE IF NOT EXISTS "service_photos" (
-    "id" SERIAL NOT NULL PRIMARY KEY,
-    "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
-    "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
-    "is_main" BOOL NOT NULL  DEFAULT False,
-    "order" INT NOT NULL  DEFAULT 0,
-    "custom_service_id" INT NOT NULL REFERENCES "custom_services" ("id") ON DELETE CASCADE,
-    "photo_id" INT NOT NULL REFERENCES "photos" ("id") ON DELETE CASCADE
-);
-COMMENT ON TABLE "service_photos" IS 'Фотографии услуг';
 CREATE TABLE IF NOT EXISTS "vacancies" (
     "id" SERIAL NOT NULL PRIMARY KEY,
     "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,

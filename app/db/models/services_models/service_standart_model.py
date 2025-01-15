@@ -1,11 +1,9 @@
-#service_custom_model.py
+#service_standart_model.py
 from tortoise import fields
 from db.models.abstract.abstract_model import AbstractModel
-from db import models
 from db.models.abstract.abstract_service import AbstractService
 
 
-# Модель стандартных услуг
 class StandardService(AbstractService):
     """
     Модель для стандартных услуг
@@ -15,19 +13,23 @@ class StandardService(AbstractService):
         related_name='services',
         null=True,
         on_delete=fields.SET_NULL,
-        help_text="Категория услуги."
+        help_text="Категория услуги (например, маникюр, педикюр)."
     )
-    default_photo = fields.ForeignKeyField(
-        'server.Photo',
-        related_name='default_services',
+    default_photo = fields.OneToOneField(
+        'server.StandardServicePhoto',
+        related_name='service',
         null=True,
         on_delete=fields.SET_NULL,
-        help_text="Стандартное фото для услуги."
+        help_text="Фото по умолчанию для услуги"
     )
 
     class Meta:
         table = "standard_services"
         ordering = ["name"]
+
+
+
+
 
 
 class ServiceAttributeType(AbstractModel):
@@ -42,8 +44,8 @@ class ServiceAttributeType(AbstractModel):
 class ServiceAttributeValue(AbstractModel):
     """Возможные значения атрибутов (аппаратный, классический, гель-лак и т.д.)"""
     attribute_type = fields.ForeignKeyField(
-        'server.ServiceAttributeType', 
-        related_name='values', 
+        'server.ServiceAttributeType',
+        related_name='values',
         on_delete=fields.CASCADE,
         help_text="Тип атрибута, к которому относится значение."
     )
@@ -57,13 +59,13 @@ class ServiceAttributeValue(AbstractModel):
 class TemplateAttribute(AbstractModel):
     """Связь шаблона услуги с возможными атрибутами"""
     service_template = fields.ForeignKeyField(
-        'server.StandardService', 
-        related_name='possible_attributes', 
+        'server.StandardService',
+        related_name='possible_attributes',
         on_delete=fields.CASCADE,
         help_text="Шаблон услуги, связанный с атрибутами."
     )
     attribute_type = fields.ForeignKeyField(
-        'server.ServiceAttributeType', 
+        'server.ServiceAttributeType',
         on_delete=fields.CASCADE,
         help_text="Тип атрибута."
     )
