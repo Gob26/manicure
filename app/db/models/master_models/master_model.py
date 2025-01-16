@@ -16,13 +16,13 @@ class Master(AbstractModel):
     user = fields.OneToOneField('server.User', related_name='master', on_delete=fields.CASCADE)
     
     # Связь с аватаркой
-    #avatar = fields.ForeignKeyField(
-     #   'server.Photo',
-     #   related_name='master_avatar',
-      #  on_delete=fields.SET_NULL,
-      #  null=True,
-       # help_text="Аватар мастера"
-   # )
+    avatar = fields.ForeignKeyField(
+        'server.AvatarPhoto',
+        related_name='master',
+        on_delete=fields.SET_NULL,
+        null=True,
+        help_text="Аватар мастера"
+    )
     
     # Основная информация
     title = fields.CharField(max_length=255, null=False)  # Заголовок

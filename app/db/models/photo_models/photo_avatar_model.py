@@ -2,9 +2,9 @@ from db.models.abstract.abstract_photo import AbstractPhoto
 
 
 
-class StandardServicePhoto(AbstractPhoto):
+class AvatarPhoto(AbstractPhoto):
     """
     Фотографии стандартных услуг
     """
     class Meta:
-        table = "standardservicephoto"
+        table = "avatar_photo"

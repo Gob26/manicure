@@ -9,6 +9,20 @@ async def upgrade(db: BaseDBAsyncClient) -> str:
     "app" VARCHAR(100) NOT NULL,
     "content" JSONB NOT NULL
 );
+CREATE TABLE IF NOT EXISTS "avatar_photo" (
+    "id" SERIAL NOT NULL PRIMARY KEY,
+    "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    "file_name" VARCHAR(255) NOT NULL,
+    "file_path" VARCHAR(1000) NOT NULL,
+    "mime_type" VARCHAR(100) NOT NULL,
+    "size" INT NOT NULL,
+    "width" INT,
+    "height" INT,
+    "is_main" BOOL NOT NULL  DEFAULT False,
+    "sort_order" INT NOT NULL  DEFAULT 0
+);
+COMMENT ON TABLE "avatar_photo" IS 'Фотографии стандартных услуг';
 CREATE TABLE IF NOT EXISTS "categories" (
     "id" SERIAL NOT NULL PRIMARY KEY,
     "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
@@ -132,6 +146,7 @@ CREATE TABLE IF NOT EXISTS "master" (
     "accepts_at_home" BOOL NOT NULL  DEFAULT False,
     "accepts_in_salon" BOOL NOT NULL  DEFAULT False,
     "accepts_offsite" BOOL NOT NULL  DEFAULT False,
+    "avatar_id" INT REFERENCES "avatar_photo" ("id") ON DELETE SET NULL,
     "city_id" INT REFERENCES "cities" ("id") ON DELETE SET NULL,
     "user_id" INT NOT NULL UNIQUE REFERENCES "users" ("id") ON DELETE CASCADE
 );
