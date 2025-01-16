@@ -8928,3 +8928,62 @@ DETAIL:  Failing row contains (16, 2025-01-15 12:33:27.538649+00, 2025-01-15 12:
 2025-01-15 17:21:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-01-15 17:21:13 - my_app - [31mERROR[0m - [31mError message[0m
 2025-01-15 17:21:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 18:21:50 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 18:21:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 18:29:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 18:29:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 18:32:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 18:32:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 18:32:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 18:32:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 18:32:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 18:32:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 18:32:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 18:32:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 18:43:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 18:43:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 19:42:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 19:42:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 19:43:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 19:43:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 19:44:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 19:44:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 19:45:18 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-01-15 19:49:50 - my_app - [31mERROR[0m - [31mОшибка оптимизации изображения: join() argument must be str, bytes, or os.PathLike object, not 'int'[0m
+2025-01-15 19:49:50 - my_app - [31mERROR[0m - [31mError while adding photo to service : join() argument must be str, bytes, or os.PathLike object, not 'int'[0m
+2025-01-15 19:50:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 19:50:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 19:50:47 - my_app - [31mERROR[0m - [31mОшибка оптимизации изображения: join() argument must be str, bytes, or os.PathLike object, not 'int'[0m
+2025-01-15 19:50:47 - my_app - [31mERROR[0m - [31mError while adding photo to service : join() argument must be str, bytes, or os.PathLike object, not 'int'[0m
+2025-01-15 19:51:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 19:51:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-15 19:51:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-15 19:51:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 10:07:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 10:07:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 10:13:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 10:13:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 10:17:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 10:17:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 10:24:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 10:24:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 10:49:16 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 10:49:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 10:49:23 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-01-16 10:53:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 10:53:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 10:53:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 10:53:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 10:53:49 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-01-16 10:55:16 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 10:55:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 10:55:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 10:55:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 10:56:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 10:56:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 10:57:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 10:57:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 11:10:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 11:10:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 11:17:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 11:17:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

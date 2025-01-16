@@ -1,20 +1,22 @@
-from typing import Any, Optional, List
+from typing import Any, Optional, List, Type, TypeVar
+from tortoise import models
 from db.models.photo_models.photo_standart_service_model import StandardServicePhoto
 from db.repositories.base_repositories.base_repositories import BaseRepository
 from config.components.logging_config import logger
 
 
-class StandardServicePhotoRepository(BaseRepository):
-    model = StandardServicePhoto
+T = TypeVar("T", bound=models.Model)
 
+class PhotoRepository(BaseRepository):
     @classmethod
-    async def create_photo(cls, **kwargs: Any) -> StandardServicePhoto:
+    async def create_photo(cls, model: Type[T], **kwargs: Any) -> T:
         """
-        Создает запись фотографии с использованием базового метода.
+        Создает запись фотографии с использованием переданной модели.
         """
-        photo = await cls.create(**kwargs)
+        photo = await model.create(**kwargs)
         logger.info(f"Фотография создана с данными: {kwargs}")
         return photo
+
 
     @classmethod
     async def get_photo_by_id(cls, photo_id: int) -> Optional[StandardServicePhoto]:
