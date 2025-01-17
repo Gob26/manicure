@@ -44,7 +44,7 @@ class StandardServiceService:
             service = await ServiceStandartRepository.create_service_standart(**create_data)
 
             # Загружаем связанные данные
-            await service.fetch_related('category', 'default_photo')
+            await service.fetch_related('category', 'default_photo') # Ленивая загрузка
 
             return service
 

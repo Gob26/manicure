@@ -29185,3 +29185,553 @@ DETAIL:  Failing row contains (16, 2025-01-15 12:33:27.538649+00, 2025-01-15 12:
 2025-01-16 21:57:56 - my_app - [32mINFO[0m - [32mФото с ID 3 успешно найдено: <StandardServicePhoto>[0m
 2025-01-16 21:57:56 - my_app - [32mINFO[0m - [32mStandardService создан с данными: {'name': 'string777', 'title': 'string777', 'content': 'string777', 'slug': 'string777', 'category_id': 1, 'default_photo_id': 3}[0m
 2025-01-16 21:57:56 - my_app - [32mINFO[0m - [32mУслуга успешно создана с ID: 3[0m
+2025-01-16 23:10:15 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-16 23:10:15 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-16 23:10:15 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-16 23:10:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 23:10:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 23:32:12 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-16 23:32:12 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-16 23:32:12 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-16 23:32:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 23:32:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 23:33:01 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-16 23:33:01 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-16 23:33:01 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-16 23:33:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 23:33:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 23:34:03 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-16 23:34:03 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-16 23:34:03 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-16 23:34:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 23:34:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 23:35:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-16 23:35:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-16 23:35:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-16 23:35:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 23:35:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 23:37:56 - my_app - [32mINFO[0m - [32mРегистрация пользователя: testava, город: Омск, роль: master[0m
+2025-01-16 23:37:56 - my_app - [32mINFO[0m - [32mПользователь testava пытается зарегистрироваться с городом Омск[0m
+2025-01-16 23:37:56 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-16 23:37:56 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-16 23:37:56 - my_app - [32mINFO[0m - [32mГород Омск найден, ID: 1901[0m
+2025-01-16 23:37:56 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=testava, city_name=Омск, role=master[0m
+2025-01-16 23:37:56 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-16 23:37:56 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-16 23:37:56 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'username': 'testava'} существует: False[0m
+2025-01-16 23:37:56 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'email': 'testava@testava.ru'} существует: False[0m
+2025-01-16 23:37:57 - my_app - [32mINFO[0m - [32mUser создан с данными: {'username': 'testava', 'email': 'testava@testava.ru', 'password': '$2b$12$bJp3kBE4Zql6U9nO2rl.Yu0xHgm7E808NWKnQi/frg72Mb7PtObby', 'city': <City: 1901>, 'role': 'master'}[0m
+2025-01-16 23:37:57 - my_app - [32mINFO[0m - [32mПользователь testava успешно зарегистрирован.[0m
+2025-01-16 23:37:57 - my_app - [32mINFO[0m - [32mПользователь testava успешно зарегистрирован[0m
+2025-01-16 23:38:03 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: testava[0m
+2025-01-16 23:38:03 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя testava[0m
+2025-01-16 23:38:03 - my_app - [32mINFO[0m - [32mПользователь testava найден, проверка пароля.[0m
+2025-01-16 23:38:03 - my_app - [32mINFO[0m - [32mПользователь testava успешно авторизован[0m
+2025-01-16 23:38:03 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 144, 'username': 'testava', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-16 23:38:03 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MDYxNjgzLCJjaXR5IjoiIn0.1acCw9dptRnEHS7zy5P1LXPsAddKF3a5aemFNrLgNpw[0m
+2025-01-16 23:38:03 - my_app - [32mINFO[0m - [32mПользователь testava успешно авторизован[0m
+2025-01-16 23:39:07 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-16 23:39:07 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-16 23:39:07 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-16 23:39:07 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 23:39:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 23:39:40 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-16 23:39:40 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-16 23:39:40 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-16 23:39:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 23:39:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 23:39:45 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-16 23:39:45 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-16 23:39:45 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-16 23:39:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 23:39:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 23:40:19 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: testava[0m
+2025-01-16 23:40:19 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя testava[0m
+2025-01-16 23:40:19 - my_app - [32mINFO[0m - [32mПользователь testava найден, проверка пароля.[0m
+2025-01-16 23:40:19 - my_app - [32mINFO[0m - [32mПользователь testava успешно авторизован[0m
+2025-01-16 23:40:19 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 144, 'username': 'testava', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-16 23:40:19 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MDYxODE5LCJjaXR5IjoiIn0.6aC4zHAeu5BYVnZqs3dJaAeGdy9XYlbn-EPhMM_UYU4[0m
+2025-01-16 23:40:19 - my_app - [32mINFO[0m - [32mПользователь testava успешно авторизован[0m
+2025-01-16 23:40:59 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-16 23:40:59 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MDYxODE5LCJjaXR5IjoiIn0.6aC4zHAeu5BYVnZqs3dJaAeGdy9XYlbn-EPhMM_UYU4[0m
+2025-01-16 23:40:59 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737061819, 'city': ''}[0m
+2025-01-16 23:40:59 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737061819, 'city': ''}[0m
+2025-01-16 23:40:59 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-16 23:45:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-16 23:45:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-16 23:45:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-16 23:45:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 23:45:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 23:46:51 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-16 23:46:51 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-16 23:46:51 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-16 23:46:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 23:46:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 23:49:23 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: testava[0m
+2025-01-16 23:49:23 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя testava[0m
+2025-01-16 23:49:23 - my_app - [32mINFO[0m - [32mПользователь testava найден, проверка пароля.[0m
+2025-01-16 23:49:23 - my_app - [32mINFO[0m - [32mПользователь testava успешно авторизован[0m
+2025-01-16 23:49:23 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 144, 'username': 'testava', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-16 23:49:23 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MDYyMzYzLCJjaXR5IjoiIn0.XPooybUygLwpzJUNMUOgkC1YYAKCb5xkWcAQCX5YVds[0m
+2025-01-16 23:49:23 - my_app - [32mINFO[0m - [32mПользователь testava успешно авторизован[0m
+2025-01-16 23:50:04 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-16 23:50:04 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MDYyMzYzLCJjaXR5IjoiIn0.XPooybUygLwpzJUNMUOgkC1YYAKCb5xkWcAQCX5YVds[0m
+2025-01-16 23:50:04 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737062363, 'city': ''}[0m
+2025-01-16 23:50:04 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737062363, 'city': ''}[0m
+2025-01-16 23:50:04 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-16 23:50:20 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-16 23:50:20 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-16 23:50:20 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-16 23:50:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 23:50:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-16 23:50:30 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-16 23:50:30 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-16 23:50:30 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-16 23:50:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-16 23:50:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 10:08:16 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 10:08:16 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 10:08:16 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 10:08:16 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 10:08:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 10:11:36 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 10:11:36 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 10:11:36 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 10:11:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 10:11:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 11:00:31 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 11:00:31 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 11:00:31 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 11:00:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 11:00:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 11:00:38 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 11:00:38 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 11:00:38 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 11:00:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 11:00:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 11:00:48 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 11:00:48 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 11:00:48 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 11:00:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 11:00:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 11:02:13 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 11:02:13 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 11:02:13 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 11:02:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 11:02:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 11:10:02 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 11:10:02 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 11:10:02 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 11:10:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 11:10:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 11:10:35 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 11:10:35 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 11:10:35 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 11:10:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 11:10:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 11:11:46 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 11:11:46 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 11:11:46 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 11:11:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 11:11:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 11:12:09 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: testava[0m
+2025-01-17 11:12:09 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя testava[0m
+2025-01-17 11:12:09 - my_app - [32mINFO[0m - [32mПользователь testava найден, проверка пароля.[0m
+2025-01-17 11:12:09 - my_app - [32mINFO[0m - [32mПользователь testava успешно авторизован[0m
+2025-01-17 11:12:09 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 144, 'username': 'testava', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-17 11:12:09 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MTAzMzI5LCJjaXR5IjoiIn0.AUFmkbGBIHW8H-yifCGUWtQIv2iwWaqpBpctdN1lZs8[0m
+2025-01-17 11:12:09 - my_app - [32mINFO[0m - [32mПользователь testava успешно авторизован[0m
+2025-01-17 11:13:01 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 11:13:01 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MTAzMzI5LCJjaXR5IjoiIn0.AUFmkbGBIHW8H-yifCGUWtQIv2iwWaqpBpctdN1lZs8[0m
+2025-01-17 11:13:01 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737103329, 'city': ''}[0m
+2025-01-17 11:13:01 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737103329, 'city': ''}[0m
+2025-01-17 11:13:01 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 11:20:55 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 11:20:55 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 11:20:55 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 11:20:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 11:20:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 11:21:20 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: testava[0m
+2025-01-17 11:21:20 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя testava[0m
+2025-01-17 11:21:20 - my_app - [32mINFO[0m - [32mПользователь testava найден, проверка пароля.[0m
+2025-01-17 11:21:20 - my_app - [32mINFO[0m - [32mПользователь testava успешно авторизован[0m
+2025-01-17 11:21:20 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 144, 'username': 'testava', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-17 11:21:20 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MTAzODgwLCJjaXR5IjoiIn0.S4sR1EtW_5EetGoe7mIEBPJp0p9K_iikMWJqLg-iYoM[0m
+2025-01-17 11:21:20 - my_app - [32mINFO[0m - [32mПользователь testava успешно авторизован[0m
+2025-01-17 11:22:33 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 11:22:33 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MTAzODgwLCJjaXR5IjoiIn0.S4sR1EtW_5EetGoe7mIEBPJp0p9K_iikMWJqLg-iYoM[0m
+2025-01-17 11:22:33 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737103880, 'city': ''}[0m
+2025-01-17 11:22:33 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737103880, 'city': ''}[0m
+2025-01-17 11:22:33 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 11:22:33 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 11:22:33 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-17 11:22:33 - my_app - [31mERROR[0m - [31mError while adding photos to service: title: Value must not be None[0m
+2025-01-17 11:22:33 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Error while adding photos[0m
+2025-01-17 11:26:46 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 11:26:46 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 11:26:46 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 11:26:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 11:26:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 11:27:01 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 11:27:01 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MTAzODgwLCJjaXR5IjoiIn0.S4sR1EtW_5EetGoe7mIEBPJp0p9K_iikMWJqLg-iYoM[0m
+2025-01-17 11:27:01 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737103880, 'city': ''}[0m
+2025-01-17 11:27:01 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737103880, 'city': ''}[0m
+2025-01-17 11:27:01 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 11:27:01 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 11:27:01 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-17 11:27:02 - my_app - [31mERROR[0m - [31mError while adding photos to service: title: Value must not be None[0m
+2025-01-17 11:27:02 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Error while adding photos[0m
+2025-01-17 11:32:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 11:32:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 11:32:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 11:32:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 11:32:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 12:06:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 12:06:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 12:06:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 12:06:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 12:06:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 12:08:11 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: testava[0m
+2025-01-17 12:08:11 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя testava[0m
+2025-01-17 12:08:11 - my_app - [32mINFO[0m - [32mПользователь testava найден, проверка пароля.[0m
+2025-01-17 12:08:12 - my_app - [32mINFO[0m - [32mПользователь testava успешно авторизован[0m
+2025-01-17 12:08:12 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 144, 'username': 'testava', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-17 12:08:12 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MTA2NjkyLCJjaXR5IjoiIn0.yNUMsXhBzkqnegzu1J6ggx7CJvgdUJc6cDld5_TisH0[0m
+2025-01-17 12:08:12 - my_app - [32mINFO[0m - [32mПользователь testava успешно авторизован[0m
+2025-01-17 12:09:39 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 12:09:39 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MTA2NjkyLCJjaXR5IjoiIn0.yNUMsXhBzkqnegzu1J6ggx7CJvgdUJc6cDld5_TisH0[0m
+2025-01-17 12:09:39 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737106692, 'city': ''}[0m
+2025-01-17 12:09:39 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737106692, 'city': ''}[0m
+2025-01-17 12:09:39 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 12:09:39 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 12:09:39 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-17 12:09:40 - my_app - [31mERROR[0m - [31mError while adding photos to service: title: Value must not be None[0m
+2025-01-17 12:09:40 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Error while adding photos[0m
+2025-01-17 12:21:08 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 12:21:08 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 12:21:08 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 12:21:08 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 12:21:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 12:25:50 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 12:25:50 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 12:25:50 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 12:25:50 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 12:25:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 12:26:01 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 12:26:01 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MTA2NjkyLCJjaXR5IjoiIn0.yNUMsXhBzkqnegzu1J6ggx7CJvgdUJc6cDld5_TisH0[0m
+2025-01-17 12:26:01 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737106692, 'city': ''}[0m
+2025-01-17 12:26:01 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737106692, 'city': ''}[0m
+2025-01-17 12:26:01 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 12:26:01 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 12:26:01 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-17 12:26:01 - my_app - [31mERROR[0m - [31mError while adding photos to service: title: Value must not be None[0m
+2025-01-17 12:26:01 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Error while adding photos[0m
+2025-01-17 12:35:15 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 12:35:15 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 12:35:15 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 12:35:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 12:35:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 13:12:08 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 13:12:08 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 13:12:08 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 13:12:08 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 13:12:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 13:12:34 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: testava[0m
+2025-01-17 13:12:34 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя testava[0m
+2025-01-17 13:12:34 - my_app - [32mINFO[0m - [32mПользователь testava найден, проверка пароля.[0m
+2025-01-17 13:12:34 - my_app - [32mINFO[0m - [32mПользователь testava успешно авторизован[0m
+2025-01-17 13:12:34 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 144, 'username': 'testava', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-17 13:12:34 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MTEwNTU0LCJjaXR5IjoiIn0.ZMDoWtktY97A6EQLjEEf2bunjAFigXoe5H3KIt9mhnk[0m
+2025-01-17 13:12:34 - my_app - [32mINFO[0m - [32mПользователь testava успешно авторизован[0m
+2025-01-17 13:13:03 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 13:13:03 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MTEwNTU0LCJjaXR5IjoiIn0.ZMDoWtktY97A6EQLjEEf2bunjAFigXoe5H3KIt9mhnk[0m
+2025-01-17 13:13:03 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737110554, 'city': ''}[0m
+2025-01-17 13:13:03 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737110554, 'city': ''}[0m
+2025-01-17 13:13:03 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 13:13:03 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 13:13:03 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-17 13:13:04 - my_app - [31mERROR[0m - [31mError while adding photos to service: title: Value must not be None[0m
+2025-01-17 13:13:04 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Error while adding photos[0m
+2025-01-17 13:13:37 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 13:13:37 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 13:13:37 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 13:13:37 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 13:13:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 13:17:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 13:17:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 13:17:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 13:17:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 13:17:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 13:17:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 13:17:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 13:17:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 13:17:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 13:17:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 13:17:35 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 13:17:35 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 13:17:35 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 13:17:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 13:17:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 13:17:39 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 13:17:39 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MTEwNTU0LCJjaXR5IjoiIn0.ZMDoWtktY97A6EQLjEEf2bunjAFigXoe5H3KIt9mhnk[0m
+2025-01-17 13:17:39 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737110554, 'city': ''}[0m
+2025-01-17 13:17:39 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737110554, 'city': ''}[0m
+2025-01-17 13:17:39 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 13:17:39 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 13:17:39 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-17 13:17:40 - my_app - [31mERROR[0m - [31mError while adding photos to service: specialty: Value must not be None[0m
+2025-01-17 13:17:40 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Error while adding photos[0m
+2025-01-17 13:20:29 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 13:20:29 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 13:20:29 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 13:20:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 13:20:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MTEwNTU0LCJjaXR5IjoiIn0.ZMDoWtktY97A6EQLjEEf2bunjAFigXoe5H3KIt9mhnk[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737110554, 'city': ''}[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737110554, 'city': ''}[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32m=== Начало создания профиля мастера ===[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mДанные текущего пользователя: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mИзвлеченные ID: user_id=144, city_id=1901[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mПроверка прав доступа пользователя...[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mПрава доступа подтверждены[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mПолученные параметры создания мастера:[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mtitle: stritestavang[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mspecialty: stritestavang[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mexperience_years: 1[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mslug: strtestavaing[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mname: sttestavaring[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mОпциональные параметры:[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mdescription: stritestavang[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mtext: sttestavaring[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32maddress: strintestavag[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mphone: stritestavang[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mПараметры социальных сетей:[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mtelegram: https://exatestavample.com/[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mwhatsapp: https://exatestavample.com/[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mwebsite: https://exatestavample.com/[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mvk: None[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32minstagram: None[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mПараметры приема:[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32maccepts_at_home: False[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32maccepts_in_salon: False[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32maccepts_offsite: False[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mИнформация о файле изображения:[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mИмя файла: photo_1_2024-12-19_20-09-44.jpg[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mТип контента: image/jpeg[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mРазмер файла: 191463[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mНачало загрузки изображения...[0m
+2025-01-17 13:20:32 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-17 13:20:33 - my_app - [31mERROR[0m - [31mError while adding photos to service: specialty: Value must not be None[0m
+2025-01-17 13:20:33 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Error while adding photos[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/fields/base.py", line 289, in validate
+    v(value)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/validators.py", line 44, in __call__
+    raise ValidationError("Value must not be None")
+tortoise.exceptions.ValidationError: Value must not be None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 53, in add_photos_to_service
+    photo = await PhotoRepository.create_photo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/photo_repositories/photo_standard_service_repository.py", line 16, in create_photo
+    photo = await model.create(**kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 204, in execute_insert
+    self.column_map[field_name](getattr(instance, field_name), instance)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/fields/base.py", line 261, in to_db_value
+    self.validate(value)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/fields/base.py", line 291, in validate
+    raise ValidationError(f"{self.model_field_name}: {exc}")
+tortoise.exceptions.ValidationError: specialty: Value must not be None
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/masters/masters_router.py", line 105, in create_master_route
+    avatar_id = await PhotoHandler.add_photos_to_service(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 70, in add_photos_to_service
+    raise HTTPException(status_code=500, detail="Error while adding photos")
+fastapi.exceptions.HTTPException: 500: Error while adding photos
+2025-01-17 13:53:06 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 13:53:06 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 13:53:06 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 13:53:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 13:53:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 13:55:44 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 13:55:44 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 13:55:44 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 13:55:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 13:55:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 13:56:05 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: testava[0m
+2025-01-17 13:56:05 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя testava[0m
+2025-01-17 13:56:05 - my_app - [32mINFO[0m - [32mПользователь testava найден, проверка пароля.[0m
+2025-01-17 13:56:05 - my_app - [32mINFO[0m - [32mПользователь testava успешно авторизован[0m
+2025-01-17 13:56:05 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 144, 'username': 'testava', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-17 13:56:05 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MTEzMTY1LCJjaXR5IjoiIn0.ZpiVa8OPse1CqK2_9Q0RUwc6vIalASR-mtroPKOpSLA[0m
+2025-01-17 13:56:05 - my_app - [32mINFO[0m - [32mПользователь testava успешно авторизован[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDQiLCJ1c2VybmFtZSI6InRlc3RhdmEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MTEzMTY1LCJjaXR5IjoiIn0.ZpiVa8OPse1CqK2_9Q0RUwc6vIalASR-mtroPKOpSLA[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737113165, 'city': ''}[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '144', 'username': 'testava', 'role': 'master', 'city_id': 1901, 'exp': 1737113165, 'city': ''}[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32m=== Начало создания профиля мастера ===[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mДанные текущего пользователя: {'username': 'testava', 'user_id': '144', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mИзвлеченные ID: user_id=144, city_id=1901[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mПроверка прав доступа пользователя...[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mПрава доступа подтверждены[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mПолученные параметры создания мастера:[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mtitle: strintestavag[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mspecialty: testavastring[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mexperience_years: 1[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mslug: testavastring[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mname: testavastring[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mОпциональные параметры:[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mdescription: testavastring[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mtext: testavastring[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32maddress: testavastring[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mphone: testavastring[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mПараметры социальных сетей:[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mtelegram: https://examtestavaple.com/[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mwhatsapp: https://examtestavaple.com/[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mwebsite: https://extestavaample.com/[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mvk: https://examptestavale.com/[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32minstagram: https://examtestavaple.com/[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mПараметры приема:[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32maccepts_at_home: True[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32maccepts_in_salon: False[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32maccepts_offsite: False[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mИнформация о файле изображения:[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mИмя файла: photo_2_2024-12-19_20-09-32.jpg[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mТип контента: image/jpeg[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mРазмер файла: 161665[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mНачало загрузки изображения...[0m
+2025-01-17 13:56:39 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-17 13:56:40 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': 'photo_2_2024-12-19_20-09-32.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/default_city/master/testavastring/avatar/testavastring_pc.webp', 'mime_type': 'image/jpeg', 'size': 161665, 'width': 1280, 'height': 853}[0m
+2025-01-17 13:56:40 - my_app - [32mINFO[0m - [32mИзображение успешно загружено. avatar_id: 1[0m
+2025-01-17 13:56:40 - my_app - [32mINFO[0m - [32mНачало создания записи мастера в БД...[0m
+2025-01-17 13:56:40 - my_app - [34mDEBUG[0m - [34mСоздание мастера: пользователь ID 144, город ID 1901[0m
+2025-01-17 13:56:40 - my_app - [32mINFO[0m - [32mMaster создан с данными: {'user_id': '144', 'city_id': 1901, 'title': 'strintestavag', 'specialty': 'testavastring', 'description': 'testavastring', 'text': 'testavastring', 'experience_years': 1, 'slug': 'testavastring', 'name': 'testavastring', 'address': 'testavastring', 'phone': 'testavastring', 'telegram': HttpUrl('https://examtestavaple.com/'), 'whatsapp': HttpUrl('https://examtestavaple.com/'), 'website': HttpUrl('https://extestavaample.com/'), 'vk': HttpUrl('https://examptestavale.com/'), 'instagram': HttpUrl('https://examtestavaple.com/'), 'accepts_at_home': True, 'accepts_in_salon': False, 'accepts_offsite': False, 'avatar_id': 1}[0m
+2025-01-17 13:56:40 - my_app - [32mINFO[0m - [32mМастер создан с данными: {'user_id': '144', 'city_id': 1901, 'title': 'strintestavag', 'specialty': 'testavastring', 'description': 'testavastring', 'text': 'testavastring', 'experience_years': 1, 'slug': 'testavastring', 'name': 'testavastring', 'address': 'testavastring', 'phone': 'testavastring', 'telegram': HttpUrl('https://examtestavaple.com/'), 'whatsapp': HttpUrl('https://examtestavaple.com/'), 'website': HttpUrl('https://extestavaample.com/'), 'vk': HttpUrl('https://examptestavale.com/'), 'instagram': HttpUrl('https://examtestavaple.com/'), 'accepts_at_home': True, 'accepts_in_salon': False, 'accepts_offsite': False, 'avatar_id': 1}[0m
+2025-01-17 13:56:40 - my_app - [32mINFO[0m - [32mМастер успешно создан: ID 57[0m
+2025-01-17 13:56:40 - my_app - [32mINFO[0m - [32mМастер успешно создан. ID мастера: Неизвестно[0m
+2025-01-17 13:56:40 - my_app - [32mINFO[0m - [32m=== Завершение создания профиля мастера ===[0m
+2025-01-17 19:01:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 19:01:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 19:01:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 19:01:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 19:01:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 19:04:30 - my_app - [32mINFO[0m - [32mРегистрация пользователя: avatarmaster, город: Омск, роль: master[0m
+2025-01-17 19:04:30 - my_app - [32mINFO[0m - [32mПользователь avatarmaster пытается зарегистрироваться с городом Омск[0m
+2025-01-17 19:04:30 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-17 19:04:30 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-17 19:04:30 - my_app - [32mINFO[0m - [32mГород Омск найден, ID: 1901[0m
+2025-01-17 19:04:31 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=avatarmaster, city_name=Омск, role=master[0m
+2025-01-17 19:04:31 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-17 19:04:31 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-17 19:04:31 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'username': 'avatarmaster'} существует: False[0m
+2025-01-17 19:04:31 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'email': 'avatarmaster@avatarmaster.ru'} существует: False[0m
+2025-01-17 19:04:31 - my_app - [32mINFO[0m - [32mUser создан с данными: {'username': 'avatarmaster', 'email': 'avatarmaster@avatarmaster.ru', 'password': '$2b$12$bxTV.Kos1AkWyJmLvf8ey.QNH9t0QX0sFe6DfiysElN1oXv7nnmoi', 'city': <City: 1901>, 'role': 'master'}[0m
+2025-01-17 19:04:31 - my_app - [32mINFO[0m - [32mПользователь avatarmaster успешно зарегистрирован.[0m
+2025-01-17 19:04:31 - my_app - [32mINFO[0m - [32mПользователь avatarmaster успешно зарегистрирован[0m
+2025-01-17 19:04:51 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: avatarmaster[0m
+2025-01-17 19:04:51 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя avatarmaster[0m
+2025-01-17 19:04:51 - my_app - [32mINFO[0m - [32mПользователь avatarmaster найден, проверка пароля.[0m
+2025-01-17 19:04:51 - my_app - [32mINFO[0m - [32mПользователь avatarmaster успешно авторизован[0m
+2025-01-17 19:04:51 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 145, 'username': 'avatarmaster', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-17 19:04:51 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDUiLCJ1c2VybmFtZSI6ImF2YXRhcm1hc3RlciIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3MzcxMzE2OTEsImNpdHkiOiIifQ.ryNRL5GFXAeT4BZhkIcqr_VR1AZhLfoQQ2jS4-Y_reg[0m
+2025-01-17 19:04:51 - my_app - [32mINFO[0m - [32mПользователь avatarmaster успешно авторизован[0m
+2025-01-17 19:05:40 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 19:05:40 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDUiLCJ1c2VybmFtZSI6ImF2YXRhcm1hc3RlciIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3MzcxMzE2OTEsImNpdHkiOiIifQ.ryNRL5GFXAeT4BZhkIcqr_VR1AZhLfoQQ2jS4-Y_reg[0m
+2025-01-17 19:05:40 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '145', 'username': 'avatarmaster', 'role': 'master', 'city_id': 1901, 'exp': 1737131691, 'city': ''}[0m
+2025-01-17 19:05:40 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '145', 'username': 'avatarmaster', 'role': 'master', 'city_id': 1901, 'exp': 1737131691, 'city': ''}[0m
+2025-01-17 19:05:40 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'avatarmaster', 'user_id': '145', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 19:05:40 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-17 19:05:41 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': 'photo_1_2024-12-19_20-09-49.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/default_city/master/avatarmaster/avatar/avatarmaster_pc.webp', 'mime_type': 'image/jpeg', 'size': 143023, 'width': 1280, 'height': 853}[0m
+2025-01-17 19:05:41 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: null value in column "user_id" of relation "master" violates not-null constraint
+DETAIL:  Failing row contains (58, 2025-01-17 16:05:41.192018+00, 2025-01-17 16:05:41.19205+00, avatarmaster1, 1avatarmaster, avatarmaster, 1, avatarmaster, avatarmaster, null, null, avatarmaster, avatarmaster, avatarmaster, https://exaavatarmastermple.com/, https://exavatarmasterample.com/, https://eavatarmasterxample.com/, https://exavatarmasterample.com/, https://exaavatarmastermple.com/, f, f, f, 2).[0m
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 87, in _translate_exceptions
+    return await func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 113, in execute_insert
+    return await connection.fetchrow(query, *values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 748, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/asyncpg/connection.py", line 2024, in _do_execute
+    result = await executor(stmt, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 206, in bind_execute
+asyncpg.exceptions.NotNullViolationError: null value in column "user_id" of relation "master" violates not-null constraint
+DETAIL:  Failing row contains (58, 2025-01-17 16:05:41.192018+00, 2025-01-17 16:05:41.19205+00, avatarmaster1, 1avatarmaster, avatarmaster, 1, avatarmaster, avatarmaster, null, null, avatarmaster, avatarmaster, avatarmaster, https://exaavatarmastermple.com/, https://exavatarmasterample.com/, https://eavatarmasterxample.com/, https://exavatarmasterample.com/, https://exaavatarmastermple.com/, f, f, f, 2).
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/masters/masters_router.py", line 86, in create_master_route
+    master = await MasterService.create_master(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/master_service/master_service.py", line 29, in create_master
+    master = await MasterRepository.create_master(**master_data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/master_repositories/master_repositories.py", line 18, in create_master
+    master = await cls.create(**kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/base_repositories/base_repositories.py", line 48, in create
+    instance = await cls.model.create(**kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1152, in create
+    await instance.save(using_db=db, force_create=True)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 943, in save
+    await executor.execute_insert(self)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 207, in execute_insert
+    insert_result = await self.db.execute_insert(self.insert_query, values)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base_postgres/client.py", line 35, in _translate_exceptions
+    return await self._translate_exceptions(func, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/asyncpg/client.py", line 91, in _translate_exceptions
+    raise IntegrityError(exc)
+tortoise.exceptions.IntegrityError: null value in column "user_id" of relation "master" violates not-null constraint
+DETAIL:  Failing row contains (58, 2025-01-17 16:05:41.192018+00, 2025-01-17 16:05:41.19205+00, avatarmaster1, 1avatarmaster, avatarmaster, 1, avatarmaster, avatarmaster, null, null, avatarmaster, avatarmaster, avatarmaster, https://exaavatarmastermple.com/, https://exavatarmasterample.com/, https://eavatarmasterxample.com/, https://exavatarmasterample.com/, https://exaavatarmastermple.com/, f, f, f, 2).
+2025-01-17 19:09:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 19:09:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 19:09:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 19:09:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 19:09:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 19:10:24 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 19:10:24 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 19:10:24 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 19:10:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 19:10:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 19:10:34 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 19:10:34 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDUiLCJ1c2VybmFtZSI6ImF2YXRhcm1hc3RlciIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3MzcxMzE2OTEsImNpdHkiOiIifQ.ryNRL5GFXAeT4BZhkIcqr_VR1AZhLfoQQ2jS4-Y_reg[0m
+2025-01-17 19:10:34 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '145', 'username': 'avatarmaster', 'role': 'master', 'city_id': 1901, 'exp': 1737131691, 'city': ''}[0m
+2025-01-17 19:10:34 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '145', 'username': 'avatarmaster', 'role': 'master', 'city_id': 1901, 'exp': 1737131691, 'city': ''}[0m
+2025-01-17 19:10:34 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'avatarmaster', 'user_id': '145', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 19:10:34 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-17 19:10:35 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': 'photo_1_2024-12-19_20-09-49.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/default_city/master/avatarmaster/avatar/avatarmaster_pc.webp', 'mime_type': 'image/jpeg', 'size': 143023, 'width': 1280, 'height': 853}[0m
+2025-01-17 19:10:35 - my_app - [32mINFO[0m - [32mMaster создан с данными: {'user_id': '145', 'city_id': 1901, 'title': 'avatarmaster1', 'specialty': 'avatarmaster', 'description': '1avatarmaster', 'text': 'avatarmaster', 'experience_years': 1, 'slug': 'avatarmaster', 'name': 'avatarmaster', 'address': 'avatarmaster', 'phone': 'avatarmaster', 'telegram': 'https://exaavatarmastermple.com/', 'whatsapp': 'https://exavatarmasterample.com/', 'website': 'https://eavatarmasterxample.com/', 'vk': 'https://exavatarmasterample.com/', 'instagram': 'https://exaavatarmastermple.com/', 'accepts_at_home': False, 'accepts_in_salon': False, 'accepts_offsite': False, 'avatar_id': 3}[0m
+2025-01-17 19:10:35 - my_app - [32mINFO[0m - [32mМастер создан с данными: {'user_id': '145', 'city_id': 1901, 'title': 'avatarmaster1', 'specialty': 'avatarmaster', 'description': '1avatarmaster', 'text': 'avatarmaster', 'experience_years': 1, 'slug': 'avatarmaster', 'name': 'avatarmaster', 'address': 'avatarmaster', 'phone': 'avatarmaster', 'telegram': 'https://exaavatarmastermple.com/', 'whatsapp': 'https://exavatarmasterample.com/', 'website': 'https://eavatarmasterxample.com/', 'vk': 'https://exavatarmasterample.com/', 'instagram': 'https://exaavatarmastermple.com/', 'accepts_at_home': False, 'accepts_in_salon': False, 'accepts_offsite': False, 'avatar_id': 3}[0m
+2025-01-17 19:16:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 19:16:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 19:16:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 19:16:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 19:16:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

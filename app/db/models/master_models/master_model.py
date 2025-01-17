@@ -25,7 +25,7 @@ class Master(AbstractModel):
     )
     
     # Основная информация
-    title = fields.CharField(max_length=255, null=False)  # Заголовок
+    title = fields.CharField(max_length=255, null=True)  # Заголовок
     description = fields.TextField(null=True)  # Краткое описание
     text = fields.TextField(null=True)  # Подробное описание
     experience_years = fields.IntField()  # Стаж в годах
