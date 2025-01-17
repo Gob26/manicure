@@ -1,7 +1,6 @@
 from fastapi import HTTPException, status
-from typing import Optional, Dict, Any
+from typing import Optional, Any
 
-from db.models.location.city import City
 from db.models.master_models.master_model import Master
 from db.repositories.master_repositories.master_repositories import MasterRepository
 from use_case.utils.slug_generator import generate_unique_slug
@@ -12,7 +11,7 @@ class MasterService:
     @staticmethod
     async def create_master(
         city_id: int,
-        user_id: int,  # Убедитесь, что user_id обязателен
+        user_id: int,
         avatar_id: Optional[int] = None,
         **master_data
     ) -> Master:
@@ -30,7 +29,7 @@ class MasterService:
             master_data["avatar_id"] = avatar_id
 
         master = await MasterRepository.create_master(
-            user_id=user_id,  # Убедитесь, что user_id передается в репозиторий
+            user_id=user_id,
             city_id=city_id,
             **master_data
         )

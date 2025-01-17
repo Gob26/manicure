@@ -98,6 +98,7 @@ async def create_master_route(
         logger.error(f"Системная ошибка при создании мастера: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail="Системная ошибка при создании мастера")
 
+
 #Обновление профиля мастера
 @master_router.put(
     "/{master_id}",

@@ -1,5 +1,4 @@
 from typing import Optional, Dict
-
 from fastapi import HTTPException
 from tortoise.exceptions import DoesNotExist
 
@@ -28,6 +27,8 @@ class StandardServiceService:
                     status_code=404,
                     detail=f"Category with ID {category_id} not found"
                 )
+            if not slug:
+                slug = await generate_unique_slug(StandardService, name)
 
             create_data = {
                 "name": name,

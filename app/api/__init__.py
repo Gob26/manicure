@@ -54,7 +54,7 @@ router.include_router(
 router.include_router(
     service_standart_router,
     prefix="/api/v1/category",
-    tags=["Категории"]
+    tags=["Услуги"]
     )
 
 router.include_router(

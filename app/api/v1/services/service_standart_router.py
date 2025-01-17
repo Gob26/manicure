@@ -24,7 +24,7 @@ async def create_service_standart_route(
     name: str = Form(...),
     title: str = Form(...),
     content: str = Form(...),
-    slug: str = Form(...),
+    slug: str = Form(None),
     category_id: int = Form(...),
     image: UploadFile = File(...),
     current_user: dict = Depends(get_current_user),

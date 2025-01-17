@@ -29735,3 +29735,91 @@ DETAIL:  Failing row contains (58, 2025-01-17 16:05:41.192018+00, 2025-01-17 16:
 2025-01-17 19:16:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
 2025-01-17 19:16:04 - my_app - [31mERROR[0m - [31mError message[0m
 2025-01-17 19:16:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 19:22:29 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 19:22:29 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 19:22:29 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 19:22:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 19:22:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 19:24:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 19:24:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 19:24:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 19:24:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 19:24:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 19:25:34 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 19:25:34 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 19:25:34 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 19:25:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 19:25:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 19:26:01 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: avatarmaster[0m
+2025-01-17 19:26:01 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя avatarmaster[0m
+2025-01-17 19:26:01 - my_app - [32mINFO[0m - [32mПользователь avatarmaster найден, проверка пароля.[0m
+2025-01-17 19:26:02 - my_app - [32mINFO[0m - [32mПользователь avatarmaster успешно авторизован[0m
+2025-01-17 19:26:02 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 145, 'username': 'avatarmaster', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-17 19:26:02 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDUiLCJ1c2VybmFtZSI6ImF2YXRhcm1hc3RlciIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3MzcxMzI5NjIsImNpdHkiOiIifQ.RYaVB31mEyTQPtmoAKwIwDw5ByiUmtKFiMOk3MvCZ4M[0m
+2025-01-17 19:26:02 - my_app - [32mINFO[0m - [32mПользователь avatarmaster успешно авторизован[0m
+2025-01-17 19:26:27 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 19:26:27 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDUiLCJ1c2VybmFtZSI6ImF2YXRhcm1hc3RlciIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3MzcxMzI5NjIsImNpdHkiOiIifQ.RYaVB31mEyTQPtmoAKwIwDw5ByiUmtKFiMOk3MvCZ4M[0m
+2025-01-17 19:26:27 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '145', 'username': 'avatarmaster', 'role': 'master', 'city_id': 1901, 'exp': 1737132962, 'city': ''}[0m
+2025-01-17 19:26:27 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '145', 'username': 'avatarmaster', 'role': 'master', 'city_id': 1901, 'exp': 1737132962, 'city': ''}[0m
+2025-01-17 19:26:27 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'avatarmaster', 'user_id': '145', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 19:26:27 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-17 19:26:27 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': 'photo_1_2024-12-19_20-09-49.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/default_city/service/avatarmaster/service_image/avatarmaster_pc.webp', 'mime_type': 'image/jpeg', 'size': 143023, 'width': 1280, 'height': 853}[0m
+2025-01-17 19:26:27 - my_app - [32mINFO[0m - [32mСоздание стандартной услуги с параметрами: {'name': 'avatarmaster', 'title': 'avatarmaster', 'content': 'avatarmaster', 'slug': 'avatarmaster', 'category_id': 1, 'default_photo_id': 4}[0m
+2025-01-17 19:26:27 - my_app - [32mINFO[0m - [32mФото с ID 4 успешно найдено: <StandardServicePhoto>[0m
+2025-01-17 19:26:27 - my_app - [32mINFO[0m - [32mStandardService создан с данными: {'name': 'avatarmaster', 'title': 'avatarmaster', 'content': 'avatarmaster', 'slug': 'avatarmaster', 'category_id': 1, 'default_photo_id': 4}[0m
+2025-01-17 19:26:27 - my_app - [32mINFO[0m - [32mУслуга успешно создана с ID: 4[0m
+2025-01-17 20:04:25 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 20:04:25 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 20:04:25 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 20:04:25 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 20:04:25 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 20:04:40 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 20:04:40 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDUiLCJ1c2VybmFtZSI6ImF2YXRhcm1hc3RlciIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3MzcxMzI5NjIsImNpdHkiOiIifQ.RYaVB31mEyTQPtmoAKwIwDw5ByiUmtKFiMOk3MvCZ4M[0m
+2025-01-17 20:04:40 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-01-17 20:04:58 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: avatarmaster[0m
+2025-01-17 20:04:58 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя avatarmaster[0m
+2025-01-17 20:04:58 - my_app - [32mINFO[0m - [32mПользователь avatarmaster найден, проверка пароля.[0m
+2025-01-17 20:04:59 - my_app - [32mINFO[0m - [32mПользователь avatarmaster успешно авторизован[0m
+2025-01-17 20:04:59 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 145, 'username': 'avatarmaster', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-17 20:04:59 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDUiLCJ1c2VybmFtZSI6ImF2YXRhcm1hc3RlciIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3MzcxMzUyOTksImNpdHkiOiIifQ.iHVSYiEk_AxxP0H-vm6kltQyg6TewgEXNuQFSKCPi1U[0m
+2025-01-17 20:04:59 - my_app - [32mINFO[0m - [32mПользователь avatarmaster успешно авторизован[0m
+2025-01-17 20:05:02 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 20:05:02 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDUiLCJ1c2VybmFtZSI6ImF2YXRhcm1hc3RlciIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3MzcxMzUyOTksImNpdHkiOiIifQ.iHVSYiEk_AxxP0H-vm6kltQyg6TewgEXNuQFSKCPi1U[0m
+2025-01-17 20:05:02 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '145', 'username': 'avatarmaster', 'role': 'master', 'city_id': 1901, 'exp': 1737135299, 'city': ''}[0m
+2025-01-17 20:05:02 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '145', 'username': 'avatarmaster', 'role': 'master', 'city_id': 1901, 'exp': 1737135299, 'city': ''}[0m
+2025-01-17 20:05:02 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'avatarmaster', 'user_id': '145', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 20:05:02 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-17 20:05:03 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': 'photo_3_2024-12-19_20-09-49.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/default_city/service/avatarmaster2/service_image/avatarmaster2_pc.webp', 'mime_type': 'image/jpeg', 'size': 167118, 'width': 1280, 'height': 853}[0m
+2025-01-17 20:05:03 - my_app - [32mINFO[0m - [32mСоздание стандартной услуги с параметрами: {'name': 'avatarmaster2', 'title': 'avatarmaster2', 'content': '2avatarmaster', 'slug': 'avatarmaster2', 'category_id': 1, 'default_photo_id': 5}[0m
+2025-01-17 20:05:03 - my_app - [32mINFO[0m - [32mФото с ID 5 успешно найдено: <StandardServicePhoto>[0m
+2025-01-17 20:05:03 - my_app - [32mINFO[0m - [32mStandardService создан с данными: {'name': 'avatarmaster2', 'title': 'avatarmaster2', 'content': '2avatarmaster', 'slug': 'avatarmaster2', 'category_id': 1, 'default_photo_id': 5}[0m
+2025-01-17 20:05:03 - my_app - [32mINFO[0m - [32mУслуга успешно создана с ID: 5[0m
+2025-01-17 20:08:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 20:08:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 20:08:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 20:08:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 20:08:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 20:08:58 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 20:08:58 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 20:08:58 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 20:08:58 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 20:08:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 20:09:13 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: avatarmaster[0m
+2025-01-17 20:09:13 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя avatarmaster[0m
+2025-01-17 20:09:13 - my_app - [32mINFO[0m - [32mПользователь avatarmaster найден, проверка пароля.[0m
+2025-01-17 20:09:14 - my_app - [32mINFO[0m - [32mПользователь avatarmaster успешно авторизован[0m
+2025-01-17 20:09:14 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 145, 'username': 'avatarmaster', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-17 20:09:14 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDUiLCJ1c2VybmFtZSI6ImF2YXRhcm1hc3RlciIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3MzcxMzU1NTQsImNpdHkiOiIifQ.vJHZfcOf-9kyyTueMeaNw1hwQwYhodNcviPIWnSGc0Y[0m
+2025-01-17 20:09:14 - my_app - [32mINFO[0m - [32mПользователь avatarmaster успешно авторизован[0m
+2025-01-17 20:09:35 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 20:09:35 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDUiLCJ1c2VybmFtZSI6ImF2YXRhcm1hc3RlciIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3MzcxMzU1NTQsImNpdHkiOiIifQ.vJHZfcOf-9kyyTueMeaNw1hwQwYhodNcviPIWnSGc0Y[0m
+2025-01-17 20:09:35 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '145', 'username': 'avatarmaster', 'role': 'master', 'city_id': 1901, 'exp': 1737135554, 'city': ''}[0m
+2025-01-17 20:09:35 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '145', 'username': 'avatarmaster', 'role': 'master', 'city_id': 1901, 'exp': 1737135554, 'city': ''}[0m
+2025-01-17 20:09:35 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'avatarmaster', 'user_id': '145', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 20:09:35 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-17 20:09:36 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': 'photo_2_2024-12-19_20-09-49.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/default_city/service/service_image/_pc.webp', 'mime_type': 'image/jpeg', 'size': 141265, 'width': 1280, 'height': 853}[0m
+2025-01-17 20:09:36 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'striavatarmasterng'[0m
+2025-01-17 20:09:36 - my_app - [32mINFO[0m - [32mСоздание стандартной услуги с параметрами: {'name': 'striavatarmasterng', 'title': 'striavatarmasterng', 'content': 'striavatarmasterng', 'slug': 'striavatarmasterng', 'category_id': 1, 'default_photo_id': 6}[0m
+2025-01-17 20:09:36 - my_app - [32mINFO[0m - [32mФото с ID 6 успешно найдено: <StandardServicePhoto>[0m
+2025-01-17 20:09:36 - my_app - [32mINFO[0m - [32mStandardService создан с данными: {'name': 'striavatarmasterng', 'title': 'striavatarmasterng', 'content': 'striavatarmasterng', 'slug': 'striavatarmasterng', 'category_id': 1, 'default_photo_id': 6}[0m
+2025-01-17 20:09:36 - my_app - [32mINFO[0m - [32mУслуга успешно создана с ID: 6[0m
