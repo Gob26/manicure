@@ -1,4 +1,5 @@
-from typing import Optional
+from typing import Optional, Any
+from fastapi import HTTPException, status
 
 from db.models.salon_models.salon_model import Salon
 from db.repositories.salon_repositories.salon_repositories import SalonRepository
@@ -9,52 +10,38 @@ from config.components.logging_config import logger
 class SalonService:
     @staticmethod
     async def create_salon(
-        current_user: dict,  # Данные текущего пользователя
-        title: str,
-        name: str,
-        address: str,
-        slug: Optional[str] = None,
-        description: Optional[str] = None,
-        text: Optional[str] = None,
-        phone: Optional[str] = None,
-        telegram: Optional[str] = None,
-        whatsapp: Optional[str] = None,
-        website: Optional[str] = None,
-        vk: Optional[str] = None,
-        instagram: Optional[str] = None,
-    ) -> dict:
-        """
-        Создание салона с использованием текущего пользователя.
-        """
-        logger.debug(f"Начало создания салона для пользователя ID {current_user['user_id']}")
+        city_id: int,
+        user_id: int,
+        avatar_id: Optional[int] = None,
+        **salon_data
+    ) -> Salon:
+        if not user_id:
+            raise ValueError("user_id обязателен для создания салона.")
 
-        # Проверка на существующий салон
-        existing_salon = await SalonRepository.get_salon_by_user_id(current_user["user_id"])
+        existing_salon = await SalonRepository.get_salon_by_user_id(user_id)
         if existing_salon:
-            raise ValueError(f"Салон уже существует для пользователя с ID {current_user['user_id']}")
+            raise ValueError("Салон уже создан для данного пользователя.")
 
-        # Генерация уникального slug, если он не указан
-        if not slug:
-            slug = await generate_unique_slug(Salon, name)
+        if not salon_data.get("slug"):
+            salon_data["slug"] = await generate_unique_slug(Salon, salon_data.get("name"))
 
-        # Сохранение салона через репозиторий
+        if avatar_id:
+            salon_data["avatar_id"] = avatar_id
+
         salon = await SalonRepository.create_salon(
-            user_id=current_user["user_id"],
-            city_id=current_user.get("city_id"),  # Получаем city_id из токена, если есть
-            title=title,
-            name=name,
-            address=address,
-            slug=slug,
-            description=description,
-            text=text,
-            phone=phone,
-            telegram=telegram,
-            whatsapp=whatsapp,
-            website=website,
-            vk=vk,
-            instagram=instagram,
+            user_id=user_id,
+            city_id=city_id,
+            **salon_data
         )
-        logger.info(f"Салон {salon.id} успешно создан.")
+
+        await salon.fetch_related('avatar') #Ленивая загрузка фото
+
+        if not salon:
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail="Не удалось создать профиль салона"
+            )
+
         return salon
 
     @staticmethod

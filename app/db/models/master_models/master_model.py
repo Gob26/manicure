@@ -17,7 +17,7 @@ class Master(AbstractModel):
     
     # Связь с аватаркой
     avatar = fields.ForeignKeyField(
-        'server.AvatarPhoto',
+        'server.AvatarPhotoMaster',
         related_name='master',
         on_delete=fields.SET_NULL,
         null=True,

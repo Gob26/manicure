@@ -55,6 +55,7 @@ class StandardServiceService:
             logger.error(f"Ошибка при создании стандартного сервиса: {str(e)}", exc_info=True)
             raise HTTPException(status_code=500, detail="Ошибка при создании сервиса.")
 
+
     @staticmethod
     async def link_photo_to_service(service_id: int, photo_id: int) -> None:
         """

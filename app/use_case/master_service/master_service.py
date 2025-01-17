@@ -23,7 +23,7 @@ class MasterService:
             raise ValueError("Мастер уже создан для данного пользователя.")
 
         if not master_data.get("slug"):
-            master_data["slug"] = await generate_unique_slug(Master, master_data.get("title"))
+            master_data["slug"] = await generate_unique_slug(Master, master_data.get("name"))
 
         if avatar_id:
             master_data["avatar_id"] = avatar_id

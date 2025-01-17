@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, status, File, UploadFile,
 from typing import Optional, List
 from pydantic.networks import HttpUrl
 
-from db.models.photo_models.photo_avatar_model import AvatarPhoto
+from db.models.photo_models.photo_avatar_model import AvatarPhotoMaster
 from db.models.master_models.master_model import Master
 from use_case.utils.jwt_handler import get_current_user
 from use_case.master_service.master_service import MasterService
@@ -76,7 +76,7 @@ async def create_master_route(
     try:
         avatar_id = await PhotoHandler.add_photos_to_service(
             images=image,
-            model=AvatarPhoto,
+            model=AvatarPhotoMaster,
             slug=master_data.slug,
             city=CITY_FOLDER,
             role=ROLE_FOLDER,

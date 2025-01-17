@@ -9,7 +9,7 @@ async def upgrade(db: BaseDBAsyncClient) -> str:
     "app" VARCHAR(100) NOT NULL,
     "content" JSONB NOT NULL
 );
-CREATE TABLE IF NOT EXISTS "avatar_photo" (
+CREATE TABLE IF NOT EXISTS "avatar_photo_master" (
     "id" SERIAL NOT NULL PRIMARY KEY,
     "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
@@ -22,7 +22,21 @@ CREATE TABLE IF NOT EXISTS "avatar_photo" (
     "is_main" BOOL NOT NULL  DEFAULT False,
     "sort_order" INT NOT NULL  DEFAULT 0
 );
-COMMENT ON TABLE "avatar_photo" IS 'Фотографии стандартных услуг';
+COMMENT ON TABLE "avatar_photo_master" IS 'Фотографии стандартных услуг';
+CREATE TABLE IF NOT EXISTS "avatar_photo_salon" (
+    "id" SERIAL NOT NULL PRIMARY KEY,
+    "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    "file_name" VARCHAR(255) NOT NULL,
+    "file_path" VARCHAR(1000) NOT NULL,
+    "mime_type" VARCHAR(100) NOT NULL,
+    "size" INT NOT NULL,
+    "width" INT,
+    "height" INT,
+    "is_main" BOOL NOT NULL  DEFAULT False,
+    "sort_order" INT NOT NULL  DEFAULT 0
+);
+COMMENT ON TABLE "avatar_photo_salon" IS 'Фотографии стандартных услуг';
 CREATE TABLE IF NOT EXISTS "categories" (
     "id" SERIAL NOT NULL PRIMARY KEY,
     "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
@@ -129,7 +143,7 @@ CREATE TABLE IF NOT EXISTS "master" (
     "id" SERIAL NOT NULL PRIMARY KEY,
     "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
-    "title" VARCHAR(255) NOT NULL,
+    "title" VARCHAR(255),
     "description" TEXT,
     "text" TEXT,
     "experience_years" INT NOT NULL,
@@ -146,7 +160,7 @@ CREATE TABLE IF NOT EXISTS "master" (
     "accepts_at_home" BOOL NOT NULL  DEFAULT False,
     "accepts_in_salon" BOOL NOT NULL  DEFAULT False,
     "accepts_offsite" BOOL NOT NULL  DEFAULT False,
-    "avatar_id" INT REFERENCES "avatar_photo" ("id") ON DELETE SET NULL,
+    "avatar_id" INT REFERENCES "avatar_photo_master" ("id") ON DELETE SET NULL,
     "city_id" INT REFERENCES "cities" ("id") ON DELETE SET NULL,
     "user_id" INT NOT NULL UNIQUE REFERENCES "users" ("id") ON DELETE CASCADE
 );
@@ -175,6 +189,7 @@ CREATE TABLE IF NOT EXISTS "salon" (
     "website" VARCHAR(255),
     "vk" VARCHAR(255),
     "instagram" VARCHAR(255),
+    "avatar_id" INT REFERENCES "avatar_photo_salon" ("id") ON DELETE SET NULL,
     "city_id" INT REFERENCES "cities" ("id") ON DELETE SET NULL,
     "user_id" INT NOT NULL UNIQUE REFERENCES "users" ("id") ON DELETE CASCADE
 );

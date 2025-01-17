@@ -29823,3 +29823,196 @@ DETAIL:  Failing row contains (58, 2025-01-17 16:05:41.192018+00, 2025-01-17 16:
 2025-01-17 20:09:36 - my_app - [32mINFO[0m - [32mФото с ID 6 успешно найдено: <StandardServicePhoto>[0m
 2025-01-17 20:09:36 - my_app - [32mINFO[0m - [32mStandardService создан с данными: {'name': 'striavatarmasterng', 'title': 'striavatarmasterng', 'content': 'striavatarmasterng', 'slug': 'striavatarmasterng', 'category_id': 1, 'default_photo_id': 6}[0m
 2025-01-17 20:09:36 - my_app - [32mINFO[0m - [32mУслуга успешно создана с ID: 6[0m
+2025-01-17 20:43:36 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 20:43:36 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 20:43:36 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 20:43:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 20:43:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 20:43:36 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 20:43:36 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 20:43:36 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 20:43:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 20:43:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 20:43:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 20:43:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 20:43:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 20:43:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 20:43:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 20:43:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 20:43:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 20:43:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 20:43:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 20:43:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 20:43:49 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 20:43:49 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 20:43:49 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 20:43:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 20:43:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 20:43:49 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 20:43:49 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 20:43:49 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 20:43:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 20:43:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 20:47:26 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 20:47:26 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 20:47:26 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 20:47:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 20:47:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 20:47:26 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 20:47:26 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 20:47:26 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 20:47:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 20:47:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 20:47:35 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 20:47:35 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 20:47:35 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 20:47:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 20:47:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 20:47:35 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 20:47:35 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 20:47:35 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 20:47:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 20:47:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 20:57:59 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 20:57:59 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 20:57:59 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 20:57:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 20:57:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 20:58:01 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 20:58:01 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 20:58:01 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 20:58:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 20:58:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 21:02:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 21:02:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 21:02:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 21:02:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 21:02:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 21:05:32 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 21:05:32 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 21:05:32 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 21:05:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 21:05:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 21:36:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 21:36:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 21:36:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 21:36:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 21:36:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 21:36:21 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 21:36:21 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 21:36:21 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 21:36:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 21:36:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 21:36:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 21:36:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 21:36:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 21:36:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 21:36:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 21:36:48 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 21:36:48 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 21:36:48 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 21:36:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 21:36:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 21:39:01 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 21:39:01 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 21:39:01 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 21:39:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 21:39:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 21:48:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 21:48:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 21:48:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 21:48:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 21:48:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 21:49:19 - my_app - [32mINFO[0m - [32mРегистрация пользователя: avatat, город: Омск, роль: master[0m
+2025-01-17 21:49:19 - my_app - [32mINFO[0m - [32mПользователь avatat пытается зарегистрироваться с городом Омск[0m
+2025-01-17 21:49:19 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-17 21:49:19 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-17 21:49:19 - my_app - [32mINFO[0m - [32mГород Омск найден, ID: 1901[0m
+2025-01-17 21:49:20 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=avatat, city_name=Омск, role=master[0m
+2025-01-17 21:49:20 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-17 21:49:20 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-17 21:49:20 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'username': 'avatat'} существует: False[0m
+2025-01-17 21:49:20 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'email': 'avata@tavatat.r'} существует: False[0m
+2025-01-17 21:49:20 - my_app - [32mINFO[0m - [32mUser создан с данными: {'username': 'avatat', 'email': 'avata@tavatat.r', 'password': '$2b$12$07DmQRwyCkQ4N0NhR1oGvuRzyYxoJVrozRhtPM7d077js9tgH.2Ru', 'city': <City: 1901>, 'role': 'master'}[0m
+2025-01-17 21:49:20 - my_app - [32mINFO[0m - [32mПользователь avatat успешно зарегистрирован.[0m
+2025-01-17 21:49:20 - my_app - [32mINFO[0m - [32mПользователь avatat успешно зарегистрирован[0m
+2025-01-17 21:49:25 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: avatat[0m
+2025-01-17 21:49:25 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя avatat[0m
+2025-01-17 21:49:25 - my_app - [32mINFO[0m - [32mПользователь avatat найден, проверка пароля.[0m
+2025-01-17 21:49:25 - my_app - [32mINFO[0m - [32mПользователь avatat успешно авторизован[0m
+2025-01-17 21:49:25 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 146, 'username': 'avatat', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-17 21:49:25 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDYiLCJ1c2VybmFtZSI6ImF2YXRhdCIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3MzcxNDE1NjUsImNpdHkiOiIifQ.ZxsmmkFgB7YOgkLCQ-C6r70fdYIl88M1DJPK1ecYMlE[0m
+2025-01-17 21:49:25 - my_app - [32mINFO[0m - [32mПользователь avatat успешно авторизован[0m
+2025-01-17 21:50:01 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 21:50:01 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDYiLCJ1c2VybmFtZSI6ImF2YXRhdCIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3MzcxNDE1NjUsImNpdHkiOiIifQ.ZxsmmkFgB7YOgkLCQ-C6r70fdYIl88M1DJPK1ecYMlE[0m
+2025-01-17 21:50:01 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '146', 'username': 'avatat', 'role': 'master', 'city_id': 1901, 'exp': 1737141565, 'city': ''}[0m
+2025-01-17 21:50:01 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '146', 'username': 'avatat', 'role': 'master', 'city_id': 1901, 'exp': 1737141565, 'city': ''}[0m
+2025-01-17 21:50:01 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'avatat', 'user_id': '146', 'role': 'master', 'city_id': 1901}[0m
+2025-01-17 21:50:01 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-17 21:50:02 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': 'photo_2_2024-12-19_20-09-49.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/default_city/master/stravatating/avatar/stravatating_pc.webp', 'mime_type': 'image/jpeg', 'size': 141265, 'width': 1280, 'height': 853}[0m
+2025-01-17 21:50:02 - my_app - [32mINFO[0m - [32mMaster создан с данными: {'user_id': '146', 'city_id': 1901, 'title': 'striavatatng', 'specialty': 'avatatstring', 'description': 'striavatatng', 'text': 'striavatatng', 'experience_years': 1, 'slug': 'stravatating', 'name': 'striavatatng', 'address': 'stavatatring', 'phone': 'striavatatng', 'telegram': 'https://examavatatple.com/', 'whatsapp': 'https://exavatatample.com/', 'website': 'https://exaavatatmple.com/', 'vk': 'https://exavatatample.com/', 'instagram': 'https://exaavatatmple.com/', 'accepts_at_home': False, 'accepts_in_salon': False, 'accepts_offsite': True, 'avatar_id': 1}[0m
+2025-01-17 21:50:02 - my_app - [32mINFO[0m - [32mМастер создан с данными: {'user_id': '146', 'city_id': 1901, 'title': 'striavatatng', 'specialty': 'avatatstring', 'description': 'striavatatng', 'text': 'striavatatng', 'experience_years': 1, 'slug': 'stravatating', 'name': 'striavatatng', 'address': 'stavatatring', 'phone': 'striavatatng', 'telegram': 'https://examavatatple.com/', 'whatsapp': 'https://exavatatample.com/', 'website': 'https://exaavatatmple.com/', 'vk': 'https://exavatatample.com/', 'instagram': 'https://exaavatatmple.com/', 'accepts_at_home': False, 'accepts_in_salon': False, 'accepts_offsite': True, 'avatar_id': 1}[0m
+2025-01-17 22:42:46 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 22:42:46 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 22:42:46 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 22:42:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 22:42:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 22:42:46 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 22:42:46 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 22:42:46 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 22:42:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 22:42:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 22:43:03 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 22:43:03 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 22:43:03 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 22:43:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 22:43:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 22:43:03 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 22:43:03 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 22:43:03 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 22:43:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 22:43:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 22:57:32 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 22:57:32 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 22:57:32 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 22:57:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 22:57:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 22:58:23 - my_app - [32mINFO[0m - [32mРегистрация пользователя: avasalon, город: Омск, роль: salon[0m
+2025-01-17 22:58:23 - my_app - [32mINFO[0m - [32mПользователь avasalon пытается зарегистрироваться с городом Омск[0m
+2025-01-17 22:58:23 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-17 22:58:23 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-17 22:58:23 - my_app - [32mINFO[0m - [32mГород Омск найден, ID: 1901[0m
+2025-01-17 22:58:24 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=avasalon, city_name=Омск, role=salon[0m
+2025-01-17 22:58:24 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-17 22:58:24 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-17 22:58:24 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'username': 'avasalon'} существует: False[0m
+2025-01-17 22:58:24 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'email': 'avasalon@avasalon.ru'} существует: False[0m
+2025-01-17 22:58:24 - my_app - [32mINFO[0m - [32mUser создан с данными: {'username': 'avasalon', 'email': 'avasalon@avasalon.ru', 'password': '$2b$12$IU1qWZCBocC6PJV6xYY4u.4A2CMYHMVO1nLoU4qtohsYOrSxho8fK', 'city': <City: 1901>, 'role': 'salon'}[0m
+2025-01-17 22:58:24 - my_app - [32mINFO[0m - [32mПользователь avasalon успешно зарегистрирован.[0m
+2025-01-17 22:58:24 - my_app - [32mINFO[0m - [32mПользователь avasalon успешно зарегистрирован[0m
+2025-01-17 23:00:10 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: avasalon[0m
+2025-01-17 23:00:10 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя avasalon[0m
+2025-01-17 23:00:10 - my_app - [32mINFO[0m - [32mПользователь avasalon найден, проверка пароля.[0m
+2025-01-17 23:00:10 - my_app - [32mINFO[0m - [32mПользователь avasalon успешно авторизован[0m
+2025-01-17 23:00:10 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 147, 'username': 'avasalon', 'role': <UserRole.salon: 'salon'>, 'city_id': 1901}[0m
+2025-01-17 23:00:10 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDciLCJ1c2VybmFtZSI6ImF2YXNhbG9uIiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MTQ1ODEwLCJjaXR5IjoiIn0.syYYlVcoKXh6rqSfKvTTDwFk_alPJlq2Y_VZP-yqjKs[0m
+2025-01-17 23:00:10 - my_app - [32mINFO[0m - [32mПользователь avasalon успешно авторизован[0m
+2025-01-17 23:02:33 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 23:02:33 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDciLCJ1c2VybmFtZSI6ImF2YXNhbG9uIiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MTQ1ODEwLCJjaXR5IjoiIn0.syYYlVcoKXh6rqSfKvTTDwFk_alPJlq2Y_VZP-yqjKs[0m
+2025-01-17 23:02:33 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '147', 'username': 'avasalon', 'role': 'salon', 'city_id': 1901, 'exp': 1737145810, 'city': ''}[0m
+2025-01-17 23:02:33 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '147', 'username': 'avasalon', 'role': 'salon', 'city_id': 1901, 'exp': 1737145810, 'city': ''}[0m
+2025-01-17 23:02:33 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'avasalon', 'user_id': '147', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-17 23:08:05 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-17 23:08:05 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-17 23:08:05 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-17 23:08:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-17 23:08:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-17 23:08:17 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-17 23:08:17 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDciLCJ1c2VybmFtZSI6ImF2YXNhbG9uIiwicm9sZSI6InNhbG9uIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3MTQ1ODEwLCJjaXR5IjoiIn0.syYYlVcoKXh6rqSfKvTTDwFk_alPJlq2Y_VZP-yqjKs[0m
+2025-01-17 23:08:17 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '147', 'username': 'avasalon', 'role': 'salon', 'city_id': 1901, 'exp': 1737145810, 'city': ''}[0m
+2025-01-17 23:08:17 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '147', 'username': 'avasalon', 'role': 'salon', 'city_id': 1901, 'exp': 1737145810, 'city': ''}[0m
+2025-01-17 23:08:17 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'avasalon', 'user_id': '147', 'role': 'salon', 'city_id': 1901}[0m
+2025-01-17 23:08:17 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-17 23:08:18 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': 'photo_3_2024-12-19_20-09-32.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/default_city/master/stravasaloning/avatar/stravasaloning_pc.webp', 'mime_type': 'image/jpeg', 'size': 205053, 'width': 853, 'height': 1280}[0m
+2025-01-17 23:08:18 - my_app - [32mINFO[0m - [32mSalon создан с данными: {'user_id': '147', 'city_id': 1901, 'name': 'striavasalonng', 'title': 'striavasalonng', 'slug': 'stravasaloning', 'address': 'stravasaloning', 'contact_info': {'phone': None, 'telegram': None, 'whatsapp': None, 'website': None, 'vk': None, 'instagram': None}, 'description': 'stravasaloning', 'text': 'striavasalonng', 'avatar_id': 1}[0m
+2025-01-17 23:08:18 - my_app - [32mINFO[0m - [32mСалон создан с данными: {'user_id': '147', 'city_id': 1901, 'name': 'striavasalonng', 'title': 'striavasalonng', 'slug': 'stravasaloning', 'address': 'stravasaloning', 'contact_info': {'phone': None, 'telegram': None, 'whatsapp': None, 'website': None, 'vk': None, 'instagram': None}, 'description': 'stravasaloning', 'text': 'striavasalonng', 'avatar_id': 1}[0m

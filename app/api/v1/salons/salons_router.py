@@ -1,10 +1,19 @@
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, status, File, UploadFile, Form
+from typing import Optional, List
+from pydantic.networks import HttpUrl
+
+from db.models import AvatarPhotoSalon
+from use_case.photo_service.photo_base_servise import PhotoHandler
 from use_case.utils.jwt_handler import get_current_user
 from use_case.salon_service.salon_service import SalonService
 from db.schemas.salon_schemas.salon_schemas import SalonCreateSchema, SalonCreateInputSchema
 from config.components.logging_config import logger
 from use_case.utils.permissions import check_user_permission
 
+# Константы для организации структуры хранения
+CITY_FOLDER = "default_city"  # Название папки для города
+ROLE_FOLDER = "master"  # Название папки для роли
+IMAGE_TYPE = "avatar"
 salon_router = APIRouter()
 
 @salon_router.post("/",
@@ -14,28 +23,67 @@ salon_router = APIRouter()
     description="Создает новый салон.", 
 )
 async def create_salon_route(
-    salon_data: SalonCreateInputSchema, # Данные для создания салона (без user_id и city_id)
-    current_user: dict = Depends(get_current_user) # Получаем текущего пользователя
+    title: Optional[str] = Form(..., max_length=255),
+    description: Optional[str] = Form(None),
+    text: Optional[str] = Form(None),
+    slug: str = Form(..., max_length=255),
+    name: str = Form(..., max_length=255),
+    address: Optional[str] = Form(None, max_length=256),
+    phone: Optional[str] = Form(None, max_length=20),
+    telegram: Optional[HttpUrl] = Form(None),
+    whatsapp: Optional[HttpUrl] = Form(None),
+    website: Optional[HttpUrl] = Form(None),
+    vk: Optional[HttpUrl] = Form(None),
+    instagram: Optional[HttpUrl] = Form(None),
+    image: UploadFile = File(...),
+    current_user: dict = Depends(get_current_user),
 ):
-    logger.info(f"Текущий пользователь: {current_user}")
+    # Создаем объект Pydantic модели для валидации данных
+    salon_data = SalonCreateInputSchema(
+        title=title,
+        description=description,
+        text=text,
+        slug=slug,
+        name=name,
+        address=address,
+        phone=phone,
+        telegram=telegram,
+        whatsapp=whatsapp,
+        website=website,
+        vk=vk,
+        instagram=instagram,
+    )
 
-    # Проверка прав доступа
-    check_user_permission(current_user,["salon", "admin"])
+    user_id = current_user.get("user_id")
+    city_id = current_user.get("city_id")
 
-    # Создание салона через сервис
+    if not user_id or not city_id:
+        raise HTTPException(status_code=400, detail="Не удалось извлечь данные пользователя.")
+
     try:
-        salon = await SalonService.create_salon(
-            current_user=current_user,  # Передаем текущего пользователя
-            **salon_data.dict()  # Передаем данные салона   
+        avatar_id = await PhotoHandler.add_photos_to_service(
+            images=image,
+            model=AvatarPhotoSalon,
+            slug=salon_data.slug,
+            city=CITY_FOLDER,
+            role=ROLE_FOLDER,
+            image_type=IMAGE_TYPE,
         )
-        return salon  # Возвращаем данные созданного салона
-    except ValueError as e:
-        logger.warning(f"Ошибка бизнес-логики: {e}")
-        raise HTTPException(status_code=400, detail=str(e))
+
+        salon = await SalonService.create_salon(
+            user_id=user_id,
+            city_id=city_id,
+            avatar_id=avatar_id,
+            **salon_data.dict()
+        )
+
+        return salon
+
+    except ValueError as ve:
+        raise HTTPException(status_code=400, detail=str(ve))
     except Exception as e:
-        logger.error(f"Системная ошибка при создании салона: {e}")
-        raise HTTPException(status_code=500, detail="Системная ошибка при создании салона")
-        logger.error(f"Ошибка при создании салона: {e}")
+        logger.error(f"Системная ошибка при создании мастера: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Системная ошибка при создании мастера")
 
 @salon_router.put("/{salon_id}",
     response_model=SalonCreateSchema,

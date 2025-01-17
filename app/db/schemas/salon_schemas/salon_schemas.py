@@ -1,5 +1,15 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, HttpUrl
 from typing import Optional, List
+
+# Базовая схема для контактной информации
+class ContactInfoSchema(BaseModel):
+    phone: Optional[str] = Field(None, max_length=20, title="Телефон", example="+79123456789")
+    telegram: Optional[str] = Field(None, max_length=255, title="Telegram", example="https://t.me/example")
+    whatsapp: Optional[str] = Field(None, max_length=255, title="WhatsApp", example="https://wa.me/123456789")
+    website: Optional[str] = Field(None, max_length=255, title="Веб-сайт", example="https://example.com")
+    vk: Optional[str] = Field(None, max_length=255, title="ВКонтакте", example="https://vk.com/example")
+    instagram: Optional[str] = Field(None, max_length=255, title="Instagram", example="https://instagram.com/example")
+
 
 # Схема для создания салона
 class SalonCreateSchema(BaseModel):
@@ -11,12 +21,7 @@ class SalonCreateSchema(BaseModel):
     address: str = Field(..., max_length=255, title="Адрес", example="ул. Большая Филёвская, 21к1")
 
     # Контактная информация
-    phone: Optional[str] = Field(None, max_length=20, title="Телефон", example="+79123456789")
-    telegram: Optional[str] = Field(None, max_length=255, title="Telegram", example="https://t.me/example")
-    whatsapp: Optional[str] = Field(None, max_length=255, title="WhatsApp", example="https://wa.me/123456789")
-    website: Optional[str] = Field(None, max_length=255, title="Веб-сайт", example="https://example.com")
-    vk: Optional[str] = Field(None, max_length=255, title="ВКонтакте", example="https://vk.com/example")
-    instagram: Optional[str] = Field(None, max_length=255, title="Instagram", example="https://instagram.com/example")
+    contact_info: ContactInfoSchema = Field(default_factory=ContactInfoSchema)
 
     # Опциональные поля с контентом
     description: Optional[str] = Field(None, title="Описание",
@@ -32,12 +37,7 @@ class SalonCreateInputSchema(BaseModel):
     address: str = Field(..., max_length=255, title="Адрес", example="ул. Большая Филёвская, 21к1")
 
     # Контактная информация
-    phone: Optional[str] = Field(None, max_length=20, title="Телефон", example="+79123456789")
-    telegram: Optional[str] = Field(None, max_length=255, title="Telegram", example="https://t.me/example")
-    whatsapp: Optional[str] = Field(None, max_length=255, title="WhatsApp", example="https://wa.me/123456789")
-    website: Optional[str] = Field(None, max_length=255, title="Веб-сайт", example="https://example.com")
-    vk: Optional[str] = Field(None, max_length=255, title="ВКонтакте", example="https://vk.com/example")
-    instagram: Optional[str] = Field(None, max_length=255, title="Instagram", example="https://instagram.com/example")
+    contact_info: ContactInfoSchema = Field(default_factory=ContactInfoSchema)
 
     # Опциональные поля с контентом
     description: Optional[str] = Field(None, title="Описание",
@@ -54,13 +54,9 @@ class SalonUpdateSchema(BaseModel):
     address: Optional[str] = Field(None, max_length=255, title="Адрес")
 
     # Контактная информация
-    phone: Optional[str] = Field(None, max_length=20, title="Телефон")
-    telegram: Optional[str] = Field(None, max_length=255, title="Telegram")
-    whatsapp: Optional[str] = Field(None, max_length=255, title="WhatsApp")
-    website: Optional[str] = Field(None, max_length=255, title="Веб-сайт")
-    vk: Optional[str] = Field(None, max_length=255, title="ВКонтакте")
-    instagram: Optional[str] = Field(None, max_length=255, title="Instagram")
+    contact_info: Optional[ContactInfoSchema] = Field(None)
 
+    # Опциональные поля с контентом
     description: Optional[str] = Field(None, title="Описание")
     text: Optional[str] = Field(None, title="Дополнительная информация")
 
@@ -76,13 +72,9 @@ class SalonOutSchema(BaseModel):
     address: str
 
     # Контактная информация
-    phone: Optional[str]
-    telegram: Optional[str]
-    whatsapp: Optional[str]
-    website: Optional[str]
-    vk: Optional[str]
-    instagram: Optional[str]
+    contact_info: ContactInfoSchema
 
+    # Опциональные поля с контентом
     description: Optional[str]
     text: Optional[str]
 

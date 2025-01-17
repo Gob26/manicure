@@ -32,7 +32,14 @@ class Salon(AbstractModel):
     website = fields.CharField(max_length=255, null=True, help_text="Веб-сайт мастера")  # Веб-сайт
     vk = fields.CharField(max_length=255, null=True, help_text="Ссылка на VK")  # ВКонтакте
     instagram = fields.CharField(max_length=255, null=True, help_text="Ссылка на Instagram")  # Instagram    
-    
+    # Связь с аватаркой
+    avatar = fields.ForeignKeyField(
+        'server.AvatarPhotoSalon',
+        related_name='salon',
+        on_delete=fields.SET_NULL,
+        null=True,
+        help_text="Аватар салона"
+    )
 
     
     # Связанные сущности
