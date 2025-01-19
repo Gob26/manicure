@@ -28,10 +28,7 @@ class StandardService(AbstractService):
         ordering = ["name"]
 
 
-
-
-
-
+#Атрбуты услуг
 class ServiceAttributeType(AbstractModel):
     """Типы атрибутов (способ удаления кутикулы, материал покрытия и т.д.)"""
     name = fields.CharField(max_length=100, help_text="Название типа атрибута.")

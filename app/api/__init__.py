@@ -9,6 +9,8 @@ from app.api.v1.masters.masters_read_router import master_read_router
 from app.api.v1.salons.salons_router import salon_router
 from app.api.v1.cyties.city import city_router 
 from app.api.v1.services.service_categories_router import service_categories_router
+from app.api.v1.services.service_attribute_router import service_attribute_router
+
 
 router = APIRouter()
 
@@ -49,7 +51,7 @@ router.include_router(
     tags=["Салон - создание, обновление и удаление"]
     )
 
-#Услуги
+# Услуги
 
 router.include_router(
     service_standart_router,
@@ -57,13 +59,21 @@ router.include_router(
     tags=["Услуги"]
     )
 
+# Атрибуты
+router.include_router(
+    service_attribute_router,
+    prefix="/api/v1/category/services/attribute",
+    tags=["Атрибуты"]
+    )
+
+# Категории
 router.include_router(
     service_categories_router,
     prefix="/api/v1/category",
     tags=["Категории"]
     )
 
-#Города
+# Города
 router.include_router(
     city_router,
     prefix="/api/v1/cities",
