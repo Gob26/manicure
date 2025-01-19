@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import List, Optional, Dict
 from pydantic import BaseModel, Field
 
 class ServiceAttributeTypeCreateSchema(BaseModel):
@@ -10,6 +10,9 @@ class ServiceAttributeTypeResponseSchema(ServiceAttributeTypeCreateSchema):
 
     class Config:
         from_attributes = True
+
+class ServiceAttributeTypeDictResponseSchema(BaseModel):
+    data: Dict[str, str]
 
 
 class ServiceAttributeValueCreateSchema(BaseModel):

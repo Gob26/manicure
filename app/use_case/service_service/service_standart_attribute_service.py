@@ -27,7 +27,11 @@ class ServiceAttributeTypeService:
             logger.error(f"Ошибка при получении типа атрибута: {str(e)}", exc_info=True)
             raise HTTPException(status_code=500, detail="Ошибка при получении типа атрибута.")
 
-
+    @staticmethod
+    async def get_list_attribute_types() -> Dict[str, str]:
+        """Получение всех типов атрибутов"""
+        attribute_types = await ServiceAttributeTypeRepository.get_all_attribute_types()
+        return {attr_type.slug: attr_type.name for attr_type in attribute_types}
 
 
 class ServiceAttributeValueService:

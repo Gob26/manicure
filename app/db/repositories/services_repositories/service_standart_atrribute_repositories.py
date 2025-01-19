@@ -25,7 +25,10 @@ class ServiceAttributeTypeRepository(BaseRepository):
         """Получение типа атрибута по slug"""
         return await cls.get_or_none(slug=slug)
 
-
+    @classmethod
+    async def get_all_attribute_types(cls) -> List[ServiceAttributeType]:
+        """Получение всех типов атрибутов"""
+        return await cls.get_all() 
 
 
 
