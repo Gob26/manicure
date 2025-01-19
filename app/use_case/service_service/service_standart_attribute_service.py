@@ -5,13 +5,17 @@ from db.repositories.services_repositories.service_standart_atrribute_repositori
 from db.models.services_models.service_standart_model import ServiceAttributeType, ServiceAttributeValue, TemplateAttribute 
 
 from config.components.logging_config import logger
+from use_case.utils.slug_generator import generate_unique_slug
+
 
 class ServiceAttributeTypeService:
     @staticmethod
-    async def create_attribute_type(name: str, slug: str) -> Dict[str, str]:
+    async def create_attribute_type(name: str, slug: str) -> ServiceAttributeType:
         """Создание нового типа атрибута"""
+        if not slug:
+            slug = await generate_unique_slug(ServiceAttributeType, name)
         attribute_type = await ServiceAttributeTypeRepository.create_service_attribute_type(name=name, slug=slug)
-        return {"name": attribute_type.name, "slug": attribute_type.slug}
+        return attribute_type
 
   
     @staticmethod
@@ -28,6 +32,9 @@ class ServiceAttributeTypeService:
 
 class ServiceAttributeValueService:
     @staticmethod
+    async def some_method():
+        # Реализация метода
+        pass
 
 
 
@@ -35,4 +42,7 @@ class ServiceAttributeValueService:
 
 
 class TemplateAttributeService:
-    @staticmethod    
+    @staticmethod
+    async def some_method():
+        # Реализация метода
+        pass

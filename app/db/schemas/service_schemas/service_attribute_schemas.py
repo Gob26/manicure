@@ -1,9 +1,9 @@
-from pydantic import BaseModel
 from typing import List, Optional
+from pydantic import BaseModel, Field
 
 class ServiceAttributeTypeCreateSchema(BaseModel):
     name: str
-    slug: str
+    slug: str = Field(default="", description="Slug типа атрибута (может быть пустым)")
 
 class ServiceAttributeTypeResponseSchema(ServiceAttributeTypeCreateSchema):
     id: int
@@ -15,7 +15,7 @@ class ServiceAttributeTypeResponseSchema(ServiceAttributeTypeCreateSchema):
 class ServiceAttributeValueCreateSchema(BaseModel):
     attribute_type_id: int
     name: str
-    slug: str
+    slug: str = Field(default="", description="Slug типа атрибута (может быть пустым)")
 
 class ServiceAttributeValueResponseSchema(ServiceAttributeValueCreateSchema):
     id: int

@@ -33,15 +33,11 @@ class ServiceAttributeTypeRepository(BaseRepository):
 class ServiceAttributeValueRepository(BaseRepository):
     model = ServiceAttributeValue
 
-    @classmethod
-
 
 
 
 
 class TemplateAttributeRepository(BaseRepository):
     model = TemplateAttribute
-
-    @classmethod
 
 

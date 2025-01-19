@@ -11,8 +11,8 @@ from config.components.logging_config import logger
 service_attribute_router = APIRouter()
 
 @service_attribute_router.post(
-    "/service/attributes",
-    response_model=ServiceAttributeTypeResponseSchema,
+    "/",
+    response_model=ServiceAttributeTypeCreateSchema,
     status_code=status.HTTP_201_CREATED,
 )
 async def create_service_attribute_type(

@@ -62,7 +62,7 @@ router.include_router(
 # Атрибуты
 router.include_router(
     service_attribute_router,
-    prefix="/api/v1/category/services/attribute",
+    prefix="/api/v1/category/services/attribute_type",
     tags=["Атрибуты"]
     )
 
