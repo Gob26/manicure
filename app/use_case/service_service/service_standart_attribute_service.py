@@ -5,6 +5,8 @@ from db.repositories.services_repositories.service_standart_atrribute_repositori
 from db.models.services_models.service_standart_model import ServiceAttributeType, ServiceAttributeValue, TemplateAttribute 
 
 from config.components.logging_config import logger
+from db.schemas.service_schemas.service_attribute_schemas import ServiceAttributeTypeCreateSchema, \
+    ServiceAttributeTypeResponseSchema
 from use_case.utils.slug_generator import generate_unique_slug
 
 
@@ -38,10 +40,19 @@ class ServiceAttributeTypeService:
         return {attr_type.slug: attr_type.name for attr_type in attribute_types}
 
     @staticmethod
-    async def update_attribute_type(attribute_type_id: int, name: str, slug: str) -> ServiceAttributeType:
-        """Обновление типа атрибута"""
-        attribute_type = await ServiceAttributeTypeRepository.update_service_attribute_type(id=attribute_type_id, name=name,slug=slug)
-        return attribute_type
+    async def update_attribute_type(
+        attribute_type: ServiceAttributeType,
+        name: str,
+        slug: str,
+    ) -> ServiceAttributeType:
+        """
+        Обновление типа атрибута.
+        """
+        return await ServiceAttributeTypeRepository.update_service_attribute_type(
+            id=attribute_type.id,
+            name=name,
+            slug=slug,
+        )
 
 
 

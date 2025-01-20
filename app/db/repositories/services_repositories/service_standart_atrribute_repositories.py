@@ -35,7 +35,7 @@ class ServiceAttributeTypeRepository(BaseRepository):
         """Получение всех типов атрибутов"""
         return await cls.get_all() 
 
-    classmethod
+    @classmethod
     async def update_service_attribute_type(cls, id: int, name: str, slug: str) -> Optional[ServiceAttributeType]:
         """Обновление типа атрибута"""
 

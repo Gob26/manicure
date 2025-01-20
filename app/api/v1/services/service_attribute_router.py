@@ -51,7 +51,6 @@ async def list_service_attribute_types(
     return ServiceAttributeTypeDictResponseSchema(data=attribute_types)
 
 
-# Получаем атрибут по id
 @service_attribute_router.get(
     "/{attribute_type_id}",
     response_model=ServiceAttributeTypeResponseSchema,
@@ -65,7 +64,42 @@ async def get_service_attribute_type(
     check_user_permission(current_user, ["admin", "master", "salon"])
 
     # Получаем тип атрибута по id
-    attribute_type = await ServiceAttributeTypeService.get_or_none_attribute_type_by_id(id=attribute_type_id)
+    attribute_type = await ServiceAttributeTypeService.get_or_none_attribute_type(id=attribute_type_id)
     if not attribute_type:
         raise HTTPException(status_code=404, detail="Тип атрибута не найден.")
     return attribute_type
+
+
+#обновление атрибута
+@service_attribute_router.put(
+    "/{attribute_type_id}",
+    response_model=ServiceAttributeTypeCreateSchema,
+    status_code=status.HTTP_200_OK,
+)
+async def update_service_attribute_type(
+    attribute_type_id: int,
+    data: ServiceAttributeTypeCreateSchema,
+    current_user: dict = Depends(get_current_user),
+):
+    """
+    Обновление типа атрибута услуги.
+    """
+    # Проверка прав текущего пользователя
+    check_user_permission(current_user, ["admin", "master"])
+
+    # Получение текущего атрибута по его ID
+    attribute_type = await ServiceAttributeTypeService.get_or_none_attribute_type_by_id(attribute_type_id)
+    if not attribute_type:
+        raise HTTPException(status_code=404, detail="Тип атрибута не найден.")
+
+    # Обновление атрибута через сервис
+    updated_attribute_type = await ServiceAttributeTypeService.update_attribute_type(
+        attribute_type=attribute_type,
+        name=data.name,
+        slug=data.slug,
+    )
+
+    if not updated_attribute_type:
+        raise HTTPException(status_code=500, detail="Не удалось обновить тип атрибута.")
+
+    return updated_attribute_type
