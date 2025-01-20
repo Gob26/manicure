@@ -103,3 +103,19 @@ async def update_service_attribute_type(
         raise HTTPException(status_code=500, detail="Не удалось обновить тип атрибута.")
 
     return updated_attribute_type
+
+#удаление атрибута 
+@service_attribute_router.delete(
+    "/{attribute_type_id}",
+    status_code=status.HTTP_204_NO_CONTENT,
+)
+async def delete_service_attribute_type(
+    attribute_type_id: int,
+    current_user: dict = Depends(get_current_user),
+):
+    # Проверка прав пользователя
+    check_user_permission(current_user, ["admin", "master"])
+
+    # Удаление типа атрибута
+    await ServiceAttributeTypeService.delete_attribute_type(attribute_type_id)
+)

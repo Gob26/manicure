@@ -1,13 +1,15 @@
+from sqlite3 import IntegrityError
 from typing import Optional, Dict
 from fastapi import HTTPException
 from tortoise.exceptions import DoesNotExist
 from db.repositories.services_repositories.service_standart_atrribute_repositories import ServiceAttributeTypeRepository, ServiceAttributeValueRepository, TemplateAttributeRepository
 from db.models.services_models.service_standart_model import ServiceAttributeType, ServiceAttributeValue, TemplateAttribute 
 
-from config.components.logging_config import logger
+
 from db.schemas.service_schemas.service_attribute_schemas import ServiceAttributeTypeCreateSchema, \
     ServiceAttributeTypeResponseSchema
 from use_case.utils.slug_generator import generate_unique_slug
+from config.components.logging_config import logger
 
 
 class ServiceAttributeTypeService:
@@ -53,17 +55,36 @@ class ServiceAttributeTypeService:
             name=name,
             slug=slug,
         )
-
-
-
-class ServiceAttributeValueService:
+    
     @staticmethod
-    async def some_method():
-        # Реализация метода
-        pass
+    async def delete_attribute_type(id: int) -> None:
+        """Удаление типа атрибута"""
+        if not await ServiceAttributeTypeRepository.get_or_none_attribute_types_id(id=id):
+            raise HTTPException(status_code=404, detail="Тип атрибута неяден.")
+        await ServiceAttributeTypeRepository.delete_service_attribute_type(id=id)
 
 
+# AttributeValue
+class ServiceAttributeValueService:
 
+    @staticmethod
+    async def get_or_none_attribute_value(slug: str) -> Optional[ServiceAttributeValue]:
+        """Получение типа атрибута по slug"""
+        try:
+            return await ServiceAttributeTypeRepository.get_or_none_attribute_value_by_slug(slug=slug)
+        except Exception as e:
+            logger.error(f"Ошибка при получении типа атрибута: {str(e)}", exc_info=True)
+            raise HTTPException(status_code=500, detail="Ошибка при получении типа атрибута.")
+
+    @staticmethod
+    async def create_attribute_value(attribute_type_id: int, name: str, slug: str) -> ServiceAttributeValue:
+        """Создание нового типа атрибута"""
+        if not slug:
+            slug = await generate_unique_slug(ServiceAttributeValue, name)
+        attribute_value = await ServiceAttributeValueRepository.create_service_attribute_value(
+                attribute_type_id=attribute_type_id, name=name, slug=slug
+            )
+        return attribute_value
 
 
 

@@ -16,12 +16,16 @@ class ServiceAttributeTypeDictResponseSchema(BaseModel):
 
 
 class ServiceAttributeValueCreateSchema(BaseModel):
-    attribute_type_id: int
-    name: str
-    slug: str = Field(default="", description="Slug типа атрибута (может быть пустым)")
+    attribute_type_id: int = Field(..., description="Идентификатор типа атрибута")
+    name: str = Field(..., min_length=1, max_length=100, description="Название значения атрибута")
+    slug: str = Field(
+        default="", 
+        max_length=100, 
+        description="Slug типа атрибута (уникальный идентификатор, может быть пустым)"
+    )
 
 class ServiceAttributeValueResponseSchema(ServiceAttributeValueCreateSchema):
-    id: int
+    id: int = Field(..., description="Идентификатор значения атрибута")
 
     class Config:
         from_attributes = True

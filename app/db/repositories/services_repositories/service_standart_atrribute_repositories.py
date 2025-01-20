@@ -40,11 +40,29 @@ class ServiceAttributeTypeRepository(BaseRepository):
         """Обновление типа атрибута"""
 
         return await cls.update(id=id, name=name, slug=slug)
+    
+    @classmethod
+    async def delete_service_attribute_type(cls, id: int) -> Optional[ServiceAttributeType]:
+        """Удаление типа атрибута"""
+        return await cls.delete(id=id)
  
 
 
 class ServiceAttributeValueRepository(BaseRepository):
     model = ServiceAttributeValue
+    @classmethod
+    async def get_or_none_attribute_value_by_slug(cls, slug: str) -> Optional[ServiceAttributeValue]:
+        """Получение типа атрибута по slug"""
+        return await cls.get_or_none(slug=slug)
+    
+    @classmethod
+    async def create_service_attribute_value(cls, attribute_type_id: int, name: str, slug: str) -> ServiceAttributeValue:
+        """Создание нового типа атрибута"""
+        try:
+            return await cls.create(attribute_type_id=attribute_type_id, name=name, slug=slug)
+        except IntegrityError as e:
+            logger.error(f"Ошибка при создании ServiceAttributeValue: {str(e)}", exc_info=True)
+            raise HTTPException(status_code=400, detail="Тип атрибута с таким slug уже существует.")
 
 
 
