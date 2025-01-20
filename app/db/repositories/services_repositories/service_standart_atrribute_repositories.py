@@ -18,7 +18,7 @@ class ServiceAttributeTypeRepository(BaseRepository):
             return await cls.create(name=name, slug=slug)
         except IntegrityError as e:
             logger.error(f"Ошибка при создании ServiceAttributeType: {str(e)}", exc_info=True)
-            raise HTTPException(status_code=400, detail="Тип атрибута с таким slug уже существует.")
+
 
     @classmethod
     async def get_service_attribute_type_by_slug(cls, slug: str) -> Optional[ServiceAttributeType]:
@@ -52,18 +52,28 @@ class ServiceAttributeValueRepository(BaseRepository):
     model = ServiceAttributeValue
     @classmethod
     async def get_or_none_attribute_value_by_slug(cls, slug: str) -> Optional[ServiceAttributeValue]:
-        """Получение типа атрибута по slug"""
+        """Получение значения атрибута по slug"""
         return await cls.get_or_none(slug=slug)
     
     @classmethod
     async def create_service_attribute_value(cls, attribute_type_id: int, name: str, slug: str) -> ServiceAttributeValue:
-        """Создание нового типа атрибута"""
-        try:
-            return await cls.create(attribute_type_id=attribute_type_id, name=name, slug=slug)
-        except IntegrityError as e:
-            logger.error(f"Ошибка при создании ServiceAttributeValue: {str(e)}", exc_info=True)
-            raise HTTPException(status_code=400, detail="Тип атрибута с таким slug уже существует.")
+        """Создание нового значения атрибута"""
+        return await cls.create(attribute_type_id=attribute_type_id, name=name, slug=slug)
 
+    @classmethod
+    async def get_all_attribute_values(cls, attribute_type_id: int) -> List[ServiceAttributeValue]:
+        """Получение всех значений атрибутов"""
+        return await cls.model.filter(attribute_type_id=attribute_type_id)
+
+    @classmethod
+    async def get_or_none_attribute_value_id(cls, id: int) -> Optional[ServiceAttributeValue]:
+        """Получение значения атрибута по id"""
+        return await cls.get_by_id(id=id)
+
+    @classmethod
+    async def delete_service_attribute_value(cls, id: int) -> Optional[ServiceAttributeValue]:
+        """Удаление значения атрибута """
+        return await cls.delete(id=id)
 
 
 

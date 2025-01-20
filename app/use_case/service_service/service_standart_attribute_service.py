@@ -71,7 +71,7 @@ class ServiceAttributeValueService:
     async def get_or_none_attribute_value(slug: str) -> Optional[ServiceAttributeValue]:
         """Получение типа атрибута по slug"""
         try:
-            return await ServiceAttributeTypeRepository.get_or_none_attribute_value_by_slug(slug=slug)
+            return await ServiceAttributeValueRepository.get_or_none_attribute_value_by_slug(slug=slug)
         except Exception as e:
             logger.error(f"Ошибка при получении типа атрибута: {str(e)}", exc_info=True)
             raise HTTPException(status_code=500, detail="Ошибка при получении типа атрибута.")
@@ -85,6 +85,24 @@ class ServiceAttributeValueService:
                 attribute_type_id=attribute_type_id, name=name, slug=slug
             )
         return attribute_value
+
+    @staticmethod
+    async def get_list_attribute_values(attribute_type_id: int) -> Dict[str, str]:
+        """Получение всех значений атрибутов"""
+        attribute_values = await ServiceAttributeValueRepository.get_all_attribute_values(attribute_type_id)
+        return {str(attr_value.id): attr_value.name for attr_value in attribute_values}
+
+    @staticmethod
+    async def get_or_none_attribute_value_id(id: int) -> ServiceAttributeValue:
+        attribute_value = await ServiceAttributeValueRepository.get_or_none_attribute_value_id(id)
+        return attribute_value
+
+    @staticmethod
+    async def delete_attribute_value(id: int) -> None:
+        """Удаление типа атрибута"""
+        if not await ServiceAttributeValueRepository.get_or_none_attribute_value_id(id=id):
+            raise HTTPException(status_code=404, detail="Тип атрибута неяден.")
+        await ServiceAttributeValueRepository.delete_service_attribute_value(id=id)
 
 
 

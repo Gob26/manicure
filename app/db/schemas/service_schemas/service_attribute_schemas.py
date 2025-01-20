@@ -24,12 +24,15 @@ class ServiceAttributeValueCreateSchema(BaseModel):
         description="Slug типа атрибута (уникальный идентификатор, может быть пустым)"
     )
 
+
 class ServiceAttributeValueResponseSchema(ServiceAttributeValueCreateSchema):
     id: int = Field(..., description="Идентификатор значения атрибута")
 
     class Config:
         from_attributes = True
 
+class ServiceAttributeValueDictResponseSchema(BaseModel):
+    data: Dict[str, str]
 
 class TemplateAttributeCreateSchema(BaseModel):
     service_template_id: int
