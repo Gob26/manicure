@@ -17,6 +17,10 @@ class ServiceAttributeTypeService:
         attribute_type = await ServiceAttributeTypeRepository.create_service_attribute_type(name=name, slug=slug)
         return attribute_type
 
+    @staticmethod
+    async def get_or_none_attribute_type_by_id(id: int) -> Optional[ServiceAttributeType]:
+        """Получение типа атрибута по id"""
+        return await ServiceAttributeTypeRepository.get_or_none_attribute_types_id(id=id)
   
     @staticmethod
     async def get_or_none_attribute_type(slug: str) -> Optional[ServiceAttributeType]:
@@ -32,6 +36,13 @@ class ServiceAttributeTypeService:
         """Получение всех типов атрибутов"""
         attribute_types = await ServiceAttributeTypeRepository.get_all_attribute_types()
         return {attr_type.slug: attr_type.name for attr_type in attribute_types}
+
+    @staticmethod
+    async def update_attribute_type(attribute_type_id: int, name: str, slug: str) -> ServiceAttributeType:
+        """Обновление типа атрибута"""
+        attribute_type = await ServiceAttributeTypeRepository.update_service_attribute_type(id=attribute_type_id, name=name,slug=slug)
+        return attribute_type
+
 
 
 class ServiceAttributeValueService:

@@ -26,11 +26,21 @@ class ServiceAttributeTypeRepository(BaseRepository):
         return await cls.get_or_none(slug=slug)
 
     @classmethod
+    async def get_or_none_attribute_types_id(cls, id: int) -> Optional[ServiceAttributeType]:
+        """Получение типа атрибута по id"""
+        return await cls.get_by_id(id=id)
+
+    @classmethod
     async def get_all_attribute_types(cls) -> List[ServiceAttributeType]:
         """Получение всех типов атрибутов"""
         return await cls.get_all() 
 
+    classmethod
+    async def update_service_attribute_type(cls, id: int, name: str, slug: str) -> Optional[ServiceAttributeType]:
+        """Обновление типа атрибута"""
 
+        return await cls.update(id=id, name=name, slug=slug)
+ 
 
 
 class ServiceAttributeValueRepository(BaseRepository):

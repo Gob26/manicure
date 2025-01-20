@@ -49,3 +49,23 @@ async def list_service_attribute_types(
     # Получаем все типы атрибутов
     attribute_types = await ServiceAttributeTypeService.get_list_attribute_types()
     return ServiceAttributeTypeDictResponseSchema(data=attribute_types)
+
+
+# Получаем атрибут по id
+@service_attribute_router.get(
+    "/{attribute_type_id}",
+    response_model=ServiceAttributeTypeResponseSchema,
+    status_code=status.HTTP_200_OK,
+)
+async def get_service_attribute_type(
+    attribute_type_id: int,
+    current_user: dict = Depends(get_current_user),
+):
+    # Проверка прав пользователя
+    check_user_permission(current_user, ["admin", "master", "salon"])
+
+    # Получаем тип атрибута по id
+    attribute_type = await ServiceAttributeTypeService.get_or_none_attribute_type_by_id(id=attribute_type_id)
+    if not attribute_type:
+        raise HTTPException(status_code=404, detail="Тип атрибута не найден.")
+    return attribute_type
