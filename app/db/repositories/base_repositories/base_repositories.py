@@ -1,15 +1,14 @@
-from typing import TypeVar, Type, Optional, List, Any, Dict, Union
-from tortoise import Model
-from tortoise.expressions import Q
+from typing import TypeVar, Type, Optional, List, Any, Dict
+from tortoise.models import Model
 from tortoise.exceptions import DoesNotExist
-from tortoise.transactions import atomic, in_transaction
+from tortoise.transactions import in_transaction
 from config.components.logging_config import logger
 
-
+# Создаем переменную для типа модели
 ModelType = TypeVar("ModelType", bound=Model)
 
 class BaseRepository:
-    model: Type[ModelType] = None
+    model: Type[ModelType]  # Указываем, что model будет типом модели
 
     @classmethod
     async def get_by_id(cls, id: int) -> Optional[ModelType]:
@@ -36,11 +35,11 @@ class BaseRepository:
         if related_fields:
             query = query.prefetch_related(*related_fields)
         return await query.offset(offset).limit(limit)
-    
+
     @classmethod
     async def get_all(cls) -> List[ModelType]:
         """Получение всех объектов без пагинации и связанных полей"""
-        return await cls.model.all()    
+        return await cls.model.all()
 
     @classmethod
     async def create(cls, **kwargs: Any) -> ModelType:

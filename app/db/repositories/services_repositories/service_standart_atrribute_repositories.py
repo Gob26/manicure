@@ -4,7 +4,7 @@ from typing import Optional, List
 from fastapi import HTTPException, status
 from tortoise.exceptions import DoesNotExist, IntegrityError
 from db.models.services_models.service_standart_model import ServiceAttributeType, ServiceAttributeValue, TemplateAttribute 
-from db.repositories.base_repositories.base_repositories import BaseRepository
+from db.repositories.base_repositories.base_repositories import BaseRepository, ModelType
 from config.components.logging_config import logger
 
 
@@ -80,10 +80,31 @@ class ServiceAttributeValueRepository(BaseRepository):
         """Обновление значения атрибута"""
         return await cls.update(id=id, name=name, slug=slug)
 
-
-
-
 class TemplateAttributeRepository(BaseRepository):
     model = TemplateAttribute
+
+    @classmethod
+    async def create_template_attribute(cls, data: dict) -> TemplateAttribute:
+        """
+        Создает связь шаблона услуги с атрибутом.
+        """
+        return await cls.create(**data)
+
+    @classmethod
+    async def get_existing_template_attribute(cls, service_template_id: int, attribute_type_id: int):
+        """
+        Проверяет существование связи.
+        """
+        return await cls.get_or_none(
+            service_template_id=service_template_id,
+            attribute_type_id=attribute_type_id
+        )
+    @classmethod
+    async def get_by_service_template(cls, service_template_id: int):
+        """
+        Возвращает список атрибутов, привязанных к указанному шаблону услуги.
+        """
+        return await cls.filter(service_template_id=service_template_id)
+
 
 

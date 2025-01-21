@@ -3,7 +3,8 @@ from fastapi import APIRouter, Depends, File, HTTPException, status, Query
 
 from db.models.services_models.service_standart_model import ServiceAttributeType, ServiceAttributeValue, TemplateAttribute 
 from app.db.schemas.service_schemas.service_attribute_schemas import ServiceAttributeTypeCreateSchema, \
-    ServiceAttributeTypeResponseSchema, ServiceAttributeTypeDictResponseSchema, ServiceAttributeValueCreateSchema, ServiceAttributeValueDictResponseSchema, ServiceAttributeValueResponseSchema
+    ServiceAttributeTypeResponseSchema, ServiceAttributeTypeDictResponseSchema, ServiceAttributeValueCreateSchema, \
+    ServiceAttributeValueDictResponseSchema, ServiceAttributeValueResponseSchema, TemplateAttributeCreateSchema
 from app.use_case.service_service.service_standart_attribute_service import ServiceAttributeTypeService, ServiceAttributeValueService, TemplateAttributeService
 from use_case.utils.permissions import check_user_permission
 from use_case.utils.jwt_handler import get_current_user
@@ -22,8 +23,8 @@ async def create_service_attribute_type(
     data: ServiceAttributeTypeCreateSchema,
     current_user: dict = Depends(get_current_user),
 ):
-    # Проверка прав пользователя
-    check_user_permission(current_user, ["admin", "master"])
+    if current_user["role"] not in ["admin", "master", "salon"]:
+        raise HTTPException(status_code=403, detail="Недостаточно прав для выполнения операции.")
 
     # Проверяем, существует ли уже тип атрибута с таким slug
     existing = await ServiceAttributeTypeService.get_or_none_attribute_type(slug=data.slug)
@@ -43,8 +44,8 @@ async def create_service_attribute_type(
 async def list_service_attribute_types(
     current_user: dict = Depends(get_current_user),
 ):
-    # Проверка прав пользователя
-    check_user_permission(current_user, ["admin", "master", "salon"])
+    if current_user["role"] not in ["admin", "master", "salon"]:
+        raise HTTPException(status_code=403, detail="Недостаточно прав для выполнения операции.")
 
     # Получаем все типы атрибутов
     attribute_types = await ServiceAttributeTypeService.get_list_attribute_types()
@@ -60,8 +61,8 @@ async def get_service_attribute_type(
     attribute_type_id: int,
     current_user: dict = Depends(get_current_user),
 ):
-    # Проверка прав пользователя
-    check_user_permission(current_user, ["admin", "master", "salon"])
+    if current_user["role"] not in ["admin", "master", "salon"]:
+        raise HTTPException(status_code=403, detail="Недостаточно прав для выполнения операции.")
 
     # Получаем тип атрибута по id
     attribute_type = await ServiceAttributeTypeService.get_or_none_attribute_type(id=attribute_type_id)
@@ -84,8 +85,8 @@ async def update_service_attribute_type(
     """
     Обновление типа атрибута услуги.
     """
-    # Проверка прав текущего пользователя
-    check_user_permission(current_user, ["admin", "master"])
+    if current_user["role"] not in ["admin", "master", "salon"]:
+        raise HTTPException(status_code=403, detail="Недостаточно прав для выполнения операции.")
 
     # Получение текущего атрибута по его ID
     attribute_type = await ServiceAttributeTypeService.get_or_none_attribute_type_by_id(attribute_type_id)
@@ -113,8 +114,8 @@ async def delete_service_attribute_type(
     attribute_type_id: int,
     current_user: dict = Depends(get_current_user),
 ):
-    # Проверка прав пользователя
-    check_user_permission(current_user, ["admin", "master"])
+    if current_user["role"] not in ["admin", "master", "salon"]:
+        raise HTTPException(status_code=403, detail="Недостаточно прав для выполнения операции.")
 
     # Удаление типа атрибута
     await ServiceAttributeTypeService.delete_attribute_type(attribute_type_id)
@@ -133,8 +134,8 @@ async def create_service_attribute_value(
     data: ServiceAttributeValueCreateSchema,
     current_user: dict = Depends(get_current_user),
 ):
-    # Проверка прав пользователя
-    check_user_permission(current_user, ["admin", "master"])
+    if current_user["role"] not in ["admin", "master", "salon"]:
+        raise HTTPException(status_code=403, detail="Недостаточно прав для выполнения операции.")
 
     # Проверяем, существует ли уже значение атрибута с таким slug
     existing = await ServiceAttributeValueService.get_or_none_attribute_value(slug=data.slug)
@@ -156,8 +157,8 @@ async def list_service_attribute_values(
     attribute_type_id: Annotated[int, Query()],  # явно указываем, что это query параметр
     current_user: dict = Depends(get_current_user),
 ):
-    # Проверка прав пользователя
-    check_user_permission(current_user, ["admin", "master", "salon"])
+    if current_user["role"] not in ["admin", "master", "salon"]:
+        raise HTTPException(status_code=403, detail="Недостаточно прав для выполнения операции.")
 
     # Получаем все значения атрибутов для указанного типа
     attribute_values = await ServiceAttributeValueService.get_list_attribute_values(attribute_type_id)
@@ -176,7 +177,8 @@ async def get_service_attribute_value(
     """
     Возвращает значение атрибута по его ID.
     """
-    check_user_permission(current_user,["admin", "master", "salon"])
+    if current_user["role"] not in ["admin", "master", "salon"]:
+        raise HTTPException(status_code=403, detail="Недостаточно прав для выполнения операции.")
 
     attribute_value = await ServiceAttributeValueService.get_or_none_attribute_value_id(attribute_value_id)
     if not attribute_value:
@@ -194,14 +196,15 @@ async def delete_service_attribute_value(
         attribute_value_id: int,
         current_user: dict = Depends(get_current_user),
 ):
-    check_user_permission(current_user,["admin", "master", "salon"])
+    if current_user["role"] not in ["admin", "master", "salon"]:
+        raise HTTPException(status_code=403, detail="Недостаточно прав для выполнения операции.")
 
     await ServiceAttributeValueService.delete_attribute_value(attribute_value_id)
 
     return None
 
 @service_attribute_router.put(
-    "attribute_values/{attribute_value_id}",
+    "/attribute_values/{attribute_value_id}",
     response_model=ServiceAttributeValueCreateSchema,
     status_code=status.HTTP_200_OK,
     summary="Обновление значения атрибута",
@@ -211,8 +214,8 @@ async def update_service_attribute_value(
     data: ServiceAttributeValueCreateSchema,
     current_user: dict = Depends(get_current_user),
 ):
-    # Проверка прав пользователя
-    check_user_permission(current_user, ["admin", "master"])
+    if current_user["role"] not in ["admin", "master", "salon"]:
+        raise HTTPException(status_code=403, detail="Недостаточно прав для выполнения операции.")
 
     # Получение текущего значения атрибута по его ID
     attribute_value = await ServiceAttributeValueService.get_or_none_attribute_value_id(attribute_value_id)
@@ -230,3 +233,44 @@ async def update_service_attribute_value(
         raise HTTPException(status_code=500, detail="Не удалось обновить значение атрибута.")
 
     return updated_attribute_value
+
+# Эндпоинт для привязки атрибута
+@service_attribute_router.post(
+    "/template_attributes",
+    status_code=status.HTTP_201_CREATED,
+    summary="Привязка атрибута к шаблону услуги",
+    description="Позволяет создать связь между шаблоном услуги и атрибутом."
+)
+async def attach_template_attribute(
+    data: TemplateAttributeCreateSchema,
+    current_user: dict = Depends(get_current_user),
+):
+    """
+    Привязывает атрибут (тип+значение) к шаблону услуги.
+    """
+    # Проверка прав доступа
+    if current_user["role"] not in ["admin", "master", "salon"]:
+        raise HTTPException(status_code=403, detail="Недостаточно прав для выполнения операции.")
+
+    # Вызываем сервисный метод
+    template_attribute = await TemplateAttributeService.attach_attribute(data)
+    return template_attribute
+
+@service_attribute_router.get(
+    "/template_attributes/{service_template_id}",
+    status_code=status.HTTP_200_OK,
+    summary="Получение всех атрибутов для шаблона услуги",
+)
+async def list_template_attributes(
+        service_template_id: int,
+        current_user: dict = Depends(get_current_user),
+):
+    """
+    Возвращает список атрибутов для указанного шаблона услуги.
+    """
+    if current_user["role"] not in ["admin", "master", "salon"]:
+        raise HTTPException(status_code=403, detail="Недостаточно прав для выполнения операции.")
+
+    # Получаем атрибуты для указанного шаблона услуги
+    attributes =await TemplateAttributeService.get_list_by_service_template(service_template_id)
+    return attributes

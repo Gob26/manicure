@@ -1,13 +1,17 @@
 from sqlite3 import IntegrityError
 from typing import Optional, Dict
-from fastapi import HTTPException
+from venv import create
+
+from fastapi import HTTPException, status
+from markdown_it.common.html_re import attribute
 from tortoise.exceptions import DoesNotExist
+from db.schemas.service_schemas.service_attribute_schemas import TemplateAttributeResponseSchema
 from db.repositories.services_repositories.service_standart_atrribute_repositories import ServiceAttributeTypeRepository, ServiceAttributeValueRepository, TemplateAttributeRepository
 from db.models.services_models.service_standart_model import ServiceAttributeType, ServiceAttributeValue, TemplateAttribute 
 
 
 from db.schemas.service_schemas.service_attribute_schemas import ServiceAttributeTypeCreateSchema, \
-    ServiceAttributeTypeResponseSchema
+    ServiceAttributeTypeResponseSchema, TemplateAttributeCreateSchema
 from use_case.utils.slug_generator import generate_unique_slug
 from config.components.logging_config import logger
 
@@ -122,6 +126,36 @@ class ServiceAttributeValueService:
 
 class TemplateAttributeService:
     @staticmethod
-    async def some_method():
-        # Реализация метода
-        pass
+    async def attach_attribute(data: TemplateAttributeCreateSchema):
+        """
+        Привязывает атрибут к шаблону услуги.
+        """
+        # Проверяем существование связи
+        existing = await TemplateAttributeRepository.get_existing_template_attribute(
+            service_template_id=data.service_template_id,
+            attribute_type_id=data.attribute_type_id
+        )
+        if existing:
+            raise HTTPException(
+                status_code=400,
+                detail="Связь атрибута с шаблоном уже существует."
+            )
+
+        # Создаем новую связь
+        created = await TemplateAttributeRepository.create_template_attribute(data.dict())
+        # Преобразуем ORM объект в Pydantic модель с использованием model_validate
+        return TemplateAttributeRepository.model_validate(created)
+
+    @staticmethod
+    async def get_list_by_service_template(id: int):
+        """
+        Получает список атрибутов, привязанных к указанному шаблону услуги.
+        """
+        attributes = await TemplateAttributeRepository.get_by_service_template(id)
+        if not attributes:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail="Атрибуты для указанного шаблона услуги не найдены."
+            )
+        # Преобразуем каждый ORM-объект в Pydantic-схему с помощью from_orm
+        return [TemplateAttributeResponseSchema(**attribute.__dict__) for attribute in attributes]

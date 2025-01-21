@@ -34252,3 +34252,357 @@ AttributeError: type object 'ServiceAttributeTypeRepository' has no attribute 'g
 2025-01-21 07:47:53 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737436464, 'city': ''}[0m
 2025-01-21 07:47:53 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
 2025-01-21 07:47:53 - my_app - [32mINFO[0m - [32mServiceAttributeValue с ID 3 обновлен с данными: {'name': 'stri111ng', 'slug': '11111'}[0m
+2025-01-21 08:34:37 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 08:34:37 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 08:34:37 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 08:34:37 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 08:34:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 08:34:37 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 08:34:37 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 08:34:37 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 08:34:37 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 08:34:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 10:53:53 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 10:53:53 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 10:53:53 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 10:53:53 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 10:53:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 10:53:53 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 10:53:53 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 10:53:53 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 10:53:53 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 10:53:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 10:58:37 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 10:58:37 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 10:58:37 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 10:58:37 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 10:58:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 10:58:37 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 10:58:37 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 10:58:37 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 10:58:37 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 10:58:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 10:59:05 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 10:59:05 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 10:59:05 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 10:59:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 10:59:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 10:59:05 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 10:59:05 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 10:59:05 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 10:59:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 10:59:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 11:02:11 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 11:02:11 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 11:02:11 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 11:02:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 11:02:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 11:02:11 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 11:02:11 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 11:02:11 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 11:02:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 11:02:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 11:05:31 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 11:05:31 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 11:05:31 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 11:05:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 11:05:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 11:07:37 - my_app - [32mINFO[0m - [32mРегистрация пользователя: master1master, город: Омск, роль: master[0m
+2025-01-21 11:07:37 - my_app - [32mINFO[0m - [32mПользователь master1master пытается зарегистрироваться с городом Омск[0m
+2025-01-21 11:07:37 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-21 11:07:37 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-21 11:07:37 - my_app - [32mINFO[0m - [32mГород Омск найден, ID: 1901[0m
+2025-01-21 11:07:37 - my_app - [34mDEBUG[0m - [34mПолучен запрос на создание пользователя: username=master1master, city_name=Омск, role=master[0m
+2025-01-21 11:07:37 - my_app - [34mDEBUG[0m - [34mПоиск города: 'Омск'[0m
+2025-01-21 11:07:37 - my_app - [34mDEBUG[0m - [34mРезультат поиска: <City: 1901>[0m
+2025-01-21 11:07:37 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'username': 'master1master'} существует: False[0m
+2025-01-21 11:07:37 - my_app - [34mDEBUG[0m - [34mUser с параметрами {'email': 'master1master@master1master.ru'} существует: False[0m
+2025-01-21 11:07:37 - my_app - [32mINFO[0m - [32mUser создан с данными: {'username': 'master1master', 'email': 'master1master@master1master.ru', 'password': '$2b$12$gWVlUBmf/8aX/TRaRJpSzuwxVToTYAF0nwRBECRnNBQeX/oh1uIBy', 'city': <City: 1901>, 'role': 'master'}[0m
+2025-01-21 11:07:37 - my_app - [32mINFO[0m - [32mПользователь master1master успешно зарегистрирован.[0m
+2025-01-21 11:07:37 - my_app - [32mINFO[0m - [32mПользователь master1master успешно зарегистрирован[0m
+2025-01-21 11:07:51 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: master1master[0m
+2025-01-21 11:07:51 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя master1master[0m
+2025-01-21 11:07:51 - my_app - [32mINFO[0m - [32mПользователь master1master найден, проверка пароля.[0m
+2025-01-21 11:07:51 - my_app - [32mINFO[0m - [32mПользователь master1master успешно авторизован[0m
+2025-01-21 11:07:51 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 148, 'username': 'master1master', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-21 11:07:51 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDgiLCJ1c2VybmFtZSI6Im1hc3RlcjFtYXN0ZXIiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3NDQ4NjcxLCJjaXR5IjoiIn0.uCbKuAveit5p8A_Br87MNTlHPBBQuQLEisfivUTI2Ug[0m
+2025-01-21 11:07:51 - my_app - [32mINFO[0m - [32mПользователь master1master успешно авторизован[0m
+2025-01-21 11:08:31 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 11:08:31 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDgiLCJ1c2VybmFtZSI6Im1hc3RlcjFtYXN0ZXIiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3NDQ4NjcxLCJjaXR5IjoiIn0.uCbKuAveit5p8A_Br87MNTlHPBBQuQLEisfivUTI2Ug[0m
+2025-01-21 11:08:31 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '148', 'username': 'master1master', 'role': 'master', 'city_id': 1901, 'exp': 1737448671, 'city': ''}[0m
+2025-01-21 11:08:31 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '148', 'username': 'master1master', 'role': 'master', 'city_id': 1901, 'exp': 1737448671, 'city': ''}[0m
+2025-01-21 11:08:31 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master1master', 'user_id': '148', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 11:08:31 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-21 11:08:31 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': 'photo_1_2024-12-19_20-09-49.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/default_city/master/master1master/avatar/master1master_pc.webp', 'mime_type': 'image/jpeg', 'size': 143023, 'width': 1280, 'height': 853}[0m
+2025-01-21 11:08:31 - my_app - [32mINFO[0m - [32mMaster создан с данными: {'user_id': '148', 'city_id': 1901, 'title': 'master1master', 'specialty': 'master1master', 'description': 'master1master', 'text': 'master1master', 'experience_years': 1, 'slug': 'master1master', 'name': 'master1master', 'address': 'master1master', 'phone': 'master1masterstring', 'telegram': 'https://exammaster1masterple.com/', 'whatsapp': 'https://examaster1mastermple.com/', 'website': 'https://examaster1mastermple.com/', 'vk': 'https://examaster1mastermple.com/', 'instagram': 'https://examaster1mastermple.com/', 'accepts_at_home': False, 'accepts_in_salon': False, 'accepts_offsite': False, 'avatar_id': 2}[0m
+2025-01-21 11:08:31 - my_app - [32mINFO[0m - [32mМастер создан с данными: {'user_id': '148', 'city_id': 1901, 'title': 'master1master', 'specialty': 'master1master', 'description': 'master1master', 'text': 'master1master', 'experience_years': 1, 'slug': 'master1master', 'name': 'master1master', 'address': 'master1master', 'phone': 'master1masterstring', 'telegram': 'https://exammaster1masterple.com/', 'whatsapp': 'https://examaster1mastermple.com/', 'website': 'https://examaster1mastermple.com/', 'vk': 'https://examaster1mastermple.com/', 'instagram': 'https://examaster1mastermple.com/', 'accepts_at_home': False, 'accepts_in_salon': False, 'accepts_offsite': False, 'avatar_id': 2}[0m
+2025-01-21 11:09:04 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 11:09:04 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDgiLCJ1c2VybmFtZSI6Im1hc3RlcjFtYXN0ZXIiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3NDQ4NjcxLCJjaXR5IjoiIn0.uCbKuAveit5p8A_Br87MNTlHPBBQuQLEisfivUTI2Ug[0m
+2025-01-21 11:09:04 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '148', 'username': 'master1master', 'role': 'master', 'city_id': 1901, 'exp': 1737448671, 'city': ''}[0m
+2025-01-21 11:09:04 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '148', 'username': 'master1master', 'role': 'master', 'city_id': 1901, 'exp': 1737448671, 'city': ''}[0m
+2025-01-21 11:09:04 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master1master', 'user_id': '148', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 11:09:04 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'testovaia-istoriia'[0m
+2025-01-21 11:09:04 - my_app - [32mINFO[0m - [32mServiceAttributeType создан с данными: {'name': 'тестовая история', 'slug': 'testovaia-istoriia'}[0m
+2025-01-21 11:09:30 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 11:09:30 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDgiLCJ1c2VybmFtZSI6Im1hc3RlcjFtYXN0ZXIiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3NDQ4NjcxLCJjaXR5IjoiIn0.uCbKuAveit5p8A_Br87MNTlHPBBQuQLEisfivUTI2Ug[0m
+2025-01-21 11:09:30 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '148', 'username': 'master1master', 'role': 'master', 'city_id': 1901, 'exp': 1737448671, 'city': ''}[0m
+2025-01-21 11:09:30 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '148', 'username': 'master1master', 'role': 'master', 'city_id': 1901, 'exp': 1737448671, 'city': ''}[0m
+2025-01-21 11:09:30 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master1master', 'user_id': '148', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 11:09:30 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'master1master'[0m
+2025-01-21 11:09:35 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 11:09:35 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDgiLCJ1c2VybmFtZSI6Im1hc3RlcjFtYXN0ZXIiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3NDQ4NjcxLCJjaXR5IjoiIn0.uCbKuAveit5p8A_Br87MNTlHPBBQuQLEisfivUTI2Ug[0m
+2025-01-21 11:09:35 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '148', 'username': 'master1master', 'role': 'master', 'city_id': 1901, 'exp': 1737448671, 'city': ''}[0m
+2025-01-21 11:09:35 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '148', 'username': 'master1master', 'role': 'master', 'city_id': 1901, 'exp': 1737448671, 'city': ''}[0m
+2025-01-21 11:09:35 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master1master', 'user_id': '148', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 11:09:35 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'master1master'[0m
+2025-01-21 11:09:39 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 11:09:39 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNDgiLCJ1c2VybmFtZSI6Im1hc3RlcjFtYXN0ZXIiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTkwMSwiZXhwIjoxNzM3NDQ4NjcxLCJjaXR5IjoiIn0.uCbKuAveit5p8A_Br87MNTlHPBBQuQLEisfivUTI2Ug[0m
+2025-01-21 11:09:39 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '148', 'username': 'master1master', 'role': 'master', 'city_id': 1901, 'exp': 1737448671, 'city': ''}[0m
+2025-01-21 11:09:39 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '148', 'username': 'master1master', 'role': 'master', 'city_id': 1901, 'exp': 1737448671, 'city': ''}[0m
+2025-01-21 11:09:39 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master1master', 'user_id': '148', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 11:09:39 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'master1master'[0m
+2025-01-21 11:09:39 - my_app - [32mINFO[0m - [32mServiceAttributeValue создан с данными: {'attribute_type_id': 5, 'name': 'master1master', 'slug': 'master1master'}[0m
+2025-01-21 12:14:35 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 12:14:35 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 12:14:35 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 12:14:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 12:14:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 12:22:35 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 12:22:35 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 12:22:35 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 12:22:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 12:22:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 12:24:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 12:24:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 12:24:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 12:24:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 12:24:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 12:26:07 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 12:26:07 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 12:26:07 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 12:26:07 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 12:26:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 12:26:30 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 12:26:30 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 12:26:30 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 12:26:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 12:26:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 12:26:38 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 12:26:38 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 12:26:38 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 12:26:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 12:26:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 12:26:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 12:26:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 12:26:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 12:26:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 12:26:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 12:28:52 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: master333[0m
+2025-01-21 12:28:52 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя master333[0m
+2025-01-21 12:28:52 - my_app - [32mINFO[0m - [32mПользователь master333 найден, проверка пароля.[0m
+2025-01-21 12:28:52 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-21 12:28:52 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 121, 'username': 'master333', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-21 12:28:52 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0NTM1MzIsImNpdHkiOiIifQ.c3MukgsFDRIOpv9u0MFLKXRqcSWUIM2KHSAhXZV9CB8[0m
+2025-01-21 12:28:52 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-21 12:29:13 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 12:29:13 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0NTM1MzIsImNpdHkiOiIifQ.c3MukgsFDRIOpv9u0MFLKXRqcSWUIM2KHSAhXZV9CB8[0m
+2025-01-21 12:29:13 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737453532, 'city': ''}[0m
+2025-01-21 12:29:13 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737453532, 'city': ''}[0m
+2025-01-21 12:29:13 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 12:29:13 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'string777'[0m
+2025-01-21 12:29:13 - my_app - [32mINFO[0m - [32mServiceAttributeType создан с данными: {'name': 'string777', 'slug': 'string777'}[0m
+2025-01-21 12:29:30 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 12:29:30 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0NTM1MzIsImNpdHkiOiIifQ.c3MukgsFDRIOpv9u0MFLKXRqcSWUIM2KHSAhXZV9CB8[0m
+2025-01-21 12:29:30 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737453532, 'city': ''}[0m
+2025-01-21 12:29:30 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737453532, 'city': ''}[0m
+2025-01-21 12:29:30 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 12:29:30 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'string555'[0m
+2025-01-21 12:29:30 - my_app - [32mINFO[0m - [32mServiceAttributeValue создан с данными: {'attribute_type_id': 6, 'name': 'string555', 'slug': 'string555'}[0m
+2025-01-21 13:28:36 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 13:28:36 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 13:28:36 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 13:28:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 13:28:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 13:29:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 13:29:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 13:29:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 13:29:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 13:29:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 13:30:14 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 13:30:14 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 13:30:14 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 13:30:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 13:30:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 13:30:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 13:30:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 13:30:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 13:30:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 13:30:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 13:31:28 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 13:31:28 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 13:31:28 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 13:31:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 13:31:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 13:32:48 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 13:32:48 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 13:32:48 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 13:32:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 13:32:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 13:33:03 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 13:33:03 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 13:33:03 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 13:33:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 13:33:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 13:35:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 13:35:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 13:35:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 13:35:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 13:35:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 13:38:54 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 13:38:54 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 13:38:54 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 13:38:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 13:38:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 13:39:27 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 13:39:27 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 13:39:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 13:39:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 13:39:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 13:41:43 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 13:41:43 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 13:41:43 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 13:41:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 13:41:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 13:44:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 13:44:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 13:44:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 13:44:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 13:44:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 15:18:32 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 15:18:32 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 15:18:32 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 15:18:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 15:18:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 15:21:04 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 15:21:04 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 15:21:04 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 15:21:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 15:21:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 15:21:32 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 15:21:32 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 15:21:32 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 15:21:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 15:21:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 15:22:15 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 15:22:15 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 15:22:15 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 15:22:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 15:22:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 15:22:20 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 15:22:20 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 15:22:20 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 15:22:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 15:22:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 15:22:35 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: master333[0m
+2025-01-21 15:22:35 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя master333[0m
+2025-01-21 15:22:35 - my_app - [32mINFO[0m - [32mПользователь master333 найден, проверка пароля.[0m
+2025-01-21 15:22:35 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-21 15:22:35 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 121, 'username': 'master333', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-21 15:22:35 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0NjM5NTUsImNpdHkiOiIifQ.GgiqQkXT-tpmhrQXyWNr0PMlyiWgYKnpwfDJVJZKG9w[0m
+2025-01-21 15:22:35 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-21 15:22:57 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 15:22:57 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0NjM5NTUsImNpdHkiOiIifQ.GgiqQkXT-tpmhrQXyWNr0PMlyiWgYKnpwfDJVJZKG9w[0m
+2025-01-21 15:22:57 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737463955, 'city': ''}[0m
+2025-01-21 15:22:57 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737463955, 'city': ''}[0m
+2025-01-21 15:22:57 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 15:22:57 - my_app - [32mINFO[0m - [32mTemplateAttribute создан с данными: {'service_template_id': 1, 'attribute_type_id': 1, 'is_required': False}[0m
+2025-01-21 15:27:12 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 15:27:12 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 15:27:12 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 15:27:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 15:27:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 15:27:33 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 15:27:33 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 15:27:33 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 15:27:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 15:27:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 15:28:00 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 15:28:00 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 15:28:00 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 15:28:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 15:28:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 15:28:06 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 15:28:06 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0NjM5NTUsImNpdHkiOiIifQ.GgiqQkXT-tpmhrQXyWNr0PMlyiWgYKnpwfDJVJZKG9w[0m
+2025-01-21 15:28:06 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737463955, 'city': ''}[0m
+2025-01-21 15:28:06 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737463955, 'city': ''}[0m
+2025-01-21 15:28:06 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 15:28:24 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 15:28:24 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0NjM5NTUsImNpdHkiOiIifQ.GgiqQkXT-tpmhrQXyWNr0PMlyiWgYKnpwfDJVJZKG9w[0m
+2025-01-21 15:28:24 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737463955, 'city': ''}[0m
+2025-01-21 15:28:24 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737463955, 'city': ''}[0m
+2025-01-21 15:28:24 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 15:28:24 - my_app - [32mINFO[0m - [32mTemplateAttribute создан с данными: {'service_template_id': 5, 'attribute_type_id': 1, 'is_required': False}[0m
+2025-01-21 15:28:31 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 15:28:31 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0NjM5NTUsImNpdHkiOiIifQ.GgiqQkXT-tpmhrQXyWNr0PMlyiWgYKnpwfDJVJZKG9w[0m
+2025-01-21 15:28:31 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737463955, 'city': ''}[0m
+2025-01-21 15:28:31 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737463955, 'city': ''}[0m
+2025-01-21 15:28:31 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 15:28:31 - my_app - [32mINFO[0m - [32mTemplateAttribute создан с данными: {'service_template_id': 4, 'attribute_type_id': 1, 'is_required': False}[0m
+2025-01-21 15:28:35 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 15:28:35 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0NjM5NTUsImNpdHkiOiIifQ.GgiqQkXT-tpmhrQXyWNr0PMlyiWgYKnpwfDJVJZKG9w[0m
+2025-01-21 15:28:35 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737463955, 'city': ''}[0m
+2025-01-21 15:28:35 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737463955, 'city': ''}[0m
+2025-01-21 15:28:35 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 15:28:35 - my_app - [32mINFO[0m - [32mTemplateAttribute создан с данными: {'service_template_id': 3, 'attribute_type_id': 1, 'is_required': False}[0m
+2025-01-21 15:28:41 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 15:28:41 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0NjM5NTUsImNpdHkiOiIifQ.GgiqQkXT-tpmhrQXyWNr0PMlyiWgYKnpwfDJVJZKG9w[0m
+2025-01-21 15:28:41 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737463955, 'city': ''}[0m
+2025-01-21 15:28:41 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737463955, 'city': ''}[0m
+2025-01-21 15:28:41 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 15:28:49 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 15:28:49 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0NjM5NTUsImNpdHkiOiIifQ.GgiqQkXT-tpmhrQXyWNr0PMlyiWgYKnpwfDJVJZKG9w[0m
+2025-01-21 15:28:49 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737463955, 'city': ''}[0m
+2025-01-21 15:28:49 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737463955, 'city': ''}[0m
+2025-01-21 15:28:49 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 18:39:17 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 18:39:17 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 18:39:17 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 18:39:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 18:39:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 18:40:25 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: master333[0m
+2025-01-21 18:40:25 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя master333[0m
+2025-01-21 18:40:25 - my_app - [32mINFO[0m - [32mПользователь master333 найден, проверка пароля.[0m
+2025-01-21 18:40:25 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-21 18:40:25 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 121, 'username': 'master333', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-21 18:40:25 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0NzU4MjUsImNpdHkiOiIifQ.i_RskIBMXSJztArUdoZxJEwiPSctVM-7-50bovxh1kw[0m
+2025-01-21 18:40:25 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-21 18:40:31 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 18:40:31 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0NzU4MjUsImNpdHkiOiIifQ.i_RskIBMXSJztArUdoZxJEwiPSctVM-7-50bovxh1kw[0m
+2025-01-21 18:40:31 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737475825, 'city': ''}[0m
+2025-01-21 18:40:31 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737475825, 'city': ''}[0m
+2025-01-21 18:40:31 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 18:44:03 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 18:44:03 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 18:44:03 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 18:44:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 18:44:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 18:44:06 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 18:44:06 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 18:44:06 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 18:44:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 18:44:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 18:44:10 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 18:44:10 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0NzU4MjUsImNpdHkiOiIifQ.i_RskIBMXSJztArUdoZxJEwiPSctVM-7-50bovxh1kw[0m
+2025-01-21 18:44:10 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737475825, 'city': ''}[0m
+2025-01-21 18:44:10 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737475825, 'city': ''}[0m
+2025-01-21 18:44:10 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 18:47:05 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 18:47:05 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 18:47:05 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 18:47:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 18:47:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 18:47:08 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 18:47:08 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0NzU4MjUsImNpdHkiOiIifQ.i_RskIBMXSJztArUdoZxJEwiPSctVM-7-50bovxh1kw[0m
+2025-01-21 18:47:08 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737475825, 'city': ''}[0m
+2025-01-21 18:47:08 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737475825, 'city': ''}[0m
+2025-01-21 18:47:08 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
