@@ -74,6 +74,11 @@ class ServiceAttributeValueRepository(BaseRepository):
     async def delete_service_attribute_value(cls, id: int) -> Optional[ServiceAttributeValue]:
         """Удаление значения атрибута """
         return await cls.delete(id=id)
+    
+    @classmethod
+    async def update_service_attribute_value(cls, id: int, name: str, slug: str) -> Optional[ServiceAttributeValue]:
+        """Обновление значения атрибута"""
+        return await cls.update(id=id, name=name, slug=slug)
 
 
 

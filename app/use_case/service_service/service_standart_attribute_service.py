@@ -104,6 +104,20 @@ class ServiceAttributeValueService:
             raise HTTPException(status_code=404, detail="Тип атрибута неяден.")
         await ServiceAttributeValueRepository.delete_service_attribute_value(id=id)
 
+    @staticmethod
+    async def update_attribute_value(
+        attribute_value: ServiceAttributeValue,
+        name: str,
+        slug: str,
+    ) -> ServiceAttributeValue:
+        """
+        Обновление типа атрибута.
+        """
+        return await ServiceAttributeValueRepository.update_service_attribute_value(
+            id=attribute_value.id,
+            name=name,
+            slug=slug,
+        )
 
 
 class TemplateAttributeService:

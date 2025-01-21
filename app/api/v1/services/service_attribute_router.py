@@ -199,3 +199,35 @@ async def delete_service_attribute_value(
     await ServiceAttributeValueService.delete_attribute_value(attribute_value_id)
 
     return None
+
+@service_attribute_router.put(
+    "attribute_values/{attribute_value_id}",
+    response_model=ServiceAttributeValueCreateSchema,
+    status_code=status.HTTP_200_OK,
+    summary="Обновление значения атрибута",
+)
+async def update_service_attribute_value(
+    attribute_value_id: int,
+    data: ServiceAttributeValueCreateSchema,
+    current_user: dict = Depends(get_current_user),
+):
+    # Проверка прав пользователя
+    check_user_permission(current_user, ["admin", "master"])
+
+    # Получение текущего значения атрибута по его ID
+    attribute_value = await ServiceAttributeValueService.get_or_none_attribute_value_by_id(attribute_value_id)
+    if not attribute_value:
+        raise HTTPException(status_code=404, detail="Значение атрибута не найден.")
+
+    # Обновление значения атрибута через сервис
+    updated_attribute_value = await ServiceAttributeValueService.update_attribute_value(
+        attribute_value=attribute_value,
+        name=data.name,
+        slug=data.slug,
+    )
+
+    if not updated_attribute_value:
+        raise HTTPException(status_code=500, detail="Не удалось обновить значение атрибута.")
+
+    return updated_attribute_value
+)
