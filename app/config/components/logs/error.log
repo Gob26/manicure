@@ -10752,3 +10752,9 @@ AttributeError: type object 'ServiceAttributeTypeRepository' has no attribute 'g
 2025-01-21 07:42:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-01-21 07:42:21 - my_app - [31mERROR[0m - [31mError message[0m
 2025-01-21 07:42:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 07:43:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 07:43:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 07:43:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 07:43:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 07:47:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 07:47:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

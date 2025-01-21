@@ -34207,3 +34207,48 @@ AttributeError: type object 'ServiceAttributeTypeRepository' has no attribute 'g
 2025-01-21 07:42:21 - my_app - [33mWARNING[0m - [33mWarning message[0m
 2025-01-21 07:42:21 - my_app - [31mERROR[0m - [31mError message[0m
 2025-01-21 07:42:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 07:43:40 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 07:43:40 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 07:43:40 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 07:43:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 07:43:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 07:43:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 07:43:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 07:43:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 07:43:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 07:43:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 07:44:24 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: master333[0m
+2025-01-21 07:44:24 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя master333[0m
+2025-01-21 07:44:24 - my_app - [32mINFO[0m - [32mПользователь master333 найден, проверка пароля.[0m
+2025-01-21 07:44:24 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-21 07:44:24 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 121, 'username': 'master333', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-21 07:44:24 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0MzY0NjQsImNpdHkiOiIifQ.OOXaa_K2NkXfBEuMp3ToN29ztimNSRy9q_rtOZyX_vY[0m
+2025-01-21 07:44:24 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-21 07:44:50 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 07:44:50 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0MzY0NjQsImNpdHkiOiIifQ.OOXaa_K2NkXfBEuMp3ToN29ztimNSRy9q_rtOZyX_vY[0m
+2025-01-21 07:44:50 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737436464, 'city': ''}[0m
+2025-01-21 07:44:50 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737436464, 'city': ''}[0m
+2025-01-21 07:44:50 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 07:47:29 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-21 07:47:29 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-21 07:47:29 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-21 07:47:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-21 07:47:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-21 07:47:37 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 07:47:37 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0MzY0NjQsImNpdHkiOiIifQ.OOXaa_K2NkXfBEuMp3ToN29ztimNSRy9q_rtOZyX_vY[0m
+2025-01-21 07:47:37 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737436464, 'city': ''}[0m
+2025-01-21 07:47:37 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737436464, 'city': ''}[0m
+2025-01-21 07:47:37 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 07:47:37 - my_app - [32mINFO[0m - [32mServiceAttributeValue с ID 1 не найден.[0m
+2025-01-21 07:47:46 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 07:47:46 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0MzY0NjQsImNpdHkiOiIifQ.OOXaa_K2NkXfBEuMp3ToN29ztimNSRy9q_rtOZyX_vY[0m
+2025-01-21 07:47:46 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737436464, 'city': ''}[0m
+2025-01-21 07:47:46 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737436464, 'city': ''}[0m
+2025-01-21 07:47:46 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 07:47:46 - my_app - [32mINFO[0m - [32mServiceAttributeValue с ID 2 не найден.[0m
+2025-01-21 07:47:53 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-21 07:47:53 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc0MzY0NjQsImNpdHkiOiIifQ.OOXaa_K2NkXfBEuMp3ToN29ztimNSRy9q_rtOZyX_vY[0m
+2025-01-21 07:47:53 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737436464, 'city': ''}[0m
+2025-01-21 07:47:53 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737436464, 'city': ''}[0m
+2025-01-21 07:47:53 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-21 07:47:53 - my_app - [32mINFO[0m - [32mServiceAttributeValue с ID 3 обновлен с данными: {'name': 'stri111ng', 'slug': '11111'}[0m

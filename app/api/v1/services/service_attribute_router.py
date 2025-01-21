@@ -215,7 +215,7 @@ async def update_service_attribute_value(
     check_user_permission(current_user, ["admin", "master"])
 
     # Получение текущего значения атрибута по его ID
-    attribute_value = await ServiceAttributeValueService.get_or_none_attribute_value_by_id(attribute_value_id)
+    attribute_value = await ServiceAttributeValueService.get_or_none_attribute_value_id(attribute_value_id)
     if not attribute_value:
         raise HTTPException(status_code=404, detail="Значение атрибута не найден.")
 
@@ -230,4 +230,3 @@ async def update_service_attribute_value(
         raise HTTPException(status_code=500, detail="Не удалось обновить значение атрибута.")
 
     return updated_attribute_value
-)
