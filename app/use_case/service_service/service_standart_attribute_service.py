@@ -144,7 +144,7 @@ class TemplateAttributeService:
         # Создаем новую связь
         created = await TemplateAttributeRepository.create_template_attribute(data.dict())
         # Преобразуем ORM объект в Pydantic модель с использованием model_validate
-        return TemplateAttributeRepository.model_validate(created)
+        return TemplateAttributeResponseSchema(**created.__dict__)
 
     @staticmethod
     async def get_list_by_service_template(id: int):
@@ -157,5 +157,5 @@ class TemplateAttributeService:
                 status_code=status.HTTP_404_NOT_FOUND,
                 detail="Атрибуты для указанного шаблона услуги не найдены."
             )
-        # Преобразуем каждый ORM-объект в Pydantic-схему с помощью from_orm
+        # Преобразуем каждый ORM-объект в Pydantic-схему
         return [TemplateAttributeResponseSchema(**attribute.__dict__) for attribute in attributes]
