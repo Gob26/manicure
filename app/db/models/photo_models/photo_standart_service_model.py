@@ -14,11 +14,11 @@ class CustomServicePhoto(AbstractPhoto):
     """
     Фотографии для пользовательских услуг
     """
-    custom_service = fields.ForeignKeyField(
-        'server.CustomService',  # Связь с кастомной услугой
-        related_name='custom_service_photos',    # Обратная связь, чтобы получить все фотографии для услуги
-        on_delete=fields.CASCADE,  # Удаление фотографий при удалении услуги
-        null=True  # Фотографии теперь могут быть необязательными
+    custom_service: fields.ForeignKeyNullableRelation[CustomService] = fields.ForeignKeyField(
+        'server.CustomService',
+        related_name='custom_service_photos',    # Изменено related_name для удобства
+        on_delete=fields.CASCADE,
+        null=True
     )
 
     class Meta:

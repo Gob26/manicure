@@ -12176,3 +12176,19 @@ DETAIL:  Key (master_id, standard_service_id)=(37, 11) already exists.[0m
 2025-01-23 20:31:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-01-23 20:32:53 - my_app - [31mERROR[0m - [31mError message[0m
 2025-01-23 20:32:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-23 20:34:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-23 20:34:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-23 20:36:08 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-23 20:36:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-23 20:56:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-23 20:56:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-23 20:57:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-23 20:57:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-23 21:00:04 - my_app - [31mERROR[0m - [31mНеизвестная ошибка: type object 'CustomService' has no attribute 'photos'[0m
+2025-01-23 21:00:04 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании услуги: 500: Внутренняя ошибка сервера[0m
+2025-01-23 21:04:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-23 21:04:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-23 22:13:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-23 22:13:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-23 22:13:17 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-01-23 22:13:41 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании услуги: 'int' object is not iterable[0m

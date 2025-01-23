@@ -23,26 +23,20 @@ class ServiceCustomRepository(BaseRepository):
 
     @classmethod
     async def add_photos_to_custom_service(cls, custom_service_id: int, photo_id: int):
-        """Добавление фотографии к пользовательской услуге."""
         try:
-            # Проверяем существование пользовательской услуги
             service = await CustomService.get_or_none(id=custom_service_id)
             if not service:
                 raise HTTPException(status_code=404, detail="Услуга не найдена")
 
-            # Проверяем существование фотографии
-            photo = await CustomServicePhoto.get_or_none(id=photo_id)  # Предполагается, что это модель фотографии
+            photo = await CustomServicePhoto.get_or_none(id=photo_id)
             if not photo:
                 raise HTTPException(status_code=404, detail="Фотография не найдена")
 
-            # Создаем связь (без file_name)
-            await CustomService.photos.add(photo)  # Используем метод add для ManyToMany связи
+            photo.custom_service = service  # Устанавливаем связь
+            await photo.save()
 
             logger.info(f"Фото {photo_id} связано с пользовательской услугой {custom_service_id}")
-            return {"status": "ok"}  # Возвращаем простой ответ об успехе
-        except IntegrityError as e:
-            logger.error(f"Ошибка целостности данных: {e}")
-            raise HTTPException(status_code=400, detail="Ошибка целостности данных")
+            return {"status": "ok"}
         except Exception as e:
             logger.error(f"Неизвестная ошибка: {e}")
             raise HTTPException(status_code=500, detail="Внутренняя ошибка сервера")

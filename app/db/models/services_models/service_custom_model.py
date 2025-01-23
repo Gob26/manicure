@@ -50,7 +50,6 @@ class CustomService(AbstractModel):
         null=True,
         help_text="Дополнительное описание услуги"
     )
-    photos = fields.ReverseRelation["CustomServicePhoto"]
 
     class Meta:
         table = "custom_services"
