@@ -1,12 +1,13 @@
 from fastapi import APIRouter, Depends, File, HTTPException, status, Form, UploadFile
 
-from config.components.logging_config import logger
-from db.models import StandardServicePhoto
+from db.models.photo_models.photo_standart_service_model import StandardServicePhoto
 from use_case.photo_service.photo_base_servise import PhotoHandler
 from db.schemas.service_schemas.service_standart_schemas import StandardServiceOut, StandardServiceCreate
 from use_case.service_service.standart_service import StandardServiceService
 from use_case.utils.permissions import check_user_permission
 from use_case.utils.jwt_handler import get_current_user
+from config.components.logging_config import logger
+
 
 service_standart_router = APIRouter()
 

@@ -1,15 +1,16 @@
 from fastapi import APIRouter
 
 from api.v1.services.service_standart_router import service_standart_router
-from app.api.v1.auth.user_register_router import user_router
-from app.api.v1.auth.user_login_router import login_router
-from app.api.v1.masters.masters_list_router import master_list_router
-from app.api.v1.masters.masters_router import master_router
-from app.api.v1.masters.masters_read_router import master_read_router
-from app.api.v1.salons.salons_router import salon_router
-from app.api.v1.cyties.city import city_router 
-from app.api.v1.services.service_categories_router import service_categories_router
-from app.api.v1.services.service_attribute_router import service_attribute_router
+from api.v1.auth.user_register_router import user_router
+from api.v1.auth.user_login_router import login_router
+from api.v1.masters.masters_list_router import master_list_router
+from api.v1.masters.masters_router import master_router
+from api.v1.masters.masters_read_router import master_read_router
+from api.v1.salons.salons_router import salon_router
+from api.v1.cyties.city import city_router 
+from api.v1.services import service_custom_router
+from api.v1.services.service_categories_router import service_categories_router
+from api.v1.services.service_attribute_router import service_attribute_router
 
 
 router = APIRouter()
@@ -51,7 +52,13 @@ router.include_router(
     tags=["Салон - создание, обновление и удаление"]
     )
 
-# Услуги
+# Услуги 
+
+router.include_router(
+    service_custom_router,
+    prefix="/api/v1/category/custom_service",
+    tags=["Индивидуальные услуги"]
+    )
 
 router.include_router(
     service_standart_router,

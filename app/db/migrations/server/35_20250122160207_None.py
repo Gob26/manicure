@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS "service_attribute_values" (
     "attribute_type_id" INT NOT NULL REFERENCES "service_attribute_types" ("id") ON DELETE CASCADE
 );
 COMMENT ON TABLE "service_attribute_values" IS 'Возможные значения атрибутов (аппаратный, классический, гель-лак и т.д.)';
-CREATE TABLE IF NOT EXISTS "standardservicephoto" (
+CREATE TABLE IF NOT EXISTS "standard_service_photo" (
     "id" SERIAL NOT NULL PRIMARY KEY,
     "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
     "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
@@ -104,7 +104,7 @@ CREATE TABLE IF NOT EXISTS "standardservicephoto" (
     "is_main" BOOL NOT NULL  DEFAULT False,
     "sort_order" INT NOT NULL  DEFAULT 0
 );
-COMMENT ON TABLE "standardservicephoto" IS 'Фотографии стандартных услуг';
+COMMENT ON TABLE "standard_service_photo" IS 'Фотографии стандартных услуг';
 CREATE TABLE IF NOT EXISTS "standard_services" (
     "id" SERIAL NOT NULL PRIMARY KEY,
     "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
@@ -115,7 +115,7 @@ CREATE TABLE IF NOT EXISTS "standard_services" (
     "content" TEXT,
     "slug" VARCHAR(255),
     "category_id" INT REFERENCES "categories" ("id") ON DELETE SET NULL,
-    "default_photo_id" INT  UNIQUE REFERENCES "standardservicephoto" ("id") ON DELETE SET NULL
+    "default_photo_id" INT  UNIQUE REFERENCES "standard_service_photo" ("id") ON DELETE SET NULL
 );
 COMMENT ON TABLE "standard_services" IS 'Модель для стандартных услуг';
 CREATE TABLE IF NOT EXISTS "template_attributes" (
@@ -223,6 +223,21 @@ CREATE TABLE IF NOT EXISTS "custom_service_attributes" (
     CONSTRAINT "uid_custom_serv_custom__de301c" UNIQUE ("custom_service_id", "attribute_value_id")
 );
 COMMENT ON TABLE "custom_service_attributes" IS 'Выбранные атрибуты услуги с ценами';
+CREATE TABLE IF NOT EXISTS "custom_service_photo" (
+    "id" SERIAL NOT NULL PRIMARY KEY,
+    "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    "file_name" VARCHAR(255) NOT NULL,
+    "file_path" VARCHAR(1000) NOT NULL,
+    "mime_type" VARCHAR(100) NOT NULL,
+    "size" INT NOT NULL,
+    "width" INT,
+    "height" INT,
+    "is_main" BOOL NOT NULL  DEFAULT False,
+    "sort_order" INT NOT NULL  DEFAULT 0,
+    "custom_service_id" INT REFERENCES "custom_services" ("id") ON DELETE CASCADE
+);
+COMMENT ON TABLE "custom_service_photo" IS 'Фотографии для пользовательских услуг';
 CREATE TABLE IF NOT EXISTS "salonmasterrelation" (
     "id" SERIAL NOT NULL PRIMARY KEY,
     "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,

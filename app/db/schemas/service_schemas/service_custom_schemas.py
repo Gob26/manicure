@@ -1,60 +1,67 @@
-from pydantic import BaseModel
-from typing import Optional
+from pydantic import BaseModel, Field
+from typing import Optional, List
+from decimal import Decimal
 
-class CustomServiceBase(BaseModel):
-    name: str
-    title: Optional[str] = None
-    description: Optional[str] = None
-    content: Optional[str] = None
-    slug: Optional[str] = None
-    master_id: Optional[int] = None
-    salon_id: Optional[int] = None
-    standard_service_id: int
-    base_price: float
-    duration_minutes: int
-    is_active: bool
-    additional_description: Optional[str] = None
 
-    class Config:
-        from_attributes = True
-
-class CustomServiceCreate(CustomServiceBase):
-    pass
-
-class CustomServiceUpdate(CustomServiceBase):
-    pass
-
-class CustomServiceOut(CustomServiceBase):
+# Схема для вывода CustomService
+class CustomServiceOut(BaseModel):
     id: int
-    master_name: Optional[str]  # Имя мастера (если связано)
-    salon_name: Optional[str]  # Название салона (если связано)
-    standard_service_name: str  # Название базовой услуги
+    master_id: Optional[int] = Field(None, description="ID мастера, предоставляющего услугу")
+    salon_id: Optional[int] = Field(None, description="ID салона, предоставляющего услугу")
+    standard_service_id: int
+    base_price: Decimal = Field(..., description="Базовая стоимость услуги")
+    duration_minutes: int = Field(..., description="Длительность услуги в минутах")
+    is_active: bool = Field(..., description="Активна ли услуга")
+    description: Optional[str] = Field(None, description="Дополнительное описание услуги")
+    photos: List[str] = Field([], description="Список URL фотографий услуги")
 
     class Config:
         from_attributes = True
 
 
-from pydantic import BaseModel
+# Схема для создания CustomService
+class CustomServiceCreate(BaseModel):
+    master_id: Optional[int] = Field(None, description="ID мастера, предоставляющего услугу")
+    salon_id: Optional[int] = Field(None, description="ID салона, предоставляющего услугу")
+    standard_service_id: int
+    base_price: Decimal = Field(..., description="Базовая стоимость услуги")
+    duration_minutes: int = Field(..., description="Длительность услуги в минутах")
+    is_active: Optional[bool] = Field(True, description="Активна ли услуга")
+    description: Optional[str] = Field(None, description="Дополнительное описание услуги")
 
-class CustomServiceAttributeBase(BaseModel):
+
+# Схема для обновления CustomService
+class CustomServiceUpdate(BaseModel):
+    master_id: Optional[int] = Field(None, description="ID мастера, предоставляющего услугу")
+    salon_id: Optional[int] = Field(None, description="ID салона, предоставляющего услугу")
+    standard_service_id: Optional[int] = Field(None, description="ID базовой услуги")
+    base_price: Optional[Decimal] = Field(None, description="Базовая стоимость услуги")
+    duration_minutes: Optional[int] = Field(None, description="Длительность услуги в минутах")
+    is_active: Optional[bool] = Field(None, description="Активна ли услуга")
+    description: Optional[str] = Field(None, description="Дополнительное описание услуги")
+
+
+# Схема для вывода CustomServiceAttribute
+class CustomServiceAttributeOut(BaseModel):
+    id: int
     custom_service_id: int
     attribute_value_id: int
-    additional_price: float
-    is_active: bool
+    additional_price: Decimal = Field(..., description="Дополнительная стоимость за атрибут")
+    is_active: bool = Field(..., description="Активен ли атрибут")
 
     class Config:
         from_attributes = True
 
-class CustomServiceAttributeCreate(CustomServiceAttributeBase):
-    pass
 
-class CustomServiceAttributeUpdate(CustomServiceAttributeBase):
-    pass
+# Схема для создания CustomServiceAttribute
+class CustomServiceAttributeCreate(BaseModel):
+    custom_service_id: int
+    attribute_value_id: int
+    additional_price: Optional[Decimal] = Field(0, description="Дополнительная стоимость за атрибут")
+    is_active: Optional[bool] = Field(True, description="Активен ли атрибут")
 
-class CustomServiceAttributeOut(CustomServiceAttributeBase):
-    id: int
-    custom_service_name: str  # Название пользовательской услуги
-    attribute_value_name: str  # Название атрибута
 
-    class Config:
-        from_attributes = True
+# Схема для обновления CustomServiceAttribute
+class CustomServiceAttributeUpdate(BaseModel):
+    additional_price: Optional[Decimal] = Field(None, description="Дополнительная стоимость за атрибут")
+    is_active: Optional[bool] = Field(None, description="Активен ли атрибут")

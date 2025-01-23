@@ -58,3 +58,44 @@ class ServiceStandartRepository(BaseRepository):
                 status_code=status.HTTP_404_NOT_FOUND,
                 detail=f"Фото с ID {photo_id} не найдено."
             )
+        
+    # Проверяем если услуга по указаному id существует    @classmethod
+    async def check_service_existence(cls, service_id: int) -> StandardService:
+        """
+        Проверяет, существует ли услуга с указанным ID.
+        Если услуга не найдена, выбрасывает HTTPException с кодом 404.
+        """
+        try:
+            service = await cls.get_or_none(id=service_id)
+            if not service:
+                raise HTTPException(
+                    status_code=status.HTTP_404_NOT_FOUND,
+                    detail=f"Услуга с ID {service_id} не найдена."
+                )
+            return service
+        except HTTPException as he:
+            logger.error(f"HTTP ошибка при проверке существования услуги: {he.detail}", exc_info=True)
+            raise he
+        except Exception as e:
+            logger.error(f"Непредвиденная ошибка: {str(e)}", exc_info=True)
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail="Произошла ошибка при проверке существования услуги."
+            )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

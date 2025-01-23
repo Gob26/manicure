@@ -1,5 +1,6 @@
 #service_custom_model.py
 from tortoise import fields
+from app.db.models.photo_models.photo_standart_service_model import CustomServicePhoto
 from db.models.abstract.abstract_model import AbstractModel
 from db.models.abstract.abstract_service import AbstractService
 from typing import Optional
@@ -51,6 +52,7 @@ class CustomService(AbstractService):
         null=True,
         help_text="Дополнительное описание услуги"
     )
+    photos = fields.ReverseRelation["CustomServicePhoto"]
 
     class Meta:
         table = "custom_services"

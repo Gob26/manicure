@@ -14,7 +14,7 @@ from db.models.salon_models.salon_model import Salon
 from db.models.salon_models.salon_master_relation import SalonMasterRelation
 from db.models.salon_models.salon_master_invitation import SalonMasterInvitation
 
-from db.models.photo_models.photo_standart_service_model import StandardServicePhoto
+from db.models.photo_models.photo_standart_service_model import StandardServicePhoto, CustomServicePhoto
 from db.models.photo_models.photo_avatar_model import AvatarPhotoMaster
 from db.models.photo_models.photo_avatar_model import AvatarPhotoSalon
 
@@ -42,6 +42,7 @@ __all__ = [
     'SalonMasterRelation',
     'SalonMasterInvitation',
     'StandardServicePhoto',
+    'CustomServicePhoto',
     'AvatarPhotoMaster',
     'AvatarPhotoSalon',
     'Master',
