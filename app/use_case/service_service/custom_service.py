@@ -1,6 +1,7 @@
 from typing import List, Optional, Dict
 from fastapi import HTTPException, UploadFile
 from tortoise.exceptions import DoesNotExist
+from config.components.logging_config import logger  # Путь к настройкам логгера
 
 from app.db.repositories.base_repositories.base_repositories import BaseRepository
 from app.db.repositories.master_repositories.master_repositories import MasterRepository
@@ -14,7 +15,6 @@ from db.repositories.services_repositories.service_custom_repositories import Se
 from db.models.photo_models.photo_standart_service_model import CustomServicePhoto
 from use_case.photo_service.photo_base_servise import PhotoHandler
 from use_case.utils.slug_generator import generate_unique_slug
-from config.components.logging_config import logger
 
 
 class CustomServiceService():
@@ -26,33 +26,47 @@ class CustomServiceService():
         duration_minutes: int,
         description: Optional[str],
         images: Optional[List[UploadFile]],
+        master_id=None,
+        salon_id=None,
     ) -> CustomService:
         # Проверяем, существует ли стандартная услуга
-        standard_service = await ServiceStandartRepository.check_service_existence(id=standard_service_id)
+        logger.info(f"Проверка существования стандартной услуги с ID {standard_service_id}")
+
+        standard_service = await ServiceStandartRepository.check_service_existence(service_id=standard_service_id)
         if not standard_service:
-            raise ValueError("Стандартная услуга не найдена")
-        
-        # Достаем id user из current_user и role пользователя
-        user_id = current_user["id"]
-        user_role = current_user["role"]
-        city_id = current_user["city_id"]
-        
-        #  Получаем master_id или salon_id 
+            raise HTTPException(
+                status_code=404,
+                detail=f"Стандартная услуга с ID {standard_service_id} не найдена"
+            )
+
+        # Достаем id user из current_user и роль пользователя
+        user_id = current_user.get("user_id")
+        user_role = current_user.get("role")
+        city_id = current_user.get("city_id")
+
+        # Получаем master_id или salon_id
+        logger.info(f"Роль пользователя: {user_role}. Получаем соответствующую информацию.")
         if user_role == "master":
             master = await MasterRepository.get_master_by_user_id(user_id=user_id)
             if master:
                 master_id = master.id
+                logger.info(f"Мастер найден с ID {master_id}")
             else:
-                raise HTTPException(status_code=404, detail="Мастер не найден")
-        if user_role == "salon":
+                logger.error(f"Мастер с ID {user_id} не найден")
+                raise HTTPException(status_code=404, detail="Мастер не найден")
+        elif user_role == "salon":
             salon = await SalonRepository.get_salon_by_user_id(user_id=user_id)
             if salon:
                 salon_id = salon.id
+                logger.info(f"Салон найден с ID {salon_id}")
             else:
-                raise HTTPException(status_code=404, detail="Салон не найден")
+                logger.error(f"Салон с ID {user_id} не найден")
+                raise HTTPException(status_code=404, detail="Салон не найден")
         else:
+            logger.error(f"Роль пользователя {user_role} не разрешена")
             raise HTTPException(status_code=403, detail="Роль пользователя не разрешена")
 
+        logger.info(f"Создание пользовательской услуги с ID стандартной услуги {standard_service_id}")
         custom_service = await ServiceCustomRepository.create_custom_service(
             standard_service_id=standard_service_id,
             base_price=base_price,
@@ -62,8 +76,9 @@ class CustomServiceService():
             description=description,
             is_active=True,
         )
-        
+
         if images:
+            logger.info(f"Загружаем изображения для услуги с ID {custom_service.id}")
             # Загрузка фото
             photo_ids = await PhotoHandler.add_photos_to_service(
                 images=images,  # Поддержка одного изображения
@@ -73,12 +88,15 @@ class CustomServiceService():
                 role=user_role,
                 image_type="IMAGE_TYPE"
             )
+            logger.info(f"Загружены фото с ID: {photo_ids}")
 
-             # Связываем фото с услугой
+            # Связываем фото с услугой
             for photo_id in photo_ids:
+                logger.info(f"Связываем фото с ID {photo_id} с услугой ID {custom_service.id}")
                 await ServiceCustomRepository.add_photos_to_custom_service(
                     custom_service_id=custom_service.id,
                     photo_id=photo_id
                 )
 
+        logger.info(f"Услуга с ID {custom_service.id} успешно создана")
         return custom_service

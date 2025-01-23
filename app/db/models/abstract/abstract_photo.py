@@ -8,9 +8,9 @@ class AbstractPhoto(AbstractModel):
     """
     Абстрактная модель для фотографий
     """
-    file_name = fields.CharField(max_length=255)
+    file_name = fields.CharField(max_length=255, null=True, default="default_name.jpg")  # Имя файла по умолчанию
     file_path = fields.CharField(max_length=1000)
-    mime_type = fields.CharField(max_length=100)
+    mime_type = fields.CharField(max_length=100, null=True)
     size = fields.IntField()
     width = fields.IntField(null=True)
     height = fields.IntField(null=True)
@@ -19,3 +19,4 @@ class AbstractPhoto(AbstractModel):
 
     class Meta:
         abstract = True
+

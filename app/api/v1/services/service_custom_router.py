@@ -31,6 +31,8 @@ async def create_custom_service_route(
             duration_minutes=duration_minutes,
             description=description,
             images=photos,
+            master_id=None,
+            salon_id = None,
         )
         return service
     except ValueError as e:

@@ -1,4 +1,4 @@
-from typing import Any, Dict
+from typing import Any, Dict, Optional
 from fastapi import HTTPException, status
 from tortoise.exceptions import DoesNotExist, IntegrityError
 from db.models.services_models.service_standart_model import StandardService
@@ -58,29 +58,24 @@ class ServiceStandartRepository(BaseRepository):
                 status_code=status.HTTP_404_NOT_FOUND,
                 detail=f"Фото с ID {photo_id} не найдено."
             )
-        
-    # Проверяем если услуга по указаному id существует    @classmethod
-    async def check_service_existence(cls, service_id: int) -> StandardService:
+
+    @classmethod
+    async def check_service_existence(cls, service_id: int) -> Optional[StandardService]:
         """
-        Проверяет, существует ли услуга с указанным ID.
-        Если услуга не найдена, выбрасывает HTTPException с кодом 404.
+        Проверяет существование услуги.
+        Возвращает услугу, если найдена, иначе None.
         """
         try:
             service = await cls.get_or_none(id=service_id)
             if not service:
-                raise HTTPException(
-                    status_code=status.HTTP_404_NOT_FOUND,
-                    detail=f"Услуга с ID {service_id} не найдена."
-                )
+                logger.warning(f"Услуга с ID {service_id} не найдена.")
+                return None
             return service
-        except HTTPException as he:
-            logger.error(f"HTTP ошибка при проверке существования услуги: {he.detail}", exc_info=True)
-            raise he
         except Exception as e:
-            logger.error(f"Непредвиденная ошибка: {str(e)}", exc_info=True)
+            logger.error(f"Ошибка проверки услуги: {str(e)}")
             raise HTTPException(
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                detail="Произошла ошибка при проверке существования услуги."
+                detail="Ошибка при проверке услуги."
             )
 
 

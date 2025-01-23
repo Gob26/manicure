@@ -59,6 +59,10 @@ class PhotoHandler:
                     width=width,
                     height=height,
                 )
+                logger.info(f"Создаем запись в базе данных с параметрами: "
+                            f"file_name={image.filename}, file_path={default_photo_url}, "
+                            f"mime_type={image.content_type}, size={len(image_bytes)}, "
+                            f"width={width}, height={height}")
 
                 photo_ids.append(photo.id)
 
