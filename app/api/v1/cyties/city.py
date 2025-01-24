@@ -9,12 +9,13 @@ from config.components.logging_config import logger
 
 city_router = APIRouter()
 
-@city_router.get("/{city_slug}",
-                 response_model=FullCitySchema,
-                 status_code=status.HTTP_200_OK,
-                 summary="Получение города по slug",
-                 description="Получить город по его слагу"
-                 )
+@city_router.get(
+    "/{city_slug}",
+    response_model=FullCitySchema,
+    status_code=status.HTTP_200_OK,
+    summary="Получение города по slug",
+    description="Получить город по его слагу"
+)
 async def get_city(city_slug: str, request: Request):
     try:
         city = await CityService.get_city_by_slug(city_slug)

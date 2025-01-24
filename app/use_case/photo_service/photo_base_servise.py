@@ -16,7 +16,7 @@ class PhotoHandler:
         city: str = "default_city",
         role: str = "service",
         image_type: str = "default"
-    ) -> Union[Any, List[Any]]:
+    ) -> List[int]:
         try:
             if not isinstance(images, list):  # Если это одно изображение
                 images = [images]
@@ -67,7 +67,7 @@ class PhotoHandler:
                 photo_ids.append(photo.id)
 
             # Если передано одно изображение, возвращаем ID как одно значение
-            return photo_ids[0] if len(photo_ids) == 1 else photo_ids
+            return photo_ids
 
         except Exception as e:
             logger.error(f"Error while adding photos to service: {str(e)}")

@@ -1,4 +1,4 @@
-from typing import Optional, Dict
+from typing import Optional, Dict, List
 from fastapi import HTTPException
 from tortoise.exceptions import DoesNotExist
 
@@ -17,7 +17,7 @@ class StandardServiceService:
             content: str,
             slug: str,
             category_id: int,
-            default_photo_id: Optional[int] = None,
+            default_photo_id: Optional[List[int]] = None
     ) -> StandardService:
         try:
             # Проверяем существование категории
@@ -38,11 +38,13 @@ class StandardServiceService:
                 "category_id": category_id,
             }
 
-            if default_photo_id:
-                create_data["default_photo_id"] = default_photo_id
-
             # Создание услуги
             service = await ServiceStandartRepository.create_service_standart(**create_data)
+
+            if default_photo_id:
+                for photo_id in default_photo_id:
+                  await StandardServiceService.link_photo_to_service(service.id, photo_id)
+
 
             # Загружаем связанные данные
             await service.fetch_related('category', 'default_photo') # Ленивая загрузка
@@ -76,7 +78,7 @@ class StandardServiceService:
                     detail=f"Фото с ID {photo_id} не найдено."
                 )
 
-            service.default_photo_id = photo.id
+            service.default_photo = photo # Присваиваем обьект фото
             await service.save()
 
             logger.info(f"Фото с ID: {photo_id} успешно привязано к сервису ID: {service_id}")

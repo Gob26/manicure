@@ -1,4 +1,4 @@
-from typing import Optional, Any
+from typing import Optional, Any, List
 from fastapi import HTTPException, status
 
 from db.models.salon_models.salon_model import Salon
@@ -12,7 +12,7 @@ class SalonService:
     async def create_salon(
         city_id: int,
         user_id: int,
-        avatar_id: Optional[int] = None,
+        avatar_id: Optional[List[int]] = None,
         **salon_data
     ) -> Salon:
         if not user_id:
@@ -26,7 +26,12 @@ class SalonService:
             salon_data["slug"] = await generate_unique_slug(Salon, salon_data.get("name"))
 
         if avatar_id:
-            salon_data["avatar_id"] = avatar_id
+            if isinstance(avatar_id, list):
+                if len(avatar_id) > 0:
+                    salon_data["avatar_id"] = avatar_id[0]
+                else:
+                    salon_data['avatar_id'] = None
+            else: salon_data["avater_id"] = avatar_id
 
         salon = await SalonRepository.create_salon(
             user_id=user_id,

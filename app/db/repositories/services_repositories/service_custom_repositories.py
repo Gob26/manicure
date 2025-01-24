@@ -40,3 +40,6 @@ class ServiceCustomRepository(BaseRepository):
         except Exception as e:
             logger.error(f"Неизвестная ошибка: {e}")
             raise HTTPException(status_code=500, detail="Внутренняя ошибка сервера")
+        
+
+    

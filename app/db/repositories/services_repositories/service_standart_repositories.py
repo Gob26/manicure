@@ -44,20 +44,7 @@ class ServiceStandartRepository(BaseRepository):
                 detail="Произошла ошибка при создании услуги."
             )
 
-    @staticmethod
-    async def _check_photo_existence(photo_id: int) -> None:
-        """
-        Проверяет, существует ли фото с указанным ID.
-        """
-        try:
-            photo = await StandardServicePhoto.get(id=photo_id)
-            logger.info(f"Фото с ID {photo_id} успешно найдено: {photo}")
-        except DoesNotExist:
-            logger.error(f"Фото с ID {photo_id} не найдено в таблице standard_service_photos")
-            raise HTTPException(
-                status_code=status.HTTP_404_NOT_FOUND,
-                detail=f"Фото с ID {photo_id} не найдено."
-            )
+
 
     @classmethod
     async def check_service_existence(cls, service_id: int) -> Optional[StandardService]:

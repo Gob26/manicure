@@ -11,7 +11,14 @@ from config.components.logging_config import logger
 
 service_custom_router = APIRouter()
 
-@service_custom_router.post("/", response_model=CustomServiceOut, status_code=status.HTTP_201_CREATED)
+@service_custom_router.post(
+    "/", 
+    response_model=CustomServiceOut, 
+    status_code=status.HTTP_201_CREATED
+    summary="Создание новой услуги",
+    description="Создает новую услугу.",
+    )
+
 async def create_custom_service_route(
     standard_service_id: int = Form(..., description="ID стандартной услуги"),
     base_price: float = Form(..., description="Базовая стоимость услуги"),

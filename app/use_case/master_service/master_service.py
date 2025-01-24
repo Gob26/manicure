@@ -1,5 +1,5 @@
 from fastapi import HTTPException, status
-from typing import Optional, Any
+from typing import Optional, Any, List
 
 from db.models.master_models.master_model import Master
 from db.repositories.master_repositories.master_repositories import MasterRepository
@@ -12,7 +12,7 @@ class MasterService:
     async def create_master(
         city_id: int,
         user_id: int,
-        avatar_id: Optional[int] = None,
+        avatar_id: Optional[List[int]] = None,
         **master_data
     ) -> Master:
         if not user_id:
@@ -26,7 +26,13 @@ class MasterService:
             master_data["slug"] = await generate_unique_slug(Master, master_data.get("name"))
 
         if avatar_id:
-            master_data["avatar_id"] = avatar_id
+            if isinstance(avatar_id, list): # Проверяем, что это список
+                if len(avatar_id) > 0:
+                    master_data["avatar_id"] = avatar_id[0]  # Берем первый элемент списка
+                else:
+                    master_data["avatar_id"] = None # Обрабатываем случай пустого списка
+            else:
+                master_data["avatar_id"] = avatar_id # Если пришло одно число, то используем его
 
         master = await MasterRepository.create_master(
             user_id=user_id,

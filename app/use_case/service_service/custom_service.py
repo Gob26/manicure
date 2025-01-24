@@ -1,4 +1,4 @@
-from typing import List, Optional, Dict
+from typing import Any, List, Optional, Dict
 from fastapi import HTTPException, UploadFile
 from tortoise.exceptions import DoesNotExist
 from config.components.logging_config import logger  # Путь к настройкам логгера
@@ -100,3 +100,40 @@ class CustomServiceService():
 
         logger.info(f"Услуга с ID {custom_service.id} успешно создана")
         return custom_service
+
+@staticmethod
+async def update_custom_service(
+    current_user: dict,
+    custom_service_id: int,
+    updated_service_data: Dict[str, Any],
+    images: Optional[List[UploadFile]],
+) -> CustomService:
+    try:
+        custom_service = await CustomService.get_or_none(id=custom_service_id)
+        if not custom_service:
+            raise HTTPException(status_code=404, detail="Услуга не найдена")
+
+        # Проверка прав (например, владелец или админ)
+        if current_user.get("role") not in ["admin"]:
+            if custom_service.master_id and current_user.get("user_id") != custom_service.master.user_id:
+                raise HTTPException(status_code=403, detail="Нет прав для обновления этой услуги")
+            if custom_service.salon_id and current_user.get("user_id") != custom_service.salon.user_id:
+                raise HTTPException(status_code=403, detail="Нет прав для обновления этой услуги")
+
+        await custom_service.update_from_dict(updated_service_data).save()
+
+        if images:
+            photo_ids = await PhotoHandler.add_photos_to_service(images, CustomServicePhoto, str(custom_service_id), str(current_user.get("city_id")), current_user.get("role"), "IMAGE_TYPE")
+            # Удаляем старые фото (если нужно)
+            await CustomServicePhoto.filter(custom_service_id=custom_service_id).delete()
+            for photo_id in photo_ids:
+                await ServiceCustomRepository.add_photos_to_custom_service(custom_service.id, photo_id)
+
+        await custom_service.fetch_related("standard_service", "master", "salon", "attributes", "photos")
+
+        return custom_service
+    except Exception as e:
+        logger.error(f"Ошибка при обновлении услуги: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Ошибка при обновлении услуги")
+    
+    

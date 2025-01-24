@@ -20,6 +20,8 @@ IMAGE_TYPE = "service_image"  # Тип изображения
     "/services/standart",
     response_model=StandardServiceOut,
     status_code=status.HTTP_201_CREATED,
+    summary="Создание стандартной услуги",
+    description="Создает новую стандартную услугу.",
 )
 async def create_service_standart_route(
     name: str = Form(...),
