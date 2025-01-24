@@ -42,3 +42,11 @@ class PhotoRepository(BaseRepository):
         await cls.delete(photo)
         logger.info(f"Фотография с ID {photo_id} удалена")
         return True
+    
+
+    @classmethod
+    async def delete_by_custom_service_id(cls, custom_service_id: int) -> int:
+        """Удаление фотографий, связанных с пользовательской услугой, по ID услуги"""
+        deleted_count = await cls.model.filter(custom_service_id=custom_service_id).delete()
+        logger.info(f"Удалены фотографии для пользовательской услуги с ID {custom_service_id}: {deleted_count}")
+        return deleted_count

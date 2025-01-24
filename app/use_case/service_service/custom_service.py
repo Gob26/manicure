@@ -1,6 +1,7 @@
 from typing import Any, List, Optional, Dict
 from fastapi import HTTPException, UploadFile
 from tortoise.exceptions import DoesNotExist
+from app.db.repositories.photo_repositories.photo_standard_service_repository import PhotoRepository
 from config.components.logging_config import logger  # Путь к настройкам логгера
 
 from app.db.repositories.base_repositories.base_repositories import BaseRepository
@@ -14,6 +15,7 @@ from db.repositories.services_repositories.service_standart_repositories import 
 from db.repositories.services_repositories.service_custom_repositories import ServiceCustomRepository
 from db.models.photo_models.photo_standart_service_model import CustomServicePhoto
 from use_case.photo_service.photo_base_servise import PhotoHandler
+from use_case.photo_service.photo_custom_service import PhotoCustomRepository
 from use_case.utils.slug_generator import generate_unique_slug
 
 
@@ -32,7 +34,7 @@ class CustomServiceService():
         # Проверяем, существует ли стандартная услуга
         logger.info(f"Проверка существования стандартной услуги с ID {standard_service_id}")
 
-        standard_service = await ServiceStandartRepository.check_service_existence(service_id=standard_service_id)
+        standard_service = await ServiceStandartRepository.get_service_by_id(service_id=standard_service_id)
         if not standard_service:
             raise HTTPException(
                 status_code=404,
@@ -101,39 +103,61 @@ class CustomServiceService():
         logger.info(f"Услуга с ID {custom_service.id} успешно создана")
         return custom_service
 
-@staticmethod
-async def update_custom_service(
-    current_user: dict,
-    custom_service_id: int,
-    updated_service_data: Dict[str, Any],
-    images: Optional[List[UploadFile]],
-) -> CustomService:
-    try:
-        custom_service = await CustomService.get_or_none(id=custom_service_id)
-        if not custom_service:
-            raise HTTPException(status_code=404, detail="Услуга не найдена")
+    @staticmethod
+    async def update_custom_service(
+            current_user: dict,
+            custom_service_id: int,
+            updated_service_data: Dict[str, Any],
+            images: Optional[List[UploadFile]],
+    ) -> CustomService:
+        try:
+            # Загружаем услугу с полной информацией
+            custom_service = await ServiceCustomRepository.get_custom_service_by_id(id=custom_service_id)
+            await custom_service.fetch_related("master", "salon")
 
-        # Проверка прав (например, владелец или админ)
-        if current_user.get("role") not in ["admin"]:
-            if custom_service.master_id and current_user.get("user_id") != custom_service.master.user_id:
-                raise HTTPException(status_code=403, detail="Нет прав для обновления этой услуги")
-            if custom_service.salon_id and current_user.get("user_id") != custom_service.salon.user_id:
-                raise HTTPException(status_code=403, detail="Нет прав для обновления этой услуги")
+            if not custom_service:
+                raise HTTPException(status_code=404, detail="Услуга не найдена")
 
-        await custom_service.update_from_dict(updated_service_data).save()
+            # Проверка прав
+            user_id = current_user.get("user_id")
+            user_role = current_user.get("role")
 
-        if images:
-            photo_ids = await PhotoHandler.add_photos_to_service(images, CustomServicePhoto, str(custom_service_id), str(current_user.get("city_id")), current_user.get("role"), "IMAGE_TYPE")
-            # Удаляем старые фото (если нужно)
-            await CustomServicePhoto.filter(custom_service_id=custom_service_id).delete()
-            for photo_id in photo_ids:
-                await ServiceCustomRepository.add_photos_to_custom_service(custom_service.id, photo_id)
+            # Проверка прав для администратора или владельца услуги
+            if user_role != "admin":
+                if custom_service.master and custom_service.master.user_id != user_id:
+                    if custom_service.salon and custom_service.salon.user_id != user_id:
+                        raise HTTPException(status_code=403, detail="Нет прав для обновления этой услуги")
 
-        await custom_service.fetch_related("standard_service", "master", "salon", "attributes", "photos")
+            # Обновление данных услуги
+            custom_service = await ServiceCustomRepository.update_service(custom_service_id, updated_service_data)
 
-        return custom_service
-    except Exception as e:
-        logger.error(f"Ошибка при обновлении услуги: {e}", exc_info=True)
-        raise HTTPException(status_code=500, detail="Ошибка при обновлении услуги")
-    
-    
+            # Работа с фотографиями (без изменений)
+            if images:
+                await PhotoCustomRepository.delete_by_custom_service_id(custom_service_id)
+
+                try:
+                    photo_ids = await PhotoHandler.add_photos_to_service(
+                        images,
+                        CustomServicePhoto,
+                        str(custom_service_id),
+                        str(current_user.get("city_id")),
+                        current_user.get("role"),
+                        "IMAGE_TYPE",
+                    )
+                    for photo_id in photo_ids:
+                        await ServiceCustomRepository.add_photos_to_custom_service(
+                            custom_service_id=custom_service.id,
+                            photo_id=photo_id
+                        )
+                except Exception as photo_error:
+                    logger.error(f"Ошибка при загрузке фото: {photo_error}", exc_info=True)
+                    raise HTTPException(status_code=500, detail="Ошибка при загрузке фото")
+
+            await custom_service.fetch_related("standard_service", "master", "salon", "attributes", "photos")
+            return custom_service
+
+        except HTTPException as http_ex:
+            raise http_ex
+        except Exception as e:
+            logger.error(f"Ошибка при обновлении услуги {custom_service_id}: {e}", exc_info=True)
+            raise HTTPException(status_code=500, detail="Ошибка при обновлении услуги")

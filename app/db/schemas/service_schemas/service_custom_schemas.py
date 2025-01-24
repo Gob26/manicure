@@ -32,8 +32,7 @@ class CustomServiceCreate(BaseModel):
 
 # Схема для обновления CustomService
 class CustomServiceUpdate(BaseModel):
-    master_id: Optional[int] = Field(None, description="ID мастера, предоставляющего услугу")
-    salon_id: Optional[int] = Field(None, description="ID салона, предоставляющего услугу")
+
     standard_service_id: Optional[int] = Field(None, description="ID базовой услуги")
     base_price: Optional[Decimal] = Field(None, description="Базовая стоимость услуги")
     duration_minutes: Optional[int] = Field(None, description="Длительность услуги в минутах")
