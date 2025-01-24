@@ -1,13 +1,9 @@
-from typing import Optional, Dict, List
+from typing import Optional, List
 from fastapi import HTTPException
-from tortoise.exceptions import DoesNotExist
-
-from db.models import StandardService, StandardServicePhoto, Category
-from db.repositories.services_repositories.category_service_repositories import ServiceCategoryRepository
+from db.models import StandardService
 from db.repositories.services_repositories.service_standart_repositories import ServiceStandartRepository
 from use_case.utils.slug_generator import generate_unique_slug
 from config.components.logging_config import logger
-
 
 class StandardServiceService:
     @staticmethod
@@ -20,13 +16,10 @@ class StandardServiceService:
             default_photo_id: Optional[List[int]] = None
     ) -> StandardService:
         try:
-            # Проверяем существование категории
-            category = await StandardServiceService.get_category_by_id(category_id)
+            category = await ServiceStandartRepository.get_category_by_id(category_id)
             if not category:
-                raise HTTPException(
-                    status_code=404,
-                    detail=f"Category with ID {category_id} not found"
-                )
+                raise HTTPException(status_code=404, detail=f"Category with ID {category_id} not found")
+
             if not slug:
                 slug = await generate_unique_slug(StandardService, name)
 
@@ -38,16 +31,13 @@ class StandardServiceService:
                 "category_id": category_id,
             }
 
-            # Создание услуги
             service = await ServiceStandartRepository.create_service_standart(**create_data)
 
             if default_photo_id:
                 for photo_id in default_photo_id:
-                  await StandardServiceService.link_photo_to_service(service.id, photo_id)
+                    await ServiceStandartRepository.link_photo_to_service(service.id, photo_id)
 
-
-            # Загружаем связанные данные
-            await service.fetch_related('category', 'default_photo') # Ленивая загрузка
+            await service.fetch_related('category', 'default_photo')  # Eager loading after creation
 
             return service
 
@@ -56,45 +46,3 @@ class StandardServiceService:
         except Exception as e:
             logger.error(f"Ошибка при создании стандартного сервиса: {str(e)}", exc_info=True)
             raise HTTPException(status_code=500, detail="Ошибка при создании сервиса.")
-
-
-    @staticmethod
-    async def link_photo_to_service(service_id: int, photo_id: int) -> None:
-        """
-        Привязывает фото к услуге, обновляя default_photo_id.
-        """
-        try:
-            service = await StandardService.get_or_none(id=service_id)
-            if not service:
-                raise HTTPException(
-                    status_code=404,
-                    detail=f"Сервис с ID {service_id} не найден."
-                )
-
-            photo = await StandardServicePhoto.get_or_none(id=photo_id)
-            if not photo:
-                raise HTTPException(
-                    status_code=404,
-                    detail=f"Фото с ID {photo_id} не найдено."
-                )
-
-            service.default_photo = photo # Присваиваем обьект фото
-            await service.save()
-
-            logger.info(f"Фото с ID: {photo_id} успешно привязано к сервису ID: {service_id}")
-        except HTTPException as he:
-            raise he
-        except Exception as e:
-            logger.error(f"Ошибка при привязке фото к сервису: {str(e)}", exc_info=True)
-            raise HTTPException(status_code=500, detail="Ошибка при привязке фото к сервису.")
-
-    @staticmethod
-    async def get_category_by_id(category_id: int) -> Optional[Category]:
-        """
-        Возвращает категорию по её ID или None, если не найдена.
-        """
-        try:
-            category = await ServiceCategoryRepository.get_category_id(category_id=category_id)
-            return category
-        except DoesNotExist:
-            return None

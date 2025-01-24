@@ -10,7 +10,7 @@ master_list_router = APIRouter()
 @master_list_router.get(
     "/{city_slug}/masters",
     response_model=List[MasterListSchema],
-    summary="Получение списка мастеров города"
+    summary="Получение списка мастеров города",
     description="Получить список мастеров города"
 )
 async def get_masters_by_city(city_slug: str):

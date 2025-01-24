@@ -39474,3 +39474,64 @@ TypeError: int() argument must be a string, a bytes-like object or a real number
 2025-01-24 16:22:27 - my_app - [33mWARNING[0m - [33mWarning message[0m
 2025-01-24 16:22:27 - my_app - [31mERROR[0m - [31mError message[0m
 2025-01-24 16:22:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-24 16:53:44 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-24 16:53:44 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-24 16:53:44 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-24 16:53:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-24 16:53:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-24 16:54:02 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-24 16:54:02 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-24 16:54:02 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-24 16:54:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-24 16:54:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-24 16:54:23 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-24 16:54:23 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-24 16:54:23 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-24 16:54:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-24 16:54:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-24 16:54:38 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-24 16:54:38 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-24 16:54:38 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-24 16:54:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-24 16:54:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-24 16:54:49 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-24 16:54:49 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-24 16:54:49 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-24 16:54:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-24 16:54:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-24 16:54:58 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-24 16:54:58 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-24 16:54:58 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-24 16:54:58 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-24 16:54:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-24 16:55:20 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-24 16:55:20 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc3Mjg0ODIsImNpdHkiOiIifQ.UODSqyGXYc5ekQIXW8bBrkPHC9DXd5NqVt6B0G8_Duc[0m
+2025-01-24 16:55:20 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737728482, 'city': ''}[0m
+2025-01-24 16:55:20 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737728482, 'city': ''}[0m
+2025-01-24 16:55:20 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-24 16:55:20 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-24 16:55:20 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '“Le_Rire”,_Number_134,_May_29,_Paris,_1897.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/default_city/service/service_image/_pc.webp', 'mime_type': 'image/jpeg', 'size': 171221, 'width': 304, 'height': 420}[0m
+2025-01-24 16:55:20 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=“Le_Rire”,_Number_134,_May_29,_Paris,_1897.jpg, file_path=/home/gob/PycharmProjects/manicure/media/default_city/service/service_image/_pc.webp, mime_type=image/jpeg, size=171221, width=304, height=420[0m
+2025-01-24 16:55:20 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'testovaia-usluga-dfsd'[0m
+2025-01-24 16:55:20 - my_app - [32mINFO[0m - [32mСоздание стандартной услуги с параметрами: {'name': 'Тестовая услуга dfsd', 'title': 'Вот такая тестовая услуга', 'content': 'тест тест ', 'slug': 'testovaia-usluga-dfsd', 'category_id': 1}[0m
+2025-01-24 16:55:20 - my_app - [32mINFO[0m - [32mStandardService создан с данными: {'name': 'Тестовая услуга dfsd', 'title': 'Вот такая тестовая услуга', 'content': 'тест тест ', 'slug': 'testovaia-usluga-dfsd', 'category_id': 1}[0m
+2025-01-24 16:55:20 - my_app - [32mINFO[0m - [32mУслуга успешно создана с ID: 25[0m
+2025-01-24 16:55:20 - my_app - [32mINFO[0m - [32mФото с ID: 32 успешно привязано к сервису ID: 25[0m
+2025-01-24 16:57:49 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-24 16:57:49 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-24 16:57:49 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-24 16:57:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-24 16:57:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-24 16:58:01 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-24 16:58:01 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc3Mjg0ODIsImNpdHkiOiIifQ.UODSqyGXYc5ekQIXW8bBrkPHC9DXd5NqVt6B0G8_Duc[0m
+2025-01-24 16:58:01 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737728482, 'city': ''}[0m
+2025-01-24 16:58:01 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737728482, 'city': ''}[0m
+2025-01-24 16:58:01 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-24 16:58:01 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-24 16:58:01 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '“Le_Rire”,_Number_134,_May_29,_Paris,_1897.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/default_city/service/service_image/_pc.webp', 'mime_type': 'image/jpeg', 'size': 171221, 'width': 304, 'height': 420}[0m
+2025-01-24 16:58:01 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=“Le_Rire”,_Number_134,_May_29,_Paris,_1897.jpg, file_path=/home/gob/PycharmProjects/manicure/media/default_city/service/service_image/_pc.webp, mime_type=image/jpeg, size=171221, width=304, height=420[0m
+2025-01-24 16:58:01 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'testovaia-usluga-777'[0m
+2025-01-24 16:58:01 - my_app - [32mINFO[0m - [32mСоздание стандартной услуги с параметрами: {'name': 'Тестовая услуга 777', 'title': 'Вот такая тестовая услуга 777', 'content': 'тест тест ', 'slug': 'testovaia-usluga-777', 'category_id': 1}[0m
+2025-01-24 16:58:01 - my_app - [32mINFO[0m - [32mStandardService создан с данными: {'name': 'Тестовая услуга 777', 'title': 'Вот такая тестовая услуга 777', 'content': 'тест тест ', 'slug': 'testovaia-usluga-777', 'category_id': 1}[0m
+2025-01-24 16:58:01 - my_app - [32mINFO[0m - [32mУслуга успешно создана с ID: 26[0m
+2025-01-24 16:58:01 - my_app - [32mINFO[0m - [32mФото с ID: 33 успешно привязано к сервису ID: 26[0m

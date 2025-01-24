@@ -10,7 +10,7 @@ master_read_router = APIRouter()
 @master_read_router.get(
     "/{city_slug}/masters/{master_slug}",
     response_model=MasterCreateSchema,
-    summary="Получение мастера по slug города и slug мастера"
+    summary="Получение мастера по slug города и slug мастера",
     description="Получение мастера по slug города и slug мастера"
 )
 async def get_master_by_city_and_slug_route(city_slug: str, master_slug: str):

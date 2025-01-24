@@ -1,83 +1,71 @@
-from typing import Any, Dict, Optional
+from typing import Any, Dict, Optional, List
 from fastapi import HTTPException, status
 from tortoise.exceptions import DoesNotExist, IntegrityError
 from db.models.services_models.service_standart_model import StandardService
 from db.repositories.base_repositories.base_repositories import BaseRepository
 from config.components.logging_config import logger
 from db.models.photo_models.photo_standart_service_model import StandardServicePhoto
-
+from db.models import Category
 
 class ServiceStandartRepository(BaseRepository):
     model = StandardService
 
     @classmethod
     async def create_service_standart(cls, **kwargs) -> StandardService:
-        """
-        Создает стандартную услугу, проверяя наличие связанных объектов, таких как фотографии.
-        """
+        """Создает стандартную услугу."""
         logger.info(f"Создание стандартной услуги с параметрами: {kwargs}")
-
         try:
-            # Проверка существования фото, если указан default_photo_id
-            default_photo_id = kwargs.get("default_photo_id")
-            if default_photo_id:
-                await cls._check_photo_existence(default_photo_id)
-
-            # Создаем услугу
             service = await cls.create(**kwargs)
             logger.info(f"Услуга успешно создана с ID: {service.id}")
             return service
-
         except IntegrityError as e:
             logger.error(f"Ошибка целостности данных: {str(e)}", exc_info=True)
-            raise HTTPException(
-                status_code=status.HTTP_400_BAD_REQUEST,
-                detail="Ошибка целостности данных. Проверьте входные данные."
-            )
-        except HTTPException as he:
-            logger.error(f"HTTP ошибка при создании услуги: {he.detail}", exc_info=True)
-            raise he
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Ошибка целостности данных. Проверьте входные данные.")
         except Exception as e:
             logger.error(f"Непредвиденная ошибка: {str(e)}", exc_info=True)
-            raise HTTPException(
-                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                detail="Произошла ошибка при создании услуги."
-            )
-
-
+            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Произошла ошибка при создании услуги.")
 
     @classmethod
-    async def check_service_existence(cls, service_id: int) -> Optional[StandardService]:
-        """
-        Проверяет существование услуги.
-        Возвращает услугу, если найдена, иначе None.
-        """
+    async def get_service_by_id(cls, service_id: int) -> Optional[StandardService]:
+        """Получает услугу по ID или None."""
         try:
             service = await cls.get_or_none(id=service_id)
             if not service:
                 logger.warning(f"Услуга с ID {service_id} не найдена.")
-                return None
             return service
         except Exception as e:
-            logger.error(f"Ошибка проверки услуги: {str(e)}")
-            raise HTTPException(
-                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                detail="Ошибка при проверке услуги."
-            )
+            logger.error(f"Ошибка получения услуги: {str(e)}")
+            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Ошибка при получении услуги.")
 
+    @classmethod
+    async def get_category_by_id(cls, category_id: int) -> Optional[Category]:
+        """Получает категорию по ID или None."""
+        try:
+            category = await Category.get_or_none(id=category_id)
+            if not category:
+                logger.warning(f"Категория с ID {category_id} не найдена.")
+            return category
+        except Exception as e:
+            logger.error(f"Ошибка получения категории: {str(e)}")
+            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Ошибка при получении категории.")
 
+    @classmethod
+    async def link_photo_to_service(cls, service_id: int, photo_id: int) -> None:
+        """Привязывает фото к услуге."""
+        try:
+            service = await cls.get_service_by_id(service_id)
+            if not service:
+                raise HTTPException(status_code=404, detail=f"Сервис с ID {service_id} не найден.")
 
+            photo = await StandardServicePhoto.get_or_none(id=photo_id)
+            if not photo:
+                raise HTTPException(status_code=404, detail=f"Фото с ID {photo_id} не найдено.")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+            service.default_photo = photo
+            await service.save()
+            logger.info(f"Фото с ID: {photo_id} успешно привязано к сервису ID: {service_id}")
+        except HTTPException as he:
+            raise he # Пробрасываем HTTP исключения
+        except Exception as e:
+            logger.error(f"Ошибка при привязке фото: {str(e)}", exc_info=True)
+            raise HTTPException(status_code=500, detail="Ошибка при привязке фото к сервису.")

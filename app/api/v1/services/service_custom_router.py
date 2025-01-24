@@ -14,7 +14,7 @@ service_custom_router = APIRouter()
 @service_custom_router.post(
     "/", 
     response_model=CustomServiceOut, 
-    status_code=status.HTTP_201_CREATED
+    status_code=status.HTTP_201_CREATED,
     summary="Создание новой услуги",
     description="Создает новую услугу.",
     )
