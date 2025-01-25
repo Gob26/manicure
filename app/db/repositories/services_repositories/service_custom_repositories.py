@@ -60,6 +60,12 @@ class ServiceCustomRepository(BaseRepository):
         except Exception as e:
             logger.error(f"Неизвестная ошибка: {e}")
             raise HTTPException(status_code=500, detail="Внутренняя ошибка сервера")
+            logger.info(f"Фото {photo_id} связано с пользовательской услугой {custom_service_id}")
+
+            return {"status": "ok"}
+        except Exception as e:
+            logger.error(f"Неизвестная ошибка: {e}")
+            raise HTTPException(status_code=500, detail="Внутренняя ошибка сервера")
 
     @classmethod
     async def get_custom_service_by_id(cls, id: int) -> Optional[CustomService]:  # Важно указать Optional

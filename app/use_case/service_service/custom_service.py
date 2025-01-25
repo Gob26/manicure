@@ -1,22 +1,17 @@
 from typing import Any, List, Optional, Dict
 from fastapi import HTTPException, UploadFile
-from tortoise.exceptions import DoesNotExist
-from app.db.repositories.photo_repositories.photo_standard_service_repository import PhotoRepository
-from config.components.logging_config import logger  # Путь к настройкам логгера
 
-from app.db.repositories.base_repositories.base_repositories import BaseRepository
 from app.db.repositories.master_repositories.master_repositories import MasterRepository
 from app.db.repositories.salon_repositories.salon_repositories import SalonRepository
-from db.models.services_models.service_standart_model import StandardService
-from use_case.base_services.base_service import BaseService
-from db.models import CustomService, CustomServicePhoto, Category
-from db.repositories.services_repositories.category_service_repositories import ServiceCategoryRepository
+
+from db.models import CustomService
 from db.repositories.services_repositories.service_standart_repositories import ServiceStandartRepository
 from db.repositories.services_repositories.service_custom_repositories import ServiceCustomRepository
 from db.models.photo_models.photo_standart_service_model import CustomServicePhoto
 from use_case.photo_service.photo_base_servise import PhotoHandler
 from use_case.photo_service.photo_custom_service import PhotoCustomRepository
-from use_case.utils.slug_generator import generate_unique_slug
+from config.components.logging_config import logger
+from use_case.utils.permissions import UserAccessService
 
 
 class CustomServiceService():
@@ -31,6 +26,7 @@ class CustomServiceService():
         master_id=None,
         salon_id=None,
     ) -> CustomService:
+
         # Проверяем, существует ли стандартная услуга
         logger.info(f"Проверка существования стандартной услуги с ID {standard_service_id}")
 
@@ -47,26 +43,14 @@ class CustomServiceService():
         city_id = current_user.get("city_id")
 
         # Получаем master_id или salon_id
-        logger.info(f"Роль пользователя: {user_role}. Получаем соответствующую информацию.")
-        if user_role == "master":
-            master = await MasterRepository.get_master_by_user_id(user_id=user_id)
-            if master:
-                master_id = master.id
-                logger.info(f"Мастер найден с ID {master_id}")
-            else:
-                logger.error(f"Мастер с ID {user_id} не найден")
-                raise HTTPException(status_code=404, detail="Мастер не найден")
-        elif user_role == "salon":
-            salon = await SalonRepository.get_salon_by_user_id(user_id=user_id)
-            if salon:
-                salon_id = salon.id
-                logger.info(f"Салон найден с ID {salon_id}")
-            else:
-                logger.error(f"Салон с ID {user_id} не найден")
-                raise HTTPException(status_code=404, detail="Салон не найден")
-        else:
-            logger.error(f"Роль пользователя {user_role} не разрешена")
-            raise HTTPException(status_code=403, detail="Роль пользователя не разрешена")
+        master_or_salon_id = await UserAccessService.get_master_or_salon_id(
+            user_role=user_role,
+            user_id=user_id,
+            master_repository=MasterRepository,
+            salon_repository=SalonRepository
+        )
+
+        logger.info(f"Получен ID: {master_or_salon_id} для роли: {user_role}")
 
         logger.info(f"Создание пользовательской услуги с ID стандартной услуги {standard_service_id}")
         custom_service = await ServiceCustomRepository.create_custom_service(
@@ -110,6 +94,7 @@ class CustomServiceService():
             updated_service_data: Dict[str, Any],
             images: Optional[List[UploadFile]],
     ) -> CustomService:
+
         try:
             # Загружаем услугу с полной информацией
             custom_service = await ServiceCustomRepository.get_custom_service_by_id(id=custom_service_id)
@@ -122,11 +107,14 @@ class CustomServiceService():
             user_id = current_user.get("user_id")
             user_role = current_user.get("role")
 
-            # Проверка прав для администратора или владельца услуги
-            if user_role != "admin":
-                if custom_service.master and custom_service.master.user_id != user_id:
-                    if custom_service.salon and custom_service.salon.user_id != user_id:
-                        raise HTTPException(status_code=403, detail="Нет прав для обновления этой услуги")
+            # Проверяем права на обновление услуги
+            await UserAccessService.check_admin_or_owner_permission(
+                user_role=user_role,
+                user_id=user_id,
+                custom_service=custom_service,
+                master_repository=MasterRepository,
+                salon_repository=SalonRepository
+            )
 
             # Обновление данных услуги
             custom_service = await ServiceCustomRepository.update_service(custom_service_id, updated_service_data)
@@ -153,7 +141,7 @@ class CustomServiceService():
                     logger.error(f"Ошибка при загрузке фото: {photo_error}", exc_info=True)
                     raise HTTPException(status_code=500, detail="Ошибка при загрузке фото")
 
-            await custom_service.fetch_related("standard_service", "master", "salon", "attributes", "photos")
+            await custom_service.fetch_related("standard_service", "master", "salon", "attributes", "custom_service_photos")
             return custom_service
 
         except HTTPException as http_ex:

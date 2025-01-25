@@ -40638,3 +40638,493 @@ Traceback (most recent call last):
     raise OperationalError(
 tortoise.exceptions.OperationalError: relation photos for custom_services not found
 2025-01-24 20:47:09 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 500: Ошибка при обновлении услуги[0m
+2025-01-25 11:31:28 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 11:31:28 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 11:31:28 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 11:31:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 11:31:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 11:31:50 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: master333[0m
+2025-01-25 11:31:50 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя master333[0m
+2025-01-25 11:31:50 - my_app - [32mINFO[0m - [32mПользователь master333 найден, проверка пароля.[0m
+2025-01-25 11:31:50 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-25 11:31:50 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 121, 'username': 'master333', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-25 11:31:50 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc3OTU3MTAsImNpdHkiOiIifQ.yB2E8sgzUJk-LkQEk_TbExfWDc96OJYKWhgRIGJZKYU[0m
+2025-01-25 11:31:50 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-25 11:32:15 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 11:32:15 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc3OTU3MTAsImNpdHkiOiIifQ.yB2E8sgzUJk-LkQEk_TbExfWDc96OJYKWhgRIGJZKYU[0m
+2025-01-25 11:32:15 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737795710, 'city': ''}[0m
+2025-01-25 11:32:15 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737795710, 'city': ''}[0m
+2025-01-25 11:32:15 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 11:32:15 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 11:32:15 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '5e82eea735604.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/default_city/service/service_image/_pc.webp', 'mime_type': 'image/jpeg', 'size': 130909, 'width': 800, 'height': 533}[0m
+2025-01-25 11:32:15 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=5e82eea735604.jpg, file_path=/home/gob/PycharmProjects/manicure/media/default_city/service/service_image/_pc.webp, mime_type=image/jpeg, size=130909, width=800, height=533[0m
+2025-01-25 11:32:15 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'string1212121'[0m
+2025-01-25 11:32:15 - my_app - [32mINFO[0m - [32mСоздание стандартной услуги с параметрами: {'name': 'string1212121', 'title': 'string21212', 'content': 'string212121', 'slug': 'string1212121', 'category_id': 1}[0m
+2025-01-25 11:32:15 - my_app - [32mINFO[0m - [32mStandardService создан с данными: {'name': 'string1212121', 'title': 'string21212', 'content': 'string212121', 'slug': 'string1212121', 'category_id': 1}[0m
+2025-01-25 11:32:15 - my_app - [32mINFO[0m - [32mУслуга успешно создана с ID: 1[0m
+2025-01-25 11:32:15 - my_app - [32mINFO[0m - [32mФото с ID: 1 успешно привязано к сервису ID: 1[0m
+2025-01-25 11:33:11 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 11:33:11 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc3OTU3MTAsImNpdHkiOiIifQ.yB2E8sgzUJk-LkQEk_TbExfWDc96OJYKWhgRIGJZKYU[0m
+2025-01-25 11:33:11 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737795710, 'city': ''}[0m
+2025-01-25 11:33:11 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737795710, 'city': ''}[0m
+2025-01-25 11:33:11 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 11:33:11 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 11:33:11 - my_app - [31mERROR[0m - [31mОшибка при обновлении услуги 1: 'NoneType' object has no attribute 'fetch_related'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/service_service/custom_service.py", line 116, in update_custom_service
+    await custom_service.fetch_related("master", "salon")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'fetch_related'
+2025-01-25 11:33:11 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 500: Ошибка при обновлении услуги[0m
+2025-01-25 12:02:51 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 12:02:51 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc3OTU3MTAsImNpdHkiOiIifQ.yB2E8sgzUJk-LkQEk_TbExfWDc96OJYKWhgRIGJZKYU[0m
+2025-01-25 12:02:51 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-01-25 12:05:05 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: master333[0m
+2025-01-25 12:05:05 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя master333[0m
+2025-01-25 12:05:05 - my_app - [32mINFO[0m - [32mПользователь master333 найден, проверка пароля.[0m
+2025-01-25 12:05:06 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-25 12:05:06 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 121, 'username': 'master333', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-25 12:05:06 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc3OTc3MDYsImNpdHkiOiIifQ.m093OI6zY3PpSfHnqZr1LDlnNcUA8ms1LL2WQKgm9Tk[0m
+2025-01-25 12:05:06 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-25 12:05:36 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 12:05:36 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc3OTc3MDYsImNpdHkiOiIifQ.m093OI6zY3PpSfHnqZr1LDlnNcUA8ms1LL2WQKgm9Tk[0m
+2025-01-25 12:05:36 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737797706, 'city': ''}[0m
+2025-01-25 12:05:36 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737797706, 'city': ''}[0m
+2025-01-25 12:05:36 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 12:05:36 - my_app - [32mINFO[0m - [32mПроверка существования стандартной услуги с ID 1[0m
+2025-01-25 12:05:36 - my_app - [32mINFO[0m - [32mРоль пользователя: master. Получаем соответствующую информацию.[0m
+2025-01-25 12:05:36 - my_app - [32mINFO[0m - [32mМастер найден с ID 37[0m
+2025-01-25 12:05:36 - my_app - [32mINFO[0m - [32mСоздание пользовательской услуги с ID стандартной услуги 1[0m
+2025-01-25 12:05:36 - my_app - [32mINFO[0m - [32mCustomService создан с данными: {'standard_service_id': 1, 'base_price': 1.0, 'duration_minutes': 110, 'master_id': 37, 'salon_id': None, 'description': 'string', 'is_active': True}[0m
+2025-01-25 12:05:36 - my_app - [32mINFO[0m - [32mПользовательская услуга создана: 1[0m
+2025-01-25 12:05:36 - my_app - [32mINFO[0m - [32mЗагружаем изображения для услуги с ID 1[0m
+2025-01-25 12:05:36 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 12:05:37 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '1.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp', 'mime_type': 'image/jpeg', 'size': 88696, 'width': 1024, 'height': 1280}[0m
+2025-01-25 12:05:37 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=1.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp, mime_type=image/jpeg, size=88696, width=1024, height=1280[0m
+2025-01-25 12:05:37 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 12:05:37 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '3.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp', 'mime_type': 'image/jpeg', 'size': 94581, 'width': 1024, 'height': 1280}[0m
+2025-01-25 12:05:37 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=3.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp, mime_type=image/jpeg, size=94581, width=1024, height=1280[0m
+2025-01-25 12:05:37 - my_app - [32mINFO[0m - [32mЗагружены фото с ID: [1, 2][0m
+2025-01-25 12:05:37 - my_app - [32mINFO[0m - [32mСвязываем фото с ID 1 с услугой ID 1[0m
+2025-01-25 12:05:37 - my_app - [32mINFO[0m - [32mФото 1 связано с пользовательской услугой 1[0m
+2025-01-25 12:05:37 - my_app - [32mINFO[0m - [32mСвязываем фото с ID 2 с услугой ID 1[0m
+2025-01-25 12:05:37 - my_app - [32mINFO[0m - [32mФото 2 связано с пользовательской услугой 1[0m
+2025-01-25 12:05:37 - my_app - [32mINFO[0m - [32mУслуга с ID 1 успешно создана[0m
+2025-01-25 12:07:11 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 12:07:11 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc3OTc3MDYsImNpdHkiOiIifQ.m093OI6zY3PpSfHnqZr1LDlnNcUA8ms1LL2WQKgm9Tk[0m
+2025-01-25 12:07:11 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737797706, 'city': ''}[0m
+2025-01-25 12:07:11 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737797706, 'city': ''}[0m
+2025-01-25 12:07:11 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 12:07:11 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 12:07:11 - my_app - [32mINFO[0m - [32mУслуга с ID 1 обновлена.[0m
+2025-01-25 12:07:11 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 12:07:12 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '83sLMA9AQ2iMpj0AbGwoJw.png', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp', 'mime_type': 'image/png', 'size': 1964469, 'width': 1280, 'height': 720}[0m
+2025-01-25 12:07:12 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=83sLMA9AQ2iMpj0AbGwoJw.png, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp, mime_type=image/png, size=1964469, width=1280, height=720[0m
+2025-01-25 12:07:12 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 12:07:12 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '10781606_a149c36461e698d3c6434cd3c99106d0.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp', 'mime_type': 'image/jpeg', 'size': 161541, 'width': 800, 'height': 877}[0m
+2025-01-25 12:07:12 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=10781606_a149c36461e698d3c6434cd3c99106d0.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp, mime_type=image/jpeg, size=161541, width=800, height=877[0m
+2025-01-25 12:07:12 - my_app - [32mINFO[0m - [32mФото 3 связано с пользовательской услугой 1[0m
+2025-01-25 12:07:12 - my_app - [32mINFO[0m - [32mФото 4 связано с пользовательской услугой 1[0m
+2025-01-25 12:07:12 - my_app - [31mERROR[0m - [31mОшибка при обновлении услуги 1: relation photos for custom_services not found[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/service_service/custom_service.py", line 156, in update_custom_service
+    await custom_service.fetch_related("standard_service", "master", "salon", "attributes", "photos")
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 993, in fetch_related
+    await db.executor_class(model=self.__class__, db=db).fetch_for_list([self], *args)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 580, in fetch_for_list
+    raise OperationalError(
+tortoise.exceptions.OperationalError: relation photos for custom_services not found
+2025-01-25 12:07:12 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 500: Ошибка при обновлении услуги[0m
+2025-01-25 12:08:10 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 12:08:10 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 12:08:10 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 12:08:10 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 12:08:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 12:08:19 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 12:08:19 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc3OTc3MDYsImNpdHkiOiIifQ.m093OI6zY3PpSfHnqZr1LDlnNcUA8ms1LL2WQKgm9Tk[0m
+2025-01-25 12:08:19 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737797706, 'city': ''}[0m
+2025-01-25 12:08:19 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737797706, 'city': ''}[0m
+2025-01-25 12:08:19 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 12:08:19 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 12:08:19 - my_app - [32mINFO[0m - [32mУслуга с ID 1 обновлена.[0m
+2025-01-25 12:08:19 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 12:08:20 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '83sLMA9AQ2iMpj0AbGwoJw.png', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp', 'mime_type': 'image/png', 'size': 1964469, 'width': 1280, 'height': 720}[0m
+2025-01-25 12:08:20 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=83sLMA9AQ2iMpj0AbGwoJw.png, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp, mime_type=image/png, size=1964469, width=1280, height=720[0m
+2025-01-25 12:08:20 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 12:08:20 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '10781606_a149c36461e698d3c6434cd3c99106d0.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp', 'mime_type': 'image/jpeg', 'size': 161541, 'width': 800, 'height': 877}[0m
+2025-01-25 12:08:20 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=10781606_a149c36461e698d3c6434cd3c99106d0.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp, mime_type=image/jpeg, size=161541, width=800, height=877[0m
+2025-01-25 12:08:20 - my_app - [32mINFO[0m - [32mФото 5 связано с пользовательской услугой 1[0m
+2025-01-25 12:08:20 - my_app - [32mINFO[0m - [32mФото 6 связано с пользовательской услугой 1[0m
+2025-01-25 12:23:57 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 12:23:57 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 12:23:57 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 12:23:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 12:23:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 12:25:12 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 12:25:12 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 12:25:12 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 12:25:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 12:25:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 13:29:54 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 13:29:54 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 13:29:54 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 13:29:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 13:29:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 13:30:33 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 13:30:33 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 13:30:33 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 13:30:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 13:30:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 13:30:39 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 13:30:39 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 13:30:39 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 13:30:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 13:30:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 14:37:31 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 14:37:31 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 14:37:31 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 14:37:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 14:37:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 14:41:44 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 14:41:44 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 14:41:44 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 14:41:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 14:41:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 14:43:02 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 14:43:02 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 14:43:02 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 14:43:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 14:43:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 14:43:30 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 14:43:30 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 14:43:30 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 14:43:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 14:43:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 14:44:37 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 14:44:37 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 14:44:37 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 14:44:37 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 14:44:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 14:44:58 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: master333[0m
+2025-01-25 14:44:58 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя master333[0m
+2025-01-25 14:44:58 - my_app - [32mINFO[0m - [32mПользователь master333 найден, проверка пароля.[0m
+2025-01-25 14:44:58 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-25 14:44:58 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 121, 'username': 'master333', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-25 14:44:58 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc4MDcyOTgsImNpdHkiOiIifQ.QHb-WzbhMhEU6kR4exdHI7xUOKDxcf1VgQB8tE1Mung[0m
+2025-01-25 14:44:58 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-25 14:45:56 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 14:45:56 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc4MDcyOTgsImNpdHkiOiIifQ.QHb-WzbhMhEU6kR4exdHI7xUOKDxcf1VgQB8tE1Mung[0m
+2025-01-25 14:45:56 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737807298, 'city': ''}[0m
+2025-01-25 14:45:56 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737807298, 'city': ''}[0m
+2025-01-25 14:45:56 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 14:45:56 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 14:45:57 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '1.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/default_city/service/service_image/_pc.webp', 'mime_type': 'image/jpeg', 'size': 88696, 'width': 1024, 'height': 1280}[0m
+2025-01-25 14:45:57 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=1.jpg, file_path=/home/gob/PycharmProjects/manicure/media/default_city/service/service_image/_pc.webp, mime_type=image/jpeg, size=88696, width=1024, height=1280[0m
+2025-01-25 14:45:57 - my_app - [34mDEBUG[0m - [34mGenerated unique slug: 'string1112121'[0m
+2025-01-25 14:45:57 - my_app - [32mINFO[0m - [32mСоздание стандартной услуги с параметрами: {'name': 'string1112121', 'title': 'string21212', 'content': 'string21212', 'slug': 'string1112121', 'category_id': 1}[0m
+2025-01-25 14:45:57 - my_app - [32mINFO[0m - [32mStandardService создан с данными: {'name': 'string1112121', 'title': 'string21212', 'content': 'string21212', 'slug': 'string1112121', 'category_id': 1}[0m
+2025-01-25 14:45:57 - my_app - [32mINFO[0m - [32mУслуга успешно создана с ID: 2[0m
+2025-01-25 14:45:57 - my_app - [32mINFO[0m - [32mФото с ID: 2 успешно привязано к сервису ID: 2[0m
+2025-01-25 14:46:50 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 14:46:50 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc4MDcyOTgsImNpdHkiOiIifQ.QHb-WzbhMhEU6kR4exdHI7xUOKDxcf1VgQB8tE1Mung[0m
+2025-01-25 14:46:50 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737807298, 'city': ''}[0m
+2025-01-25 14:46:50 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737807298, 'city': ''}[0m
+2025-01-25 14:46:50 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 14:46:50 - my_app - [32mINFO[0m - [32mПроверка существования стандартной услуги с ID 2[0m
+2025-01-25 14:46:50 - my_app - [32mINFO[0m - [32mРоль пользователя: master. Получаем связанную информацию.[0m
+2025-01-25 14:46:50 - my_app - [32mINFO[0m - [32mМастер найден с ID 37[0m
+2025-01-25 14:46:50 - my_app - [32mINFO[0m - [32mПолучен ID: 37 для роли: master[0m
+2025-01-25 14:46:50 - my_app - [32mINFO[0m - [32mСоздание пользовательской услуги с ID стандартной услуги 2[0m
+2025-01-25 14:46:50 - my_app - [32mINFO[0m - [32mCustomService создан с данными: {'standard_service_id': 2, 'base_price': 5000.0, 'duration_minutes': 60, 'master_id': None, 'salon_id': None, 'description': 'test 60', 'is_active': True}[0m
+2025-01-25 14:46:50 - my_app - [32mINFO[0m - [32mПользовательская услуга создана: 2[0m
+2025-01-25 14:46:50 - my_app - [32mINFO[0m - [32mЗагружаем изображения для услуги с ID 2[0m
+2025-01-25 14:46:50 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 14:46:51 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '3.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/2/IMAGE_TYPE/2_pc.webp', 'mime_type': 'image/jpeg', 'size': 94581, 'width': 1024, 'height': 1280}[0m
+2025-01-25 14:46:51 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=3.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/2/IMAGE_TYPE/2_pc.webp, mime_type=image/jpeg, size=94581, width=1024, height=1280[0m
+2025-01-25 14:46:51 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 14:46:52 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '1.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/2/IMAGE_TYPE/2_pc.webp', 'mime_type': 'image/jpeg', 'size': 88696, 'width': 1024, 'height': 1280}[0m
+2025-01-25 14:46:52 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=1.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/2/IMAGE_TYPE/2_pc.webp, mime_type=image/jpeg, size=88696, width=1024, height=1280[0m
+2025-01-25 14:46:52 - my_app - [32mINFO[0m - [32mЗагружены фото с ID: [7, 8][0m
+2025-01-25 14:46:52 - my_app - [32mINFO[0m - [32mСвязываем фото с ID 7 с услугой ID 2[0m
+2025-01-25 14:46:52 - my_app - [32mINFO[0m - [32mФото 7 связано с пользовательской услугой 2[0m
+2025-01-25 14:46:52 - my_app - [32mINFO[0m - [32mСвязываем фото с ID 8 с услугой ID 2[0m
+2025-01-25 14:46:52 - my_app - [32mINFO[0m - [32mФото 8 связано с пользовательской услугой 2[0m
+2025-01-25 14:46:52 - my_app - [32mINFO[0m - [32mУслуга с ID 2 успешно создана[0m
+2025-01-25 14:51:39 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 14:51:39 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 14:51:39 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 14:51:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 14:51:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 14:51:56 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 14:51:56 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 14:51:56 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 14:51:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 14:51:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 14:52:50 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 14:52:50 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc4MDcyOTgsImNpdHkiOiIifQ.QHb-WzbhMhEU6kR4exdHI7xUOKDxcf1VgQB8tE1Mung[0m
+2025-01-25 14:52:50 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737807298, 'city': ''}[0m
+2025-01-25 14:52:50 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737807298, 'city': ''}[0m
+2025-01-25 14:52:50 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 14:52:50 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 14:52:50 - my_app - [32mINFO[0m - [32mУслуга с ID 2 обновлена.[0m
+2025-01-25 14:52:50 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 14:52:51 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '1920x1200-px-blondes-bubbles-face-heart-lips-love-models-mood-romance-soap-women-1877275.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/2/IMAGE_TYPE/2_pc.webp', 'mime_type': 'image/jpeg', 'size': 553026, 'width': 1920, 'height': 1200}[0m
+2025-01-25 14:52:51 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=1920x1200-px-blondes-bubbles-face-heart-lips-love-models-mood-romance-soap-women-1877275.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/2/IMAGE_TYPE/2_pc.webp, mime_type=image/jpeg, size=553026, width=1920, height=1200[0m
+2025-01-25 14:52:51 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 14:52:52 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '777.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/2/IMAGE_TYPE/2_pc.webp', 'mime_type': 'image/jpeg', 'size': 95248, 'width': 860, 'height': 1280}[0m
+2025-01-25 14:52:52 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=777.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/2/IMAGE_TYPE/2_pc.webp, mime_type=image/jpeg, size=95248, width=860, height=1280[0m
+2025-01-25 14:52:52 - my_app - [32mINFO[0m - [32mФото 9 связано с пользовательской услугой 2[0m
+2025-01-25 14:52:52 - my_app - [32mINFO[0m - [32mФото 10 связано с пользовательской услугой 2[0m
+2025-01-25 15:14:28 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: master11[0m
+2025-01-25 15:14:28 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя master11[0m
+2025-01-25 15:14:28 - my_app - [32mINFO[0m - [32mПользователь master11 найден, проверка пароля.[0m
+2025-01-25 15:14:28 - my_app - [32mINFO[0m - [32mПользователь master11 успешно авторизован[0m
+2025-01-25 15:14:28 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 92, 'username': 'master11', 'role': <UserRole.master: 'master'>, 'city_id': 1795}[0m
+2025-01-25 15:14:28 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5MiIsInVzZXJuYW1lIjoibWFzdGVyMTEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM3ODA5MDY4LCJjaXR5IjoiIn0.hZeDL5Hlm3bGdM63tsHH4Tw0YbFCF1EyQBImFdBckZE[0m
+2025-01-25 15:14:28 - my_app - [32mINFO[0m - [32mПользователь master11 успешно авторизован[0m
+2025-01-25 15:14:33 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 15:14:33 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5MiIsInVzZXJuYW1lIjoibWFzdGVyMTEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM3ODA5MDY4LCJjaXR5IjoiIn0.hZeDL5Hlm3bGdM63tsHH4Tw0YbFCF1EyQBImFdBckZE[0m
+2025-01-25 15:14:33 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '92', 'username': 'master11', 'role': 'master', 'city_id': 1795, 'exp': 1737809068, 'city': ''}[0m
+2025-01-25 15:14:33 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '92', 'username': 'master11', 'role': 'master', 'city_id': 1795, 'exp': 1737809068, 'city': ''}[0m
+2025-01-25 15:14:33 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master11', 'user_id': '92', 'role': 'master', 'city_id': 1795}[0m
+2025-01-25 15:14:33 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master11', 'user_id': '92', 'role': 'master', 'city_id': 1795}[0m
+2025-01-25 15:14:33 - my_app - [32mINFO[0m - [32mУслуга с ID 2 обновлена.[0m
+2025-01-25 15:14:33 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 15:14:35 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '1920x1200-px-blondes-bubbles-face-heart-lips-love-models-mood-romance-soap-women-1877275.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1795/master/2/IMAGE_TYPE/2_pc.webp', 'mime_type': 'image/jpeg', 'size': 553026, 'width': 1920, 'height': 1200}[0m
+2025-01-25 15:14:35 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=1920x1200-px-blondes-bubbles-face-heart-lips-love-models-mood-romance-soap-women-1877275.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1795/master/2/IMAGE_TYPE/2_pc.webp, mime_type=image/jpeg, size=553026, width=1920, height=1200[0m
+2025-01-25 15:14:35 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 15:14:35 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '777.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1795/master/2/IMAGE_TYPE/2_pc.webp', 'mime_type': 'image/jpeg', 'size': 95248, 'width': 860, 'height': 1280}[0m
+2025-01-25 15:14:35 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=777.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1795/master/2/IMAGE_TYPE/2_pc.webp, mime_type=image/jpeg, size=95248, width=860, height=1280[0m
+2025-01-25 15:14:35 - my_app - [32mINFO[0m - [32mФото 11 связано с пользовательской услугой 2[0m
+2025-01-25 15:14:35 - my_app - [32mINFO[0m - [32mФото 12 связано с пользовательской услугой 2[0m
+2025-01-25 15:15:34 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 15:15:34 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 15:15:34 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 15:15:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 15:15:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 15:16:44 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 15:16:44 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5MiIsInVzZXJuYW1lIjoibWFzdGVyMTEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM3ODA5MDY4LCJjaXR5IjoiIn0.hZeDL5Hlm3bGdM63tsHH4Tw0YbFCF1EyQBImFdBckZE[0m
+2025-01-25 15:16:44 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '92', 'username': 'master11', 'role': 'master', 'city_id': 1795, 'exp': 1737809068, 'city': ''}[0m
+2025-01-25 15:16:44 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '92', 'username': 'master11', 'role': 'master', 'city_id': 1795, 'exp': 1737809068, 'city': ''}[0m
+2025-01-25 15:16:44 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master11', 'user_id': '92', 'role': 'master', 'city_id': 1795}[0m
+2025-01-25 15:16:44 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master11', 'user_id': '92', 'role': 'master', 'city_id': 1795}[0m
+2025-01-25 15:16:44 - my_app - [32mINFO[0m - [32mУслуга с ID 2 обновлена.[0m
+2025-01-25 15:16:44 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 15:16:45 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '1920x1200-px-blondes-bubbles-face-heart-lips-love-models-mood-romance-soap-women-1877275.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1795/master/2/IMAGE_TYPE/2_pc.webp', 'mime_type': 'image/jpeg', 'size': 553026, 'width': 1920, 'height': 1200}[0m
+2025-01-25 15:16:45 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=1920x1200-px-blondes-bubbles-face-heart-lips-love-models-mood-romance-soap-women-1877275.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1795/master/2/IMAGE_TYPE/2_pc.webp, mime_type=image/jpeg, size=553026, width=1920, height=1200[0m
+2025-01-25 15:16:45 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 15:16:46 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '777.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1795/master/2/IMAGE_TYPE/2_pc.webp', 'mime_type': 'image/jpeg', 'size': 95248, 'width': 860, 'height': 1280}[0m
+2025-01-25 15:16:46 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=777.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1795/master/2/IMAGE_TYPE/2_pc.webp, mime_type=image/jpeg, size=95248, width=860, height=1280[0m
+2025-01-25 15:16:46 - my_app - [32mINFO[0m - [32mФото 13 связано с пользовательской услугой 2[0m
+2025-01-25 15:16:46 - my_app - [32mINFO[0m - [32mФото 14 связано с пользовательской услугой 2[0m
+2025-01-25 15:16:52 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 15:16:52 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5MiIsInVzZXJuYW1lIjoibWFzdGVyMTEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM3ODA5MDY4LCJjaXR5IjoiIn0.hZeDL5Hlm3bGdM63tsHH4Tw0YbFCF1EyQBImFdBckZE[0m
+2025-01-25 15:16:52 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '92', 'username': 'master11', 'role': 'master', 'city_id': 1795, 'exp': 1737809068, 'city': ''}[0m
+2025-01-25 15:16:52 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '92', 'username': 'master11', 'role': 'master', 'city_id': 1795, 'exp': 1737809068, 'city': ''}[0m
+2025-01-25 15:16:52 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master11', 'user_id': '92', 'role': 'master', 'city_id': 1795}[0m
+2025-01-25 15:16:52 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master11', 'user_id': '92', 'role': 'master', 'city_id': 1795}[0m
+2025-01-25 15:16:52 - my_app - [32mINFO[0m - [32mУслуга с ID 2 обновлена.[0m
+2025-01-25 15:16:52 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 15:16:54 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '1920x1200-px-blondes-bubbles-face-heart-lips-love-models-mood-romance-soap-women-1877275.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1795/master/2/IMAGE_TYPE/2_pc.webp', 'mime_type': 'image/jpeg', 'size': 553026, 'width': 1920, 'height': 1200}[0m
+2025-01-25 15:16:54 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=1920x1200-px-blondes-bubbles-face-heart-lips-love-models-mood-romance-soap-women-1877275.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1795/master/2/IMAGE_TYPE/2_pc.webp, mime_type=image/jpeg, size=553026, width=1920, height=1200[0m
+2025-01-25 15:16:54 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 15:16:54 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '777.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1795/master/2/IMAGE_TYPE/2_pc.webp', 'mime_type': 'image/jpeg', 'size': 95248, 'width': 860, 'height': 1280}[0m
+2025-01-25 15:16:54 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=777.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1795/master/2/IMAGE_TYPE/2_pc.webp, mime_type=image/jpeg, size=95248, width=860, height=1280[0m
+2025-01-25 15:16:54 - my_app - [32mINFO[0m - [32mФото 15 связано с пользовательской услугой 2[0m
+2025-01-25 15:16:54 - my_app - [32mINFO[0m - [32mФото 16 связано с пользовательской услугой 2[0m
+2025-01-25 15:26:52 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 15:26:52 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 15:26:52 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 15:26:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 15:26:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 15:27:07 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 15:27:07 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 15:27:07 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 15:27:07 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 15:27:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 15:27:41 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 15:27:41 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 15:27:41 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 15:27:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 15:27:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 15:27:56 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 15:27:56 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5MiIsInVzZXJuYW1lIjoibWFzdGVyMTEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM3ODA5MDY4LCJjaXR5IjoiIn0.hZeDL5Hlm3bGdM63tsHH4Tw0YbFCF1EyQBImFdBckZE[0m
+2025-01-25 15:27:56 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '92', 'username': 'master11', 'role': 'master', 'city_id': 1795, 'exp': 1737809068, 'city': ''}[0m
+2025-01-25 15:27:56 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '92', 'username': 'master11', 'role': 'master', 'city_id': 1795, 'exp': 1737809068, 'city': ''}[0m
+2025-01-25 15:27:56 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master11', 'user_id': '92', 'role': 'master', 'city_id': 1795}[0m
+2025-01-25 15:27:56 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master11', 'user_id': '92', 'role': 'master', 'city_id': 1795}[0m
+2025-01-25 15:27:56 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 403: Нет прав для обновления этой услуги[0m
+2025-01-25 15:28:40 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: master333[0m
+2025-01-25 15:28:40 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя master333[0m
+2025-01-25 15:28:40 - my_app - [32mINFO[0m - [32mПользователь master333 найден, проверка пароля.[0m
+2025-01-25 15:28:40 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-25 15:28:40 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 121, 'username': 'master333', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-25 15:28:40 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc4MDk5MjAsImNpdHkiOiIifQ.GUjGP_nYyHfJoFvjAMT8iekQ9aqCVjB3N7gcYXJLW24[0m
+2025-01-25 15:28:40 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-25 15:28:45 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 15:28:45 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc4MDk5MjAsImNpdHkiOiIifQ.GUjGP_nYyHfJoFvjAMT8iekQ9aqCVjB3N7gcYXJLW24[0m
+2025-01-25 15:28:45 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737809920, 'city': ''}[0m
+2025-01-25 15:28:45 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737809920, 'city': ''}[0m
+2025-01-25 15:28:45 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 15:28:45 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 15:28:45 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 403: Нет прав для обновления этой услуги[0m
+2025-01-25 15:29:03 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 15:29:03 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc4MDk5MjAsImNpdHkiOiIifQ.GUjGP_nYyHfJoFvjAMT8iekQ9aqCVjB3N7gcYXJLW24[0m
+2025-01-25 15:29:03 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737809920, 'city': ''}[0m
+2025-01-25 15:29:03 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737809920, 'city': ''}[0m
+2025-01-25 15:29:03 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 15:29:03 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 15:29:03 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 403: Нет прав для обновления этой услуги[0m
+2025-01-25 17:05:26 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 17:05:26 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 17:05:26 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 17:05:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 17:05:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 17:06:42 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 17:06:42 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 17:06:42 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 17:06:42 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 17:06:42 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 17:06:47 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 17:06:47 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc4MDk5MjAsImNpdHkiOiIifQ.GUjGP_nYyHfJoFvjAMT8iekQ9aqCVjB3N7gcYXJLW24[0m
+2025-01-25 17:06:47 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-01-25 17:07:09 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: master333[0m
+2025-01-25 17:07:09 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя master333[0m
+2025-01-25 17:07:09 - my_app - [32mINFO[0m - [32mПользователь master333 найден, проверка пароля.[0m
+2025-01-25 17:07:09 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-25 17:07:09 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 121, 'username': 'master333', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-25 17:07:09 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc4MTU4MjksImNpdHkiOiIifQ.C5Pz1lYAEWczt8uZxloJvy4f_Wagq2x86CUAnlMtPTA[0m
+2025-01-25 17:07:09 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-25 17:07:15 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 17:07:15 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc4MTU4MjksImNpdHkiOiIifQ.C5Pz1lYAEWczt8uZxloJvy4f_Wagq2x86CUAnlMtPTA[0m
+2025-01-25 17:07:15 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737815829, 'city': ''}[0m
+2025-01-25 17:07:15 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737815829, 'city': ''}[0m
+2025-01-25 17:07:15 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 17:07:15 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 17:07:15 - my_app - [32mINFO[0m - [32mРоль пользователя: master. Получаем связанную информацию.[0m
+2025-01-25 17:07:15 - my_app - [32mINFO[0m - [32mМастер найден с ID 37[0m
+2025-01-25 17:07:15 - my_app - [32mINFO[0m - [32mУслуга с ID 1 обновлена.[0m
+2025-01-25 17:07:15 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 17:07:17 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '1920x1200-px-blondes-bubbles-face-heart-lips-love-models-mood-romance-soap-women-1877275.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp', 'mime_type': 'image/jpeg', 'size': 553026, 'width': 1920, 'height': 1200}[0m
+2025-01-25 17:07:17 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=1920x1200-px-blondes-bubbles-face-heart-lips-love-models-mood-romance-soap-women-1877275.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp, mime_type=image/jpeg, size=553026, width=1920, height=1200[0m
+2025-01-25 17:07:17 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 17:07:17 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '777.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp', 'mime_type': 'image/jpeg', 'size': 95248, 'width': 860, 'height': 1280}[0m
+2025-01-25 17:07:17 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=777.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp, mime_type=image/jpeg, size=95248, width=860, height=1280[0m
+2025-01-25 17:07:17 - my_app - [32mINFO[0m - [32mФото 17 связано с пользовательской услугой 1[0m
+2025-01-25 17:07:17 - my_app - [32mINFO[0m - [32mФото 18 связано с пользовательской услугой 1[0m
+2025-01-25 17:07:36 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: master11[0m
+2025-01-25 17:07:36 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя master11[0m
+2025-01-25 17:07:36 - my_app - [32mINFO[0m - [32mПользователь master11 найден, проверка пароля.[0m
+2025-01-25 17:07:36 - my_app - [32mINFO[0m - [32mПользователь master11 успешно авторизован[0m
+2025-01-25 17:07:36 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 92, 'username': 'master11', 'role': <UserRole.master: 'master'>, 'city_id': 1795}[0m
+2025-01-25 17:07:36 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5MiIsInVzZXJuYW1lIjoibWFzdGVyMTEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM3ODE1ODU2LCJjaXR5IjoiIn0.Pnj_pUy-5gfVbvz9lWqLM_e4lhGm8jJ29ObL71n98HI[0m
+2025-01-25 17:07:36 - my_app - [32mINFO[0m - [32mПользователь master11 успешно авторизован[0m
+2025-01-25 17:07:43 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 17:07:43 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5MiIsInVzZXJuYW1lIjoibWFzdGVyMTEiLCJyb2xlIjoibWFzdGVyIiwiY2l0eV9pZCI6MTc5NSwiZXhwIjoxNzM3ODE1ODU2LCJjaXR5IjoiIn0.Pnj_pUy-5gfVbvz9lWqLM_e4lhGm8jJ29ObL71n98HI[0m
+2025-01-25 17:07:43 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '92', 'username': 'master11', 'role': 'master', 'city_id': 1795, 'exp': 1737815856, 'city': ''}[0m
+2025-01-25 17:07:43 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '92', 'username': 'master11', 'role': 'master', 'city_id': 1795, 'exp': 1737815856, 'city': ''}[0m
+2025-01-25 17:07:43 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master11', 'user_id': '92', 'role': 'master', 'city_id': 1795}[0m
+2025-01-25 17:07:43 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master11', 'user_id': '92', 'role': 'master', 'city_id': 1795}[0m
+2025-01-25 17:07:43 - my_app - [32mINFO[0m - [32mРоль пользователя: master. Получаем связанную информацию.[0m
+2025-01-25 17:07:43 - my_app - [32mINFO[0m - [32mМастер найден с ID 15[0m
+2025-01-25 17:07:43 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 403: Нет прав для обновления этой услуги[0m
+2025-01-25 17:08:01 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: admin[0m
+2025-01-25 17:08:01 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя admin[0m
+2025-01-25 17:08:01 - my_app - [32mINFO[0m - [32mПользователь admin найден, проверка пароля.[0m
+2025-01-25 17:08:01 - my_app - [32mINFO[0m - [32mПользователь admin успешно авторизован[0m
+2025-01-25 17:08:01 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 89, 'username': 'admin', 'role': <UserRole.amin: 'admin'>, 'city_id': 1795}[0m
+2025-01-25 17:08:01 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4OSIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiYWRtaW4iLCJjaXR5X2lkIjoxNzk1LCJleHAiOjE3Mzc4MTU4ODEsImNpdHkiOiIifQ.tHN68wnXIAI8tux54_p_6HpqfSfF6-pOKAvTN3bgGgk[0m
+2025-01-25 17:08:01 - my_app - [32mINFO[0m - [32mПользователь admin успешно авторизован[0m
+2025-01-25 17:08:09 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 17:08:09 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4OSIsInVzZXJuYW1lIjoiYWRtaW4iLCJyb2xlIjoiYWRtaW4iLCJjaXR5X2lkIjoxNzk1LCJleHAiOjE3Mzc4MTU4ODEsImNpdHkiOiIifQ.tHN68wnXIAI8tux54_p_6HpqfSfF6-pOKAvTN3bgGgk[0m
+2025-01-25 17:08:09 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '89', 'username': 'admin', 'role': 'admin', 'city_id': 1795, 'exp': 1737815881, 'city': ''}[0m
+2025-01-25 17:08:09 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '89', 'username': 'admin', 'role': 'admin', 'city_id': 1795, 'exp': 1737815881, 'city': ''}[0m
+2025-01-25 17:08:09 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'admin', 'user_id': '89', 'role': 'admin', 'city_id': 1795}[0m
+2025-01-25 17:08:09 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'admin', 'user_id': '89', 'role': 'admin', 'city_id': 1795}[0m
+2025-01-25 17:08:09 - my_app - [32mINFO[0m - [32mУслуга с ID 1 обновлена.[0m
+2025-01-25 17:08:09 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 17:08:10 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '1920x1200-px-blondes-bubbles-face-heart-lips-love-models-mood-romance-soap-women-1877275.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1795/admin/1/IMAGE_TYPE/1_pc.webp', 'mime_type': 'image/jpeg', 'size': 553026, 'width': 1920, 'height': 1200}[0m
+2025-01-25 17:08:10 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=1920x1200-px-blondes-bubbles-face-heart-lips-love-models-mood-romance-soap-women-1877275.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1795/admin/1/IMAGE_TYPE/1_pc.webp, mime_type=image/jpeg, size=553026, width=1920, height=1200[0m
+2025-01-25 17:08:10 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 17:08:11 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '777.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1795/admin/1/IMAGE_TYPE/1_pc.webp', 'mime_type': 'image/jpeg', 'size': 95248, 'width': 860, 'height': 1280}[0m
+2025-01-25 17:08:11 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=777.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1795/admin/1/IMAGE_TYPE/1_pc.webp, mime_type=image/jpeg, size=95248, width=860, height=1280[0m
+2025-01-25 17:08:11 - my_app - [32mINFO[0m - [32mФото 19 связано с пользовательской услугой 1[0m
+2025-01-25 17:08:11 - my_app - [32mINFO[0m - [32mФото 20 связано с пользовательской услугой 1[0m
+2025-01-25 17:09:19 - my_app - [32mINFO[0m - [32mПопытка входа пользователя: master333[0m
+2025-01-25 17:09:19 - my_app - [32mINFO[0m - [32mПопытка логина для пользователя master333[0m
+2025-01-25 17:09:19 - my_app - [32mINFO[0m - [32mПользователь master333 найден, проверка пароля.[0m
+2025-01-25 17:09:19 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-25 17:09:19 - my_app - [32mINFO[0m - [32mНачало создания JWT токена для данных: {'sub': 121, 'username': 'master333', 'role': <UserRole.master: 'master'>, 'city_id': 1901}[0m
+2025-01-25 17:09:19 - my_app - [32mINFO[0m - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc4MTU5NTksImNpdHkiOiIifQ.G3mcUqvj3pPrcu4xDws_4eZZrcnT3ny3W1dy2eGJGz4[0m
+2025-01-25 17:09:19 - my_app - [32mINFO[0m - [32mПользователь master333 успешно авторизован[0m
+2025-01-25 17:10:14 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 17:10:14 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc4MTU5NTksImNpdHkiOiIifQ.G3mcUqvj3pPrcu4xDws_4eZZrcnT3ny3W1dy2eGJGz4[0m
+2025-01-25 17:10:14 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737815959, 'city': ''}[0m
+2025-01-25 17:10:14 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737815959, 'city': ''}[0m
+2025-01-25 17:10:14 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 17:10:14 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 17:10:14 - my_app - [32mINFO[0m - [32mРоль пользователя: master. Получаем связанную информацию.[0m
+2025-01-25 17:10:14 - my_app - [32mINFO[0m - [32mМастер найден с ID 37[0m
+2025-01-25 17:10:14 - my_app - [32mINFO[0m - [32mУслуга с ID 1 обновлена.[0m
+2025-01-25 17:10:14 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 17:10:15 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': 'dba1e6ea7fbf719af27bf6e710191570.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp', 'mime_type': 'image/jpeg', 'size': 214885, 'width': 1600, 'height': 1066}[0m
+2025-01-25 17:10:15 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=dba1e6ea7fbf719af27bf6e710191570.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp, mime_type=image/jpeg, size=214885, width=1600, height=1066[0m
+2025-01-25 17:10:15 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 17:10:15 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': 'рабочее.00_19_40_12.Still246.jpg', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp', 'mime_type': 'image/jpeg', 'size': 41505, 'width': 900, 'height': 506}[0m
+2025-01-25 17:10:15 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=рабочее.00_19_40_12.Still246.jpg, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp, mime_type=image/jpeg, size=41505, width=900, height=506[0m
+2025-01-25 17:10:15 - my_app - [32mINFO[0m - [32mФото 21 связано с пользовательской услугой 1[0m
+2025-01-25 17:10:15 - my_app - [32mINFO[0m - [32mФото 22 связано с пользовательской услугой 1[0m
+2025-01-25 17:10:36 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 17:10:36 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc4MTU5NTksImNpdHkiOiIifQ.G3mcUqvj3pPrcu4xDws_4eZZrcnT3ny3W1dy2eGJGz4[0m
+2025-01-25 17:10:36 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737815959, 'city': ''}[0m
+2025-01-25 17:10:36 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737815959, 'city': ''}[0m
+2025-01-25 17:10:36 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 17:13:13 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 17:13:13 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc4MTU5NTksImNpdHkiOiIifQ.G3mcUqvj3pPrcu4xDws_4eZZrcnT3ny3W1dy2eGJGz4[0m
+2025-01-25 17:13:13 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737815959, 'city': ''}[0m
+2025-01-25 17:13:13 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737815959, 'city': ''}[0m
+2025-01-25 17:13:13 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 17:13:13 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 17:13:13 - my_app - [32mINFO[0m - [32mРоль пользователя: master. Получаем связанную информацию.[0m
+2025-01-25 17:13:13 - my_app - [32mINFO[0m - [32mМастер найден с ID 37[0m
+2025-01-25 17:13:13 - my_app - [32mINFO[0m - [32mУслуга с ID 1 обновлена.[0m
+2025-01-25 17:13:13 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 17:13:14 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '3bub2fShTfSpDacvzpi1FA.png', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp', 'mime_type': 'image/png', 'size': 1955786, 'width': 1280, 'height': 720}[0m
+2025-01-25 17:13:14 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=3bub2fShTfSpDacvzpi1FA.png, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp, mime_type=image/png, size=1955786, width=1280, height=720[0m
+2025-01-25 17:13:14 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 17:13:15 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '26manip.png', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp', 'mime_type': 'image/png', 'size': 1837255, 'width': 1280, 'height': 720}[0m
+2025-01-25 17:13:15 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=26manip.png, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp, mime_type=image/png, size=1837255, width=1280, height=720[0m
+2025-01-25 17:13:15 - my_app - [32mINFO[0m - [32mФото 23 связано с пользовательской услугой 1[0m
+2025-01-25 17:13:15 - my_app - [32mINFO[0m - [32mФото 24 связано с пользовательской услугой 1[0m
+2025-01-25 17:18:33 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 17:18:33 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 17:18:33 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 17:18:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 17:18:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 17:18:55 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 17:18:55 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 17:18:55 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 17:18:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 17:18:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 17:19:11 - my_app - [34mDEBUG[0m - [34mDebug message[0m
+2025-01-25 17:19:11 - my_app - [32mINFO[0m - [32mInfo message[0m
+2025-01-25 17:19:11 - my_app - [33mWARNING[0m - [33mWarning message[0m
+2025-01-25 17:19:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 17:19:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 17:19:23 - my_app - [32mINFO[0m - [32mПолучение текущего пользователя из токена.[0m
+2025-01-25 17:19:23 - my_app - [32mINFO[0m - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjEiLCJ1c2VybmFtZSI6Im1hc3RlcjMzMyIsInJvbGUiOiJtYXN0ZXIiLCJjaXR5X2lkIjoxOTAxLCJleHAiOjE3Mzc4MTU5NTksImNpdHkiOiIifQ.G3mcUqvj3pPrcu4xDws_4eZZrcnT3ny3W1dy2eGJGz4[0m
+2025-01-25 17:19:23 - my_app - [32mINFO[0m - [32mТокен успешно декодирован: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737815959, 'city': ''}[0m
+2025-01-25 17:19:23 - my_app - [32mINFO[0m - [32mДекодированный токен: {'sub': '121', 'username': 'master333', 'role': 'master', 'city_id': 1901, 'exp': 1737815959, 'city': ''}[0m
+2025-01-25 17:19:23 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 17:19:23 - my_app - [32mINFO[0m - [32mТекущий пользователь: {'username': 'master333', 'user_id': '121', 'role': 'master', 'city_id': 1901}[0m
+2025-01-25 17:19:23 - my_app - [32mINFO[0m - [32mРоль пользователя: master. Получаем связанную информацию.[0m
+2025-01-25 17:19:23 - my_app - [32mINFO[0m - [32mМастер найден с ID 37[0m
+2025-01-25 17:19:23 - my_app - [32mINFO[0m - [32mУслуга с ID 1 обновлена.[0m
+2025-01-25 17:19:23 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 17:19:23 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '3bub2fShTfSpDacvzpi1FA.png', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp', 'mime_type': 'image/png', 'size': 1955786, 'width': 1280, 'height': 720}[0m
+2025-01-25 17:19:23 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=3bub2fShTfSpDacvzpi1FA.png, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp, mime_type=image/png, size=1955786, width=1280, height=720[0m
+2025-01-25 17:19:23 - my_app - [32mINFO[0m - [32mНачало асинхронной обработки изображения[0m
+2025-01-25 17:19:24 - my_app - [32mINFO[0m - [32mФотография создана с данными: {'file_name': '26manip.png', 'file_path': '/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp', 'mime_type': 'image/png', 'size': 1837255, 'width': 1280, 'height': 720}[0m
+2025-01-25 17:19:24 - my_app - [32mINFO[0m - [32mСоздаем запись в базе данных с параметрами: file_name=26manip.png, file_path=/home/gob/PycharmProjects/manicure/media/1901/master/1/IMAGE_TYPE/1_pc.webp, mime_type=image/png, size=1837255, width=1280, height=720[0m
+2025-01-25 17:19:24 - my_app - [32mINFO[0m - [32mФото 25 связано с пользовательской услугой 1[0m
+2025-01-25 17:19:24 - my_app - [32mINFO[0m - [32mФото 26 связано с пользовательской услугой 1[0m

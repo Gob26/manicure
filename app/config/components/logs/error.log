@@ -12925,3 +12925,72 @@ Traceback (most recent call last):
     raise OperationalError(
 tortoise.exceptions.OperationalError: relation photos for custom_services not found
 2025-01-24 20:47:09 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 500: Ошибка при обновлении услуги[0m
+2025-01-25 11:31:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 11:31:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 11:33:11 - my_app - [31mERROR[0m - [31mОшибка при обновлении услуги 1: 'NoneType' object has no attribute 'fetch_related'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/service_service/custom_service.py", line 116, in update_custom_service
+    await custom_service.fetch_related("master", "salon")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'fetch_related'
+2025-01-25 11:33:11 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 500: Ошибка при обновлении услуги[0m
+2025-01-25 12:02:51 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-01-25 12:07:12 - my_app - [31mERROR[0m - [31mОшибка при обновлении услуги 1: relation photos for custom_services not found[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/service_service/custom_service.py", line 156, in update_custom_service
+    await custom_service.fetch_related("standard_service", "master", "salon", "attributes", "photos")
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 993, in fetch_related
+    await db.executor_class(model=self.__class__, db=db).fetch_for_list([self], *args)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 580, in fetch_for_list
+    raise OperationalError(
+tortoise.exceptions.OperationalError: relation photos for custom_services not found
+2025-01-25 12:07:12 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 500: Ошибка при обновлении услуги[0m
+2025-01-25 12:08:10 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 12:08:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 12:23:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 12:23:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 12:25:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 12:25:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 13:29:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 13:29:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 13:30:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 13:30:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 13:30:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 13:30:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 14:37:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 14:37:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 14:41:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 14:41:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 14:43:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 14:43:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 14:43:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 14:43:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 14:44:37 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 14:44:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 14:51:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 14:51:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 14:51:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 14:51:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 15:15:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 15:15:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 15:26:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 15:26:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 15:27:07 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 15:27:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 15:27:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 15:27:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 15:27:56 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 403: Нет прав для обновления этой услуги[0m
+2025-01-25 15:28:45 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 403: Нет прав для обновления этой услуги[0m
+2025-01-25 15:29:03 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 403: Нет прав для обновления этой услуги[0m
+2025-01-25 17:05:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 17:05:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 17:06:42 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 17:06:42 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 17:06:47 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-01-25 17:07:43 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 403: Нет прав для обновления этой услуги[0m
+2025-01-25 17:18:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 17:18:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 17:18:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 17:18:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 17:19:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 17:19:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

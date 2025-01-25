@@ -51,6 +51,8 @@ class CustomService(AbstractModel):
         help_text="Дополнительное описание услуги"
     )
 
+    custom_service_photos: fields.ReverseRelation['CustomServicePhoto']
+
     class Meta:
         table = "custom_services"
         unique_together = [
