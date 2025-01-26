@@ -12994,3 +12994,190 @@ tortoise.exceptions.OperationalError: relation photos for custom_services not fo
 2025-01-25 17:18:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-01-25 17:19:11 - my_app - [31mERROR[0m - [31mError message[0m
 2025-01-25 17:19:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 19:54:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 19:54:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 19:54:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 19:54:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 19:54:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 19:54:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 19:54:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 19:54:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 19:54:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 19:54:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 19:54:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 19:54:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 19:55:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 19:55:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 19:55:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 19:55:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 19:55:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 19:55:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 19:55:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 19:55:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 19:57:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 19:57:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 19:57:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 19:57:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 19:57:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 19:57:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 19:57:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 19:57:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:10:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:10:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:10:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:10:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:10:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:10:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:10:10 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:10:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:12:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:12:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:12:10 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:12:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:12:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:12:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:12:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:12:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:12:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:12:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:12:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:12:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:12:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:12:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:12:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:12:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:13:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:13:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:13:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:13:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:13:42 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:13:42 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:13:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:13:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:13:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:13:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:13:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:13:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:14:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:14:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:14:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:14:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:14:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:14:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:14:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:14:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:15:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:15:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:15:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:15:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:18:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:18:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:18:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:18:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:24:53 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:24:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:24:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:24:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:27:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:27:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:28:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:28:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:32:47 - my_app - [31mERROR[0m - [31mСистемная ошибка при удалении услуги: 403: Нет прав для обновления этой услуги[0m
+2025-01-25 21:40:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-25 21:40:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-25 21:42:06 - my_app - [31mERROR[0m - [31mСистемная ошибка при удалении услуги: 403: Нет прав для обновления этой услуги[0m
+2025-01-26 11:53:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 11:53:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 11:56:04 - my_app - [31mERROR[0m - [31mСистемная ошибка при удалении услуги: 403: Нет прав для обновления этой услуги[0m
+2025-01-26 11:56:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 11:56:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 12:01:57 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 403: Нет прав для обновления этой услуги[0m
+2025-01-26 12:03:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 12:03:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 12:03:26 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 403: Нет прав для выполнения операции с услугой[0m
+2025-01-26 12:03:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 12:03:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 12:04:26 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 403: Нет прав для обновления этой услуги[0m
+2025-01-26 12:17:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 12:17:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 12:23:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 12:23:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 12:24:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 12:24:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 12:27:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 12:27:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 12:27:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 12:27:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 12:28:50 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 12:28:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 12:29:25 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 12:29:25 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 12:30:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 12:30:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 12:33:50 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 12:33:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 12:36:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 12:36:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 12:37:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 12:37:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 12:42:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 12:42:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 12:43:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 12:43:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 12:54:16 - my_app - [31mERROR[0m - [31mОшибка при проверке прав: 403: Нет прав для выполнения операции[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/permissions.py", line 97, in check_admin_or_owner_permission
+    raise HTTPException(status_code=403, detail="Нет прав для выполнения операции")
+fastapi.exceptions.HTTPException: 403: Нет прав для выполнения операции
+2025-01-26 12:54:16 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 403: Нет прав для выполнения операции[0m
+2025-01-26 13:00:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 13:00:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 13:00:56 - my_app - [31mERROR[0m - [31mОшибка при проверке прав: 403: Нет прав для выполнения операции[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/permissions.py", line 97, in check_admin_or_owner_permission
+    raise HTTPException(status_code=403, detail="Нет прав для выполнения операции")
+fastapi.exceptions.HTTPException: 403: Нет прав для выполнения операции
+2025-01-26 13:00:56 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 403: Нет прав для выполнения операции[0m
+2025-01-26 13:03:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 13:03:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 13:03:22 - my_app - [31mERROR[0m - [31mОшибка при проверке прав: 403: Нет прав для выполнения операции[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/permissions.py", line 97, in check_admin_or_owner_permission
+    raise HTTPException(status_code=403, detail="Нет прав для выполнения операции")
+fastapi.exceptions.HTTPException: 403: Нет прав для выполнения операции
+2025-01-26 13:03:22 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 403: Нет прав для выполнения операции[0m
+2025-01-26 13:19:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 13:19:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 13:19:44 - my_app - [31mERROR[0m - [31mОшибка при проверке прав: 403: Нет прав для выполнения операции[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/permissions.py", line 97, in check_admin_or_owner_permission
+    raise HTTPException(status_code=403, detail="Нет прав для выполнения операции")
+fastapi.exceptions.HTTPException: 403: Нет прав для выполнения операции
+2025-01-26 13:19:44 - my_app - [31mERROR[0m - [31mСистемная ошибка при удалении услуги: 403: Нет прав для выполнения операции[0m
+2025-01-26 13:22:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 13:22:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 13:22:56 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-01-26 13:23:35 - my_app - [31mERROR[0m - [31mОшибка при проверке прав: 403: Нет прав для выполнения операции[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/permissions.py", line 97, in check_admin_or_owner_permission
+    raise HTTPException(status_code=403, detail="Нет прав для выполнения операции")
+fastapi.exceptions.HTTPException: 403: Нет прав для выполнения операции
+2025-01-26 13:23:35 - my_app - [31mERROR[0m - [31mСистемная ошибка при удалении услуги: 403: Нет прав для выполнения операции[0m
+2025-01-26 13:28:07 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 13:28:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 13:28:12 - my_app - [31mERROR[0m - [31mОшибка при проверке прав: 403: Нет прав для выполнения операции[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/permissions.py", line 97, in check_admin_or_owner_permission
+    raise HTTPException(status_code=403, detail="Нет прав для выполнения операции")
+fastapi.exceptions.HTTPException: 403: Нет прав для выполнения операции
+2025-01-26 13:28:12 - my_app - [31mERROR[0m - [31mСистемная ошибка при удалении услуги: 403: Нет прав для выполнения операции[0m
+2025-01-26 13:29:13 - my_app - [31mERROR[0m - [31mОшибка при проверке прав: 403: Нет прав для выполнения операции[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/permissions.py", line 97, in check_admin_or_owner_permission
+    raise HTTPException(status_code=403, detail="Нет прав для выполнения операции")
+fastapi.exceptions.HTTPException: 403: Нет прав для выполнения операции
+2025-01-26 13:29:13 - my_app - [31mERROR[0m - [31mСистемная ошибка при обновлении услуги: 403: Нет прав для выполнения операции[0m
+2025-01-26 13:33:10 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 13:33:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-26 13:33:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-26 13:33:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

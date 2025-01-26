@@ -1,5 +1,5 @@
 from typing import Any, List, Optional, Dict
-from fastapi import HTTPException, UploadFile
+from fastapi import HTTPException, UploadFile, status
 
 from app.db.repositories.master_repositories.master_repositories import MasterRepository
 from app.db.repositories.salon_repositories.salon_repositories import SalonRepository
@@ -57,8 +57,8 @@ class CustomServiceService():
             standard_service_id=standard_service_id,
             base_price=base_price,
             duration_minutes=duration_minutes,
-            master_id=master_id if master_id else None,
-            salon_id=salon_id if salon_id else None,
+            master_id=master_or_salon_id if user_role == 'master' else (master_id if master_id else None),
+            salon_id=master_or_salon_id if user_role == 'salon' else (salon_id if salon_id else None),
             description=description,
             is_active=True,
         )
@@ -101,7 +101,7 @@ class CustomServiceService():
             await custom_service.fetch_related("master", "salon")
 
             if not custom_service:
-                raise HTTPException(status_code=404, detail="Услуга не найдена")
+                raise HTTPException(status_code=404, detail=f"Услуга не найдена " )
 
             # Проверка прав
             user_id = current_user.get("user_id")
@@ -149,3 +149,53 @@ class CustomServiceService():
         except Exception as e:
             logger.error(f"Ошибка при обновлении услуги {custom_service_id}: {e}", exc_info=True)
             raise HTTPException(status_code=500, detail="Ошибка при обновлении услуги")
+        
+
+
+    @staticmethod
+    async def delete_custom_service(
+        custom_service_id: int,
+        current_user: dict,
+    ):
+        """
+        Удаляет услугу после проверки прав.
+
+        :param custom_service_id: ID услуги, которую нужно удалить.
+        :param current_user: Данные текущего пользователя.
+        :param custom_service_repository: Репозиторий для работы с услугами.
+        :param master_repository: Репозиторий для работы с мастерами.
+        :param salon_repository: Репозиторий для работы с салонами.
+        :raises HTTPException: Если пользователь не имеет прав или услуга не найдена.
+        """
+        user_id = current_user.get("user_id")
+        user_role = current_user.get("role")
+
+        # Получение услуги из базы данных
+        custom_service = await ServiceCustomRepository.get_custom_service_by_id(custom_service_id)
+        if not custom_service:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail=f"Услуга с ID {custom_service_id} не найдена"
+            )
+
+        # Проверка прав на удаление услуги
+        await UserAccessService.check_admin_or_owner_permission(
+            user_role=user_role,
+            user_id=user_id,
+            custom_service=custom_service,
+            master_repository=MasterRepository,
+            salon_repository=SalonRepository
+        )
+
+        # Удаление услуги
+        try:
+            await ServiceCustomRepository.delete_custom_service_by_id(custom_service_id)
+        except Exception as e:
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail=f"Ошибка при удалении услуги: {str(e)}"
+            )
+
+        return {"detail": f"Услуга с ID {custom_service_id} успешно удалена"}
+
+            

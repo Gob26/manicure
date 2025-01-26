@@ -64,44 +64,52 @@ class UserAccessService:
     @staticmethod
     async def check_admin_or_owner_permission(
             user_role: str,
-            user_id: int,
+            user_id: int | str,
             custom_service,
             master_repository,
             salon_repository
     ):
-        """
-        Проверяет права для администратора или владельца услуги.
+        logger.info(f"Начало проверки прав")
+        logger.info(f"Входные параметры: user_role={user_role}, user_id={user_id}")
 
-        :param user_role: Роль пользователя (например, "admin", "master", "salon").
-        :param user_id: ID пользователя.
-        :param custom_service: Объект услуги, связанный с мастером или салоном.
-        :param master_repository: Репозиторий мастеров.
-        :param salon_repository: Репозиторий салонов.
-        :raises HTTPException: Если пользователь не имеет прав.
-        """
+        user_id = int(user_id) if isinstance(user_id, str) else user_id
+
         if user_role == "admin":
-            # Администратор всегда имеет права
+            logger.info("Пользователь - администратор, доступ разрешен")
             return
 
-        # Получаем master_id или salon_id в зависимости от роли пользователя
-        user_entity_id = await UserAccessService.get_master_or_salon_id(
-            user_role=user_role,
-            user_id=user_id,
-            master_repository=master_repository,
-            salon_repository=salon_repository,
-        )
+        try:
+            # Получаем ID мастера или салона
+            user_entity_id = await UserAccessService.get_master_or_salon_id(
+                user_role=user_role,
+                user_id=user_id,
+                master_repository=master_repository,
+                salon_repository=salon_repository,
+            )
+            logger.info(f"Получен user_entity_id: {user_entity_id}")
 
-        # Проверяем, совпадает ли ID пользователя с ID владельца услуги
-        if user_role == "master" and custom_service.master_id != user_entity_id:
-            raise HTTPException(
-                status_code=403,
-                detail="Нет прав для обновления этой услуги"
-            )
-        elif user_role == "salon" and custom_service.salon_id != user_entity_id:
-            raise HTTPException(
-                status_code=403,
-                detail="Нет прав для обновления этой услуги"
-            )
+            # Проверяем права для мастера
+            if user_role == "master":
+                logger.info(
+                    f"Проверка прав мастера: master_id услуги={custom_service.master_id}, user_entity_id={user_entity_id}")
+                if custom_service.master_id != user_entity_id:
+                    logger.warning(f"Отказ в доступе: master_id {custom_service.master_id} не совпадают")
+                    raise HTTPException(status_code=403, detail="Нет прав для выполнения операции")
+
+            # Проверяем права для салона
+            elif user_role == "salon":
+                logger.info(
+                    f"Проверка прав салона: salon_id услуги={custom_service.salon_id}, user_entity_id={user_entity_id}")
+                if custom_service.salon_id != user_entity_id:
+                    logger.warning("Отказ в доступе: salon_id не совпадают")
+                    raise HTTPException(status_code=403, detail="Нет прав для выполнения операции")
+
+            logger.info("Проверка прав успешно завершена")
+
+        except Exception as e:
+            logger.error(f"Ошибка при проверке прав: {str(e)}", exc_info=True)
+            raise
+
 
     @staticmethod
     def check_user_permission(current_user: dict, allowed_roles: list):

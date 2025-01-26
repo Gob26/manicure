@@ -84,6 +84,30 @@ async def update_custom_service_route(
         logger.error(f"Системная ошибка при обновлении услуги: {e}")
         raise HTTPException(status_code=500, detail="Системная ошибка при обновлении услуги")
 
-    
+
+@service_custom_router.delete(
+    "/{custom_service_id}",
+    status_code=status.HTTP_204_NO_CONTENT,
+    summary="Удаление услуги",
+    description="Удаляет существующую услугу.", 
+)
+
+async def delete_custom_service_route(
+    custom_service_id: int,
+    current_user: dict = Depends(get_current_user),
+):
+    logger.info(f"Текущий пользователь: {current_user}")
+
+    # Проверка прав доступа
+    check_user_permission(current_user, ["admin", "master", "salon"])
+
+    try:
+        await CustomServiceService.delete_custom_service(custom_service_id=custom_service_id, current_user=current_user)
+    except ValueError as e:
+        logger.warning(f"Ошибка бизнес-логики: {e}")
+        raise HTTPException(status_code=400, detail=str(e))
+    except Exception as e:
+        logger.error(f"Системная ошибка при удалении услуги: {e}")
+        raise HTTPException(status_code=500, detail="Системная ошибка при удалении услуги")
 
     
