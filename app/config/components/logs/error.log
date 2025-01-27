@@ -13974,3 +13974,29 @@ fastapi.exceptions.HTTPException: 403: Нет прав для выполнени
 2025-01-27 22:21:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-01-27 22:21:52 - my_app - [31mERROR[0m - [31mError message[0m
 2025-01-27 22:21:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-27 22:22:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-27 22:22:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-27 22:22:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-27 22:22:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-27 22:40:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-27 22:40:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-27 22:42:00 - my_app - [31mERROR[0m - [31mОшибка при удалении связи 1: type object 'SalonMasterRelationService' has no attribute 'delete_relation_salon_master'[0m
+2025-01-27 22:47:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-27 22:47:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-27 22:48:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-27 22:48:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-27 22:52:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-27 22:52:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-27 22:52:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-27 22:52:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-27 22:52:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-27 22:52:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-27 22:54:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-27 22:54:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-27 22:54:12 - my_app - [31mERROR[0m - [31mСистемная ошибка при удалении связи 1: type object 'SalonMasterRelationService' has no attribute 'delete_relation_salon_master'[0m
+2025-01-27 22:54:58 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-27 22:54:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-27 22:55:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-27 22:55:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-27 23:04:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-27 23:04:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

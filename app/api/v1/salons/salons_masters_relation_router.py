@@ -22,7 +22,7 @@ async def create_salon_master_relation(
     data: SalonMasterRelationCreate,
     current_user: dict = Depends(get_current_user),
 ):
-    UserAccessService.check_user_permission(current_user, ["salon", "admin"])
+    UserAccessService.check_user_permission(current_user, ["salon", "admin", "master"])
 
     logger.info(f"Текущий пользователь: {current_user}")
     try:
@@ -43,14 +43,17 @@ async def create_salon_master_relation(
     tags=["SalonMasterRelation"],
 )
 async def delete_salon_master_relation(
-        relation_id: int,
-        current_user: dict = Depends(get_current_user),
+    relation_id: int,
+    current_user: dict = Depends(get_current_user),
 ):
-    UserAccessService.check_user_permission(current_user, ["salon", "admin"])
+    UserAccessService.check_user_permission(current_user, ["salon", "admin", "master"])
     logger.info(f"Запрос на удаление связи {relation_id}. Пользователь: {current_user}")
 
     try:
-        success = await SalonMasterRelationService.delete_relation_salon_master(relation_id)
+        success = await SalonMasterRelationService.delete_relation_salon_master(
+            relation_id=relation_id,
+            current_user=current_user
+        )
         if not success:
             logger.warning(f"Связь {relation_id} не найдена")
             raise HTTPException(
@@ -59,8 +62,11 @@ async def delete_salon_master_relation(
             )
         logger.info(f"Связь {relation_id} успешно удалена")
         return {"message": "Relation deleted successfully"}
+    except HTTPException as e:
+        logger.warning(f"Ошибка доступа при удалении связи {relation_id}: {e.detail}")
+        raise
     except Exception as e:
-        logger.error(f"Ошибка при удалении связи {relation_id}: {e}")
+        logger.error(f"Системная ошибка при удалении связи {relation_id}: {e}")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Системная ошибка при удалении связи"

@@ -48,10 +48,10 @@ class SalonMasterRelationService:
             )
 
     @staticmethod
-    async def delete_custom_service(
+    async def delete_relation_salon_master(
             relation_id: int,
             current_user: dict,
-):
+) -> bool:
         user_id = current_user.get("user_id")
         user_role = current_user.get("role")
 
@@ -65,6 +65,9 @@ class SalonMasterRelationService:
 
         # Получае id мастера или салона с помощью relation_id
         relation_id_dict = await SalonMasterRelationRepository.get_id_master_salon(relation_id)
+
+        if not relation_id_dict:
+            return False
 
         if user_role == "salon":
             if master_or_salon_id != relation_id_dict["salon_id"]:
@@ -80,7 +83,8 @@ class SalonMasterRelationService:
                 )
 
         # Удаляем связь
-        await SalonMasterRelationRepository.delete_relation(relation_id=relation_id)
+        await SalonMasterRelationRepository.delete_relation(relation_id)
+        return True
         
         
 
