@@ -78,7 +78,7 @@ class ServiceCustomRepository(BaseRepository):
                          exc_info=True)  # Добавил exc_info=True для более подробного логирования
             raise  # Перебрасываем исключение, чтобы обработать его выше (например, в сервисе или обработчике ошибок)
 
-      @classmethod
+    @classmethod
     async def delete_custom_service_by_id(cls, id: int):
         """Удаление типа атрибута"""
         return await cls.delete(id=id)

@@ -12,6 +12,14 @@ class RoleEnum(str, Enum):
     freelancer = "freelancer"
 
 class SalonMasterRelationCreate(BaseModel):
+    master_id: int = Field(..., description="ID мастера")
+    status: StatusEnum = StatusEnum.pending
+    role: RoleEnum = RoleEnum.employee
+    start_date: date | None = None
+    end_date: date | None = None
+    notes: str | None = None
+
+class SalonMasterRelationCreateOut(BaseModel):
     salon_id: int = Field(..., description="ID салона")
     master_id: int = Field(..., description="ID мастера")
     status: StatusEnum = StatusEnum.pending

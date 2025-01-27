@@ -26,9 +26,42 @@ async def create_salon_master_relation(
 
     logger.info(f"Текущий пользователь: {current_user}")
     try:
-        return await SalonMasterRelationService.create_relation_salon_master(**data.dict())
+        return await SalonMasterRelationService.create_relation_salon_master(
+            data=data,
+            current_user=current_user
+        )
     except Exception as e:
         logger.error(f"Системная ошибка при создании связи мастера и салона: {e}")
         raise HTTPException(status_code=500, detail="Системная ошибка при создании связи мастера и салона")
 
 
+@salon_master_relation_router.delete(
+    "/{relation_id}",
+    status_code=status.HTTP_200_OK,
+    summary="Удаление связи мастера и салона",
+    description="Удаляет существующую связь между мастером и салоном.",
+    tags=["SalonMasterRelation"],
+)
+async def delete_salon_master_relation(
+        relation_id: int,
+        current_user: dict = Depends(get_current_user),
+):
+    UserAccessService.check_user_permission(current_user, ["salon", "admin"])
+    logger.info(f"Запрос на удаление связи {relation_id}. Пользователь: {current_user}")
+
+    try:
+        success = await SalonMasterRelationService.delete_relation_salon_master(relation_id)
+        if not success:
+            logger.warning(f"Связь {relation_id} не найдена")
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail="Relation not found"
+            )
+        logger.info(f"Связь {relation_id} успешно удалена")
+        return {"message": "Relation deleted successfully"}
+    except Exception as e:
+        logger.error(f"Ошибка при удалении связи {relation_id}: {e}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Системная ошибка при удалении связи"
+        )
