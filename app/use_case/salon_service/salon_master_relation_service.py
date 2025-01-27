@@ -52,5 +52,36 @@ class SalonMasterRelationService:
             relation_id: int,
             current_user: dict,
 ):
+        user_id = current_user.get("user_id")
+        user_role = current_user.get("role")
+
+        # Получаем master_id или salon_id
+        master_or_salon_id = await UserAccessService.get_master_or_salon_id(
+            user_role=user_role,
+            user_id=user_id,
+            master_repository=MasterRepository,
+            salon_repository=SalonRepository
+        )
+
+        # Получае id мастера или салона с помощью relation_id
+        relation_id_dict = await SalonMasterRelationRepository.get_id_master_salon(relation_id)
+
+        if user_role == "salon":
+            if master_or_salon_id != relation_id_dict["salon_id"]:
+                raise HTTPException(
+                    status_code=status.HTTP_400_BAD_REQUEST,
+                    detail="Вы не можете удалять связь с другого салона"
+                )
+        elif user_role == "master":
+            if master_or_salon_id != relation_id_dict["master_id"]:
+                raise HTTPException(
+                    status_code=status.HTTP_400_BAD_REQUEST,
+                    detail="Вы не можете удалять связь с другого мастера"
+                )
+
+        # Удаляем связь
+        await SalonMasterRelationRepository.delete_relation(relation_id=relation_id)
+        
+        
 
 

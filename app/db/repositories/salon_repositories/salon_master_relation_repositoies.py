@@ -27,3 +27,20 @@ class SalonMasterRelationRepository(BaseRepository):
         relation = await cls.model.create(salon_id=salon_id, master_id=master_id, status="pending")
         logger.info(f"Связь создана: Salon {salon_id} -> Master {master_id}")
         return relation
+    
+    
+    #получаем id салона и id мастера
+    @classmethod
+    async def get_id_master_salon(cls, relation_id: int) -> Optional[Dict[str, Any]]:
+        relation = await cls.model.get_or_none(id=relation_id)
+        if not relation:
+            return None
+        return {
+            "salon_id": relation.salon_id,
+            "master_id": relation.master_id
+        }
+    
+    #удаляем связь мастера и салона
+    @classmethod
+    async def delete_relation(cls, id: int):
+        await cls.delete(id=id)
