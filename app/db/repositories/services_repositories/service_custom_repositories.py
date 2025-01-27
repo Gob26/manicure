@@ -68,21 +68,17 @@ class ServiceCustomRepository(BaseRepository):
             raise HTTPException(status_code=500, detail="Внутренняя ошибка сервера")
 
     @classmethod
-    async def get_custom_service_by_id(cls, id: int) -> Optional[CustomService]:
-        """Получение услуги по ее ID с загрузкой связанных сущностей."""
+    async def get_custom_service_by_id(cls, id: int) -> Optional[CustomService]:  # Важно указать Optional
+        """Получение услуги по ее ID. Возвращает None, если услуга не найдена."""
         try:
-            custom_service = await cls.model.get(id=id)
-            await custom_service.fetch_related("master", "salon", "standard_service", "attributes",
-                                               "custom_service_photos")
-            return custom_service
-        except DoesNotExist:
-            logger.info(f"Услуга с ID {id} не найдена")
-            return None
+            custom_service = await cls.get_or_none(id=id)
+            return custom_service  # Просто возвращаем None, если не найдено
         except Exception as e:
-            logger.error(f"Произошла ошибка при получении услуги: {e}", exc_info=True)
-            raise
+            logger.error(f"Произошла ошибка при получении услуги: {e}",
+                         exc_info=True)  # Добавил exc_info=True для более подробного логирования
+            raise  # Перебрасываем исключение, чтобы обработать его выше (например, в сервисе или обработчике ошибок)
 
-    @classmethod
+      @classmethod
     async def delete_custom_service_by_id(cls, id: int):
         """Удаление типа атрибута"""
         return await cls.delete(id=id)

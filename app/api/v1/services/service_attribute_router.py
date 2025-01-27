@@ -20,6 +20,7 @@ service_attribute_router = APIRouter()
     status_code=status.HTTP_201_CREATED,
     summary="Создание нового типа атрибута",
     description="Создает новый тип атрибута.",
+    tags=["ServiceAttributeType"],
 )
 async def create_service_attribute_type(
     data: ServiceAttributeTypeCreateSchema,
@@ -44,6 +45,7 @@ async def create_service_attribute_type(
     status_code=status.HTTP_200_OK,
     summary="Получение всех типов атрибутов",
     description="Получает список всех типов атрибутов.",
+    tags=["ServiceAttributeType"],
 )
 async def list_service_attribute_types(
     current_user: dict = Depends(get_current_user),
@@ -62,6 +64,7 @@ async def list_service_attribute_types(
     status_code=status.HTTP_200_OK,
     summary="Получение типа атрибута по ID",
     description="Получает тип атрибута услуги по его ID.",
+    tags=["ServiceAttributeType"],
 )
 async def get_service_attribute_type(
     attribute_type_id: int,
@@ -84,6 +87,7 @@ async def get_service_attribute_type(
     status_code=status.HTTP_200_OK,
     summary="Обновление типа атрибута",
     description="Обновляет тип атрибута услуги.",
+    tags=["ServiceAttributeType"],
 )
 async def update_service_attribute_type(
     attribute_type_id: int,
@@ -119,6 +123,7 @@ async def update_service_attribute_type(
     status_code=status.HTTP_204_NO_CONTENT,
     summary="Удаление типа атрибута",
     description="Удаляет тип атрибута услуги.",
+    tags=["ServiceAttributeType"],
 )
 async def delete_service_attribute_type(
     attribute_type_id: int,
@@ -140,6 +145,7 @@ async def delete_service_attribute_type(
     status_code=status.HTTP_201_CREATED,
     summary="Создание нового значения атрибута",
     description="Создает новое значение атрибута.",
+    tags=["ServiceAttributeValue"],
 )
 async def create_service_attribute_value(
     data: ServiceAttributeValueCreateSchema,
@@ -164,6 +170,7 @@ async def create_service_attribute_value(
     status_code=status.HTTP_200_OK,
     summary="Получение всех значений атрибутов по типу атрибута",
     description="Получение всех значений атрибутов по типу атрибута",
+    tags=["ServiceAttributeValue"],
 )
 async def list_service_attribute_values(
     attribute_type_id: Annotated[int, Query()],  # явно указываем, что это query параметр
@@ -182,6 +189,7 @@ async def list_service_attribute_values(
     status_code=status.HTTP_200_OK,
     summary="Получить значение атрибута по ID",
     description="Получение значения атрибута по его ID.",
+    tags=["ServiceAttributeValue"],
 )
 async def get_service_attribute_value(
     attribute_value_id: int,
@@ -206,6 +214,7 @@ async def get_service_attribute_value(
     status_code = status.HTTP_204_NO_CONTENT,
     summary="Удаление значения атрибута",
     description="Удаляет значение атрибута.",
+    tags=["ServiceAttributeValue"],
 )
 async def delete_service_attribute_value(
         attribute_value_id: int,
@@ -224,6 +233,7 @@ async def delete_service_attribute_value(
     status_code=status.HTTP_200_OK,
     summary="Обновление значения атрибута",
     description="Обновление значения атрибута.",
+    tags=["ServiceAttributeValue"],
 )
 async def update_service_attribute_value(
     attribute_value_id: int,
@@ -255,7 +265,8 @@ async def update_service_attribute_value(
     "/template_attributes",
     status_code=status.HTTP_201_CREATED,
     summary="Привязка атрибута к шаблону услуги",
-    description="Позволяет создать связь между шаблоном услуги и атрибутом."
+    description="Позволяет создать связь между шаблоном услуги и атрибутом.",
+    tags=["TemplateAttribute"],
 )
 async def attach_template_attribute(
     data: TemplateAttributeCreateSchema,
@@ -277,6 +288,7 @@ async def attach_template_attribute(
     status_code=status.HTTP_200_OK,
     summary="Получение всех атрибутов для шаблона услуги",
     description="Получение всех атрибутов для указанного шаблона услуги.",
+    tags=["TemplateAttribute"],
 )
 async def list_template_attributes(
         service_template_id: int,

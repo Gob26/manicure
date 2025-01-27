@@ -11,6 +11,7 @@ from api.v1.cyties.city import city_router
 from api.v1.services.service_custom_router import service_custom_router
 from api.v1.services.service_categories_router import service_categories_router
 from api.v1.services.service_attribute_router import service_attribute_router
+from app.api.v1.salons.salons_masters_relation_router import salon_master_relation_router
 
 
 router = APIRouter()
@@ -52,6 +53,11 @@ router.include_router(
     tags=["Салон - создание, обновление и удаление"]
     )
 
+router.include_router(
+    salon_master_relation_router,
+    prefix="/api/v1/salon/relation",
+    tags=[" Связь мастера и салона"]
+    )
 # Услуги 
 
 router.include_router(
