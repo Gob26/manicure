@@ -14184,3 +14184,11 @@ fastapi.exceptions.HTTPException: 403: Нет прав для выполнени
 2025-01-29 19:52:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-01-29 19:52:19 - my_app - [31mERROR[0m - [31mError message[0m
 2025-01-29 19:52:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-29 19:55:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-29 19:55:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-29 19:55:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-29 19:55:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-29 19:58:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-29 19:58:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-29 19:58:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-29 19:58:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
