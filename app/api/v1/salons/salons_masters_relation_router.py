@@ -71,3 +71,33 @@ async def delete_salon_master_relation(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Системная ошибка при удалении связи"
         )
+    
+@salon_master_relation_router.put(
+    "/{relation_id}",
+    response_model=SalonMasterRelationResponse,
+    status_code=status.HTTP_200_OK,
+    summary="Обновление связи мастера и салона",
+    description="Обновляет существующую связь мастера и салона.",
+    tags=["SalonMasterRelation"],
+)
+async def update_salon_master_relation(
+    relation_id: int,
+    current_user: dict = Depends(get_current_user),
+):
+    UserAccessService.check_user_permission(current_user, ["salon", "admin", "master"])
+    logger.info(f"Запрос на обновление связи {relation_id}. Пользователь: {current_user}")   
+
+    try:
+        return await SalonMasterRelationService.update_relation_salon_master(
+            relation_id=relation_id,
+            current_user=current_user
+        )
+    except HTTPException as e:
+        logger.warning(f"Ошибка доступа при обновлении связи {relation_id}: {e.detail}")
+        raise
+    except Exception as e:
+        logger.error(f"Системная ошибка при обновлении связи {relation_id}: {e}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail="Системная ошибка при обновлении связи"
+        )

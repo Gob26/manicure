@@ -40,6 +40,28 @@ class SalonMasterRelationRepository(BaseRepository):
             "master_id": relation.master_id
         }
     
+    #получаем связь по id
+    @classmethod
+    async def get_relation_by_id(cls, relation_id: int) -> Optional[SalonMasterRelation]:
+        return await cls.get_or_none(id=relation_id)
+    
+    @classmethod
+    async def update_relation(cls, relation_id: int, **update_data):
+        relation = await cls.get_or_none(relation_id)
+        if not relation:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND, 
+                detail="Связь не найдена"
+            )
+
+        # Применяем изменения только к переданным полям
+        for key, value in update_data.items():
+            setattr(relation, key, value)
+
+        await relation.save()
+        return relation
+
+    
     #удаляем связь мастера и салона
     @classmethod
     async def delete_relation(cls, id: int):
