@@ -1,12 +1,9 @@
-from typing import Optional, List, Dict, Any
+from typing import Optional, Dict, Any
 from fastapi import HTTPException, status
-from tortoise.expressions import Q
 from tortoise.transactions import atomic
-from tortoise.functions import Count
 
 from db.models.salon_models.salon_master_relation import SalonMasterRelation
 from db.repositories.base_repositories.base_repositories import BaseRepository
-from db.schemas.salon_schemas.salon_master_relation_schemas import SalonMasterRelationResponse, SalonMasterRelationCreate
 from config.components.logging_config import logger
 
 

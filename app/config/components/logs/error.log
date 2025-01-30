@@ -14192,3 +14192,103 @@ fastapi.exceptions.HTTPException: 403: Нет прав для выполнени
 2025-01-29 19:58:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-01-29 19:58:32 - my_app - [31mERROR[0m - [31mError message[0m
 2025-01-29 19:58:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 11:19:16 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 11:19:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 11:37:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 11:37:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 11:37:27 - my_app - [31mERROR[0m - [31mОшибка при инициализации Tortoise: Can't establish connection to database manicure[0m
+2025-01-30 11:37:27 - my_app - [31mERROR[0m - [31mКритическая ошибка при выполнении скрипта: Can't establish connection to database manicure[0m
+2025-01-30 11:37:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mПрограмма завершилась с ошибкой: Can't establish connection to database manicure[0m
+2025-01-30 11:38:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 11:38:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 11:38:19 - my_app - [31mERROR[0m - [31mОшибка при инициализации Tortoise: Can't establish connection to database manicure[0m
+2025-01-30 11:38:19 - my_app - [31mERROR[0m - [31mКритическая ошибка при выполнении скрипта: Can't establish connection to database manicure[0m
+2025-01-30 11:38:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mПрограмма завершилась с ошибкой: Can't establish connection to database manicure[0m
+2025-01-30 11:40:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 11:40:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 11:40:33 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Белогорск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Белогорск) already exists.[0m
+2025-01-30 11:40:33 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Берёзовский: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Берёзовский) already exists.[0m
+2025-01-30 11:40:33 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Благовещенск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Благовещенск) already exists.[0m
+2025-01-30 11:40:34 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Гурьевск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Гурьевск) already exists.[0m
+2025-01-30 11:40:35 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Железногорск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Железногорск) already exists.[0m
+2025-01-30 11:40:35 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Заречный: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Заречный) already exists.[0m
+2025-01-30 11:40:35 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Зеленогорск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Зеленогорск) already exists.[0m
+2025-01-30 11:40:36 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Киров: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Киров) already exists.[0m
+2025-01-30 11:40:36 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Кировск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Кировск) already exists.[0m
+2025-01-30 11:40:36 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Красноармейск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Красноармейск) already exists.[0m
+2025-01-30 11:40:36 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Краснознаменск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Краснознаменск) already exists.[0m
+2025-01-30 11:40:37 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Краснослободск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Краснослободск) already exists.[0m
+2025-01-30 11:40:38 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Мирный: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Мирный) already exists.[0m
+2025-01-30 11:40:38 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Михайловск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Михайловск) already exists.[0m
+2025-01-30 11:40:38 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Никольск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Никольск) already exists.[0m
+2025-01-30 11:40:39 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Озёрск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Озёрск) already exists.[0m
+2025-01-30 11:40:39 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Павловск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Павловск) already exists.[0m
+2025-01-30 11:40:40 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Приморск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Приморск) already exists.[0m
+2025-01-30 11:40:40 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Радужный: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Радужный) already exists.[0m
+2025-01-30 11:40:41 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Советск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Советск) already exists.[0m
+2025-01-30 11:40:41 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Советск: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Советск) already exists.[0m
+2025-01-30 11:40:41 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Троицк: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Троицк) already exists.[0m
+2025-01-30 11:40:42 - my_app - [31mERROR[0m - [31mОшибка целостности данных при добавлении города Фокино: duplicate key value violates unique constraint "cities_name_key"
+DETAIL:  Key (name)=(Фокино) already exists.[0m
+2025-01-30 11:41:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 11:41:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 12:21:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 12:21:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 16:06:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 16:06:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 16:08:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 16:08:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 16:08:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 16:08:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 16:15:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 16:15:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 18:03:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 18:03:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 18:06:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 18:06:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 18:14:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 18:14:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 18:15:08 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 18:15:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 18:16:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 18:16:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 18:16:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 18:16:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 18:16:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 18:16:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 18:20:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 18:20:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 18:21:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 18:21:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 19:04:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 19:04:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 19:07:25 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 19:07:25 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 19:08:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 19:08:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 19:10:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 19:10:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 19:12:37 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 19:12:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

@@ -1,5 +1,6 @@
 from fastapi import APIRouter
 
+from api.v1.job.vacancies_salons_router import vacancy_router
 from api.v1.services.service_standart_router import service_standart_router
 from api.v1.auth.user_register_router import user_router
 from api.v1.auth.user_login_router import login_router
@@ -19,14 +20,15 @@ router = APIRouter()
 router.include_router(
     user_router,
     prefix="/api/v1/auth",
-    tags=["auth"]
+    tags=["Регистрация"]
     )
 
 router.include_router(
     login_router,
     prefix="/api/v1/auth",
-    tags=["login"]
+    tags=["Логирование"]
     )
+
 # Мастера
 router.include_router(
     master_router,
@@ -53,13 +55,20 @@ router.include_router(
     tags=["Салон - создание, обновление и удаление"]
     )
 
+# Вакансии и Связи
 router.include_router(
     salon_master_relation_router,
     prefix="/api/v1/salon/relation",
-    tags=[" Связь мастера и салона"]
+    tags=["Связь мастера и салона"]
     )
-# Услуги 
 
+router.include_router(
+    vacancy_router,
+    prefix="/api/v1/salon/vacancy",
+    tags=["Вакансии салона"]
+    )
+
+# Услуги
 router.include_router(
     service_custom_router,
     prefix="/api/v1/category/custom_service",

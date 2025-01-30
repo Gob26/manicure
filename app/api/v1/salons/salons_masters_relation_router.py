@@ -1,8 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException, status, File, UploadFile, Form
-from typing import Optional, List
 from app.use_case.salon_service.salon_master_relation_service import SalonMasterRelationService
 from app.use_case.utils.jwt_handler import get_current_user
-from db.models.salon_models.salon_master_relation import SalonMasterRelation
 from db.schemas.salon_schemas.salon_master_relation_schemas import SalonMasterRelationCreate, SalonMasterRelationResponse
 from use_case.utils.permissions import UserAccessService
 from config.components.logging_config import logger
@@ -16,7 +14,6 @@ salon_master_relation_router = APIRouter()
     response_model=SalonMasterRelationResponse,
     summary="Создание связи мастера и салона",
     description="Создает связь мастера и салона.",
-    tags=["SalonMasterRelation"],
 )
 async def create_salon_master_relation(
     data: SalonMasterRelationCreate,
@@ -40,7 +37,6 @@ async def create_salon_master_relation(
     status_code=status.HTTP_200_OK,
     summary="Удаление связи мастера и салона",
     description="Удаляет существующую связь между мастером и салоном.",
-    tags=["SalonMasterRelation"],
 )
 async def delete_salon_master_relation(
     relation_id: int,
@@ -78,7 +74,6 @@ async def delete_salon_master_relation(
     status_code=status.HTTP_200_OK,
     summary="Обновление связи мастера и салона",
     description="Обновляет существующую связь мастера и салона.",
-    tags=["SalonMasterRelation"],
 )
 async def update_salon_master_relation(
     relation_id: int,
