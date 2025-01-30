@@ -63,3 +63,31 @@ class VacancyService:
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
                 detail=f"Ошибка при создании вакансии: {str(e)}"
             )
+
+    @staticmethod
+    async def delete_vacancy_salon(
+            vacancy_id: int,
+            current_user: dict,
+) -> bool:
+        user_id = current_user.get("user_id")
+        user_role = current_user.get("role")
+
+        # Получаем master_id или salon_id
+        salon_id = await UserAccessService.get_master_or_salon_id(
+            user_role=user_role,
+            user_id=user_id,
+            master_repository=MasterRepository,
+            salon_repository=SalonRepository
+        )
+
+        # Получаем id салона связаный с вакансией
+        salon_id_vacancy = await VacancyRepository.get_salon_by_vacancy_id(vacancy_id)
+
+        if salon_id_vacancy != salon_id:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Вы не можете удалять вакансию, так как вы не создавали ее"
+            )
+        await VacancyRepository.delete_vacancy(vacancy_id)
+        return True
+

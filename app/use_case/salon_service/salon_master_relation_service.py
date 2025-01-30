@@ -63,7 +63,7 @@ class SalonMasterRelationService:
             salon_repository=SalonRepository
         )
 
-        # Получае id мастера или салона с помощью relation_id
+        # Получаем id мастера или салона с помощью relation_id
         relation_id_dict = await SalonMasterRelationRepository.get_id_master_salon(relation_id)
 
         if not relation_id_dict:

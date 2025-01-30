@@ -14292,3 +14292,14 @@ DETAIL:  Key (name)=(Фокино) already exists.[0m
 2025-01-30 19:10:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-01-30 19:12:37 - my_app - [31mERROR[0m - [31mError message[0m
 2025-01-30 19:12:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 21:12:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 21:12:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 21:24:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 21:24:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 21:28:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 21:28:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 21:31:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 21:31:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-30 21:33:35 - my_app - [31mERROR[0m - [31mСистемная ошибка при удалении Вакансии 1: VacancyRepository.delete_vacancy() missing 1 required positional argument: 'id'[0m
+2025-01-30 21:34:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-30 21:34:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
