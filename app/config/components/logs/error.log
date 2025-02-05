@@ -14487,3 +14487,18 @@ DETAIL:  Key (name)=(Фокино) already exists.[0m
 2025-02-05 20:58:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-02-05 20:58:22 - my_app - [31mERROR[0m - [31mError message[0m
 2025-02-05 20:58:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 21:03:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 21:03:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 21:03:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 21:03:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 21:07:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 21:07:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 21:08:49 - my_app - [31mERROR[0m - [31mОшибка при создании вакансии: UserAccessService.check_user_permission() takes 2 positional arguments but 3 were given[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/job/job_application_router.py", line 24, in create_job_application_master
+    UserAccessService.check_user_permission(current_user, ["master"], ["admin"])
+TypeError: UserAccessService.check_user_permission() takes 2 positional arguments but 3 were given
+2025-02-05 21:10:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 21:10:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 21:13:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 21:13:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

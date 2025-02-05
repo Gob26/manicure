@@ -21,7 +21,7 @@ async def create_job_application_master(
 ):
     
     try:
-        UserAccessService.check_user_permission(current_user, ["master"], ["admin"])
+        UserAccessService.check_user_permission(current_user, ["master", "admin"])
 
         result = await JobApplicationService.create_job_application(
             data=data,

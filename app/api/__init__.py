@@ -1,5 +1,6 @@
 from fastapi import APIRouter
 
+from api.v1.job.job_application_router import job_application_router
 from api.v1.job.vacancies_salons_router import vacancy_router
 from api.v1.services.service_standart_router import service_standart_router
 from api.v1.auth.user_register_router import user_router
@@ -66,6 +67,12 @@ router.include_router(
     vacancy_router,
     prefix="/api/v1/salon/vacancy",
     tags=["Вакансии салона"]
+    )
+
+router.include_router(
+    job_application_router,
+    prefix="/api/v1/salon/job_application",
+    tags=["Заявка мастера на вакансию салона"]
     )
 
 # Услуги

@@ -116,7 +116,7 @@ class UserAccessService:
         """
         Проверяет, есть ли у текущего пользователя права доступа.
         ПРИМЕР:
-        UserAccessService.check_user_permission(current_user, ["master"], ["admin"])
+        UserAccessService.check_user_permission(current_user, ["master", "admin"])
         :param current_user: Данные текущего пользователя.
         :param allowed_roles: Список ролей, которые могут выполнить действие.
         :raises HTTPException: Если у пользователя нет нужных прав.
