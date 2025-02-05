@@ -115,7 +115,8 @@ class UserAccessService:
     def check_user_permission(current_user: dict, allowed_roles: list):
         """
         Проверяет, есть ли у текущего пользователя права доступа.
-
+        ПРИМЕР:
+        UserAccessService.check_user_permission(current_user, ["master"], ["admin"])
         :param current_user: Данные текущего пользователя.
         :param allowed_roles: Список ролей, которые могут выполнить действие.
         :raises HTTPException: Если у пользователя нет нужных прав.
