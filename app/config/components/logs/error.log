@@ -14303,3 +14303,23 @@ DETAIL:  Key (name)=(Фокино) already exists.[0m
 2025-01-30 21:33:35 - my_app - [31mERROR[0m - [31mСистемная ошибка при удалении Вакансии 1: VacancyRepository.delete_vacancy() missing 1 required positional argument: 'id'[0m
 2025-01-30 21:34:35 - my_app - [31mERROR[0m - [31mError message[0m
 2025-01-30 21:34:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-01-31 12:22:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-01-31 12:22:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-03 07:44:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-03 07:44:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-03 15:40:50 - my_app - [31mERROR[0m - [31mПроизошла ошибка при получении мастера: 404: Мастер не найден[0m
+2025-02-03 15:40:59 - my_app - [31mERROR[0m - [31mПроизошла ошибка при получении мастера: 404: Мастер не найден[0m
+2025-02-04 10:20:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-04 10:20:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 09:48:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 09:48:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 19:01:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 19:01:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 19:28:25 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 19:28:25 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 19:28:25 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 19:28:25 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 19:28:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 19:28:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 19:28:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 19:28:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
