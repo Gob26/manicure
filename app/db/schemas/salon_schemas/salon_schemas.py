@@ -92,3 +92,12 @@ class SalonFullSchema(BaseModel):
 
     class Config:
         from_attributes = True
+
+
+# Схема для отображения списка мастеров
+class SalonListSchema(BaseModel):
+    slug: str = Field(..., title="Slug (уникальный идентификатор салона)", example="opytnyj-master")
+    name: str = Field(..., title="Название салона", example="Когти")
+    address: Optional[str] = Field(None, title="Адрес", example="ул. Ленина, 13")
+    phone: Optional[str] = Field(None, title="Телефон", example="+7 900 123-45-67")
+

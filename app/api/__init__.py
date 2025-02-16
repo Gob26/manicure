@@ -1,6 +1,8 @@
 from fastapi import APIRouter
 
+from api.v1.cyties.cyties_list_router import cities_list_router
 from api.v1.job.job_application_router import job_application_router
+from api.v1.job.salon_master_invitation_router import invitation_router
 from api.v1.job.vacancies_salons_router import vacancy_router
 from api.v1.services.service_standart_router import service_standart_router
 from api.v1.auth.user_register_router import user_router
@@ -55,8 +57,14 @@ router.include_router(
     prefix="/api/v1/salon",
     tags=["Салон - создание, обновление и удаление"]
     )
-
 # Вакансии и Связи
+
+router.include_router(
+    invitation_router,
+    prefix="/api/v1/salon/invitation",
+    tags=["Ответ на заявку"]
+    )
+
 router.include_router(
     salon_master_relation_router,
     prefix="/api/v1/salon/relation",
@@ -106,6 +114,12 @@ router.include_router(
 router.include_router(
     city_router,
     prefix="/api/v1/cities",
+    tags=["Город"]
+    )
+# Список городов
+router.include_router(
+    cities_list_router,
+    prefix="/api/v1/cities_list",
     tags=["Город"]
     )
 

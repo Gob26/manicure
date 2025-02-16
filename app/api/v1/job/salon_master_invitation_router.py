@@ -21,9 +21,9 @@ async def create_invitation(
         current_user: dict = Depends(get_current_user),
 ):
     # Проверяем, что роль пользователя — салон или админ
-    UserAccessService.check_user_permission(current_user, ["salon", "admin"])
+    UserAccessService.check_user_permission(current_user, ["salon", "master", "admin"])
     try:
-        return await InvitationService.create_invitation(data)
+        return await InvitationService.create_invitation(data, current_user)
     except Exception as e:
         logger.error(f"Ошибка при отправке приглашения: {e}")
         raise HTTPException(status_code=500, detail="Ошибка при отправке приглашения")

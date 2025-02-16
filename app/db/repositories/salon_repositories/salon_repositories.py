@@ -1,8 +1,11 @@
 from typing import Optional, List, Dict, Any
+
+from fastapi import HTTPException
 from tortoise.expressions import Q
 from tortoise.transactions import atomic
 from tortoise.functions import Count
 
+from db.models import City
 from db.models.salon_models.salon_model import Salon
 from db.repositories.base_repositories.base_repositories import BaseRepository
 from db.schemas.salon_schemas.salon_schemas import SalonUpdateSchema
@@ -53,6 +56,24 @@ class SalonRepository(BaseRepository):
     async def get_salons_by_city(cls, city: str) -> List[Salon]:
         """Получение списка салонов по городу"""
         return await cls.filter(city=city)
+
+    @classmethod
+    async def get_salon_in_city(cls, city_slug: str, limit: int = 10, offset: int = 0) -> List[Salon]:
+        """
+        Получение салонов для конкретного города.
+        """
+        try:
+            # Один запрос для получения города и всех мастеров в нем
+            city = await City.get(slug=city_slug)  # Получаем город по slug
+
+            # Получаем мастеров, связанных с этим городом
+            salon = await Salon.filter(
+                city=city
+            ).offset(offset).limit(limit).prefetch_related('city')  # Загружаем город для каждого салона
+
+            return salon
+        except City.DoesNotExist:
+            raise HTTPException(status_code=404, detail="Город не найден.")
 
     @classmethod
     async def search_salons(cls, query: str) -> List[Salon]:

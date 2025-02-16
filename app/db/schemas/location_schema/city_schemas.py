@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, HttpUrl
 from typing import Optional
 
 # Схема для создания города
@@ -46,7 +46,10 @@ class CityDescriptionOutSchema(BaseModel):
 # Полная информация о городе с описанием
 class FullCitySchema(BaseModel):
     city: CityOutSchema
-    description: Optional[CityDescriptionOutSchema]
+    description: Optional[CityDescriptionOutSchema] = None
+
+    class Config:
+        from_attributes = True
 
 class CityLinkSchema(BaseModel):
     """Схема для отображения города со ссылкой"""

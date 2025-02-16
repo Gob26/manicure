@@ -1,9 +1,6 @@
 from tortoise import fields
-from db.models.services_models.service_custom_model import CustomService
 from db.models.abstract.abstract_model import AbstractModel
-from db.models.job.vacancy_salon import Vacancy
-from db.models.salon_models.salon_master_relation import SalonMasterRelation
-from app.db.models.job.salon_master_invitation import SalonMasterInvitation
+
 
 class Salon(AbstractModel):
     # Связь с городом

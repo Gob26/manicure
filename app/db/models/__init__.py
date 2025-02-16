@@ -12,7 +12,7 @@ from db.models.services_models.category_model import Category
 
 from db.models.salon_models.salon_model import Salon
 from db.models.salon_models.salon_master_relation import SalonMasterRelation
-from app.db.models.job.salon_master_invitation import SalonMasterInvitation
+from db.models.job.salon_master_invitation import SalonMasterInvitation
 
 from db.models.photo_models.photo_standart_service_model import StandardServicePhoto, CustomServicePhoto
 from db.models.photo_models.photo_avatar_model import AvatarPhotoMaster

@@ -22,19 +22,24 @@ async def get_masters_by_city(city_slug: str):
     try:
         masters = await MasterListService.get_masters_by_city(city_slug)
 
-        if not masters:
-            logger.warning(f"Мастера для города '{city_slug}' не найдены.")
+        if masters is None:
+            logger.warning(f"Сервис вернул None для города '{city_slug}'.")
             raise HTTPException(
                 status_code=status.HTTP_404_NOT_FOUND,
                 detail=f"Мастера для города '{city_slug}' не найдены."
             )
 
+        if not masters:
+            logger.warning(f"Мастера для города '{city_slug}' не найдены.")
+            return []  # Возвращаем пустой массив вместо ошибки
+
         logger.info(f"Найдено {len(masters)} мастеров для города '{city_slug}'.")
         return masters
 
     except Exception as e:
-        logger.error(f"Ошибка при получении мастеров для города '{city_slug}': {str(e)}")
+        logger.exception(f"Ошибка при получении мастеров для города '{city_slug}': {str(e)}")
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Ошибка при обработке запроса. Попробуйте позже."
         )
+

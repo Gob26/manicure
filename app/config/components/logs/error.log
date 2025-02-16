@@ -14610,3 +14610,314 @@ TypeError: UserAccessService.check_user_permission() takes 2 positional argument
 2025-02-05 23:27:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-02-05 23:27:36 - my_app - [31mERROR[0m - [31mError message[0m
 2025-02-05 23:27:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 23:31:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 23:31:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 23:33:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 23:33:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 23:34:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 23:34:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 23:36:53 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 23:36:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 23:38:02 - my_app - [31mERROR[0m - [31mОшибка при отправке приглашения: db.repositories.job_repositories.salon_master_invitation_repositories.InvitationRepository.create_invitation() argument after ** must be a mapping, not SalonMasterInvitationCreateSchema[0m
+2025-02-05 23:38:02 - my_app - [31mERROR[0m - [31mОшибка при отправке приглашения: 500: Ошибка при отправке приглашения[0m
+2025-02-05 23:41:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 23:41:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 23:42:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 23:42:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 23:42:46 - my_app - [31mERROR[0m - [31mОшибка при отправке приглашения: type object 'InvitationRepository' has no attribute 'model'[0m
+2025-02-05 23:42:46 - my_app - [31mERROR[0m - [31mОшибка при отправке приглашения: 500: Ошибка при отправке приглашения[0m
+2025-02-05 23:44:50 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 23:44:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 23:47:06 - my_app - [31mERROR[0m - [31mОшибка при отправке приглашения: type object 'InvitationRepository' has no attribute 'model'[0m
+2025-02-05 23:47:06 - my_app - [31mERROR[0m - [31mОшибка при отправке приглашения: 500: Ошибка при отправке приглашения[0m
+2025-02-05 23:48:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 23:48:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 23:48:04 - my_app - [31mERROR[0m - [31mОшибка при отправке приглашения: default_connection for the model <class 'db.models.job.salon_master_invitation.SalonMasterInvitation'> cannot be None[0m
+2025-02-05 23:48:04 - my_app - [31mERROR[0m - [31mОшибка при отправке приглашения: 500: Ошибка при отправке приглашения[0m
+2025-02-05 23:49:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 23:49:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 23:49:51 - my_app - [31mERROR[0m - [31mОшибка при отправке приглашения: default_connection for the model <class 'db.models.job.salon_master_invitation.SalonMasterInvitation'> cannot be None[0m
+2025-02-05 23:49:51 - my_app - [31mERROR[0m - [31mОшибка при отправке приглашения: 500: Ошибка при отправке приглашения[0m
+2025-02-05 23:53:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 23:53:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 23:53:58 - my_app - [31mERROR[0m - [31mОшибка при отправке приглашения: default_connection for the model <class 'db.models.job.salon_master_invitation.SalonMasterInvitation'> cannot be None[0m
+2025-02-05 23:53:58 - my_app - [31mERROR[0m - [31mОшибка при отправке приглашения: 500: Ошибка при отправке приглашения[0m
+2025-02-05 23:54:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-05 23:54:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-05 23:55:06 - my_app - [31mERROR[0m - [31mОшибка при отправке приглашения: default_connection for the model <class 'db.models.job.salon_master_invitation.SalonMasterInvitation'> cannot be None[0m
+2025-02-05 23:55:06 - my_app - [31mERROR[0m - [31mОшибка при отправке приглашения: 500: Ошибка при отправке приглашения[0m
+2025-02-06 07:54:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 07:54:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 07:57:50 - my_app - [31mERROR[0m - [31mОшибка при отправке приглашения: default_connection for the model <class 'db.models.job.salon_master_invitation.SalonMasterInvitation'> cannot be None[0m
+2025-02-06 07:57:50 - my_app - [31mERROR[0m - [31mОшибка при отправке приглашения: 500: Ошибка при отправке приглашения[0m
+2025-02-06 08:06:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 08:06:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 08:06:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 08:06:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 10:13:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 10:13:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 10:14:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 10:14:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 10:17:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 10:17:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 10:37:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 10:37:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 10:42:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 10:42:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 10:43:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 10:43:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 10:48:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 10:48:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 10:51:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 10:51:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 10:55:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 10:55:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 10:55:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 10:55:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 12:01:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 12:01:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 12:11:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 12:11:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 12:11:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 12:11:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 12:12:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 12:12:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 12:12:53 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 12:12:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 12:13:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 12:13:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 12:17:16 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 12:17:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 12:18:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 12:18:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 12:28:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 12:28:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 12:30:16 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 12:30:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 12:31:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 12:31:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 12:35:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 12:35:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 12:39:16 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 12:39:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 12:41:08 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 12:41:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 12:53:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 12:53:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 12:53:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 12:53:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 12:56:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 12:56:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:00:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:00:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:01:58 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:01:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:02:14 - my_app - [31mERROR[0m - [31mОшибка при получении списка активных городов: 'City' object has no attribute 'dict'[0m
+2025-02-06 13:07:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:07:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:08:23 - my_app - [31mERROR[0m - [31mОшибка при получении списка активных городов: 'City' object has no attribute 'to_dict'[0m
+2025-02-06 13:09:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:09:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:09:37 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:09:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:12:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:12:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:14:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:14:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:14:27 - my_app - [31mERROR[0m - [31mОшибка при получении списка активных городов: 6 validation errors for FullCitySchema
+city
+  Field required [type=missing, input_value=<City: 615>, input_type=City]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.id
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x72723c2de570>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.city_id
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x72723c2de570>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.title
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x72723c2de570>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.description
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x72723c2de570>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.text
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x72723c2de570>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing[0m
+2025-02-06 13:14:50 - my_app - [31mERROR[0m - [31mОшибка при получении списка активных городов: 6 validation errors for FullCitySchema
+city
+  Field required [type=missing, input_value=<City: 615>, input_type=City]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.id
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x727240c72240>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.city_id
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x727240c72240>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.title
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x727240c72240>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.description
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x727240c72240>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.text
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x727240c72240>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing[0m
+2025-02-06 13:14:52 - my_app - [31mERROR[0m - [31mОшибка при получении списка активных городов: 6 validation errors for FullCitySchema
+city
+  Field required [type=missing, input_value=<City: 615>, input_type=City]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.id
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x727240c72240>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.city_id
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x727240c72240>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.title
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x727240c72240>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.description
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x727240c72240>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.text
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x727240c72240>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing[0m
+2025-02-06 13:16:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:16:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:16:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:16:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:16:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:16:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:17:10 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:17:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:17:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:17:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:18:47 - my_app - [31mERROR[0m - [31mОшибка при получении списка активных городов: 6 validation errors for FullCitySchema
+city
+  Field required [type=missing, input_value=<City: 615>, input_type=City]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.id
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x7470801ee570>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.city_id
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x7470801ee570>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.title
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x7470801ee570>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.description
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x7470801ee570>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+description.text
+  Field required [type=missing, input_value=<tortoise.queryset.QueryS...bject at 0x7470801ee570>, input_type=QuerySet]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing[0m
+2025-02-06 13:19:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:19:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:20:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:20:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:22:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:22:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:23:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:23:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:24:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:24:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:27:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:27:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:28:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:28:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:28:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:28:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:30:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:30:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:30:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:30:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 13:31:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 13:31:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 15:04:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 15:04:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 19:27:29 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города oms: HTTPException() takes no keyword arguments[0m
+2025-02-06 19:27:29 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города oms: HTTPException() takes no keyword arguments[0m
+2025-02-06 19:42:31 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города OMSK: HTTPException() takes no keyword arguments[0m
+2025-02-06 19:42:31 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города OMSK: HTTPException() takes no keyword arguments[0m
+2025-02-06 19:42:52 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города OMSK: HTTPException() takes no keyword arguments[0m
+2025-02-06 19:42:52 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города OMSK: HTTPException() takes no keyword arguments[0m
+2025-02-06 19:43:18 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города OMSK: HTTPException() takes no keyword arguments[0m
+2025-02-06 19:43:18 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города OMSK: HTTPException() takes no keyword arguments[0m
+2025-02-06 20:26:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 20:26:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 20:27:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 20:27:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 21:12:53 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 21:12:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 21:14:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-06 21:14:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-06 21:20:24 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города om: HTTPException() takes no keyword arguments[0m
+2025-02-06 21:20:24 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города om: HTTPException() takes no keyword arguments[0m
+2025-02-06 21:20:28 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города om: HTTPException() takes no keyword arguments[0m
+2025-02-07 08:42:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-07 08:42:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-07 10:39:50 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города moskv: HTTPException() takes no keyword arguments[0m
+2025-02-07 10:39:50 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города moskv: HTTPException() takes no keyword arguments[0m
+2025-02-10 16:40:07 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-10 16:40:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-11 11:18:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-11 11:18:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-11 14:03:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-11 14:03:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-11 20:07:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-11 20:07:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-11 20:56:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-11 20:56:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-11 20:58:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-11 20:58:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-11 21:00:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-11 21:00:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-11 21:25:44 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города omsk: 'CityDescription' object is not subscriptable[0m
+2025-02-11 21:25:56 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города omsk: 'CityDescription' object is not subscriptable[0m
+2025-02-11 21:26:09 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города omsk: 'CityDescription' object is not subscriptable[0m
+2025-02-11 21:28:44 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города omsk: 'CityDescription' object is not subscriptable[0m
+2025-02-11 21:31:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-11 21:31:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-11 21:31:35 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города omsk: 'QuerySet' object has no attribute 'id'[0m
+2025-02-11 21:33:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-11 21:33:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-12 07:53:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-12 07:53:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-12 09:55:31 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города ufa: HTTPException() takes no keyword arguments[0m
+2025-02-12 09:58:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-12 09:58:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-12 09:59:25 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-12 09:59:25 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-12 10:03:01 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города ufa: HTTPException() takes no keyword arguments[0m
+2025-02-12 10:03:13 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города ufa: HTTPException() takes no keyword arguments[0m
+2025-02-12 10:03:41 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города ufa: HTTPException() takes no keyword arguments[0m
+2025-02-12 10:04:28 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города ufa: HTTPException() takes no keyword arguments[0m
+2025-02-12 10:04:31 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города ufa: HTTPException() takes no keyword arguments[0m
+2025-02-12 10:04:55 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города ufa: HTTPException() takes no keyword arguments[0m
+2025-02-12 14:42:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-12 14:42:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-12 15:15:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-12 15:15:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-12 16:23:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-12 16:23:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-13 06:33:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-13 06:33:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-13 17:26:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-13 17:26:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-14 10:03:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-14 10:03:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-16 09:52:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-16 09:52:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-16 10:14:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-16 10:14:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-16 10:53:42 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города undefined: HTTPException() takes no keyword arguments[0m
+2025-02-16 10:56:05 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города undefined: HTTPException() takes no keyword arguments[0m
+2025-02-16 10:58:37 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города undefined: HTTPException() takes no keyword arguments[0m
+2025-02-16 11:02:18 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города undefined: HTTPException() takes no keyword arguments[0m
+2025-02-16 14:27:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-16 14:27:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-16 15:09:27 - my_app - [31mERROR[0m - [31mОшибка при получении мастеров для города 'stavropol': 404: Мастера для города 'stavropol' не найдены.[0m
+2025-02-16 15:09:44 - my_app - [31mERROR[0m - [31mОшибка при получении мастеров для города 'stavropol': 404: Мастера для города 'stavropol' не найдены.[0m
+2025-02-16 15:23:08 - my_app - [31mERROR[0m - [31mОшибка при получении мастеров для города 'stavropol': 404: Мастера для города 'stavropol' не найдены.[0m
+2025-02-16 15:25:16 - my_app - [31mERROR[0m - [31mОшибка при получении мастеров для города 'stavropol': 404: Мастера для города 'stavropol' не найдены.[0m
+2025-02-16 15:26:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-16 15:26:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

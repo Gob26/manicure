@@ -63,6 +63,10 @@ class MasterRepository(BaseRepository):
         """Получение мастера по ID пользователя."""
         return await cls.get_or_none(user_id=user_id)
 
+    @classmethod
+    async def get_masters_by_city(cls, city: str) -> List[Master]:
+        """Получение списка мастеров по городу"""
+        return await cls.filter(city=city)
 
     @classmethod
     async def get_masters_in_city(cls, city_slug: str, limit: int = 10, offset: int = 0) -> List[Master]:
