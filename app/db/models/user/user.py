@@ -21,5 +21,8 @@ class User(AbstractModel):
     city = fields.ForeignKeyField('server.City', related_name='users')
     role = fields.CharEnumField(UserRole, default=UserRole.client)
 
+    # Новое поле для подтверждения email
+    is_confirmed: bool = fields.BooleanField(default=False)
+
     class Meta:
         table = "users"

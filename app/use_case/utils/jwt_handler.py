@@ -1,6 +1,5 @@
 from datetime import datetime, timedelta
 from typing import Union, Any
-
 from jose import jwt, JWTError
 from fastapi import HTTPException, Depends, status
 from fastapi.security import OAuth2PasswordBearer
@@ -26,6 +25,7 @@ def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None
         "exp": expire,
         "city": data.get("city", ""),  # Добавление города
         "role": data.get("role", ""),  # Роль пользователя
+        "is_confirmed": data.get("is_confirmed", False),  # флаг подтверждения email
     })
 
     # Ensure 'sub' is a string
@@ -83,6 +83,14 @@ async def get_current_user(token: str = Depends(oauth2_scheme)) -> dict:
                 detail="Недействительный токен",
                 headers={"WWW-Authenticate": "Bearer"},
             )
+
+        if not payload.get("is_confirmed", False):  # Проверяем, подтверждён ли email
+            logger.warning(f"Пользователь {user_id} не подтвердил email.")
+            raise HTTPException(
+                status_code=status.HTTP_403_FORBIDDEN,
+                detail="Email не подтвержден. Пожалуйста, подтвердите свой email.",
+            )
+
         user_data = {
             "username": payload.get("username", "Unknown"),
             "user_id": user_id,
