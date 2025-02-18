@@ -15367,3 +15367,8 @@ fastapi.exceptions.HTTPException: 404: Салоны не найдены в да�
 2025-02-18 21:16:45 - my_app - [31mERROR[0m - [31mОшибка декодирования токена подтверждения email: Subject must be a string.[0m
 2025-02-18 21:18:31 - my_app - [31mERROR[0m - [31mError message[0m
 2025-02-18 21:18:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 21:25:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 21:25:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 21:43:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 21:43:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 21:43:18 - my_app - [31mERROR[0m - [31mОшибка при отправке email: SMTP Error[0m

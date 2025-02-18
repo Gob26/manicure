@@ -128,7 +128,7 @@ async def create_confirmation_token(user_id: int, expires_delta: Union[timedelta
     expiration = datetime.utcnow() + (expires_delta or timedelta(hours=24))  # По умолчанию 24 часа
 
     to_encode = {
-        "sub": user_id,
+        "sub": str(user_id),
         "exp": expiration,
         "is_confirmed": False,  # Флаг подтверждения email
     }
