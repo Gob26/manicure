@@ -4,6 +4,7 @@ from api.v1.cyties.cyties_list_router import cities_list_router
 from api.v1.job.job_application_router import job_application_router
 from api.v1.job.salon_master_invitation_router import invitation_router
 from api.v1.job.vacancies_salons_router import vacancy_router
+from api.v1.salons.salons_list_router import salons_list_router
 from api.v1.services.service_standart_router import service_standart_router
 from api.v1.auth.user_register_router import user_router
 from api.v1.auth.user_login_router import login_router
@@ -57,6 +58,13 @@ router.include_router(
     prefix="/api/v1/salon",
     tags=["Салон - создание, обновление и удаление"]
     )
+
+router.include_router(
+    salons_list_router,
+    prefix="/api/v1",
+    tags=["Салон - список салонов города"]
+    )
+
 # Вакансии и Связи
 
 router.include_router(

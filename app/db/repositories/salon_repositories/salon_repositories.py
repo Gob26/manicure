@@ -1,6 +1,6 @@
 from typing import Optional, List, Dict, Any
-
 from fastapi import HTTPException
+from tortoise.exceptions import DoesNotExist
 from tortoise.expressions import Q
 from tortoise.transactions import atomic
 from tortoise.functions import Count
@@ -63,17 +63,19 @@ class SalonRepository(BaseRepository):
         Получение салонов для конкретного города.
         """
         try:
-            # Один запрос для получения города и всех мастеров в нем
-            city = await City.get(slug=city_slug)  # Получаем город по slug
+            # Получаем город по slug
+            city = await City.get(slug=city_slug)
 
-            # Получаем мастеров, связанных с этим городом
-            salon = await Salon.filter(
-                city=city
-            ).offset(offset).limit(limit).prefetch_related('city')  # Загружаем город для каждого салона
-
-            return salon
-        except City.DoesNotExist:
+        except DoesNotExist:
             raise HTTPException(status_code=404, detail="Город не найден.")
+
+        # Получаем салоны в этом городе
+        salons = await Salon.filter(city=city).offset(offset).limit(limit).all()
+
+        if not salons:
+            raise HTTPException(status_code=404, detail="Салоны не найдены в данном городе.")
+
+        return salons
 
     @classmethod
     async def search_salons(cls, query: str) -> List[Salon]:
