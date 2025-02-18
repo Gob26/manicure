@@ -7,6 +7,7 @@ from fastapi.security import OAuth2PasswordBearer
 from config.components.logging_config import logger
 from config.envs.development import Settings
 
+
 settings = Settings()
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/v1/auth/login")  # Укажите путь для логина
@@ -109,24 +110,26 @@ async def get_current_user(token: str = Depends(oauth2_scheme)) -> dict:
             headers={"WWW-Authenticate": "Bearer"},
         )
 
-def create_confirmation_token(user_id: int, expires_delta: Union[timedelta, None] = None) -> str:
+
+async def create_confirmation_token(user_id: int, expires_delta: Union[timedelta, None] = None) -> str:
     """
     Создаёт JWT токен для подтверждения email.
     :param user_id: ID пользователя.
     :param expires_delta: Время жизни токена.
     :return: Сгенерированный JWT токен.
     """
-    expiration = datetime.utcnow() + (expires_delta or timedelta(hours=24))  # Токен будет действителен 24 часа
+    expiration = datetime.utcnow() + (expires_delta or timedelta(hours=24))  # По умолчанию 24 часа
     to_encode = {
         "sub": user_id,
         "exp": expiration,
-        "is_confirmed": False,  # Флаг для подтверждения email
+        "is_confirmed": False,  # Флаг подтверждения email
     }
 
     try:
         encoded_jwt = jwt.encode(to_encode, settings.JWT_SECRET_KEY, algorithm=settings.JWT_ALGORITHM)
-        logger.info(f"Токен для подтверждения email успешно создан: {encoded_jwt}")
+        logger.info(f"Токен для подтверждения email успешно создан для user_id={user_id}.")
         return encoded_jwt
+
     except Exception as e:
         logger.error(f"Ошибка при создании токена для подтверждения email: {e}")
-        raise HTTPException(status_code=500, detail="Ошибка при создании токена для подтверждения email.")
+        raise

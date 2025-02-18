@@ -15145,3 +15145,101 @@ fastapi.exceptions.HTTPException: 404: Салоны не найдены в да�
 2025-02-18 13:49:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-02-18 13:50:47 - my_app - [31mERROR[0m - [31mError message[0m
 2025-02-18 13:50:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 13:54:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 13:54:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 13:55:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 13:55:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 13:56:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 13:56:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 14:00:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 14:00:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 14:03:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 14:03:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 14:52:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 14:52:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 14:52:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 14:52:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 14:55:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 14:55:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 14:56:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 14:56:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 14:59:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 14:59:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:00:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:00:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:00:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:00:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:00:17 - my_app - [31mERROR[0m - [31mОшибка при отправке email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 00721157ae682-6fb6d12e313sm12438667b3.87 - gsmtp')[0m
+2025-02-18 15:01:50 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:01:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:01:52 - my_app - [31mERROR[0m - [31mОшибка при отправке email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 00721157ae682-6fb9c32befbsm1195107b3.82 - gsmtp')[0m
+2025-02-18 15:02:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:02:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:02:17 - my_app - [31mERROR[0m - [31mОшибка при отправке email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 00721157ae682-6fb58fa41f3sm16922257b3.120 - gsmtp')[0m
+2025-02-18 15:11:08 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:11:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:11:08 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:11:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:11:09 - my_app - [31mERROR[0m - [31mОшибка при отправке email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 00721157ae682-6fb7ca441e0sm9478587b3.100 - gsmtp') profservis26@yandex.ru 03079Gramm1986[0m
+2025-02-18 15:12:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:12:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:12:32 - my_app - [31mERROR[0m - [31mОшибка при отправке email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 00721157ae682-6fb5a15f082sm16767087b3.54 - gsmtp') profservis26@gmail.com 03079Gramm1986[0m
+2025-02-18 15:14:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:14:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:14:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:14:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:14:56 - my_app - [31mERROR[0m - [31mОшибка при отправке email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 00721157ae682-6fb58fa41f3sm16967887b3.120 - gsmtp') profservis26@gmail.com 03079Gramm1986[0m
+2025-02-18 15:15:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:15:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:17:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:17:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:17:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:17:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:17:04 - my_app - [31mERROR[0m - [31mОшибка при отправке email: (535, b'5.7.8 Error: authentication failed: Invalid user or password! 1739881024-4HUYbW2MimI0')[0m
+2025-02-18 15:23:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:23:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:23:35 - my_app - [31mERROR[0m - [31mОшибка при отправке email: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1000)[0m
+2025-02-18 15:23:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:23:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:26:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:26:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:27:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:27:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:27:28 - my_app - [31mERROR[0m - [31mПароль отправителя не найден в переменных окружения.[0m
+2025-02-18 15:27:28 - my_app - [31mERROR[0m - [31mОшибка: 500: Не удалось получить пароль отправителя.[0m
+2025-02-18 15:30:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:30:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:31:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:31:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:31:02 - my_app - [31mERROR[0m - [31mОшибка при отправке email: (535, b'5.7.8 Error: authentication failed: Invalid user or password! 1739881862-2VUSBBwMkeA0')[0m
+2025-02-18 15:35:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:35:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:36:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:36:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:37:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:37:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:38:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:38:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:39:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:39:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:42:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:42:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:42:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:42:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:42:56 - my_app - [31mERROR[0m - [31mОшибка при отправке email: SMTP Error[0m
+2025-02-18 15:49:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 15:49:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 15:49:04 - my_app - [31mERROR[0m - [31mОшибка при отправке email: SMTP Error[0m
+2025-02-18 17:21:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 17:21:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 17:22:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 17:22:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 17:23:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 17:23:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 17:23:20 - my_app - [31mERROR[0m - [31mОшибка при отправке email: SMTP Error[0m
+2025-02-18 17:23:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 17:23:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 17:23:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 17:23:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 17:26:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 17:26:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
