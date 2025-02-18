@@ -1,5 +1,6 @@
 from fastapi import APIRouter
 
+from api.v1.auth.user_email_registr import email_router
 from api.v1.cyties.cyties_list_router import cities_list_router
 from api.v1.job.job_application_router import job_application_router
 from api.v1.job.salon_master_invitation_router import invitation_router
@@ -31,6 +32,12 @@ router.include_router(
     login_router,
     prefix="/api/v1/auth",
     tags=["Логирование"]
+    )
+
+router.include_router(
+    email_router,
+    prefix="/api/v1/auth",
+    tags=["Отправка токена на почту"]
     )
 
 # Мастера

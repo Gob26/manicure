@@ -15243,3 +15243,88 @@ fastapi.exceptions.HTTPException: 404: Салоны не найдены в да�
 2025-02-18 17:23:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-02-18 17:26:36 - my_app - [31mERROR[0m - [31mError message[0m
 2025-02-18 17:26:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 17:51:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 17:51:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 17:54:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 17:54:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 17:57:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 17:57:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 18:00:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 18:00:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 18:01:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 18:01:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 18:03:10 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 18:03:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 18:03:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 18:03:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 18:05:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 18:05:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 18:08:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 18:08:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 18:08:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 18:08:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 18:11:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 18:11:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 18:12:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 18:12:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 18:14:08 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 18:14:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 18:15:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 18:15:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 18:16:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 18:16:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 18:18:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 18:18:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 18:20:29 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя gob26: object of type 'coroutine' has no len()[0m
+2025-02-18 18:20:29 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя gob26: 500: Ошибка при регистрации пользователя[0m
+2025-02-18 18:21:47 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя 429428: object of type 'coroutine' has no len()[0m
+2025-02-18 18:21:47 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя 429428: 500: Ошибка при регистрации пользователя[0m
+2025-02-18 18:28:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 18:28:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 19:04:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 19:04:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 19:05:24 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя gob2626: unsupported operand type(s) for +: 'datetime.datetime' and 'str'[0m
+2025-02-18 19:05:24 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя gob2626: 500: Ошибка при регистрации пользователя[0m
+2025-02-18 19:08:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 19:08:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 19:09:06 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя gob262626: invalid literal for int() with base 10: '429428@mail.ru'[0m
+2025-02-18 19:09:06 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя gob262626: 500: Ошибка при регистрации пользователя[0m
+2025-02-18 19:22:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 19:22:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 19:26:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 19:26:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 19:26:56 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя gob26262644: password: Value must not be None[0m
+2025-02-18 19:26:56 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя gob26262644: 500: Ошибка при регистрации пользователя[0m
+2025-02-18 19:27:25 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 19:27:25 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 19:29:47 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя gob26262454644: invalid literal for int() with base 10: '42942844454@mail.ru'[0m
+2025-02-18 19:29:47 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя gob26262454644: 500: Ошибка при регистрации пользователя[0m
+2025-02-18 19:31:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 19:31:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 19:31:37 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя gob262624546343444: invalid literal for int() with base 10: '42942844434454@mail.ru'[0m
+2025-02-18 19:31:37 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя gob262624546343444: 500: Ошибка при регистрации пользователя[0m
+2025-02-18 19:32:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 19:32:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 19:33:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 19:33:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 19:35:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 19:35:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 19:36:22 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя test_master22: invalid literal for int() with base 10: 'test_master22@test_master22.ru'[0m
+2025-02-18 19:36:22 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя test_master22: 500: Ошибка при регистрации пользователя[0m
+2025-02-18 19:38:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 19:38:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 19:38:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 19:38:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 19:39:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 19:39:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 19:39:53 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 19:39:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 19:41:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 19:41:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 19:42:10 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя master97: invalid literal for int() with base 10: 'master97@master97.ru'[0m
+2025-02-18 19:42:10 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя master97: 500: Ошибка при регистрации пользователя[0m
+2025-02-18 19:47:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 19:47:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 19:48:02 - my_app - [31mERROR[0m - [31mОшибка при отправке email: (535, b'5.7.8 Error: authentication failed: Invalid user or password! 1739897282-2mYCxNJOhuQ0')[0m
+2025-02-18 19:48:02 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя master96: 500: Не удалось отправить email[0m
+2025-02-18 19:48:02 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя master96: 500: Ошибка при регистрации пользователя[0m

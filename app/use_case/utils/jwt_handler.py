@@ -118,7 +118,15 @@ async def create_confirmation_token(user_id: int, expires_delta: Union[timedelta
     :param expires_delta: Время жизни токена.
     :return: Сгенерированный JWT токен.
     """
+
+    # Проверка типа expires_delta, чтобы избежать ошибок при сложении
+    if isinstance(expires_delta, str):
+        # Преобразуем строку в timedelta (например, из строки "24 hours")
+        expires_delta = timedelta(hours=int(expires_delta.split()[0]))  # Примерная логика
+
+    # Если expires_delta всё равно None, устанавливаем значение по умолчанию
     expiration = datetime.utcnow() + (expires_delta or timedelta(hours=24))  # По умолчанию 24 часа
+
     to_encode = {
         "sub": user_id,
         "exp": expiration,
