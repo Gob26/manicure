@@ -141,3 +141,28 @@ async def create_confirmation_token(user_id: int, expires_delta: Union[timedelta
     except Exception as e:
         logger.error(f"Ошибка при создании токена для подтверждения email: {e}")
         raise
+
+def decode_confirmation_token(token: str) -> dict:
+    """
+    Декодирует JWT токен подтверждения email.
+    :param token: JWT токен.
+    :return: Раскодированные данные.
+    """
+    logger.info(f"Начало декодирования JWT токена подтверждения email: {token}")
+    try:
+        payload = jwt.decode(token, settings.JWT_SECRET_KEY, algorithms=[settings.JWT_ALGORITHM])
+        logger.info(f"Токен подтверждения email успешно декодирован: {payload}")
+
+        # Проверка на истечение срока действия (оставить как есть)
+        if "exp" in payload and datetime.utcnow() > datetime.utcfromtimestamp(payload["exp"]):
+            logger.warning("Токен истек.")
+            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Токен истек")
+
+        return payload
+    except JWTError as e:
+        logger.error(f"Ошибка декодирования токена подтверждения email: {e}")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Недействительный токен",
+            headers={"WWW-Authenticate": "Bearer"},
+        )

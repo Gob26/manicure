@@ -47,12 +47,12 @@ async def register_user(username: str, email: str, password: str, city_name: str
         logger.info(f"Пользователь {username} успешно зарегистрирован.")
 
         # Генерация токена подтверждения
-        confirmation_token = await create_confirmation_token(user.id) # <--- Добавлено здесь
+        confirmation_token = await create_confirmation_token(user.id) # Добавить второй аргумент
 
         # Отправка письма с токеном
-        await send_confirmation_email(email, confirmation_token) # <--- Добавлено здесь
+        await send_confirmation_email(email, confirmation_token)
 
-        logger.info(f"Письмо с подтверждением отправлено на {email}") # <--- Добавлено здесь
+        logger.info(f"Письмо с подтверждением отправлено на {email}")
         return user
 
     except ValidationError as e: # Ловим ValidationError для обработки ошибок валидации

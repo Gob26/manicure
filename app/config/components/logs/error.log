@@ -15328,3 +15328,42 @@ fastapi.exceptions.HTTPException: 404: Салоны не найдены в да�
 2025-02-18 19:48:02 - my_app - [31mERROR[0m - [31mОшибка при отправке email: (535, b'5.7.8 Error: authentication failed: Invalid user or password! 1739897282-2mYCxNJOhuQ0')[0m
 2025-02-18 19:48:02 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя master96: 500: Не удалось отправить email[0m
 2025-02-18 19:48:02 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя master96: 500: Ошибка при регистрации пользователя[0m
+2025-02-18 19:56:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 19:56:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 20:03:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 20:03:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 20:03:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 20:03:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 20:04:20 - my_app - [31mERROR[0m - [31mОшибка при отправке email: (535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED')[0m
+2025-02-18 20:04:20 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя master95: 500: Не удалось отправить email[0m
+2025-02-18 20:04:20 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя master95: 500: Ошибка при регистрации пользователя[0m
+2025-02-18 20:07:10 - my_app - [31mERROR[0m - [31mОшибка при отправке email: (535, b'5.7.0 NEOBHODIM parol prilozheniya https://help.mail.ru/mail/security/protection/external / Application password is REQUIRED')[0m
+2025-02-18 20:07:10 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя master94: 500: Не удалось отправить email[0m
+2025-02-18 20:07:10 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя master94: 500: Ошибка при регистрации пользователя[0m
+2025-02-18 20:10:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 20:10:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 20:11:16 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 20:11:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 20:11:44 - my_app - [31mERROR[0m - [31mОшибка при отправке email: {'master93@master93.ru': (550, b'non-local recipient verification failed')}[0m
+2025-02-18 20:11:44 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя master93: 500: Не удалось отправить email[0m
+2025-02-18 20:11:44 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя master93: 500: Ошибка при регистрации пользователя[0m
+2025-02-18 20:13:25 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя master92: argument 'line_errors': Can't extract `str` to `Vec`[0m
+2025-02-18 20:13:25 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя master92: 500: Ошибка при регистрации пользователя[0m
+2025-02-18 20:15:20 - my_app - [31mERROR[0m - [31mПользователь master92 не подтвердил email[0m
+2025-02-18 20:15:20 - my_app - [31mERROR[0m - [31mОшибка при логине пользователя master92: Пользователь не подтвердил email[0m
+2025-02-18 20:18:41 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Subject must be a string.[0m
+2025-02-18 20:19:04 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Invalid header string: 'utf-8' codec can't decode byte 0x86 in position 0: invalid start byte[0m
+2025-02-18 20:19:17 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Not enough segments[0m
+2025-02-18 20:21:32 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Not enough segments[0m
+2025-02-18 20:21:38 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Invalid header string: 'utf-8' codec can't decode byte 0xea in position 1: invalid continuation byte[0m
+2025-02-18 20:25:33 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Subject must be a string.[0m
+2025-02-18 20:29:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 20:29:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 20:38:09 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Subject must be a string.[0m
+2025-02-18 20:52:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 20:52:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 21:12:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 21:12:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 21:16:45 - my_app - [31mERROR[0m - [31mОшибка декодирования токена подтверждения email: Subject must be a string.[0m
+2025-02-18 21:18:31 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 21:18:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

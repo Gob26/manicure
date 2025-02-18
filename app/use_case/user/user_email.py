@@ -1,7 +1,7 @@
 from fastapi import HTTPException, status
 from db.repositories.user_repositories.user_repositories import UserRepository
 from config.components.logging_config import logger
-from use_case.utils.jwt_handler import decode_access_token
+from use_case.utils.jwt_handler import decode_confirmation_token
 
 
 async def confirm_user_email(token: str) -> str:
@@ -9,7 +9,7 @@ async def confirm_user_email(token: str) -> str:
     Подтверждает email пользователя на основе токена.
     """
     try:
-        payload = decode_access_token(token)
+        payload = decode_confirmation_token(token)
         user_id = payload.get("sub")
         if not user_id:
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Некорректный токен")
