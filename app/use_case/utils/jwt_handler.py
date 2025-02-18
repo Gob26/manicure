@@ -57,9 +57,10 @@ def decode_access_token(token: str) -> dict:
             payload["sub"] = str(payload["sub"])
 
         # Проверка на истечение срока действия
-        if datetime.utcnow() > datetime.utcfromtimestamp(payload["exp"]):
+        if "exp" in payload and datetime.utcnow() > datetime.utcfromtimestamp(payload["exp"]):
             logger.warning("Токен истек.")
             raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Токен истек")
+
         return payload
     except JWTError as e:
         logger.error(f"Ошибка декодирования токена: {e}")
@@ -96,6 +97,7 @@ async def get_current_user(token: str = Depends(oauth2_scheme)) -> dict:
             "user_id": user_id,
             "role": payload.get("role", ""),
             "city_id": payload.get("city_id"),  # Если есть city_id в токене
+            "is_confirmed": payload.get("is_confirmed", False),  # Добавляем в ответ
         }
         logger.info(f"Текущий пользователь: {user_data}")
         return user_data
@@ -106,3 +108,25 @@ async def get_current_user(token: str = Depends(oauth2_scheme)) -> dict:
             detail="Недействительный токен",
             headers={"WWW-Authenticate": "Bearer"},
         )
+
+def create_confirmation_token(user_id: int, expires_delta: Union[timedelta, None] = None) -> str:
+    """
+    Создаёт JWT токен для подтверждения email.
+    :param user_id: ID пользователя.
+    :param expires_delta: Время жизни токена.
+    :return: Сгенерированный JWT токен.
+    """
+    expiration = datetime.utcnow() + (expires_delta or timedelta(hours=24))  # Токен будет действителен 24 часа
+    to_encode = {
+        "sub": user_id,
+        "exp": expiration,
+        "is_confirmed": False,  # Флаг для подтверждения email
+    }
+
+    try:
+        encoded_jwt = jwt.encode(to_encode, settings.JWT_SECRET_KEY, algorithm=settings.JWT_ALGORITHM)
+        logger.info(f"Токен для подтверждения email успешно создан: {encoded_jwt}")
+        return encoded_jwt
+    except Exception as e:
+        logger.error(f"Ошибка при создании токена для подтверждения email: {e}")
+        raise HTTPException(status_code=500, detail="Ошибка при создании токена для подтверждения email.")

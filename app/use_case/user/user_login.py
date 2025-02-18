@@ -29,6 +29,13 @@ async def login(username: str, password: str):
 
     logger.info(f"Пользователь {username} успешно авторизован")
 
+    # Проверка подтверждения email
+    if not user.is_confirmed:
+        logger.error(f"Пользователь {username} не подтвердил email")
+        raise HTTPException(status_code=403, detail="Пользователь не подтвердил email")
+
+    logger.info(f"Пользователь {username} успешно авторизован")
+
     # Получаем город пользователя через репозиторий
     city_name = None
     city_id = None
@@ -57,5 +64,6 @@ async def login(username: str, password: str):
         "username": user.username,
         "role": user.role,
         "city": city_name,
-        "city_id": city_id
+        "city_id": city_id,
+        "is_confirmed": user.is_confirmed  # Добавляем флаг подтверждения
     }

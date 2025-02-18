@@ -44,6 +44,7 @@ async def login_route(username: str = Form(...), password: str = Form(...)):
             "user_id": user_data["user_id"],  # user_id будет возвращён из функции login
             "role": user_data["role"],
             "city": user_data["city"],  # Город пользователя
+            "is_confirmed": user_data["is_confirmed"],  # Добавляем в проверку подтверждения
             "expires_in": settings.JWT_ACCESS_TOKEN_EXPIRE_MINUTES
         }
 
