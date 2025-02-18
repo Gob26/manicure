@@ -1,121 +1,159 @@
-# FastAPI Docker Boilerplate
+### Документация проекта
 
-This project is based on [FastAPI Docker Boilerplate](https://github.com/Afaneor/fastapi-docker-boilerplate).
+---
 
-## Table of Contents
+## 1. Технологический стек
+**Backend:**
+- **Python 3.12** (основной язык)
+- **FastAPI** (веб-фреймворк для API)
+- **Tortoise ORM** (работа с БД)
+- **Redis** (кэширование/сессии)
+- **Pydantic** (валидация данных)
+- **Poetry** (управление зависимостями)
+- **Alembic** (миграции БД)
+- **Babel** (интернационализация)
+- **Pillow** (обработка изображений)
+- **JWT** (аутентификация)
+- **Docker** (контейнеризация)
 
-- [Setup](#setup)
-- [Running the Application](#running-the-application)
-- [Configuration](#configuration)
-- [Database Migrations](#database-migrations)
-- [Translations](#translations)
-- [CI/CD](#cicd)
+**Frontend:**
+- Next.js
+- TypeScript
 
-## Setup
+**Инфраструктура:**
+- Docker Compose (оркестрация)
+- Nginx/Uvicorn (развёртывание)
+- GitHub Actions/GitLab CI (CI/CD, на основе файлов *.yml)
 
-1. Clone the repository
-2. Create a `.env` file based on `.env.example`:
-   ```
-   cp .env.example .env
-   ```
-3. Configure the environment variables in the `.env` file
+**Тестирование:**
+- pytest (модульные/интеграционные тесты)
+- pytest-cov (покрытие кода)
 
-## Running the Application
+---
 
-### Locally
+## 2. Архитектура проекта
+Проект реализован по принципам **Clean Architecture** с разделением на слои:
+- **API Layer**: Роутеры и обработчики запросов
+- **Domain Layer**: Бизнес-логика (use_case)
+- **Infrastructure Layer**: БД, репозитории, внешние сервисы
 
-```shell
-python3 app/main.py
+### Ключевые компоненты:
+| Компонент              | Описание                                                                 |
+|------------------------|-------------------------------------------------------------------------|
+| `app/api/`             | Все эндпоинты API с версионированием (v1)                              |
+| `app/db/`              | Модели БД, миграции, репозитории и Pydantic-схемы                     |
+| `app/config/`          | Конфигурация приложения (база, Redis, логирование, среды)             |
+| `app/server/`          | Middleware и утилиты сервера (аутентификация, обработка ошибок)       |
+| `app/use_case/`        | Бизнес-логика, разделённая по доменам (мастера, салоны, услуги и т.д.)|
+| `app/static/`          | Статические файлы (CSS, JS, изображения)                              |
+| `app/templates/`       | HTML-шаблоны для SSR                                                 |
+| `app/locales/`         | Локализация (поддержка EN/RU)                                        |
+
+---
+
+## 3. Основные модули
+
+### 3.1 Аутентификация и авторизация
+- **JWT**-токены для защиты API
+- Middleware: `auth_middleware.py`
+- Роутеры: `user_login_router.py`, `user_register_router.py`
+- Хэндлеры: `jwt_handler.py`, `permissions.py`
+
+### 3.2 Профили мастеров
+- **CRUD** операции через `masters_router.py`
+- Связь с салонами: `salons_masters_relation_router.py`
+- Фото профиля: `photo_avatar_model.py` + оптимизация изображений
+
+### 3.3 Управление салонами
+- Вакансии: `vacancies_salons_router.py`
+- Приглашения мастеров: `salon_master_invitation_router.py`
+- Геолокация: интеграция с городами через `city.py`
+
+### 3.4 Система услуг
+- Категории услуг: `service_categories_router.py`
+- Стандартные/кастомные услуги: `service_standart_router.py`, `service_custom_router.py`
+- Атрибуты услуг: `service_attribute_router.py` (размеры, цвета и т.д.)
+
+---
+
+## 4. Запуск проекта
+### Требования:
+- Docker + Docker Compose
+- Python 3.12
+- Poetry
+
+### Инструкция:
+```bash
+# 1. Клонировать репозиторий
+git clone https://github.com/your-project/manicure.git
+
+# 2. Собрать образы
+docker-compose -f docker-compose.yml build
+
+# 3. Запустить сервисы
+docker-compose -f docker-compose.yml up
+
+# 4. Применить миграции
+docker-compose exec web alembic upgrade head
+
+# 5. Загрузить тестовые данные (города)
+docker-compose exec web python app/scripts/load_cities.py
 ```
 
-### Using Docker
+---
 
-```shell
-docker-compose up -d
+## 5. Примеры запросов API
+### Регистрация пользователя:
+```http
+POST /api/v1/auth/register
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "password": "SecurePass123!",
+  "user_type": "master"
+}
 ```
 
-## Configuration
-
-Project settings are divided into components and environments (development/production). They are located in the `app/config/components/` directory.
-
-The main logic for combining settings is in the `__init__.py` file.
-
-To switch between environments, change the `ENVIRONMENT` variable in the `.env` file.
-
-## Database Migrations
-
-The project uses [Tortoise ORM](https://github.com/tortoise/tortoise-orm) and [Aerich](https://github.com/tortoise/aerich) for managing migrations.
-
-### Initializing Migrations
-
-```shell
-aerich init-db
+### Получение списка мастеров в городе:
+```http
+GET /api/v1/moscow/masters
+Headers:
+  Authorization: Bearer {JWT_TOKEN}
 ```
 
-This will create a migrations folder in the db module. All models in `__init__.py` (db module) will be reflected in the migration.
+---
 
-### Creating a New Migration
+## 6. Логирование и мониторинг
+- Логи разделены на `error.log` и `info.log`
+- Формат: JSON с детализацией (время, уровень, сообщение)
+- Интеграция с Sentry/Prometheus (возможна через конфиг)
 
-```shell
-aerich migrate
+---
+
+## 7. Тестирование
+Запуск тестов:
+```bash
+poetry run pytest tests/ --cov=app --cov-report=html
 ```
 
-### Applying Migrations
+**Покрытие:**
+- API endpoints (тесты в `test_api/`)
+- Бизнес-логика (`test_utils/`)
+- Интеграционные тесты (`test_server/`)
 
-```shell
-aerich upgrade
+---
+
+## 8. Локализация
+Поддержка 2 языков (EN/RU):
+- Переводы в `app/locales/`
+- Команда для обновления:
+```bash
+pybabel extract -F babel.cfg -o locales/messages.pot .
+pybabel update -i locales/messages.pot -d locales -l ru
 ```
 
-## Translations
+---
 
-The project supports internationalization using FastAPI-Babel and Pybabel. Translation files are managed using Make commands for easy maintenance.
-
-### Translation Management Commands
-
-1. **Extract Translatable Strings**
-   ```shell
-   make translations-extract
-   ```
-   This will scan your project and create/update the message template (POT) file.
-
-2. **Initialize a New Language**
-   ```shell
-   make translations-init LANG=xx
-   ```
-   Replace `xx` with the language code (e.g., `ru` for Russian, `de` for German).
-
-3. **Compile Translation Messages**
-   ```shell
-   make translations-compile
-   ```
-   Compiles the translation files for use in the application.
-
-4. **Update Existing Translations**
-   ```shell
-   make translations-update
-   ```
-   Updates existing translation files with new strings found in the code.
-
-5. **Complete Translation Workflow**
-   ```shell
-   make translations-all LANG=xx
-   ```
-   Runs the complete workflow for a new language: extract strings, initialize language, and compile messages.
-
-### Translation File Structure
-- `/app/locales/`: Directory containing all translation files
-- `/app/locales/messages.pot`: Template file containing all translatable strings
-- `/app/locales/<lang>/LC_MESSAGES/`: Language-specific translation files
-
-### Using Translations in Code
-The project uses FastAPI-Babel for handling translations. You can use the translation system in your code like this:
-
-```python
-from fastapi_babel import _
-# In your route or model:
-message = _("Your message to translate")
-```
-
-## CI/CD
-
-The project includes a basic CI/CD configuration using GitLab CI. The `.gitlab-ci.yml` file contains stage for building image of the application.
+## 9. Лицензия
+Проект распространяется под лицензией MIT. Полный текст доступен в файле `LICENSE`.
