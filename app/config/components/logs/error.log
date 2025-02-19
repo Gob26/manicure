@@ -15372,3 +15372,23 @@ fastapi.exceptions.HTTPException: 404: Салоны не найдены в да�
 2025-02-18 21:43:18 - my_app - [31mERROR[0m - [31mError message[0m
 2025-02-18 21:43:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-02-18 21:43:18 - my_app - [31mERROR[0m - [31mОшибка при отправке email: SMTP Error[0m
+2025-02-18 21:54:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 21:54:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-18 21:57:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-18 21:57:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-19 06:41:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-19 06:41:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-19 06:43:11 - my_app - [31mERROR[0m - [31mОшибка при отправке email: (550, b'spam message rejected. Please visit https://help.mail.ru/notspam-support/id?c=2VFQCmsIj_UaT6kkUmr_Gw44h905mttM9mukHo_G1b0MouonX-_lzSYAAACXZwEAGhUTLQ~~ or  report details to abuse@corp.mail.ru. Error code: 0A5051D9F58F086B24A94F1A1BFF6A52DD87380E4CDB9A391EA46BF6BDD5C68F27EAA20CCDE5EF5F. ID: 00000026000167972D13151A.')[0m
+2025-02-19 06:43:11 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя salon99: 500: Не удалось отправить email[0m
+2025-02-19 06:43:11 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя salon99: 500: Ошибка при регистрации пользователя[0m
+2025-02-19 07:19:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-19 07:19:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-19 07:22:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-19 07:22:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-19 07:25:42 - my_app - [31mERROR[0m - [31mПользователь salon98 не подтвердил email[0m
+2025-02-19 07:25:42 - my_app - [31mERROR[0m - [31mОшибка при логине пользователя salon98: Пользователь не подтвердил email[0m
+2025-02-19 07:26:22 - my_app - [31mERROR[0m - [31mВ токене отсутствуют обязательные поля[0m
+2025-02-19 07:27:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-19 07:27:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-19 07:28:03 - my_app - [31mERROR[0m - [31mОшибка при регистрации пользователя salon97: Невалидный email адрес[0m
+2025-02-19 07:28:03 - my_app - [31mERROR[0m - [31mСерверная ошибка при регистрации пользователя salon97: 500: Ошибка при регистрации пользователя[0m

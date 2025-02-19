@@ -71,7 +71,7 @@ def decode_access_token(token: str) -> dict:
             headers={"WWW-Authenticate": "Bearer"},
         )
 
-
+# Токены проверки почты
 async def get_current_user(token: str = Depends(oauth2_scheme)) -> dict:
     logger.info(f"Получение текущего пользователя из токена.")
     try:

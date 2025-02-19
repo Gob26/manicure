@@ -1,6 +1,7 @@
 from fastapi import HTTPException
 from passlib.context import CryptContext
 from pydantic import ValidationError
+from tortoise.transactions import atomic
 
 from db.repositories.location_repositories.city_repositories import CityRepository
 from db.repositories.user_repositories.user_repositories import UserRepository
@@ -15,7 +16,7 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 def hash_password(password: str) -> str:
     return pwd_context.hash(password)
 
-
+@atomic() # Для транзакций (Письмо не всегда приходит, потом поставим м уведомлений)
 async def register_user(username: str, email: str, password: str, city_name: str, role: str):
     try:
         logger.info(f"Пользователь {username} пытается зарегистрироваться с городом {city_name}")
