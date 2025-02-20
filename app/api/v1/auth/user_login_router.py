@@ -1,5 +1,4 @@
 from fastapi import APIRouter, HTTPException, status, Form
-from db.schemas.user_schemas.user_login_schema import UserLoginSchema
 from use_case.user.user_login import login
 from config.components.logging_config import logger
 from config.envs.development import Settings
@@ -11,7 +10,7 @@ login_router = APIRouter()
     "/login",
     status_code=status.HTTP_200_OK,
     summary="Авторизация пользователя",
-    description="Авторизация пользователя на основе логина и пароля.",
+    description="Данный endpoint предназначен для аутентификации пользователя на основе логина и пароля. Данные передаются в формате form-data.",
     responses={
         status.HTTP_200_OK: {
             "description": "Пользователь успешно авторизован",
@@ -21,7 +20,9 @@ login_router = APIRouter()
         status.HTTP_500_INTERNAL_SERVER_ERROR: {"description": "Ошибка на сервере"},
     },
 )
-async def login_route(username: str = Form(...), password: str = Form(...)):
+async def login_route(
+        username: str = Form(...),
+        password: str = Form(...)):
     try:
         logger.info(f"Попытка входа пользователя: {username}")
 

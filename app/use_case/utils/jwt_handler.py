@@ -86,12 +86,12 @@ async def get_current_user(token: str = Depends(oauth2_scheme)) -> dict:
                 headers={"WWW-Authenticate": "Bearer"},
             )
 
-        if not payload.get("is_confirmed", False):  # Проверяем, подтверждён ли email
-            logger.warning(f"Пользователь {user_id} не подтвердил email.")
-            raise HTTPException(
-                status_code=status.HTTP_403_FORBIDDEN,
-                detail="Email не подтвержден. Пожалуйста, подтвердите свой email.",
-            )
+        #if not payload.get("is_confirmed", False):  # Проверяем, подтверждён ли email
+        #    logger.warning(f"Пользователь {user_id} не подтвердил email.")
+        #    raise HTTPException(
+        #        status_code=status.HTTP_403_FORBIDDEN,
+        #        detail="Email не подтвержден. Пожалуйста, подтвердите свой email.",
+        #    )
 
         user_data = {
             "username": payload.get("username", "Unknown"),

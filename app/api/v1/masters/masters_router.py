@@ -23,7 +23,8 @@ master_router = APIRouter()
     "/",
     status_code=status.HTTP_201_CREATED,
     summary="Создание профиля мастера",
-    description="Создает новый профиль мастера с контактной информацией, соцсетями и вариантами приема.",
+    description="Создает новый профиль мастера с контактной информацией, соцсетями и вариантами приема."
+                "Данные передаются в формате multipart/form-data",
 )
 async def create_master_route(
     title: Optional[str] = Form(..., max_length=255),
