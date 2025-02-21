@@ -20,7 +20,7 @@ salon_router = APIRouter()
     response_model=SalonCreateSchema,
     status_code=status.HTTP_201_CREATED,
     summary="Создание салона",
-    description="Создает новый салон.", 
+    description="Создает новый салон, используем Form.",
 )
 async def create_salon_route(
     title: Optional[str] = Form(..., max_length=255),

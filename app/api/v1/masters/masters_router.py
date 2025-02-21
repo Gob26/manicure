@@ -18,22 +18,19 @@ IMAGE_TYPE = "avatar"
 
 master_router = APIRouter()
 
-
-@master_router.post(
-    "/",
+@master_router.post("/",
     status_code=status.HTTP_201_CREATED,
-    summary="Создание профиля мастера",
-    description="Создает новый профиль мастера с контактной информацией, соцсетями и вариантами приема."
-                "Данные передаются в формате multipart/form-data",
+    summary="Создание мастера",
+    description="Создает новового мастера, используем Form."
 )
 async def create_master_route(
-    title: Optional[str] = Form(..., max_length=255),
+    title: str = Form(..., max_length=255),
+    specialty: str = Form(..., max_length=255),
+    experience_years: int = Form(0, ge=0),
+    name: str = Form(..., max_length=255),
+    slug: Optional[str] = Form(None, max_length=255),
     description: Optional[str] = Form(None),
     text: Optional[str] = Form(None),
-    experience_years: int = Form(..., ge=0),
-    specialty: str = Form(..., max_length=255),
-    slug: str = Form(..., max_length=255),
-    name: str = Form(..., max_length=255),
     address: Optional[str] = Form(None, max_length=256),
     phone: Optional[str] = Form(None, max_length=20),
     telegram: Optional[HttpUrl] = Form(None),
@@ -47,57 +44,59 @@ async def create_master_route(
     image: UploadFile = File(...),
     current_user: dict = Depends(get_current_user),
 ):
-    # Создаем объект Pydantic модели для валидации данных
-    master_data = MasterCreateInputSchema(
-        title=title,
-        description=description,
-        text=text,
-        experience_years=experience_years,
-        specialty=specialty,
-        slug=slug,
-        name=name,
-        address=address,
-        phone=phone,
-        telegram=telegram,
-        whatsapp=whatsapp,
-        website=website,
-        vk=vk,
-        instagram=instagram,
-        accepts_at_home=accepts_at_home,
-        accepts_in_salon=accepts_in_salon,
-        accepts_offsite=accepts_offsite,
-    )
-
+    """Создание профиля мастера с валидацией данных."""
     user_id = current_user.get("user_id")
     city_id = current_user.get("city_id")
 
     if not user_id or not city_id:
-        raise HTTPException(status_code=400, detail="Не удалось извлечь данные пользователя.")
+        raise HTTPException(status_code=400, detail="Ошибка аутентификации: данные пользователя отсутствуют.")
 
     try:
+        master_data = MasterCreateInputSchema(
+            title=title,
+            specialty=specialty,
+            description=description,
+            text=text,
+            experience_years=experience_years,
+            slug=slug,
+            name=name,
+            address=address,
+            phone=phone,
+            telegram=telegram,
+            whatsapp=whatsapp,
+            website=website,
+            vk=vk,
+            instagram=instagram,
+            accepts_at_home=accepts_at_home,
+            accepts_in_salon=accepts_in_salon,
+            accepts_offsite=accepts_offsite,
+        )
+
         avatar_id = await PhotoHandler.add_photos_to_service(
-            images=image,
+            images=[image],  # исправлено, передаем как список
             model=AvatarPhotoMaster,
-            slug=master_data.slug,
-            city=CITY_FOLDER,
-            role=ROLE_FOLDER,
-            image_type=IMAGE_TYPE,
+            slug=master_data.slug or "default",
+            city="default_city",
+            role="master",
+            image_type="avatar"
         )
 
         master = await MasterService.create_master(
             user_id=user_id,
             city_id=city_id,
             avatar_id=avatar_id,
-            **master_data.dict()
+            **master_data.model_dump()
         )
 
         return master
 
     except ValueError as ve:
+        logger.warning(f"Ошибка валидации: {ve}")
         raise HTTPException(status_code=400, detail=str(ve))
+
     except Exception as e:
         logger.error(f"Системная ошибка при создании мастера: {e}", exc_info=True)
-        raise HTTPException(status_code=500, detail="Системная ошибка при создании мастера")
+        raise HTTPException(status_code=500, detail="Внутренняя ошибка сервера")
 
 
 #Обновление профиля мастера

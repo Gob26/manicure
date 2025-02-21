@@ -15471,3 +15471,42 @@ fastapi.exceptions.HTTPException: 404: Салоны не найдены в да�
 2025-02-20 21:34:49 - my_app - [31mERROR[0m - [31mПользователь master88 не подтвердил email[0m
 2025-02-20 21:34:49 - my_app - [31mERROR[0m - [31mОшибка при логине пользователя master88: Пользователь не подтвердил email[0m
 2025-02-20 21:35:59 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-02-21 08:03:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 08:03:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 08:37:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 08:37:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 08:38:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 08:38:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 08:47:14 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 08:47:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 08:49:05 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 08:49:05 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 08:49:31 - my_app - [31mERROR[0m - [31mПользователь master98 не подтвердил email[0m
+2025-02-21 08:49:31 - my_app - [31mERROR[0m - [31mОшибка при логине пользователя master98: Пользователь не подтвердил email[0m
+2025-02-21 08:51:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 08:51:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 08:52:43 - my_app - [31mERROR[0m - [31mПользователь с именем master88 не найден[0m
+2025-02-21 08:52:43 - my_app - [31mERROR[0m - [31mОшибка при логине пользователя master88: Пользователь не найден[0m
+2025-02-21 08:52:50 - my_app - [31mERROR[0m - [31mПользователь с именем master88 не найден[0m
+2025-02-21 08:52:50 - my_app - [31mERROR[0m - [31mОшибка при логине пользователя master88: Пользователь не найден[0m
+2025-02-21 08:54:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 08:54:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 09:05:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 09:05:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 09:50:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 09:50:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 09:53:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 09:53:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 09:56:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 09:56:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 10:11:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 10:11:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 10:39:45 - my_app - [31mERROR[0m - [31mОшибка декодирования токена: Signature has expired.[0m
+2025-02-21 12:40:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 12:40:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 12:50:17 - my_app - [31mERROR[0m - [31mНеверный пароль для пользователя master89[0m
+2025-02-21 12:50:17 - my_app - [31mERROR[0m - [31mОшибка при логине пользователя master89: Неверный пароль[0m
+2025-02-21 18:20:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 18:20:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 18:39:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 18:39:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
