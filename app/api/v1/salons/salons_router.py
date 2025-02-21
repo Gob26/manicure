@@ -23,46 +23,46 @@ salon_router = APIRouter()
     description="Создает новый салон, используем Form.",
 )
 async def create_salon_route(
-    title: Optional[str] = Form(..., max_length=255),
-    description: Optional[str] = Form(None),
-    text: Optional[str] = Form(None),
-    slug: str = Form(..., max_length=255),
-    name: str = Form(..., max_length=255),
-    address: Optional[str] = Form(None, max_length=256),
-    phone: Optional[str] = Form(None, max_length=20),
-    telegram: Optional[HttpUrl] = Form(None),
-    whatsapp: Optional[HttpUrl] = Form(None),
-    website: Optional[HttpUrl] = Form(None),
-    vk: Optional[HttpUrl] = Form(None),
-    instagram: Optional[HttpUrl] = Form(None),
+    name: str = Form(..., max_length=255, description="Имя салона"),
+    title: str = Form(..., max_length=255, description="Тайтл салона"),
+    slug: Optional[str] = Form(None, max_length=255, description="Уникальный идентификатор"),
+    description: Optional[str] = Form(None, description="Описание салона"),
+    text: Optional[str] = Form(None, description="Дополнительный текст"),
+    address: str = Form(..., max_length=256, description="Адрес салона"),
+    phone: str = Form(..., max_length=20, description="Телефон салона"),
+    telegram: Optional[HttpUrl] = Form(None, description="Telegram салона"),
+    whatsapp: Optional[HttpUrl] = Form(None, description="WhatsApp салона"),
+    website: Optional[HttpUrl] = Form(None, description="Веб-сайт салона"),
+    vk: Optional[HttpUrl] = Form(None, description="ВКонтакте салона"),
+    instagram: Optional[HttpUrl] = Form(None, description="Instagram салона"),
     image: UploadFile = File(...),
     current_user: dict = Depends(get_current_user),
 ):
-    # Создаем объект Pydantic модели для валидации данных
-    salon_data = SalonCreateInputSchema(
-        title=title,
-        description=description,
-        text=text,
-        slug=slug,
-        name=name,
-        address=address,
-        phone=phone,
-        telegram=telegram,
-        whatsapp=whatsapp,
-        website=website,
-        vk=vk,
-        instagram=instagram,
-    )
-
+    """Создание профиля салона с валидацией данных."""
     user_id = current_user.get("user_id")
     city_id = current_user.get("city_id")
 
     if not user_id or not city_id:
         raise HTTPException(status_code=400, detail="Не удалось извлечь данные пользователя.")
-
     try:
+        # Создаем объект Pydantic модели для валидации данных
+        salon_data = SalonCreateInputSchema(
+            title=title,
+            description=description,
+            text=text,
+            slug=slug,
+            name=name,
+            address=address,
+            phone=phone,
+            telegram=telegram,
+            whatsapp=whatsapp,
+            website=website,
+            vk=vk,
+            instagram=instagram,
+        )
+
         avatar_id = await PhotoHandler.add_photos_to_service(
-            images=image,
+            images=[image],
             model=AvatarPhotoSalon,
             slug=salon_data.slug,
             city=CITY_FOLDER,

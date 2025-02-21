@@ -17,13 +17,13 @@ class Salon(AbstractModel):
     # Основная информация
     name = fields.CharField(max_length=255)
     title = fields.CharField(max_length=255, null=False) 
-    slug = fields.CharField(max_length=255, unique=False, null=False)
+    slug = fields.CharField(max_length=255, unique=True, null=True)
     description = fields.TextField(null=True)  
     text = fields.TextField(null=True) 
 
     # Контактная информация
     address = fields.CharField(max_length=255)  # Адрес
-    phone = fields.CharField(max_length=20, null=True, help_text="Телефон мастера")  # Телефон
+    phone = fields.CharField(max_length=20, null=False, help_text="Телефон мастера")  # Телефон
     telegram = fields.CharField(max_length=255, null=True, help_text="Ссылка на Telegram")  # Telegram
     whatsapp = fields.CharField(max_length=255, null=True, help_text="Ссылка на WhatsApp")  # WhatsApp
     website = fields.CharField(max_length=255, null=True, help_text="Веб-сайт мастера")  # Веб-сайт

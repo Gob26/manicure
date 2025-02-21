@@ -1,3 +1,4 @@
+from fastapi import UploadFile
 from pydantic import BaseModel, Field, HttpUrl
 from typing import Optional, List
 
@@ -11,7 +12,7 @@ class ContactInfoSchema(BaseModel):
     instagram: Optional[str] = Field(None, max_length=255, title="Instagram", example="https://instagram.com/example")
 
 
-# Схема для создания салона
+# Схема для респонс
 class SalonCreateSchema(BaseModel):
     user_id: int = Field(..., title="ID пользователя", example=1)
     name: str = Field(..., max_length=255, title="Название", example="Салон Антуриум")
@@ -31,18 +32,19 @@ class SalonCreateSchema(BaseModel):
 
 # Схема для создания салона без city и user_id
 class SalonCreateInputSchema(BaseModel):
-    name: str = Field(..., max_length=255, title="Название", example="Салон Антуриум")
-    title: str = Field(..., max_length=255, title="Заголовок", example="Лучший салон красоты")
-    slug: str = Field(..., max_length=255, title="Slug (уникальный идентификатор)", example="salon-anturium")
-    address: str = Field(..., max_length=255, title="Адрес", example="ул. Большая Филёвская, 21к1")
-
-    # Контактная информация
-    contact_info: ContactInfoSchema = Field(default_factory=ContactInfoSchema)
-
-    # Опциональные поля с контентом
-    description: Optional[str] = Field(None, title="Описание",
-                                       example="Мы предоставляем высококачественные услуги красоты.")
-    text: Optional[str] = Field(None, title="Дополнительная информация", example="Подробности о салоне.")
+    name: str = Field(..., description="Имя салона")
+    title: str = Field(..., description="Тайтл салона")
+    slug: Optional[str] = Field(None, description="Уникальный идентификатор")
+    description: Optional[str] = Field(None, description="Описание салона")
+    text: Optional[str] = Field(None, description="Дополнительный текст")
+    address: str = Field(..., description="Адрес салона")
+    phone: str = Field(..., description="Телефон салона")
+    telegram: Optional[HttpUrl] = Field(None, description="Telegram салона")
+    whatsapp: Optional[HttpUrl] = Field(None, description="WhatsApp салона")
+    website: Optional[HttpUrl] = Field(None, description="Веб-сайт салона")
+    vk: Optional[HttpUrl] = Field(None, description="ВКонтакте салона")
+    instagram: Optional[HttpUrl] = Field(None, description="Instagram салона")
+    avatar_file: Optional[UploadFile] = Field(None, description="Файл аватарки")
 
 
 # Схема для обновления салона
