@@ -38,6 +38,8 @@ async def create_salon_route(
     image: UploadFile = File(...),
     current_user: dict = Depends(get_current_user),
 ):
+    check_user_permission(current_user, ["admin", "salon"])
+
     """Создание профиля салона с валидацией данных."""
     user_id = current_user.get("user_id")
     city_id = current_user.get("city_id")

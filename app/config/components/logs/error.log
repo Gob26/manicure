@@ -15706,3 +15706,152 @@ fastapi.exceptions.HTTPException: 500: Error while adding photos
 2025-02-22 17:31:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-02-22 17:32:45 - my_app - [31mERROR[0m - [31mError message[0m
 2025-02-22 17:32:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 17:59:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 17:59:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 18:02:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 18:02:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 18:03:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 18:03:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 18:03:40 - my_app - [31mERROR[0m - [31mError while adding photos to service: type object 'type' has no attribute 'create'[0m
+2025-02-22 18:03:40 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Error while adding photos[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 54, in add_photos_to_service
+    photo = await PhotoRepository.create_photo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/photo_repositories/photo_standard_service_repository.py", line 16, in create_photo
+    photo = await model.create(**kwargs)
+                  ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/typing.py", line 1212, in __getattr__
+    return getattr(self.__origin__, attr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'type' has no attribute 'create'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_router.py", line 64, in create_salon_route
+    avatar_id = await PhotoHandler.add_photos_to_service(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 78, in add_photos_to_service
+    raise HTTPException(status_code=500, detail="Error while adding photos")
+fastapi.exceptions.HTTPException: 500: Error while adding photos
+2025-02-22 18:05:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 18:05:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 18:07:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 18:07:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 18:07:39 - my_app - [31mERROR[0m - [31mError while adding photos to service: type object 'type' has no attribute 'create'[0m
+2025-02-22 18:07:39 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Error while adding photos[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 54, in add_photos_to_service
+    photo = await PhotoRepository.create_photo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/photo_repositories/photo_standard_service_repository.py", line 16, in create_photo
+    photo = await model.create(**kwargs)
+                  ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/typing.py", line 1212, in __getattr__
+    return getattr(self.__origin__, attr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'type' has no attribute 'create'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_router.py", line 64, in create_salon_route
+    avatar_id = await PhotoHandler.add_photos_to_service(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 77, in add_photos_to_service
+    raise HTTPException(status_code=500, detail="Error while adding photos")
+fastapi.exceptions.HTTPException: 500: Error while adding photos
+2025-02-22 18:10:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 18:10:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 18:16:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 18:16:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 18:16:20 - my_app - [31mERROR[0m - [31mError while adding photos to service: type object 'type' has no attribute 'create'[0m
+2025-02-22 18:16:20 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Error while adding photos[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 54, in add_photos_to_service
+    photo = await PhotoRepository.create_photo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/photo_repositories/photo_standard_service_repository.py", line 16, in create_photo
+    photo = await model.create(**kwargs)
+                  ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/typing.py", line 1212, in __getattr__
+    return getattr(self.__origin__, attr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'type' has no attribute 'create'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_router.py", line 64, in create_salon_route
+    avatar_id = await PhotoHandler.add_photos_to_service(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 75, in add_photos_to_service
+    raise HTTPException(status_code=500, detail="Error while adding photos")
+fastapi.exceptions.HTTPException: 500: Error while adding photos
+2025-02-22 18:22:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 18:22:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 18:23:37 - my_app - [31mERROR[0m - [31mError while adding photos to service: type object 'type' has no attribute 'create'[0m
+2025-02-22 18:23:37 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Error while adding photos[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 54, in add_photos_to_service
+    photo = await PhotoRepository.create_photo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/photo_repositories/photo_standard_service_repository.py", line 16, in create_photo
+    photo = await model.create(**kwargs)
+                  ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/typing.py", line 1212, in __getattr__
+    return getattr(self.__origin__, attr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'type' has no attribute 'create'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_router.py", line 64, in create_salon_route
+    avatar_id = await PhotoHandler.add_photos_to_service(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 75, in add_photos_to_service
+    raise HTTPException(status_code=500, detail="Error while adding photos")
+fastapi.exceptions.HTTPException: 500: Error while adding photos
+2025-02-22 18:24:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 18:24:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 18:25:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 18:25:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 18:29:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 18:29:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 18:29:18 - my_app - [31mERROR[0m - [31mError while adding photos to service: type object 'type' has no attribute 'create'[0m
+2025-02-22 18:29:18 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Error while adding photos[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 54, in add_photos_to_service
+    photo = await PhotoRepository.create_photo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/photo_repositories/photo_standard_service_repository.py", line 16, in create_photo
+    photo = await model.create(**kwargs)
+                  ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/typing.py", line 1212, in __getattr__
+    return getattr(self.__origin__, attr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'type' has no attribute 'create'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_router.py", line 64, in create_salon_route
+    avatar_id = await PhotoHandler.add_photos_to_service(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 75, in add_photos_to_service
+    raise HTTPException(status_code=500, detail="Error while adding photos")
+fastapi.exceptions.HTTPException: 500: Error while adding photos
+2025-02-22 18:29:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 18:29:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 18:57:15 - my_app - [31mERROR[0m - [31mНеверный пароль для пользователя salon98[0m
+2025-02-22 18:57:15 - my_app - [31mERROR[0m - [31mОшибка при логине пользователя salon98: Неверный пароль[0m
+2025-02-22 19:14:43 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 19:14:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 19:23:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 19:23:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 19:24:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 19:24:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 19:50:25 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 19:50:25 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
