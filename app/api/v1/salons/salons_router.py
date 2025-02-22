@@ -64,21 +64,18 @@ async def create_salon_route(
         avatar_id = await PhotoHandler.add_photos_to_service(
             images=[image],
             model=AvatarPhotoSalon,
-            slug=salon_data.slug,
-            city=CITY_FOLDER,
-            role=ROLE_FOLDER,
-            image_type=IMAGE_TYPE,
+            slug=str(user_id),
+            city=str(city_id),
+            role="salon",
+            image_type="avatar",
         )
 
-        salon = await SalonService.create_salon(
+        return await SalonService.create_salon(
             user_id=user_id,
             city_id=city_id,
             avatar_id=avatar_id,
             **salon_data.dict()
         )
-
-        return salon
-
     except ValueError as ve:
         raise HTTPException(status_code=400, detail=str(ve))
     except Exception as e:

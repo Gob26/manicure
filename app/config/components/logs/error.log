@@ -15542,3 +15542,167 @@ fastapi.exceptions.HTTPException: 404: Салоны не найдены в да�
 2025-02-21 20:31:37 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-02-21 20:40:43 - my_app - [31mERROR[0m - [31mError message[0m
 2025-02-21 20:40:43 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 20:48:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 20:48:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 20:48:57 - my_app - [31mERROR[0m - [31mОшибка оптимизации изображения: join() argument must be str, bytes, or os.PathLike object, not 'int'[0m
+2025-02-21 20:48:57 - my_app - [31mERROR[0m - [31mError while adding photos to service: join() argument must be str, bytes, or os.PathLike object, not 'int'[0m
+2025-02-21 20:48:57 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Error while adding photos[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 39, in add_photos_to_service
+    saved_paths = await ImageOptimizer.optimize_and_save_async(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 30, in optimize_and_save_async
+    save_path = ImageOptimizer._create_save_path(city, role, slug, image_type)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 62, in _create_save_path
+    save_path = os.path.join(MEDIA_DIR, city, role, slug, image_type)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen posixpath>", line 90, in join
+  File "<frozen genericpath>", line 164, in _check_arg_types
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'int'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_router.py", line 64, in create_salon_route
+    avatar_id = await PhotoHandler.add_photos_to_service(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 74, in add_photos_to_service
+    raise HTTPException(status_code=500, detail="Error while adding photos")
+fastapi.exceptions.HTTPException: 500: Error while adding photos
+2025-02-21 20:49:10 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 20:49:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 20:49:31 - my_app - [31mERROR[0m - [31mОшибка оптимизации изображения: join() argument must be str, bytes, or os.PathLike object, not 'int'[0m
+2025-02-21 20:49:31 - my_app - [31mERROR[0m - [31mError while adding photos to service: join() argument must be str, bytes, or os.PathLike object, not 'int'[0m
+2025-02-21 20:49:31 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Error while adding photos[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 39, in add_photos_to_service
+    saved_paths = await ImageOptimizer.optimize_and_save_async(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 30, in optimize_and_save_async
+    save_path = ImageOptimizer._create_save_path(city, role, slug, image_type)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 62, in _create_save_path
+    save_path = os.path.join(MEDIA_DIR, city, role, slug, image_type)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen posixpath>", line 90, in join
+  File "<frozen genericpath>", line 164, in _check_arg_types
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'int'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_router.py", line 64, in create_salon_route
+    avatar_id = await PhotoHandler.add_photos_to_service(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 74, in add_photos_to_service
+    raise HTTPException(status_code=500, detail="Error while adding photos")
+fastapi.exceptions.HTTPException: 500: Error while adding photos
+2025-02-21 20:50:30 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 20:50:30 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 20:52:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 20:52:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 20:53:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 20:53:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 20:54:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 20:54:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 22:32:48 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 22:32:48 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-21 22:48:21 - my_app - [31mERROR[0m - [31mОшибка оптимизации изображения: join() argument must be str, bytes, or os.PathLike object, not 'NoneType'[0m
+2025-02-21 22:48:21 - my_app - [31mERROR[0m - [31mError while adding photos to service: join() argument must be str, bytes, or os.PathLike object, not 'NoneType'[0m
+2025-02-21 22:48:21 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Error while adding photos[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 39, in add_photos_to_service
+    saved_paths = await ImageOptimizer.optimize_and_save_async(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 30, in optimize_and_save_async
+    save_path = ImageOptimizer._create_save_path(city, role, slug, image_type)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 62, in _create_save_path
+    save_path = os.path.join(MEDIA_DIR, city, role, slug, image_type)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen posixpath>", line 90, in join
+  File "<frozen genericpath>", line 164, in _check_arg_types
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_router.py", line 64, in create_salon_route
+    avatar_id = await PhotoHandler.add_photos_to_service(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 74, in add_photos_to_service
+    raise HTTPException(status_code=500, detail="Error while adding photos")
+fastapi.exceptions.HTTPException: 500: Error while adding photos
+2025-02-21 22:56:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-21 22:56:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 17:04:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 17:04:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 17:14:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 17:14:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 17:15:42 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 17:15:42 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 17:16:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 17:16:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 17:24:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 17:24:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 17:27:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 17:27:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 17:27:29 - my_app - [31mERROR[0m - [31mОшибка оптимизации изображения: join() argument must be str, bytes, or os.PathLike object, not 'NoneType'[0m
+2025-02-22 17:27:29 - my_app - [31mERROR[0m - [31mError while adding photos to service: join() argument must be str, bytes, or os.PathLike object, not 'NoneType'[0m
+2025-02-22 17:27:29 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Error while adding photos[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 39, in add_photos_to_service
+    saved_paths = await ImageOptimizer.optimize_and_save_async(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 30, in optimize_and_save_async
+    save_path = ImageOptimizer._create_save_path(city, role, slug, image_type)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 62, in _create_save_path
+    save_path = os.path.join(MEDIA_DIR, city, role, slug, image_type)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen posixpath>", line 90, in join
+  File "<frozen genericpath>", line 164, in _check_arg_types
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_router.py", line 65, in create_salon_route
+    avatar_id = await PhotoHandler.add_photos_to_service(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 74, in add_photos_to_service
+    raise HTTPException(status_code=500, detail="Error while adding photos")
+fastapi.exceptions.HTTPException: 500: Error while adding photos
+2025-02-22 17:28:07 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 17:28:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 17:28:52 - my_app - [31mERROR[0m - [31mОшибка оптимизации изображения: join() argument must be str, bytes, or os.PathLike object, not 'NoneType'[0m
+2025-02-22 17:28:52 - my_app - [31mERROR[0m - [31mError while adding photos to service: join() argument must be str, bytes, or os.PathLike object, not 'NoneType'[0m
+2025-02-22 17:28:52 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Error while adding photos[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 39, in add_photos_to_service
+    saved_paths = await ImageOptimizer.optimize_and_save_async(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 30, in optimize_and_save_async
+    save_path = ImageOptimizer._create_save_path(city, role, slug, image_type)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/utils/image.py", line 62, in _create_save_path
+    save_path = os.path.join(MEDIA_DIR, city, role, slug, image_type)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen posixpath>", line 90, in join
+  File "<frozen genericpath>", line 164, in _check_arg_types
+TypeError: join() argument must be str, bytes, or os.PathLike object, not 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_router.py", line 65, in create_salon_route
+    avatar_id = await PhotoHandler.add_photos_to_service(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 74, in add_photos_to_service
+    raise HTTPException(status_code=500, detail="Error while adding photos")
+fastapi.exceptions.HTTPException: 500: Error while adding photos
+2025-02-22 17:31:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 17:31:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-22 17:32:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-22 17:32:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
