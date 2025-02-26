@@ -97,7 +97,7 @@ async def get_current_user(token: str = Depends(oauth2_scheme)) -> dict:
             "username": payload.get("username", "Unknown"),
             "user_id": user_id,
             "role": payload.get("role", ""),
-            "city_id": payload.get("city_id"),  # Если есть city_id в токене
+            "city_id": payload.get("city_id"),
             "is_confirmed": payload.get("is_confirmed", False),  # Добавляем в ответ
         }
         logger.info(f"Текущий пользователь: {user_data}")

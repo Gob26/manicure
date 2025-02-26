@@ -15897,3 +15897,46 @@ fastapi.exceptions.HTTPException: 500: Error while adding photos
 2025-02-23 23:34:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-02-23 23:44:13 - my_app - [31mERROR[0m - [31mError message[0m
 2025-02-23 23:44:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-24 16:24:22 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-24 16:24:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-24 17:35:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-24 17:35:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-24 17:36:58 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-24 17:36:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-24 17:38:22 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-24 17:38:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-24 17:40:55 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-24 17:40:55 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-24 19:41:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-24 19:41:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-24 21:50:47 - my_app - [31mERROR[0m - [31mОшибка при получении списка салонов: 404: Салоны не найдены в данном городе.[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_list_router.py", line 22, in get_salon_by_city_slug
+    salons = await salon_service.get_salon_by_city(city_slug)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 10, in get_salon_by_city
+    return await SalonRepository.get_salon_in_city(city_slug, limit, offset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/salon_repositories/salon_repositories.py", line 76, in get_salon_in_city
+    raise HTTPException(status_code=404, detail="Салоны не найдены в данном городе.")
+fastapi.exceptions.HTTPException: 404: Салоны не найдены в данном городе.
+2025-02-25 10:52:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-25 10:52:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-25 11:43:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-25 11:43:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-25 12:08:16 - my_app - [31mERROR[0m - [31mВнутренняя ошибка сервера при получении города login: HTTPException() takes no keyword arguments[0m
+2025-02-25 21:33:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-25 21:33:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-25 23:02:20 - my_app - [31mERROR[0m - [31mОшибка при получении списка салонов: 404: Салоны не найдены в данном городе.[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_list_router.py", line 22, in get_salon_by_city_slug
+    salons = await salon_service.get_salon_by_city(city_slug)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 10, in get_salon_by_city
+    return await SalonRepository.get_salon_in_city(city_slug, limit, offset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/salon_repositories/salon_repositories.py", line 76, in get_salon_in_city
+    raise HTTPException(status_code=404, detail="Салоны не найдены в данном городе.")
+fastapi.exceptions.HTTPException: 404: Салоны не найдены в данном городе.
+2025-02-26 11:33:58 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-26 11:33:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
