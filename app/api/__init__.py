@@ -13,6 +13,7 @@ from api.v1.masters.masters_list_router import master_list_router
 from api.v1.masters.masters_router import master_router
 from api.v1.masters.masters_read_router import master_read_router
 from api.v1.salons.salons_router import salon_router
+from api.v1.salons.salons_read_router import salon_detail_by_slug_router
 from api.v1.cyties.city import city_router 
 from api.v1.services.service_custom_router import service_custom_router
 from api.v1.services.service_categories_router import service_categories_router
@@ -60,7 +61,7 @@ router.include_router(
     tags=["Мастера - список"]
     )
 
-# Салоны
+# Салоны salons
 router.include_router(
     salon_router,
     prefix="/api/v1/salon",
@@ -71,6 +72,12 @@ router.include_router(
     salons_list_router,
     prefix="/api/v1",
     tags=["Салон - список салонов города"]
+    )
+
+router.include_router(
+    salon_detail_by_slug_router,
+    prefix="/api/v1/salons",
+    tags=["Салон -  все детали салона"]
     )
 
 # Вакансии и Связи

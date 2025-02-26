@@ -62,6 +62,23 @@ class SalonUpdateSchema(BaseModel):
     description: Optional[str] = Field(None, title="Описание")
     text: Optional[str] = Field(None, title="Дополнительная информация")
 
+# Схема для отображения салона с  user_id(для чата)
+class SalonDetailsSchema(BaseModel):
+    name: str = Field(..., description="Имя салона")
+    title: str = Field(..., description="Тайтл салона")
+    slug: Optional[str] = Field(None, description="Уникальный идентификатор")
+    description: Optional[str] = Field(None, description="Описание салона")
+    text: Optional[str] = Field(None, description="Дополнительный текст")
+    address: str = Field(..., description="Адрес салона")
+    phone: str = Field(..., description="Телефон салона")
+    telegram: Optional[HttpUrl] = Field(None, description="Telegram салона")
+    whatsapp: Optional[HttpUrl] = Field(None, description="WhatsApp салона")
+    website: Optional[HttpUrl] = Field(None, description="Веб-сайт салона")
+    vk: Optional[HttpUrl] = Field(None, description="ВКонтакте салона")
+    instagram: Optional[HttpUrl] = Field(None, description="Instagram салона")
+    avatar_file: Optional[UploadFile] = Field(None, description="Файл аватарки")
+    user_id: int = Field(..., description="ID пользователя для чата и звонков")
+
 
 # Схема для отображения салона
 class SalonOutSchema(BaseModel):
@@ -102,4 +119,5 @@ class SalonListSchema(BaseModel):
     name: str = Field(..., title="Название салона", example="Когти")
     address: Optional[str] = Field(None, title="Адрес", example="ул. Ленина, 13")
     phone: Optional[str] = Field(None, title="Телефон", example="+7 900 123-45-67")
+
 

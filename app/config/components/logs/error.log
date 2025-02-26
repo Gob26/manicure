@@ -15940,3 +15940,5 @@ Traceback (most recent call last):
 fastapi.exceptions.HTTPException: 404: Салоны не найдены в данном городе.
 2025-02-26 11:33:58 - my_app - [31mERROR[0m - [31mError message[0m
 2025-02-26 11:33:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-26 12:57:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-26 12:57:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

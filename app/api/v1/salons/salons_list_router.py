@@ -1,6 +1,6 @@
 from typing import List
 from fastapi import APIRouter, HTTPException, status
-from use_case.salon_service.salon_read_service import SalonListService
+from app.use_case.salon_service.salon_read_list_service import SalonListService
 from db.schemas.salon_schemas.salon_schemas import SalonListSchema
 from config.components.logging_config import logger
 
