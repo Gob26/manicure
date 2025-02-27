@@ -44,31 +44,31 @@ class PhotoHandler:
                     image_type=image_type
                 )
 
-                # Получаем URL для фото
-                default_photo_url = saved_paths.get("pc")
-                if not default_photo_url:
-                    raise ValueError(f"Не удалось сохранить изображение: {image.filename}")
+                for version, file_path in saved_paths.items():
+                    if not file_path:
+                        raise ValueError(f"Не удалось сохранить изображение: {image.filename} для версии {version}")
 
-                # Создаем запись в БД
-                photo = await PhotoRepository.create_photo(
-                    model=model,
-                    file_name=image.filename,
-                    file_path=default_photo_url,
-                    mime_type=image.content_type,
-                    size=len(image_bytes),
-                    width=width,
-                    height=height,
-                )
-                logger.info(f"Создаем запись в базе данных с параметрами: "
-                            f"file_name={image.filename}, file_path={default_photo_url}, "
-                            f"mime_type={image.content_type}, size={len(image_bytes)}, "
-                            f"width={width}, height={height}")
+                    # Создаем запись в БД для каждой версии изображения
+                    photo = await PhotoRepository.create_photo(
+                        model=model,
+                        file_name=image.filename,
+                        file_path=file_path,
+                        mime_type=image.content_type,
+                        size=len(image_bytes),
+                        width=width,
+                        height=height,
+                        version=version  # Указываем версию изображения
+                    )
+                    logger.info(f"Создаем запись в базе данных с параметрами: "
+                                f"file_name={image.filename}, file_path={file_path}, "
+                                f"mime_type={image.content_type}, size={len(image_bytes)}, "
+                                f"width={width}, height={height}, version={version}")
 
-                photo_ids.append(photo.id)
+                    photo_ids.append(photo.id)
 
             # Если передано одно изображение, возвращаем ID как одно значение
             return photo_ids
 
         except Exception as e:
-            logger.error(f"Error while adding photos to service: {str(e)}")
-            raise HTTPException(status_code=500, detail="Error while adding photos")
+            logger.error(f"Ошибка при добавлении фото в сервис: {str(e)}")
+            raise HTTPException(status_code=500, detail="Ошибка при добавлении фото")

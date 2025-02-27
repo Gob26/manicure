@@ -10,6 +10,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from config import settings
 from config.constants import APP_DIR
+from core.exceptions.base import ApplicationException
+from core.exceptions.handlers import application_exception_handler, internal_server_error_handler
 from server.utils.exception_handler import validation_exception_handler
 
 
@@ -38,11 +40,19 @@ def _init_internalization(_app: FastAPI) -> None:
         )
     )
 
-
+# Обработка глобальных ошибок
 def _init_exception_handlers(_app: FastAPI) -> None:
     _app.add_exception_handler(
         RequestValidationError,
         validation_exception_handler,
+    )
+    _app.add_exception_handler(
+        ApplicationException,  # Обрабатываем все ошибки типа ApplicationException
+        application_exception_handler,
+    )
+    _app.add_exception_handler(
+        Exception,  # Обрабатываем все остальные непредвиденные ошибки
+        internal_server_error_handler,
     )
 
 

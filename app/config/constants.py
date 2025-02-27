@@ -11,3 +11,4 @@ ENV_FILE_PATH = ROOT_DIR.joinpath('.env')
 
 
 MEDIA_DIR = ROOT_DIR.joinpath('media')
+MEDIA_URL = "/media/"
