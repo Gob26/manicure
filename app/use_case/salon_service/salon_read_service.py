@@ -14,6 +14,8 @@ class SalonReadService:
                 raise ValidationException(message="Недопустимый slug")
 
             return await SalonRepository.get_salon_by_slug(slug)
+
+
         except EntityNotFoundException as e:
             # Преобразуем ошибку репозитория в ошибку сервисного слоя
             raise ResourceNotFoundException(

@@ -25,6 +25,15 @@ class CityOutSchema(BaseModel):
     class Config:
         from_attributes = True
 
+# Схема для отображения всех городов при регистации
+class CityOutAllSchema(BaseModel):
+    id: int
+    name: str
+    slug: str
+
+    class Config:
+        from_attributes = True
+
 # Схема для создания описания города
 class CityDescriptionCreateSchema(BaseModel):
     city_id: int = Field(..., title="ID города", example=1)

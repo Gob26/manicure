@@ -16420,3 +16420,916 @@ TypeError: int() argument must be a string, a bytes-like object or a real number
 2025-02-27 20:33:31 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-02-27 20:37:14 - my_app - [31mERROR[0m - [31mError message[0m
 2025-02-27 20:37:14 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 20:43:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 20:43:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 20:44:12 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 20:44:12 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 20:45:29 - my_app - [31mERROR[0m - [31mОшибка при добавлении фото в сервис: replace() argument 1 must be str, not PosixPath[0m
+2025-02-27 20:45:29 - my_app - [31mERROR[0m - [31mСистемная ошибка при создании мастера: 500: Ошибка при добавлении фото[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 53, in add_photos_to_service
+    relative_path = file_path.replace(MEDIA_DIR, '', 1).lstrip('/')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: replace() argument 1 must be str, not PosixPath
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_router.py", line 66, in create_salon_route
+    avatar_id = await PhotoHandler.add_photos_to_service(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 78, in add_photos_to_service
+    raise HTTPException(status_code=500, detail="Ошибка при добавлении фото")
+fastapi.exceptions.HTTPException: 500: Ошибка при добавлении фото
+2025-02-27 20:45:45 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 20:45:45 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 20:46:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 20:46:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 21:38:02 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 21:38:02 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 21:40:52 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 21:40:52 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 21:42:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 21:42:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 21:45:08 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 21:45:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 21:53:07 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 21:53:07 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 21:56:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 21:56:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 21:57:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 21:57:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:01:13 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:01:13 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:02:17 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:02:17 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:02:53 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:02:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:04:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:04:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:05:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:05:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:07:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:07:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:08:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:08:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:09:38 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:09:38 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:09:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:09:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:10:22 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:10:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:11:54 - my_app - [31mERROR[0m - [31mНеобработанная ошибка при получении салона по slug 'Malibu': 404: Салон не найден.[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/salon_repositories/salon_repositories.py", line 168, in get_salon_with_avatar_versions
+    salon = await cls.model.get(slug=slug).prefetch_related("avatar")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/queryset.py", line 1071, in _execute
+    raise DoesNotExist(self.model)
+tortoise.exceptions.DoesNotExist: Object "Salon" does not exist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 20, in get_salon_by_slug
+    data = await SalonRepository.get_salon_with_avatar_versions(slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/salon_repositories/salon_repositories.py", line 187, in get_salon_with_avatar_versions
+    raise HTTPException(status_code=404, detail="Салон не найден.")
+fastapi.exceptions.HTTPException: 404: Салон не найден.
+2025-02-27 22:11:54 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при получении данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/salon_repositories/salon_repositories.py", line 168, in get_salon_with_avatar_versions
+    salon = await cls.model.get(slug=slug).prefetch_related("avatar")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/queryset.py", line 1071, in _execute
+    raise DoesNotExist(self.model)
+tortoise.exceptions.DoesNotExist: Object "Salon" does not exist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 20, in get_salon_by_slug
+    data = await SalonRepository.get_salon_with_avatar_versions(slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/salon_repositories/salon_repositories.py", line 187, in get_salon_with_avatar_versions
+    raise HTTPException(status_code=404, detail="Салон не найден.")
+fastapi.exceptions.HTTPException: 404: Салон не найден.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 68, in get_salon_by_slug
+    raise ServiceException(
+core.exceptions.service.ServiceException: Ошибка при получении данных салона
+2025-02-27 22:12:18 - my_app - [31mERROR[0m - [31mНеобработанная ошибка при получении салона по slug 'malibu': 'QuerySet' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 47, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+2025-02-27 22:12:18 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при получении данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 47, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 68, in get_salon_by_slug
+    raise ServiceException(
+core.exceptions.service.ServiceException: Ошибка при получении данных салона
+2025-02-27 22:12:38 - my_app - [31mERROR[0m - [31mНеобработанная ошибка при получении салона по slug 'anna-svetlichnayas': 'QuerySet' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 47, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+2025-02-27 22:12:38 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при получении данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 47, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 68, in get_salon_by_slug
+    raise ServiceException(
+core.exceptions.service.ServiceException: Ошибка при получении данных салона
+2025-02-27 22:13:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:13:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:13:46 - my_app - [31mERROR[0m - [31mНеобработанная ошибка при получении салона по slug 'salon-mia': 'QuerySet' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 47, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+2025-02-27 22:13:46 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при получении данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 47, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 68, in get_salon_by_slug
+    raise ServiceException(
+core.exceptions.service.ServiceException: Ошибка при получении данных салона
+2025-02-27 22:15:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:15:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:16:16 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:16:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:16:23 - my_app - [31mERROR[0m - [31mНеобработанная ошибка при получении салона по slug 'salon-mia': 'QuerySet' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 52, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+2025-02-27 22:16:23 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при получении данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 52, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 70, in get_salon_by_slug
+    raise ServiceException(
+core.exceptions.service.ServiceException: Ошибка при получении данных салона
+2025-02-27 22:17:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:17:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:17:22 - my_app - [31mERROR[0m - [31mНеобработанная ошибка при получении салона по slug 'salon-mia': 'QuerySet' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 52, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+2025-02-27 22:17:22 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при получении данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 52, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 70, in get_salon_by_slug
+    raise ServiceException(
+core.exceptions.service.ServiceException: Ошибка при получении данных салона
+2025-02-27 22:19:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:19:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:19:40 - my_app - [31mERROR[0m - [31mНеобработанная ошибка при получении салона по slug 'salon-mia': name 'Salon' is not defined[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 29, in get_salon_by_slug
+    if not isinstance(salon, Salon):
+                             ^^^^^
+NameError: name 'Salon' is not defined. Did you mean: 'salon'?
+2025-02-27 22:19:40 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при получении данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 29, in get_salon_by_slug
+    if not isinstance(salon, Salon):
+                             ^^^^^
+NameError: name 'Salon' is not defined. Did you mean: 'salon'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 70, in get_salon_by_slug
+    raise ServiceException(
+core.exceptions.service.ServiceException: Ошибка при получении данных салона
+2025-02-27 22:24:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:24:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:26:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:26:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:27:06 - my_app - [31mERROR[0m - [31mНеобработанная ошибка при получении салона по slug 'salon-mia': 'QuerySet' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 52, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+2025-02-27 22:27:06 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при получении данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 52, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 70, in get_salon_by_slug
+    raise ServiceException(
+core.exceptions.service.ServiceException: Ошибка при получении данных салона
+2025-02-27 22:27:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:27:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:27:31 - my_app - [31mERROR[0m - [31mНеобработанная ошибка при получении салона по slug 'salon-mia': 'QuerySet' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 52, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+2025-02-27 22:27:31 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при получении данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 52, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 70, in get_salon_by_slug
+    raise ServiceException(
+core.exceptions.service.ServiceException: Ошибка при получении данных салона
+2025-02-27 22:28:50 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:28:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:29:00 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:29:00 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:29:33 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:29:33 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:29:51 - my_app - [31mERROR[0m - [31mНеобработанная ошибка при получении салона по slug 'salon-mia': 'QuerySet' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 52, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+2025-02-27 22:29:51 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при получении данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 52, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 70, in get_salon_by_slug
+    raise ServiceException(
+core.exceptions.service.ServiceException: Ошибка при получении данных салона
+2025-02-27 22:34:20 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:34:20 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:34:24 - my_app - [31mERROR[0m - [31mНеобработанная ошибка при получении салона по slug 'salon-mia': 1 validation error for SalonDetailsSchema
+user_id
+  Field required [type=missing, input_value={'name': 'salon Mia', 'ti...ject at 0x72e1225d2570>}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 38, in get_salon_by_slug
+    schema_data = SalonDetailsSchema(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for SalonDetailsSchema
+user_id
+  Field required [type=missing, input_value={'name': 'salon Mia', 'ti...ject at 0x72e1225d2570>}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+2025-02-27 22:34:24 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при получении данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 38, in get_salon_by_slug
+    schema_data = SalonDetailsSchema(
+                  ^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for SalonDetailsSchema
+user_id
+  Field required [type=missing, input_value={'name': 'salon Mia', 'ti...ject at 0x72e1225d2570>}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 70, in get_salon_by_slug
+    raise ServiceException(
+core.exceptions.service.ServiceException: Ошибка при получении данных салона
+2025-02-27 22:34:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:34:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:35:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:35:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:35:46 - my_app - [31mERROR[0m - [31mНеожиданный тип данных для салона: <class 'tortoise.queryset.QuerySet'>[0m
+2025-02-27 22:35:46 - my_app - [31mERROR[0m - [31mОшибка сервиса: Ошибка при получении данных салона[0m
+2025-02-27 22:35:46 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при получении данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 32, in get_salon_by_slug
+    raise ServiceException(message="Ошибка при получении данных салона", error_code="SERVICE_ERROR")
+core.exceptions.service.ServiceException: Ошибка при получении данных салона
+2025-02-27 22:36:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:36:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:37:12 - my_app - [31mERROR[0m - [31mОшибка при получении салона с slug=salon-mia: 'QuerySet' object has no attribute 'file_name'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/salon_repositories/salon_repositories.py", line 183, in get_salon_with_avatar_versions
+    avatar_records = await AvatarPhotoSalon.filter(file_name=salon.avatar.file_name).all()
+                                                             ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'file_name'
+2025-02-27 22:37:12 - my_app - [31mERROR[0m - [31mНеобработанная ошибка при получении салона по slug 'salon-mia': 500: Внутренняя ошибка сервера.[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/salon_repositories/salon_repositories.py", line 183, in get_salon_with_avatar_versions
+    avatar_records = await AvatarPhotoSalon.filter(file_name=salon.avatar.file_name).all()
+                                                             ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'file_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 20, in get_salon_by_slug
+    data = await SalonRepository.get_salon_with_avatar_versions(slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/salon_repositories/salon_repositories.py", line 199, in get_salon_with_avatar_versions
+    raise HTTPException(status_code=500, detail="Внутренняя ошибка сервера.")
+fastapi.exceptions.HTTPException: 500: Внутренняя ошибка сервера.
+2025-02-27 22:37:12 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при получении данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/salon_repositories/salon_repositories.py", line 183, in get_salon_with_avatar_versions
+    avatar_records = await AvatarPhotoSalon.filter(file_name=salon.avatar.file_name).all()
+                                                             ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'file_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 20, in get_salon_by_slug
+    data = await SalonRepository.get_salon_with_avatar_versions(slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/salon_repositories/salon_repositories.py", line 199, in get_salon_with_avatar_versions
+    raise HTTPException(status_code=500, detail="Внутренняя ошибка сервера.")
+fastapi.exceptions.HTTPException: 500: Внутренняя ошибка сервера.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 71, in get_salon_by_slug
+    raise ServiceException(
+core.exceptions.service.ServiceException: Ошибка при получении данных салона
+2025-02-27 22:38:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:38:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:38:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:38:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:38:58 - my_app - [31mERROR[0m - [31mНеобработанная ошибка при получении салона по slug 'salon-mia': 'QuerySet' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 47, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+2025-02-27 22:38:58 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при получении данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 47, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 68, in get_salon_by_slug
+    raise ServiceException(
+core.exceptions.service.ServiceException: Ошибка при получении данных салона
+2025-02-27 22:39:26 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:39:26 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:39:28 - my_app - [31mERROR[0m - [31mОшибка сервиса при получении салона по slug 'salon-mia': 'QuerySet' object has no attribute 'file_name'[0m
+2025-02-27 22:39:28 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при получении данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 25, in get_salon_by_slug
+    file_name = salon.avatar.file_name
+                ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'file_name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 64, in get_salon_by_slug
+    raise ServiceException(
+core.exceptions.service.ServiceException: Ошибка при получении данных салона
+2025-02-27 22:40:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:40:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:41:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:41:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:41:06 - my_app - [31mERROR[0m - [31mНеобработанная ошибка при получении салона по slug 'salon-mia': 'QuerySet' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 54, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+2025-02-27 22:41:06 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при получении данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 54, in get_salon_by_slug
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 72, in get_salon_by_slug
+    raise ServiceException(
+core.exceptions.service.ServiceException: Ошибка при получении данных салона
+2025-02-27 22:43:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:43:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:43:56 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:43:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:50:22 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:50:22 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:51:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:51:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:51:52 - my_app - [31mERROR[0m - [31mОшибка при объединении данных салона с аватаркой: 'QuerySet' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 99, in combine_salon_with_avatar
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+2025-02-27 22:51:52 - my_app - [31mERROR[0m - [31mОшибка сервиса: Ошибка при обработке данных салона[0m
+2025-02-27 22:51:52 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при обработке данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 99, in combine_salon_with_avatar
+    user_id=salon.user.id if salon.user else None
+            ^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 32, in get_salon_by_slug
+    return await SalonReadService.combine_salon_with_avatar(salon, avatar_versions)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 106, in combine_salon_with_avatar
+    raise ServiceException(message="Ошибка при обработке данных салона", error_code="SERVICE_ERROR")
+core.exceptions.service.ServiceException: Ошибка при обработке данных салона
+2025-02-27 22:52:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:52:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:58:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-27 22:58:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-27 22:58:37 - my_app - [31mERROR[0m - [31mНеобработанная ошибка при получении салона по slug 'salon-mia': 'QuerySet' object has no attribute 'id'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 31, in get_salon_by_slug
+    avatar_urls = await SalonReadService.get_avatar_urls(salon.avatar.id)
+                                                         ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+2025-02-27 22:58:37 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка при получении салона: Ошибка при получении данных салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 31, in get_salon_by_slug
+    avatar_urls = await SalonReadService.get_avatar_urls(salon.avatar.id)
+                                                         ^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_read_router.py", line 22, in get_salon_by_slug
+    return await SalonReadService.get_salon_by_slug(salon_slug)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/salon_service/salon_read_service.py", line 66, in get_salon_by_slug
+    raise ServiceException(
+core.exceptions.service.ServiceException: Ошибка при получении данных салона
+2025-02-28 09:07:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-28 09:07:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-28 11:04:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-28 11:04:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-28 11:04:36 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-28 11:04:36 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-28 11:04:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-28 11:04:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-28 13:39:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-28 13:39:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-28 14:09:50 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-28 14:09:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-28 14:11:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-28 14:11:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-28 14:12:23 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-28 14:12:23 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-28 14:12:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-28 14:12:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-28 14:12:41 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-28 14:12:41 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-28 14:12:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-28 14:12:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-28 14:16:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-28 14:16:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-02-28 14:22:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-02-28 14:22:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 16:38:34 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 16:38:34 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 16:42:21 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 16:42:21 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 16:42:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 16:42:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 16:42:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 16:42:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 16:43:49 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 16:43:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 16:44:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 16:44:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 16:44:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 16:44:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 16:44:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 16:44:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 16:45:01 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 16:45:01 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 16:51:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 16:51:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 16:53:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 16:53:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 16:53:54 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 16:53:54 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 16:54:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 16:54:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 17:05:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 17:05:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 17:05:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 17:05:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 17:06:31 - my_app - [31mERROR[0m - [31mОшибка при получении списка городов: Error 111 connecting to localhost:6379. Connection refused.[0m
+2025-03-03 17:12:56 - my_app - [31mERROR[0m - [31mОшибка при получении списка городов: BasicKeyCommands.set() got an unexpected keyword argument 'expire'[0m
+2025-03-03 17:13:22 - my_app - [31mERROR[0m - [31mОшибка при получении списка городов: BasicKeyCommands.set() got an unexpected keyword argument 'expire'[0m
+2025-03-03 17:15:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 17:15:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 17:15:25 - my_app - [31mERROR[0m - [31mОшибка при получении списка городов: Invalid input of type: 'list'. Convert to a bytes, string, int or float first.[0m
+2025-03-03 17:17:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 17:17:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 17:18:47 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 17:18:47 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 17:18:54 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка: 1 validation errors:
+  {'type': 'list_type', 'loc': ('response',), 'msg': 'Input should be a valid list', 'input': '[{"city": {"id": 358, "name": "\\u041a\\u0430\\u0437\\u0430\\u043d\\u044c", "district": "\\u041f\\u0440\\u0438\\u0432\\u043e\\u043b\\u0436\\u0441\\u043a\\u0438\\u0439", "subject": "\\u0422\\u0430\\u0442\\u0430\\u0440\\u0441\\u0442\\u0430\\u043d", "population": 1308660, "latitude": 55.79083, "longitude": 49.11444, "slug": "kazan"}, "description": null}, {"city": {"id": 415, "name": "\\u041a\\u0438\\u0440\\u043e\\u0432", "district": "\\u0426\\u0435\\u043d\\u0442\\u0440\\u0430\\u043b\\u044c\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0430\\u043b\\u0443\\u0436\\u0441\\u043a\\u0430\\u044f \\u043e\\u0431\\u043b\\u0430\\u0441\\u0442\\u044c", "population": 28097, "latitude": 54.08333, "longitude": 34.3, "slug": "kirov"}, "description": null}, {"city": {"id": 473, "name": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440", "district": "\\u042e\\u0436\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440\\u0441\\u043a\\u0438\\u0439 \\u043a\\u0440\\u0430\\u0439", "population": 1099344, "latitude": 45.03333, "longitude": 38.98333, "slug": "krasnodar"}, "description": null}, {"city": {"id": 615, "name": "\\u041c\\u043e\\u0441\\u043a\\u0432\\u0430", "district": "\\u0426\\u0435\\u043d\\u0442\\u0440\\u0430\\u043b\\u044c\\u043d\\u044b\\u0439", "subject": "\\u041c\\u043e\\u0441\\u043a\\u0432\\u0430", "population": 13010112, "latitude": 55.755833333333, "longitude": 37.617777777778, "slug": "moskva"}, "description": null}, {"city": {"id": 721, "name": "\\u041e\\u043c\\u0441\\u043a", "district": "\\u0421\\u0438\\u0431\\u0438\\u0440\\u0441\\u043a\\u0438\\u0439", "subject": "\\u041e\\u043c\\u0441\\u043a\\u0430\\u044f \\u043e\\u0431\\u043b\\u0430\\u0441\\u0442\\u044c", "population": 1125695, "latitude": 54.96667, "longitude": 73.38333, "slug": "omsk"}, "description": null}, {"city": {"id": 915, "name": "\\u0421\\u043e\\u0447\\u0438", "district": "\\u042e\\u0436\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440\\u0441\\u043a\\u0438\\u0439 \\u043a\\u0440\\u0430\\u0439", "population": 466078, "latitude": 43.58528, "longitude": 39.72028, "slug": "sochi"}, "description": null}, {"city": {"id": 1029, "name": "\\u0423\\u0444\\u0430", "district": "\\u041f\\u0440\\u0438\\u0432\\u043e\\u043b\\u0436\\u0441\\u043a\\u0438\\u0439", "subject": "\\u0411\\u0430\\u0448\\u043a\\u043e\\u0440\\u0442\\u043e\\u0441\\u0442\\u0430\\u043d", "population": 1144809, "latitude": 54.73333, "longitude": 55.96667, "slug": "ufa"}, "description": null}]'}
+[0m
+  + Exception Group Traceback (most recent call last):
+  |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_utils.py", line 76, in collapse_excgroups
+  |     yield
+  |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 178, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 767, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 177, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    |     self.gen.throw(value)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+    |     raise exc
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 179, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/fastapi_babel/middleware.py", line 100, in dispatch
+    |     response: Response = await call_next(request)
+    |                          ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 154, in call_next
+    |     raise app_exc
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 141, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/cors.py", line 85, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    |     await route.handle(scope, receive, send)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    |     await self.app(scope, receive, send)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    |     response = await f(request)
+    |                ^^^^^^^^^^^^^^^^
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/fastapi/routing.py", line 327, in app
+    |     content = await serialize_response(
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/fastapi/routing.py", line 176, in serialize_response
+    |     raise ResponseValidationError(
+    | fastapi.exceptions.ResponseValidationError: 1 validation errors:
+    |   {'type': 'list_type', 'loc': ('response',), 'msg': 'Input should be a valid list', 'input': '[{"city": {"id": 358, "name": "\\u041a\\u0430\\u0437\\u0430\\u043d\\u044c", "district": "\\u041f\\u0440\\u0438\\u0432\\u043e\\u043b\\u0436\\u0441\\u043a\\u0438\\u0439", "subject": "\\u0422\\u0430\\u0442\\u0430\\u0440\\u0441\\u0442\\u0430\\u043d", "population": 1308660, "latitude": 55.79083, "longitude": 49.11444, "slug": "kazan"}, "description": null}, {"city": {"id": 415, "name": "\\u041a\\u0438\\u0440\\u043e\\u0432", "district": "\\u0426\\u0435\\u043d\\u0442\\u0440\\u0430\\u043b\\u044c\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0430\\u043b\\u0443\\u0436\\u0441\\u043a\\u0430\\u044f \\u043e\\u0431\\u043b\\u0430\\u0441\\u0442\\u044c", "population": 28097, "latitude": 54.08333, "longitude": 34.3, "slug": "kirov"}, "description": null}, {"city": {"id": 473, "name": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440", "district": "\\u042e\\u0436\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440\\u0441\\u043a\\u0438\\u0439 \\u043a\\u0440\\u0430\\u0439", "population": 1099344, "latitude": 45.03333, "longitude": 38.98333, "slug": "krasnodar"}, "description": null}, {"city": {"id": 615, "name": "\\u041c\\u043e\\u0441\\u043a\\u0432\\u0430", "district": "\\u0426\\u0435\\u043d\\u0442\\u0440\\u0430\\u043b\\u044c\\u043d\\u044b\\u0439", "subject": "\\u041c\\u043e\\u0441\\u043a\\u0432\\u0430", "population": 13010112, "latitude": 55.755833333333, "longitude": 37.617777777778, "slug": "moskva"}, "description": null}, {"city": {"id": 721, "name": "\\u041e\\u043c\\u0441\\u043a", "district": "\\u0421\\u0438\\u0431\\u0438\\u0440\\u0441\\u043a\\u0438\\u0439", "subject": "\\u041e\\u043c\\u0441\\u043a\\u0430\\u044f \\u043e\\u0431\\u043b\\u0430\\u0441\\u0442\\u044c", "population": 1125695, "latitude": 54.96667, "longitude": 73.38333, "slug": "omsk"}, "description": null}, {"city": {"id": 915, "name": "\\u0421\\u043e\\u0447\\u0438", "district": "\\u042e\\u0436\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440\\u0441\\u043a\\u0438\\u0439 \\u043a\\u0440\\u0430\\u0439", "population": 466078, "latitude": 43.58528, "longitude": 39.72028, "slug": "sochi"}, "description": null}, {"city": {"id": 1029, "name": "\\u0423\\u0444\\u0430", "district": "\\u041f\\u0440\\u0438\\u0432\\u043e\\u043b\\u0436\\u0441\\u043a\\u0438\\u0439", "subject": "\\u0411\\u0430\\u0448\\u043a\\u043e\\u0440\\u0442\\u043e\\u0441\\u0442\\u0430\\u043d", "population": 1144809, "latitude": 54.73333, "longitude": 55.96667, "slug": "ufa"}, "description": null}]'}
+    | 
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 177, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+    raise exc
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 179, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/fastapi_babel/middleware.py", line 100, in dispatch
+    response: Response = await call_next(request)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 154, in call_next
+    raise app_exc
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/fastapi/routing.py", line 327, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/fastapi/routing.py", line 176, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'list_type', 'loc': ('response',), 'msg': 'Input should be a valid list', 'input': '[{"city": {"id": 358, "name": "\\u041a\\u0430\\u0437\\u0430\\u043d\\u044c", "district": "\\u041f\\u0440\\u0438\\u0432\\u043e\\u043b\\u0436\\u0441\\u043a\\u0438\\u0439", "subject": "\\u0422\\u0430\\u0442\\u0430\\u0440\\u0441\\u0442\\u0430\\u043d", "population": 1308660, "latitude": 55.79083, "longitude": 49.11444, "slug": "kazan"}, "description": null}, {"city": {"id": 415, "name": "\\u041a\\u0438\\u0440\\u043e\\u0432", "district": "\\u0426\\u0435\\u043d\\u0442\\u0440\\u0430\\u043b\\u044c\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0430\\u043b\\u0443\\u0436\\u0441\\u043a\\u0430\\u044f \\u043e\\u0431\\u043b\\u0430\\u0441\\u0442\\u044c", "population": 28097, "latitude": 54.08333, "longitude": 34.3, "slug": "kirov"}, "description": null}, {"city": {"id": 473, "name": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440", "district": "\\u042e\\u0436\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440\\u0441\\u043a\\u0438\\u0439 \\u043a\\u0440\\u0430\\u0439", "population": 1099344, "latitude": 45.03333, "longitude": 38.98333, "slug": "krasnodar"}, "description": null}, {"city": {"id": 615, "name": "\\u041c\\u043e\\u0441\\u043a\\u0432\\u0430", "district": "\\u0426\\u0435\\u043d\\u0442\\u0440\\u0430\\u043b\\u044c\\u043d\\u044b\\u0439", "subject": "\\u041c\\u043e\\u0441\\u043a\\u0432\\u0430", "population": 13010112, "latitude": 55.755833333333, "longitude": 37.617777777778, "slug": "moskva"}, "description": null}, {"city": {"id": 721, "name": "\\u041e\\u043c\\u0441\\u043a", "district": "\\u0421\\u0438\\u0431\\u0438\\u0440\\u0441\\u043a\\u0438\\u0439", "subject": "\\u041e\\u043c\\u0441\\u043a\\u0430\\u044f \\u043e\\u0431\\u043b\\u0430\\u0441\\u0442\\u044c", "population": 1125695, "latitude": 54.96667, "longitude": 73.38333, "slug": "omsk"}, "description": null}, {"city": {"id": 915, "name": "\\u0421\\u043e\\u0447\\u0438", "district": "\\u042e\\u0436\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440\\u0441\\u043a\\u0438\\u0439 \\u043a\\u0440\\u0430\\u0439", "population": 466078, "latitude": 43.58528, "longitude": 39.72028, "slug": "sochi"}, "description": null}, {"city": {"id": 1029, "name": "\\u0423\\u0444\\u0430", "district": "\\u041f\\u0440\\u0438\\u0432\\u043e\\u043b\\u0436\\u0441\\u043a\\u0438\\u0439", "subject": "\\u0411\\u0430\\u0448\\u043a\\u043e\\u0440\\u0442\\u043e\\u0441\\u0442\\u0430\\u043d", "population": 1144809, "latitude": 54.73333, "longitude": 55.96667, "slug": "ufa"}, "description": null}]'}
+
+2025-03-03 17:19:18 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 17:19:18 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 17:19:44 - my_app - [31mERROR[0m - [31mНепредвиденная ошибка: 1 validation errors:
+  {'type': 'list_type', 'loc': ('response',), 'msg': 'Input should be a valid list', 'input': '[{"city": {"id": 358, "name": "\\u041a\\u0430\\u0437\\u0430\\u043d\\u044c", "district": "\\u041f\\u0440\\u0438\\u0432\\u043e\\u043b\\u0436\\u0441\\u043a\\u0438\\u0439", "subject": "\\u0422\\u0430\\u0442\\u0430\\u0440\\u0441\\u0442\\u0430\\u043d", "population": 1308660, "latitude": 55.79083, "longitude": 49.11444, "slug": "kazan"}, "description": null}, {"city": {"id": 415, "name": "\\u041a\\u0438\\u0440\\u043e\\u0432", "district": "\\u0426\\u0435\\u043d\\u0442\\u0440\\u0430\\u043b\\u044c\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0430\\u043b\\u0443\\u0436\\u0441\\u043a\\u0430\\u044f \\u043e\\u0431\\u043b\\u0430\\u0441\\u0442\\u044c", "population": 28097, "latitude": 54.08333, "longitude": 34.3, "slug": "kirov"}, "description": null}, {"city": {"id": 473, "name": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440", "district": "\\u042e\\u0436\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440\\u0441\\u043a\\u0438\\u0439 \\u043a\\u0440\\u0430\\u0439", "population": 1099344, "latitude": 45.03333, "longitude": 38.98333, "slug": "krasnodar"}, "description": null}, {"city": {"id": 615, "name": "\\u041c\\u043e\\u0441\\u043a\\u0432\\u0430", "district": "\\u0426\\u0435\\u043d\\u0442\\u0440\\u0430\\u043b\\u044c\\u043d\\u044b\\u0439", "subject": "\\u041c\\u043e\\u0441\\u043a\\u0432\\u0430", "population": 13010112, "latitude": 55.755833333333, "longitude": 37.617777777778, "slug": "moskva"}, "description": null}, {"city": {"id": 721, "name": "\\u041e\\u043c\\u0441\\u043a", "district": "\\u0421\\u0438\\u0431\\u0438\\u0440\\u0441\\u043a\\u0438\\u0439", "subject": "\\u041e\\u043c\\u0441\\u043a\\u0430\\u044f \\u043e\\u0431\\u043b\\u0430\\u0441\\u0442\\u044c", "population": 1125695, "latitude": 54.96667, "longitude": 73.38333, "slug": "omsk"}, "description": null}, {"city": {"id": 915, "name": "\\u0421\\u043e\\u0447\\u0438", "district": "\\u042e\\u0436\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440\\u0441\\u043a\\u0438\\u0439 \\u043a\\u0440\\u0430\\u0439", "population": 466078, "latitude": 43.58528, "longitude": 39.72028, "slug": "sochi"}, "description": null}, {"city": {"id": 1029, "name": "\\u0423\\u0444\\u0430", "district": "\\u041f\\u0440\\u0438\\u0432\\u043e\\u043b\\u0436\\u0441\\u043a\\u0438\\u0439", "subject": "\\u0411\\u0430\\u0448\\u043a\\u043e\\u0440\\u0442\\u043e\\u0441\\u0442\\u0430\\u043d", "population": 1144809, "latitude": 54.73333, "longitude": 55.96667, "slug": "ufa"}, "description": null}]'}
+[0m
+  + Exception Group Traceback (most recent call last):
+  |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_utils.py", line 76, in collapse_excgroups
+  |     yield
+  |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 178, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |                ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 767, in __aexit__
+  |     raise BaseExceptionGroup(
+  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 177, in __call__
+    |     with recv_stream, send_stream, collapse_excgroups():
+    |                                    ^^^^^^^^^^^^^^^^^^^^
+    |   File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    |     self.gen.throw(value)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+    |     raise exc
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 179, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/fastapi_babel/middleware.py", line 100, in dispatch
+    |     response: Response = await call_next(request)
+    |                          ^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 154, in call_next
+    |     raise app_exc
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 141, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/cors.py", line 85, in __call__
+    |     await self.app(scope, receive, send)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    |     await route.handle(scope, receive, send)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    |     await self.app(scope, receive, send)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    |     raise exc
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    |     response = await f(request)
+    |                ^^^^^^^^^^^^^^^^
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/fastapi/routing.py", line 327, in app
+    |     content = await serialize_response(
+    |               ^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/fastapi/routing.py", line 176, in serialize_response
+    |     raise ResponseValidationError(
+    | fastapi.exceptions.ResponseValidationError: 1 validation errors:
+    |   {'type': 'list_type', 'loc': ('response',), 'msg': 'Input should be a valid list', 'input': '[{"city": {"id": 358, "name": "\\u041a\\u0430\\u0437\\u0430\\u043d\\u044c", "district": "\\u041f\\u0440\\u0438\\u0432\\u043e\\u043b\\u0436\\u0441\\u043a\\u0438\\u0439", "subject": "\\u0422\\u0430\\u0442\\u0430\\u0440\\u0441\\u0442\\u0430\\u043d", "population": 1308660, "latitude": 55.79083, "longitude": 49.11444, "slug": "kazan"}, "description": null}, {"city": {"id": 415, "name": "\\u041a\\u0438\\u0440\\u043e\\u0432", "district": "\\u0426\\u0435\\u043d\\u0442\\u0440\\u0430\\u043b\\u044c\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0430\\u043b\\u0443\\u0436\\u0441\\u043a\\u0430\\u044f \\u043e\\u0431\\u043b\\u0430\\u0441\\u0442\\u044c", "population": 28097, "latitude": 54.08333, "longitude": 34.3, "slug": "kirov"}, "description": null}, {"city": {"id": 473, "name": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440", "district": "\\u042e\\u0436\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440\\u0441\\u043a\\u0438\\u0439 \\u043a\\u0440\\u0430\\u0439", "population": 1099344, "latitude": 45.03333, "longitude": 38.98333, "slug": "krasnodar"}, "description": null}, {"city": {"id": 615, "name": "\\u041c\\u043e\\u0441\\u043a\\u0432\\u0430", "district": "\\u0426\\u0435\\u043d\\u0442\\u0440\\u0430\\u043b\\u044c\\u043d\\u044b\\u0439", "subject": "\\u041c\\u043e\\u0441\\u043a\\u0432\\u0430", "population": 13010112, "latitude": 55.755833333333, "longitude": 37.617777777778, "slug": "moskva"}, "description": null}, {"city": {"id": 721, "name": "\\u041e\\u043c\\u0441\\u043a", "district": "\\u0421\\u0438\\u0431\\u0438\\u0440\\u0441\\u043a\\u0438\\u0439", "subject": "\\u041e\\u043c\\u0441\\u043a\\u0430\\u044f \\u043e\\u0431\\u043b\\u0430\\u0441\\u0442\\u044c", "population": 1125695, "latitude": 54.96667, "longitude": 73.38333, "slug": "omsk"}, "description": null}, {"city": {"id": 915, "name": "\\u0421\\u043e\\u0447\\u0438", "district": "\\u042e\\u0436\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440\\u0441\\u043a\\u0438\\u0439 \\u043a\\u0440\\u0430\\u0439", "population": 466078, "latitude": 43.58528, "longitude": 39.72028, "slug": "sochi"}, "description": null}, {"city": {"id": 1029, "name": "\\u0423\\u0444\\u0430", "district": "\\u041f\\u0440\\u0438\\u0432\\u043e\\u043b\\u0436\\u0441\\u043a\\u0438\\u0439", "subject": "\\u0411\\u0430\\u0448\\u043a\\u043e\\u0440\\u0442\\u043e\\u0441\\u0442\\u0430\\u043d", "population": 1144809, "latitude": 54.73333, "longitude": 55.96667, "slug": "ufa"}, "description": null}]'}
+    | 
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 177, in __call__
+    with recv_stream, send_stream, collapse_excgroups():
+                                   ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+    raise exc
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 179, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/fastapi_babel/middleware.py", line 100, in dispatch
+    response: Response = await call_next(request)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 154, in call_next
+    raise app_exc
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/base.py", line 141, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 715, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 735, in app
+    await route.handle(scope, receive, send)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/fastapi/routing.py", line 327, in app
+    content = await serialize_response(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/fastapi/routing.py", line 176, in serialize_response
+    raise ResponseValidationError(
+fastapi.exceptions.ResponseValidationError: 1 validation errors:
+  {'type': 'list_type', 'loc': ('response',), 'msg': 'Input should be a valid list', 'input': '[{"city": {"id": 358, "name": "\\u041a\\u0430\\u0437\\u0430\\u043d\\u044c", "district": "\\u041f\\u0440\\u0438\\u0432\\u043e\\u043b\\u0436\\u0441\\u043a\\u0438\\u0439", "subject": "\\u0422\\u0430\\u0442\\u0430\\u0440\\u0441\\u0442\\u0430\\u043d", "population": 1308660, "latitude": 55.79083, "longitude": 49.11444, "slug": "kazan"}, "description": null}, {"city": {"id": 415, "name": "\\u041a\\u0438\\u0440\\u043e\\u0432", "district": "\\u0426\\u0435\\u043d\\u0442\\u0440\\u0430\\u043b\\u044c\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0430\\u043b\\u0443\\u0436\\u0441\\u043a\\u0430\\u044f \\u043e\\u0431\\u043b\\u0430\\u0441\\u0442\\u044c", "population": 28097, "latitude": 54.08333, "longitude": 34.3, "slug": "kirov"}, "description": null}, {"city": {"id": 473, "name": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440", "district": "\\u042e\\u0436\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440\\u0441\\u043a\\u0438\\u0439 \\u043a\\u0440\\u0430\\u0439", "population": 1099344, "latitude": 45.03333, "longitude": 38.98333, "slug": "krasnodar"}, "description": null}, {"city": {"id": 615, "name": "\\u041c\\u043e\\u0441\\u043a\\u0432\\u0430", "district": "\\u0426\\u0435\\u043d\\u0442\\u0440\\u0430\\u043b\\u044c\\u043d\\u044b\\u0439", "subject": "\\u041c\\u043e\\u0441\\u043a\\u0432\\u0430", "population": 13010112, "latitude": 55.755833333333, "longitude": 37.617777777778, "slug": "moskva"}, "description": null}, {"city": {"id": 721, "name": "\\u041e\\u043c\\u0441\\u043a", "district": "\\u0421\\u0438\\u0431\\u0438\\u0440\\u0441\\u043a\\u0438\\u0439", "subject": "\\u041e\\u043c\\u0441\\u043a\\u0430\\u044f \\u043e\\u0431\\u043b\\u0430\\u0441\\u0442\\u044c", "population": 1125695, "latitude": 54.96667, "longitude": 73.38333, "slug": "omsk"}, "description": null}, {"city": {"id": 915, "name": "\\u0421\\u043e\\u0447\\u0438", "district": "\\u042e\\u0436\\u043d\\u044b\\u0439", "subject": "\\u041a\\u0440\\u0430\\u0441\\u043d\\u043e\\u0434\\u0430\\u0440\\u0441\\u043a\\u0438\\u0439 \\u043a\\u0440\\u0430\\u0439", "population": 466078, "latitude": 43.58528, "longitude": 39.72028, "slug": "sochi"}, "description": null}, {"city": {"id": 1029, "name": "\\u0423\\u0444\\u0430", "district": "\\u041f\\u0440\\u0438\\u0432\\u043e\\u043b\\u0436\\u0441\\u043a\\u0438\\u0439", "subject": "\\u0411\\u0430\\u0448\\u043a\\u043e\\u0440\\u0442\\u043e\\u0441\\u0442\\u0430\\u043d", "population": 1144809, "latitude": 54.73333, "longitude": 55.96667, "slug": "ufa"}, "description": null}]'}
+
+2025-03-03 17:21:59 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 17:21:59 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 17:22:15 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 17:22:15 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 17:22:40 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 17:22:40 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 18:58:42 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 18:58:42 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 19:15:28 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 19:15:28 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 19:29:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 19:29:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 19:37:24 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 19:37:24 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 19:47:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 19:47:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 19:56:06 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 19:56:06 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 19:57:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 19:57:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 19:57:25 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 19:57:25 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 20:02:08 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 20:02:08 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 20:17:09 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 20:17:09 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 20:44:51 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 20:44:51 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 20:51:11 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 20:51:11 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 20:53:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 20:53:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 20:54:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 20:54:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 20:56:10 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 20:56:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 20:58:19 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 20:58:19 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 20:58:58 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 20:58:58 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 21:01:03 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 21:01:03 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 21:03:53 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 21:03:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-03 21:07:53 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-03 21:07:53 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-04 08:57:27 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-04 08:57:27 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

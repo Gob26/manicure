@@ -32,3 +32,19 @@ class CityListRepository(BaseRepository):
         except Exception as e:
             logger.error(f"Ошибка при получении списка городов: {str(e)}")
             raise
+
+    @classmethod
+    async def get_all_cities(cls) -> List[City]:
+        """
+        Получить список всех городов.
+        """
+        logger.debug("Начало получения списка всех городов")
+        try:
+            cities = await cls.model.all().order_by('name') # Получаем список городов и сортируем ео по названию
+
+            logger.info(f"Успешно получено {len(cities)} городов из базы")
+            return cities
+
+        except Exception as e:
+            logger.error(f"Ошибка при получении списка всех городов: {str(e)}")
+            raise

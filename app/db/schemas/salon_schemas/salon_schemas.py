@@ -1,6 +1,7 @@
 from fastapi import UploadFile
 from pydantic import BaseModel, Field, HttpUrl
-from typing import Optional, List
+from typing import Optional, List, Dict
+
 
 # Базовая схема для контактной информации
 class ContactInfoSchema(BaseModel):
@@ -76,7 +77,9 @@ class SalonDetailsSchema(BaseModel):
     website: Optional[HttpUrl] = Field(None, description="Веб-сайт салона")
     vk: Optional[HttpUrl] = Field(None, description="ВКонтакте салона")
     instagram: Optional[HttpUrl] = Field(None, description="Instagram салона")
-    avatar_url: Optional[str] = Field(None, description="Ссылка на аватарку салона")
+    avatar_urls: Optional[Dict[str,str]] = Field(None,
+        discription="Словарь с ссылками на аватари под каждое устройство (ключи: pc, phone, tablet)"
+    )
     user_id: int = Field(..., description="ID пользователя для чата и звонков")
 
     class Config:

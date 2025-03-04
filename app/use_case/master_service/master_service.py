@@ -85,7 +85,8 @@ class MasterService:
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
                 detail="Ошибка при обновлении данных мастера."
             )
-    
+
+    @staticmethod
     async def delete_master(master_id: int, current_user: dict) -> Optional[Master]:
         """Удаление мастера."""
         

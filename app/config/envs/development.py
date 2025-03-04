@@ -46,6 +46,11 @@ class Settings(BaseSettings):
     postgres_port: str = "5433"
     postgres_db: str = "manicure_db"
 
+    # Redis
+    redis_host: str = "localhost"
+    redis_port: str = "6379"
+    redis_db: str = "0"
+
     # Environment
     env: str = "development"
 
