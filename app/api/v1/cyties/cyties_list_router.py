@@ -1,10 +1,11 @@
 from typing import List
-
 from fastapi import APIRouter, HTTPException, status
 from core.redis import get_redis_client
 from use_case.city_service.cities_list_service import CityListService
 from db.schemas.location_schema.city_schemas import FullCitySchema, CityOutAllSchema
 from config.components.logging_config import logger
+from core.exceptions.http import NotFoundException, BadRequestException
+from core.exceptions.service import ServiceException
 
 # Инициализация маршрута
 cities_list_router = APIRouter()
@@ -25,20 +26,27 @@ city_service = CityListService(cache=redis_client)
 )
 async def get_active_cities():
     """
-    Эндпоинт для получения списка городов.
+    Эндпоинт для получения списка активных городов.
     Попытка сначала получить данные из кеша, если их нет - загружаем из базы данных.
     """
     try:
         logger.info("Запрос списка активных городов")
 
-        # Получаем активные города с кешированием
+        # Вызываем метод сервисного слоя для получения активных городов
         cities = await city_service.get_active_cities_list()
 
         logger.info(f"Получено {len(cities)} городов")
         return cities
+
+    except ServiceException as e:
+        # Преобразуем ошибку сервисного слоя в HTTP-исключение
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail={"message": e.message, "error_code": e.error_code}
+        )
     except Exception as e:
-        # Логируем ошибку, если она возникла
-        logger.error(f"Ошибка при получении списка активных городов: {e}")
+        # Логируем непредвиденные ошибки
+        logger.error(f"Непредвиденная ошибка при получении списка активных городов: {e}", exc_info=True)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Внутренняя ошибка сервера при получении списка городов"
@@ -50,7 +58,7 @@ async def get_active_cities():
     response_model=List[CityOutAllSchema],
     status_code=status.HTTP_200_OK,
     summary="Список всех городов",
-    description="Получеие всех городов из базы для выбора при регистрации"
+    description="Получение всех городов из базы для выбора при регистрации"
 )
 async def get_all_cities():
     """
@@ -60,15 +68,22 @@ async def get_all_cities():
     try:
         logger.info("Запрос списка всех городов")
 
-        # Получение всех городов с кешированием
+        # Вызываем метод сервисного слоя для получения всех городов
         cities = await city_service.get_all_cities_list()
 
         logger.info(f"Получено {len(cities)} городов")
         return cities
+
+    except ServiceException as e:
+        # Преобразуем ошибку сервисного слоя в HTTP-исключение
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail={"message": e.message, "error_code": e.error_code}
+        )
     except Exception as e:
-        # Логируем ошибку, если возникает
-        logger.error(f"Ошибка при получении списка всех городов: {e}")
+        # Логируем непредвиденные ошибки
+        logger.error(f"Непредвиденная ошибка при получении списка всех городов: {e}", exc_info=True)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Внутренняя ошибка сервера при получении списка городов"
-    )
+        )

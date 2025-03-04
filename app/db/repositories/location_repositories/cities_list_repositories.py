@@ -5,6 +5,7 @@ from tortoise.functions import Count
 from db.models.location.city import City
 from config.components.logging_config import logger
 from db.repositories.base_repositories.base_repositories import BaseRepository
+from core.exceptions.repository import EntityNotFoundException
 
 
 class CityListRepository(BaseRepository):
@@ -17,6 +18,7 @@ class CityListRepository(BaseRepository):
         """
         logger.debug("Начало получения списка городов с активными услугами")
         try:
+            # Выполняем запрос с аннотацией и фильтрацией
             cities = await cls.model.annotate(
                 masters_count=Count('masters'),
                 salons_count=Count('salons')
@@ -30,8 +32,14 @@ class CityListRepository(BaseRepository):
             return cities
 
         except Exception as e:
+            # Логируем ошибку на уровне репозитория
             logger.error(f"Ошибка при получении списка городов: {str(e)}")
-            raise
+            # Пробрасываем как EntityNotFoundException
+            raise EntityNotFoundException(
+                entity_type="Город",
+                identifier="активные города",
+                error_code="CITIES_NOT_FOUND"
+            )
 
     @classmethod
     async def get_all_cities(cls) -> List[City]:
@@ -40,11 +48,18 @@ class CityListRepository(BaseRepository):
         """
         logger.debug("Начало получения списка всех городов")
         try:
-            cities = await cls.model.all().order_by('name') # Получаем список городов и сортируем ео по названию
+            # Выполняем запрос на получение всех городов
+            cities = await cls.model.all().order_by('name')  # Сортировка по названию
 
             logger.info(f"Успешно получено {len(cities)} городов из базы")
             return cities
 
         except Exception as e:
+            # Логируем ошибку на уровне репозитория
             logger.error(f"Ошибка при получении списка всех городов: {str(e)}")
-            raise
+            # Пробрасываем как EntityNotFoundException
+            raise EntityNotFoundException(
+                entity_type="Город",
+                identifier="все города",
+                error_code="CITIES_NOT_FOUND"
+            )
