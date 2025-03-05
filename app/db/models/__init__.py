@@ -3,6 +3,7 @@ from db.models.abstract.abstract_service import AbstractService
 from db.models.abstract.abstract_photo import AbstractPhoto
 
 from db.models.location.city import City, CityDescription
+from db.models.photo_models.photo_news_models import NewsPhoto
 
 from db.models.user.user import User
 
@@ -45,6 +46,7 @@ __all__ = [
     'CustomServicePhoto',
     'AvatarPhotoMaster',
     'AvatarPhotoSalon',
+    'NewsPhoto',
     'Master',
     'JobApplication',
     'Resume',
