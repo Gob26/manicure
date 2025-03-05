@@ -24,6 +24,9 @@ class PhotoHandler:
             photo_ids = []  # Список для хранения ID созданных записей
 
             for image in images:
+                if not image.content_type.startswith("image"):
+                    raise HTTPException(status_code=400, detail="Загруженный файл не является изображением")
+
                 # Прочитаем изображение
                 image_bytes = await image.read()
                 image_stream = BytesIO(image_bytes)
@@ -43,6 +46,8 @@ class PhotoHandler:
                     slug=slug,
                     image_type=image_type
                 )
+
+                image_stream.close()
 
                 for version, file_path in saved_paths.items():
                     if not file_path:
