@@ -94,7 +94,8 @@ class PhotoHandler:
                     "sort_order": sort_order,
                     "small": saved_paths.get("small", None),
                     "medium": saved_paths.get("medium", None),
-                    "large": saved_paths.get("large", None)
+                    "large": saved_paths.get("large", None),
+                    "original": saved_paths.get("original", None)
                 }
 
                 # Добавляем ID сущности, если он предоставлен и имя поля указано

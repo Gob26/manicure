@@ -21109,3 +21109,22 @@ core.exceptions.service.ServiceException: Ошибка при получении
 2025-03-06 20:58:49 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-03-06 20:59:10 - my_app - [31mERROR[0m - [31mError message[0m
 2025-03-06 20:59:10 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-06 21:35:42 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-06 21:35:42 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-06 21:36:44 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-06 21:36:44 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-06 21:36:46 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-06 21:36:46 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-06 21:36:50 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-06 21:36:50 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-06 21:38:39 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-06 21:38:39 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-06 21:39:04 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-06 21:39:04 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-06 21:39:35 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-06 21:39:35 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-06 22:30:06 - my_app - [31mERROR[0m - [31mОшибка декодирования токена подтверждения email: Signature has expired.[0m
+2025-03-06 22:50:29 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-06 22:50:29 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-06 22:54:57 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-06 22:54:57 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m

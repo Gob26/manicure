@@ -46,7 +46,8 @@ class SalonReadService:
                     avatar_urls['medium'] = f"{MEDIA_URL}{avatar_photo.medium}"
                 if avatar_photo.large:
                     avatar_urls['large'] = f"{MEDIA_URL}{avatar_photo.large}"
-
+                if avatar_photo.original:
+                    avatar_urls['original'] = f"{MEDIA_URL}{avatar_photo.original}"
 
 
             salon_data = { # Формируем словарь данных салона
