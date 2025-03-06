@@ -5,6 +5,7 @@ from tortoise.expressions import Q
 from tortoise.transactions import atomic
 from tortoise.functions import Count
 
+from core.exceptions.repository import EntityNotFoundException
 from db.models import City
 from db.models.salon_models.salon_model import Salon
 from db.repositories.base_repositories.base_repositories import BaseRepository
@@ -35,7 +36,9 @@ class SalonRepository(BaseRepository):
             k: v for k, v in schema.dict(exclude_unset=True).items()
             if v is not None
         }
-        return await cls.update(salon_id, **update_data)
+        await cls.update(salon_id, **update_data)  # Выполняем обновление в БД
+        updated_salon = await cls.get_by_id(salon_id)  # Получаем обновленный салон из БД
+        return updated_salon  # Возвращаем обновленный салон
 
     @classmethod
     async def delete_salon(cls, salon_id: int) -> bool:
@@ -139,7 +142,7 @@ class SalonRepository(BaseRepository):
         
         if has_services is not None:
             query = query.filter(services__isnull=not has_services)
-            
+
         if has_vacancies is not None:
             query = query.filter(vacancies__isnull=not has_vacancies)
         
@@ -156,3 +159,20 @@ class SalonRepository(BaseRepository):
         return await cls.model.all().group_by('city').values('city').annotate(
             salon_count=Count('id')
         ).order_by('-salon_count')
+
+    @staticmethod
+    async def get_salon_by_slug_with_avatar(slug: str):
+        """
+        Получает салон по slug с предзагрузкой аватара
+        """
+        try:
+            # Используем prefetch_related для предзагрузки связанных данных аватара
+            salon = await Salon.filter(slug=slug).prefetch_related('images').first()
+            if not salon:
+                raise EntityNotFoundException(f"Салон с slug={slug} не найден")
+            return salon
+        except DoesNotExist:
+            raise EntityNotFoundException(f"Салон с slug={slug} не найден")
+        except Exception as e:
+            # Логирование и пробрасывание исключения
+            raise e
