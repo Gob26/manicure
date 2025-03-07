@@ -53,6 +53,7 @@ class BaseRepository:
         """Обновление объекта"""
         async with in_transaction() as conn:
             updated = await cls.model.filter(id=id).using_db(conn).update(**kwargs)
+            logger.debug(f"Результат update() для {cls.model.__name__} ID {id}: updated = {updated}")
             if not updated:
                 logger.warning(f"Не удалось обновить {cls.model.__name__} с ID {id}")
                 return None

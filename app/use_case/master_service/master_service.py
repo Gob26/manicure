@@ -1,5 +1,6 @@
 from fastapi import HTTPException, status
 from typing import Optional, Any, List
+from db.schemas.master_schemas.master_schemas import MasterUpdateSchema
 
 from db.models.master_models.master_model import Master
 from db.repositories.master_repositories.master_repositories import MasterRepository
@@ -12,7 +13,6 @@ class MasterService:
     async def create_master(
         city_id: int,
         user_id: int,
-        avatar_id: Optional[List[int]] = None,
         **master_data
     ) -> Master:
         if not user_id:
@@ -25,22 +25,11 @@ class MasterService:
         if not master_data.get("slug"):
             master_data["slug"] = await generate_unique_slug(Master, master_data.get("name"))
 
-        if avatar_id:
-            if isinstance(avatar_id, list): # Проверяем, что это список
-                if len(avatar_id) > 0:
-                    master_data["avatar_id"] = avatar_id[0]  # Берем первый элемент списка
-                else:
-                    master_data["avatar_id"] = None # Обрабатываем случай пустого списка
-            else:
-                master_data["avatar_id"] = avatar_id # Если пришло одно число, то используем его
-
         master = await MasterRepository.create_master(
             user_id=user_id,
             city_id=city_id,
             **master_data
         )
-
-        await master.fetch_related('avatar') #Ленивая загрузка фото
 
         if not master:
             raise HTTPException(
@@ -55,7 +44,7 @@ class MasterService:
     async def update_master(
         master_id: int,
         current_user: dict,
-        **kwargs: Any
+        **master_data: Any
     ) -> Optional[Master]:
         """Обновление мастера."""
         
@@ -72,19 +61,48 @@ class MasterService:
                 detail=f"Мастер с ID {master_id} не найден."
             )
         
-        # Применение обновлений
+        # Фильтруем None-значения в master_data
+        master_data = {k: v for k, v in master_data.items() if v is not None}
+
+        
         try:
-            # Обновление данных мастера
-            updated_master = await master.update_from_dict(kwargs).save()
-            logger.info(f"Мастер с ID {master_id} успешно обновлен с данными: {kwargs}")
+            # Создаем объект MasterUpdateSchema и обновляем мастера
+            schema = MasterUpdateSchema(**master_data)
+
+            updated_master = await MasterRepository._update_master(master_id, schema=schema)
+            logger.info(f"Мастер {master_id} успешно обновлен.")
+            logger.debug(
+                f"Обновленный мастер: {updated_master}, type: {type(updated_master)}")
+            
+            if updated_master is None:
+                logger.error(
+                    f"MasterRepository._update_master вернул None для salon_id: {master_id}")
+                raise HTTPException(
+                    status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                    detail="Ошибка при обновлении мастера."  
+                )
             return updated_master
         
-        except Exception as e:
-            logger.error(f"Ошибка при обновлении мастера с ID {master_id}: {str(e)}")
+        
+        except TypeError as e:
+            if "avatar_id" in str(e):
+                logger.error(f"Ошибка при обновлении мастера ID {master_id}: параметр 'avatar_id' не поддерживается.")
+            else:
+                logger.error(f"Ошибка при обновлении мастера ID {master_id}: {e}")
             raise HTTPException(
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                detail="Ошибка при обновлении данных мастера."
+                detail="Произошла ошибка при обновлении мастера из-за TypeError."
             )
+        except HTTPException as http_e:  # Перехватываем и пробрасываем HTTPException
+            raise http_e
+        except Exception as e:
+            logger.error(f"Системная ошибка при обновлении мастера ID {master_id}: {e}",
+                         exc_info=True)  # Добавим exc_info=True для полного стека
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail="Произошла системная ошибка при обновлении мастера."
+            )
+                
 
     @staticmethod
     async def delete_master(master_id: int, current_user: dict) -> Optional[Master]:

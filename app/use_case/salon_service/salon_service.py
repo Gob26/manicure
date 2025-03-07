@@ -1,6 +1,6 @@
 from typing import Optional, Any, Dict
 from fastapi import HTTPException, status
-
+from db.schemas.salon_schemas.salon_schemas import SalonUpdateSchema
 from db.models.salon_models.salon_model import Salon
 from db.repositories.salon_repositories.salon_repositories import SalonRepository
 from use_case.utils.slug_generator import generate_unique_slug
@@ -57,12 +57,12 @@ class SalonService:
                 detail=f"Салон с ID {salon_id} не найден"
             )
 
-        # Фильтруем None-значения
+        # Фильтруем None-значения из salon_data
         salon_data = {k: v for k, v in salon_data.items() if v is not None}
 
         try:
-            # Создаем объект SalonUpdateSchema
-            from db.schemas.salon_schemas.salon_schemas import SalonUpdateSchema
+            # Создаем объект SalonUpdateSchema и обновляем салон
+
             schema = SalonUpdateSchema(**salon_data)
 
             updated_salon = await SalonRepository.update_salon(salon_id, schema=schema)

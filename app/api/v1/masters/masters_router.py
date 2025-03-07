@@ -6,7 +6,7 @@ from db.models.photo_models.photo_avatar_model import AvatarPhotoMaster
 from db.models.master_models.master_model import Master
 from use_case.utils.jwt_handler import get_current_user
 from use_case.master_service.master_service import MasterService
-from db.schemas.master_schemas.master_schemas import MasterCreateInputSchema, MasterCreateSchema
+from db.schemas.master_schemas.master_schemas import MasterCreateInputSchema, MasterCreateSchema, MasterUpdateSchema
 from use_case.photo_service.photo_base_servise import PhotoHandler
 from config.components.logging_config import logger
 from use_case.utils.permissions import check_user_permission
@@ -74,21 +74,25 @@ async def create_master_route(
             accepts_offsite=accepts_offsite,
         )
 
-        avatar_id = await PhotoHandler.add_photos_to_service(
-            images=[image],  # исправлено, передаем как список
-            model=AvatarPhotoMaster,
-            slug=master_data.slug or "default",
-            city="default_city",
-            role="master",
-            image_type="avatar"
-        )
-
         master = await MasterService.create_master(
             user_id=user_id,
             city_id=city_id,
-            avatar_id=avatar_id,
             **master_data.model_dump()
         )
+        master_id = master.id
+
+        photo_id = await PhotoHandler.add_photos_to_master(
+            images=[image],
+            master_id=master_id,
+            model=AvatarPhotoMaster,
+            city=str(city_id)
+        )
+
+        # Обновляем мастера, устанавливая avatar_id на ID первого загруженного фото
+        if photo_id:
+            master = await MasterService.update_master(current_user=current_user, master_id=master_id, avatar_id=[0])
+        else:
+            logger.warning(f"Фото не загружено для мастера с ID {master_id}.")
 
         return master
 
@@ -105,12 +109,13 @@ async def create_master_route(
 @master_router.put(
     "/{master_id}",
     response_model=MasterCreateSchema,
+    status_code=status.HTTP_200_OK,
     summary="Обновление профиля мастера",
     description="Обновляет существующий профиль мастера с новыми данными.",
 )
 async def update_master_route(
     master_id: int,
-    master_data: MasterCreateInputSchema,
+    master_data: MasterUpdateSchema,
     current_user: dict = Depends(get_current_user),
 ):
     logger.info(f"Текущий пользователь: {current_user}")

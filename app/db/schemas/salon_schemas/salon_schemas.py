@@ -24,10 +24,8 @@ class SalonCreateSchema(BaseModel):
                                        example="Мы предоставляем высококачественные услуги красоты.")
     text: Optional[str] = Field(None, title="Дополнительная информация", example="Подробности о салоне.")
     # Добавьте avatar_urls
-    avatar_urls: Optional[Dict[str, str]] = Field(
-        None,
-        description="Ссылки на аватарки"
-    )
+    avatar_file: Optional[UploadFile] = Field(None, description="Файл аватарки")
+
     class Config:
         from_attributes = True
 

@@ -93,7 +93,8 @@ async def create_salon_route(
         logger.error(f"Системная ошибка при создании салона: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail="Системная ошибка при создании салона")
 
-@salon_router.put("/{salon_id}",
+@salon_router.put(
+        "/{salon_id}",
     response_model=SalonCreateSchema,
     status_code=status.HTTP_200_OK,
     summary="Обновление салона",
