@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, status
 from use_case.master_service.master_read_service import MasterReadService
-from db.schemas.master_schemas.master_schemas import MasterCreateSchema
+from db.schemas.master_schemas.master_schemas import  MasterDetailSchema
 from config.components.logging_config import logger
 
 master_read_router = APIRouter()
@@ -9,7 +9,7 @@ master_read_router = APIRouter()
 # Получение мастера по slug
 @master_read_router.get(
     "/{city_slug}/masters/{master_slug}",
-    response_model=MasterCreateSchema,
+    response_model=MasterDetailSchema,
     summary="Получение мастера по slug города и slug мастера",
     description="Получение мастера по slug города и slug мастера"
 )

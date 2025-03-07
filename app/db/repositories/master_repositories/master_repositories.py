@@ -1,7 +1,9 @@
 from typing import Optional, List, Union, Any
 
 from fastapi import HTTPException
+from tortoise.exceptions import DoesNotExist
 
+from app.core.exceptions.repository import EntityNotFoundException
 from app.db.schemas.master_schemas.master_schemas import MasterUpdateSchema
 from db.models.services_models.service_custom_model import CustomService
 from db.models.master_models.master_model import Master
@@ -162,7 +164,46 @@ class MasterRepository(BaseRepository):
         updated_master = await cls.get_by_id(master_id)  # Получаем обновленный мастер из БД
         return updated_master
 
-    
+    @classmethod
+    async def _get_master_by_city_and_slug_with_avatar(cls, city: str, slug: str) -> Optional[Master]:
+        """
+        Асинхронно получает мастера по городу и slug с предзагрузкой аватара.
+
+        Эта функция выполняет фильтрацию по заданному городу и slug,
+        а затем возвращает мастера с предзагруженными данными аватара.
+
+        Args:
+            city (str): Slug города, в котором находится мастер.
+            slug (str): Уникальный идентификатор мастера в формате slug.
+
+        Returns:
+            Optional[Master]: Объект мастера с предзагруженными данными аватара, если найден.
+                            Возвращает None, если мастер с указанными параметрами не найден.
+
+        Raises:
+            EntityNotFoundException: Если мастер с указанными параметрами не найден.
+            Exception: Если произошла любая другая ошибка во время выполнения запроса.
+
+        Example:
+            try:
+                master = await Master._get_master_by_city_and_slug_with_avatar('moscow', 'example-slug')
+                if master:
+                    print(f"Master found: {master.name}")
+            except EntityNotFoundException as e:
+                print(e)
+        """
+        try:
+            master = await cls.filter(city__slug=city, slug=slug).prefetch_related('image').first()
+            if not master:
+                raise EntityNotFoundException(f"Мастер с {city} и slug {slug} не найден")
+            return master
+        except DoesNotExist:
+            raise EntityNotFoundException(f"Мастер с slug={slug} не найден")
+        except Exception as e:
+            # Логирование и пробрасывание исключения
+            raise e
+
+
     @classmethod
     async def delete_master(cls, master_id: int) -> Optional[Master]:
         """Удаление мастера."""
