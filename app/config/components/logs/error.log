@@ -22006,3 +22006,100 @@ DETAIL:  Key (slug)=(string) already exists.
 2025-03-07 21:30:34 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
 2025-03-07 21:30:34 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
 2025-03-07 21:30:34 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-07 21:33:14 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-07 21:33:14 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-07 21:33:14 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-07 21:33:14 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-07 21:34:02 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-07 21:34:02 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-07 21:34:02 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-07 21:34:02 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-07 21:34:21 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-07 21:34:21 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-07 21:34:22 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-07 21:34:22 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-07 21:46:49 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-07 21:46:49 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-07 21:49:48 - my_app - [31mERROR[0m - master_read_service.py:106 - [31m Ошибка сервиса при получении мастера по slug 'profservis26profservis26': 'coroutine' object has no attribute 'prefetch_related'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/master_service/master_read_service.py", line 38, in get_master
+    master = await MasterRepository._get_master_by_city_and_slug_with_avatar(city_slug, master_slug)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/master_repositories/master_repositories.py", line 204, in _get_master_by_city_and_slug_with_avatar
+    raise e
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/master_repositories/master_repositories.py", line 196, in _get_master_by_city_and_slug_with_avatar
+    master = await cls.filter(city__slug=city, slug=slug).prefetch_related('image').first()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'coroutine' object has no attribute 'prefetch_related'
+2025-03-07 21:49:48 - my_app - [31mERROR[0m - masters_read_router.py:41 - [31mПроизошла ошибка при получении мастера: Ошибка при получении данных мастера[0m
+2025-03-07 21:52:32 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-07 21:52:32 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-07 21:52:42 - my_app - [31mERROR[0m - master_read_service.py:106 - [31m Ошибка сервиса при получении мастера по slug 'profservis26profservis26': 'list' object has no attribute 'prefetch_related'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/master_service/master_read_service.py", line 38, in get_master
+    master = await MasterRepository._get_master_by_city_and_slug_with_avatar(city_slug, master_slug)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/master_repositories/master_repositories.py", line 206, in _get_master_by_city_and_slug_with_avatar
+    raise e
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/master_repositories/master_repositories.py", line 198, in _get_master_by_city_and_slug_with_avatar
+    master = await master_queryset.prefetch_related('avatar').first()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'prefetch_related'
+2025-03-07 21:52:42 - my_app - [31mERROR[0m - masters_read_router.py:41 - [31mПроизошла ошибка при получении мастера: Ошибка при получении данных мастера[0m
+2025-03-07 21:56:16 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-07 21:56:16 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-07 21:56:30 - my_app - [31mERROR[0m - master_read_service.py:106 - [31m Ошибка сервиса при получении мастера по slug 'profservis26profservis26': Relation avatar for server.Master not found[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/master_service/master_read_service.py", line 38, in get_master
+    master = await MasterRepository._get_master_by_city_and_slug_with_avatar(city_slug, master_slug)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/master_repositories/master_repositories.py", line 207, in _get_master_by_city_and_slug_with_avatar
+    raise e
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/master_repositories/master_repositories.py", line 199, in _get_master_by_city_and_slug_with_avatar
+    master = await master_queryset.prefetch_related('avatar').first()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/queryset.py", line 897, in prefetch_related
+    raise FieldError(
+tortoise.exceptions.FieldError: Relation avatar for server.Master not found
+2025-03-07 21:56:30 - my_app - [31mERROR[0m - masters_read_router.py:41 - [31mПроизошла ошибка при получении мастера: Ошибка при получении данных мастера[0m
+2025-03-07 21:59:58 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-07 21:59:58 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-07 22:00:11 - my_app - [31mERROR[0m - master_read_service.py:106 - [31m Ошибка сервиса при получении мастера по slug 'profservis26profservis26': Relation image for server.Master not found[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/master_service/master_read_service.py", line 38, in get_master
+    master = await MasterRepository._get_master_by_city_and_slug_with_avatar(city_slug, master_slug)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/master_repositories/master_repositories.py", line 204, in _get_master_by_city_and_slug_with_avatar
+    raise e
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/master_repositories/master_repositories.py", line 196, in _get_master_by_city_and_slug_with_avatar
+    master = await Master.filter(city__slug=city, slug=slug).prefetch_related('image').first()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/queryset.py", line 897, in prefetch_related
+    raise FieldError(
+tortoise.exceptions.FieldError: Relation image for server.Master not found
+2025-03-07 22:00:11 - my_app - [31mERROR[0m - masters_read_router.py:41 - [31mПроизошла ошибка при получении мастера: Ошибка при получении данных мастера[0m
+2025-03-07 22:05:22 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-07 22:05:22 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-07 22:05:30 - my_app - [31mERROR[0m - master_read_service.py:106 - [31m Ошибка сервиса при получении мастера по slug 'profservis26profservis26': default_connection for the model <class 'app.db.models.photo_models.photo_avatar_model.AvatarPhotoMaster'> cannot be None[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/master_service/master_read_service.py", line 50, in get_master
+    avatar_photos = await PhotoRepository._get_entity_photos(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/photo_repositories/photo_repository.py", line 64, in _get_entity_photos
+    return await model.filter(**filter_params).order_by("sort_order")
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 1258, in filter
+    return cls._meta.manager.get_queryset().filter(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/manager.py", line 15, in get_queryset
+    return QuerySet(self._model)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/queryset.py", line 309, in __init__
+    super().__init__(model)
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/queryset.py", line 104, in __init__
+    self.capabilities: Capabilities = model._meta.db.capabilities
+                                      ^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/models.py", line 291, in db
+    raise ConfigurationError(
+tortoise.exceptions.ConfigurationError: default_connection for the model <class 'app.db.models.photo_models.photo_avatar_model.AvatarPhotoMaster'> cannot be None
+2025-03-07 22:05:30 - my_app - [31mERROR[0m - masters_read_router.py:41 - [31mПроизошла ошибка при получении мастера: Ошибка при получении данных мастера[0m

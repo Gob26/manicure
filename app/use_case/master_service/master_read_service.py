@@ -1,5 +1,6 @@
 from fastapi import HTTPException
 
+from app.config.constants import MEDIA_URL
 from app.core.exceptions.repository import EntityNotFoundException
 from app.core.exceptions.service import ResourceNotFoundException, ServiceException
 from app.core.exceptions.validation import ValidationException

@@ -193,14 +193,14 @@ class MasterRepository(BaseRepository):
                 print(e)
         """
         try:
-            master = await cls.filter(city__slug=city, slug=slug).prefetch_related('image').first()
+            master = await Master.filter(city__slug=city, slug=slug).prefetch_related('images').first()
             if not master:
                 raise EntityNotFoundException(f"Мастер с {city} и slug {slug} не найден")
             return master
         except DoesNotExist:
             raise EntityNotFoundException(f"Мастер с slug={slug} не найден")
         except Exception as e:
-            # Логирование и пробрасывание исключения
+            # Логирование и прописываем исключения
             raise e
 
 
