@@ -39,17 +39,26 @@ class PhotoRepository:
         return await model.filter(id=photo_id).first()
 
     @staticmethod
-    async def get_entity_photos(model: Type[Model], entity_field: str, entity_id: int) -> list:
+    async def _get_entity_photos(model: Type[Model], entity_field: str, entity_id: int) -> list:
         """
-        Получает все фотографии определенной сущности.
+        Асинхронно получает все фотографии, связанные с определенной сущностью.
+
+        Эта функция выполняет фильтрацию по заданному полю и идентификатору сущности,
+        а затем возвращает отсортированный список фотографий.
 
         Args:
-            model: Класс модели
-            entity_field: Имя поля для фильтрации (например, 'salon_id')
-            entity_id: ID сущности
+            model (Type[Model]): Класс модели, представляющий фотографии.
+            entity_field (str): Имя поля модели, по которому будет выполняться фильтрация.
+                                Например, 'salon_id' для фильтрации по идентификатору салона.
+            entity_id (int): Идентификатор сущности, фотографии которой необходимо получить.
 
         Returns:
-            Список фотографий
+            list: Список объектов фотографий, отсортированных по полю 'sort_order'.
+
+        Example:
+            photos = await _get_entity_photos(PhotoModel, 'salon_id', 123)
+            for photo in photos:
+                print(photo.url)
         """
         filter_params = {entity_field: entity_id}
         return await model.filter(**filter_params).order_by("sort_order")

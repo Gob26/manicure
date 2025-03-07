@@ -5,7 +5,7 @@ from db.repositories.photo_repositories.photo_repository import PhotoRepository 
 from core.exceptions.service import ResourceNotFoundException, BusinessRuleException, ServiceException
 from core.exceptions.validation import ValidationException
 from core.exceptions.repository import EntityNotFoundException
-from config.constants import MEDIA_URL # Импортируем MEDIA_URL
+from config.constants import MEDIA_URL
 from db.schemas.salon_schemas.salon_schemas import SalonDetailsSchema # Импортируем SalonDetailsSchema
 
 
@@ -20,7 +20,7 @@ class SalonReadService:
                 raise ValidationException(message="Недопустимый slug")
 
             # Получаем салон с предзагрузкой связанных аватаров
-            salon = await SalonRepository.get_salon_by_slug_with_avatar(slug)
+            salon = await SalonRepository._get_salon_by_slug_with_avatar(slug)
             if not salon:
                 logger.error(f"❌ Салон '{slug}' не найден")
                 raise ResourceNotFoundException(
@@ -32,7 +32,7 @@ class SalonReadService:
             logger.info(f"✅ Найден салон: {salon.slug} (ID={salon.id})")
 
             # Получаем аватарки салона
-            avatar_photos = await PhotoRepository.get_entity_photos(
+            avatar_photos = await PhotoRepository._get_entity_photos(
                 model=AvatarPhotoSalon, entity_field='salon_id', entity_id=salon.id
             )
 

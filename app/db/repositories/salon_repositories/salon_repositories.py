@@ -161,9 +161,26 @@ class SalonRepository(BaseRepository):
         ).order_by('-salon_count')
 
     @staticmethod
-    async def get_salon_by_slug_with_avatar(slug: str):
+    async def _get_salon_by_slug_with_avatar(slug: str):
         """
-        Получает салон по slug с предзагрузкой аватара
+        Асинхронно получает объект салона по его slug с предзагрузкой связанных данных аватара.
+
+        Эта функция использует метод prefetch_related для предзагрузки связанных данных аватара,
+        что позволяет уменьшить количество запросов к базе данных и улучшить производительность.
+
+        Args:
+            slug (str): Уникальный идентификатор салона в формате slug.
+
+        Returns:
+            Salon: Объект салона с предзагруженными данными аватара.
+
+        Raises:
+            EntityNotFoundException: Если салон с указанным slug не найден.
+            Exception: Если произошла любая другая ошибка во время выполнения запроса.
+
+        Example:
+            salon = await Salon.get_salon_by_slug_with_avatar('example-slug')
+            print(salon.name, salon.images)
         """
         try:
             # Используем prefetch_related для предзагрузки связанных данных аватара
