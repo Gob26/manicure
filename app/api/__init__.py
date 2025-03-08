@@ -5,6 +5,7 @@ from api.v1.cyties.cyties_list_router import cities_list_router
 from api.v1.job.job_application_router import job_application_router
 from api.v1.job.salon_master_invitation_router import invitation_router
 from api.v1.job.vacancies_salons_router import vacancy_router
+from api.v1.photo.photo_news_router import photo_news_router
 from api.v1.salons.salons_list_router import salons_list_router
 from api.v1.services.service_standart_router import service_standart_router
 from api.v1.auth.user_register_router import user_router
@@ -151,6 +152,13 @@ router.include_router(
     signal_router,
     prefix="/ws/signaling",
     tags=["ЧАТ"]
+    )
+
+# Фото
+router.include_router(
+    photo_news_router,
+    prefix="/news",
+    tags=["Фото новостной ленты"]
     )
 
 __all__ = ["router"]

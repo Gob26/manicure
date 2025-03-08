@@ -20,7 +20,8 @@ CREATE TABLE IF NOT EXISTS "avatar_photo_master" (
     "width" INT,
     "height" INT,
     "is_main" BOOL NOT NULL  DEFAULT False,
-    "sort_order" INT NOT NULL  DEFAULT 0
+    "sort_order" INT NOT NULL  DEFAULT 0,
+    "version" VARCHAR(50) NOT NULL  DEFAULT 'pc'
 );
 COMMENT ON TABLE "avatar_photo_master" IS 'Фотографии стандартных услуг';
 CREATE TABLE IF NOT EXISTS "avatar_photo_salon" (
@@ -34,7 +35,8 @@ CREATE TABLE IF NOT EXISTS "avatar_photo_salon" (
     "width" INT,
     "height" INT,
     "is_main" BOOL NOT NULL  DEFAULT False,
-    "sort_order" INT NOT NULL  DEFAULT 0
+    "sort_order" INT NOT NULL  DEFAULT 0,
+    "version" VARCHAR(50) NOT NULL  DEFAULT 'pc'
 );
 COMMENT ON TABLE "avatar_photo_salon" IS 'Фотографии стандартных услуг';
 CREATE TABLE IF NOT EXISTS "categories" (
@@ -74,6 +76,22 @@ CREATE TABLE IF NOT EXISTS "city_descriptions" (
     "text" TEXT,
     "city_id" INT NOT NULL UNIQUE REFERENCES "cities" ("id") ON DELETE CASCADE
 );
+CREATE TABLE IF NOT EXISTS "photo_news" (
+    "id" SERIAL NOT NULL PRIMARY KEY,
+    "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
+    "file_name" VARCHAR(255)   DEFAULT 'default_name.jpg',
+    "file_path" VARCHAR(1000) NOT NULL,
+    "mime_type" VARCHAR(100),
+    "size" INT NOT NULL,
+    "width" INT,
+    "height" INT,
+    "is_main" BOOL NOT NULL  DEFAULT False,
+    "sort_order" INT NOT NULL  DEFAULT 0,
+    "version" VARCHAR(50) NOT NULL  DEFAULT 'pc',
+    "description" TEXT
+);
+COMMENT ON TABLE "photo_news" IS 'Модель фотографий новостей с описанием  ';
 CREATE TABLE IF NOT EXISTS "service_attribute_types" (
     "id" SERIAL NOT NULL PRIMARY KEY,
     "created_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
@@ -102,7 +120,8 @@ CREATE TABLE IF NOT EXISTS "standard_service_photo" (
     "width" INT,
     "height" INT,
     "is_main" BOOL NOT NULL  DEFAULT False,
-    "sort_order" INT NOT NULL  DEFAULT 0
+    "sort_order" INT NOT NULL  DEFAULT 0,
+    "version" VARCHAR(50) NOT NULL  DEFAULT 'pc'
 );
 COMMENT ON TABLE "standard_service_photo" IS 'Фотографии стандартных услуг';
 CREATE TABLE IF NOT EXISTS "standard_services" (
@@ -136,6 +155,7 @@ CREATE TABLE IF NOT EXISTS "users" (
     "email" VARCHAR(255) NOT NULL UNIQUE,
     "password" VARCHAR(255) NOT NULL,
     "role" VARCHAR(6) NOT NULL  DEFAULT 'client',
+    "is_confirmed" BOOL NOT NULL  DEFAULT False,
     "city_id" INT NOT NULL REFERENCES "cities" ("id") ON DELETE CASCADE
 );
 COMMENT ON COLUMN "users"."role" IS 'client: client\nmaster: master\nsalon: salon\namin: admin';
@@ -179,11 +199,11 @@ CREATE TABLE IF NOT EXISTS "salon" (
     "updated_at" TIMESTAMPTZ NOT NULL  DEFAULT CURRENT_TIMESTAMP,
     "name" VARCHAR(255) NOT NULL,
     "title" VARCHAR(255) NOT NULL,
-    "slug" VARCHAR(255) NOT NULL,
+    "slug" VARCHAR(255)  UNIQUE,
     "description" TEXT,
     "text" TEXT,
     "address" VARCHAR(255) NOT NULL,
-    "phone" VARCHAR(20),
+    "phone" VARCHAR(20) NOT NULL,
     "telegram" VARCHAR(255),
     "whatsapp" VARCHAR(255),
     "website" VARCHAR(255),
@@ -231,6 +251,7 @@ CREATE TABLE IF NOT EXISTS "custom_service_photo" (
     "height" INT,
     "is_main" BOOL NOT NULL  DEFAULT False,
     "sort_order" INT NOT NULL  DEFAULT 0,
+    "version" VARCHAR(50) NOT NULL  DEFAULT 'pc',
     "custom_service_id" INT REFERENCES "custom_services" ("id") ON DELETE CASCADE
 );
 COMMENT ON TABLE "custom_service_photo" IS 'Фотографии для пользовательских услуг';

@@ -1,12 +1,12 @@
 from fastapi import APIRouter, Depends, HTTPException, status, File, UploadFile, Form
-from typing import Optional, List
+from typing import Optional
 from pydantic.networks import HttpUrl
 
 from db.models import AvatarPhotoSalon
 from use_case.photo_service.photo_base_servise import PhotoHandler
 from use_case.utils.jwt_handler import get_current_user
 from use_case.salon_service.salon_service import SalonService
-from db.schemas.salon_schemas.salon_schemas import SalonCreateSchema, SalonCreateInputSchema
+from db.schemas.salon_schemas.salon_schemas import SalonCreateSchema, SalonCreateInputSchema, SalonUpdateSchema
 from config.components.logging_config import logger
 from use_case.utils.permissions import check_user_permission
 
@@ -63,28 +63,38 @@ async def create_salon_route(
             instagram=instagram,
         )
 
-        avatar_id = await PhotoHandler.add_photos_to_service(
-            images=[image],
-            model=AvatarPhotoSalon,
-            slug=str(user_id),
-            city=str(city_id),
-            role="salon",
-            image_type="avatar",
-        )
-
-        return await SalonService.create_salon(
+        # Создаем салон без аватарки сначала
+        salon = await SalonService.create_salon(
             user_id=user_id,
             city_id=city_id,
-            avatar_id=avatar_id,
             **salon_data.dict()
         )
+        salon_id = salon.id
+
+        # Загружаем фото и получаем список photo_ids
+        photo_ids = await PhotoHandler.add_photos_to_salon(
+            images=[image],
+            salon_id=salon_id,
+            model=AvatarPhotoSalon,
+            city=str(city_id),
+        )
+
+        # Обновляем салон, устанавливая avatar_id на ID первого загруженного фото
+        if photo_ids:
+            salon = await SalonService.update_salon(current_user=current_user,salon_id=salon_id, avatar_id=photo_ids[0])
+        else:
+            logger.warning(f"Фото для салона salon_id={salon_id} не было загружено.")
+
+        return salon
+
     except ValueError as ve:
         raise HTTPException(status_code=400, detail=str(ve))
     except Exception as e:
-        logger.error(f"Системная ошибка при создании мастера: {e}", exc_info=True)
-        raise HTTPException(status_code=500, detail="Системная ошибка при создании мастера")
+        logger.error(f"Системная ошибка при создании салона: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Системная ошибка при создании салона")
 
-@salon_router.put("/{salon_id}",
+@salon_router.put(
+        "/{salon_id}",
     response_model=SalonCreateSchema,
     status_code=status.HTTP_200_OK,
     summary="Обновление салона",
@@ -92,7 +102,7 @@ async def create_salon_route(
 )
 async def update_salon_route(
     salon_id: int,
-    salon_data: SalonCreateInputSchema,
+    salon_data: SalonUpdateSchema,
     current_user: dict = Depends(get_current_user)
 ):
     logger.info(f"Текущий пользователь: {current_user}")

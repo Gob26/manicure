@@ -1,4 +1,8 @@
 from tortoise import fields
+
+import typing
+if typing.TYPE_CHECKING:
+    from db.models import AvatarPhotoMaster
 from db.models.abstract.abstract_model import AbstractModel
 
 # Модель мастера
@@ -16,26 +20,20 @@ class Master(AbstractModel):
     user = fields.OneToOneField('server.User', related_name='master', on_delete=fields.CASCADE)
     
     # Связь с аватаркой
-    avatar = fields.ForeignKeyField(
-        'server.AvatarPhotoMaster',
-        related_name='master',
-        on_delete=fields.SET_NULL,
-        null=True,
-        help_text="Аватар мастера"
-    )
+    images: fields.ReverseRelation["AvatarPhotoMaster"]
     
     # Основная информация
-    title = fields.CharField(max_length=255, null=True)  # Заголовок
+    title = fields.CharField(max_length=255, null=False)  # Заголовок
     description = fields.TextField(null=True)  # Краткое описание
     text = fields.TextField(null=True)  # Подробное описание
     experience_years = fields.IntField()  # Стаж в годах
-    specialty = fields.CharField(max_length=255)  # Специализация
-    slug = fields.CharField(max_length=255, unique=False, null=False)  # Ссылка
+    specialty = fields.CharField(max_length=255, null=False)  # Специализация
+    slug = fields.CharField(max_length=255, unique=True, null=False)  # Ссылка
     
     # Контактная информация
     name = fields.CharField(max_length=257, null=False, help_text="Имя мастера")  # Имя мастера
-    address = fields.CharField(max_length=255, null=True, help_text="Адрес мастера")  # Адрес
-    phone = fields.CharField(max_length=20, null=True, help_text="Телефон мастера")  # Телефон
+    address = fields.CharField(max_length=255, null=False, help_text="Адрес мастера")  # Адрес
+    phone = fields.CharField(max_length=20, null=False, help_text="Телефон мастера")  # Телефон
     telegram = fields.CharField(max_length=255, null=True, help_text="Ссылка на Telegram")  # Telegram
     whatsapp = fields.CharField(max_length=255, null=True, help_text="Ссылка на WhatsApp")  # WhatsApp
     website = fields.CharField(max_length=255, null=True, help_text="Веб-сайт мастера")  # Веб-сайт

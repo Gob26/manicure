@@ -37,16 +37,16 @@ def setup_logger(name: str = "my_app"):
     if logger.handlers:
         return logger
 
-    # Форматтер для файловых логов
+    # Форматтер для файловых логов (добавлено filename и lineno)
     file_formatter = logging.Formatter(
-        fmt="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        fmt="%(asctime)s - %(name)s - %(levelname)s - %(filename)s:%(lineno)d - %(message)s",
         datefmt='%Y-%m-%d %H:%M:%S'
     )
 
-    # Обработчик для консоли
+    # Обработчик для консоли (добавлено filename и lineno)
     console_handler = logging.StreamHandler()
     console_handler.setFormatter(ColoredFormatter(
-        '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+        '%(asctime)s - %(name)s - %(levelname)s - %(filename)s:%(lineno)d - %(message)s'
     ))
     console_handler.setLevel(logging.DEBUG)
 
@@ -78,5 +78,3 @@ logger.info("Info message")
 logger.warning("Warning message")
 logger.error("Error message")
 logger.critical("Critical message")
-
-

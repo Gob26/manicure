@@ -16,7 +16,10 @@ class AbstractPhoto(AbstractModel):
     height = fields.IntField(null=True)
     is_main = fields.BooleanField(default=False)
     sort_order = fields.IntField(default=0)
-    version = fields.CharField(max_length=50, default="pc")  # Добавляем поле для версии изображения
+    small = fields.CharField(max_length=255, null=True)  # Изменено на null=True
+    medium = fields.CharField(max_length=255, null=True) # Средняя версия (768px)
+    large = fields.CharField(max_length=255, null=True)  # Большая версия (1200px)
+    original = fields.TextField(null=True, description="Относительный путь к оригинальной аватарке")
 
     class Meta:
         abstract = True

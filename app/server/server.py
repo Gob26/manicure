@@ -8,11 +8,13 @@ from tortoise import Tortoise, generate_config
 from tortoise.contrib.fastapi import RegisterTortoise
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles # <-- Импортируйте StaticFiles
 from config import settings
-from config.constants import APP_DIR
+from config.constants import APP_DIR, MEDIA_DIR
 from core.exceptions.base import ApplicationException
 from core.exceptions.handlers import application_exception_handler, internal_server_error_handler
 from server.utils.exception_handler import validation_exception_handler
+import os # <-- Импортируйте модуль os
 
 
 def _init_router(_app: FastAPI) -> None:
@@ -39,6 +41,14 @@ def _init_internalization(_app: FastAPI) -> None:
             BABEL_TRANSLATION_DIRECTORY="locales",
         )
     )
+
+# Добавьте эту функцию для инициализации StaticFiles
+def _init_static_files(_app: FastAPI) -> None:
+    MEDIA_DIRECTORY = MEDIA_DIR  # <---- Используем константу MEDIA_DIR
+    if not os.path.exists(MEDIA_DIRECTORY):
+        os.makedirs(MEDIA_DIRECTORY, exist_ok=True)
+    _app.mount("/media", StaticFiles(directory=MEDIA_DIRECTORY), name="media")
+
 
 # Обработка глобальных ошибок
 def _init_exception_handlers(_app: FastAPI) -> None:
@@ -115,6 +125,8 @@ def create_app() -> FastAPI:
     )
     _init_middleware(_app)
     _init_internalization(_app)
+    # **Добавьте инициализацию StaticFiles здесь, после других middleware:**
+    _init_static_files(_app)
     _init_exception_handlers(_app)
     return _app
 
