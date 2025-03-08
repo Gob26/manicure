@@ -25098,3 +25098,13 @@ fastapi.exceptions.HTTPException: 500: Ошибка при удалении фо
 2025-03-08 21:03:39 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
 2025-03-08 21:03:39 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
 2025-03-08 21:03:47 - my_app - [31m[1mCRITICAL[0m - masters_router.py:134 - [31m[1mВХОД В ФУНКЦИЮ UPDATE_MASTER_ROUTE - ПРОВЕРКА ЗАПУСКА КОДА?[0m
+2025-03-08 21:36:44 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-08 21:36:44 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-08 21:38:19 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-08 21:38:19 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-08 21:39:26 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-08 21:39:26 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-08 21:42:41 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-08 21:42:41 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-08 21:44:34 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-08 21:44:34 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m

@@ -99,7 +99,6 @@ async def create_master_route(
         raise HTTPException(status_code=500, detail="Внутренняя ошибка сервера")
 
 
-# Обновление профиля мастера
 #Обновление профиля мастера
 @master_router.put(
     "/{master_id}",
@@ -130,7 +129,6 @@ async def update_master_route(
     current_user: dict = Depends(get_current_user),
 ):
     """Обновление данных мастера (включая фото)."""
-
     logger.critical("ВХОД В ФУНКЦИЮ UPDATE_MASTER_ROUTE - ПРОВЕРКА ЗАПУСКА КОДА?") # <----  ТЕСТ "HELLO WORLD" - Оставьте пока для уверенности
     logger.debug(f"master_id parameter: {master_id}")
     check_user_permission(current_user, ["admin", "master"])
@@ -178,13 +176,11 @@ async def update_master_route(
 
         logger.debug(f"Значение image перед if image: {image}") # <----  НОВОЕ ОТЛАДОЧНОЕ СООБЩЕНИЕ (ПЕРЕД if image:)
 
-
         # Если есть новое изображение
         if image:
             logger.info(f"Обновляем фото мастера {master_id}")
             logger.debug(f"Тип параметра image: {type(image)}") # <----  ОТЛАДОЧНЫЕ СООБЩЕНИЯ ДЛЯ IMAGE (ВНУТРИ if image:)
             logger.debug(f"Значение параметра image: {image}") # <----  ОТЛАДОЧНЫЕ СООБЩЕНИЯ ДЛЯ IMAGE (ВНУТРИ if image:)
-
 
             # Находим старое фото
             old_photo = await PhotoRepository.get_photo(AvatarPhotoMaster, master_id=master_id)
@@ -213,7 +209,6 @@ async def update_master_route(
         logger.warning(f"Ошибка валидации: {ve}")
         raise HTTPException(status_code=400, detail="Ошибка валидации данных: " + str(ve))
 
-
     except Exception as e:
         logger.error(f"Системная ошибка при создании мастера: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail="Внутренняя ошибка сервера")
@@ -234,9 +229,15 @@ async def delete_master_route(
 
     # Проверка прав доступа
     check_user_permission(current_user, ["master", "admin"])
-
+    user_id = current_user.get("user_id")
     # Удаление мастера через сервис
     try:
+        master = await MasterService.get_master_by_id(master_id)
+        if not master:
+            raise HTTPException(status_code=404, detail="Мастер не найден")
+        if str(master.user_id) != str(user_id):
+            raise HTTPException(status_code=403, detail="Нет прав на обновление")
+
         await MasterService.delete_master(master_id=master_id, current_user=current_user)
     except ValueError as ve:
         logger.warning(f"Ошибка бизнес-логики: {ve}")
