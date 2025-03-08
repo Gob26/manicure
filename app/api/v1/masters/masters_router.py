@@ -230,7 +230,7 @@ async def delete_master_route(
     # Проверка прав доступа
     check_user_permission(current_user, ["master", "admin"])
     user_id = current_user.get("user_id")
-    # Удаление мастера через сервис
+
     try:
         master = await MasterService.get_master_by_id(master_id)
         if not master:
