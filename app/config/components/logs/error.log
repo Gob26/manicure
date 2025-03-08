@@ -17806,3 +17806,5 @@ AttributeError: 'NoneType' object has no attribute 'name'
 2025-03-05 06:01:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-03-05 06:01:16 - my_app - [31mERROR[0m - [31mError message[0m
 2025-03-05 06:01:16 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-03-08 21:55:32 - my_app - [31mERROR[0m - [31mError message[0m
+2025-03-08 21:55:32 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
