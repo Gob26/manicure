@@ -25108,3 +25108,5 @@ fastapi.exceptions.HTTPException: 500: Ошибка при удалении фо
 2025-03-08 21:42:41 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
 2025-03-08 21:44:34 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
 2025-03-08 21:44:34 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-08 21:52:05 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-08 21:52:05 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m

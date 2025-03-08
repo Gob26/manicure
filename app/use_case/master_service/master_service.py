@@ -69,7 +69,6 @@ class MasterService:
         # Фильтруем None-значения в master_data
         master_data = {k: v for k, v in master_data.items() if v is not None}
 
-        
         try:
             # Создаем объект MasterUpdateSchema и обновляем мастера
             schema = MasterUpdateSchema(**master_data)
@@ -87,8 +86,7 @@ class MasterService:
                     detail="Ошибка при обновлении мастера."  
                 )
             return updated_master
-        
-        
+
         except TypeError as e:
             if "avatar_id" in str(e):
                 logger.error(f"Ошибка при обновлении мастера ID {master_id}: параметр 'avatar_id' не поддерживается.")
