@@ -183,3 +183,37 @@ class PhotoHandler:
             sort_order=sort_order,
             city=city
         )
+
+    @staticmethod
+    async def delete_photo(photo_id: int, model: Type[Any]) -> None:
+        """
+        Удаляет фото из базы данных и физические файлы.
+
+        Args:
+            photo_id: ID фото в базе данных.
+            model: Модель SQLAlchemy, к которой относится фото.
+
+        Raises:
+            HTTPException: Если фото не найдено или возникла ошибка удаления.
+        """
+        try:
+            # Получаем фото из базы данных
+            photo = await PhotoRepository.get_photo_by_id(model,
+                                                          photo_id)  # <---- Исправленный порядок: model, photo_id
+            if not photo:
+                raise HTTPException(status_code=404, detail="Фото не найдено")
+
+            # Удаляем файлы с сервера
+            for size in ["original", "small", "medium", "large"]:
+                file_path = getattr(photo, size, None)
+                if file_path:
+                    await ImageOptimizer.delete_file(file_path)
+
+            # Удаляем запись из базы данных
+            await PhotoRepository.delete_photo(model, photo_id)  # <---- Исправленный порядок: model, photo_id
+
+            logger.info(f"Фото (ID: {photo_id}) удалено.")
+
+        except Exception as e:
+            logger.error(f"Ошибка при удалении фото (ID: {photo_id}): {str(e)}")
+            raise HTTPException(status_code=500, detail="Ошибка при удалении фото")

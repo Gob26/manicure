@@ -4,10 +4,9 @@ from app.config.constants import MEDIA_URL
 from app.core.exceptions.repository import EntityNotFoundException
 from app.core.exceptions.service import ResourceNotFoundException, ServiceException
 from app.core.exceptions.validation import ValidationException
-from app.db.models.photo_models.photo_avatar_model import AvatarPhotoMaster
-from app.db.repositories.photo_repositories.photo_repository import PhotoRepository
-from app.db.schemas.master_schemas.master_schemas import MasterDetailSchema
-from db.models import City
+from db.models.photo_models.photo_avatar_model import AvatarPhotoMaster
+from db.repositories.photo_repositories.photo_repository import PhotoRepository
+from db.schemas.master_schemas.master_schemas import MasterDetailSchema
 from db.repositories.master_repositories.master_repositories import MasterRepository
 from config.components.logging_config import logger
 

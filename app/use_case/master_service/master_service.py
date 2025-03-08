@@ -10,6 +10,11 @@ from config.components.logging_config import logger
 
 class MasterService:
     @staticmethod
+    async def get_master_by_id(master_id: int):
+        """Получение мастера по ID."""
+        return await MasterRepository.get_by_id(master_id)
+
+    @staticmethod
     async def create_master(
         city_id: int,
         user_id: int,
@@ -136,3 +141,4 @@ class MasterService:
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
                 detail="Ошибка при удалении мастера."
             )
+

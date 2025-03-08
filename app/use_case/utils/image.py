@@ -87,3 +87,16 @@ class ImageOptimizer:
         except Exception as e:
             logger.error(f"Ошибка при сохранении изображения {path}: {e}")
             raise
+
+    @staticmethod
+    async def delete_file(relative_path):
+        try:
+            file_path = os.path.join(MEDIA_DIR, relative_path)
+            if os.path.exists(file_path):
+                os.remove(file_path)
+                logger.info(f"Удален файл: {file_path}")
+            else:
+                logger.warning(f"Файл не найден: {file_path}")
+        except Exception as e:
+            logger.error(f"Ошибка при удалении файла {file_path}: {e}")
+            raise

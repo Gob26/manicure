@@ -123,3 +123,18 @@ class PhotoRepository:
         except Exception as e:
             logger.error(f"Ошибка при установке основного фото: {str(e)}")
             return False
+
+    @staticmethod
+    async def get_photo(model: Type[Model], **filters) -> Union[Model, None]:
+        """
+        Получает фотографию по заданным параметрам.
+
+        Args:
+            model: Класс модели (например, AvatarPhotoMaster, AvatarPhotoSalon)
+            **filters: Произвольные фильтры (например, master_id=123, is_main=True)
+
+        Returns:
+            Объект фото или None, если фото не найдено.
+        """
+        return await model.filter(**filters).first()
+
