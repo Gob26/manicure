@@ -25304,3 +25304,91 @@ fastapi.exceptions.HTTPException: 500: Ошибка при удалении фо
 2025-03-09 11:25:43 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
 2025-03-09 11:25:43 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
 2025-03-09 11:25:43 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:32:23 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:32:23 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:32:24 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:32:24 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:32:29 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:32:29 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:32:30 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:32:30 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:32:33 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:32:33 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:32:34 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:32:34 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:32:38 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:32:38 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:32:39 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:32:39 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:32:45 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:32:45 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:32:45 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:32:45 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:33:04 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:33:04 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:33:05 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:33:05 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:33:09 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:33:09 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:33:10 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:33:10 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:33:21 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:33:21 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:33:21 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:33:21 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:33:39 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:33:39 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:33:40 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:33:40 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:33:53 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:33:53 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:33:54 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:33:54 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:33:58 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:33:58 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:33:58 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:33:58 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:34:02 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:34:02 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:34:02 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:34:02 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:34:42 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:34:42 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:34:43 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:34:43 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:34:52 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:34:52 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:34:52 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:34:52 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:35:05 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:35:05 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:35:05 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:35:05 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:38:32 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:38:32 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:40:55 - my_app - [31mERROR[0m - salons_router.py:195 - [31mСистемная ошибка при создании мастера: 403: Недостаточно прав для обновления салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_router.py", line 134, in update_salon_route
+    raise HTTPException(status_code=403, detail="Недостаточно прав для обновления салона")
+fastapi.exceptions.HTTPException: 403: Недостаточно прав для обновления салона
+2025-03-09 11:45:33 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:45:33 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:45:44 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 11:45:44 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 11:45:49 - my_app - [31mERROR[0m - salons_router.py:196 - [31mСистемная ошибка при создании мастера: 403: Недостаточно прав для обновления салона[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_router.py", line 135, in update_salon_route
+    raise HTTPException(status_code=403, detail="Недостаточно прав для обновления салона")
+fastapi.exceptions.HTTPException: 403: Недостаточно прав для обновления салона
+2025-03-09 12:15:01 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 12:15:01 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 12:15:22 - my_app - [31mERROR[0m - salons_router.py:196 - [31mСистемная ошибка при создании мастера: type object 'PhotoHandler' has no attribute 'delete_photo_by_id'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/salons/salons_router.py", line 170, in update_salon_route
+    await PhotoHandler.delete_photo_by_id(model=AvatarPhotoSalon, photo_id=old_photo.id)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'PhotoHandler' has no attribute 'delete_photo_by_id'. Did you mean: 'get_photo_by_id'?
+2025-03-09 12:22:55 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 12:22:55 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-09 12:23:38 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-09 12:23:38 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m

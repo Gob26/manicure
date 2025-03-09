@@ -130,7 +130,7 @@ async def update_salon_route(
         salon = await SalonService.get_salon_by_id(salon_id)
         if not salon:
             raise HTTPException(status_code=404, detail="Салон не найден")
-        if salon.user_id != user_id:
+        if str(salon.user_id) != str(user_id):
             raise HTTPException(status_code=403, detail="Недостаточно прав для обновления салона")
         
         salon_data = SalonUpdateSchema(
@@ -159,14 +159,14 @@ async def update_salon_route(
 
             # Если есть новое изображение
         if image:
-            logger.info(f"Обновляем фото мастера {master_id}")
+            logger.info(f"Обновляем фото мастера {salon_id}")
             logger.debug(f"Тип параметра image: {type(image)}")
             logger.debug(f"Значение параметра image: {image}")
 
             old_photo = await PhotoHandler.get_photo_by_id(model=AvatarPhotoSalon, salon_id=salon_id)
 
             if old_photo:
-                await PhotoHandler.delete_photo_by_id(model=AvatarPhotoSalon, photo_id=old_photo.id)
+                await PhotoHandler.delete_photo(model=AvatarPhotoSalon, photo_id=old_photo.id)
 
             photo_id = await PhotoHandler.add_photos_to_salon(
                 images=[image],
@@ -209,13 +209,19 @@ async def delete_salon_route(
 
     # Проверка прав доступа
     check_user_permission(current_user, ["salon", "admin"])
+    user_id = current_user.get("user_id")
 
     try:
-        salon = await SalonService.delete_salon(
+        salon = await SalonService.get_salon_by_id(salon_id)
+        if not salon:
+            raise HTTPException(status_code=404, detail="Салон не найден")
+        if str(salon.user_id) != str(user_id):
+            raise HTTPException(status_code=403, detail="Недостаточно прав для удаления салона")
+        
+        await SalonService.delete_salon(
             current_user=current_user,
             salon_id=salon_id
         )
-        return salon
     except ValueError as e:
         logger.warning(f"Ошибка бизнес-логики: {e}")
         raise HTTPException(status_code=400, detail=str(e))

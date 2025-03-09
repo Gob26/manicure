@@ -248,7 +248,10 @@ async def delete_master_route(
         if str(master.user_id) != str(user_id):
             raise HTTPException(status_code=403, detail="Нет прав на обновление")
 
-        await MasterService.delete_master(master_id=master_id, current_user=current_user)
+        await MasterService.delete_master(
+            master_id=master_id, 
+            current_user=current_user
+        )
     except ValueError as ve:
         logger.warning(f"Ошибка бизнес-логики: {ve}")
         raise HTTPException(status_code=400, detail=str(ve))
