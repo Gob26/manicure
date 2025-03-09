@@ -1,13 +1,12 @@
 from fastapi import APIRouter, Depends, HTTPException, status, File, UploadFile, Form
-from typing import Optional, List
+from typing import Optional
 from pydantic.networks import HttpUrl
 
 from db.models.photo_models.photo_avatar_model import AvatarPhotoMaster
-from db.models.master_models.master_model import Master
 from db.repositories.photo_repositories.photo_repository import PhotoRepository
 from use_case.utils.jwt_handler import get_current_user
 from use_case.master_service.master_service import MasterService
-from db.schemas.master_schemas.master_schemas import MasterCreateInputSchema, MasterCreateSchema, MasterUpdateSchema
+from db.schemas.master_schemas.master_schemas import MasterCreateInputSchema, MasterUpdateSchema
 from use_case.photo_service.photo_base_servise import PhotoHandler
 from config.components.logging_config import logger
 from use_case.utils.permissions import check_user_permission
@@ -17,7 +16,17 @@ master_router = APIRouter()
 @master_router.post("/",
     status_code=status.HTTP_201_CREATED,
     summary="Создание мастера",
-    description="Создает новового мастера, используем Form."
+    description=
+                    "Создает профиль мастера и загружает фотографию, используем Form.\n\n"
+                    "### Процесс:\n"
+                    "1. Проверка авторизации пользователя.\n"
+                    "2. Создание записи мастера в базе данных.\n"
+                    "3. Загрузка фотографии и привязка к мастеру.\n"
+                    "4. Если фото загружено успешно, `avatar_id` обновляется.\n\n"
+                    "### Ошибки:\n"
+                    "- `400 Bad Request` — неверные входные данные.\n"
+                    "- `401 Unauthorized` — если пользователь не авторизован.\n"
+                    "- `500 Internal Server Error` — внутренняя ошибка сервера."
 )
 async def create_master_route(
     title: str = Form(..., max_length=255),
