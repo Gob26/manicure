@@ -138,8 +138,6 @@ async def update_master_route(
     current_user: dict = Depends(get_current_user),
 ):
     """Обновление данных мастера (включая фото)."""
-    logger.critical("ВХОД В ФУНКЦИЮ UPDATE_MASTER_ROUTE - ПРОВЕРКА ЗАПУСКА КОДА?") # <----  ТЕСТ "HELLO WORLD" - Оставьте пока для уверенности
-    logger.debug(f"master_id parameter: {master_id}")
     check_user_permission(current_user, ["admin", "master"])
     user_id = current_user.get("user_id")
     city_id = current_user.get("city_id")
@@ -208,7 +206,10 @@ async def update_master_route(
 
             #Устанавливаем новую фотографию как аватарку
             if photo_id:
-                updated_master = await MasterService.update_master(current_user=current_user, master_id=master_id, avatar_id=[0])
+                updated_master = await MasterService.update_master(
+                    current_user=current_user, 
+                    master_id=master_id, 
+                    avatar_id=[0])
             else:
                 logger.warning(f"Фото не загружено для мастера с ID {master_id}.")
 

@@ -217,3 +217,7 @@ class PhotoHandler:
         except Exception as e:
             logger.error(f"Ошибка при удалении фото (ID: {photo_id}): {str(e)}")
             raise HTTPException(status_code=500, detail="Ошибка при удалении фото")
+
+    @staticmethod
+    async def get_photo_by_id(model: Type[Any], **filters) -> Union[Any, None]:
+        return await PhotoRepository.get_photo(model, **filters)
