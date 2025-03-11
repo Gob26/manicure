@@ -531,3 +531,80 @@ fastapi.exceptions.HTTPException: 500: Ошибка при удалении фо
 2025-03-11 18:00:03 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
 2025-03-11 18:00:03 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
 2025-03-11 18:00:03 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 18:23:35 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 18:23:35 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 18:23:35 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 18:23:35 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 18:23:35 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 18:26:08 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 18:26:08 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 18:26:08 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 18:26:08 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 18:26:08 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 18:30:33 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 18:30:33 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 18:30:33 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 18:30:33 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 18:30:33 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 18:39:55 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 18:39:55 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 18:39:55 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 18:39:55 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 18:39:55 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 18:41:01 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 18:41:01 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 18:41:01 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 18:41:01 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 18:41:01 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 18:47:57 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 18:47:57 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 18:47:57 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 18:47:57 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 18:47:57 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 18:55:54 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 18:55:54 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 18:55:54 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 18:55:54 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 18:55:54 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 19:04:37 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 19:04:37 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 19:04:37 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 19:04:37 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 19:04:37 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 19:11:24 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 19:11:24 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 19:11:24 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 19:11:24 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 19:11:24 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 19:14:54 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 19:14:54 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 19:14:54 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 19:14:54 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 19:14:54 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 19:15:57 - my_app - [32mINFO[0m - user_login_router.py:27 - [32mПопытка входа пользователя: gob26[0m
+2025-03-11 19:15:57 - my_app - [32mINFO[0m - user_login.py:15 - [32mПопытка логина для пользователя gob26[0m
+2025-03-11 19:15:57 - my_app - [32mINFO[0m - user_login.py:23 - [32mПользователь gob26 найден, проверка пароля.[0m
+2025-03-11 19:15:57 - my_app - [32mINFO[0m - user_login.py:30 - [32mПользователь gob26 успешно авторизован[0m
+2025-03-11 19:15:57 - my_app - [32mINFO[0m - user_login.py:37 - [32mПользователь gob26 успешно авторизован[0m
+2025-03-11 19:15:57 - my_app - [32mINFO[0m - jwt_handler.py:22 - [32mНачало создания JWT токена для данных: {'sub': 37, 'username': 'gob26', 'role': <UserRole.amin: 'admin'>, 'city_id': 924}[0m
+2025-03-11 19:15:57 - my_app - [32mINFO[0m - jwt_handler.py:38 - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNyIsInVzZXJuYW1lIjoiZ29iMjYiLCJyb2xlIjoiYWRtaW4iLCJjaXR5X2lkIjo5MjQsImV4cCI6MTc0MTcxMTU1NywiY2l0eSI6IiIsImlzX2NvbmZpcm1lZCI6ZmFsc2V9.l21yEz4OvVxtvUDDpih6d2Nc6XCEQ13CWN9TL1KdNjQ[0m
+2025-03-11 19:15:57 - my_app - [32mINFO[0m - user_login_router.py:39 - [32mПользователь gob26 успешно авторизован[0m
+2025-03-11 19:16:22 - my_app - [32mINFO[0m - jwt_handler.py:76 - [32mПолучение текущего пользователя из токена.[0m
+2025-03-11 19:16:22 - my_app - [32mINFO[0m - jwt_handler.py:51 - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNyIsInVzZXJuYW1lIjoiZ29iMjYiLCJyb2xlIjoiYWRtaW4iLCJjaXR5X2lkIjo5MjQsImV4cCI6MTc0MTcxMTU1NywiY2l0eSI6IiIsImlzX2NvbmZpcm1lZCI6ZmFsc2V9.l21yEz4OvVxtvUDDpih6d2Nc6XCEQ13CWN9TL1KdNjQ[0m
+2025-03-11 19:16:22 - my_app - [32mINFO[0m - jwt_handler.py:54 - [32mТокен успешно декодирован: {'sub': '37', 'username': 'gob26', 'role': 'admin', 'city_id': 924, 'exp': 1741711557, 'city': '', 'is_confirmed': False}[0m
+2025-03-11 19:16:22 - my_app - [32mINFO[0m - jwt_handler.py:79 - [32mДекодированный токен: {'sub': '37', 'username': 'gob26', 'role': 'admin', 'city_id': 924, 'exp': 1741711557, 'city': '', 'is_confirmed': False}[0m
+2025-03-11 19:16:22 - my_app - [32mINFO[0m - jwt_handler.py:103 - [32mТекущий пользователь: {'username': 'gob26', 'user_id': '37', 'role': 'admin', 'city_id': 924, 'is_confirmed': False}[0m
+2025-03-11 19:16:22 - my_app - [32mINFO[0m - service_standart_router.py:208 - [32mТекущий пользователь: {'username': 'gob26', 'user_id': '37', 'role': 'admin', 'city_id': 924, 'is_confirmed': False}[0m
+2025-03-11 19:16:22 - my_app - [31mERROR[0m - service_standart_router.py:228 - [31mСистемная ошибка при удалении страндартной услуги: 'StandardService' object has no attribute 'user_id'[0m
+2025-03-11 19:18:57 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 19:18:57 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 19:18:57 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 19:18:57 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 19:18:57 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 19:19:08 - my_app - [32mINFO[0m - jwt_handler.py:76 - [32mПолучение текущего пользователя из токена.[0m
+2025-03-11 19:19:08 - my_app - [32mINFO[0m - jwt_handler.py:51 - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNyIsInVzZXJuYW1lIjoiZ29iMjYiLCJyb2xlIjoiYWRtaW4iLCJjaXR5X2lkIjo5MjQsImV4cCI6MTc0MTcxMTU1NywiY2l0eSI6IiIsImlzX2NvbmZpcm1lZCI6ZmFsc2V9.l21yEz4OvVxtvUDDpih6d2Nc6XCEQ13CWN9TL1KdNjQ[0m
+2025-03-11 19:19:08 - my_app - [32mINFO[0m - jwt_handler.py:54 - [32mТокен успешно декодирован: {'sub': '37', 'username': 'gob26', 'role': 'admin', 'city_id': 924, 'exp': 1741711557, 'city': '', 'is_confirmed': False}[0m
+2025-03-11 19:19:08 - my_app - [32mINFO[0m - jwt_handler.py:79 - [32mДекодированный токен: {'sub': '37', 'username': 'gob26', 'role': 'admin', 'city_id': 924, 'exp': 1741711557, 'city': '', 'is_confirmed': False}[0m
+2025-03-11 19:19:08 - my_app - [32mINFO[0m - jwt_handler.py:103 - [32mТекущий пользователь: {'username': 'gob26', 'user_id': '37', 'role': 'admin', 'city_id': 924, 'is_confirmed': False}[0m
+2025-03-11 19:19:08 - my_app - [32mINFO[0m - service_standart_router.py:208 - [32mТекущий пользователь: {'username': 'gob26', 'user_id': '37', 'role': 'admin', 'city_id': 924, 'is_confirmed': False}[0m
+2025-03-11 19:19:08 - my_app - [32mINFO[0m - base_repositories.py:67 - [32mУдалено StandardService с ID 15: 1[0m

@@ -203,3 +203,26 @@ fastapi.exceptions.HTTPException: 500: Ошибка при удалении фо
 2025-03-11 17:57:50 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
 2025-03-11 18:00:03 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
 2025-03-11 18:00:03 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 18:23:35 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 18:23:35 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 18:26:08 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 18:26:08 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 18:30:33 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 18:30:33 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 18:39:55 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 18:39:55 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 18:41:01 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 18:41:01 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 18:47:57 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 18:47:57 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 18:55:54 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 18:55:54 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 19:04:37 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 19:04:37 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 19:11:24 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 19:11:24 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 19:14:54 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 19:14:54 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 19:16:22 - my_app - [31mERROR[0m - service_standart_router.py:228 - [31mСистемная ошибка при удалении страндартной услуги: 'StandardService' object has no attribute 'user_id'[0m
+2025-03-11 19:18:57 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 19:18:57 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
