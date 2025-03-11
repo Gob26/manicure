@@ -1,0 +1,5 @@
+2025-03-11 10:57:17 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 10:57:17 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 10:57:17 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 10:57:17 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 10:57:17 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
