@@ -99,3 +99,25 @@ async def create_service_standart_route(
     except Exception as e:
         logger.error(f"create_service_standart_route: Системная ошибка при создании сервиса: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail="Системная ошибка при создании сервиса")
+
+
+@service_standart_router.post(
+    "/services/{service_id}"
+    status_code=status.HTTP_200_OK,
+    summary="Обновление информации о стандартной услуге",
+    description="Обновляет информацию и фотографии стандартной услуги.",
+)
+async def update_service_standart_route(
+    service_id: int,
+    name: Optional[str] = Form(None),
+    title: Optional[str] = Form(None),
+    description: Optional[str] = Form(None),
+    content: Optional[str] = Form(None),
+    slug: Optional[str] = Form(None),
+    category_id: Optional[int] = Form(None),
+    image: Optional[UploadFile] = File(None),
+    current_user: dict = Depends(get_current_user),
+):
+    check_user_permission(current_user, ["admin", "master"])
+
+    service = StandardServiceService.get

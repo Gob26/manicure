@@ -156,7 +156,7 @@ async def update_master_route(
         # Формируем объект обновления
         master_data = MasterUpdateSchema(
             title=title,
-            specialty=specialty,
+            specialty=specialty,_
             description=description,
             text=text,
             experience_years=experience_years,
