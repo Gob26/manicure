@@ -28,7 +28,7 @@ class PhotoHandler:
 
         Args:
             images: Одно или список изображений UploadFile.
-            model: Модель SQLAlchemy для сохранения фото (например, AvatarPhotoSalon, ServicePhoto).
+            model: Модель Tortoise для сохранения фото (например, AvatarPhotoSalon, ServicePhoto).
             entity_id: ID сущности, к которой привязываются фото (например, salon_id, master_id, service_id).
             entity_field_name: Имя поля внешнего ключа в модели photo, связывающего с сущностью (например, 'salon_id').
             role: Роль сущности для формирования пути сохранения (например, 'salons', 'masters', 'services').
@@ -190,9 +190,9 @@ class PhotoHandler:
         Удаляет фото из базы данных и физические файлы.
 
         Args:
+            model: Модель Tortoise, к которой относится фото.
             photo_id: ID фото в базе данных.
-            model: Модель SQLAlchemy, к которой относится фото.
-
+            
         Raises:
             HTTPException: Если фото не найдено или возникла ошибка удаления.
         """
@@ -220,4 +220,31 @@ class PhotoHandler:
 
     @staticmethod
     async def get_photo_by_id(model: Type[Any], **filters) -> Union[Any, None]:
+        """
+        Асинхронно получает фотографию из базы данных по заданным фильтрам.
+
+        Функция использует репозиторий `PhotoRepository` для извлечения записи фотографии
+        из базы данных на основе предоставленной модели и фильтров.
+
+        Args:
+            model (Type[Any]): Модель Tortoise ORM, представляющая таблицу фотографий,
+                                    например, `PhotoNews` или `MasterPhoto`.
+            **filters: Произвольные фильтры для поиска фотографии.
+                      Ключи фильтров должны соответствовать полям в указанной модели.
+                      Например: `id=1`, `master_id=5`, `salon_id=10`, `photo_news_id=2`.
+
+        Returns:
+            Union[Any, None]: Возвращает объект фотографии, если фотография,
+                               соответствующая фильтрам, найдена в базе данных.
+                               Возвращает `None`, если фотография не найдена.
+
+        Пример использования:
+
+            # Получить аватар мастера с ID 5
+            old_photo = await PhotoRepository.get_photo(AvatarPhotoMaster, master_id=master_id)
+
+        Примечание:
+            Функция полагается на реализацию `PhotoRepository.get_photo` для
+            фактического извлечения данных из базы данных.
+        """
         return await PhotoRepository.get_photo(model, **filters)

@@ -61,3 +61,14 @@ class StandardServiceService:
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
                 detail="Системная ошибка при обновлении стандартной услуги."
             )
+        
+    @staticmethod
+    async def get_standard_service_by_id(service_id: int):
+        try:
+            return await ServiceStandartRepository.get_service_by_id(service_id)
+        except Exception as e:
+            logger.error(f"StandardServiceService.get_standard_service_by_id: Error getting standard service by ID {service_id}: {e}", exc_info=True)
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail="Ошибка при получении стандартной услуги."
+            )

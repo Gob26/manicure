@@ -181,14 +181,12 @@ async def update_master_route(
             **master_data.model_dump()
         )
 
-        logger.debug(f"Значение image перед if image: {image}") # <----  НОВОЕ ОТЛАДОЧНОЕ СООБЩЕНИЕ (ПЕРЕД if image:)
-
+        logger.debug(f"Значение image перед if image: {image}") 
         # Если есть новое изображение
         if image:
             logger.info(f"Обновляем фото мастера {master_id}")
-            logger.debug(f"Тип параметра image: {type(image)}") # <----  ОТЛАДОЧНЫЕ СООБЩЕНИЯ ДЛЯ IMAGE (ВНУТРИ if image:)
-            logger.debug(f"Значение параметра image: {image}") # <----  ОТЛАДОЧНЫЕ СООБЩЕНИЯ ДЛЯ IMAGE (ВНУТРИ if image:)
-
+            logger.debug(f"Тип параметра image: {type(image)}") 
+            logger.debug(f"Значение параметра image: {image}") 
             # Находим старое фото
             old_photo = await PhotoRepository.get_photo(AvatarPhotoMaster, master_id=master_id)
 
