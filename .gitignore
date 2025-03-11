@@ -24,4 +24,5 @@ media
 # vim temporary files
 *~
 .*.sw?
-app/config/components/logs
+error.log
+info.log
