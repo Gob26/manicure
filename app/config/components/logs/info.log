@@ -268,3 +268,266 @@
 2025-03-11 17:00:23 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
 2025-03-11 17:00:23 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
 2025-03-11 17:00:23 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 17:30:46 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 17:30:46 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 17:30:46 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 17:30:46 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 17:30:46 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 17:32:03 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 17:32:03 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 17:32:03 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 17:32:03 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 17:32:03 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 17:34:16 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 17:34:16 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 17:34:16 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 17:34:16 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 17:34:16 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 17:34:50 - my_app - [32mINFO[0m - user_login_router.py:27 - [32mПопытка входа пользователя: gob26[0m
+2025-03-11 17:34:50 - my_app - [32mINFO[0m - user_login.py:15 - [32mПопытка логина для пользователя gob26[0m
+2025-03-11 17:34:51 - my_app - [32mINFO[0m - user_login.py:23 - [32mПользователь gob26 найден, проверка пароля.[0m
+2025-03-11 17:34:51 - my_app - [32mINFO[0m - user_login.py:30 - [32mПользователь gob26 успешно авторизован[0m
+2025-03-11 17:34:51 - my_app - [32mINFO[0m - user_login.py:37 - [32mПользователь gob26 успешно авторизован[0m
+2025-03-11 17:34:51 - my_app - [32mINFO[0m - jwt_handler.py:22 - [32mНачало создания JWT токена для данных: {'sub': 37, 'username': 'gob26', 'role': <UserRole.amin: 'admin'>, 'city_id': 924}[0m
+2025-03-11 17:34:51 - my_app - [32mINFO[0m - jwt_handler.py:38 - [32mJWT токен успешно создан: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNyIsInVzZXJuYW1lIjoiZ29iMjYiLCJyb2xlIjoiYWRtaW4iLCJjaXR5X2lkIjo5MjQsImV4cCI6MTc0MTcwNTQ5MSwiY2l0eSI6IiIsImlzX2NvbmZpcm1lZCI6ZmFsc2V9.tb9LxBpALwnCFrcAEl8D-1HovtaQ8qhxJz8JFDz6YmY[0m
+2025-03-11 17:34:51 - my_app - [32mINFO[0m - user_login_router.py:39 - [32mПользователь gob26 успешно авторизован[0m
+2025-03-11 17:35:33 - my_app - [32mINFO[0m - jwt_handler.py:76 - [32mПолучение текущего пользователя из токена.[0m
+2025-03-11 17:35:33 - my_app - [32mINFO[0m - jwt_handler.py:51 - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNyIsInVzZXJuYW1lIjoiZ29iMjYiLCJyb2xlIjoiYWRtaW4iLCJjaXR5X2lkIjo5MjQsImV4cCI6MTc0MTcwNTQ5MSwiY2l0eSI6IiIsImlzX2NvbmZpcm1lZCI6ZmFsc2V9.tb9LxBpALwnCFrcAEl8D-1HovtaQ8qhxJz8JFDz6YmY[0m
+2025-03-11 17:35:33 - my_app - [32mINFO[0m - jwt_handler.py:54 - [32mТокен успешно декодирован: {'sub': '37', 'username': 'gob26', 'role': 'admin', 'city_id': 924, 'exp': 1741705491, 'city': '', 'is_confirmed': False}[0m
+2025-03-11 17:35:33 - my_app - [32mINFO[0m - jwt_handler.py:79 - [32mДекодированный токен: {'sub': '37', 'username': 'gob26', 'role': 'admin', 'city_id': 924, 'exp': 1741705491, 'city': '', 'is_confirmed': False}[0m
+2025-03-11 17:35:33 - my_app - [32mINFO[0m - jwt_handler.py:103 - [32mТекущий пользователь: {'username': 'gob26', 'user_id': '37', 'role': 'admin', 'city_id': 924, 'is_confirmed': False}[0m
+2025-03-11 17:35:33 - my_app - [34mDEBUG[0m - service_standart_router.py:51 - [34mcreate_service_standart_route: service_data создан: name='string333' title='string333' description='333string' content='33333' slug='string333' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:35:33 - my_app - [34mDEBUG[0m - service_standart_router.py:54 - [34mcreate_service_standart_route: Вызов StandardServiceService.create_standart_service с данными: {'name': 'string333', 'title': 'string333', 'description': '333string', 'content': '33333', 'slug': 'string333', 'category_id': 1, 'photo_standart_service_id': None}[0m
+2025-03-11 17:35:33 - my_app - [32mINFO[0m - service_standart_repositories.py:19 - [32mСоздание стандартной услуги с параметрами: {'name': 'string333', 'title': 'string333', 'description': '333string', 'content': '33333', 'slug': 'string333', 'category_id': 1, 'photo_standart_service_id': None}[0m
+2025-03-11 17:35:33 - my_app - [32mINFO[0m - base_repositories.py:48 - [32mStandardService создан с данными: {'name': 'string333', 'title': 'string333', 'description': '333string', 'content': '33333', 'slug': 'string333', 'category_id': 1, 'photo_standart_service_id': None}[0m
+2025-03-11 17:35:33 - my_app - [32mINFO[0m - service_standart_repositories.py:22 - [32mУслуга успешно создана с ID: 51[0m
+2025-03-11 17:35:33 - my_app - [32mINFO[0m - standart_service.py:28 - [32mStandardServiceService.create_standart_service: Standard service created successfully: <StandardService>[0m
+2025-03-11 17:35:33 - my_app - [34mDEBUG[0m - service_standart_router.py:59 - [34mcreate_service_standart_route: StandardServiceService.create_standart_service вернул услугу: <StandardService>[0m
+2025-03-11 17:35:33 - my_app - [34mDEBUG[0m - service_standart_router.py:63 - [34mcreate_service_standart_route: Услуга создана с ID: 51[0m
+2025-03-11 17:35:33 - my_app - [32mINFO[0m - image.py:20 - [32mНачало асинхронной обработки изображения[0m
+2025-03-11 17:35:34 - my_app - [32mINFO[0m - photo_repository.py:21 - [32mСоздана запись фото: StandardServicePhoto, id=44[0m
+2025-03-11 17:35:34 - my_app - [32mINFO[0m - photo_base_servise.py:107 - [32mСоздана запись фото для StandardServicePhoto: file_name=798f4c04-9a2a-4bb2-b85b-7bdced688606-photo_2024-04-25_16-37-16, entity_id=51, small= all_city/services/services_51/portfolio/small_798f4c04-9a2a-4bb2-b85b-7bdced688606-photo_2024-04-25_16-37-16.webp, medium= all_city/services/services_51/portfolio/medium_798f4c04-9a2a-4bb2-b85b-7bdced688606-photo_2024-04-25_16-37-16.webp, large= all_city/services/services_51/portfolio/large_798f4c04-9a2a-4bb2-b85b-7bdced688606-photo_2024-04-25_16-37-16.webp[0m
+2025-03-11 17:35:34 - my_app - [34mDEBUG[0m - service_standart_router.py:71 - [34mcreate_service_standart_route: PhotoHandler.add_photos_to_service вернул photo_ids: [photo_ids][0m
+2025-03-11 17:35:34 - my_app - [34mDEBUG[0m - service_standart_router.py:84 - [34mcreate_service_standart_route: update_data для обновления фото создан: name='string333' title='string333' description='333string' content='33333' slug='string333' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:35:34 - my_app - [34mDEBUG[0m - service_standart_router.py:86 - [34mcreate_service_standart_route: Calling StandardServiceService.update_standart_service with service_id=51, update_data=name='string333' title='string333' description='333string' content='33333' slug='string333' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:35:34 - my_app - [34mDEBUG[0m - standart_service.py:41 - [34mStandardServiceService.update_standart_service:  Получена схема: name='string333' title='string333' description='333string' content='33333' slug='string333' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:35:34 - my_app - [34mDEBUG[0m - base_repositories.py:56 - [34mРезультат update() для StandardService ID 51: updated = 1[0m
+2025-03-11 17:35:34 - my_app - [32mINFO[0m - base_repositories.py:60 - [32mStandardService с ID 51 обновлен с данными: {'name': 'string333', 'title': 'string333', 'description': '333string', 'content': '33333', 'slug': 'string333', 'category_id': 1}[0m
+2025-03-11 17:35:34 - my_app - [32mINFO[0m - standart_service.py:49 - [32mStandardServiceService.update_standart_service: Standard service ID 51 updated successfully.[0m
+2025-03-11 17:35:34 - my_app - [34mDEBUG[0m - service_standart_router.py:92 - [34mcreate_service_standart_route: StandardServiceService.update_standart_service вернул обновленную услугу: <StandardService>[0m
+2025-03-11 17:35:34 - my_app - [32mINFO[0m - service_standart_router.py:97 - [32mcreate_service_standart_route: Процесс создания стандартной услуги успешно завершен.[0m
+2025-03-11 17:36:24 - my_app - [32mINFO[0m - jwt_handler.py:76 - [32mПолучение текущего пользователя из токена.[0m
+2025-03-11 17:36:24 - my_app - [32mINFO[0m - jwt_handler.py:51 - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNyIsInVzZXJuYW1lIjoiZ29iMjYiLCJyb2xlIjoiYWRtaW4iLCJjaXR5X2lkIjo5MjQsImV4cCI6MTc0MTcwNTQ5MSwiY2l0eSI6IiIsImlzX2NvbmZpcm1lZCI6ZmFsc2V9.tb9LxBpALwnCFrcAEl8D-1HovtaQ8qhxJz8JFDz6YmY[0m
+2025-03-11 17:36:24 - my_app - [32mINFO[0m - jwt_handler.py:54 - [32mТокен успешно декодирован: {'sub': '37', 'username': 'gob26', 'role': 'admin', 'city_id': 924, 'exp': 1741705491, 'city': '', 'is_confirmed': False}[0m
+2025-03-11 17:36:24 - my_app - [32mINFO[0m - jwt_handler.py:79 - [32mДекодированный токен: {'sub': '37', 'username': 'gob26', 'role': 'admin', 'city_id': 924, 'exp': 1741705491, 'city': '', 'is_confirmed': False}[0m
+2025-03-11 17:36:24 - my_app - [32mINFO[0m - jwt_handler.py:103 - [32mТекущий пользователь: {'username': 'gob26', 'user_id': '37', 'role': 'admin', 'city_id': 924, 'is_confirmed': False}[0m
+2025-03-11 17:36:24 - my_app - [34mDEBUG[0m - service_standart_router.py:141 - [34mupdate_service_standart_route: service_data создан: name='string221212' title='string1212' description='string21212' content='string121212' slug='string21212' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:36:24 - my_app - [34mDEBUG[0m - service_standart_router.py:143 - [34mupdate_service_standart_route: Вызов StandardServiceService.update_standart_service с данными: {'name': 'string221212', 'title': 'string1212', 'description': 'string21212', 'content': 'string121212', 'slug': 'string21212', 'category_id': 1, 'photo_standart_service_id': None}[0m
+2025-03-11 17:36:24 - my_app - [31mERROR[0m - service_standart_router.py:192 - [31mcreate_service_standart_route: Системная ошибка при создании сервиса: StandardServiceService.update_standart_service() got an unexpected keyword argument 'name'[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 145, in update_service_standart_route
+    service = await StandardServiceService.update_standart_service(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: StandardServiceService.update_standart_service() got an unexpected keyword argument 'name'
+2025-03-11 17:41:07 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 17:41:07 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 17:41:07 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 17:41:07 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 17:41:07 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 17:44:59 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 17:44:59 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 17:44:59 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 17:44:59 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 17:44:59 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 17:45:36 - my_app - [32mINFO[0m - jwt_handler.py:76 - [32mПолучение текущего пользователя из токена.[0m
+2025-03-11 17:45:36 - my_app - [32mINFO[0m - jwt_handler.py:51 - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNyIsInVzZXJuYW1lIjoiZ29iMjYiLCJyb2xlIjoiYWRtaW4iLCJjaXR5X2lkIjo5MjQsImV4cCI6MTc0MTcwNTQ5MSwiY2l0eSI6IiIsImlzX2NvbmZpcm1lZCI6ZmFsc2V9.tb9LxBpALwnCFrcAEl8D-1HovtaQ8qhxJz8JFDz6YmY[0m
+2025-03-11 17:45:36 - my_app - [32mINFO[0m - jwt_handler.py:54 - [32mТокен успешно декодирован: {'sub': '37', 'username': 'gob26', 'role': 'admin', 'city_id': 924, 'exp': 1741705491, 'city': '', 'is_confirmed': False}[0m
+2025-03-11 17:45:36 - my_app - [32mINFO[0m - jwt_handler.py:79 - [32mДекодированный токен: {'sub': '37', 'username': 'gob26', 'role': 'admin', 'city_id': 924, 'exp': 1741705491, 'city': '', 'is_confirmed': False}[0m
+2025-03-11 17:45:36 - my_app - [32mINFO[0m - jwt_handler.py:103 - [32mТекущий пользователь: {'username': 'gob26', 'user_id': '37', 'role': 'admin', 'city_id': 924, 'is_confirmed': False}[0m
+2025-03-11 17:45:36 - my_app - [34mDEBUG[0m - service_standart_router.py:141 - [34mupdate_service_standart_route: service_data создан: name='string221212' title='string1212' description='string21212' content='string121212' slug='string21212' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:45:36 - my_app - [34mDEBUG[0m - service_standart_router.py:143 - [34mupdate_service_standart_route: Вызов StandardServiceService.update_standart_service с данными: {'name': 'string221212', 'title': 'string1212', 'description': 'string21212', 'content': 'string121212', 'slug': 'string21212', 'category_id': 1, 'photo_standart_service_id': None}[0m
+2025-03-11 17:45:36 - my_app - [34mDEBUG[0m - standart_service.py:41 - [34mStandardServiceService.update_standart_service:  Получена схема: name='string221212' title='string1212' description='string21212' content='string121212' slug='string21212' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:45:36 - my_app - [34mDEBUG[0m - base_repositories.py:56 - [34mРезультат update() для StandardService ID 51: updated = 1[0m
+2025-03-11 17:45:36 - my_app - [32mINFO[0m - base_repositories.py:60 - [32mStandardService с ID 51 обновлен с данными: {'name': 'string221212', 'title': 'string1212', 'description': 'string21212', 'content': 'string121212', 'slug': 'string21212', 'category_id': 1}[0m
+2025-03-11 17:45:36 - my_app - [32mINFO[0m - standart_service.py:49 - [32mStandardServiceService.update_standart_service: Standard service ID 51 updated successfully.[0m
+2025-03-11 17:45:36 - my_app - [34mDEBUG[0m - service_standart_router.py:149 - [34mupdate_service_standart_route: StandardServiceService.update_standart_service вернул услугу: <StandardService>[0m
+2025-03-11 17:45:36 - my_app - [34mDEBUG[0m - service_standart_router.py:150 - [34mЗначение image перед if image: UploadFile(filename='1.jpg', size=51434, headers=Headers({'content-disposition': 'form-data; name="image"; filename="1.jpg"', 'content-type': 'image/jpeg'}))[0m
+2025-03-11 17:45:36 - my_app - [32mINFO[0m - service_standart_router.py:152 - [32mОбновляем фото мастера 51[0m
+2025-03-11 17:45:36 - my_app - [34mDEBUG[0m - service_standart_router.py:153 - [34mТип параметра image: <class 'starlette.datastructures.UploadFile'>[0m
+2025-03-11 17:45:36 - my_app - [34mDEBUG[0m - service_standart_router.py:154 - [34mЗначение параметра image: UploadFile(filename='1.jpg', size=51434, headers=Headers({'content-disposition': 'form-data; name="image"; filename="1.jpg"', 'content-type': 'image/jpeg'}))[0m
+2025-03-11 17:45:36 - my_app - [31mERROR[0m - service_standart_router.py:194 - [31mcreate_service_standart_route: Системная ошибка при создании сервиса: Unknown filter param 'service_id'. Allowed base values are ['created_at', 'file_name', 'file_path', 'height', 'id', 'is_main', 'large', 'medium', 'mime_type', 'original', 'size', 'small', 'sort_order', 'standard_service', 'standard_service_id', 'updated_at', 'width'][0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 155, in update_service_standart_route
+    old_photo = await PhotoHandler.get_photo_by_id(model=StandardServicePhoto, service_id=service_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 250, in get_photo_by_id
+    return await PhotoRepository.get_photo(model, **filters)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/photo_repositories/photo_repository.py", line 139, in get_photo
+    return await model.filter(**filters).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/queryset.py", line 1051, in __await__
+    self._make_query()
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/queryset.py", line 1013, in _make_query
+    self.resolve_filters(
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/queryset.py", line 142, in resolve_filters
+    modifier &= node.resolve(model, model._meta.basetable)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/expressions.py", line 369, in resolve
+    return self._resolve_kwargs(model, table)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/expressions.py", line 327, in _resolve_kwargs
+    key, value = self._get_actual_filter_params(model, raw_key, raw_value)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/expressions.py", line 321, in _get_actual_filter_params
+    raise FieldError(f"Unknown filter param '{key}'. Allowed base values are {allowed}")
+tortoise.exceptions.FieldError: Unknown filter param 'service_id'. Allowed base values are ['created_at', 'file_name', 'file_path', 'height', 'id', 'is_main', 'large', 'medium', 'mime_type', 'original', 'size', 'small', 'sort_order', 'standard_service', 'standard_service_id', 'updated_at', 'width']
+2025-03-11 17:48:04 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 17:48:04 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 17:48:04 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 17:48:04 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 17:48:04 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 17:49:52 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 17:49:52 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 17:49:52 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 17:49:52 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 17:49:52 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 17:50:11 - my_app - [32mINFO[0m - jwt_handler.py:76 - [32mПолучение текущего пользователя из токена.[0m
+2025-03-11 17:50:11 - my_app - [32mINFO[0m - jwt_handler.py:51 - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNyIsInVzZXJuYW1lIjoiZ29iMjYiLCJyb2xlIjoiYWRtaW4iLCJjaXR5X2lkIjo5MjQsImV4cCI6MTc0MTcwNTQ5MSwiY2l0eSI6IiIsImlzX2NvbmZpcm1lZCI6ZmFsc2V9.tb9LxBpALwnCFrcAEl8D-1HovtaQ8qhxJz8JFDz6YmY[0m
+2025-03-11 17:50:11 - my_app - [32mINFO[0m - jwt_handler.py:54 - [32mТокен успешно декодирован: {'sub': '37', 'username': 'gob26', 'role': 'admin', 'city_id': 924, 'exp': 1741705491, 'city': '', 'is_confirmed': False}[0m
+2025-03-11 17:50:11 - my_app - [32mINFO[0m - jwt_handler.py:79 - [32mДекодированный токен: {'sub': '37', 'username': 'gob26', 'role': 'admin', 'city_id': 924, 'exp': 1741705491, 'city': '', 'is_confirmed': False}[0m
+2025-03-11 17:50:11 - my_app - [32mINFO[0m - jwt_handler.py:103 - [32mТекущий пользователь: {'username': 'gob26', 'user_id': '37', 'role': 'admin', 'city_id': 924, 'is_confirmed': False}[0m
+2025-03-11 17:50:11 - my_app - [34mDEBUG[0m - service_standart_router.py:141 - [34mupdate_service_standart_route: service_data создан: name='string221212' title='string1212' description='string21212' content='string121212' slug='string21212' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:50:11 - my_app - [34mDEBUG[0m - service_standart_router.py:143 - [34mupdate_service_standart_route: Вызов StandardServiceService.update_standart_service с данными: {'name': 'string221212', 'title': 'string1212', 'description': 'string21212', 'content': 'string121212', 'slug': 'string21212', 'category_id': 1, 'photo_standart_service_id': None}[0m
+2025-03-11 17:50:11 - my_app - [34mDEBUG[0m - standart_service.py:41 - [34mStandardServiceService.update_standart_service:  Получена схема: name='string221212' title='string1212' description='string21212' content='string121212' slug='string21212' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:50:11 - my_app - [34mDEBUG[0m - base_repositories.py:56 - [34mРезультат update() для StandardService ID 51: updated = 1[0m
+2025-03-11 17:50:11 - my_app - [32mINFO[0m - base_repositories.py:60 - [32mStandardService с ID 51 обновлен с данными: {'name': 'string221212', 'title': 'string1212', 'description': 'string21212', 'content': 'string121212', 'slug': 'string21212', 'category_id': 1}[0m
+2025-03-11 17:50:11 - my_app - [32mINFO[0m - standart_service.py:49 - [32mStandardServiceService.update_standart_service: Standard service ID 51 updated successfully.[0m
+2025-03-11 17:50:11 - my_app - [34mDEBUG[0m - service_standart_router.py:149 - [34mupdate_service_standart_route: StandardServiceService.update_standart_service вернул услугу: <StandardService>[0m
+2025-03-11 17:50:11 - my_app - [34mDEBUG[0m - service_standart_router.py:150 - [34mЗначение image перед if image: UploadFile(filename='1.jpg', size=51434, headers=Headers({'content-disposition': 'form-data; name="image"; filename="1.jpg"', 'content-type': 'image/jpeg'}))[0m
+2025-03-11 17:50:11 - my_app - [32mINFO[0m - service_standart_router.py:152 - [32mОбновляем фото мастера 51[0m
+2025-03-11 17:50:11 - my_app - [34mDEBUG[0m - service_standart_router.py:153 - [34mТип параметра image: <class 'starlette.datastructures.UploadFile'>[0m
+2025-03-11 17:50:11 - my_app - [34mDEBUG[0m - service_standart_router.py:154 - [34mЗначение параметра image: UploadFile(filename='1.jpg', size=51434, headers=Headers({'content-disposition': 'form-data; name="image"; filename="1.jpg"', 'content-type': 'image/jpeg'}))[0m
+2025-03-11 17:50:11 - my_app - [31mERROR[0m - photo_base_servise.py:218 - [31mОшибка при удалении фото (ID: <StandardServicePhoto>): int() argument must be a string, a bytes-like object or a real number, not 'StandardServicePhoto'[0m
+2025-03-11 17:50:11 - my_app - [31mERROR[0m - service_standart_router.py:195 - [31mcreate_service_standart_route: Системная ошибка при создании сервиса: 500: Ошибка при удалении фото[0m
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 201, in delete_photo
+    photo = await PhotoRepository.get_photo_by_id(model,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/PycharmProjects/manicure/app/db/repositories/photo_repositories/photo_repository.py", line 39, in get_photo_by_id
+    return await model.filter(id=photo_id).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/queryset.py", line 1051, in __await__
+    self._make_query()
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/queryset.py", line 1013, in _make_query
+    self.resolve_filters(
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/queryset.py", line 142, in resolve_filters
+    modifier &= node.resolve(model, model._meta.basetable)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/expressions.py", line 369, in resolve
+    return self._resolve_kwargs(model, table)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/expressions.py", line 331, in _resolve_kwargs
+    filter_modifier = self._resolve_regular_kwarg(model, key, value, table)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/expressions.py", line 290, in _resolve_regular_kwarg
+    criterion, join = self._process_filter_kwarg(model, key, value, table)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/expressions.py", line 275, in _process_filter_kwarg
+    else model._meta.db.executor_class._field_to_db(field_object, value, model)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/backends/base/executor.py", line 178, in _field_to_db
+    return field_object.to_db_value(attr, instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gob/.cache/pypoetry/virtualenvs/manicure-sVwaCYdo-py3.12/lib/python3.12/site-packages/tortoise/fields/base.py", line 260, in to_db_value
+    value = self.field_type(value)  # pylint: disable=E1102
+            ^^^^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'StandardServicePhoto'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gob/PycharmProjects/manicure/app/api/v1/services/service_standart_router.py", line 159, in update_service_standart_route
+    await PhotoHandler.delete_photo(model=StandardServicePhoto, photo_id=old_photo)
+  File "/home/gob/PycharmProjects/manicure/app/use_case/photo_service/photo_base_servise.py", line 219, in delete_photo
+    raise HTTPException(status_code=500, detail="Ошибка при удалении фото")
+fastapi.exceptions.HTTPException: 500: Ошибка при удалении фото
+2025-03-11 17:54:37 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 17:54:37 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 17:54:37 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 17:54:37 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 17:54:37 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 17:54:44 - my_app - [32mINFO[0m - jwt_handler.py:76 - [32mПолучение текущего пользователя из токена.[0m
+2025-03-11 17:54:44 - my_app - [32mINFO[0m - jwt_handler.py:51 - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNyIsInVzZXJuYW1lIjoiZ29iMjYiLCJyb2xlIjoiYWRtaW4iLCJjaXR5X2lkIjo5MjQsImV4cCI6MTc0MTcwNTQ5MSwiY2l0eSI6IiIsImlzX2NvbmZpcm1lZCI6ZmFsc2V9.tb9LxBpALwnCFrcAEl8D-1HovtaQ8qhxJz8JFDz6YmY[0m
+2025-03-11 17:54:44 - my_app - [32mINFO[0m - jwt_handler.py:54 - [32mТокен успешно декодирован: {'sub': '37', 'username': 'gob26', 'role': 'admin', 'city_id': 924, 'exp': 1741705491, 'city': '', 'is_confirmed': False}[0m
+2025-03-11 17:54:44 - my_app - [32mINFO[0m - jwt_handler.py:79 - [32mДекодированный токен: {'sub': '37', 'username': 'gob26', 'role': 'admin', 'city_id': 924, 'exp': 1741705491, 'city': '', 'is_confirmed': False}[0m
+2025-03-11 17:54:44 - my_app - [32mINFO[0m - jwt_handler.py:103 - [32mТекущий пользователь: {'username': 'gob26', 'user_id': '37', 'role': 'admin', 'city_id': 924, 'is_confirmed': False}[0m
+2025-03-11 17:54:44 - my_app - [34mDEBUG[0m - service_standart_router.py:141 - [34mupdate_service_standart_route: service_data создан: name='string221212' title='string1212' description='string21212' content='string121212' slug='string21212' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:54:44 - my_app - [34mDEBUG[0m - service_standart_router.py:143 - [34mupdate_service_standart_route: Вызов StandardServiceService.update_standart_service с данными: {'name': 'string221212', 'title': 'string1212', 'description': 'string21212', 'content': 'string121212', 'slug': 'string21212', 'category_id': 1, 'photo_standart_service_id': None}[0m
+2025-03-11 17:54:44 - my_app - [34mDEBUG[0m - standart_service.py:41 - [34mStandardServiceService.update_standart_service:  Получена схема: name='string221212' title='string1212' description='string21212' content='string121212' slug='string21212' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:54:44 - my_app - [34mDEBUG[0m - base_repositories.py:56 - [34mРезультат update() для StandardService ID 51: updated = 1[0m
+2025-03-11 17:54:44 - my_app - [32mINFO[0m - base_repositories.py:60 - [32mStandardService с ID 51 обновлен с данными: {'name': 'string221212', 'title': 'string1212', 'description': 'string21212', 'content': 'string121212', 'slug': 'string21212', 'category_id': 1}[0m
+2025-03-11 17:54:44 - my_app - [32mINFO[0m - standart_service.py:49 - [32mStandardServiceService.update_standart_service: Standard service ID 51 updated successfully.[0m
+2025-03-11 17:54:44 - my_app - [34mDEBUG[0m - service_standart_router.py:149 - [34mupdate_service_standart_route: StandardServiceService.update_standart_service вернул услугу: <StandardService>[0m
+2025-03-11 17:54:44 - my_app - [34mDEBUG[0m - service_standart_router.py:150 - [34mЗначение image перед if image: UploadFile(filename='1.jpg', size=51434, headers=Headers({'content-disposition': 'form-data; name="image"; filename="1.jpg"', 'content-type': 'image/jpeg'}))[0m
+2025-03-11 17:54:44 - my_app - [32mINFO[0m - service_standart_router.py:152 - [32mОбновляем фото мастера 51[0m
+2025-03-11 17:54:44 - my_app - [34mDEBUG[0m - service_standart_router.py:153 - [34mТип параметра image: <class 'starlette.datastructures.UploadFile'>[0m
+2025-03-11 17:54:44 - my_app - [34mDEBUG[0m - service_standart_router.py:154 - [34mЗначение параметра image: UploadFile(filename='1.jpg', size=51434, headers=Headers({'content-disposition': 'form-data; name="image"; filename="1.jpg"', 'content-type': 'image/jpeg'}))[0m
+2025-03-11 17:54:44 - my_app - [32mINFO[0m - image.py:97 - [32mУдален файл: /home/gob/PycharmProjects/manicure/media/ all_city/services/services_51/portfolio/original_798f4c04-9a2a-4bb2-b85b-7bdced688606-photo_2024-04-25_16-37-16.webp[0m
+2025-03-11 17:54:44 - my_app - [32mINFO[0m - image.py:97 - [32mУдален файл: /home/gob/PycharmProjects/manicure/media/ all_city/services/services_51/portfolio/small_798f4c04-9a2a-4bb2-b85b-7bdced688606-photo_2024-04-25_16-37-16.webp[0m
+2025-03-11 17:54:44 - my_app - [32mINFO[0m - image.py:97 - [32mУдален файл: /home/gob/PycharmProjects/manicure/media/ all_city/services/services_51/portfolio/medium_798f4c04-9a2a-4bb2-b85b-7bdced688606-photo_2024-04-25_16-37-16.webp[0m
+2025-03-11 17:54:44 - my_app - [32mINFO[0m - image.py:97 - [32mУдален файл: /home/gob/PycharmProjects/manicure/media/ all_city/services/services_51/portfolio/large_798f4c04-9a2a-4bb2-b85b-7bdced688606-photo_2024-04-25_16-37-16.webp[0m
+2025-03-11 17:54:44 - my_app - [32mINFO[0m - photo_base_servise.py:215 - [32mФото (ID: 44) удалено.[0m
+2025-03-11 17:54:45 - my_app - [32mINFO[0m - image.py:20 - [32mНачало асинхронной обработки изображения[0m
+2025-03-11 17:54:45 - my_app - [32mINFO[0m - photo_repository.py:21 - [32mСоздана запись фото: StandardServicePhoto, id=45[0m
+2025-03-11 17:54:45 - my_app - [32mINFO[0m - photo_base_servise.py:107 - [32mСоздана запись фото для StandardServicePhoto: file_name=4145bcc8-a0a5-401a-87c7-8807be96a5b0-1, entity_id=51, small= all_city/services/services_51/portfolio/small_4145bcc8-a0a5-401a-87c7-8807be96a5b0-1.webp, medium= all_city/services/services_51/portfolio/medium_4145bcc8-a0a5-401a-87c7-8807be96a5b0-1.webp, large= all_city/services/services_51/portfolio/large_4145bcc8-a0a5-401a-87c7-8807be96a5b0-1.webp[0m
+2025-03-11 17:54:45 - my_app - [34mDEBUG[0m - service_standart_router.py:177 - [34mcreate_service_standart_route: update_data для обновления фото создан: name='string221212' title='string1212' description='string21212' content='string121212' slug='string21212' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:54:45 - my_app - [34mDEBUG[0m - service_standart_router.py:178 - [34mcreate_service_standart_route: Calling StandardServiceService.update_standart_service with service_id=51, update_data=name='string221212' title='string1212' description='string21212' content='string121212' slug='string21212' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:54:45 - my_app - [34mDEBUG[0m - standart_service.py:41 - [34mStandardServiceService.update_standart_service:  Получена схема: name='string221212' title='string1212' description='string21212' content='string121212' slug='string21212' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:54:45 - my_app - [34mDEBUG[0m - base_repositories.py:56 - [34mРезультат update() для StandardService ID 51: updated = 1[0m
+2025-03-11 17:54:45 - my_app - [32mINFO[0m - base_repositories.py:60 - [32mStandardService с ID 51 обновлен с данными: {'name': 'string221212', 'title': 'string1212', 'description': 'string21212', 'content': 'string121212', 'slug': 'string21212', 'category_id': 1}[0m
+2025-03-11 17:54:45 - my_app - [32mINFO[0m - standart_service.py:49 - [32mStandardServiceService.update_standart_service: Standard service ID 51 updated successfully.[0m
+2025-03-11 17:54:45 - my_app - [34mDEBUG[0m - service_standart_router.py:184 - [34mcreate_service_standart_route: StandardServiceService.update_standart_service вернул обновленную услугу: <StandardService>[0m
+2025-03-11 17:54:45 - my_app - [32mINFO[0m - service_standart_router.py:189 - [32mcreate_service_standart_route: Процесс создания стандартной услуги успешно завершен.[0m
+2025-03-11 17:57:50 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 17:57:50 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 17:57:50 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 17:57:50 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 17:57:50 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - jwt_handler.py:76 - [32mПолучение текущего пользователя из токена.[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - jwt_handler.py:51 - [32mНачало декодирования JWT токена: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNyIsInVzZXJuYW1lIjoiZ29iMjYiLCJyb2xlIjoiYWRtaW4iLCJjaXR5X2lkIjo5MjQsImV4cCI6MTc0MTcwNTQ5MSwiY2l0eSI6IiIsImlzX2NvbmZpcm1lZCI6ZmFsc2V9.tb9LxBpALwnCFrcAEl8D-1HovtaQ8qhxJz8JFDz6YmY[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - jwt_handler.py:54 - [32mТокен успешно декодирован: {'sub': '37', 'username': 'gob26', 'role': 'admin', 'city_id': 924, 'exp': 1741705491, 'city': '', 'is_confirmed': False}[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - jwt_handler.py:79 - [32mДекодированный токен: {'sub': '37', 'username': 'gob26', 'role': 'admin', 'city_id': 924, 'exp': 1741705491, 'city': '', 'is_confirmed': False}[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - jwt_handler.py:103 - [32mТекущий пользователь: {'username': 'gob26', 'user_id': '37', 'role': 'admin', 'city_id': 924, 'is_confirmed': False}[0m
+2025-03-11 17:58:00 - my_app - [34mDEBUG[0m - service_standart_router.py:141 - [34mupdate_service_standart_route: service_data создан: name='string2212123' title='string12123' description='string212123' content='string1212123' slug='string212123' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:58:00 - my_app - [34mDEBUG[0m - service_standart_router.py:143 - [34mupdate_service_standart_route: Вызов StandardServiceService.update_standart_service с данными: {'name': 'string2212123', 'title': 'string12123', 'description': 'string212123', 'content': 'string1212123', 'slug': 'string212123', 'category_id': 1, 'photo_standart_service_id': None}[0m
+2025-03-11 17:58:00 - my_app - [34mDEBUG[0m - standart_service.py:41 - [34mStandardServiceService.update_standart_service:  Получена схема: name='string2212123' title='string12123' description='string212123' content='string1212123' slug='string212123' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:58:00 - my_app - [34mDEBUG[0m - base_repositories.py:56 - [34mРезультат update() для StandardService ID 51: updated = 1[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - base_repositories.py:60 - [32mStandardService с ID 51 обновлен с данными: {'name': 'string2212123', 'title': 'string12123', 'description': 'string212123', 'content': 'string1212123', 'slug': 'string212123', 'category_id': 1}[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - standart_service.py:49 - [32mStandardServiceService.update_standart_service: Standard service ID 51 updated successfully.[0m
+2025-03-11 17:58:00 - my_app - [34mDEBUG[0m - service_standart_router.py:149 - [34mupdate_service_standart_route: StandardServiceService.update_standart_service вернул услугу: <StandardService>[0m
+2025-03-11 17:58:00 - my_app - [34mDEBUG[0m - service_standart_router.py:150 - [34mЗначение image перед if image: UploadFile(filename='1.jpg', size=51434, headers=Headers({'content-disposition': 'form-data; name="image"; filename="1.jpg"', 'content-type': 'image/jpeg'}))[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - service_standart_router.py:152 - [32mОбновляем фото мастера 51[0m
+2025-03-11 17:58:00 - my_app - [34mDEBUG[0m - service_standart_router.py:153 - [34mТип параметра image: <class 'starlette.datastructures.UploadFile'>[0m
+2025-03-11 17:58:00 - my_app - [34mDEBUG[0m - service_standart_router.py:154 - [34mЗначение параметра image: UploadFile(filename='1.jpg', size=51434, headers=Headers({'content-disposition': 'form-data; name="image"; filename="1.jpg"', 'content-type': 'image/jpeg'}))[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - image.py:97 - [32mУдален файл: /home/gob/PycharmProjects/manicure/media/ all_city/services/services_51/portfolio/original_4145bcc8-a0a5-401a-87c7-8807be96a5b0-1.webp[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - image.py:97 - [32mУдален файл: /home/gob/PycharmProjects/manicure/media/ all_city/services/services_51/portfolio/small_4145bcc8-a0a5-401a-87c7-8807be96a5b0-1.webp[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - image.py:97 - [32mУдален файл: /home/gob/PycharmProjects/manicure/media/ all_city/services/services_51/portfolio/medium_4145bcc8-a0a5-401a-87c7-8807be96a5b0-1.webp[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - image.py:97 - [32mУдален файл: /home/gob/PycharmProjects/manicure/media/ all_city/services/services_51/portfolio/large_4145bcc8-a0a5-401a-87c7-8807be96a5b0-1.webp[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - photo_base_servise.py:215 - [32mФото (ID: 45) удалено.[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - image.py:20 - [32mНачало асинхронной обработки изображения[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - photo_repository.py:21 - [32mСоздана запись фото: StandardServicePhoto, id=46[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - photo_base_servise.py:107 - [32mСоздана запись фото для StandardServicePhoto: file_name=2fbfbfb5-87e8-4327-85f5-dee06e54e70b-1, entity_id=51, small= all_city/services/services_51/portfolio/small_2fbfbfb5-87e8-4327-85f5-dee06e54e70b-1.webp, medium= all_city/services/services_51/portfolio/medium_2fbfbfb5-87e8-4327-85f5-dee06e54e70b-1.webp, large= all_city/services/services_51/portfolio/large_2fbfbfb5-87e8-4327-85f5-dee06e54e70b-1.webp[0m
+2025-03-11 17:58:00 - my_app - [34mDEBUG[0m - service_standart_router.py:177 - [34mcreate_service_standart_route: update_data для обновления фото создан: name='string2212123' title='string12123' description='string212123' content='string1212123' slug='string212123' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:58:00 - my_app - [34mDEBUG[0m - service_standart_router.py:178 - [34mcreate_service_standart_route: Calling StandardServiceService.update_standart_service with service_id=51, update_data=name='string2212123' title='string12123' description='string212123' content='string1212123' slug='string212123' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:58:00 - my_app - [34mDEBUG[0m - standart_service.py:41 - [34mStandardServiceService.update_standart_service:  Получена схема: name='string2212123' title='string12123' description='string212123' content='string1212123' slug='string212123' category_id=1 photo_standart_service_id=None[0m
+2025-03-11 17:58:00 - my_app - [34mDEBUG[0m - base_repositories.py:56 - [34mРезультат update() для StandardService ID 51: updated = 1[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - base_repositories.py:60 - [32mStandardService с ID 51 обновлен с данными: {'name': 'string2212123', 'title': 'string12123', 'description': 'string212123', 'content': 'string1212123', 'slug': 'string212123', 'category_id': 1}[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - standart_service.py:49 - [32mStandardServiceService.update_standart_service: Standard service ID 51 updated successfully.[0m
+2025-03-11 17:58:00 - my_app - [34mDEBUG[0m - service_standart_router.py:184 - [34mcreate_service_standart_route: StandardServiceService.update_standart_service вернул обновленную услугу: <StandardService>[0m
+2025-03-11 17:58:00 - my_app - [32mINFO[0m - service_standart_router.py:189 - [32mcreate_service_standart_route: Процесс создания стандартной услуги успешно завершен.[0m
+2025-03-11 18:00:03 - my_app - [34mDEBUG[0m - logging_config.py:76 - [34mDebug message[0m
+2025-03-11 18:00:03 - my_app - [32mINFO[0m - logging_config.py:77 - [32mInfo message[0m
+2025-03-11 18:00:03 - my_app - [33mWARNING[0m - logging_config.py:78 - [33mWarning message[0m
+2025-03-11 18:00:03 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-03-11 18:00:03 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m

@@ -1,5 +1,8 @@
+from typing import Optional
+
 from fastapi import APIRouter, Depends, File, HTTPException, status, Form, UploadFile
 
+from db.models.services_models.service_standart_model import StandardService
 from db.models.photo_models.photo_standart_service_model import StandardServicePhoto
 from use_case.photo_service.photo_base_servise import PhotoHandler
 from db.schemas.service_schemas.service_standart_schemas import StandardServiceOut, StandardServiceCreate, \
@@ -49,6 +52,7 @@ async def create_service_standart_route(
 
         # Создаем услугу без фотографий
         logger.debug(f"create_service_standart_route: Вызов StandardServiceService.create_standart_service с данными: {service_data.model_dump()}")
+        
         service = await StandardServiceService.create_standart_service(
             **service_data.model_dump()
         )
@@ -102,7 +106,7 @@ async def create_service_standart_route(
 
 
 @service_standart_router.post(
-    "/services/{service_id}"
+    "/services/{service_id}",
     status_code=status.HTTP_200_OK,
     summary="Обновление информации о стандартной услуге",
     description="Обновляет информацию и фотографии стандартной услуги.",
@@ -120,4 +124,73 @@ async def update_service_standart_route(
 ):
     check_user_permission(current_user, ["admin", "master"])
 
-    service = StandardServiceService.get
+    service = await StandardServiceService.get_standard_service_by_id(service_id)
+
+    if not service:
+        raise HTTPException(status_code=404, detail="Стандартная услуга не найдена")
+
+    try:
+        service_data = StandardServiceUpdate( #  Используем StandardServiceUpdate, а не StandardServiceCreate
+            name=name,
+            title=title,
+            description=description,
+            content=content,
+            slug=slug,
+            category_id=category_id,
+        )
+        logger.debug(f"update_service_standart_route: service_data создан: {service_data}")
+
+        logger.debug(f"update_service_standart_route: Вызов StandardServiceService.update_standart_service с данными: {service_data.model_dump()}")
+
+        updated_service = await StandardServiceService.update_standart_service( # Исправленный вызов 1
+            service_id=service_id,
+            schema=service_data # Передаем service_data как schema
+        )
+        logger.debug(f"update_service_standart_route: StandardServiceService.update_standart_service вернул услугу: {updated_service}")
+        logger.debug(f"Значение image перед if image: {image}")
+        if image:
+            logger.info(f"Обновляем фото мастера {service_id}")
+            logger.debug(f"Тип параметра image: {type(image)}")
+            logger.debug(f"Значение параметра image: {image}")
+
+            old_photo = await PhotoHandler.get_photo_by_id(model=StandardServicePhoto, standard_service_id=service_id)
+
+            if old_photo:
+                await PhotoHandler.delete_photo(model=StandardServicePhoto, photo_id=old_photo.id)
+
+            photo_ids = await PhotoHandler.add_photos_to_service(
+                images=[image],
+                service_id=service_id,
+                model=StandardServicePhoto,
+                city=CITY_FOLDER,
+            )
+            if photo_ids:
+                update_data = StandardServiceUpdate( #  Используем StandardServiceUpdate
+                    name=name,
+                    title=title,
+                    description=description,
+                    content=content,
+                    slug=slug,
+                    category_id=category_id,
+                    standard_services_id=photo_ids[0]
+                )
+                logger.debug(f"update_service_standart_route: update_data для обновления фото создан: {update_data}")
+                logger.debug(f"update_service_standart_route: Calling StandardServiceService.update_standart_service "
+                            f"with service_id={service_id}, update_data={update_data}")
+                updated_service = await StandardServiceService.update_standart_service( # Исправленный вызов 2
+                    service_id=service_id,
+                    schema=update_data, # Передаем update_data как schema
+                )
+                logger.debug(f"update_service_standart_route: StandardServiceService.update_standart_service вернул обновленную услугу: {updated_service}")
+            else:
+                logger.warning(f"Фото для сервиса salon_id={service_id} не было загружено.")
+                updated_service = updated_service # Используем уже обновленный сервис, если фото не загружено
+
+            logger.info(f"update_service_standart_route: Процесс создания стандартной услуги успешно завершен.") # Сообщение про создание услуги - неточно, нужно исправить на "обновление"
+            return updated_service
+    except ValueError as ve:
+        logger.warning(f"update_service_standart_route: ValueError: {ve}")
+        raise HTTPException(status_code=400, detail=str(ve))
+    except Exception as e:
+        logger.error(f"update_service_standart_route: Системная ошибка при создании сервиса: {e}", exc_info=True) # Сообщение про создание услуги - неточно, нужно исправить на "обновление"
+        raise HTTPException(status_code=500, detail="Системная ошибка при создании сервиса") # Сообщение про создание услуги - неточно, нужно исправить на "обновление"
