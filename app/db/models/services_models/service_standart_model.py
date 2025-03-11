@@ -2,7 +2,9 @@
 from tortoise import fields
 from db.models.abstract.abstract_model import AbstractModel
 from db.models.abstract.abstract_service import AbstractService
-
+import typing
+if typing.TYPE_CHECKING:
+    from db.models import StandardServicePhoto
 
 class StandardService(AbstractService):
     """
@@ -15,13 +17,8 @@ class StandardService(AbstractService):
         on_delete=fields.SET_NULL,
         help_text="Категория услуги (например, маникюр, педикюр)."
     )
-    default_photo = fields.OneToOneField(
-        'server.StandardServicePhoto',
-        related_name='service',
-        null=True,
-        on_delete=fields.SET_NULL,
-        help_text="Фото по умолчанию для услуги"
-    )
+    
+    images: fields.ReverseRelation["StandardServicePhoto"]
 
     class Meta:
         table = "standard_services"

@@ -7,6 +7,8 @@ class StandardServicePhoto(AbstractPhoto):
     """
     Фотографии стандартных услуг
     """
+    standard_service = fields.ForeignKeyField("server.StandardService", related_name="images", on_delete=fields.CASCADE)
+
     class Meta:
         table = "standard_service_photo"
 

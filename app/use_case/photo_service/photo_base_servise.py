@@ -176,7 +176,7 @@ class PhotoHandler:
             images=images,
             model=model,
             entity_id=service_id,
-            entity_field_name="service_id", # Указываем имя поля service_id
+            entity_field_name="standard_service_id", # Указываем имя поля service_id например
             role="services", # Роль для услуг
             image_type="portfolio", # Тип изображения для услуг (например, портфолио)
             is_main=is_main,

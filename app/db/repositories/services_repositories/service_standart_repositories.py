@@ -1,11 +1,14 @@
 from typing import Any, Dict, Optional, List
 from fastapi import HTTPException, status
 from tortoise.exceptions import DoesNotExist, IntegrityError
+from app.db.schemas.salon_schemas.salon_schemas import SalonUpdateSchema
 from db.models.services_models.service_standart_model import StandardService
 from db.repositories.base_repositories.base_repositories import BaseRepository
 from config.components.logging_config import logger
 from db.models.photo_models.photo_standart_service_model import StandardServicePhoto
 from db.models import Category
+from db.schemas.service_schemas.service_standart_schemas import StandardServiceUpdate
+
 
 class ServiceStandartRepository(BaseRepository):
     model = StandardService
@@ -69,3 +72,20 @@ class ServiceStandartRepository(BaseRepository):
         except Exception as e:
             logger.error(f"Ошибка при привязке фото: {str(e)}", exc_info=True)
             raise HTTPException(status_code=500, detail="Ошибка при привязке фото к сервису.")
+
+
+    @classmethod
+    async def update_service(cls, service_id: int, schema: StandardServiceUpdate) -> StandardService:
+        """Обновление стандартной услуги"""
+        update_data = {
+            k: v for k, v in schema.dict(exclude_unset=True).items()
+            if v is not None
+        }
+
+        await cls.update(service_id, **update_data)  # Выполняем обновление в БД
+        updated_service = await cls.get_by_id(service_id)  # Получаем обновленную услугу из БД
+
+        if updated_service is None:
+            raise ValueError(f"Услуга с ID {service_id} не найдена")
+
+        return updated_service

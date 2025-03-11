@@ -10,10 +10,7 @@ from db.schemas.salon_schemas.salon_schemas import SalonCreateSchema, SalonCreat
 from config.components.logging_config import logger
 from use_case.utils.permissions import check_user_permission
 
-# Константы для организации структуры хранения
-CITY_FOLDER = "default_city"  # Название папки для города
-ROLE_FOLDER = "master"  # Название папки для роли
-IMAGE_TYPE = "avatar"
+
 salon_router = APIRouter()
 
 @salon_router.post("/",
