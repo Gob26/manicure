@@ -120,3 +120,9 @@ class SalonService:
         except Exception as e:
             logger.error(f"Ошибка при удалении салона ID {salon_id}: {e}")
             raise RuntimeError("Произошла ошибка при удалении салона.")
+        
+
+    @staticmethod
+    async def get_salon_by_id(salon_id: int) -> Salon:
+        """Получение салона по его ID."""
+        return await SalonRepository.get_salon_by_id(salon_id)

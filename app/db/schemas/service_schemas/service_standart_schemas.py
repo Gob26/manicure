@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field
 from typing import Optional
-from db.schemas.service_schemas.category_schemas import CategoryBase
+from db.schemas.service_schemas.category_schemas import CategoryOut
 
 
 class StandardServicePhotoSchema(BaseModel):
@@ -24,23 +24,37 @@ class StandardServiceBase(BaseModel):
     content: Optional[str] = None
     slug: Optional[str] = None
     category_id: Optional[int] = None
-    default_photo_id: Optional[int] = None
+    photo_standart_service_id: Optional[int] = None
 
     class Config:
         from_attributes = True
 
 
 class StandardServiceCreate(StandardServiceBase):
-    pass
+    name: str
+    title: Optional[str] = None
+    description: Optional[str] = None
+    content: Optional[str] = None
+    slug: Optional[str] = None
+    category_id: Optional[int] = None
+
+    class Config:
+        from_attributes = True
 
 
 class StandardServiceUpdate(StandardServiceBase):
-    pass
-
+    name: Optional[str]
+    title: Optional[str]
+    description: Optional[str]
+    content: Optional[str]
+    slug: Optional[str]
+    category_id: Optional[int]
+    photo_standart_service_id: Optional[int] = None
+    class Config:
+        from_attributes = True
 
 class StandardServiceOut(StandardServiceBase):
     id: int
-    category: Optional[CategoryBase]  # Более сложная структура для категории
 
     class Config:
         from_attributes = True

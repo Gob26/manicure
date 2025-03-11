@@ -95,7 +95,7 @@ class MasterReadService:
         except EntityNotFoundException as e:
             logger.error(f"❌ EntityNotFoundException: {e}")
             raise ResourceNotFoundException(
-                resource_type="Салон",
+                resource_type="Мастер",
                 identifier=master_slug,
                 error_code="SALON_NOT_FOUND"
             )
