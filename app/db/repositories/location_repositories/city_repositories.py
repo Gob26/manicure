@@ -5,9 +5,11 @@ from db.models.master_models.master_model import Master
 from db.models.salon_models.salon_model import Salon
 from db.models.location.city import City
 from config.components.logging_config import logger
+from db.repositories.base_repositories.base_repositories import BaseRepository
 
 
-class CityRepository:
+class CityRepository(BaseRepository):
+    model = City
     @staticmethod
     async def get_cities_with_services() -> List[City]:
         """
@@ -38,6 +40,8 @@ class CityRepository:
         city = await City.get_or_none(Q(slug=slug))  # Поиск города по slug
         logger.debug(f"Результат поиска города: {city!r}")
         return city  # Возвращаем найденный объект города
+
+
 
     @staticmethod
     async def get_city_by_id(city_id) -> str:
@@ -89,3 +93,4 @@ class CityRepository:
         """
         logger.debug("Получение всех городов")
         return await City.all()
+

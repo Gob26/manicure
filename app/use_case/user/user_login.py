@@ -23,9 +23,16 @@ async def login(username: str, password: str):
     logger.info(f"Пользователь {username} найден, проверка пароля.")
 
     # Проверяем пароль с использованием репозитория (если функция проверки пароля в репозитории)
-    if not UserAuthService.verify_password(password, user.password):  # Предполагаем, что такая функция есть в репозитории
+    if not await UserAuthService.verify_password(password, user.password):  # Предполагаем, что такая функция есть в репозитории
         logger.error(f"Неверный пароль для пользователя {username}")
         raise HTTPException(status_code=401, detail="Неверный пароль")
+
+    logger.info(f"Пользователь {username} успешно авторизован")
+
+    # Проверка подтверждения email
+    if not user.is_confirmed:
+        logger.error(f"Пользователь {username} не подтвердил email")
+        raise HTTPException(status_code=403, detail="Пользователь не подтвердил email")
 
     logger.info(f"Пользователь {username} успешно авторизован")
 
@@ -57,5 +64,6 @@ async def login(username: str, password: str):
         "username": user.username,
         "role": user.role,
         "city": city_name,
-        "city_id": city_id
+        "city_id": city_id,
+        "is_confirmed": user.is_confirmed  # Добавляем флаг подтверждения
     }

@@ -1,7 +1,10 @@
 from typing import Optional, List, Union, Any
 
 from fastapi import HTTPException
+from tortoise.exceptions import DoesNotExist
 
+from app.core.exceptions.repository import EntityNotFoundException
+from app.db.schemas.master_schemas.master_schemas import MasterUpdateSchema
 from db.models.services_models.service_custom_model import CustomService
 from db.models.master_models.master_model import Master
 from db.models.location.city import City
@@ -63,6 +66,10 @@ class MasterRepository(BaseRepository):
         """Получение мастера по ID пользователя."""
         return await cls.get_or_none(user_id=user_id)
 
+    @classmethod
+    async def get_masters_by_city(cls, city: str) -> List[Master]:
+        """Получение списка мастеров по городу"""
+        return await cls.filter(city=city)
 
     @classmethod
     async def get_masters_in_city(cls, city_slug: str, limit: int = 10, offset: int = 0) -> List[Master]:
@@ -123,3 +130,86 @@ class MasterRepository(BaseRepository):
     async def bulk_create_masters(cls, masters_data: List[dict]) -> List[Master]:
         """Массовое создание мастеров."""
         return await cls.bulk_create(masters_data)
+    
+    @classmethod
+    async def _update_master(cls, master_id: int, schema: MasterUpdateSchema) -> Optional[Master]:
+        """
+        Асинхронно обновляет данные мастера в базе данных.
+
+        Эта функция принимает идентификатор мастера и схему обновления,
+        затем обновляет соответствующие поля в базе данных. После обновления
+        функция возвращает обновленный объект мастера.
+
+        Args:
+            master_id (int): Идентификатор мастера, данные которого необходимо обновить.
+            schema (MasterUpdateSchema): Схема обновления, содержащая новые данные для мастера.
+
+        Returns:
+            Optional[Master]: Обновленный объект мастера, если обновление прошло успешно.
+                              Возвращает None, если мастер с указанным ID не найден.
+
+        Example:
+            updated_master = await Master._update_master(123, MasterUpdateSchema(name='New Name'))
+            if updated_master:
+                print(f"Master updated: {updated_master.name}")
+            else:
+                print("Master not found")
+        """
+        update_data = {
+            k: v for k, v in schema.dict(exclude_unset=True).items()
+            if v is not None
+        }
+        logger.debug(f"Данные для обновления мастера {master_id}: {update_data}")
+        await cls.update(master_id, **update_data)  # Выполняем обновление в БД
+        updated_master = await cls.get_by_id(master_id)  # Получаем обновленный мастер из БД
+        return updated_master
+
+    @classmethod
+    async def _get_master_by_city_and_slug_with_avatar(cls, city: str, slug: str) -> Optional[Master]:
+        """
+        Асинхронно получает мастера по городу и slug с предзагрузкой аватара.
+
+        Эта функция выполняет фильтрацию по заданному городу и slug,
+        а затем возвращает мастера с предзагруженными данными аватара.
+
+        Args:
+            city (str): Slug города, в котором находится мастер.
+            slug (str): Уникальный идентификатор мастера в формате slug.
+
+        Returns:
+            Optional[Master]: Объект мастера с предзагруженными данными аватара, если найден.
+                            Возвращает None, если мастер с указанными параметрами не найден.
+
+        Raises:
+            EntityNotFoundException: Если мастер с указанными параметрами не найден.
+            Exception: Если произошла любая другая ошибка во время выполнения запроса.
+
+        Example:
+            try:
+                master = await Master._get_master_by_city_and_slug_with_avatar('moscow', 'example-slug')
+                if master:
+                    print(f"Master found: {master.name}")
+            except EntityNotFoundException as e:
+                print(e)
+        """
+        try:
+            master = await Master.filter(city__slug=city, slug=slug).prefetch_related('images').first()
+            if not master:
+                raise EntityNotFoundException("Мастер", identifier=slug)
+            return master
+        except DoesNotExist:
+            raise EntityNotFoundException("Мастер", identifier=slug)
+        except Exception as e:
+            # Логирование и прописываем исключения
+            raise e
+
+
+    @classmethod
+    async def delete_master(cls, master_id: int) -> Optional[Master]:
+        """Удаление мастера."""
+        master = await cls.get_by_id(master_id)
+        if master:
+            await master.delete()
+            logger.info(f"Мастер с ID {master_id} удален.")
+            return master
+        return None

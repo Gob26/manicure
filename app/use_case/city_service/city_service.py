@@ -25,7 +25,6 @@ class CityService:
         
         return city
 
-# Получаем город по слагу и если в нем есть мастера или салоны , то отображаем
     @staticmethod
     async def get_city_by_slug(slug: str) -> dict:
         """Получить город по slug, если в нем есть салоны или мастера."""
@@ -38,17 +37,16 @@ class CityService:
             raise HTTPException(status_code=404, detail="В городе нет салонов или мастеров")
 
         # Получаем описание города
-        city_description = await city.description.all()
+        city_description = await city.description.first()  # Получаем первый объект, если он есть
         description_data = None
 
-        if city_description:
-            description = city_description[0]  # берем первое описание, если есть
+        if city_description:  # Если описание существует
             description_data = {
-                "id": description.id,
+                "id": city_description.id,
                 "city_id": city.id,
-                "title": description.title,
-                "description": description.description,
-                "text": description.text
+                "title": city_description.title,
+                "description": city_description.description,
+                "text": city_description.text
             }
 
         # Формируем ответ в соответствии с FullCitySchema
@@ -67,7 +65,6 @@ class CityService:
         }
 
         return result
-
 
     @staticmethod
     async def get_active_cities() -> List[dict]:

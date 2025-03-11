@@ -1,15 +1,14 @@
-from typing import TypeVar, Type, Optional, List, Any, Dict, Union
-from tortoise import Model
-from tortoise.expressions import Q
+from typing import TypeVar, Type, Optional, List, Any, Dict
+from tortoise.models import Model
 from tortoise.exceptions import DoesNotExist
-from tortoise.transactions import atomic, in_transaction
+from tortoise.transactions import in_transaction
 from config.components.logging_config import logger
 
-
+# Создаем переменную для типа модели
 ModelType = TypeVar("ModelType", bound=Model)
 
 class BaseRepository:
-    model: Type[ModelType] = None
+    model: Type[ModelType]  # Указываем, что model будет типом модели
 
     @classmethod
     async def get_by_id(cls, id: int) -> Optional[ModelType]:
@@ -30,12 +29,17 @@ class BaseRepository:
             return None
 
     @classmethod
-    async def get_all(cls, limit: int = 10, offset: int = 0, *related_fields) -> List[ModelType]:
+    async def get_all_with_pagination(cls, limit: int = 10, offset: int = 0, *related_fields) -> List[ModelType]:
         """Получение всех объектов с пагинацией и связанными полями"""
         query = cls.model.all()
         if related_fields:
             query = query.prefetch_related(*related_fields)
         return await query.offset(offset).limit(limit)
+
+    @classmethod
+    async def get_all(cls) -> List[ModelType]:
+        """Получение всех объектов без пагинации и связанных полей"""
+        return await cls.model.all()
 
     @classmethod
     async def create(cls, **kwargs: Any) -> ModelType:
@@ -49,6 +53,7 @@ class BaseRepository:
         """Обновление объекта"""
         async with in_transaction() as conn:
             updated = await cls.model.filter(id=id).using_db(conn).update(**kwargs)
+            logger.debug(f"Результат update() для {cls.model.__name__} ID {id}: updated = {updated}")
             if not updated:
                 logger.warning(f"Не удалось обновить {cls.model.__name__} с ID {id}")
                 return None

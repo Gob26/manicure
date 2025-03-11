@@ -1,9 +1,10 @@
 from tortoise import fields
-from db.models.services_models.service_custom_model import CustomService
+
+import typing
+if typing.TYPE_CHECKING:
+    from db.models import AvatarPhotoSalon
 from db.models.abstract.abstract_model import AbstractModel
-from db.models.job.vacancy_salon import Vacancy
-from db.models.salon_models.salon_master_relation import SalonMasterRelation
-from db.models.salon_models.salon_master_invitation import SalonMasterInvitation
+
 
 class Salon(AbstractModel):
     # Связь с городом
@@ -19,15 +20,22 @@ class Salon(AbstractModel):
     
     # Основная информация
     name = fields.CharField(max_length=255)
-    title = fields.CharField(max_length=255, null=False)  # Заголовок
-    slug = fields.CharField(max_length=255, unique=False, null=False)
-    
-    # Информация о местоположении
+    title = fields.CharField(max_length=255, null=False) 
+    slug = fields.CharField(max_length=255, unique=True, null=True)
+    description = fields.TextField(null=True)  
+    text = fields.TextField(null=True) 
+
+    # Контактная информация
     address = fields.CharField(max_length=255)  # Адрес
-    
-    # Поля с контентом
-    description = fields.TextField(null=True)  # Описание
-    text = fields.TextField(null=True)  # Текст
+    phone = fields.CharField(max_length=20, null=False, help_text="Телефон мастера")  # Телефон
+    telegram = fields.CharField(max_length=255, null=True, help_text="Ссылка на Telegram")  # Telegram
+    whatsapp = fields.CharField(max_length=255, null=True, help_text="Ссылка на WhatsApp")  # WhatsApp
+    website = fields.CharField(max_length=255, null=True, help_text="Веб-сайт мастера")  # Веб-сайт
+    vk = fields.CharField(max_length=255, null=True, help_text="Ссылка на VK")  # ВКонтакте
+    instagram = fields.CharField(max_length=255, null=True, help_text="Ссылка на Instagram")  # Instagram    
+    # Связь с группой аватаров
+    images: fields.ReverseRelation["AvatarPhotoSalon"]
+
     
     # Связанные сущности
     services = fields.ReverseRelation["CustomService"]  # Связь с услугами

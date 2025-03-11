@@ -24,6 +24,12 @@ class UserRepository(BaseRepository):
         return await cls.get_by_id_with_related(user_id, "city")
 
     @classmethod
+    async def update_user(cls, user_id: int, update_data: dict) -> Optional[User]:
+        """Обновление пользователя по ID."""
+        await User.filter(id=user_id).update(**update_data)
+        return await User.get_or_none(id=user_id)
+
+    @classmethod
     async def create_user(cls, username: str, email: str, password: str, city_name: str, role: str) -> User:
         """Создание нового пользователя с валидацией."""
         logger.debug(
