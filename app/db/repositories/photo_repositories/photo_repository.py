@@ -138,3 +138,23 @@ class PhotoRepository:
         """
         return await model.filter(**filters).first()
 
+
+    @staticmethod
+    async def get_photo_count(model: Type[Model], id: int) -> int:
+        """
+        Получает количество фотографий для заданной модели и идентификатора.
+
+        Функция возвращает количество фотографий, связанных с указанной сущностью
+        в базе данных на основе предоставленной модели и ID.
+
+        Args:
+            model (Type[Model]): Модель Tortoise ORM, представляющая таблицу фотографий.
+            id (int): Идентификатор сущности, для которой нужно получить количество фотографий.
+
+        Returns:
+            int: Количество фотографий для заданной сущности.
+
+        Пример использования:
+            photo_count = await PhotoService.get_photo_count(CustomServicePhoto, custom_service_id)
+        """
+        return await model.filter(custom_service_id=id).count()

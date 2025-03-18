@@ -22,13 +22,17 @@ class CityListService:
             cache_key = "active_cities_list"
 
             if self.cache:
-                logger.info("Попытка получить данные из кеша")
-                cached_data = await self.cache.get(cache_key)
+                try:
+                    logger.info("Попытка получить данные из кеша")
+                    cached_data = await self.cache.get(cache_key)
 
-                if cached_data:
-                    logger.info("Данные найдены в кеше, возвращаем")
-                    return json.loads(cached_data)
-                logger.info("Данных в кеше нет, загружаем из базы")
+                    if cached_data:
+                        logger.info("Данные найдены в кеше, возвращаем")
+                        return json.loads(cached_data)
+                    logger.info("Данных в кеше нет, загружаем из базы")
+                except Exception as cache_error:
+                    logger.warning(f"Ошибка при работе с кешем: {str(cache_error)}")
+                    # Продолжаем работу без кеша
 
             # Запрос в базу данных через репозиторий
             cities = await CityListRepository.get_cities_with_services()
@@ -42,8 +46,12 @@ class CityListService:
 
             # Сохраняем данные в кеш
             if self.cache:
-                await self.cache.set(cache_key, json.dumps(result), ex=3600)
-                logger.info("Данные успешно сохранены в кеш")
+                try:
+                    await self.cache.set(cache_key, json.dumps(result), ex=3600)
+                    logger.info("Данные успешно сохранены в кеш")
+                except Exception as cache_error:
+                    logger.warning(f"Ошибка при сохранении в кеш: {str(cache_error)}")
+                    # Игнорируем ошибки кеша
 
             return result
 
@@ -59,7 +67,7 @@ class CityListService:
             logger.error(f"Ошибка при получении списка активных городов: {e}")
             # Пробрасываем как ServiceException
             raise ServiceException(
-                message="Ошибка при получении списка активных городов",
+                message=f"Ошибка при получении списка активных городов: {str(e)}",
                 error_code="SERVICE_ERROR"
             )
 
@@ -71,13 +79,17 @@ class CityListService:
             cache_key = "all_cities_list"
 
             if self.cache:
-                logger.info("Пытаемся получить данные из кеша")
-                cached_data = await self.cache.get(cache_key)
+                try:
+                    logger.info("Пытаемся получить данные из кеша")
+                    cached_data = await self.cache.get(cache_key)
 
-                if cached_data:
-                    logger.info("Данные найдены в кеше, возвращаем")
-                    return json.loads(cached_data)
-                logger.info("Данных в кеше нет, загружаем из базы")
+                    if cached_data:
+                        logger.info("Данные найдены в кеше, возвращаем")
+                        return json.loads(cached_data)
+                    logger.info("Данных в кеше нет, загружаем из базы")
+                except Exception as cache_error:
+                    logger.warning(f"Ошибка при работе с кешем: {str(cache_error)}")
+                    # Продолжаем работу без кеша
 
             # Запрос в базу данных через репозиторий
             cities = await CityListRepository.get_all_cities()
@@ -91,8 +103,12 @@ class CityListService:
 
             # Сохраняем данные в кеш
             if self.cache:
-                await self.cache.set(cache_key, json.dumps(result), ex=360000)
-                logger.info("Данные успешно сохранены в кеш")
+                try:
+                    await self.cache.set(cache_key, json.dumps(result), ex=360000)
+                    logger.info("Данные успешно сохранены в кеш")
+                except Exception as cache_error:
+                    logger.warning(f"Ошибка при сохранении в кеш: {str(cache_error)}")
+                    # Игнорируем ошибки кеша
 
             return result
 
@@ -108,6 +124,6 @@ class CityListService:
             logger.error(f"Ошибка при получении списка всех городов: {e}")
             # Пробрасываем как ServiceException
             raise ServiceException(
-                message="Ошибка при получении списка всех городов",
+                message=f"Ошибка при получении списка всех городов: {str(e)}",
                 error_code="SERVICE_ERROR"
             )

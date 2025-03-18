@@ -20,6 +20,7 @@ from api.v1.services.service_custom_router import service_custom_router
 from api.v1.services.service_categories_router import service_categories_router
 from api.v1.services.service_attribute_router import service_attribute_router
 from api.v1.webrtc.signaling import signal_router
+from app.api.v1.photo.photo_custom_services_router import photo_custom_service_router
 from app.api.v1.salons.salons_masters_relation_router import salon_master_relation_router
 
 
@@ -160,6 +161,13 @@ router.include_router(
     prefix="/news",
     tags=["Фото новостной ленты"]
     )
+#Кастомные фото
+router.include_router(
+    photo_custom_service_router,
+    prefix="/photos",
+    tags=["Фото для индивидуальных услуг"]
+    )
+
 
 __all__ = ["router"]
  

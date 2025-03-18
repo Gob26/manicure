@@ -4,6 +4,8 @@ from io import BytesIO
 from PIL import Image as PILImage
 import uuid
 
+from tortoise import Model
+
 from config.components.logging_config import logger
 from db.repositories.photo_repositories.photo_repository import PhotoRepository
 from use_case.utils.image import ImageOptimizer
@@ -185,16 +187,40 @@ class PhotoHandler:
         )
 
     @staticmethod
+    async def add_photos_to_custom_service(
+            images: Union[UploadFile, List[UploadFile]],
+            service_id: int,
+            model: Type[Any],
+            is_main: bool = False,
+            sort_order: int = 0,
+            city: str = "default_city"
+    ) -> List[int]:
+        """
+        Вспомогательный метод для добавления фото к услугам.
+        """
+        return await PhotoHandler.add_photos_to_entity(
+            images=images,
+            model=model,
+            entity_id=service_id,
+            entity_field_name="custom_service_id", # Указываем имя поля service_id например
+            role="custom_service", # Роль для услуг
+            image_type="portfolio_custom_service", # Тип изображения для услуг (например, портфолио)
+            is_main=is_main,
+            sort_order=sort_order,
+            city=city
+        )
+
+    @staticmethod
     async def delete_photo(photo_id: int, model: Type[Any]) -> None:
         """
         Удаляет фото из базы данных и физические файлы.
 
         Args:
-            model: Модель Tortoise, к которой относится фото.
-            photo_id: ID фото в базе данных.
-            
+            photo_id (int): Уникальный идентификатор фотографии в базе данных.
+            model (Type[Any]): Класс модели Tortoise ORM, к которой относится фотография.
+
         Raises:
-            HTTPException: Если фото не найдено или возникла ошибка удаления.
+            HTTPException: Если фото не найдено (404) или возникла ошибка удаления (500).
         """
         try:
             # Получаем фото из базы данных
@@ -219,7 +245,7 @@ class PhotoHandler:
             raise HTTPException(status_code=500, detail="Ошибка при удалении фото")
 
     @staticmethod
-    async def get_photo_by_id(model: Type[Any], **filters) -> Union[Any, None]:
+    async def get_photo_by_id(model: Type[Model], **filters) -> Union[Any, None]:
         """
         Асинхронно получает фотографию из базы данных по заданным фильтрам.
 
@@ -248,3 +274,28 @@ class PhotoHandler:
             фактического извлечения данных из базы данных.
         """
         return await PhotoRepository.get_photo(model, **filters)
+
+
+    @staticmethod
+    async def get_photo_count(model: Type[Model], id: int) -> int:
+        """
+        Получает количество фотографий для заданной модели и идентификатора.
+
+        Функция возвращает количество фотографий, связанных с указанной сущностью
+        в базе данных на основе предоставленной модели и ID.
+
+        Args:
+            model (Type[Model]): Модель Tortoise ORM, представляющая таблицу фотографий.
+            id (int): Идентификатор сущности, для которой нужно получить количество фотографий.
+
+        Returns:
+            int: Количество фотографий для заданной сущности.
+
+        Пример использования:
+            photo_count = await PhotoService.get_photo_count(CustomServicePhoto, custom_service_id)
+        """
+        return await PhotoRepository.get_photo_count(model, id)
+
+    @staticmethod
+    async def update_photo_is_main(model: Type[Model], entity_field: str, entity_id: int, photo_id: int) -> bool:
+        return await PhotoRepository.set_main_photo(model, entity_field, entity_id, photo_id)
