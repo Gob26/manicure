@@ -24,4 +24,4 @@ media
 # vim temporary files
 *~
 .*.sw?
-../../.logs
+../../.logsapp/config/components/logs/
