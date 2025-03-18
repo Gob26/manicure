@@ -1,7 +1,10 @@
 #service_custom_model.py
 from tortoise import fields
 from db.models.abstract.abstract_model import AbstractModel
-from db.models.abstract.abstract_service import AbstractService
+import typing
+if typing.TYPE_CHECKING:
+    from db.models import CustomServicePhoto
+
 
 class CustomService(AbstractModel):
     """
@@ -51,6 +54,7 @@ class CustomService(AbstractModel):
         help_text="Дополнительное описание услуги"
     )
 
+    # 🔹 Связь с фото
     custom_service_photos: fields.ReverseRelation['CustomServicePhoto']
 
     class Meta:

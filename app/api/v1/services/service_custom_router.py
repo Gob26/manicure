@@ -24,7 +24,6 @@ async def create_custom_service_route(
     base_price: float = Form(..., description="Базовая стоимость услуги"),
     duration_minutes: int = Form(..., description="Длительность услуги в минутах"),
     description: Optional[str] = Form(None, description="Описание услуги"),
-    photos: Optional[List[UploadFile]] = File(None, description="Фото для услуги"),
     current_user: dict = Depends(get_current_user),
 ):
     # Проверка прав пользователя
@@ -37,7 +36,6 @@ async def create_custom_service_route(
             base_price=base_price,
             duration_minutes=duration_minutes,
             description=description,
-            images=photos,
             master_id=None,
             salon_id = None,
         )
@@ -61,7 +59,6 @@ async def create_custom_service_route(
 async def update_custom_service_route(
     custom_service_id: int,
     updated_service_data: CustomServiceUpdate = Depends(),
-    photos: Optional[List[UploadFile]] = File(None, description="Новые фото для услуги"),
     current_user: dict = Depends(get_current_user),
 ):
     logger.info(f"Текущий пользователь: {current_user}")
@@ -73,7 +70,6 @@ async def update_custom_service_route(
         updated_service = await CustomServiceService.update_custom_service(
             custom_service_id=custom_service_id,
             updated_service_data=updated_service_data.dict(exclude_unset=True), # exclude_unset, чтобы не затереть существующие значения в базе данных
-            images=photos,
             current_user=current_user
         )
         return updated_service

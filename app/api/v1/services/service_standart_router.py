@@ -37,7 +37,7 @@ async def create_service_standart_route(
     current_user: dict = Depends(get_current_user),
 ):
     # Проверка прав пользователя
-    check_user_permission(current_user, ["admin", "master"])
+    check_user_permission(current_user, ["admin"])
 
     try:
         service_data = StandardServiceCreate(
@@ -85,9 +85,9 @@ async def create_service_standart_route(
 
             logger.debug(f"create_service_standart_route: Calling StandardServiceService.update_standart_service "
                          f"with service_id={service_id}, update_data={update_data}")
-            update_service = await StandardServiceService.update_standart_service(  # <---- Исправленный вызов!
+            update_service = await StandardServiceService.update_standart_service(
                 service_id=service_id,
-                schema=update_data, # <----  Передаем update_data как schema!
+                schema=update_data,
             )
             logger.debug(f"create_service_standart_route: StandardServiceService.update_standart_service вернул обновленную услугу: {service}")
 
@@ -122,7 +122,7 @@ async def update_service_standart_route(
     image: Optional[UploadFile] = File(None),
     current_user: dict = Depends(get_current_user),
 ):
-    check_user_permission(current_user, ["admin", "master"])
+    check_user_permission(current_user, ["admin"])
 
     service = await StandardServiceService.get_standard_service_by_id(service_id)
 
@@ -130,7 +130,7 @@ async def update_service_standart_route(
         raise HTTPException(status_code=404, detail="Стандартная услуга не найдена")
 
     try:
-        service_data = StandardServiceUpdate( #  Используем StandardServiceUpdate, а не StandardServiceCreate
+        service_data = StandardServiceUpdate(
             name=name,
             title=title,
             description=description,
@@ -142,9 +142,9 @@ async def update_service_standart_route(
 
         logger.debug(f"update_service_standart_route: Вызов StandardServiceService.update_standart_service с данными: {service_data.model_dump()}")
 
-        updated_service = await StandardServiceService.update_standart_service( # Исправленный вызов 1
+        updated_service = await StandardServiceService.update_standart_service(
             service_id=service_id,
-            schema=service_data # Передаем service_data как schema
+            schema=service_data
         )
         logger.debug(f"update_service_standart_route: StandardServiceService.update_standart_service вернул услугу: {updated_service}")
         logger.debug(f"Значение image перед if image: {image}")
@@ -165,7 +165,7 @@ async def update_service_standart_route(
                 city=CITY_FOLDER,
             )
             if photo_ids:
-                update_data = StandardServiceUpdate( #  Используем StandardServiceUpdate
+                update_data = StandardServiceUpdate(
                     name=name,
                     title=title,
                     description=description,
@@ -177,20 +177,51 @@ async def update_service_standart_route(
                 logger.debug(f"update_service_standart_route: update_data для обновления фото создан: {update_data}")
                 logger.debug(f"update_service_standart_route: Calling StandardServiceService.update_standart_service "
                             f"with service_id={service_id}, update_data={update_data}")
-                updated_service = await StandardServiceService.update_standart_service( # Исправленный вызов 2
+                updated_service = await StandardServiceService.update_standart_service(
                     service_id=service_id,
-                    schema=update_data, # Передаем update_data как schema
+                    schema=update_data,
                 )
                 logger.debug(f"update_service_standart_route: StandardServiceService.update_standart_service вернул обновленную услугу: {updated_service}")
             else:
                 logger.warning(f"Фото для сервиса salon_id={service_id} не было загружено.")
-                updated_service = updated_service # Используем уже обновленный сервис, если фото не загружено
+                updated_service = updated_service
 
-            logger.info(f"update_service_standart_route: Процесс создания стандартной услуги успешно завершен.") # Сообщение про создание услуги - неточно, нужно исправить на "обновление"
+            logger.info(f"update_service_standart_route: Процесс создания стандартной услуги успешно завершен.")
             return updated_service
     except ValueError as ve:
         logger.warning(f"update_service_standart_route: ValueError: {ve}")
         raise HTTPException(status_code=400, detail=str(ve))
     except Exception as e:
-        logger.error(f"update_service_standart_route: Системная ошибка при создании сервиса: {e}", exc_info=True) # Сообщение про создание услуги - неточно, нужно исправить на "обновление"
-        raise HTTPException(status_code=500, detail="Системная ошибка при создании сервиса") # Сообщение про создание услуги - неточно, нужно исправить на "обновление"
+        logger.error(f"update_service_standart_route: Системная ошибка при создании сервиса: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail="Системная ошибка при создании сервиса")
+
+@service_standart_router.delete(
+    "/services/{service_id}",
+    status_code=status.HTTP_204_NO_CONTENT,
+    summary="Удаление стандартной услуги",
+    description="Удалить стандартную услугу и фото из БД и сервера"
+)
+async def delete_standart_route(
+        service_id: int,
+        current_user: dict = Depends(get_current_user)
+):
+    logger.info(f"Текущий пользователь: {current_user}")
+
+    # Проверка прав доступа
+    check_user_permission(current_user, ["admin"])
+
+    # Удаление стандартной услуги через сервис
+    try:
+        service = await StandardServiceService.get_standard_service_by_id(service_id)
+        if not service:
+            raise HTTPException(status_code=404, detail="Стандартная услуга не найден")
+
+        await StandardServiceService.delete_service(
+            service_id=service_id
+        )
+    except ValueError as ve:
+        logger.warning(f"Ошибка бизнес-логики: {ve}")
+        raise HTTPException(status_code=400, detail=str(ve))
+    except Exception as e:
+        logger.error(f"Системная ошибка при удалении страндартной услуги: {e}")
+        raise HTTPException(status_code=500, detail="Системная ошибка при удалении мастера")

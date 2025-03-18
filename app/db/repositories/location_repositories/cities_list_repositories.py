@@ -57,9 +57,9 @@ class CityListRepository(BaseRepository):
         except Exception as e:
             # Логируем ошибку на уровне репозитория
             logger.error(f"Ошибка при получении списка всех городов: {str(e)}")
-            # Пробрасываем как EntityNotFoundException
+            # Пробрасываем как EntityNotFoundException с нужными параметрами
             raise EntityNotFoundException(
-                entity_type="Город",
-                identifier="все города",
-                error_code="CITIES_NOT_FOUND"
+                entity_name="Город",  # Название сущности
+                identifier="все города",  # Идентификатор (например, все города)
+                error_code="CITIES_NOT_FOUND"  # Код ошибки
             )

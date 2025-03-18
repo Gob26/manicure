@@ -72,3 +72,14 @@ class StandardServiceService:
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
                 detail="Ошибка при получении стандартной услуги."
             )
+
+    @staticmethod
+    async def delete_service(service_id: int):
+        try:
+            return await ServiceStandartRepository.delete(service_id)
+        except Exception as e:
+            logger.error(f"Ошибка при удалении стандартной услуги с ID {service_id}: {str(e)}")
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail="Ошибка при удалении стандартной услуги."
+            )

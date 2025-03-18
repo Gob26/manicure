@@ -13,7 +13,6 @@ class CustomServiceOut(BaseModel):
     duration_minutes: int = Field(..., description="Длительность услуги в минутах")
     is_active: bool = Field(..., description="Активна ли услуга")
     description: Optional[str] = Field(None, description="Дополнительное описание услуги")
-    photos: List[str] = Field([], description="Список URL фотографий услуги")
 
     class Config:
         from_attributes = True
