@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "manicure salon"
 authors = ["Roman"]
 license = "MIT"
+packages = [{include = "app"}] # <--- ЭТА СТРОКА БЫЛА ДОБАВЛЕНА ЗДЕСЬ
 
 [tool.poetry.dependencies]
 python = ">=3.9, <4.0"

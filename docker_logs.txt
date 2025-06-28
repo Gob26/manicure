@@ -1,0 +1,148 @@
+июн 23 19:24:36 gob-asus systemd[1]: Starting docker.service - Docker Application Container Engine...
+░░ Subject: Начинается запуск юнита docker.service
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Начат процесс запуска юнита docker.service.
+июн 23 19:24:37 gob-asus dockerd[2014]: time="2025-06-23T19:24:37.177793220+03:00" level=info msg="Starting up"
+июн 23 19:24:37 gob-asus dockerd[2014]: time="2025-06-23T19:24:37.203011671+03:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+июн 23 19:24:38 gob-asus dockerd[2014]: time="2025-06-23T19:24:38.338518978+03:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+июн 23 19:24:38 gob-asus dockerd[2014]: time="2025-06-23T19:24:38.358144174+03:00" level=info msg="Loading containers: start."
+июн 23 19:24:39 gob-asus dockerd[2014]: time="2025-06-23T19:24:39.263743352+03:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+июн 23 19:24:39 gob-asus dockerd[2014]: time="2025-06-23T19:24:39.266684320+03:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+июн 23 19:24:39 gob-asus dockerd[2014]: time="2025-06-23T19:24:39.268761655+03:00" level=info msg="stopping event stream following graceful shutdown" error="context canceled" module=libcontainerd namespace=plugins.moby
+июн 23 19:24:39 gob-asus dockerd[2014]: failed to start daemon: Error initializing network controller: error creating default "bridge" network: cannot create network 2e73bff3d488cf70ba4d8640b112eca84b72b8b7aff5c4d1fc48bc2a7b2131aa (docker0): conflicts with network ce6c69f8befbbcdf7701d74e4a903a3423a367b522b0227fbe89c912b3b35cb8 (docker0): networks have same bridge name
+июн 23 19:24:39 gob-asus systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit docker.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+июн 23 19:24:39 gob-asus systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+июн 23 19:24:39 gob-asus systemd[1]: Failed to start docker.service - Docker Application Container Engine.
+░░ Subject: Ошибка юнита docker.service
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Произошел сбой юнита docker.service.
+░░ 
+░░ Результат: failed.
+июн 23 19:24:39 gob-asus systemd[1]: docker.service: Consumed 766ms CPU time, 104.3M memory peak.
+░░ Subject: Потребленные юнитом ресурсы
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Юнит docker.service завершен. Приводится статистика по потребленным им ресурсам.
+июн 23 19:24:41 gob-asus systemd[1]: docker.service: Scheduled restart job, restart counter is at 1.
+░░ Subject: Назначен автоматический перезапуск юнита
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Назначен автоматический перезапуск юнита docker.service, так как для него был задан 
+░░ параметр Restart=.
+июн 23 19:24:41 gob-asus systemd[1]: Starting docker.service - Docker Application Container Engine...
+░░ Subject: Начинается запуск юнита docker.service
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Начат процесс запуска юнита docker.service.
+июн 23 19:24:41 gob-asus dockerd[3097]: time="2025-06-23T19:24:41.458435142+03:00" level=info msg="Starting up"
+июн 23 19:24:41 gob-asus dockerd[3097]: time="2025-06-23T19:24:41.460538060+03:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+июн 23 19:24:41 gob-asus dockerd[3097]: time="2025-06-23T19:24:41.523429588+03:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+июн 23 19:24:41 gob-asus dockerd[3097]: time="2025-06-23T19:24:41.523769564+03:00" level=info msg="Loading containers: start."
+июн 23 19:24:42 gob-asus dockerd[3097]: time="2025-06-23T19:24:42.040881030+03:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+июн 23 19:24:42 gob-asus dockerd[3097]: time="2025-06-23T19:24:42.044271051+03:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+июн 23 19:24:42 gob-asus dockerd[3097]: failed to start daemon: Error initializing network controller: error creating default "bridge" network: cannot create network 47beff8a2321c20e04a9e10ae44db8ad8588661df606db030ca24e6970c6457a (docker0): conflicts with network 26bc940a6efa13cd21db864bdc1720e5e915bd54bbbdfdb251ce995ab7eaa0b2 (docker0): networks have same bridge name
+июн 23 19:24:42 gob-asus systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit docker.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+июн 23 19:24:42 gob-asus systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+июн 23 19:24:42 gob-asus systemd[1]: Failed to start docker.service - Docker Application Container Engine.
+░░ Subject: Ошибка юнита docker.service
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Произошел сбой юнита docker.service.
+░░ 
+░░ Результат: failed.
+июн 23 19:24:44 gob-asus systemd[1]: docker.service: Scheduled restart job, restart counter is at 2.
+░░ Subject: Назначен автоматический перезапуск юнита
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Назначен автоматический перезапуск юнита docker.service, так как для него был задан 
+░░ параметр Restart=.
+июн 23 19:24:44 gob-asus systemd[1]: Starting docker.service - Docker Application Container Engine...
+░░ Subject: Начинается запуск юнита docker.service
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Начат процесс запуска юнита docker.service.
+июн 23 19:24:44 gob-asus dockerd[3293]: time="2025-06-23T19:24:44.278165935+03:00" level=info msg="Starting up"
+июн 23 19:24:44 gob-asus dockerd[3293]: time="2025-06-23T19:24:44.280241898+03:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+июн 23 19:24:44 gob-asus dockerd[3293]: time="2025-06-23T19:24:44.384228033+03:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+июн 23 19:24:44 gob-asus dockerd[3293]: time="2025-06-23T19:24:44.384546814+03:00" level=info msg="Loading containers: start."
+июн 23 19:24:44 gob-asus dockerd[3293]: time="2025-06-23T19:24:44.928998916+03:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+июн 23 19:24:44 gob-asus dockerd[3293]: time="2025-06-23T19:24:44.931336116+03:00" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontainerd namespace=moby
+июн 23 19:24:44 gob-asus dockerd[3293]: failed to start daemon: Error initializing network controller: error creating default "bridge" network: cannot create network b2f8d3152e8c6d730bbea7236296b7506f34f7cda385af0114fd91e9829198a0 (docker0): conflicts with network ce6c69f8befbbcdf7701d74e4a903a3423a367b522b0227fbe89c912b3b35cb8 (docker0): networks have same bridge name
+июн 23 19:24:44 gob-asus systemd[1]: docker.service: Main process exited, code=exited, status=1/FAILURE
+░░ Subject: Unit process exited
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ An ExecStart= process belonging to unit docker.service has exited.
+░░ 
+░░ The process' exit code is 'exited' and its exit status is 1.
+июн 23 19:24:44 gob-asus systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+июн 23 19:24:44 gob-asus systemd[1]: Failed to start docker.service - Docker Application Container Engine.
+░░ Subject: Ошибка юнита docker.service
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Произошел сбой юнита docker.service.
+░░ 
+░░ Результат: failed.
+июн 23 19:24:47 gob-asus systemd[1]: docker.service: Scheduled restart job, restart counter is at 3.
+░░ Subject: Назначен автоматический перезапуск юнита
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Назначен автоматический перезапуск юнита docker.service, так как для него был задан 
+░░ параметр Restart=.
+июн 23 19:24:47 gob-asus systemd[1]: docker.service: Start request repeated too quickly.
+июн 23 19:24:47 gob-asus systemd[1]: docker.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit docker.service has entered the 'failed' state with result 'exit-code'.
+июн 23 19:24:47 gob-asus systemd[1]: Failed to start docker.service - Docker Application Container Engine.
+░░ Subject: Ошибка юнита docker.service
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Произошел сбой юнита docker.service.
+░░ 
+░░ Результат: failed.

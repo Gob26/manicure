@@ -4886,3 +4886,7 @@ DETAIL:  Key (user_id)=(85) already exists.[0m
 2025-01-08 16:42:56 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
 2025-02-18 09:10:25 - my_app - [31mERROR[0m - [31mError message[0m
 2025-02-18 09:10:25 - my_app - [31m[1mCRITICAL[0m - [31m[1mCritical message[0m
+2025-06-23 22:55:08 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-06-23 22:55:08 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
+2025-06-23 23:12:56 - my_app - [31mERROR[0m - logging_config.py:79 - [31mError message[0m
+2025-06-23 23:12:56 - my_app - [31m[1mCRITICAL[0m - logging_config.py:80 - [31m[1mCritical message[0m
